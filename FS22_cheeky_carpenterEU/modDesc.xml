@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Carpenter</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded carpenter for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_carpenterEU.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_carpenterEU.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_CheekyCarpenterEU">
+            <en>Cheeky Carpenter</en>
+        </text>
+    </l10n>	 
+</modDesc>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Bakery</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded bakery for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_bakeryEU.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_bakeryEU.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_CheekyBakeryEU">
+            <en>Cheeky Bakery</en>
+        </text>
+    </l10n>	 
+</modDesc>

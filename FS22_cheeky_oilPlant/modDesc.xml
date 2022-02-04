@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Oil Plant</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded oil plant for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_oilPlant.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_oilPlant.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_OilPlant">
+            <en>Cheeky Oil Plant</en>
+        </text>
+    </l10n>	 
+</modDesc>
