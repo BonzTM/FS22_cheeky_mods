@@ -3,14 +3,14 @@
 
     <author>Cheeky B#$!ards</author>
 	
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
 	
     <title>
         <en>Cheeky Dairy</en>
     </title>
 
 	<description>
-		<en><![CDATA[Modded dairy for the Cheeky Bastards.]]></en>
+		<en><![CDATA[10x Modded dairy for the Cheeky Bastards.]]></en>
 	</description>	
 
     <iconFilename>store_dairyUS.png</iconFilename>
