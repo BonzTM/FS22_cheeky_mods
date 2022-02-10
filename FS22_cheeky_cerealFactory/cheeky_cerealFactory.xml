@@ -124,7 +124,7 @@
                     <input fillType="MAIZE" amount="200" />
                 </inputs>
                 <outputs>
-                    <output fillType="CEREAL" amount="200" />
+                    <output fillType="CEREAL" amount="350" />
                 </outputs>
             </production>
         </productions>
