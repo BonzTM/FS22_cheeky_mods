@@ -105,7 +105,7 @@
         <productions>
             <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="8" costsPerActiveHour="0.1">
                 <inputs>
-                    <input fillType="WATER" amount="8" />
+                    <input fillType="WATER" amount="40" />
                 </inputs>
                 <outputs>
                     <output fillType="TOMATO" amount="80" />
@@ -113,7 +113,7 @@
             </production>
             <production id="lettuce" name="$l10n_fillType_lettuce" cyclesPerHour="8" costsPerActiveHour="0.1">
                 <inputs>
-                    <input fillType="WATER" amount="8" />
+                    <input fillType="WATER" amount="40" />
                 </inputs>
                 <outputs>
                     <output fillType="LETTUCE" amount="40" />
@@ -121,7 +121,7 @@
             </production>
             <production id="strawberry" name="$l10n_fillType_strawberry" cyclesPerHour="8" costsPerActiveHour="0.1">
                 <inputs>
-                    <input fillType="WATER" amount="8" />
+                    <input fillType="WATER" amount="40" />
                 </inputs>
                 <outputs>
                     <output fillType="STRAWBERRY" amount="160" />

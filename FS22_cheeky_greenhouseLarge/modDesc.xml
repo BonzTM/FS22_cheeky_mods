@@ -3,14 +3,14 @@
 
     <author>Cheeky B#$!ards</author>
 	
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
 	
     <title>
         <en>Cheeky Greenhouse (Large)</en>
     </title>
 
 	<description>
-		<en><![CDATA[Modded greenhouse (large) for the Cheeky Bastards.]]></en>
+		<en><![CDATA[10x Modded greenhouse (large) for the Cheeky Bastards.  Water consumption only 5x]]></en>
 	</description>	
 
     <iconFilename>store_greenhouseLarge.png</iconFilename>
