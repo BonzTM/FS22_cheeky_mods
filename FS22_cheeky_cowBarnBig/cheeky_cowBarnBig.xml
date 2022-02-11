@@ -3,7 +3,7 @@
     <storeData>
         <name>$l10n_shopItem_CowBarnBig</name>
         <image>store_cowBarnBig.png</image>
-        <price>1805000</price>
+        <price>1296250</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>
         </functions>
