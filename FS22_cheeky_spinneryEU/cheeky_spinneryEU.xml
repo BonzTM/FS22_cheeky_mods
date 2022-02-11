@@ -118,26 +118,26 @@
         <productions>
             <production id="fabric_wool" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_wool" cyclesPerHour="10" costsPerActiveHour="5">
                 <inputs>
-                    <input fillType="WOOL" amount="180" />
+                    <input fillType="WOOL" amount="120" />
                 </inputs>
                 <outputs>
-                    <output fillType="FABRIC" amount="90" />
+                    <output fillType="FABRIC" amount="60" />
                 </outputs>
             </production>
             <production id="fabric_cotton" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
                 <inputs>
-                    <input fillType="COTTON" amount="180" />
+                    <input fillType="COTTON" amount="120" />
                 </inputs>
                 <outputs>
-                    <output fillType="FABRIC" amount="90" />
+                    <output fillType="FABRIC" amount="60" />
                 </outputs>
             </production>
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="WOOL"   capacity="675000" />
-            <capacity fillType="COTTON" capacity="675000" />
-            <capacity fillType="FABRIC" capacity="75000" />
+            <capacity fillType="WOOL"   capacity="450000" />
+            <capacity fillType="COTTON" capacity="450000" />
+            <capacity fillType="FABRIC" capacity="50000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false" appearsOnStats="true">
