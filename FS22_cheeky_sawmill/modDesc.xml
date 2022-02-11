@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Sawmill</en>
+    </title>
+
+	<description>
+		<en><![CDATA[10x Modded sawmill for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>icon_sawmills.dds</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_sawmill.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_Sawmill">
+            <en>Cheeky Sawmill</en>
+        </text>
+    </l10n>	 
+</modDesc>

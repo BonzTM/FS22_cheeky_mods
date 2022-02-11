@@ -6,7 +6,7 @@
             <function>$l10n_function_productionPoint</function>
         </functions>
         <image>$data/placeables/lizard/greenhouses/greenhouseLarge/store_greenhouseLarge.png</image>
-        <price>20000</price>
+        <price>50000</price>
         <dailyUpkeep>100</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -105,7 +105,7 @@
         <productions>
             <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="8" costsPerActiveHour="0.1">
                 <inputs>
-                    <input fillType="WATER" amount="40" />
+                    <input fillType="WATER" amount="80" />
                 </inputs>
                 <outputs>
                     <output fillType="TOMATO" amount="80" />
@@ -113,7 +113,7 @@
             </production>
             <production id="lettuce" name="$l10n_fillType_lettuce" cyclesPerHour="8" costsPerActiveHour="0.1">
                 <inputs>
-                    <input fillType="WATER" amount="40" />
+                    <input fillType="WATER" amount="80" />
                 </inputs>
                 <outputs>
                     <output fillType="LETTUCE" amount="40" />
@@ -121,7 +121,7 @@
             </production>
             <production id="strawberry" name="$l10n_fillType_strawberry" cyclesPerHour="8" costsPerActiveHour="0.1">
                 <inputs>
-                    <input fillType="WATER" amount="40" />
+                    <input fillType="WATER" amount="80" />
                 </inputs>
                 <outputs>
                     <output fillType="STRAWBERRY" amount="160" />

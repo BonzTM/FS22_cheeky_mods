@@ -6,7 +6,7 @@
             <function>$l10n_function_productionPoint</function>
         </functions>
         <image>$data/placeables/lizard/productionPoints/tailorShop/store_tailorShop.png</image>
-        <price>150000</price>
+        <price>500000</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -115,10 +115,10 @@
         <productions>
             <production id="clothes" name="$l10n_fillType_clothes" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="FABRIC" amount="200" />
+                    <input fillType="FABRIC" amount="100" />
                 </inputs>
                 <outputs>
-                    <output fillType="CLOTHES" amount="100" />
+                    <output fillType="CLOTHES" amount="50" />
                 </outputs>
             </production>
         </productions>
@@ -137,8 +137,8 @@
         </palletSpawner>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="FABRIC"  capacity="720000" />
-            <capacity fillType="CLOTHES" capacity="60000" />
+            <capacity fillType="FABRIC"  capacity="360000" />
+            <capacity fillType="CLOTHES" capacity="30000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />

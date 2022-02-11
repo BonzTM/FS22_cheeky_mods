@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Chicken Coop</en>
+    </title>
+
+	<description>
+		<en><![CDATA[5x Modded chicken barn for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_chickenBarnBig.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_chickenBarnBig.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_ChickenBarnBig">
+            <en>Cheeky Chicken Coop</en>
+        </text>
+    </l10n>	 
+</modDesc>
