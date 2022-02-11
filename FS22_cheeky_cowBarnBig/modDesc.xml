@@ -16,8 +16,8 @@
     <iconFilename>both_cowbarns.dds</iconFilename>
 	
     <storeItems>
-        <storeItem xmlFilename="cheeky_cownBarnBig.xml"/>
-        <storeItem xmlFilename="cheeky_cownBarnBigVector.xml"/>
+        <storeItem xmlFilename="cheeky_cowBarnBig.xml"/>
+        <storeItem xmlFilename="cheeky_cowBarnBigVector.xml"/>
     </storeItems>
 	
 	 <multiplayer supported="true" />
