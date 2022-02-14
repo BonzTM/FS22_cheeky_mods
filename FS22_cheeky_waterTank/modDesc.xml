@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Water Tank</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded Water tank for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_liquidFlatBottomTank1630.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_water_liquidFlatBottomTank1630.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_WaterTank">
+            <en>Cheeky Water Tank</en>
+        </text>
+    </l10n>	 
+</modDesc>
