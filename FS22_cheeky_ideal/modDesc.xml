@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Ideal</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded Ideal for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_ideal.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_ideal.xml"/>
+        <storeItem xmlFilename="cheeky_ideal_massey.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_Ideal">
+            <en>Ideal</en>
+        </text>
+    </l10n>	 
+</modDesc>

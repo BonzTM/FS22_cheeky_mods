@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Austoft 8800 Multi-Row</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded Austoft 8800 Multi-Row for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_a8800MR.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_a8800MR.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_A8800MR">
+            <en>Austoft 8800 Multi-Row</en>
+        </text>
+    </l10n>	 
+</modDesc>
