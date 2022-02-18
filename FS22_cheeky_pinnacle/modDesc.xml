@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Pinnacle</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded Mack Pinnacle for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_pinnacle.dds</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_pinnacle.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+</modDesc>

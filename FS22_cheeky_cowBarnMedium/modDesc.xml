@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Cow Barn (Medium)</en>
+    </title>
+
+	<description>
+		<en><![CDATA[5x Modded cow barns for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_cowBarnMedium.dds</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_cowBarnMedium.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_CowBarnMedium">
+            <en>Cheeky Cow Barn (Medium)</en>
+        </text>
+    </l10n>	 
+</modDesc>

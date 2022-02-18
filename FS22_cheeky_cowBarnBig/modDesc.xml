@@ -6,7 +6,7 @@
     <version>1.0.0.0</version>
 	
     <title>
-        <en>Cheeky Cow Barns</en>
+        <en>Cheeky Cow Barns (Large)</en>
     </title>
 
 	<description>
@@ -24,10 +24,10 @@
 
 	<l10n>
         <text name="shopItem_CowBarnBig">
-            <en>Cheeky Cow Barn</en>
+            <en>Cheeky Cow Barn (Large)</en>
         </text>
         <text name="shopItem_CowBarnBigVector">
-            <en>Cheeky Cow Barn w/ Robot</en>
+            <en>Cheeky Cow Barn (Large) w/ Robot</en>
         </text>
     </l10n>	 
 </modDesc>

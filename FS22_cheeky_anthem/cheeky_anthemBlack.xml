@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="tractor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="cheeky_anthem.xml">
+        <attributes>
+            <set path="vehicle.storeData.name" value="Black Anthem 6x4"/>
+            <set path="vehicle.storeData.image" value="store_anthemBlack.png"/>
+            <set path="vehicle.storeData.price" value="143500"/>
+            <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="false"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(0)#name" value="Black Anthem 6x4 (MP7 425)"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(1)#name" value="Black Anthem 6x4 (MP8 650)"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(2)#name" value="Black Anthem 6x4 (MP8 850)"/>
+
+            <clearList path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration" keepIndex="2"/>
+            <clearList path="vehicle.configurationSets.configurationSet" keepIndex="5"/>
+            <clearList path="vehicle.rimColorConfigurations.rimColorConfiguration" keepIndex="4"/>
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>Mack Black Anthem</name>
+        <image>$data/vehicles/mack/anthem/store_anthemBlack.png</image>
+        <brand>MACK</brand>
+        <category>trucks</category>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+</vehicle>

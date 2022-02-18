@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Anthem</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded Mack Anthem for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_anthem.dds</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_anthem.xml"/>
+        <storeItem xmlFilename="cheeky_anthemBlack.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+</modDesc>
