@@ -113,7 +113,7 @@
                     <input fillType="FLOUR" amount="200" />
                 </inputs>
                 <outputs>
-                    <output fillType="BREAD" amount="100" />
+                    <output fillType="BREAD" amount="125" />
                 </outputs>
             </production>
             <production id="cake" name="$l10n_fillType_cake" cyclesPerHour="8" costsPerActiveHour="5">

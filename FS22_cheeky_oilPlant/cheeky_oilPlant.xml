@@ -118,7 +118,7 @@
                     <input fillType="SUNFLOWER" amount="400" />
                 </inputs>
                 <outputs>
-                    <output fillType="SUNFLOWER_OIL" amount="200" />
+                    <output fillType="SUNFLOWER_OIL" amount="285" />
                 </outputs>
             </production>
             <production id="canola_oil" name="$l10n_fillType_canolaOil" cyclesPerHour="10" costsPerActiveHour="5">
@@ -126,7 +126,7 @@
                     <input fillType="CANOLA" amount="400" />
                 </inputs>
                 <outputs>
-                    <output fillType="CANOLA_OIL" amount="200" />
+                    <output fillType="CANOLA_OIL" amount="275" />
                 </outputs>
             </production>
             <production id="olive_oil" name="$l10n_fillType_oliveOil" cyclesPerHour="10" costsPerActiveHour="5">

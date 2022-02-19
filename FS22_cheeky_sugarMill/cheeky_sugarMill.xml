@@ -127,7 +127,7 @@
                     <input fillType="SUGARBEET_CUT" amount="1000" />
                 </inputs>
                 <outputs>
-                    <output fillType="SUGAR" amount="600" />
+                    <output fillType="SUGAR" amount="750" />
                 </outputs>
             </production>
             <production id="sugarcane_sugar" name="%s %s" params="$l10n_fillType_sugarCane|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="5">

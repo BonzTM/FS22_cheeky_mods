@@ -101,7 +101,7 @@
                     <input fillType="MILK" amount="300" />
                 </inputs>
                 <outputs>
-                    <output fillType="BUTTER" amount="260" />
+                    <output fillType="BUTTER" amount="400" />
                 </outputs>
             </production>
             <production id="cheese" name="$l10n_fillType_cheese" cyclesPerHour="10" costsPerActiveHour="2">

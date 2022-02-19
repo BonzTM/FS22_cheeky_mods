@@ -114,7 +114,7 @@
                     <input fillType="WOOD" amount="40" />
                 </inputs>
                 <outputs>
-                    <output fillType="FURNITURE" amount="50" />
+                    <output fillType="FURNITURE" amount="40" />
                     <output fillType="WOODCHIPS" amount="1.5" />
                 </outputs>
             </production>
