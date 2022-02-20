@@ -118,7 +118,7 @@
                     <input fillType="FABRIC" amount="100" />
                 </inputs>
                 <outputs>
-                    <output fillType="CLOTHES" amount="58" />
+                    <output fillType="CLOTHES" amount="60" />
                 </outputs>
             </production>
         </productions>

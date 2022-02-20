@@ -112,15 +112,15 @@
             </production>
             <production id="cake" name="$l10n_fillType_cake" cyclesPerHour="8" costsPerActiveHour="5">
                 <inputs>
-                    <input fillType="FLOUR"      amount="20" />
-                    <input fillType="SUGAR"      amount="20" />
-                    <input fillType="MILK"       amount="20" />
-                    <input fillType="EGG"        amount="20" />
-                    <input fillType="BUTTER"     amount="20" />
-                    <input fillType="STRAWBERRY" amount="20" />
+                    <input fillType="FLOUR"      amount="40" />
+                    <input fillType="SUGAR"      amount="40" />
+                    <input fillType="MILK"       amount="40" />
+                    <input fillType="EGG"        amount="40" />
+                    <input fillType="BUTTER"     amount="40" />
+                    <input fillType="STRAWBERRY" amount="40" />
                 </inputs>
                 <outputs>
-                    <output fillType="CAKE" amount="50" />
+                    <output fillType="CAKE" amount="100" />
                 </outputs>
             </production>
         </productions>
