@@ -115,10 +115,10 @@
         <productions>
             <production id="clothes" name="$l10n_fillType_clothes" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="FABRIC" amount="100" />
+                    <input fillType="FABRIC" amount="240" />
                 </inputs>
                 <outputs>
-                    <output fillType="CLOTHES" amount="60" />
+                    <output fillType="CLOTHES" amount="160" />
                 </outputs>
             </production>
         </productions>
