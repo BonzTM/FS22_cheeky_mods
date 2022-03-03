@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky Tiger 6S</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded Ropa Tiger 6S and RR-XL 9x45 header for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_tiger6S.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_tiger6S.xml"/>
+        <storeItem xmlFilename="cheeky_rrXL9.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_tiger6S">
+            <en>Tiger 6S</en>
+        </text>
+        <text name="shopItem_rrXL9">
+            <en>RR-XL 9x45</en>
+        </text>
+    </l10n>	 
+</modDesc>
