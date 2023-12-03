@@ -42,7 +42,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_truck</typeDesc>
-        <filename>cheeky_pinnacle.i3d</filename>
+        <filename>$data/vehicles/mack/pinnacle/pinnacle.i3d</filename>
         <sounds filename="$data/vehicles/mack/pinnacle/sounds/pinnacle.xml"/>
         <size width="4" length="9" height="4.2" lengthOffset="-1.5"/>
         <components>

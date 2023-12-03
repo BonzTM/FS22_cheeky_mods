@@ -36,7 +36,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
-        <filename>cheeky_crSeries.i3d</filename>
+        <filename>$data/vehicles/newHolland/crSeries/crSeries.i3d</filename>
         <sounds filename="$data/vehicles/newHolland/crSeries/sounds/crSeries.xml" volumeFactor="0.5"/>
         <size width="5" length="9.8" height="5.5" lengthOffset="0.1" />
         <components>

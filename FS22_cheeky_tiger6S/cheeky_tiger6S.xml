@@ -6,6 +6,7 @@
         <name>Tiger 6S</name>
         <specs>
             <combination xmlFilename="cheeky_rrXL9.xml"/>
+            <combination xmlFilename="$data/vehicles/ropa/rrXL9/rrXL9.xml"/>
             <combination xmlFilename="$data/vehicles/ropa/rrXLTrailer/rrXLTrailer.xml"/>
             <power>768</power>
             <maxSpeed>40</maxSpeed>
@@ -33,7 +34,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_harvester</typeDesc>
-        <filename>cheeky_tiger6S.i3d</filename>
+        <filename>$data/vehicles/ropa/tiger6S/tiger6S.i3d</filename>
         <sounds filename="$data/vehicles/ropa/tiger6S/sounds/tiger6S.xml"/>
         <size width="5" length="13" height="4.5" lengthOffset="1"/>
         <speedLimit value="14.5"/>

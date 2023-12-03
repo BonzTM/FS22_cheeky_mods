@@ -36,7 +36,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
-        <filename>cheeky_axialFlow250.i3d</filename>
+        <filename>$data/vehicles/caseIH/axialFlow250/axialFlow250.i3d</filename>
         <sounds filename="$data/vehicles/caseIH/axialFlow250/sounds/axialFlow250.xml"/>
         <size width="6.5" length="9.6" height="4.5" lengthOffset="-0.1" />
         <components>

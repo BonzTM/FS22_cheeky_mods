@@ -35,7 +35,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
-        <filename>cheeky_ideal.i3d</filename>
+        <filename>$data/vehicles/fendt/ideal/ideal.i3d</filename>
         <size width="5.5" length="11" height="4.2" lengthOffset="0.5" />
         <sounds filename="$data/vehicles/fendt/ideal/sounds/ideal.xml"/>
         <components>

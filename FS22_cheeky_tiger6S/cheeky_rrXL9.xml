@@ -6,6 +6,7 @@
         <name>RR-XL 9x45</name>
         <specs>
             <workingWidth>4.0</workingWidth>
+            <combination xmlFilename="cheeky_tiger6S.xml"/>
             <combination xmlFilename="$data/vehicles/ropa/tiger6S/tiger6S.xml"/>
             <combination xmlFilename="$data/vehicles/ropa/rrXLTrailer/rrXLTrailer.xml"/>
         </specs>
@@ -30,7 +31,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_cutter</typeDesc>
-        <filename>cheeky_rrXL9.i3d</filename>
+        <filename>$data/vehicles/ropa/rrXL9/rrXL9.i3d</filename>
         <size width="5.5" length="5.5" lengthOffset="0.5"/>
         <speedLimit value="14.5"/>
         <components>

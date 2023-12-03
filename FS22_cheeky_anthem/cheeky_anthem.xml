@@ -42,7 +42,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_truck</typeDesc>
-        <filename>cheeky_anthem.i3d</filename>
+        <filename>$data/vehicles/mack/anthem/anthem.i3d</filename>
         <sounds filename="$data/vehicles/mack/anthem/sounds/anthem.xml"/>
         <size width="4" length="9" height="4.2" lengthOffset="-1.5"/>
         <components>

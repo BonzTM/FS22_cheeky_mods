@@ -35,7 +35,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
-        <filename>cheeky_lexion8000.i3d</filename>
+        <filename>$data/vehicles/claas/lexion8000/lexion8000.i3d</filename>
         <sounds filename="$data/vehicles/claas/lexion8000/sounds/lexion8000.xml"/>
         <size width="5" length="11.5" height="4.2" lengthOffset="-1.3" />
 

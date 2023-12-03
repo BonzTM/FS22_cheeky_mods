@@ -34,7 +34,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
-        <filename>cheeky_x9_1100.i3d</filename>
+        <filename>$data/vehicles/johnDeere/x9_1100/x9_1100.i3d</filename>
         <sounds filename="$data/vehicles/johnDeere/x9_1100/sounds/x9_1100.xml"/>
         <size width="6.5" length="12" height="4.4" lengthOffset="-1.05" widthOffset="0.5" />
 

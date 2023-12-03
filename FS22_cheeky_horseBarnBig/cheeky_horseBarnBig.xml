@@ -31,7 +31,7 @@
     </storeData>
 
     <base>
-        <filename>cheeky_horseBarnBig.i3d</filename>
+        <filename>$data/placeables/rudolfHormann/horseBarnBig/horseBarnBig.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
 

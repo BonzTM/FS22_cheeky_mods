@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky CP690</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded CP690 for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_cp690.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_cp690.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_cp690">
+            <en>CP690</en>
+        </text>
+    </l10n>	 
+</modDesc>

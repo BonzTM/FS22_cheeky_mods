@@ -30,7 +30,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_harvester</typeDesc>
-        <filename>cheeky_ventor4150.i3d</filename>
+        <filename>$data/vehicles/grimme/ventor4150/ventor4150.i3d</filename>
         <sounds filename="$data/vehicles/grimme/ventor4150/sounds/ventor4150.xml"/>
         <size width="5.5" length="16" height="4.5"/>
         <components maxMass="47500">

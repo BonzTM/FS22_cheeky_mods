@@ -30,7 +30,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_combine</typeDesc>
-        <filename>cheeky_a8800MR.i3d</filename>
+        <filename>$data/vehicles/caseIH/a8800MR/a8800MR.i3d</filename>
         <sounds filename="$data/vehicles/caseIH/a8800MR/sounds/a8800MR.xml"/>
         <size width="4" length="13.5" height="6.7" lengthOffset="-1" />
         <speedLimit value="14.5" />

@@ -45,7 +45,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_truck</typeDesc>
-        <filename>cheeky_superliner1979.i3d</filename>
+        <filename>$data/vehicles/mack/superliner1979/superliner1979.i3d</filename>
         <sounds filename="$data/vehicles/mack/superliner1979/sounds/superliner1979.xml"/>
         <size width="3.5" length="7.5" lengthOffset="-0.5"/>
         <components>
