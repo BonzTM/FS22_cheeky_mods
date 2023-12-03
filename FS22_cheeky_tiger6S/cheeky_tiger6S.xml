@@ -36,6 +36,7 @@
         <filename>cheeky_tiger6S.i3d</filename>
         <sounds filename="$data/vehicles/ropa/tiger6S/sounds/tiger6S.xml"/>
         <size width="5" length="13" height="4.5" lengthOffset="1"/>
+        <speedLimit value="14.5"/>
         <components maxMass="64000">
             <component centerOfMass="0 1.3 3.5" solverIterationCount="25" mass="8100"/>
             <component centerOfMass="0 1.3 0" solverIterationCount="10" mass="21435"/>
@@ -562,7 +563,7 @@
 
             <!-- arm up/down -->
             <movingTool node="pipeArm1" freezingPipeStates="0 1" foldMinLimit="0" foldMaxLimit="0" playSound="true" >
-                <controls axis="AXIS_PIPE2" invertAxis="false" mouseSpeedFactor="1" iconName="PIPE_END_ROTATE" />
+                <controls axis="AXIS_PIPE2" invertAxis="false" mouseSpeedFactor="1" iconName="CRANE_ARM1_ROTATE_X" />
                 <rotation rotSpeed="10" rotAcceleration="125" rotMax="-40" rotMin="-80" rotationAxis="3"/>
                 <dependentPart node="pipeArm1Hydraulic01"/>
                 <dependentPart node="pipeArm1Hydraulic02"/>

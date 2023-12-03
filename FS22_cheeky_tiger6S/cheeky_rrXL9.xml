@@ -13,16 +13,16 @@
             <function>$l10n_function_cutter</function>
         </functions>
         <image>store_rrXL9.png</image>
-        <price>89000</price>
+        <price>112000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>ROPA</brand>
         <category>beetHarvesting</category>
         <shopTranslationOffset>0 -0.208 0</shopTranslationOffset>
         <shopRotationOffset>1.043 0 0</shopRotationOffset>
-        <vertexBufferMemoryUsage>5964288</vertexBufferMemoryUsage>
+        <vertexBufferMemoryUsage>6013440</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>1473792</indexBufferMemoryUsage>
-        <textureMemoryUsage>1835008</textureMemoryUsage>
+        <textureMemoryUsage>1638400</textureMemoryUsage>
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
         <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
         <audioMemoryUsage>0</audioMemoryUsage>

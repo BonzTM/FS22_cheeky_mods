@@ -233,6 +233,7 @@
         </food>
 
         <pallets fillType="EGG" maxNumPallets="6" unitText="$l10n_unit_pieces">
+            <palletTrigger node="palletTrigger" />
             <spawnPlaces >
                 <spawnPlace startNode="palletArea1Start" endNode="palletArea1End" />
                 <spawnPlace startNode="palletArea2Start" endNode="palletArea2End" />

@@ -49,7 +49,7 @@
         <sounds filename="$data/vehicles/mack/superliner1979/sounds/superliner1979.xml"/>
         <size width="3.5" length="7.5" lengthOffset="-0.5"/>
         <components>
-            <component centerOfMass="0 0.15 0" solverIterationCount="10" mass="14500"/>
+            <component centerOfMass="0 0.47 0" solverIterationCount="10" mass="14500"/>
         </components>
         <schemaOverlay attacherJointPosition="0 0" name="TRUCK" />
         <mapHotspot type="TRUCK" />
@@ -60,25 +60,25 @@
             <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="CONTINENTAL" saveId="CONTINENTAL_DEFAULT">
                 <wheels autoRotateBackSpeed="2.1">
                     <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="mackSuperlinerFront" isLeft="true" hasTireTracks="true" hasParticles="true" >
-                        <physics rotSpeed="1"  restLoad="2.3" repr="axisFrontLeft"  driveNode="wheelFrontLeft"  forcePointRatio="0.5" initialCompression="35" suspTravel="0.17" spring="35" damper="40" frictionScale="2.1" yOffset="0.0125"/>
+                        <physics rotSpeed="1"  restLoad="2.3" repr="axisFrontLeft"  driveNode="wheelFrontLeft"  forcePointRatio="0.4" initialCompression="35" suspTravel="0.17" spring="35" damper="40" frictionScale="2.0" yOffset="0.0125"/>
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/continental/contiCrossTracHS3/385_65R22_5.xml" configId="mackSuperlinerFront" isLeft="false" hasTireTracks="true" hasParticles="true" >
-                        <physics rotSpeed="1"  restLoad="2.3" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.5" initialCompression="35" suspTravel="0.17" spring="35" damper="40" frictionScale="2.1" yOffset="0.0125"/>
+                        <physics rotSpeed="1"  restLoad="2.3" repr="axisFrontRight" driveNode="wheelFrontRight" forcePointRatio="0.4" initialCompression="35" suspTravel="0.17" spring="35" damper="40" frictionScale="2.0" yOffset="0.0125"/>
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasTireTracks="true" hasParticles="true" >
-                        <physics rotSpeed="0"  restLoad="1.1" repr="wheelMiddleLeft"  forcePointRatio="0.5" initialCompression="15" suspTravel="0.08" spring="72" damper="250" frictionScale="2.1" yOffset="-0.041"/>
+                        <physics rotSpeed="0"  restLoad="1.1" repr="wheelMiddleLeft"  forcePointRatio="0.2" initialCompression="15" suspTravel="0.08" spring="72" damper="250" frictionScale="2.2" yOffset="-0.041"/>
                         <additionalWheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09" />
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasTireTracks="true" hasParticles="true" >
-                        <physics rotSpeed="0"  restLoad="1.1" repr="wheelMiddleRight" forcePointRatio="0.5" initialCompression="15" suspTravel="0.08" spring="72" damper="250" frictionScale="2.1" yOffset="-0.041"/>
+                        <physics rotSpeed="0"  restLoad="1.1" repr="wheelMiddleRight" forcePointRatio="0.2" initialCompression="15" suspTravel="0.08" spring="72" damper="250" frictionScale="2.2" yOffset="-0.041"/>
                         <additionalWheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09" />
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="true" hasParticles="true" >
-                        <physics rotSpeed="0"  restLoad="1.1" repr="wheelBackLeft"    forcePointRatio="0.5" initialCompression="15" suspTravel="0.08" spring="72" damper="250" frictionScale="2.1" yOffset="-0.0715"/>
+                        <physics rotSpeed="0"  restLoad="1.1" repr="wheelBackLeft"    forcePointRatio="0.2" initialCompression="15" suspTravel="0.08" spring="72" damper="250" frictionScale="2.3" yOffset="-0.0715"/>
                         <additionalWheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="true" offset="0.09" />
                     </wheel>
                     <wheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dual" isLeft="false" hasParticles="true" >
-                        <physics rotSpeed="0"  restLoad="1.1" repr="wheelBackRight"   forcePointRatio="0.5" initialCompression="15" suspTravel="0.08" spring="72" damper="250" frictionScale="2.1" yOffset="-0.0715"/>
+                        <physics rotSpeed="0"  restLoad="1.1" repr="wheelBackRight"   forcePointRatio="0.2" initialCompression="15" suspTravel="0.08" spring="72" damper="250" frictionScale="2.3" yOffset="-0.0715"/>
                         <additionalWheel filename="$data/shared/wheels/tires/continental/contiHybridHD3/315_80R22_5.xml" configId="dualConnector" isLeft="false" offset="0.09" />
                     </wheel>
                 </wheels>
@@ -175,7 +175,7 @@
     <attacherJoints comboDuration="2">
         <attacherJointConfigurations>
             <attacherJointConfiguration>
-                <attacherJoint node="semitrailerAttacherJoint" jointType="semitrailer" allowsJointLimitMovement="false" allowsLowering="false" lowerRotLimit="8 125 15">
+                <attacherJoint node="semitrailerAttacherJoint" jointType="semitrailer" allowsJointLimitMovement="false" allowsLowering="false" lowerRotLimit="0.8 125 15">
                     <schema position="1 0" rotation="0" invertX="false" />
                 </attacherJoint>
             </attacherJointConfiguration>
@@ -200,7 +200,7 @@
                 <raycastNode node="cameraRaycastNode2"/>
                 <raycastNode node="cameraRaycastNode3"/>
             </camera>
-            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0.4" shadowFocusBox="shadowFocusBox" suspensionNodeIndex="2"/>
+            <camera node="indoorCamera1" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0.4" shadowFocusBox="shadowFocusBox" />
         </cameras>
 
         <characterNode node="playerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90" >
@@ -214,6 +214,18 @@
             <state node="playerRightFootTargetGas"   referenceNode="gasPedal" directionReferenceNode="playerRightFootTargetGasRef"/>
             <state node="playerRightFootTargetBrake"   referenceNode="brakePedal" directionReferenceNode="playerRightFootTargetBrakeRef"/>
         </characterTargetNodeModifier>
+
+        <passengerSeats>
+            <passengerSeat node="passengerSeat01" exitPoint="passengerSeat01ExitPoint" outdoorCameraIndex="1">
+                <camera node="passengerSeat01Camera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" positionSmoothingParameter="0" shadowFocusBox="shadowFocusBox"/>
+                <characterNode node="passengerSeat01PlayerSkin" cameraMinDistance="0.5" spineRotation="-90 0 90">
+                    <target ikChain="leftArm"   targetNode="passengerSeat01PlayerLeftHand" poseId="flatFingers"/>
+                    <target ikChain="rightArm"  targetNode="passengerSeat01PlayerRightHand" poseId="flatFingers"/>
+                    <target ikChain="leftFoot"  targetNode="passengerSeat01PlayerLeftFoot" />
+                    <target ikChain="rightFoot" targetNode="passengerSeat01PlayerRightFoot" />
+                </characterNode>
+            </passengerSeat>
+        </passengerSeats>
 
         <mirrors>
             <mirror node="mirrorDecal01" prio="1" />
@@ -550,6 +562,14 @@
         <i3dMapping id="wiperFrontArm01Part" node="0>0|7|5|0|0" />
         <i3dMapping id="wiperFrontArm02" node="0>0|7|5|1" />
         <i3dMapping id="wiperFrontArm02Part" node="0>0|7|5|1|0" />
+        <i3dMapping id="passengerSeat01" node="0>0|7|7|0" />
+        <i3dMapping id="passengerSeat01Camera" node="0>0|7|7|0|0" />
+        <i3dMapping id="passengerSeat01PlayerSkin" node="0>0|7|7|0|1" />
+        <i3dMapping id="passengerSeat01PlayerLeftFoot" node="0>0|7|7|0|2" />
+        <i3dMapping id="passengerSeat01PlayerRightFoot" node="0>0|7|7|0|3" />
+        <i3dMapping id="passengerSeat01ExitPoint" node="0>0|7|7|0|4" />
+        <i3dMapping id="passengerSeat01PlayerLeftHand" node="0>0|7|7|0|5" />
+        <i3dMapping id="passengerSeat01PlayerRightHand" node="0>0|7|7|0|6" />
         <i3dMapping id="aiCollisionNode" node="0>0|8|0" />
         <i3dMapping id="paint01_decal" node="0>0|9|0" />
         <i3dMapping id="paint02_decal" node="0>0|9|1" />

@@ -158,7 +158,7 @@
             <capacity fillType="MANURE" capacity="0" />
         </storage>
 
-         <unloadingStation supportsExtension="false" hideFromPricesMenu="true">
+         <unloadingStation supportsExtension="true" hideFromPricesMenu="true" storageRadius="65">
              <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" >
                 <baleTrigger triggerNode="baleTriggerStraw"/>
             </unloadTrigger>

@@ -18,7 +18,7 @@
         <rotation>0</rotation>
         <brand>CASEIH</brand>
         <category>sugarcaneVehicles</category>
-        <shopTranslationOffset>0 0.009 0</shopTranslationOffset>
+        <shopTranslationOffset>0 -0.009 0</shopTranslationOffset>
         <shopRotationOffset>-0.679 0 0</shopRotationOffset>
         <vertexBufferMemoryUsage>5818880</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>986624</indexBufferMemoryUsage>
@@ -33,7 +33,7 @@
         <filename>cheeky_a8800MR.i3d</filename>
         <sounds filename="$data/vehicles/caseIH/a8800MR/sounds/a8800MR.xml"/>
         <size width="4" length="13.5" height="6.7" lengthOffset="-1" />
-		<speedLimit value="10"/>
+        <speedLimit value="14.5" />
         <components>
             <component centerOfMass="0 0.9 0.05" solverIterationCount="20" mass="17430"/>
         </components>
@@ -46,19 +46,19 @@
             <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
                 <wheels autoRotateBackSpeed="6.0" speedDependentRotateBack="false" differentialIndex="1" ackermannSteeringIndex="1">
                     <wheel>
-                        <physics rotSpeed="-1" restLoad="4.6" repr="wheelFrontLeft"  radius="0.45" width="0.45" mass="0.1" frictionScale="2.25" initialCompression="30" suspTravel="0.40" spring="36" damper="50" />
+                        <physics rotSpeed="-1" restLoad="4.6" repr="wheelFrontLeft"  radius="0.45" width="0.45" mass="0.1" frictionScale="2.25" initialCompression="30" suspTravel="0.40" spring="36" damper="50" supportsWheelSink="false" />
                         <tire isCareWheel="false" />
                     </wheel>
                     <wheel>
-                        <physics rotSpeed="-1" restLoad="4.6" repr="wheelFrontRight" radius="0.45" width="0.45" mass="0.1" frictionScale="2.25" initialCompression="30" suspTravel="0.40" spring="36" damper="50" />
+                        <physics rotSpeed="-1" restLoad="4.6" repr="wheelFrontRight" radius="0.45" width="0.45" mass="0.1" frictionScale="2.25" initialCompression="30" suspTravel="0.40" spring="36" damper="50" supportsWheelSink="false" />
                         <tire isCareWheel="false" />
                     </wheel>
                     <wheel hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="1"  restLoad="4.6" repr="wheelBackLeft"   radius="0.47" width="0.45" mass="0.1" frictionScale="2.25" initialCompression="30" suspTravel="0.40" spring="37" damper="50" />
+                        <physics rotSpeed="1"  restLoad="4.6" repr="wheelBackLeft"   radius="0.47" width="0.45" mass="0.1" frictionScale="2.25" initialCompression="30" suspTravel="0.40" spring="37" damper="50" supportsWheelSink="false" />
                         <tire tireTrackAtlasIndex="5" isCareWheel="false"/>
                     </wheel>
                     <wheel hasTireTracks="true" hasParticles="true">
-                        <physics rotSpeed="1"  restLoad="4.6" repr="wheelBackRight"  radius="0.47" width="0.45" mass="0.1" frictionScale="2.25" initialCompression="30" suspTravel="0.40" spring="37" damper="50" />
+                        <physics rotSpeed="1"  restLoad="4.6" repr="wheelBackRight"  radius="0.47" width="0.45" mass="0.1" frictionScale="2.25" initialCompression="30" suspTravel="0.40" spring="37" damper="50" supportsWheelSink="false" />
                         <tire tireTrackAtlasIndex="5" isCareWheel="false"/>
                     </wheel>
                 </wheels>

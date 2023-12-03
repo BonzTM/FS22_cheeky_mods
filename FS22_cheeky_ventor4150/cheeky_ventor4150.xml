@@ -552,7 +552,9 @@
             <part node="unloadingArm01Part01"         startTime="5.0" endTime="5.5" startRot="0 0 0" endRot="0 0 102"/>
             <part node="unloadingArm01Part02"         startTime="5.0" endTime="5.5" startRot="0 0 0" endRot="0 0 -102"/>
             <part node="unloadingArm01"               startTime="5.5" endTime="8.5" startRot="0 0 0" endRot="0 0 -85"/>
-            <part node="unloadingArm02"               startTime="5.5" endTime="8.5" startRot="0 0 -65" endRot="0 0 -65"/>
+            <part node="unloadingArm02"               startTime="5.5" endTime="8.5" startRot="0 0 0" endRot="0 0 -65"/>
+            <part node="unloadingArm03"               startTime="5.5" endTime="8.5" startRot="0 0 0" endRot="0 0 0"/>
+            <part node="unloadingArm01Flap"           startTime="5.5" endTime="8.5" startTrans="0 0 0" endTrans="0 -0.025 -0.203"/>
             <part node="coverBackLeftFrame"           startTime="5" endTime="6" startRot="0 0 0" endRot="0 0 80"/>
             <part node="coverBackRightFrame"          startTime="5" endTime="6" startRot="0 0 0" endRot="0 0 -80"/>
             <part node="coverBackLeft"                startTime="5" endTime="6" startRot="0 0 0" endRot="0 0 -53"/>
@@ -698,13 +700,13 @@
     <cylindered>
         <movingTools>
             <movingTool node="transportWheels" wheelIndices="7 8"/>
-            <movingTool node="unloadingArm02" freezingPipeStates="0 1" foldMinLimit="0" foldMaxLimit="0.1" playSound="true">
+            <movingTool node="unloadingArm02" foldMinLimit="0" foldMaxLimit="0.1" playSound="true">
                 <controls axis="AXIS_PIPE2" invertAxis="true" mouseSpeedFactor="0.25" iconName="PIPE_END_ROTATE"/>
                 <rotation rotSpeed="10" rotAcceleration="150" rotMax="10" rotMin="-25" rotationAxis="3"/>
                 <dependentPart node="unloadingArm02Hydraulic" />
                 <dependentPart node="unloadingArm01Flap" />
             </movingTool>
-            <movingTool node="unloadingArm03" freezingPipeStates="0 1" foldMinLimit="0" foldMaxLimit="0.1" playSound="true" >
+            <movingTool node="unloadingArm03" foldMinLimit="0" foldMaxLimit="0.1" playSound="true" >
                 <controls axis="AXIS_PIPE" invertAxis="true" mouseSpeedFactor="0.25" iconName="PIPE_END_ROTATE" />
                 <rotation rotSpeed="20" rotAcceleration="150" rotMax="50" rotMin="0" rotationAxis="3"/>
                 <dependentPart node="unloadingArm03Hydraulic"/>
@@ -1126,26 +1128,11 @@
     </fillVolume>
 
     <pipe foldMinState="1" foldMaxState="1" foldMinLimit="0" foldMaxLimit="0.1" dischargeNodeIndex="1">
-        <states num="2" unloading="2" />
+        <states num="1" unloading="1" />
 
         <unloadingTriggers>
             <unloadingTrigger node="trailerTrigger"/>
         </unloadingTriggers>
-
-        <pipeNodes>
-            <pipeNode node="unloadingArm02" rotationSpeeds="0 0 12">
-                <state rotation="0 0 -65"/>
-                <state rotation="0 0 0"/>
-            </pipeNode>
-            <pipeNode node="unloadingArm03" rotationSpeeds="0 0 12">
-                <state rotation="0 0 0"/>
-                <state rotation="0 0 0"/>
-            </pipeNode>
-            <pipeNode node="unloadingArm01Flap" translationSpeeds="0 0.04 0.04">
-                <state translation="0 -0.025 -0.203"/>
-                <state translation="0 0 0"/>
-            </pipeNode>
-        </pipeNodes>
 
         <animationNodes>
             <animationNode class="ScrollingAnimation" node="unloadingBelt"   scrollSpeed="-0.8" scrollLength="10" shaderParameterName="offsetUV" shaderParameterComponent="2" turnOnFadeTime="2" turnOffFadeTime="3"/>
@@ -1153,7 +1140,7 @@
     </pipe>
 
     <dischargeable>
-        <dischargeNode node="raycastNode" emptySpeed="1500" fillUnitIndex="1" maxDistance="6">
+        <dischargeNode node="raycastNode" emptySpeed="750" fillUnitIndex="1" maxDistance="6">
             <info width="2" length="1" useRaycastHitPosition="true"/>
             <raycast useWorldNegYDirection="true" yOffset="1"/>
             <effects>

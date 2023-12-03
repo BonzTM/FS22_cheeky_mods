@@ -54,12 +54,16 @@
         <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
         <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
         <clearArea startNode="clearArea3Start" widthNode="clearArea3Width" heightNode="clearArea3Height"/>
+        <clearArea startNode="clearArea4Start" widthNode="clearArea4Width" heightNode="clearArea4Height"/>
+        <clearArea startNode="clearArea5Start" widthNode="clearArea5Width" heightNode="clearArea5Height"/>
     </clearAreas>
 
     <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
         <levelAreas>
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
             <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="dirt"/>
+            <levelArea startNode="levelArea3Start" widthNode="levelArea3Width" heightNode="levelArea3Height" groundType="dirt"/>
+            <levelArea startNode="levelArea4Start" widthNode="levelArea4Width" heightNode="levelArea4Height" groundType="dirt"/>
         </levelAreas>
 
         <paintAreas>
@@ -579,12 +583,24 @@
         <i3dMapping id="clearArea3Start" node="0>16|2" />
         <i3dMapping id="clearArea3Width" node="0>16|2|0" />
         <i3dMapping id="clearArea3Height" node="0>16|2|1" />
+        <i3dMapping id="clearArea4Start" node="0>16|3" />
+        <i3dMapping id="clearArea4Width" node="0>16|3|0" />
+        <i3dMapping id="clearArea4Height" node="0>16|3|1" />
+        <i3dMapping id="clearArea5Start" node="0>16|4" />
+        <i3dMapping id="clearArea5Width" node="0>16|4|0" />
+        <i3dMapping id="clearArea5Height" node="0>16|4|1" />
         <i3dMapping id="levelArea1Start" node="0>17|0" />
         <i3dMapping id="levelArea1Width" node="0>17|0|0" />
         <i3dMapping id="levelArea1Height" node="0>17|0|1" />
         <i3dMapping id="levelArea2Start" node="0>17|1" />
         <i3dMapping id="levelArea2Width" node="0>17|1|0" />
         <i3dMapping id="levelArea2Height" node="0>17|1|1" />
+        <i3dMapping id="levelArea3Start" node="0>17|2" />
+        <i3dMapping id="levelArea3Width" node="0>17|2|0" />
+        <i3dMapping id="levelArea3Height" node="0>17|2|1" />
+        <i3dMapping id="levelArea4Start" node="0>17|3" />
+        <i3dMapping id="levelArea4Width" node="0>17|3|0" />
+        <i3dMapping id="levelArea4Height" node="0>17|3|1" />
         <i3dMapping id="indoorArea1Start" node="0>18|0" />
         <i3dMapping id="indoorArea1Width" node="0>18|0|0" />
         <i3dMapping id="indoorArea1Height" node="0>18|0|1" />

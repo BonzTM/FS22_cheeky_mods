@@ -89,7 +89,7 @@
         </plants>
 
         <plantSpaces>
-            <spacesParent node="plantNodes" />
+            <spacesParent node="plantNodes" useRandomYRot="true" />
         </plantSpaces>
 
         <sounds>
@@ -132,6 +132,8 @@
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
             <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WATER" aiNode="unloadTriggerAINode" />
         </sellingStation>
+
+        <loadingStation fillTypes="WATER" supportsExtension="true" />
 
         <palletSpawner node="palletSpawner">
             <spawnPlaces>
