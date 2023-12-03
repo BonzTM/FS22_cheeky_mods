@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky LEXION 8900</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded LEXION 8900 for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_lexion8000.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_lexion8000.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_LEXION8000">
+            <en>LEXION 8900</en>
+        </text>
+    </l10n>	 
+</modDesc>

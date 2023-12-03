@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards</author>
+	
+    <version>1.0.0.0</version>
+	
+    <title>
+        <en>Cheeky X9 1100</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded X9 1100 for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>store_x9_1100.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="cheeky_x9_1100.xml"/>
+    </storeItems>
+	
+	 <multiplayer supported="true" />
+
+	<l10n>
+        <text name="shopItem_X9_1100">
+            <en>X9 1100</en>
+        </text>
+    </l10n>	 
+</modDesc>

@@ -3,7 +3,7 @@
 
     <author>Cheeky B#$!ards</author>
 	
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
 	
     <title>
         <en>Cheeky Ideal</en>
@@ -17,7 +17,9 @@
 	
     <storeItems>
         <storeItem xmlFilename="cheeky_ideal.xml"/>
-        <storeItem xmlFilename="cheeky_ideal_massey.xml"/>
+        <storeItem xmlFilename="cheeky_MF_ideal.xml"/>
+        <storeItem xmlFilename="cheeky_idealPL.xml"/>
+        <storeItem xmlFilename="cheeky_MF_idealPL.xml"/>
     </storeItems>
 	
 	 <multiplayer supported="true" />

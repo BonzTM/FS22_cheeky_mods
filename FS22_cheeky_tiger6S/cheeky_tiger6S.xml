@@ -15,7 +15,7 @@
             <function>$l10n_function_combineNeedsCutter</function>
         </functions>
         <image>store_tiger6S.png</image>
-        <price>499000</price>
+        <price>549000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>ROPA</brand>
@@ -784,7 +784,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="sugarBeet" capacity="64500" >
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="sugarBeet" capacity="69900" >
                         <fillMassNode node="tiger6_back_component2"/>
                         <exactFillRootNode node="exactFillRootNode" />
                         <alarmTriggers>

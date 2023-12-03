@@ -18,7 +18,7 @@
             <function>$l10n_function_combineNeedsCutter</function>
         </functions>
         <image>store_axialFlow250.png</image>
-        <price>410500</price>
+        <price>449500</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>CASEIH</brand>
@@ -911,9 +911,11 @@
             <rotationNode node="attacherJointRot" lowerRotation="25 0 0" upperRotation="-14 0 0" startRotation="0 0 0"/>
             <bottomArm rotationNode="feeder" referenceNode="attacherJointCutter" startRotation="0 0 0"/>
             <schema position="1 0" rotation="0" invertX="true" />
+            <attachSound template="HEADER_ATTACH_01" linkNode="attacherJointCutter"/>
         </attacherJoint>
         <attacherJoint node="trailerAttacherJointBack" jointType="trailer" lowerRotLimit="25 75 50" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
             <schema position="1 0" rotation="0" invertX="false"/>
+            <attachSound template="ATTACH_01" linkNode="trailerAttacherJointBack"/>
         </attacherJoint>
     </attacherJoints>
 

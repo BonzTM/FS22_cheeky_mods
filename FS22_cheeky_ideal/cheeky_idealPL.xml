@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="combineDrivable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <parentFile xmlFilename="cheeky_ideal.xml">
+        <attributes>
+            <set path="vehicle.storeData.brand" value="FENDT"/>
+            <set path="vehicle.storeData.name" value="IDEAL ParaLevel"/>
+            <set path="vehicle.storeData.price" value="415000"/>
+            <set path="vehicle.storeData.image" value="$data/vehicles/fendt/ideal/store_idealPL.png"/>
+            <set path="vehicle.storeData.specs.capacity" value="12500"/>
+
+            <set path="vehicle.storeData.specs.combination(0)#xmlFilename" value="$data/vehicles/fendt/powerFlow30FT/powerFlow30FT.xml"/>
+            <set path="vehicle.storeData.specs.combination(1)#xmlFilename" value="$data/vehicles/capello/diamant8/diamant8.xml"/>
+            <set path="vehicle.storeData.specs.combination(2)#xmlFilename" value="$data/vehicles/capello/helianthus5700/helianthus5700.xml"/>
+            <remove path="vehicle.storeData.specs.combination(3)" />
+
+            <set path="vehicle.storeData.shopTranslationOffset" value="0 0.142 0"/>
+            <set path="vehicle.storeData.shopRotationOffset" value="-0.989 0 0"/>
+
+            <set path="vehicle.designConfigurations.designConfiguration(0)#isSelectable" value="true"/>
+            <set path="vehicle.designConfigurations.designConfiguration(1)#isSelectable" value="false"/>
+
+            <set path="vehicle.design2Configurations.design2Configuration(1)#isSelectable" value="false"/>
+
+            <set path="vehicle.configurationSets.configurationSet(0)#name" value="IDEAL 7PL"/>
+            <set path="vehicle.configurationSets.configurationSet(0).configuration(0)#index" value="5"/>
+            <set path="vehicle.configurationSets.configurationSet(0).configuration(1)#index" value="1"/>
+            <set path="vehicle.configurationSets.configurationSet(0).configuration(1)#name" value="fillUnit"/>
+            <set path="vehicle.configurationSets.configurationSet(1)#name" value="IDEAL 8PL"/>
+            <set path="vehicle.configurationSets.configurationSet(1).configuration(0)#index" value="6"/>
+            <set path="vehicle.configurationSets.configurationSet(1).configuration(1)#index" value="1"/>
+            <set path="vehicle.configurationSets.configurationSet(1).configuration(1)#name" value="fillUnit"/>
+            <set path="vehicle.configurationSets.configurationSet(2)#name" value="IDEAL 9PL"/>
+            <set path="vehicle.configurationSets.configurationSet(2)#isDefault" value="false"/>
+            <set path="vehicle.configurationSets.configurationSet(2).configuration(0)#index" value="7"/>
+            <set path="vehicle.configurationSets.configurationSet(2).configuration(1)#index" value="1"/>
+            <set path="vehicle.configurationSets.configurationSet(2).configuration(1)#name" value="fillUnit"/>
+
+            <remove path="vehicle.configurationSets.configurationSet(3)" /> <!-- 10T -->
+
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(3)#hp" value="647"/>
+
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(7)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(8)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(9)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(10)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(11)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(12)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(13)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(14)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(15)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(16)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(17)#isSelectable" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(18)#isSelectable" />
+
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0)" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0)" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0)" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0)" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0)" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0)" />
+            <remove path="vehicle.wheels.wheelConfigurations.wheelConfiguration(0)" />
+         </attributes>
+    </parentFile>
+
+    <!-- ONLY FOR ICON GENERATION -->
+    <storeData>
+        <name>IDEAL ParaLevel</name>
+        <image>store_idealPL.png</image>
+        <brand>FENDT</brand>
+        <category>harvesters</category>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+</vehicle>

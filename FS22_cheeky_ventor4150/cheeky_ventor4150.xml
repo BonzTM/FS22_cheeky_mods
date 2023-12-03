@@ -12,7 +12,7 @@
             <function>$l10n_function_combine</function>
         </functions>
         <image>store_ventor4150.png</image>
-        <price>599000</price>
+        <price>649000</price>
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>GRIMME</brand>
@@ -1089,7 +1089,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="potato" capacity="33750">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="potato" capacity="39750">
                         <fillMassNode node="ventor4150_main_component1"/>
                         <exactFillRootNode node="exactFillRootNode" />
                         <alarmTriggers>
