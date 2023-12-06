@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="cowHusbandryFeedingRobot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_shopItem_CowBarnBigVector</name>
+        <name>Cheeky Cow Barn (Large) w/ Robot</name>
         <image>store_cowBarnBigVector.png</image>
-        <price>1806250</price>
+        <price>1499000</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>
         </functions>

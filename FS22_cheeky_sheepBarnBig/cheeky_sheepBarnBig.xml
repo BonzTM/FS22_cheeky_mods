@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="sheepHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_shopItem_SheepBarnBig</name>
+        <name>Cheeky Sheep Barn</name>
         <image>store_sheepBarnBig.png</image>
         <price>242500</price>
         <functions>

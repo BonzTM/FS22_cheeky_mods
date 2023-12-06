@@ -3,7 +3,7 @@
 
     <author>Cheeky B#$!ards</author>
 	
-    <version>1.1.0.0</version>
+    <version>1.2.1.0</version>
 	
     <title>
         <en>Cheeky Pig Barn</en>
@@ -19,11 +19,5 @@
         <storeItem xmlFilename="cheeky_pigBarnBig.xml"/>
     </storeItems>
 	
-	 <multiplayer supported="true" />
-
-	<l10n>
-        <text name="shopItem_PigBarnBig">
-            <en>Cheeky Pig Barn</en>
-        </text>
-    </l10n>	 
+	<multiplayer supported="true" />
 </modDesc>

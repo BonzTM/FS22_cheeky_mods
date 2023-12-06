@@ -3,7 +3,7 @@
 
     <author>Cheeky B#$!ards</author>
 	
-    <version>1.0.0.0</version>
+    <version>1.2.1.0</version>
 	
     <title>
         <en>Cheeky Spinnery</en>
@@ -19,11 +19,10 @@
         <storeItem xmlFilename="cheeky_spinneryEU.xml"/>
     </storeItems>
 	
-	 <multiplayer supported="true" />
-
-	<l10n>
-        <text name="shopItem_SpinneryEU">
-            <en>Cheeky Spinnery</en>
-        </text>
-    </l10n>	 
+	<multiplayer supported="true" />
+ 
+    <dependencies>
+        <dependency>FS22_netWrap_addon</dependency>
+        <dependency>FS22_twine_addon</dependency>
+    </dependencies>
 </modDesc>

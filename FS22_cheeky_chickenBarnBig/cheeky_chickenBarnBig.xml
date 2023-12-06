@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="chickenHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_shopItem_ChickenBarnBig</name>
+        <name>Cheeky Chicken Coop</name>
         <image>store_chickenBarnBig.png</image>
         <price>197500</price>
         <functions>

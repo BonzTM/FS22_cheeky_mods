@@ -3,7 +3,7 @@
 
     <author>Cheeky B#$!ards</author>
 	
-    <version>1.1.0.0</version>
+    <version>1.2.1.0</version>
 	
     <title>
         <en>Cheeky Cow Barns (Large)</en>
@@ -13,21 +13,12 @@
 		<en><![CDATA[5x Modded cow barns for the Cheeky Bastards.]]></en>
 	</description>	
 
-    <iconFilename>both_cowbarns.dds</iconFilename>
+    <iconFilename>store_cowBarnBig.dds</iconFilename>
 	
     <storeItems>
         <storeItem xmlFilename="cheeky_cowBarnBig.xml"/>
         <storeItem xmlFilename="cheeky_cowBarnBigVector.xml"/>
     </storeItems>
 	
-	 <multiplayer supported="true" />
-
-	<l10n>
-        <text name="shopItem_CowBarnBig">
-            <en>Cheeky Cow Barn (Large)</en>
-        </text>
-        <text name="shopItem_CowBarnBigVector">
-            <en>Cheeky Cow Barn (Large) w/ Robot</en>
-        </text>
-    </l10n>	 
+	<multiplayer supported="true" />
 </modDesc>

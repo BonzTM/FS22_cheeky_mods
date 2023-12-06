@@ -3,7 +3,7 @@
 
     <author>Cheeky B#$!ards</author>
 	
-    <version>1.0.0.0</version>
+    <version>1.2.1.0</version>
 	
     <title>
         <en>Cheeky Sawmill</en>
@@ -13,17 +13,11 @@
 		<en><![CDATA[10x Modded sawmill for the Cheeky Bastards.]]></en>
 	</description>	
 
-    <iconFilename>icon_sawmills.dds</iconFilename>
+    <iconFilename>store_sawmillUS.dds</iconFilename>
 	
     <storeItems>
         <storeItem xmlFilename="cheeky_sawmill.xml"/>
     </storeItems>
 	
-	 <multiplayer supported="true" />
-
-	<l10n>
-        <text name="shopItem_Sawmill">
-            <en>Cheeky Sawmill</en>
-        </text>
-    </l10n>	 
+	<multiplayer supported="true" />	 
 </modDesc>

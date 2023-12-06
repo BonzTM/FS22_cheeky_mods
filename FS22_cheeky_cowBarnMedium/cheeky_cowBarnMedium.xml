@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="cowHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_shopItem_CowBarnMedium</name>
+        <name>Cheeky Cow Barn (Medium)</name>
         <image>store_cowBarnMedium.png</image>
-        <price>635000</price>
+        <price>550000</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>
         </functions>
