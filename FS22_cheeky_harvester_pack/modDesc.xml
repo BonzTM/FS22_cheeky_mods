@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards; GIANTS Software</author>
+	
+    <version>1.3.0.0</version>
+	
+    <title>
+        <en>Cheeky Harvester Pack</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded Harvesters for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>textures/store_x9_1100.png</iconFilename>
+	
+    <storeItems>
+        <!-- harvesters -->
+        <storeItem xmlFilename="xml/cheeky_a8800MR.xml"/>
+        <storeItem xmlFilename="xml/cheeky_axialFlow250.xml"/>
+        <storeItem xmlFilename="xml/cheeky_cp690.xml"/>
+        <storeItem xmlFilename="xml/cheeky_crSeries.xml"/>
+        <storeItem xmlFilename="xml/cheeky_ideal.xml"/>
+        <storeItem xmlFilename="xml/cheeky_ideal_mf.xml"/>
+        <storeItem xmlFilename="xml/cheeky_idealPL.xml"/>
+        <storeItem xmlFilename="xml/cheeky_idealPL_mf.xml"/>
+        <storeItem xmlFilename="xml/cheeky_lexion8000.xml"/>
+        <storeItem xmlFilename="xml/cheeky_moduleExpress635.xml"/>
+        <storeItem xmlFilename="xml/cheeky_tiger6S.xml"/>
+        <storeItem xmlFilename="xml/cheeky_ventor4150.xml"/>
+        <storeItem xmlFilename="xml/cheeky_x9_1100.xml"/>
+        <!-- implements -->
+        <storeItem xmlFilename="xml/cheeky_rrXL9.xml"/>
+    </storeItems>
+	
+	<multiplayer supported="true" />
+</modDesc>

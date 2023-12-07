@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards; GIANTS Software</author>
+	
+    <version>1.3.0.0</version>
+	
+    <title>
+        <en>Cheeky Vehicles Pack</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded vehicles for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>textures/store_anthem.dds</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="xml/cheeky_anthem.xml"/>
+        <storeItem xmlFilename="xml/cheeky_anthemBlack.xml"/>
+        <storeItem xmlFilename="xml/cheeky_pinnacle.xml"/>
+        <storeItem xmlFilename="xml/cheeky_superliner1979.xml"/>        
+    </storeItems>
+	
+	<multiplayer supported="true" />
+
+</modDesc>

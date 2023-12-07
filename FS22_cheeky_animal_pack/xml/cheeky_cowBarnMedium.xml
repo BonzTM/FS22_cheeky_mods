@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="cowHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Cheeky Cow Barn (Medium)</name>
+        <image>textures/store_cowBarnMedium.png</image>
+        <price>550000</price>
+        <functions>
+            <function>$l10n_function_animalPenCow</function>
+        </functions>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>150</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>RUDOLFHOERMANN</brand>
+        <species>placeable</species>
+        <category>animalpens</category>
+        <brush>
+            <type>placeable</type>
+            <category>animals</category>
+            <tab>cows</tab>
+        </brush>
+        <vertexBufferMemoryUsage>2978048</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>392704</indexBufferMemoryUsage>
+        <textureMemoryUsage>10223616</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="50" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/rudolfHormann/cowBarnMedium/cowBarnMedium.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+            <testArea startNode="testArea2Start" endNode="testArea2End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+            <placeLayered template="cowLayer" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
+        </levelAreas>
+
+        <paintAreas>
+            <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="grass" />
+        </paintAreas>
+    </leveling>
+
+    <foliageAreas>
+        <foliageArea startNode="foliageArea1Start" widthNode="foliageArea1Width" heightNode="foliageArea1Height" decoFoliage="grassShort" />
+        <foliageArea startNode="foliageArea2Start" widthNode="foliageArea2Width" heightNode="foliageArea2Height" decoFoliage="grassShort" />
+    </foliageAreas>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+        <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height"/>
+    </indoorAreas>
+
+    <triggerMarkers>
+        <triggerMarker node="markerMilk" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerFood" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIcons.xml" id="ANIMALS" />
+        <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+    </triggerMarkers>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="COW" teleportNode="teleportNode" />
+    </hotspots>
+
+    <animatedObjects>
+        <animatedObject saveId="milk" >
+            <animation duration="1.5">
+                <part node="doorMilkLeft">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -120 0"/>
+                </part>
+                <part node="doorMilkRight">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 120 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="doorMilkTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="doorMilkBase" template="woodBigDoorLoop" />
+                <posEnd linkNode="doorMilkBase" template="metalDoorsOpen" />
+                <negEnd linkNode="doorMilkBase" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoor1" >
+            <animation duration="5">
+                <part node="rollingDoor1ColBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.8 0"/>
+                </part>
+                <part node="rollingDoor1ColTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.55" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.7 0"/>
+                </part>
+                <part node="rollingDoor1">
+                    <keyFrame time="0.0" translation="0 0 0" />
+                    <keyFrame time="1.0" translation="0 3.85 0" />
+                </part>
+                <shader node="rollingDoor1" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - - " />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor1Base" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor1Base" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor1Base" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="rollingDoor2" >
+            <animation duration="5">
+                <part node="rollingDoor2ColBottom">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.8 0"/>
+                </part>
+                <part node="rollingDoor2ColTop">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="0.55" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 1.7 0"/>
+                </part>
+                <part node="rollingDoor2">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 3.85 0"/>
+                </part>
+                <shader node="rollingDoor2" parameterName="visibilityCutThreshold">
+                    <keyFrame time="0.0" values="0 - - - " />
+                    <keyFrame time="1.0" values="0.94 - - -" />
+                </shader>
+            </animation>
+            <controls triggerNode="rollingDoor2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="rollingDoor2Base" template="rollingGarageDoor" />
+                <posEnd linkNode="rollingDoor2Base" template="slidingGateMetalOpen" />
+                <negEnd linkNode="rollingDoor2Base" template="slidingGateMetalClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door1" >
+            <animation duration="1.5">
+                <part node="door1Left">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -98 0"/>
+                </part>
+                <part node="door1Right">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 98 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door1Base" template="woodBigDoorLoop" />
+                <posEnd linkNode="door1Base" template="metalDoorsOpen" />
+                <negEnd linkNode="door1Base" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door2" >
+            <animation duration="1.5">
+                <part node="door2Left">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -98 0"/>
+                </part>
+                <part node="door2Right">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 98 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door2Base" template="woodBigDoorLoop" />
+                <posEnd linkNode="door2Base" template="metalDoorsOpen" />
+                <negEnd linkNode="door2Base" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door3" >
+            <dependency animatedObjectIndex="8" minTime="0" maxTime="0" />
+            <animation duration="1.5">
+                <part node="door3Left">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -98 0"/>
+                </part>
+                <part node="door3Right">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 98 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door3Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door3Base" template="woodBigDoorLoop" />
+                <posEnd linkNode="door3Base" template="metalDoorsOpen" />
+                <negEnd linkNode="door3Base" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door4">
+            <animation duration="1.5">
+                <part node="door4">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -100 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door4Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door4Base" template="metalDoorsLoop" />
+                <posEnd linkNode="door4Base" template="metalDoorsOpen" />
+                <negEnd linkNode="door4Base" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="slideDoor" >
+            <dependency animatedObjectIndex="6" minTime="0" maxTime="0" />
+            <animation duration="1.5">
+                <part node="slideDoor">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="0 0 3.95"/>
+                </part>
+            </animation>
+            <controls triggerNode="slideDoorTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving linkNode="slideDoorBase" template="slidingGateWoodLoop" volumeScale="0.6" />
+                <posEnd linkNode="slideDoorBase" template="woodDoorOpen" />
+                <negEnd linkNode="slideDoorBase" template="woodDoorClose" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="lightSwitch" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+        <dynamicallyLoadedPart node="0" linkNode="controlBox" filename="$data/placeables/rudolfHormann/controlPanel/controlPanel.i3d">
+            <objectChange node="0|0" rotationActive="0 -120 0"/>
+            <objectChange node="0|1" rotationActive="0 120 0"/>
+        </dynamicallyLoadedPart>
+        <dynamicallyLoadedPart node="0" linkNode="milkContainer" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="$data/shared/assets/lights/terraLed/light150W.xml" linkNode="lightNode01" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/light150W.xml" linkNode="lightNode02" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/light150W.xml" linkNode="lightNode03" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/light150W.xml" linkNode="lightNode04" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/light150W.xml" linkNode="lightNode05" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/light150W.xml" linkNode="lightNode06" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/light150W.xml" linkNode="lightNode07" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/light150W.xml" linkNode="lightNode08" groupIndex="1" color="1 0 0" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight01" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="tubeLight02" groupIndex="1"/>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <husbandry saveId="Animals_COW" hasStatistics="false">
+        <storage node="storage" fillTypes="LIQUIDMANURE MILK STRAW MANURE" isExtension="false">
+            <capacity fillType="LIQUIDMANURE" capacity="281250" />
+            <capacity fillType="MILK" capacity="168750" />
+            <capacity fillType="STRAW" capacity="106875" />
+            <capacity fillType="MANURE" capacity="0" />
+        </storage>
+
+        <unloadingStation supportsExtension="true" storageRadius="50" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" />
+            <unloadTrigger fillTypes="MANURE MILK LIQUIDMANURE" />
+        </unloadingStation>
+
+        <loadingStation supportsExtension="true" storageRadius="50">
+            <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure" />
+            <loadTrigger triggerNode="milkTrigger" fillTypes="MILK" fillLitersPerSecond="2000" aiNode="aiLoadingNodeMilk"/>
+        </loadingStation>
+
+        <animals type="COW" maxNumAnimals="225" maxNumVisualAnimals="20">
+            <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/cowBarnMedium/navigationMesh.i3d" />
+            <loadingTrigger node="loadingTrigger" />
+        </animals>
+
+        <food capacity="168750" >
+            <foodPlaces>
+                <foodPlace node="foodPlace1" />
+                <foodPlace node="foodPlace2" />
+                <foodPlace node="foodPlace3" />
+                <foodPlace node="foodPlace4" />
+                <foodPlace node="foodPlace5" />
+                <foodPlace node="foodPlace6" />
+                <foodPlace node="foodPlace7" />
+                <foodPlace node="foodPlace8" />
+                <foodPlace node="foodPlace9" />
+            </foodPlaces>
+            <dynamicFoodPlane node="fillVolumeFood" defaultFillType="forage"/>
+            <feedingTrough exactFillRootNode="exactFillRootNodeFood">
+                <baleTrigger triggerNode="baleTrigger"/>
+            </feedingTrough>
+        </food>
+
+        <liquidManure />
+
+        <milk>
+            <milkingRobots>
+                <milkingRobot linkNode="milkingRobot1" class="MilkingRobot" filename="$data/placeables/lely/astronautA5/astronautA5.xml" />
+            </milkingRobots>
+        </milk>
+
+        <water automaticWaterSupply="true" />
+
+        <straw>
+            <manure factor="1.5" />
+            <strawPlane node="strawPlane" minY="-0.185" maxY="0.0" colorChange="false" />
+        </straw>
+
+        <fences>
+            <fence filename="$data/placeables/lizard/fencesFarm/cowFence/cowFenceSingleton.xml" hasStartPole="true" hasEndPole="true">
+                <node node="fence1Node1" />
+                <node node="fence1Node2" />
+                <node node="fence1Node3" />
+                <node node="fence1Node4" />
+            </fence>
+        </fences>
+    </husbandry>
+
+    <colorable>
+        <nodes>
+            <node node="cowBarnMedium_vis" />
+        </nodes>
+
+        <colors>
+            <color value="RUDOLFHOERMANN_GREEN" />
+            <color value="RUDOLFHOERMANN_BEIGE" />
+            <color value="RUDOLFHOERMANN_RED" />
+            <color value="RUDOLFHOERMANN_BLUE" />
+            <color value="RUDOLFHOERMANN_DARKGREY" />
+            <color value="RUDOLFHOERMANN_LIGHTGREY" />
+            <color value="RUDOLFHOERMANN_WHITEALU" />
+            <color value="RUDOLFHOERMANN_GREYALU" />
+            <color value="RUDOLFHOERMANN_OXIDRED" />
+            <color value="RUDOLFHOERMANN_WOODDARK" />
+            <color value="RUDOLFHOERMANN_WOODBRIGHT" />
+            <color value="RUDOLFHOERMANN_LIGHTGREEN" />
+            <color value="RUDOLFHOERMANN_BROWN" />
+            <color value="RUDOLFHOERMANN_DARKBEIGE" />
+        </colors>
+    </colorable>
+
+    <i3dMappings>
+        <i3dMapping id="teleportNode" node="0>0" />
+        <i3dMapping id="fillVolumeFood" node="0>1|0" />
+        <i3dMapping id="exactFillRootNodeFood" node="0>1|1" />
+        <i3dMapping id="foodPlace1" node="0>1|2|0" />
+        <i3dMapping id="foodPlace2" node="0>1|2|1" />
+        <i3dMapping id="foodPlace3" node="0>1|2|2" />
+        <i3dMapping id="foodPlace4" node="0>1|2|3" />
+        <i3dMapping id="foodPlace5" node="0>1|2|4" />
+        <i3dMapping id="foodPlace6" node="0>1|2|5" />
+        <i3dMapping id="foodPlace7" node="0>1|2|6" />
+        <i3dMapping id="foodPlace8" node="0>1|2|7" />
+        <i3dMapping id="foodPlace9" node="0>1|2|8" />
+        <i3dMapping id="baleTrigger" node="0>1|3" />
+        <i3dMapping id="doorMilkBase" node="0>2|0" />
+        <i3dMapping id="doorMilkLeft" node="0>2|0|0" />
+        <i3dMapping id="doorMilkRight" node="0>2|0|1" />
+        <i3dMapping id="doorMilkTrigger" node="0>2|0|2" />
+        <i3dMapping id="rollingDoor1Base" node="0>2|1" />
+        <i3dMapping id="rollingDoor1ColBottom" node="0>2|1|0" />
+        <i3dMapping id="rollingDoor1ColTop" node="0>2|1|1" />
+        <i3dMapping id="rollingDoor1" node="0>2|1|2" />
+        <i3dMapping id="rollingDoor1Trigger" node="0>2|1|3" />
+        <i3dMapping id="rollingDoor2Base" node="0>2|2" />
+        <i3dMapping id="rollingDoor2ColBottom" node="0>2|2|0" />
+        <i3dMapping id="rollingDoor2ColTop" node="0>2|2|1" />
+        <i3dMapping id="rollingDoor2" node="0>2|2|2" />
+        <i3dMapping id="rollingDoor2Trigger" node="0>2|2|3" />
+        <i3dMapping id="door1Base" node="0>2|3" />
+        <i3dMapping id="door1Left" node="0>2|3|0" />
+        <i3dMapping id="door1Right" node="0>2|3|1" />
+        <i3dMapping id="door1Trigger" node="0>2|3|2" />
+        <i3dMapping id="door2Base" node="0>2|4" />
+        <i3dMapping id="door2Left" node="0>2|4|0" />
+        <i3dMapping id="door2Right" node="0>2|4|1" />
+        <i3dMapping id="door2Trigger" node="0>2|4|2" />
+        <i3dMapping id="door3Base" node="0>2|5" />
+        <i3dMapping id="door3Left" node="0>2|5|0" />
+        <i3dMapping id="door3Right" node="0>2|5|1" />
+        <i3dMapping id="door3Trigger" node="0>2|5|2" />
+        <i3dMapping id="door4Base" node="0>2|6" />
+        <i3dMapping id="door4" node="0>2|6|0" />
+        <i3dMapping id="door4Trigger" node="0>2|6|1" />
+        <i3dMapping id="slideDoorBase" node="0>2|7" />
+        <i3dMapping id="slideDoor" node="0>2|7|0" />
+        <i3dMapping id="slideDoorTrigger" node="0>2|7|1" />
+        <i3dMapping id="storage" node="0>3" />
+        <i3dMapping id="strawPlane" node="0>4|0" />
+        <i3dMapping id="exactFillRootNodeStraw" node="0>4|1" />
+        <i3dMapping id="milkTrigger" node="0>5|0" />
+        <i3dMapping id="milkingRobot1" node="0>5|1" />
+        <i3dMapping id="aiLoadingNodeMilk" node="0>5|2" />
+        <i3dMapping id="milkContainer" node="0>5|3" />
+        <i3dMapping id="liquidManureTank" node="0>6" />
+        <i3dMapping id="liquidManureTrigger" node="0>6|0" />
+        <i3dMapping id="aiLoadingNodeLiquidManure" node="0>6|1" />
+        <i3dMapping id="realLightsLow" node="0>7|0|0" />
+        <i3dMapping id="realLightsHigh" node="0>7|0|1" />
+        <i3dMapping id="linkedLights" node="0>7|1" />
+        <i3dMapping id="lightNode01" node="0>7|1|1" />
+        <i3dMapping id="lightNode02" node="0>7|1|2" />
+        <i3dMapping id="lightNode03" node="0>7|1|3" />
+        <i3dMapping id="lightNode04" node="0>7|1|4" />
+        <i3dMapping id="lightNode05" node="0>7|1|5" />
+        <i3dMapping id="lightNode06" node="0>7|1|6" />
+        <i3dMapping id="lightNode07" node="0>7|1|7" />
+        <i3dMapping id="lightNode08" node="0>7|1|8" />
+        <i3dMapping id="tubeLight01" node="0>7|1|9" />
+        <i3dMapping id="tubeLight02" node="0>7|1|10" />
+        <i3dMapping id="lightSwitch" node="0>7|2" />
+        <i3dMapping id="waterPlace1" node="0>8|0" />
+        <i3dMapping id="navigationRootNode" node="0>9" />
+        <i3dMapping id="markerMilk" node="0>10|0" />
+        <i3dMapping id="markerAnimals" node="0>10|1" />
+        <i3dMapping id="markerLiquidManure" node="0>10|2" />
+        <i3dMapping id="markerFood" node="0>10|3" />
+        <i3dMapping id="fence1Node1" node="0>11|0|0" />
+        <i3dMapping id="fence1Node2" node="0>11|0|1" />
+        <i3dMapping id="fence1Node3" node="0>11|0|2" />
+        <i3dMapping id="fence1Node4" node="0>11|0|3" />
+        <i3dMapping id="infoTrigger" node="0>12" />
+        <i3dMapping id="loadingTrigger" node="0>13" />
+        <i3dMapping id="clearArea1Start" node="0>14|0" />
+        <i3dMapping id="clearArea1Width" node="0>14|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>14|0|1" />
+        <i3dMapping id="clearArea2Start" node="0>14|1" />
+        <i3dMapping id="clearArea2Width" node="0>14|1|0" />
+        <i3dMapping id="clearArea2Height" node="0>14|1|1" />
+        <i3dMapping id="levelArea1Start" node="0>15|0" />
+        <i3dMapping id="levelArea1Width" node="0>15|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>15|0|1" />
+        <i3dMapping id="paintArea1Start" node="0>15|1" />
+        <i3dMapping id="paintArea1Width" node="0>15|1|0" />
+        <i3dMapping id="paintArea1Height" node="0>15|1|1" />
+        <i3dMapping id="foliageArea1Start" node="0>16|0" />
+        <i3dMapping id="foliageArea1Width" node="0>16|0|0" />
+        <i3dMapping id="foliageArea1Height" node="0>16|0|1" />
+        <i3dMapping id="foliageArea2Start" node="0>16|1" />
+        <i3dMapping id="foliageArea2Width" node="0>16|1|0" />
+        <i3dMapping id="foliageArea2Height" node="0>16|1|1" />
+        <i3dMapping id="indoorArea1Start" node="0>17|0" />
+        <i3dMapping id="indoorArea1Width" node="0>17|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>17|0|1" />
+        <i3dMapping id="indoorArea2Start" node="0>17|1" />
+        <i3dMapping id="indoorArea2Width" node="0>17|1|0" />
+        <i3dMapping id="indoorArea2Height" node="0>17|1|1" />
+        <i3dMapping id="testArea1Start" node="0>18|0" />
+        <i3dMapping id="testArea1End" node="0>18|0|0" />
+        <i3dMapping id="testArea2Start" node="0>18|1" />
+        <i3dMapping id="testArea2End" node="0>18|1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>19|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>19|0|0" />
+        <i3dMapping id="controlBox" node="0>21" />
+        <i3dMapping id="snow" node="0>22|0|10|0" />
+        <i3dMapping id="icicles" node="0>22|0|10|1" />
+        <i3dMapping id="cowBarnMedium_vis" node="0>22|0|11" />
+        <i3dMapping id="waterPlane" node="0>22|0|13|2" />
+    </i3dMappings>
+</placeable>

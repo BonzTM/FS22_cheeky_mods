@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards; GIANTS Software</author>
+	
+    <version>1.3.0.0</version>
+	
+    <title>
+        <en>Cheeky Productions Pack</en>
+    </title>
+
+	<description>
+		<en><![CDATA[10x Modded base productions for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>textures/store_tailorShop.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="xml/cheeky_bakeryEU.xml"/>
+        <storeItem xmlFilename="xml/cheeky_bakeryUS.xml"/>
+        <storeItem xmlFilename="xml/cheeky_carpenterEU.xml"/>
+        <storeItem xmlFilename="xml/cheeky_carpenterUS.xml"/>
+        <storeItem xmlFilename="xml/cheeky_cerealFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_dairyEU.xml"/>
+        <storeItem xmlFilename="xml/cheeky_dairyUS.xml"/>
+        <storeItem xmlFilename="xml/cheeky_grainMill.xml"/>
+        <storeItem xmlFilename="xml/cheeky_greenhouseLarge.xml"/>
+        <storeItem xmlFilename="xml/cheeky_oilPlant.xml"/>
+        <storeItem xmlFilename="xml/cheeky_raisinFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sawmill.xml"/>
+        <storeItem xmlFilename="xml/cheeky_spinneryEU.xml"/>
+        <storeItem xmlFilename="xml/cheeky_spinneryUS.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sugarMill.xml"/>
+        <storeItem xmlFilename="xml/cheeky_tailorShop.xml"/>
+    </storeItems>
+	
+	<multiplayer supported="true" /> 
+    
+    <dependencies>
+        <dependency>FS22_netWrap_addon</dependency>
+        <dependency>FS22_twine_addon</dependency>
+    </dependencies>      
+</modDesc>

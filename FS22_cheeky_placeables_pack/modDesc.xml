@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+
+    <author>Cheeky B#$!ards; GIANTS Software</author>
+	
+    <version>1.3.0.0</version>
+	
+    <title>
+        <en>Cheeky Placeables Pack</en>
+    </title>
+
+	<description>
+		<en><![CDATA[Modded placeables for the Cheeky Bastards.]]></en>
+	</description>	
+
+    <iconFilename>textures/store_liquidFlatBottomTank1630.png</iconFilename>
+	
+    <storeItems>
+        <storeItem xmlFilename="xml/cheeky_herbicide_liquidFlatBottomTank1630.xml"/>
+        <storeItem xmlFilename="xml/cheeky_water_liquidFlatBottomTank1630.xml"/>
+    </storeItems>
+	
+	<multiplayer supported="true" />
+</modDesc>
