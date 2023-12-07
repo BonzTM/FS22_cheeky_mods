@@ -310,6 +310,7 @@
             <capacity fillType="CLAAS_NETWRAP" capacity="500000"/>
             <capacity fillType="FENDT_NETWRAP" capacity="500000"/>
             <capacity fillType="JOHNDEERE_NETWRAP" capacity="500000"/>
+            <capacity fillType="KRONE_NETWRAP" capacity="500000"/>
             <capacity fillType="KUHN_NETWRAP" capacity="500000"/>
             <capacity fillType="KVERNELAND_NETWRAP" capacity="500000"/>
             <capacity fillType="MASSEYFERGUSON_NETWRAP" capacity="500000"/>
