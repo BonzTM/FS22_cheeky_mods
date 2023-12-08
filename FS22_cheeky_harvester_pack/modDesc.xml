@@ -24,9 +24,10 @@
         <storeItem xmlFilename="xml/cheeky_tiger6S.xml"/>
         <storeItem xmlFilename="xml/cheeky_ventor4150.xml"/>
         <storeItem xmlFilename="xml/cheeky_x9_1100.xml"/>
-        <storeItem xmlFilename="xml/cheeky_zkivSe.xml"/>
         <!-- implements -->
         <storeItem xmlFilename="xml/cheeky_rrXL9.xml"/>
+        <!-- DLC harvesters -->
+        <storeItem xmlFilename="xml/cheeky_zkivSe.xml"/>
     </storeItems>
 
 	<extraSourceFiles>
