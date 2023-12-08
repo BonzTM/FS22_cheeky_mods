@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint">
+    <parentFile xmlFilename="$pdlc/premiumExpansion/placeables/productionPoints/preservedFoodFactory/preservedFoodFactoryPlaceable.xml">
+        <attributes>
+            <set path="placeable.base.filename" value="$pdlc/premiumExpansion/placeables/productionPoints/preservedFoodFactory/preservedFoodFactoryPlaceable.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlc/premiumExpansion/placeables/productionPoints/preservedFoodFactory/store_preservedFoodFactoryPlaceable.png"/>
+            <set path="placeable.storeData.name" value="Cheeky Preserved Food Factory"/>
+            <set path="placeable.storeData.price" value="550000"/>
+
+            <!-- Props linkage -->
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/premiumExpansion/placeables/sellingStationGeneretic/sellingStationGenericNoCoverWideGrid.i3d"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(1)#filename" value="$pdlc/premiumExpansion/placeables/productionPoints/preservedFoodFactory/propsPlaceable.i3d"/>
+
+            <!-- Preserved Food Carrots Production -->
+            <set path="placeable.productionPoint.productions.production(0)#name" value="Preserved Food Carrots"/>
+            <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="40"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="CARROT"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="1000"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="PRESERVEDCARROTS"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="600"/>
+            
+            <!-- Preserved Food Parsnip Production -->
+            <set path="placeable.productionPoint.productions.production(1)#name" value="Preserved Food Parsnip"/>
+            <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="40"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="PARSNIP"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="1000"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="PRESERVEDPARSNIP"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="600"/>
+
+            <!-- Preserved Food Beetroot Production -->
+            <set path="placeable.productionPoint.productions.production(2)#name" value="Preserved Food Beetroot"/>
+            <set path="placeable.productionPoint.productions.production(2)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="40"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="BEETROOT"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="1000"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="PRESERVEDBEETROOT"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="600"/>
+
+            <!-- Capacity -->
+            <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="CARROT"/>
+            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="2400000"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="PARSNIP"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="2400000"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="BEETROOT"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="2400000"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#fillType" value="PRESERVEDCARROTS"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="450000"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#fillType" value="PRESERVEDPARSNIP"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="450000"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#fillType" value="PRESERVEDBEETROOT"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="450000"/>
+            <!-- Sounds -->
+            <!-- Currently broken -->
+            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
+            <remove path="placeable.productionPoint.sounds.active(0)#template" />
+            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/premiumExpansion/placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodPlaceableIdle.wav"/>
+            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/premiumExpansion/placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodPlaceableActive.wav"/> -->
+
+
+        </attributes>
+    </parentFile>
+    <storeData>
+        <name>Cheeky Preserved Food Factory</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$pdlc/premiumExpansion/placeables/productionPoints/preservedFoodFactory/store_preservedFoodFactoryPlaceable.png</image>
+        <price>550000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+</placeable>

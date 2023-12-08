@@ -102,7 +102,7 @@
 
     <productionPoint>
         <productions>
-            <production id="fabric_wool" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_wool" cyclesPerHour="10" costsPerActiveHour="5">
+            <production id="fabric_wool" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_wool" cyclesPerHour="12" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="WOOL" amount="200" />
                 </inputs>
@@ -110,180 +110,12 @@
                     <output fillType="FABRIC" amount="120" />
                 </outputs>
             </production>
-            <production id="fabric_cotton" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
+            <production id="fabric_cotton" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_cotton" cyclesPerHour="12" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="COTTON" amount="200" />
                 </inputs>
                 <outputs>
                     <output fillType="FABRIC" amount="140" />
-                </outputs>
-            </production>
-            <production id="netWrapLizard_cotton" name="%s %s" params="Net wrap Lizard|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapClaas_cotton" name="%s %s" params="Net wrap Claas|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="CLAAS_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapFendt_cotton" name="%s %s" params="Net wrap Fendt|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="FENDT_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapJohnDeere_cotton" name="%s %s" params="Net wrap John Deere|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="JOHNDEERE_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapKrone_cotton" name="%s %s" params="Net wrap Krone|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="KRONE_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapKuhn_cotton" name="%s %s" params="$Net wrap Kuhn|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="KUHN_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapKverneland_cotton" name="%s %s" params="Net wrap Kverneland|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="KVERNELAND_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapMasseyFerguson_cotton" name="%s %s" params="Net wrap Massey Ferguson|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="MASSEYFERGUSON_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapPoettinger_cotton" name="%s %s" params="Net wrap Poettinger|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="POETTINGER_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapVicon_cotton" name="%s %s" params="Net wrap Vicon|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="VICON_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="netWrapBlack_cotton" name="%s %s" params="Net wrap Black|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="BLACK_NETWRAP" amount="14000"/>
-                </outputs>
-            </production>
-            <production id="twineLizard_cotton" name="%s %s" params="Twine Lizard|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineCaseIH_cotton" name="%s %s" params="Twine CaseIH|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="CASEIH_TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineClaas_cotton" name="%s %s" params="Twine Claas|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="CLAAS_TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineFendt_cotton" name="%s %s" params="Twine Fendt|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="FENDT_TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineJohnDeere_cotton" name="%s %s" params="Twine John Deere|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="JOHNDEERE_TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineKrone_cotton" name="%s %s" params="Twine Krone|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="KRONE_TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineKuhn_cotton" name="%s %s" params="Twine Kuhn|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="KUHN_TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineMasseyFerguson_cotton" name="%s %s" params="Twine Massey Ferguson|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="MASSEYFERGUSON_TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineNewHolland_cotton" name="%s %s" params="Twine New Holland|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="NEWHOLLAND_TWINE" amount="6000"/>
-                </outputs>
-            </production>
-            <production id="twineBlack_cotton" name="%s %s" params="Twine Black|$l10n_fillType_cotton" cyclesPerHour="10" costsPerActiveHour="5">
-                <inputs>
-                    <input fillType="COTTON" amount="200"/>
-                </inputs>
-                <outputs>
-                    <output fillType="BLACK_TWINE" amount="6000"/>
                 </outputs>
             </production>
         </productions>
@@ -292,27 +124,6 @@
             <capacity fillType="WOOL"   capacity="450000" />
             <capacity fillType="COTTON" capacity="450000" />
             <capacity fillType="FABRIC" capacity="50000" />
-            <capacity fillType="NETWRAP" capacity="500000"/>
-            <capacity fillType="CLAAS_NETWRAP" capacity="500000"/>
-            <capacity fillType="FENDT_NETWRAP" capacity="500000"/>
-            <capacity fillType="JOHNDEERE_NETWRAP" capacity="500000"/>
-            <capacity fillType="KRONE_NETWRAP" capacity="500000"/>
-            <capacity fillType="KUHN_NETWRAP" capacity="500000"/>
-            <capacity fillType="KVERNELAND_NETWRAP" capacity="500000"/>
-            <capacity fillType="MASSEYFERGUSON_NETWRAP" capacity="500000"/>
-            <capacity fillType="POETTINGER_NETWRAP" capacity="500000"/>
-            <capacity fillType="VICON_NETWRAP" capacity="500000"/>
-            <capacity fillType="BLACK_NETWRAP" capacity="500000"/>
-            <capacity fillType="TWINE" capacity="5000000"/>
-            <capacity fillType="CASEIH_TWINE" capacity="5000000"/>
-            <capacity fillType="CLAAS_TWINE" capacity="5000000"/>
-            <capacity fillType="FENDT_TWINE" capacity="5000000"/>
-            <capacity fillType="JOHNDEERE_TWINE" capacity="5000000"/>
-            <capacity fillType="KRONE_TWINE" capacity="5000000"/>
-            <capacity fillType="KUHN_TWINE" capacity="5000000"/>
-            <capacity fillType="MASSEYFERGUSON_TWINE" capacity="5000000"/>
-            <capacity fillType="NEWHOLLAND_TWINE" capacity="5000000"/>
-            <capacity fillType="BLACK_TWINE" capacity="5000000"/>
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false" appearsOnStats="true">

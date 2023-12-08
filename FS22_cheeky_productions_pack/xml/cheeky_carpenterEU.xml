@@ -96,18 +96,18 @@
 
     <productionPoint>
         <productions>
-            <production id="furnitureWood" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_wood" cyclesPerHour="9" costsPerActiveHour="6">
+            <production id="furnitureWood" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_wood" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="WOOD" amount="40" />
+                    <input fillType="WOOD" amount="55" />
                 </inputs>
                 <outputs>
                     <output fillType="FURNITURE" amount="50" />
                     <output fillType="WOODCHIPS" amount="2" />
                 </outputs>
             </production>
-            <production id="furnitureBoards" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_boards" cyclesPerHour="10" costsPerActiveHour="6">
+            <production id="furnitureBoards" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_boards" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="BOARDS" amount="50" />
+                    <input fillType="BOARDS" amount="60" />
                 </inputs>
                 <outputs>
                     <output fillType="FURNITURE" amount="70" />

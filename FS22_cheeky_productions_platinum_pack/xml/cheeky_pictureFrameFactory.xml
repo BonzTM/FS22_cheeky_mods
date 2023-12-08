@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint">
-    <parentFile xmlFilename="$pdlcdir/forestryPack/placeables/productionPoints/pictureFrameFactory/pictureFrameFactory.xml">
+    <parentFile xmlFilename="$pdlc/forestryPack/placeables/productionPoints/pictureFrameFactory/pictureFrameFactory.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/pictureFrameFactory/pictureFrameFactory.i3d"/>       
-            <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/pictureFrameFactory/store_pictureFrameFactory.png"/>
+            <set path="placeable.base.filename" value="$pdlc/forestryPack/placeables/productionPoints/pictureFrameFactory/pictureFrameFactory.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlc/forestryPack/placeables/productionPoints/pictureFrameFactory/store_pictureFrameFactory.png"/>
             <set path="placeable.storeData.name" value="Cheeky Art Accessories Factory"/>
             <set path="placeable.storeData.price" value="250000"/>
+
+            <!-- Props linkage -->
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/pictureFrameFactory/props.i3d"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#node" value="0"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#linkNode" value="propsLinkNode"/>
 
             <!-- Picture Frame Production -->
             <set path="placeable.productionPoint.productions.production(0)#name" value="Picture Frame"/>
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="11"/>
-            <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="84"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="PICTUREFRAME"/>
@@ -19,7 +24,7 @@
             <!-- Easel Production -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Easel"/>
             <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="12"/>
-            <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="64"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="EASEL"/>
@@ -32,6 +37,15 @@
             <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="100000"/>
             <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="EASEL"/>
             <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="100000"/>
+
+            <!-- Sounds -->
+            <!-- Currently broken -->
+            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
+            <remove path="placeable.productionPoint.sounds.active(0)#template" />
+            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/sounds/barrelFactoryIdle.wav"/>
+            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/sounds/barrelFactoryWork.wav"/> -->
+
+
         </attributes>
     </parentFile>
     <storeData>
@@ -39,7 +53,7 @@
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>$pdlcdir/forestryPack/placeables/productionPoints/pictureFrameFactory/store_pictureFrameFactory.png</image>
+        <image>$pdlc/forestryPack/placeables/productionPoints/pictureFrameFactory/store_pictureFrameFactory.png</image>
         <price>250000</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>

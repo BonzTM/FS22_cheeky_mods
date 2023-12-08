@@ -1,20 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="63">
-
+<?xml version='1.0' encoding='UTF-8'?>
+<modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-	
-    <version>1.3.0.0</version>
-	
+    <version>1.3.1.0</version>
     <title>
         <en>Cheeky Harvester Pack</en>
     </title>
-
 	<description>
 		<en><![CDATA[Modded Harvesters for the Cheeky Bastards.]]></en>
 	</description>	
-
     <iconFilename>textures/store_x9_1100.png</iconFilename>
-	
     <storeItems>
         <!-- harvesters -->
         <storeItem xmlFilename="xml/cheeky_a8800MR.xml"/>
@@ -33,6 +27,5 @@
         <!-- implements -->
         <storeItem xmlFilename="xml/cheeky_rrXL9.xml"/>
     </storeItems>
-	
 	<multiplayer supported="true" />
 </modDesc>

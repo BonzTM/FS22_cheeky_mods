@@ -102,26 +102,26 @@
 
     <productionPoint>
         <productions>
-            <production id="butter" name="$l10n_fillType_butter" cyclesPerHour="10" costsPerActiveHour="2">
+            <production id="butter" name="$l10n_fillType_butter" cyclesPerHour="11" costsPerActiveHour="8">
                 <inputs>
                     <input fillType="MILK" amount="300" />
                 </inputs>
                 <outputs>
-                    <output fillType="BUTTER" amount="400" />
+                    <output fillType="BUTTER" amount="440" />
                 </outputs>
             </production>
-            <production id="cheese" name="$l10n_fillType_cheese" cyclesPerHour="10" costsPerActiveHour="2">
+            <production id="cheese" name="$l10n_fillType_cheese" cyclesPerHour="12" costsPerActiveHour="12">
                 <inputs>
                     <input fillType="MILK" amount="150" />
                 </inputs>
                 <outputs>
-                    <output fillType="CHEESE" amount="100" />
+                    <output fillType="CHEESE" amount="110" />
                 </outputs>
             </production>
-            <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="10" costsPerActiveHour="2">
+            <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="12" costsPerActiveHour="12">
                 <inputs>
                     <input fillType="MILK" amount="100" />
-                    <input fillType="SUGAR" amount="100" />
+                    <input fillType="SUGAR" amount="105" />
                 </inputs>
                 <outputs>
                     <output fillType="CHOCOLATE" amount="100" />

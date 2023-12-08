@@ -58,11 +58,11 @@
         <productions>
             <production id="boards" name="%s (%s)" params="$l10n_fillType_wood|$l10n_fillType_boards" cyclesPerHour="10" costsPerActiveHour="2">
                 <inputs>
-                    <input fillType="WOOD" amount="300" />
+                    <input fillType="WOOD" amount="208" />
                 </inputs>
                 <outputs>
-                    <output fillType="BOARDS" amount="400" />
-                    <output fillType="WOODCHIPS" amount="15" />
+                    <output fillType="BOARDS" amount="280" />
+                    <output fillType="WOODCHIPS" amount="60" />
                 </outputs>
             </production>
         </productions>

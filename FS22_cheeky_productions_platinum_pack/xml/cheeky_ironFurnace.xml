@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint">
+    <parentFile xmlFilename="$pdlc/forestryPack/placeables/productionPoints/ironFurnace/ironFurnace.xml">
+        <attributes>
+            <set path="placeable.base.filename" value="$pdlc/forestryPack/placeables/productionPoints/ironFurnace/ironFurnace.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlc/forestryPack/placeables/productionPoints/ironFurnace/store_ironFurnace.png"/>
+            <set path="placeable.storeData.name" value="Cheeky Iron Furnace"/>
+            <set path="placeable.storeData.price" value="900000"/>
+
+            <!-- Props linkage -->
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/ironFurnace/props.i3d"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#node" value="0"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#linkNode" value="propsLinkNode"/>
+
+            <!-- Metal Production 1 -->
+            <set path="placeable.productionPoint.productions.production(0)#name" value="Metal"/>
+            <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="50"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="IRONORE"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="416"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="380"/>
+
+            <!-- Capacity -->
+            <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="IRONORE"/>
+            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="600000"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="200000"/>
+
+            <!-- Sounds -->
+            <!-- Currently broken -->
+            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
+            <remove path="placeable.productionPoint.sounds.active(0)#template" />
+            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/ironFurnace/sounds/ironFurnaceIdle.wav"/>
+            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/ironFurnace/sounds/ironFurnaceWork.wav"/> -->
+
+        </attributes>
+    </parentFile>
+    <storeData>
+        <name>Cheeky Iron Furnace</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$pdlc/forestryPack/placeables/productionPoints/ironFurnace/store_ironFurnace.png</image>
+        <price>900000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+</placeable>

@@ -1,23 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="63">
-
+<?xml version='1.0' encoding='UTF-8'?>
+<modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-	
-    <version>1.3.0.0</version>
-	
+    <version>1.3.1.0</version>
     <title>
         <en>Cheeky Platinum Productions Pack</en>
     </title>
-
 	<description>
-		<en><![CDATA[10x Modded Platinum Productions for the Cheeky Bastards.]]></en>
+		<en><![CDATA[10x Modded Platinum expansion productions for the Cheeky Bastards.]]></en>
 	</description>	
-
     <iconFilename>textures/store_raisinFactory.png</iconFilename>
-	
     <storeItems>
+        <storeItem xmlFilename="xml/cheeky_barrelFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_ironFurnace.xml"/>
+        <storeItem xmlFilename="xml/cheeky_flooringFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_fancyFurnitureFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_paperFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_petAccessoriesFactory.xml"/>
         <storeItem xmlFilename="xml/cheeky_pictureFrameFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sawmillPlaceable.xml"/>
+        <storeItem xmlFilename="xml/cheeky_shingleFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_woodTurner.xml"/>
     </storeItems>
-	
 	<multiplayer supported="true" /> 
 </modDesc>

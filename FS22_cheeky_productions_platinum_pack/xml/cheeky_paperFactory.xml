@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint">
+    <parentFile xmlFilename="$pdlc/forestryPack/placeables/productionPoints/paperFactory/paperFactory.xml">
+        <attributes>
+            <set path="placeable.base.filename" value="$pdlc/forestryPack/placeables/productionPoints/paperFactory/paperFactory.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlc/forestryPack/placeables/productionPoints/paperFactory/store_paperFactory.png"/>
+            <set path="placeable.storeData.name" value="Cheeky Paper Factory"/>
+            <set path="placeable.storeData.price" value="650000"/>
+
+            <!-- Props linkage -->
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/paperFactory/props.i3d"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#node" value="0"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#linkNode" value="propsLinkNode"/>
+
+            <!-- Carton Roll Production -->
+            <set path="placeable.productionPoint.productions.production(0)#name" value="Carton Roll"/>
+            <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="30"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="WOOD"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="400"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="CARTONROLL"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="215"/>
+
+            <!-- Paper Roll Production -->
+            <set path="placeable.productionPoint.productions.production(1)#name" value="Paper Roll"/>
+            <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="WOOD"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="525"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="PAPERROLL"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="230"/>
+
+            <!-- Capacity -->
+            <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="WOOD"/>
+            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="300000"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="CARTONROLL"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="PAPERROLL"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="100000"/>
+
+            <!-- Sounds -->
+            <!-- Currently broken -->
+            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
+            <remove path="placeable.productionPoint.sounds.active(0)#template" />
+            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/paperFactory/sounds/paperFactoryIdle.wav"/>
+            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/paperFactory/sounds/paperFactoryWork.wav"/> -->
+
+
+        </attributes>
+    </parentFile>
+    <storeData>
+        <name>Cheeky Paper Factory</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$pdlc/forestryPack/placeables/productionPoints/paperFactory/store_paperFactory.png</image>
+        <price>650000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+</placeable>

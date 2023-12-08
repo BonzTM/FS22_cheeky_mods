@@ -102,7 +102,7 @@
 
     <productionPoint>
         <productions sharedThroughputCapacity="false">
-            <production id="bread" name="$l10n_fillType_bread" cyclesPerHour="9" costsPerActiveHour="5">
+            <production id="bread" name="$l10n_fillType_bread" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="FLOUR" amount="200" />
                 </inputs>
@@ -110,7 +110,7 @@
                     <output fillType="BREAD" amount="125" />
                 </outputs>
             </production>
-            <production id="cake" name="$l10n_fillType_cake" cyclesPerHour="8" costsPerActiveHour="5">
+            <production id="cake" name="$l10n_fillType_cake" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="FLOUR"      amount="40" />
                     <input fillType="SUGAR"      amount="40" />

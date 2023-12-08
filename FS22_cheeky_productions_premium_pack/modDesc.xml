@@ -1,23 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="63">
-
+<?xml version='1.0' encoding='UTF-8'?>
+<modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-	
-    <version>1.3.0.0</version>
-	
+    <version>1.3.1.0</version>
     <title>
         <en>Cheeky Premium Productions Pack</en>
     </title>
-
 	<description>
-		<en><![CDATA[10x Modded Premium Productions for the Cheeky Bastards.]]></en>
+		<en><![CDATA[10x Modded Premium expansion productions for the Cheeky Bastards.]]></en>
 	</description>	
-
-    <iconFilename>store_bakeryEU.png</iconFilename>
-	
+    <iconFilename>textures/store_grainMill.png</iconFilename>
     <storeItems>
-        <storeItem xmlFilename="cheeky_bakeryEU.xml"/>
+        <storeItem xmlFilename="xml/cheeky_potatoProcessingPlantPlaceable.xml"/>
+        <storeItem xmlFilename="xml/cheeky_preservedFoodFactoryPlaceable.xml"/>
+        <storeItem xmlFilename="xml/cheeky_soupFactoryPlaceable.xml"/>
     </storeItems>
-	
 	<multiplayer supported="true" /> 
 </modDesc>

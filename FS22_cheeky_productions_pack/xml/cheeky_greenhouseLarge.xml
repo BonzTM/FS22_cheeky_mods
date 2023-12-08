@@ -103,28 +103,28 @@
 
     <productionPoint>
         <productions>
-            <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="8" costsPerActiveHour="0.1">
+            <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="11" costsPerActiveHour="0.4">
                 <inputs>
-                    <input fillType="WATER" amount="80" />
+                    <input fillType="WATER" amount="60" />
                 </inputs>
                 <outputs>
-                    <output fillType="TOMATO" amount="80" />
+                    <output fillType="TOMATO" amount="60" />
                 </outputs>
             </production>
-            <production id="lettuce" name="$l10n_fillType_lettuce" cyclesPerHour="8" costsPerActiveHour="0.1">
+            <production id="lettuce" name="$l10n_fillType_lettuce" cyclesPerHour="11" costsPerActiveHour="0.4">
                 <inputs>
-                    <input fillType="WATER" amount="80" />
+                    <input fillType="WATER" amount="60" />
                 </inputs>
                 <outputs>
-                    <output fillType="LETTUCE" amount="40" />
+                    <output fillType="LETTUCE" amount="30" />
                 </outputs>
             </production>
-            <production id="strawberry" name="$l10n_fillType_strawberry" cyclesPerHour="8" costsPerActiveHour="0.1">
+            <production id="strawberry" name="$l10n_fillType_strawberry" cyclesPerHour="11" costsPerActiveHour="0.4">
                 <inputs>
-                    <input fillType="WATER" amount="80" />
+                    <input fillType="WATER" amount="60" />
                 </inputs>
                 <outputs>
-                    <output fillType="STRAWBERRY" amount="160" />
+                    <output fillType="STRAWBERRY" amount="120" />
                 </outputs>
             </production>
         </productions>

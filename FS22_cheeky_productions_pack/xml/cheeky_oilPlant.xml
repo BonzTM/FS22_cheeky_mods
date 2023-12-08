@@ -113,7 +113,7 @@
 
     <productionPoint>
         <productions>
-            <production id="sunflower_oil" name="$l10n_fillType_sunflowerOil" cyclesPerHour="10" costsPerActiveHour="5">
+            <production id="sunflower_oil" name="$l10n_fillType_sunflowerOil" cyclesPerHour="11" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="SUNFLOWER" amount="400" />
                 </inputs>
@@ -121,7 +121,7 @@
                     <output fillType="SUNFLOWER_OIL" amount="285" />
                 </outputs>
             </production>
-            <production id="canola_oil" name="$l10n_fillType_canolaOil" cyclesPerHour="10" costsPerActiveHour="5">
+            <production id="canola_oil" name="$l10n_fillType_canolaOil" cyclesPerHour="11" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="CANOLA" amount="400" />
                 </inputs>
@@ -129,7 +129,7 @@
                     <output fillType="CANOLA_OIL" amount="275" />
                 </outputs>
             </production>
-            <production id="olive_oil" name="$l10n_fillType_oliveOil" cyclesPerHour="10" costsPerActiveHour="5">
+            <production id="olive_oil" name="$l10n_fillType_oliveOil" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="OLIVE" amount="175" />
                 </inputs>

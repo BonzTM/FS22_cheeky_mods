@@ -116,7 +116,7 @@
 
     <productionPoint>
         <productions>
-            <production id="cereal" name="$l10n_fillType_cereal" cyclesPerHour="9" costsPerActiveHour="10">
+            <production id="cereal" name="$l10n_fillType_cereal" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="HONEY" amount="100" />
                     <input fillType="RAISINS" amount="100" />

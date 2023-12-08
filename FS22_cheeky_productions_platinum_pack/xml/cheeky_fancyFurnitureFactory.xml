@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint">
+    <parentFile xmlFilename="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/fancyFurnitureFactory.xml">
+        <attributes>
+            <set path="placeable.base.filename" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/fancyFurnitureFactory.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/store_fancyFurnitureFactory.png"/>
+            <set path="placeable.storeData.name" value="Cheeky Furniture Factory"/>
+            <set path="placeable.storeData.price" value="550000"/>
+
+            <!-- Props linkage -->
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/props.i3d"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#node" value="0"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#linkNode" value="propsLinkNode"/>
+
+            <!-- Armoire Production 1 -->
+            <set path="placeable.productionPoint.productions.production(0)#name" value="Armoire"/>
+            <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="50"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="25"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="ARMOIRE"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="166"/>
+
+            <!-- Armoire Production 2 -->
+            <set path="placeable.productionPoint.productions.production(1)#name" value="Armoire"/>
+            <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="BOARDS"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="75"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="25"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="ARMOIRE"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="166"/>
+
+            <!-- Chair Production 1 -->
+            <set path="placeable.productionPoint.productions.production(2)#name" value="Chair"/>
+            <set path="placeable.productionPoint.productions.production(2)#cyclesPerHour" value="19"/>
+            <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="50"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="CHAIR"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="125"/>
+
+            <!-- Chair Production 2 -->
+            <set path="placeable.productionPoint.productions.production(3)#name" value="Chair"/>
+            <set path="placeable.productionPoint.productions.production(3)#cyclesPerHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(3)#costsPerActiveHour" value="30"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#fillType" value="BOARDS"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="75"/>
+            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#fillType" value="CHAIR"/>
+            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="125"/>
+
+            <!-- Table Production 1 -->
+            <set path="placeable.productionPoint.productions.production(4)#name" value="Table"/>
+            <set path="placeable.productionPoint.productions.production(4)#cyclesPerHour" value="22"/>
+            <set path="placeable.productionPoint.productions.production(4)#costsPerActiveHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#amount" value="80"/>
+            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#fillType" value="TABLE"/>
+            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="100"/>
+
+            <!-- Table Production 2 -->
+            <set path="placeable.productionPoint.productions.production(5)#name" value="Table"/>
+            <set path="placeable.productionPoint.productions.production(5)#cyclesPerHour" value="24"/>
+            <set path="placeable.productionPoint.productions.production(5)#costsPerActiveHour" value="30"/>
+            <set path="placeable.productionPoint.productions.production(5).inputs.input(0)#fillType" value="BOARDS"/>
+            <set path="placeable.productionPoint.productions.production(5).inputs.input(0)#amount" value="125"/>
+            <set path="placeable.productionPoint.productions.production(5).outputs.output(0)#fillType" value="TABLE"/>
+            <set path="placeable.productionPoint.productions.production(5).outputs.output(0)#amount" value="100"/>
+
+            <!-- Capacity -->
+            <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="180000"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="50000"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="BOARDS"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="180000"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#fillType" value="ARMOIRE"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#fillType" value="CHAIR"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#fillType" value="TABLE"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="100000"/>
+
+            <!-- Sounds -->
+            <!-- Currently broken -->
+            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
+            <remove path="placeable.productionPoint.sounds.active(0)#template" />
+            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/sounds/fancyFurnitureFactoryIdle.wav"/>
+            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/sounds/fancyFurnitureFactoryWork.wav"/> -->
+
+
+        </attributes>
+    </parentFile>
+    <storeData>
+        <name>Cheeky Furniture Factory</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/store_fancyFurnitureFactory.png</image>
+        <price>550000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+</placeable>

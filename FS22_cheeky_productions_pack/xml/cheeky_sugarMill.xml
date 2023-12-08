@@ -114,7 +114,7 @@
 
     <productionPoint>
         <productions sharedThroughputCapacity="false">
-            <production id="sugarbeet_sugar" name="%s %s" params="$l10n_fillType_sugarBeet|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="5">
+            <production id="sugarbeet_sugar" name="%s %s" params="$l10n_fillType_sugarBeet|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="SUGARBEET" amount="1000" />
                 </inputs>
@@ -122,7 +122,7 @@
                     <output fillType="SUGAR" amount="500" />
                 </outputs>
             </production>
-            <production id="sugarbeetCut_sugar" name="%s %s" params="$l10n_fillType_sugarBeetCut|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="3">
+            <production id="sugarbeetCut_sugar" name="%s %s" params="$l10n_fillType_sugarBeetCut|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="SUGARBEET_CUT" amount="1000" />
                 </inputs>
@@ -130,7 +130,7 @@
                     <output fillType="SUGAR" amount="750" />
                 </outputs>
             </production>
-            <production id="sugarcane_sugar" name="%s %s" params="$l10n_fillType_sugarCane|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="5">
+            <production id="sugarcane_sugar" name="%s %s" params="$l10n_fillType_sugarCane|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="SUGARCANE" amount="1000" />
                 </inputs>

@@ -113,12 +113,12 @@
 
     <productionPoint>
         <productions>
-            <production id="clothes" name="$l10n_fillType_clothes" cyclesPerHour="10" costsPerActiveHour="10">
+            <production id="clothes" name="$l10n_fillType_clothes" cyclesPerHour="12" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="FABRIC" amount="240" />
                 </inputs>
                 <outputs>
-                    <output fillType="CLOTHES" amount="160" />
+                    <output fillType="CLOTHES" amount="155" />
                 </outputs>
             </production>
         </productions>

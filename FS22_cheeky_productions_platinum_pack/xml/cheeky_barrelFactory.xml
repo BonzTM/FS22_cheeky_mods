@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint">
+    <parentFile xmlFilename="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.xml">
+        <attributes>
+            <set path="placeable.base.filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/store_barrelFactory.png"/>
+            <set path="placeable.storeData.name" value="Cheeky Barrel Factory"/>
+            <set path="placeable.storeData.price" value="600000"/>
+
+            <!-- Props linkage -->
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/props.i3d"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#node" value="0"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#linkNode" value="propsLinkNode"/>
+
+            <!-- Barrel Production -->
+            <set path="placeable.productionPoint.productions.production(0)#name" value="Barrel"/>
+            <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
+            <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="50"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="25"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="BARREL"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="340"/>
+
+            <!-- Bucket Production -->
+            <set path="placeable.productionPoint.productions.production(1)#name" value="Bucket"/>
+            <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="25"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="25"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="BUCKET"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="170"/>
+
+            <!-- Bathtub Production -->
+            <set path="placeable.productionPoint.productions.production(2)#name" value="Bathtub"/>
+            <set path="placeable.productionPoint.productions.production(2)#cyclesPerHour" value="25"/>
+            <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="20"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="30"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="10"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="BATHTUB"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="85"/>
+
+            <!-- Capacity -->
+            <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="150000"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="METAL"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="50000"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="BARREL"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#fillType" value="BUCKET"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#fillType" value="BATHTUB"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="60000"/>
+
+            <!-- Sounds -->
+            <!-- Currently broken -->
+            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
+            <remove path="placeable.productionPoint.sounds.active(0)#template" />
+            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/sounds/barrelFactoryIdle.wav"/>
+            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/sounds/barrelFactoryWork.wav"/> -->
+
+        </attributes>
+    </parentFile>
+    <storeData>
+        <name>Cheeky Barrel Factory</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$pdlc/forestryPack/placeables/productionPoints/barrelFactory/store_barrelFactory.png</image>
+        <price>600000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+    </storeData>
+</placeable>

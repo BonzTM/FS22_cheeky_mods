@@ -111,7 +111,7 @@
 
     <productionPoint>
         <productions sharedThroughputCapacity="false">
-            <production id="flourWheat" name="%s %s" params="$l10n_fillType_wheat|$l10n_fillType_flour" cyclesPerHour="15" costsPerActiveHour="2">
+            <production id="flourWheat" name="%s %s" params="$l10n_fillType_wheat|$l10n_fillType_flour" cyclesPerHour="13" costsPerActiveHour="8">
                 <inputs>
                     <input fillType="WHEAT" amount="500" />
                 </inputs>
@@ -119,28 +119,28 @@
                     <output fillType="FLOUR" amount="500" />
                 </outputs>
             </production>
-            <production id="flourBarley" name="%s %s" params="$l10n_fillType_barley|$l10n_fillType_flour" cyclesPerHour="12.5" costsPerActiveHour="2">
+            <production id="flourBarley" name="%s %s" params="$l10n_fillType_barley|$l10n_fillType_flour" cyclesPerHour="13" costsPerActiveHour="8">
                 <inputs>
                     <input fillType="BARLEY" amount="600" />
                 </inputs>
                 <outputs>
-                    <output fillType="FLOUR" amount="550" />
+                    <output fillType="FLOUR" amount="600" />
                 </outputs>
             </production>
-            <production id="flourOat" name="%s %s"  params="$l10n_fillType_oat|$l10n_fillType_flour" cyclesPerHour="10" costsPerActiveHour="2">
+            <production id="flourOat" name="%s %s"  params="$l10n_fillType_oat|$l10n_fillType_flour" cyclesPerHour="10" costsPerActiveHour="8">
                 <inputs>
                     <input fillType="OAT" amount="750" />
                 </inputs>
                 <outputs>
-                    <output fillType="FLOUR" amount="1200" />
+                    <output fillType="FLOUR" amount="1300" />
                 </outputs>
             </production>
-            <production id="flourSorghum" name="%s %s"  params="$l10n_fillType_sorghum|$l10n_fillType_flour" cyclesPerHour="10" costsPerActiveHour="2">
+            <production id="flourSorghum" name="%s %s"  params="$l10n_fillType_sorghum|$l10n_fillType_flour" cyclesPerHour="10" costsPerActiveHour="8">
                 <inputs>
                     <input fillType="SORGHUM" amount="550" />
                 </inputs>
                 <outputs>
-                    <output fillType="FLOUR" amount="800" />
+                    <output fillType="FLOUR" amount="775" />
                 </outputs>
             </production>
         </productions>

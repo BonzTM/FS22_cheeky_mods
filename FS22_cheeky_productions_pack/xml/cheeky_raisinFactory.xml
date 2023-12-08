@@ -114,20 +114,20 @@
 
     <productionPoint>
         <productions>
-            <production id="raisins" name="$l10n_fillType_raisins" cyclesPerHour="13.5" costsPerActiveHour="5">
+            <production id="raisins" name="$l10n_fillType_raisins" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="GRAPE" amount="200" />
+                    <input fillType="GRAPE" amount="300" />
                 </inputs>
                 <outputs>
-                    <output fillType="RAISINS" amount="200" />
+                    <output fillType="RAISINS" amount="300" />
                 </outputs>
             </production>
-            <production id="grapejuice" name="$l10n_fillType_grapeJuice" cyclesPerHour="13.5" costsPerActiveHour="5">
+            <production id="grapejuice" name="$l10n_fillType_grapeJuice" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="GRAPE" amount="200" />
+                    <input fillType="GRAPE" amount="300" />
                 </inputs>
                 <outputs>
-                    <output fillType="GRAPEJUICE" amount="160" />
+                    <output fillType="GRAPEJUICE" amount="260" />
                 </outputs>
             </production>
         </productions>
