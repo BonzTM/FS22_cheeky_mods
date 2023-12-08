@@ -24,8 +24,35 @@
         <storeItem xmlFilename="xml/cheeky_tiger6S.xml"/>
         <storeItem xmlFilename="xml/cheeky_ventor4150.xml"/>
         <storeItem xmlFilename="xml/cheeky_x9_1100.xml"/>
+        <storeItem xmlFilename="xml/cheeky_zkivSe.xml"/>
         <!-- implements -->
         <storeItem xmlFilename="xml/cheeky_rrXL9.xml"/>
     </storeItems>
+
+	<extraSourceFiles>
+		<sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
+	</extraSourceFiles>
+
+    <overwrittenPaths>
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/zkivSE.xml" newPath="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/sounds/zkivSE.xml" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/metalImpLayer01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/metalImpLayer01.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/metalImpLayer02.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/metalImpLayer02.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/metalImpLayer03.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/metalImpLayer03.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/metalImpLayer04.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/metalImpLayer04.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterLowerFront.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterLowerFront.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterRaiseFront.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterRaiseFront.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/hydraulicTone01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/hydraulicTone01.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gcciGii/sounds/hydraulicUnfold.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gcciGii/sounds/hydraulicUnfold.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gcciGii/sounds/hydraulicLoopFold.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gcciGii/sounds/hydraulicLoopFold.wav" />
+		<overwrittenPath originalPath="shared/crawlers/dewulf/zkivSeCrawler/skivSeCrawler.xml" newPath="$pdlc/premiumExpansion/shared/crawlers/dewulf/zkivSeCrawler/skivSeCrawler.xml" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterFrontToolWork01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterFrontToolWork01.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterFrontToolWork02.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterFrontToolWork02.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterBeltsInside01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterBeltsInside02.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterBeltsInside02.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterBeltsInside02.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt01.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt02.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt02.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/zkivWorkTone.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/sounds/zkivWorkTone.wav" />
+	</overwrittenPaths>
+
 	<multiplayer supported="true" />
 </modDesc>
