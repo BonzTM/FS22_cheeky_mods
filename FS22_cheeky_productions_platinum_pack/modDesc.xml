@@ -13,10 +13,10 @@
 		<en><![CDATA[10x Modded Platinum Productions for the Cheeky Bastards.]]></en>
 	</description>	
 
-    <iconFilename>store_bakeryEU.png</iconFilename>
+    <iconFilename>textures/store_raisinFactory.png</iconFilename>
 	
     <storeItems>
-        <storeItem xmlFilename="cheeky_bakeryEU.xml"/>
+        <storeItem xmlFilename="xml/cheeky_pictureFrameFactory.xml"/>
     </storeItems>
 	
 	<multiplayer supported="true" /> 
