@@ -3,7 +3,7 @@
     <storeData>
         <name>Cheeky Chicken Coop</name>
         <image>textures/store_chickenBarnBig.png</image>
-        <price>197500</price>
+        <price>130000</price>
         <functions>
             <function>$l10n_function_animalPenChicken</function>
         </functions>
@@ -222,12 +222,12 @@
 
         <loadingStation supportsExtension="false" />
 
-        <animals type="CHICKEN" maxNumAnimals="1800" >
+        <animals type="CHICKEN" maxNumAnimals="2000" >
             <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/chickenBarnBig/navigationMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
 
-        <food capacity="45000" >
+        <food capacity="60000" >
              <feedingTrough exactFillRootNode="exactFillRootNodeFood" />
             <foodPlane node="foodPlane" minY="0.098" maxY="0.210" changeVisibility="true" defaultFillType="WHEAT"/>
         </food>

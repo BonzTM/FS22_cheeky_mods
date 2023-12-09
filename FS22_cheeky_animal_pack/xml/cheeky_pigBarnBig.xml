@@ -3,7 +3,7 @@
     <storeData>
         <name>Cheeky Pig Barn</name>
         <image>textures/store_pigBarnBig.png</image>
-        <price>410000</price>
+        <price>369000</price>
         <functions>
             <function>$l10n_function_animalPenPig</function>
         </functions>
@@ -216,8 +216,8 @@
 
     <husbandry saveId="Animals_PIG" hasStatistics="false">
         <storage node="storage" fillTypes="LIQUIDMANURE STRAW MANURE" isExtension="false">
-            <capacity fillType="LIQUIDMANURE" capacity="641250" />
-            <capacity fillType="STRAW" capacity="225000" />
+            <capacity fillType="LIQUIDMANURE" capacity="650000" />
+            <capacity fillType="STRAW" capacity="250000" />
             <capacity fillType="MANURE" capacity="0" />
         </storage>
 
@@ -232,7 +232,7 @@
              <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure"/>
          </loadingStation>
 
-        <animals type="PIG" maxNumAnimals="1350">
+        <animals type="PIG" maxNumAnimals="1500">
             <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/pigBarnBig/navigationMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
@@ -242,7 +242,7 @@
             <strawPlane node="strawPlane" minY="0" maxY="0" changeVisibility="true" />
         </straw>
 
-        <food capacity="425000" >
+        <food capacity="500000" >
             <foodPlane node="foodPlane" minY="-0.017" maxY="0.144" changeVisibility="true" defaultFillType="WHEAT" />
             <foodPlaces>
                  <foodPlace node="foodPlace1" />

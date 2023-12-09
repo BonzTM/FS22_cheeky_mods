@@ -3,7 +3,7 @@
     <storeData>
         <name>Cheeky Cow Barn (Large)</name>
         <image>textures/store_cowBarnBig.png</image>
-        <price>999000</price>
+        <price>950000</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>
         </functions>
@@ -324,9 +324,9 @@
 
     <husbandry saveId="Animals_COW" hasStatistics="false">
         <storage node="storage" fillTypes="LIQUIDMANURE MILK STRAW MANURE" isExtension="false">
-            <capacity fillType="LIQUIDMANURE" capacity="500000" />
-            <capacity fillType="MILK" capacity="300000" />
-            <capacity fillType="STRAW" capacity="190000" />
+            <capacity fillType="LIQUIDMANURE" capacity="900000" />
+            <capacity fillType="MILK" capacity="600000" />
+            <capacity fillType="STRAW" capacity="300000" />
             <capacity fillType="MANURE" capacity="0" />
         </storage>
 
@@ -340,7 +340,7 @@
             <loadTrigger triggerNode="milkTrigger" fillTypes="MILK" fillLitersPerSecond="2000" aiNode="aiLoadingNodeMilk"/>
         </loadingStation>
 
-        <animals type="COW" maxNumAnimals="400" >
+        <animals type="COW" maxNumAnimals="600" >
             <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/cowBarnBig/navigationMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
@@ -362,7 +362,7 @@
 
         <liquidManure />
 
-        <food capacity="300000">
+        <food capacity="600000">
             <foodPlaces>
                 <foodPlace node="foodPlace1" />
                 <foodPlace node="foodPlace2" />

@@ -3,7 +3,7 @@
     <storeData>
         <name>Cheeky Horse Barn</name>
         <image>textures/store_horseBarnBig.png</image>
-        <price>312500</price>
+        <price>275000</price>
         <functions>
             <function>$l10n_function_animalPenHorse</function>
         </functions>
@@ -154,7 +154,7 @@
 
     <husbandry saveId="Animals_HORSE" hasStatistics="false">
         <storage node="storage" fillTypes="STRAW MANURE" isExtension="false">
-            <capacity fillType="STRAW" capacity="28000" />
+            <capacity fillType="STRAW" capacity="50000" />
             <capacity fillType="MANURE" capacity="0" />
         </storage>
 
@@ -175,7 +175,7 @@
             </deliveryAreas>
         </animals>
 
-        <food capacity="100000" >
+        <food capacity="125000" >
             <foodPlane node="foodPlane" minRotX="90" maxRotX="0" changeVisibility="true" defaultFillType="OAT" />
             <feedingTrough exactFillRootNode="exactFillRootNodeFood">
                <baleTrigger triggerNode="baleTrigger"/>
