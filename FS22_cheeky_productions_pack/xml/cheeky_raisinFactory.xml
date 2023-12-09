@@ -113,7 +113,7 @@
     </triggerMarkers>
 
     <productionPoint>
-        <productions>
+        <productions sharedThroughputCapacity="false">
             <production id="raisins" name="$l10n_fillType_raisins" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="GRAPE" amount="300" />

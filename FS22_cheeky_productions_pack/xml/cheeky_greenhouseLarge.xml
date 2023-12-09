@@ -102,7 +102,7 @@
     </greenhouse>
 
     <productionPoint>
-        <productions>
+        <productions sharedThroughputCapacity="true">
             <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="11" costsPerActiveHour="0.4">
                 <inputs>
                     <input fillType="WATER" amount="60" />

@@ -101,7 +101,7 @@
     </lights>
 
     <productionPoint>
-        <productions>
+        <productions sharedThroughputCapacity="false">
             <production id="butter" name="$l10n_fillType_butter" cyclesPerHour="11" costsPerActiveHour="8">
                 <inputs>
                     <input fillType="MILK" amount="300" />

@@ -112,7 +112,7 @@
     </lights>
 
     <productionPoint>
-        <productions>
+        <productions sharedThroughputCapacity="false">
             <production id="sunflower_oil" name="$l10n_fillType_sunflowerOil" cyclesPerHour="11" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="SUNFLOWER" amount="400" />

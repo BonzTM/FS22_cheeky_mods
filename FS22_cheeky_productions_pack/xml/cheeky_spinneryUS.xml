@@ -101,7 +101,7 @@
     </lights>
 
     <productionPoint>
-        <productions>
+        <productions sharedThroughputCapacity="false">
             <production id="fabric_wool" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_wool" cyclesPerHour="12" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="WOOL" amount="200" />
