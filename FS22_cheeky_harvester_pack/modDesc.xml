@@ -36,17 +36,22 @@
 
     <overwrittenPaths>
         <!-- DLC zkivSe -->
+        <overwrittenPath originalPath="shared/crawlers/dewulf/zkivSeCrawler/zkivSeCrawler.xml" newPath="$pdlc/premiumExpansion/shared/crawlers/dewulf/zkivSeCrawler/zkivSeCrawler.xml" />
+        <overwrittenPath originalPath="shared/crawlers/dewulf/zkivSeCrawler/zkivSeCrawler.i3d" newPath="$pdlc/premiumExpansion/shared/crawlers/dewulf/zkivSeCrawler/zkivSeCrawler.i3d" />
         <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/zkivSE.xml" newPath="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/sounds/zkivSE.xml" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/metalImpLayer01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/metalImpLayer01.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/metalImpLayer02.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/metalImpLayer02.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/metalImpLayer03.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/metalImpLayer03.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/metalImpLayer04.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/metalImpLayer04.wav" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/Transmission.gls" newPath="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/sounds/Transmission.gls" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/Cabin.gls" newPath="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/sounds/Cabin.gls" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/zkivSE.gls" newPath="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/sounds/zkivSE.gls" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/Fan.gls" newPath="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/sounds/Fan.gls" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterLowerFront.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterLowerFront.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterRaiseFront.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterRaiseFront.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/hydraulicTone01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/hydraulicTone01.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gcciGii/sounds/hydraulicUnfold.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gcciGii/sounds/hydraulicUnfold.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gcciGii/sounds/hydraulicLoopFold.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gcciGii/sounds/hydraulicLoopFold.wav" />
-		<overwrittenPath originalPath="shared/crawlers/dewulf/zkivSeCrawler/skivSeCrawler.xml" newPath="$pdlc/premiumExpansion/shared/crawlers/dewulf/zkivSeCrawler/skivSeCrawler.xml" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterFrontToolWork01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterFrontToolWork01.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterFrontToolWork02.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterFrontToolWork02.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterBeltsInside01.wav" newPath="$pdlc/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterBeltsInside02.wav" />

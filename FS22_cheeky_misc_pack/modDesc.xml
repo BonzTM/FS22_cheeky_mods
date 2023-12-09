@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<modDesc descVersion="79">
+    <author>Cheeky B#$!ards; GIANTS Software</author>
+    <version>1.3.2.0</version>
+    <title>
+        <en>Cheeky Misc Pack</en>
+    </title>
+	<description>
+		<en><![CDATA[Miscellaneous mods for the Cheeky Bastards.]]></en>
+	</description>	
+    <iconFilename>textures/store_cakePallet.png</iconFilename>
+    <storeItems>
+        <storeItem xmlFilename="xml/cheeky_armoirePallet.xml"/>
+        <storeItem xmlFilename="xml/cheeky_barrelPallet.xml"/>
+    </storeItems>
+	<multiplayer supported="true" />
+</modDesc>
