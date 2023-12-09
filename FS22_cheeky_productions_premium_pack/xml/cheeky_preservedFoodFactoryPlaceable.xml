@@ -11,6 +11,9 @@
             <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/premiumExpansion/placeables/sellingStationGeneretic/sellingStationGenericNoCoverWideGrid.i3d"/>
             <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(1)#filename" value="$pdlc/premiumExpansion/placeables/productionPoints/preservedFoodFactory/propsPlaceable.i3d"/>
 
+            <!-- Shared Throughput -->
+            <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
+            
             <!-- Preserved Food Carrots Production -->
             <set path="placeable.productionPoint.productions.production(0)#name" value="Preserved Food Carrots"/>
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
