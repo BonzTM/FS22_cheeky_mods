@@ -3,7 +3,7 @@
     <storeData>
         <name>Cheeky Sheep Barn</name>
         <image>textures/store_sheepBarnBig.png</image>
-        <price>242500</price>
+        <price>199000</price>
         <functions>
             <function>$l10n_function_animalPenSheep</function>
         </functions>
@@ -175,12 +175,12 @@
     <infoTrigger triggerNode="infoTrigger" />
 
     <husbandry saveId="Animals_SHEEP" hasStatistics="false">
-        <animals type="SHEEP" maxNumAnimals="325">
+        <animals type="SHEEP" maxNumAnimals="400">
             <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/sheepBarnBig/navigationMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
 
-        <food capacity="57500" >
+        <food capacity="75000" >
             <foodPlane node="foodPlane" minY="0.19" maxY="0.373" changeVisibility="true" defaultFillType="DRYGRASS_WINDROW" />
             <feedingTrough exactFillRootNode="exactFillRootNodeFood">
                 <baleTrigger triggerNode="baleTrigger"/>
