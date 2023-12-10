@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint">
-    <parentFile xmlFilename="$pdlc/premiumExpansion/placeables/productionPoints/soupFactory/soupFactoryPlaceable.xml">
+    <parentFile xmlFilename="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/soupFactoryPlaceable.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlc/premiumExpansion/placeables/productionPoints/soupFactory/soupFactoryPlaceable.i3d"/>       
-            <set path="placeable.storeData.image" value="$pdlc/premiumExpansion/placeables/productionPoints/soupFactory/store_soupFactoryPlaceable.png"/>
+            <set path="placeable.base.filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/soupFactoryPlaceable.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/store_soupFactoryPlaceable.png"/>
             <set path="placeable.storeData.name" value="Cheeky Soup Factory"/>
             <set path="placeable.storeData.price" value="675000"/>
-
-            <!-- Props linkage -->
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/premiumExpansion/placeables/sellingStationGeneretic/sellingStationGenericNoCoverWideGrid.i3d"/>
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(1)#filename" value="$pdlc/premiumExpansion/placeables/productionPoints/soupFactory/propsPlaceable.i3d"/>
 
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
@@ -88,8 +84,8 @@
             <!-- Currently broken -->
             <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
             <remove path="placeable.productionPoint.sounds.active(0)#template" />
-            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryIdle.wav"/>
-            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav"/> -->
+            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryIdle.wav"/>
+            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav"/> -->
 
 
         </attributes>
@@ -99,7 +95,7 @@
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>$pdlc/premiumExpansion/placeables/productionPoints/soupFactory/store_soupFactoryPlaceable.png</image>
+        <image>$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/store_soupFactoryPlaceable.png</image>
         <price>675000</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="pallet">
-    <parentFile xmlFilename="$pdlc/forestryPack/objects/pallets/armoirePallet/armoirePallet.xml">
+    <parentFile xmlFilename="$pdlcdir/forestryPack/objects/pallets/armoirePallet/armoirePallet.xml">
         <attributes>
             <!-- Base overrides -->
-            <set path="vehicle.base.filename" value="$pdlc/forestryPack/objects/pallets/armoirePallet/armoirePallet.i3d"/>       
+            <set path="vehicle.base.filename" value="$pdlcdir/forestryPack/objects/pallets/armoirePallet/armoirePallet.i3d"/>       
             <set path="vehicle.base.input#allowed" value="true"/>
             
             <!-- Store overrides -->

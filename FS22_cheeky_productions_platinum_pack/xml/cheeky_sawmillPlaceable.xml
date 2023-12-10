@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint">
-    <parentFile xmlFilename="$pdlc/forestryPack/placeables/productionPoints/sawmillPlaceable/sawmillPlaceable.xml">
+    <parentFile xmlFilename="$pdlcdir/forestryPack/placeables/productionPoints/sawmillPlaceable/sawmillPlaceable.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlc/forestryPack/placeables/productionPoints/sawmillPlaceable/sawmillPlaceable.i3d"/>       
-            <set path="placeable.storeData.image" value="$pdlc/forestryPack/placeables/productionPoints/sawmillPlaceable/store_sawmillPlaceable.png"/>
+            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/sawmillPlaceable/sawmillPlaceable.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/sawmillPlaceable/store_sawmillPlaceable.png"/>
             <set path="placeable.storeData.name" value="Cheeky Furniture Factory"/>
             <set path="placeable.storeData.price" value="550000"/>
-
-            <!-- Props linkage -->
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/sawmillPlaceable/props.i3d"/>
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#node" value="0"/>
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#linkNode" value="propsLinkNode"/>
 
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
@@ -72,12 +67,7 @@
             <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="120000"/>
 
             <!-- Sounds -->
-            <!-- Currently broken -->
-            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
-            <remove path="placeable.productionPoint.sounds.active(0)#template" />
-            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/sawmillPlaceable/sounds/sawmillPlaceableIdle.wav"/>
-            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/sawmillPlaceable/sounds/sawmillPlaceableWork.wav"/> -->
-
+            <!-- Replaced with script -->
 
         </attributes>
     </parentFile>
@@ -86,7 +76,7 @@
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>$pdlc/forestryPack/placeables/productionPoints/sawmillPlaceable/store_sawmillPlaceable.png</image>
+        <image>$pdlcdir/forestryPack/placeables/productionPoints/sawmillPlaceable/store_sawmillPlaceable.png</image>
         <price>550000</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>

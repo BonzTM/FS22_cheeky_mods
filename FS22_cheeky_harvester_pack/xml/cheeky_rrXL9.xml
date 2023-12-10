@@ -6,7 +6,7 @@
         <name>RR-XL 9x45</name>
         <specs>
             <workingWidth>4.0</workingWidth>
-            <combination xmlFilename="cheeky_tiger6S.xml"/>
+            <combination xmlFilename="xml/cheeky_tiger6S.xml"/>
             <combination xmlFilename="$data/vehicles/ropa/tiger6S/tiger6S.xml"/>
             <combination xmlFilename="$data/vehicles/ropa/rrXLTrailer/rrXLTrailer.xml"/>
         </specs>

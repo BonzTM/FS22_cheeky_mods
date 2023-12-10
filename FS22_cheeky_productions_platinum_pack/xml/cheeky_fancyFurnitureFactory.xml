@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint">
-    <parentFile xmlFilename="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/fancyFurnitureFactory.xml">
+    <parentFile xmlFilename="$pdlcdir/forestryPack/placeables/productionPoints/fancyFurnitureFactory/fancyFurnitureFactory.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/fancyFurnitureFactory.i3d"/>       
-            <set path="placeable.storeData.image" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/store_fancyFurnitureFactory.png"/>
+            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/fancyFurnitureFactory/fancyFurnitureFactory.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/fancyFurnitureFactory/store_fancyFurnitureFactory.png"/>
             <set path="placeable.storeData.name" value="Cheeky Furniture Factory"/>
             <set path="placeable.storeData.price" value="550000"/>
 
             <!-- Props linkage -->
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/props.i3d"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlcdir/forestryPack/placeables/productionPoints/fancyFurnitureFactory/props.i3d"/>
             <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#node" value="0"/>
             <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#linkNode" value="propsLinkNode"/>
 
@@ -88,12 +88,7 @@
             <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="100000"/>
 
             <!-- Sounds -->
-            <!-- Currently broken -->
-            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
-            <remove path="placeable.productionPoint.sounds.active(0)#template" />
-            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/sounds/fancyFurnitureFactoryIdle.wav"/>
-            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/sounds/fancyFurnitureFactoryWork.wav"/> -->
-
+            <!-- Replaced with script -->
 
         </attributes>
     </parentFile>
@@ -102,7 +97,7 @@
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>$pdlc/forestryPack/placeables/productionPoints/fancyFurnitureFactory/store_fancyFurnitureFactory.png</image>
+        <image>$pdlcdir/forestryPack/placeables/productionPoints/fancyFurnitureFactory/store_fancyFurnitureFactory.png</image>
         <price>550000</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>

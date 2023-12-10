@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="combineCutterFruitPreparer">
-    <parentFile xmlFilename="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/zkivSe.xml">
+    <parentFile xmlFilename="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/zkivSe.xml">
     <attributes>
-			<set path="vehicle.base.filename" value="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/zkivSe.i3d"/>
-			<set path="vehicle.storeData.image" value="$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/store_zkivSe.png"/>
+			<set path="vehicle.base.filename" value="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/zkivSe.i3d"/>
+			<set path="vehicle.storeData.image" value="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/store_zkivSe.png"/>
             <set path="vehicle.storeData.brand" value="dewulf"/>
             <set path="vehicle.storeData.name" value="ZKIVSE"/>
             <set path="vehicle.storeData.price" value="688500"/>
@@ -14,7 +14,7 @@
     <!-- ONLY FOR ICON GENERATION -->
     <storeData>
         <name>ZKIVSE</name>
-        <image>$pdlc/premiumExpansion/vehicles/dewulf/zkivSe/store_zkivSe.png</image>
+        <image>$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/store_zkivSe.png</image>
         <brand>dewulf</brand>
         <category>Vegetable Technology</category>
         <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>

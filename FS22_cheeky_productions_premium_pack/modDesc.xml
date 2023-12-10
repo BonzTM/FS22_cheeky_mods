@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.3.3.0</version>
+    <1.3.4.1</version>
     <title>
         <en>Cheeky Premium Productions Pack</en>
     </title>
@@ -14,5 +14,22 @@
         <storeItem xmlFilename="xml/cheeky_preservedFoodFactoryPlaceable.xml"/>
         <storeItem xmlFilename="xml/cheeky_soupFactoryPlaceable.xml"/>
     </storeItems>
+    
+    <extraSourceFiles>
+		<sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
+	</extraSourceFiles>
+ 
+    <overwrittenPaths>
+        <overwrittenPath originalPath="effects/chimneySmoke/smokeTrailSubUV.i3d" newPath="$pdlcdir/premiumExpansion/effects/chimneySmoke/smokeTrailSubUV.i3d" />
+        <overwrittenPath originalPath="placeables/sellingStationGeneretic/sellingStationGenericNoCoverWideGrid.i3d" newPath="$pdlcdir/premiumExpansion/placeables/sellingStationGeneretic/sellingStationGenericNoCoverWideGrid.i3d" />
+        <overwrittenPath originalPath="placeables/productionPoints/potatoProcessingPlant/props02.i3d" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/props02.i3d" />
+        <overwrittenPath originalPath="placeables/productionPoints/preservedFoodFactory/propsPlaceable.i3d" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/propsPlaceable.i3d" />
+        <overwrittenPath originalPath="placeables/productionPoints/soupFactory/propsPlaceable.i3d" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/propsPlaceable.i3d" />
+        <overwrittenPath originalPath="placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodIdle.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodIdle.wav" />
+        <overwrittenPath originalPath="placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodActive.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodActive.wav" />
+        <overwrittenPath originalPath="placeables/productionPoints/soupFactory/sounds/soupFactoryIdle.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryIdle.wav" />
+        <overwrittenPath originalPath="placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav" />    
+    </overwrittenPaths>
+    
 	<multiplayer supported="true" /> 
 </modDesc>

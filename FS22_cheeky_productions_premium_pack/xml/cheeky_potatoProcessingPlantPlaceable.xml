@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint">
-    <parentFile xmlFilename="$pdlc/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/potatoProcessingPlantPlaceable.xml">
+    <parentFile xmlFilename="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/potatoProcessingPlantPlaceable.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlc/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/potatoProcessingPlantPlaceable.i3d"/>       
-            <set path="placeable.storeData.image" value="$pdlc/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/store_potatoProcessingPlantPlaceable.png"/>
+            <set path="placeable.base.filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/potatoProcessingPlantPlaceable.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/store_potatoProcessingPlantPlaceable.png"/>
             <set path="placeable.storeData.name" value="Cheeky Potato Processing Plant"/>
             <set path="placeable.storeData.price" value="600000"/>
-
-            <!-- Props linkage -->
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/premiumExpansion/placeables/sellingStationGeneretic/sellingStationGenericNoCoverWideGrid.i3d"/>
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(1)#filename" value="$pdlc/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/props02.i3d"/>
 
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
@@ -64,7 +60,7 @@
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>$pdlc/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/store_potatoProcessingPlantPlaceable.png</image>
+        <image>$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/store_potatoProcessingPlantPlaceable.png</image>
         <price>600000</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>

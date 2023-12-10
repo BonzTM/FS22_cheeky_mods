@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint">
-    <parentFile xmlFilename="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.xml">
+    <parentFile xmlFilename="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.i3d"/>       
-            <set path="placeable.storeData.image" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/store_barrelFactory.png"/>
+            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.i3d"/>       
+            <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/store_barrelFactory.png"/>
             <set path="placeable.storeData.name" value="Cheeky Barrel Factory"/>
             <set path="placeable.storeData.price" value="600000"/>
 
             <!-- Props linkage -->
-            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/props.i3d"/>
+            <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/props.i3d"/>
             <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#node" value="0"/>
             <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#linkNode" value="propsLinkNode"/>
 
@@ -61,11 +61,7 @@
             <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="60000"/>
 
             <!-- Sounds -->
-            <!-- Currently broken -->
-            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
-            <remove path="placeable.productionPoint.sounds.active(0)#template" />
-            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/sounds/barrelFactoryIdle.wav"/>
-            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlc/forestryPack/placeables/productionPoints/barrelFactory/sounds/barrelFactoryWork.wav"/> -->
+            <!-- Replaced with script -->
 
         </attributes>
     </parentFile>
@@ -74,7 +70,7 @@
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
-        <image>$pdlc/forestryPack/placeables/productionPoints/barrelFactory/store_barrelFactory.png</image>
+        <image>$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/store_barrelFactory.png</image>
         <price>600000</price>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
