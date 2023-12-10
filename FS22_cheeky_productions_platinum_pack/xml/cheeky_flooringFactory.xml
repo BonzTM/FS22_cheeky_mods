@@ -28,7 +28,7 @@
             <set path="placeable.productionPoint.productions.production(1)#name" value="Floor Tiles"/>
             <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="13"/>
             <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="35"/>
-            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="PLANKS"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="BOARDS"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="140"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="FLOORTILES"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="180"/>
