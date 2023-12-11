@@ -10,8 +10,7 @@
 	</description>	
     <iconFilename>textures/store_cakePallet.png</iconFilename>
     <storeItems>
-        <storeItem xmlFilename="xml/cheeky_armoirePallet.xml"/>
-        <storeItem xmlFilename="xml/cheeky_barrelPallet.xml"/>
+        <storeItem xmlFilename="xml/cheeky_bigPack1290HDPVC.xml"/>
     </storeItems>
 	<multiplayer supported="true" />
 </modDesc>
