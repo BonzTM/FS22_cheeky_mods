@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<modDesc descVersion="79">
+    <author>Cheeky B#$!ards; GIANTS Software</author>
+    <version>1.4.0.0</version>
+    <title>
+        <en>Cheeky Pallets and Bales Pack</en>
+    </title>
+	<description>
+		<en><![CDATA[Buyable pallets for the Cheeky Bastards.]]></en>
+	</description>	
+    <iconFilename>textures/store_cakePallet.png</iconFilename>
+    <storeItems>
+        <!-- Base Game -->
+		<!-- Buyable Pallets -->
+        <storeItem  xmlFilename="xml/pallets/bakeryBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/boardsStackPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/butterBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/cakePallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/canolaOilPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/cerealsPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/cheesePallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/chocolateBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/clothesBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/eggBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/fabricsPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/flourPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/furnitureStackPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/grapeJuicePallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/honeyBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/lettuceBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/milkTank.xml"/>
+        <storeItem  xmlFilename="xml/pallets/oliveOilPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/raisinBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/strawberriesBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/sugarBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/sugarcanePallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/sunflowerOilPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/tomatoesBoxPallet.xml"/>
+        <storeItem  xmlFilename="xml/pallets/woolPallet.xml"/>
+
+        <!-- Platinum DLC -->
+        <!-- Buyable Pallets -->`
+        <storeItem xmlFilename="xml/pallets/platinum/armoirePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/barrelPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/bathtubPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/birdHousePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/bowlsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/bucketPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/cartonRollPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/catTreePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/chairPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/dogHousePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/easelPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/floorTilesPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/metalPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/paperRollPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/pepperGrinderPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/pictureFramePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/planksPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/prefabWallPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/shingleGenericPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/staircaseRailingPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/tablePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/platinum/woodBeamPallet.xml"/>
+
+        <!-- Premium DLC -->
+        <!-- Buyable Pallets -->
+        <storeItem xmlFilename="xml/pallets/premium/potatoChipsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/premium/preservedFoodBeetRootPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/premium/preservedFoodCarrotsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/premium/preservedFoodParsnipPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/premium/soupCansPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/premium/soupCansPalletBeetroot.xml"/>
+        <storeItem xmlFilename="xml/pallets/premium/soupCansPalletCarrots.xml"/>
+        <storeItem xmlFilename="xml/pallets/premium/soupCansPalletParsnip.xml"/>
+        <storeItem xmlFilename="xml/pallets/premium/soupCansPalletPotato.xml"/>
+    </storeItems>
+
+	<!-- <extraSourceFiles>
+		<sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
+	</extraSourceFiles> -->
+
+    <!-- <overwrittenPaths> -->
+        <!-- Premium DLC fixes -->
+        <!-- <overwrittenPath originalPath="objects/pallets/soupCansPallet/soupCansPalletBeetroot" newPath="$pdlcdir/premiumExpansion/objects/pallets/soupCansPallet/soupCansPalletBeetroot" /> -->
+        <!-- <overwrittenPath originalPath="objects/pallets/soupCansPallet/soupCansPalletCarrots" newPath="$pdlcdir/premiumExpansion/objects/pallets/soupCansPallet/soupCansPalletCarrots" /> -->
+        <!-- <overwrittenPath originalPath="objects/pallets/soupCansPallet/soupCansPalletParsnip" newPath="$pdlcdir/premiumExpansion/objects/pallets/soupCansPallet/soupCansPalletParsnip" /> -->
+        <!-- <overwrittenPath originalPath="objects/pallets/soupCansPallet/soupCansPalletPotato" newPath="$pdlcdir/premiumExpansion/objects/pallets/soupCansPallet/soupCansPalletPotato" /> -->
+    <!-- </overwrittenPaths> -->
+
+	<multiplayer supported="true" />
+</modDesc>

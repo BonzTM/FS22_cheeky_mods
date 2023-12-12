@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="pallet">
-    <parentFile xmlFilename="$pdlcdir/forestryPack/objects/pallets/barrelPallet/barrelPallet.xml">
+    <parentFile xmlFilename="$pdlcdir/forestryPack/objects/pallets/catTreePallet/catTreePallet.xml">
         <attributes>
             <!-- Base overrides -->
-            <set path="vehicle.base.filename" value="$pdlcdir/forestryPack/objects/pallets/barrelPallet/barrelPallet.i3d"/>       
+            <set path="vehicle.base.filename" value="$pdlcdir/forestryPack/objects/pallets/catTreePallet/catTreePallet.i3d"/>       
             <set path="vehicle.base.input#allowed" value="true"/>
             
             <!-- Store overrides -->
-            <set path="vehicle.storeData.image" value="$data/store/store_empty.png"/>
-            <set path="vehicle.storeData.name" value="Barrel Pallet"/>
-            <set path="vehicle.storeData.price" value="3800"/>
+            <set path="vehicle.storeData.image" value="textures/platinum/store_catTreePallet.png"/>
+            <set path="vehicle.storeData.name" value="Cat Tree Pallet"/>
+            <set path="vehicle.storeData.price" value="9150"/>
             <set path="vehicle.storeData.showInStore" value="true"/>
             <set path="vehicle.storeData.allowLeasing" value="false"/>
-            <set path="vehicle.storeData.canBeSold" value="false"/>
-            <set path="vehicle.storeData.rotation" value="0"/>
+            <!-- <set path="vehicle.storeData.canBeSold" value="false"/> -->
             <set path="vehicle.storeData.brand" value="LIZARD"/>
             <set path="vehicle.storeData.category" value="pallets"/>
             <set path="vehicle.storeData.financeCategory" value="OTHER"/>
-            <set path="vehicle.storeData.shopHeight" value="1.5"/>
+            <!-- <set path="vehicle.storeData.shopHeight" value="1.5"/>
             <set path="vehicle.storeData.storeIconRendering.settings(0)#cameraXRot" value="-15"/>
-            <set path="vehicle.storeData.storeIconRendering.settings(0)#cameraYRot" value="35"/>
+            <set path="vehicle.storeData.storeIconRendering.settings(0)#cameraYRot" value="35"/> -->
             
             <!-- Fill overrides -->
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#startFillType" value="BARREL"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#startFillType" value="CATTREE"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#startFillLevel" value="1000"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#capacity" value="1000"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#ignoreFillLimit" value="true"/>
@@ -30,22 +29,18 @@
 
         </attributes>
     </parentFile>
-
+    
     <!-- ONLY USED FOR ICON GENERATION -->
     <storeData>
-        <name>Barrel Pallet</name>
-        <image>$data/store/store_empty.png</image>
-        <price>3500</price>
-        <allowLeasing>false</allowLeasing>
-        <showInStore>true</showInStore>
-        <canBeSold>false</canBeSold>
-        <rotation>0</rotation>
+        <name>Cat Tree Pallet</name>
+        <image>textures/platinum/store_catTreePallet.png</image>
         <brand>LIZARD</brand>
         <category>pallets</category>
-        <financeCategory>OTHER</financeCategory>
-        <shopHeight>1.5</shopHeight>
-        <storeIconRendering>
-            <settings cameraXRot="-15" cameraYRot="35" />
-        </storeIconRendering>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
     </storeData>
 </vehicle>
