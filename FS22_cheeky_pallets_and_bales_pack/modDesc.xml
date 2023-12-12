@@ -75,18 +75,5 @@
         <storeItem xmlFilename="xml/pallets/premium/soupCansPalletParsnip.xml"/>
         <storeItem xmlFilename="xml/pallets/premium/soupCansPalletPotato.xml"/>
     </storeItems>
-
-	<!-- <extraSourceFiles>
-		<sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
-	</extraSourceFiles> -->
-
-    <!-- <overwrittenPaths> -->
-        <!-- Premium DLC fixes -->
-        <!-- <overwrittenPath originalPath="objects/pallets/soupCansPallet/soupCansPalletBeetroot" newPath="$pdlcdir/premiumExpansion/objects/pallets/soupCansPallet/soupCansPalletBeetroot" /> -->
-        <!-- <overwrittenPath originalPath="objects/pallets/soupCansPallet/soupCansPalletCarrots" newPath="$pdlcdir/premiumExpansion/objects/pallets/soupCansPallet/soupCansPalletCarrots" /> -->
-        <!-- <overwrittenPath originalPath="objects/pallets/soupCansPallet/soupCansPalletParsnip" newPath="$pdlcdir/premiumExpansion/objects/pallets/soupCansPallet/soupCansPalletParsnip" /> -->
-        <!-- <overwrittenPath originalPath="objects/pallets/soupCansPallet/soupCansPalletPotato" newPath="$pdlcdir/premiumExpansion/objects/pallets/soupCansPallet/soupCansPalletPotato" /> -->
-    <!-- </overwrittenPaths> -->
-
 	<multiplayer supported="true" />
 </modDesc>
