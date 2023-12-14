@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cottonSquarebale488" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/fillPlanes/cotton_diffuse.png" />
+    <File fileId="2" filename="$data/fillPlanes/cotton_normal.png" />
+    <File fileId="3" filename="$data/fillPlanes/cotton_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="phong1" materialId="2">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cottonSquarebale488.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="cottonSquarebale488" scale="1 1 1" shapeId="1" dynamic="true" compound="true" restitution="1" staticFriction="1.3" dynamicFriction="1.3" linearDamping="0.25" angularDamping="0.6" density="0.2" collisionMask="16781314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="250" nodeId="1">
+      <Shape name="attacherTrigger" translation="-0 -0 0" visibility="false" shapeId="2" kinematic="true" trigger="true" linearDamping="0.5" angularDamping="0.5" collisionMask="134217728" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="2"/>
+      <Shape name="cottonSquarebale488_vis" translation="0 0.069955 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="3"/>
+      <TransformGroup name="sliderCollisions" nodeId="4">
+        <Shape name="colPart01" scale="1 1 1" shapeId="4" compoundChild="true" restitution="0.1" staticFriction="0.05" dynamicFriction="0.05" collisionMask="16781314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="5"/>
+        <Shape name="colPart02" scale="1 1 1" shapeId="5" compoundChild="true" restitution="0.1" staticFriction="0.05" dynamicFriction="0.05" collisionMask="16781314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="6"/>
+        <Shape name="colPart03" scale="1 1 1" shapeId="6" compoundChild="true" density="0.001" collisionMask="16781314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="7"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

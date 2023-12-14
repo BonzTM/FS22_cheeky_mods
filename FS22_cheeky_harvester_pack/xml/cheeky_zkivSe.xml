@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<vehicle type="pdlc_premiumExpansion.combineDrivableCutter">
+<vehicle type="combineDrivableCutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/vehicle.xsd">
     <parentFile xmlFilename="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/zkivSe.xml">
     <attributes>
 			<set path="vehicle.base.filename" value="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/zkivSe.i3d"/>
@@ -8,6 +8,7 @@
             <set path="vehicle.storeData.name" value="ZKIVSE"/>
             <set path="vehicle.storeData.price" value="688500"/>
             <set path="vehicle.base.speedLimit" value="10"/>
+            <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="800"/>
 		</attributes>
     </parentFile>
 

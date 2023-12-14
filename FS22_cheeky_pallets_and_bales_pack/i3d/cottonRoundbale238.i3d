@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="cottonRoundbale238" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/objects/cottonModules/bale_diffuse.png" />
+    <File fileId="2" filename="$data/objects/cottonModules/bale_normal.png" />
+    <File fileId="3" filename="$data/objects/cottonModules/bale_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="bale_mat" materialId="2">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cottonRoundbale238.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="cottonRoundbale488" shapeId="1" dynamic="true" compound="true" restitution="1" staticFriction="1.3" dynamicFriction="1.3" linearDamping="0.25" angularDamping="0.6" density="0.207" collisionMask="16781314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="250" nodeId="1">
+      <Shape name="attacherTrigger" shapeId="2" kinematic="true" trigger="true" linearDamping="0.5" angularDamping="0.5" collisionMask="134217728" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="2"/>
+      <Shape name="roundbale_vis" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="250" nodeId="3"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="2">
+      <Attribute name="isRoundbale" type="boolean" value="true"/>
+      <Attribute name="fillType" type="string" value="cotton"/>
+      <Attribute name="dynamicMountTriggerIndex" type="string" value="0"/>
+      <Attribute name="dynamicMountForceLimitScale" type="float" value="2"/>
+      <Attribute name="baleMeshIndex" type="string" value="1"/>
+      <Attribute name="supportsWrapping" type="boolean" value="true"/>
+      <Attribute name="baleWidth" type="float" value="2.38"/>
+      <Attribute name="baleDiameter" type="float" value="2.38"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>
