@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.4.0.0</version>
+    <version>1.4.1.0</version>
     <title>
         <en>Cheeky Pallets and Bales Pack</en>
     </title>
@@ -74,6 +74,10 @@
         <storeItem xmlFilename="xml/pallets/premium/soupCansPalletCarrots.xml"/>
         <storeItem xmlFilename="xml/pallets/premium/soupCansPalletParsnip.xml"/>
         <storeItem xmlFilename="xml/pallets/premium/soupCansPalletPotato.xml"/>
+
+        <!-- Buyable Bales -->
+        <storeItem xmlFilename="xml/bales/cottonRoundbale238.xml"/>
+        <storeItem xmlFilename="xml/bales/cottonSquarebale488.xml"/>
     </storeItems>
 	<multiplayer supported="true" />
 </modDesc>
