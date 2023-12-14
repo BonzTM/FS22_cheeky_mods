@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="multipleItemPurchase" >
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+    <storeData>
+        <name>Cotton Square Bale</name>
+        <specs>
+            <weight minValue="0" />
+        </specs>
+        <functions>
+            <function>$l10n_function_bales</function>
+        </functions>
+        <image>textures/store_buyableBales_silage.png</image>
+        <price>75120</price>
+        <lifetime>600</lifetime>
+        <allowLeasing>false</allowLeasing>
+        <canBeSold>false</canBeSold>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>bales</category>
+        <vertexBufferMemoryUsage>768</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>256</indexBufferMemoryUsage>
+        <textureMemoryUsage>65536</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <financeCategory>PURCHASE_BALES</financeCategory>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="25" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>Cotton Square Bale</typeDesc>
+        <!-- <filename>$data/objects/cottonModules/cottonRoundbale238.i3d</filename>
+        <size isRoundbale="true" width="2.38" diameter="2.38" maxStackHeight="1"/> -->
+        <filename>$data/objects/buyableBales/buyableBale.i3d</filename>
+        <size width="4" length="4" />
+        <components>
+            <component centerOfMass="0 0 0" solverIterationCount="10" mass="100"/>
+        </components>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits>
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="COTTON" capacity="1" />
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <multipleItemPurchase filename="$data/objects/cottonModules/cottonSquarebale488.xml" isVehicle="false" fillType="COTTON">
+        <offsets>
+            <offset amount="1" offset="0 0 0.67"/>
+            <offset amount="3" offset="0 0 0"/>
+            <offset amount="5" offset="-0.67 0 0"/>
+        </offsets>
+        <itemPositions>
+            <itemPosition position="0 0.58 -0.67" rotation="-90 0 0"/>
+            <itemPosition position="0 1.75 -0.67" rotation="-90 0 0"/>
+
+            <itemPosition position="0 0.58 0.67" rotation="-90 0 0"/>
+            <itemPosition position="0 1.75 0.67" rotation="-90 0 0"/>
+
+            <itemPosition position="1.34 0.58 -0.67" rotation="-90 0 0"/>
+            <itemPosition position="1.34 1.75 -0.67" rotation="-90 0 0"/>
+
+            <itemPosition position="1.34 0.58 0.67" rotation="-90 0 0"/>
+            <itemPosition position="1.34 1.75 0.67" rotation="-90 0 0"/>
+        </itemPositions>
+    </multipleItemPurchase>
+
+    <multipleItemPurchaseAmountConfigurations>
+        <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="75120"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="150240"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="225360"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="300480"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="375600"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="450720"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="525840"/>
+    </multipleItemPurchaseAmountConfigurations>
+
+</vehicle>
