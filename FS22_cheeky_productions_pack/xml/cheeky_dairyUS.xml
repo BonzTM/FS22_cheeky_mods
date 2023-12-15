@@ -112,19 +112,19 @@
             </production>
             <production id="cheese" name="$l10n_fillType_cheese" cyclesPerHour="12" costsPerActiveHour="12">
                 <inputs>
-                    <input fillType="MILK" amount="150" />
+                    <input fillType="MILK" amount="300" />
                 </inputs>
                 <outputs>
-                    <output fillType="CHEESE" amount="110" />
+                    <output fillType="CHEESE" amount="220" />
                 </outputs>
             </production>
             <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="12" costsPerActiveHour="12">
                 <inputs>
-                    <input fillType="MILK" amount="100" />
-                    <input fillType="SUGAR" amount="105" />
+                    <input fillType="MILK" amount="200" />
+                    <input fillType="SUGAR" amount="110" />
                 </inputs>
                 <outputs>
-                    <output fillType="CHOCOLATE" amount="100" />
+                    <output fillType="CHOCOLATE" amount="200" />
                 </outputs>
             </production>
         </productions>
