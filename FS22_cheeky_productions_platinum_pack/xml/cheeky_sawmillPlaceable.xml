@@ -72,7 +72,7 @@
         </attributes>
     </parentFile>
     <storeData>
-        <name>Cheeky Furniture Factory</name>
+        <name>Cheeky Sawmill (Wood-mizer LT15)</name>
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
