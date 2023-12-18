@@ -95,10 +95,10 @@
     </lights>
 
     <productionPoint>
-        <productions>
+        <productions sharedThroughputCapacity="false">
             <production id="furnitureWood" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_wood" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="WOOD" amount="110" />
+                    <input fillType="WOOD" amount="120" />
                 </inputs>
                 <outputs>
                     <output fillType="FURNITURE" amount="100" />
@@ -107,7 +107,7 @@
             </production>
             <production id="furnitureBoards" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_boards" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="BOARDS" amount="120" />
+                    <input fillType="BOARDS" amount="125" />
                 </inputs>
                 <outputs>
                     <output fillType="FURNITURE" amount="140" />
@@ -117,10 +117,10 @@
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="WOOD"      capacity="300000" />
+            <capacity fillType="WOOD"      capacity="400000" />
             <capacity fillType="BOARDS"    capacity="180000" />
-            <capacity fillType="FURNITURE" capacity="40000" />
-            <capacity fillType="WOODCHIPS" capacity="50000" />
+            <capacity fillType="FURNITURE" capacity="60000" />
+            <capacity fillType="WOODCHIPS" capacity="10000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">

@@ -116,7 +116,7 @@
                     <input fillType="WHEAT" amount="500" />
                 </inputs>
                 <outputs>
-                    <output fillType="FLOUR" amount="500" />
+                    <output fillType="FLOUR" amount="600" />
                 </outputs>
             </production>
             <production id="flourBarley" name="%s %s" params="$l10n_fillType_barley|$l10n_fillType_flour" cyclesPerHour="13" costsPerActiveHour="8">
@@ -124,15 +124,15 @@
                     <input fillType="BARLEY" amount="600" />
                 </inputs>
                 <outputs>
-                    <output fillType="FLOUR" amount="600" />
+                    <output fillType="FLOUR" amount="675" />
                 </outputs>
             </production>
             <production id="flourOat" name="%s %s"  params="$l10n_fillType_oat|$l10n_fillType_flour" cyclesPerHour="10" costsPerActiveHour="8">
                 <inputs>
-                    <input fillType="OAT" amount="750" />
+                    <input fillType="OAT" amount="500" />
                 </inputs>
                 <outputs>
-                    <output fillType="FLOUR" amount="1300" />
+                    <output fillType="FLOUR" amount="950" />
                 </outputs>
             </production>
             <production id="flourSorghum" name="%s %s"  params="$l10n_fillType_sorghum|$l10n_fillType_flour" cyclesPerHour="10" costsPerActiveHour="8">
@@ -140,7 +140,7 @@
                     <input fillType="SORGHUM" amount="550" />
                 </inputs>
                 <outputs>
-                    <output fillType="FLOUR" amount="775" />
+                    <output fillType="FLOUR" amount="850" />
                 </outputs>
             </production>
         </productions>

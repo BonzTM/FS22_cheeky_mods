@@ -4,7 +4,7 @@
         <attributes>
             <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/sawmillPlaceable/sawmillPlaceable.i3d"/>       
             <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/sawmillPlaceable/store_sawmillPlaceable.png"/>
-            <set path="placeable.storeData.name" value="Cheeky Furniture Factory"/>
+            <set path="placeable.storeData.name" value="Cheeky Sawmill (Wood-Mizer LT15)"/>
             <set path="placeable.storeData.price" value="550000"/>
 
             <!-- Shared Throughput -->
@@ -15,7 +15,7 @@
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="208"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="210"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="BOARDS"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="280"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(1)#fillType" value="WOODCHIPS"/>
@@ -26,7 +26,7 @@
             <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="208"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="210"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="188"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(1)#fillType" value="WOODCHIPS"/>
@@ -37,7 +37,7 @@
             <set path="placeable.productionPoint.productions.production(2)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="208"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="210"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="WOODBEAM"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="125"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(1)#fillType" value="WOODCHIPS"/>
@@ -48,7 +48,7 @@
             <set path="placeable.productionPoint.productions.production(3)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(3)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="208"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="215"/>
             <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#fillType" value="PREFABWALL"/>
             <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="75"/>
 
@@ -72,7 +72,7 @@
         </attributes>
     </parentFile>
     <storeData>
-        <name>Cheeky Sawmill (Wood-mizer LT15)</name>
+        <name>Cheeky Sawmill (Wood-Mizer LT15)</name>
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>

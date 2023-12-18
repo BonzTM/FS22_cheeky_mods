@@ -21,7 +21,7 @@
             <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#fillType" value="BEETROOT"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#amount" value="500"/>            
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="SOUPCANSMIXED"/>
-            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="500"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="375"/>
             
             <!-- Carrot Soup Production -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Carrot Soup"/>
@@ -30,7 +30,7 @@
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="CARROT"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="1800"/>         
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="SOUPCANSCARROTS"/>
-            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="600"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="525"/>
 
             <!-- Parsnip Soup Production -->
             <set path="placeable.productionPoint.productions.production(2)#name" value="Parsnip Soup"/>
@@ -39,7 +39,7 @@
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="PARSNIP"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="1800"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="SOUPCANSPARSNIP"/>
-            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="600"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="550"/>
 
             <!-- Red Beet Soup Production -->
             <set path="placeable.productionPoint.productions.production(3)#name" value="Red Beet Soup"/>
@@ -48,7 +48,7 @@
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#fillType" value="BEETROOT"/>
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="1800"/>
             <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#fillType" value="SOUPCANSBEETROOT"/>
-            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="600"/>            
+            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="510"/>            
 
             <!-- Potato Soup Production -->
             <set path="placeable.productionPoint.productions.production(4)#name" value="Potato Soup"/>
@@ -57,7 +57,7 @@
             <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#fillType" value="POTATO"/>
             <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#amount" value="1800"/>
             <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#fillType" value="SOUPCANSPOTATO"/>
-            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="600"/>  
+            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="575"/>  
 
 
             <!-- Capacity -->

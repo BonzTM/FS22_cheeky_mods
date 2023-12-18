@@ -24,7 +24,7 @@
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="25"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="ARMOIRE"/>
-            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="166"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="120"/>
 
             <!-- Armoire Production 2 -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Armoire"/>
@@ -35,16 +35,16 @@
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="25"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="ARMOIRE"/>
-            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="166"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="110"/>
 
             <!-- Chair Production 1 -->
             <set path="placeable.productionPoint.productions.production(2)#name" value="Chair"/>
             <set path="placeable.productionPoint.productions.production(2)#cyclesPerHour" value="19"/>
             <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="PLANKS"/>
-            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="50"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="48"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="CHAIR"/>
-            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="125"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="92"/>
 
             <!-- Chair Production 2 -->
             <set path="placeable.productionPoint.productions.production(3)#name" value="Chair"/>
@@ -53,7 +53,7 @@
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#fillType" value="BOARDS"/>
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="75"/>
             <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#fillType" value="CHAIR"/>
-            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="125"/>
+            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="85"/>
 
             <!-- Table Production 1 -->
             <set path="placeable.productionPoint.productions.production(4)#name" value="Table"/>
@@ -62,14 +62,14 @@
             <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#amount" value="80"/>
             <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#fillType" value="TABLE"/>
-            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="100"/>
+            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="95"/>
 
             <!-- Table Production 2 -->
             <set path="placeable.productionPoint.productions.production(5)#name" value="Table"/>
             <set path="placeable.productionPoint.productions.production(5)#cyclesPerHour" value="24"/>
             <set path="placeable.productionPoint.productions.production(5)#costsPerActiveHour" value="30"/>
             <set path="placeable.productionPoint.productions.production(5).inputs.input(0)#fillType" value="BOARDS"/>
-            <set path="placeable.productionPoint.productions.production(5).inputs.input(0)#amount" value="125"/>
+            <set path="placeable.productionPoint.productions.production(5).inputs.input(0)#amount" value="140"/>
             <set path="placeable.productionPoint.productions.production(5).outputs.output(0)#fillType" value="TABLE"/>
             <set path="placeable.productionPoint.productions.production(5).outputs.output(0)#amount" value="100"/>
 

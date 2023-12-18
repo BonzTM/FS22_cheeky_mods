@@ -24,7 +24,7 @@
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="25"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="BARREL"/>
-            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="340"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="235"/>
 
             <!-- Bucket Production -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Bucket"/>
@@ -35,7 +35,7 @@
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="25"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="BUCKET"/>
-            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="170"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="145"/>
 
             <!-- Bathtub Production -->
             <set path="placeable.productionPoint.productions.production(2)#name" value="Bathtub"/>
@@ -46,7 +46,7 @@
             <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="10"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="BATHTUB"/>
-            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="85"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="65"/>
 
             <!-- Capacity -->
             <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="PLANKS"/>

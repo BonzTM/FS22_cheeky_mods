@@ -134,7 +134,7 @@
             <capacity fillType="RAISINS" capacity="300000" />
             <capacity fillType="OAT"     capacity="600000" />
             <capacity fillType="MAIZE"   capacity="600000" />
-            <capacity fillType="CEREAL"  capacity="70000" />
+            <capacity fillType="CEREAL"  capacity="100000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">

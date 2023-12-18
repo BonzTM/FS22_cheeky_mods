@@ -118,7 +118,7 @@
                     <input fillType="SUNFLOWER" amount="400" />
                 </inputs>
                 <outputs>
-                    <output fillType="SUNFLOWER_OIL" amount="285" />
+                    <output fillType="SUNFLOWER_OIL" amount="300" />
                 </outputs>
             </production>
             <production id="canola_oil" name="$l10n_fillType_canolaOil" cyclesPerHour="11" costsPerActiveHour="10">
@@ -126,15 +126,15 @@
                     <input fillType="CANOLA" amount="400" />
                 </inputs>
                 <outputs>
-                    <output fillType="CANOLA_OIL" amount="275" />
+                    <output fillType="CANOLA_OIL" amount="300" />
                 </outputs>
             </production>
             <production id="olive_oil" name="$l10n_fillType_oliveOil" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="OLIVE" amount="175" />
+                    <input fillType="OLIVE" amount="250" />
                 </inputs>
                 <outputs>
-                    <output fillType="OLIVE_OIL" amount="100" />
+                    <output fillType="OLIVE_OIL" amount="140" />
                 </outputs>
             </production>
         </productions>
@@ -145,7 +145,7 @@
             <capacity fillType="OLIVE"         capacity="720000" />
             <capacity fillType="SUNFLOWER_OIL" capacity="100000" />
             <capacity fillType="CANOLA_OIL"    capacity="100000" />
-            <capacity fillType="OLIVE_OIL"     capacity="50000" />
+            <capacity fillType="OLIVE_OIL"     capacity="100000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">

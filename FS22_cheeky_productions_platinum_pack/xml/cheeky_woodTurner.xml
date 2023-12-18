@@ -20,25 +20,25 @@
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="50"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="100"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="140"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="STAIRCASERAILING"/>
-            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="220"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="200"/>
 
             <!-- Staircase Railing Production 2 -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Staircase Railing"/>
             <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="PLANKS"/>
-            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="70"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="80"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="STAIRCASERAILING"/>
-            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="220"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="225"/>
 
             <!-- Pepper Grinder Production 1 -->
             <set path="placeable.productionPoint.productions.production(2)#name" value="Pepper Grinder"/>
             <set path="placeable.productionPoint.productions.production(2)#cyclesPerHour" value="22"/>
             <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="50"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="50"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="75"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="PEPPERGRINDER"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="100"/>
 
@@ -47,25 +47,25 @@
             <set path="placeable.productionPoint.productions.production(3)#cyclesPerHour" value="15"/>
             <set path="placeable.productionPoint.productions.production(3)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#fillType" value="PLANKS"/>
-            <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="50"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="55"/>
             <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#fillType" value="PEPPERGRINDER"/>
-            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="150"/>
+            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="145"/>
 
             <!-- Bowl Production 1 -->
             <set path="placeable.productionPoint.productions.production(4)#name" value="Bowl"/>
             <set path="placeable.productionPoint.productions.production(4)#cyclesPerHour" value="14"/>
             <set path="placeable.productionPoint.productions.production(4)#costsPerActiveHour" value="50"/>
             <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#amount" value="150"/>
+            <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#amount" value="160"/>
             <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#fillType" value="BOWL"/>
-            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="150"/>
+            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="140"/>
 
             <!-- Bowl Production 2 -->
             <set path="placeable.productionPoint.productions.production(5)#name" value="Bowl"/>
             <set path="placeable.productionPoint.productions.production(5)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(5)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(5).inputs.input(0)#fillType" value="PLANKS"/>
-            <set path="placeable.productionPoint.productions.production(5).inputs.input(0)#amount" value="100"/>
+            <set path="placeable.productionPoint.productions.production(5).inputs.input(0)#amount" value="120"/>
             <set path="placeable.productionPoint.productions.production(5).outputs.output(0)#fillType" value="BOWL"/>
             <set path="placeable.productionPoint.productions.production(5).outputs.output(0)#amount" value="210"/>
 

@@ -17,7 +17,7 @@
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="CARROT"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="PRESERVEDCARROTS"/>
-            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="600"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="380"/>
             
             <!-- Preserved Food Parsnip Production -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Preserved Food Parsnip"/>
@@ -26,7 +26,7 @@
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="PARSNIP"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="PRESERVEDPARSNIP"/>
-            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="600"/>
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="375"/>
 
             <!-- Preserved Food Beetroot Production -->
             <set path="placeable.productionPoint.productions.production(2)#name" value="Preserved Food Beetroot"/>
@@ -35,7 +35,7 @@
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="BEETROOT"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="PRESERVEDBEETROOT"/>
-            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="600"/>
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="350"/>
 
             <!-- Capacity -->
             <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="CARROT"/>

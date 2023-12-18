@@ -29,7 +29,7 @@
             <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="525"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="450"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="PAPERROLL"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="230"/>
 

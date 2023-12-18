@@ -17,9 +17,9 @@
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="POTATO"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="SUNFLOWER_OIL"/>
-            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="50"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="100"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="POTATOCHIPS"/>
-            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="375"/>
+            <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="450"/>
             
             <!-- Potato Chips Production 2 -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Potato Chips"/>
@@ -28,9 +28,9 @@
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="POTATO"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="CANOLA_OIL"/>
-            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="50"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="100"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="POTATOCHIPS"/>
-            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="375"/>    
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="440"/>    
                     
             <!-- Potato Chips Production 3 -->
             <set path="placeable.productionPoint.productions.production(2)#name" value="Potato Chips"/>
@@ -39,9 +39,9 @@
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="POTATO"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="OLIVE_OIL"/>
-            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="40"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="80"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="POTATOCHIPS"/>
-            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="375"/>   
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="475"/>   
 
             <!-- Capacity -->
             <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="POTATO"/>

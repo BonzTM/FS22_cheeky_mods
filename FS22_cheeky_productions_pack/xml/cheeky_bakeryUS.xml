@@ -113,7 +113,7 @@
                     <input fillType="FLOUR" amount="200" />
                 </inputs>
                 <outputs>
-                    <output fillType="BREAD" amount="125" />
+                    <output fillType="BREAD" amount="130" />
                 </outputs>
             </production>
             <production id="cake" name="$l10n_fillType_cake" cyclesPerHour="10" costsPerActiveHour="10">
@@ -126,7 +126,7 @@
                     <input fillType="STRAWBERRY" amount="40" />
                 </inputs>
                 <outputs>
-                    <output fillType="CAKE" amount="100" />
+                    <output fillType="CAKE" amount="90" />
                 </outputs>
             </production>
         </productions>
@@ -146,13 +146,13 @@
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
             <capacity fillType="FLOUR"      capacity="650000" />
-            <capacity fillType="SUGAR"      capacity="70000" />
-            <capacity fillType="MILK"       capacity="70000" />
-            <capacity fillType="EGG"        capacity="70000" />
-            <capacity fillType="BUTTER"     capacity="70000" />
-            <capacity fillType="STRAWBERRY" capacity="70000" />
-            <capacity fillType="BREAD"      capacity="70000" />
-            <capacity fillType="CAKE"       capacity="70000" />
+            <capacity fillType="SUGAR"      capacity="100000" />
+            <capacity fillType="MILK"       capacity="100000" />
+            <capacity fillType="EGG"        capacity="100000" />
+            <capacity fillType="BUTTER"     capacity="100000" />
+            <capacity fillType="STRAWBERRY" capacity="100000" />
+            <capacity fillType="BREAD"      capacity="100000" />
+            <capacity fillType="CAKE"       capacity="100000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />
