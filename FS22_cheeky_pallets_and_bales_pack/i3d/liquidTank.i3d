@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="liquidTank.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/objects/pallets/liquidTank/cortevaDecal_diffuse.png"/>
+    <File fileId="10" filename="$data/objects/pallets/liquidTank/fertilizerTank_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/liquidTank/fertilizerTank_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/liquidTank/fertilizerTank_specular.png"/>
+    <File fileId="9" filename="$data/objects/pallets/liquidTank/herbicideTank_diffuse.png"/>
+    <File fileId="8" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="6" filename="$data/shared/default_normal.png"/>
+    <File fileId="7" filename="$data/shared/default_specular.png"/>
+    <File fileId="2" filename="../../textures/liquidTank_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cortevaDecal_mat" materialId="5" alphaBlending="true" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="fertilizerTank_mat" materialId="6">
+      <Texture fileId="10"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="herbicideTank_mat" materialId="8">
+      <Texture fileId="9"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="liquidTank_mat" materialId="7">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="liquidTank.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="fertilizerTank_main_component1" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" density="0.07" clipDistance="200" nodeId="18" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="triggers" nodeId="19">
+          <Shape shapeId="2" name="dynamicMountTrigger" translation="-0.006497 0.077686 -0.021384" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="20" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="fillTrigger" translation="0 0.348315 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1075838976" nodeId="21" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" nodeId="22"/>
+          <TransformGroup name="none" nodeId="23"/>
+          <TransformGroup name="none" nodeId="24"/>
+          <TransformGroup name="inputAttacherJoints" translation="0 0.03 0" nodeId="25">
+            <TransformGroup name="CSZinputAttacherJoints" translation="0 -0.03 0" nodeId="26"/>
+            <TransformGroup name="inputAttacherJoints" nodeId="27">
+              <TransformGroup name="skidSteers" translation="0 0.038 -0.3" visibility="false" nodeId="28"/>
+              <TransformGroup name="frontLoaders" translation="0 0.04 -0.05" visibility="false" nodeId="29"/>
+              <TransformGroup name="teleLoaders" translation="0 0.032 -0.05" visibility="false" nodeId="30"/>
+              <TransformGroup name="wheelLoaders" translation="0 0.038 -0.15" visibility="false" nodeId="31"/>
+            </TransformGroup>
+            <TransformGroup name="inputAttacherJoints" nodeId="32">
+              <TransformGroup name="skidSteers" translation="0 0.02 -0.3" visibility="false" nodeId="33">
+                <TransformGroup name="attacherJoint" translation="0 0.476 -0.431" rotation="90 -90 -90" nodeId="34"/>
+              </TransformGroup>
+              <TransformGroup name="frontLoaders" translation="0 0.24 -0.25" visibility="false" nodeId="35">
+                <TransformGroup name="attacherJoint" translation="0 0.421 -0.46" rotation="-90 261.108 89.8575" nodeId="36"/>
+              </TransformGroup>
+              <TransformGroup name="teleLoaders" translation="0 0.02 -0.05" visibility="false" nodeId="37">
+                <TransformGroup name="attacherJoint" translation="0 0.44 -0.787" rotation="-90 -86.0658 90" nodeId="38"/>
+              </TransformGroup>
+              <TransformGroup name="wheelLoaders" translation="0 0.03 -0.15" visibility="false" nodeId="39">
+                <TransformGroup name="attacherJoint" translation="0 0.246 -0.683" rotation="-90 -84.8496 90" nodeId="40"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="inputAttacherJoints" translation="-0.15 0 0" rotation="0 90 0" nodeId="41">
+              <TransformGroup name="skidSteers" translation="0 0.02 -0.3" visibility="false" nodeId="42">
+                <TransformGroup name="attacherJoint" translation="0 0.476 -0.431" rotation="90 -90 -90" nodeId="43"/>
+              </TransformGroup>
+              <TransformGroup name="frontLoaders" translation="0 0.24 -0.25" visibility="false" nodeId="44">
+                <TransformGroup name="attacherJoint" translation="0 0.421 -0.46" rotation="-90 261.108 89.8575" nodeId="45"/>
+              </TransformGroup>
+              <TransformGroup name="teleLoaders" translation="0 0.02 -0.05" visibility="false" nodeId="46">
+                <TransformGroup name="attacherJoint" translation="0 0.44 -0.787" rotation="-90 -86.0658 90" nodeId="47"/>
+              </TransformGroup>
+              <TransformGroup name="wheelLoaders" translation="0 0.03 -0.15" visibility="false" nodeId="48">
+                <TransformGroup name="attacherJoint" translation="0 0.246 -0.683" rotation="-90 -84.8496 90" nodeId="49"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="inputAttacherJoints" rotation="0 180 0" nodeId="50">
+              <TransformGroup name="skidSteers" translation="0 0.02 -0.3" visibility="false" nodeId="51">
+                <TransformGroup name="attacherJoint" translation="0 0.476 -0.431" rotation="90 -90 -90" nodeId="52"/>
+              </TransformGroup>
+              <TransformGroup name="frontLoaders" translation="0 0.24 -0.25" visibility="false" nodeId="53">
+                <TransformGroup name="attacherJoint" translation="0 0.421 -0.46" rotation="-90 261.108 89.8575" nodeId="54"/>
+              </TransformGroup>
+              <TransformGroup name="teleLoaders" translation="0 0.02 -0.05" visibility="false" nodeId="55">
+                <TransformGroup name="attacherJoint" translation="0 0.44 -0.787" rotation="-90 -86.0658 90" nodeId="56"/>
+              </TransformGroup>
+              <TransformGroup name="wheelLoaders" translation="0 0.03 -0.15" visibility="false" nodeId="57">
+                <TransformGroup name="attacherJoint" translation="0 0.246 -0.683" rotation="-90 -84.8496 90" nodeId="58"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="inputAttacherJoints" translation="0.15 0 0" rotation="0 270 0" nodeId="59">
+              <TransformGroup name="skidSteers" translation="0 0.02 -0.3" visibility="false" nodeId="60">
+                <TransformGroup name="attacherJoint" translation="0 0.476 -0.431" rotation="90 -90 -90" nodeId="61"/>
+              </TransformGroup>
+              <TransformGroup name="frontLoaders" translation="0 0.24 -0.25" visibility="false" nodeId="62">
+                <TransformGroup name="attacherJoint" translation="0 0.421 -0.46" rotation="-90 261.108 89.8575" nodeId="63"/>
+              </TransformGroup>
+              <TransformGroup name="teleLoaders" translation="0 0.02 -0.05" visibility="false" nodeId="64">
+                <TransformGroup name="attacherJoint" translation="0 0.44 -0.787" rotation="-90 -86.0658 90" nodeId="65"/>
+              </TransformGroup>
+              <TransformGroup name="wheelLoaders" translation="0 0.03 -0.15" visibility="false" nodeId="66">
+                <TransformGroup name="attacherJoint" translation="0 0.246 -0.683" rotation="-90 -84.8496 90" nodeId="67"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="collisions" visibility="false" clipDistance="10" nodeId="68">
+          <Shape shapeId="4" name="floorCollision01" translation="-0.006497 0.077686 -0.342983" compoundChild="true" trigger="true" collisionMask="16781314" staticFriction="1" dynamicFriction="1" nodeId="69" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="4" name="floorCollision02" translation="-0.006497 0.077686 0.321158" compoundChild="true" trigger="true" collisionMask="16781314" staticFriction="1" dynamicFriction="1" nodeId="70" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="visible" nodeId="71">
+          <Shape shapeId="5" name="fertilizerTank_vis" nodeId="72" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="6" name="decalCorteva" clipDistance="60" nodeId="73" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </Shape>
+          <Shape shapeId="7" name="materialHerbicide" visibility="false" clipDistance="10" nodeId="74" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="materialFertilizer" visibility="false" clipDistance="10" nodeId="75" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+</i3D>

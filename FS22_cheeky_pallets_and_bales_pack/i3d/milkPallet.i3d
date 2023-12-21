@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="milkPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_specular.png"/>
+    <File fileId="11" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="14" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="8" filename="$data/shared/assets/wire_diffuse.png"/>
+    <File fileId="9" filename="$data/shared/assets/wire_normal.png"/>
+    <File fileId="10" filename="$data/shared/assets/wire_vmask.png"/>
+    <File fileId="12" filename="$data/shared/default_normal.png"/>
+    <File fileId="13" filename="$data/shared/default_vmask.png"/>
+    <File fileId="5" filename="../../textures/milkCanOld_diffuse.png"/>
+    <File fileId="6" filename="../../textures/milkCanOld_normal.png"/>
+    <File fileId="7" filename="../../textures/milkCanOld_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="wire_mat" materialId="7" alphaBlending="true" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="wireSupport" materialId="8" diffuseColor="0.5 0.5 0.5 1" customShaderId="14" customShaderVariation="colorMask">
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="colorMat0" value="0.5 0.5 0.5 18"/>
+    </Material>
+    <Material name="woolPallet_mat" materialId="9">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="milkPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="milkPallet_main_component1" dynamic="true" compound="true" collisionMask="2109442" density="0.1" clipDistance="150" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="triggers" nodeId="37">
+          <Shape shapeId="2" name="dynamicMountTrigger" translation="-0.006497 0.077686 -0.021384" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="fillTrigger" translation="0 0.348315 0" visibility="false" kinematic="true" compound="true" trigger="true" collisionMask="1075838976" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="4" name="tensionBeltNode" translation="0 0.74 0" visibility="false" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" nodeId="41"/>
+          <TransformGroup name="none" nodeId="42"/>
+          <TransformGroup name="inputAttacherJoints" translation="0 0.03 0" nodeId="43">
+            <TransformGroup name="CSZinputAttacherJoints" translation="0 -0.03 0" nodeId="44"/>
+            <TransformGroup name="inputAttacherJoints" nodeId="45">
+              <TransformGroup name="skidSteers" translation="0 0.038 -0.3" visibility="false" nodeId="46"/>
+              <TransformGroup name="frontLoaders" translation="0 0.04 -0.05" visibility="false" nodeId="47"/>
+              <TransformGroup name="teleLoaders" translation="0 0.032 -0.05" visibility="false" nodeId="48"/>
+              <TransformGroup name="wheelLoaders" translation="0 0.038 -0.15" visibility="false" nodeId="49"/>
+            </TransformGroup>
+            <TransformGroup name="inputAttacherJoints" nodeId="50">
+              <TransformGroup name="skidSteers" translation="0 0.02 -0.3" visibility="false" nodeId="51">
+                <TransformGroup name="attacherJoint" translation="0 0.476 -0.431" rotation="90 -90 -90" nodeId="52"/>
+              </TransformGroup>
+              <TransformGroup name="frontLoaders" translation="0 0.24 -0.25" visibility="false" nodeId="53">
+                <TransformGroup name="attacherJoint" translation="0 0.421 -0.46" rotation="-90 261.108 89.8575" nodeId="54"/>
+              </TransformGroup>
+              <TransformGroup name="teleLoaders" translation="0 0.02 -0.05" visibility="false" nodeId="55">
+                <TransformGroup name="attacherJoint" translation="0 0.44 -0.787" rotation="-90 -86.0658 90" nodeId="56"/>
+              </TransformGroup>
+              <TransformGroup name="wheelLoaders" translation="0 0.03 -0.15" visibility="false" nodeId="57">
+                <TransformGroup name="attacherJoint" translation="0 0.246 -0.683" rotation="-90 -84.8496 90" nodeId="58"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="inputAttacherJoints" translation="-0.15 0 0" rotation="0 90 0" nodeId="59">
+              <TransformGroup name="skidSteers" translation="0 0.02 -0.3" visibility="false" nodeId="60">
+                <TransformGroup name="attacherJoint" translation="0 0.476 -0.431" rotation="90 -90 -90" nodeId="61"/>
+              </TransformGroup>
+              <TransformGroup name="frontLoaders" translation="0 0.24 -0.25" visibility="false" nodeId="62">
+                <TransformGroup name="attacherJoint" translation="0 0.421 -0.46" rotation="-90 261.108 89.8575" nodeId="63"/>
+              </TransformGroup>
+              <TransformGroup name="teleLoaders" translation="0 0.02 -0.05" visibility="false" nodeId="64">
+                <TransformGroup name="attacherJoint" translation="0 0.44 -0.787" rotation="-90 -86.0658 90" nodeId="65"/>
+              </TransformGroup>
+              <TransformGroup name="wheelLoaders" translation="0 0.03 -0.15" visibility="false" nodeId="66">
+                <TransformGroup name="attacherJoint" translation="0 0.246 -0.683" rotation="-90 -84.8496 90" nodeId="67"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="inputAttacherJoints" rotation="0 180 0" nodeId="68">
+              <TransformGroup name="skidSteers" translation="0 0.02 -0.3" visibility="false" nodeId="69">
+                <TransformGroup name="attacherJoint" translation="0 0.476 -0.431" rotation="90 -90 -90" nodeId="70"/>
+              </TransformGroup>
+              <TransformGroup name="frontLoaders" translation="0 0.24 -0.25" visibility="false" nodeId="71">
+                <TransformGroup name="attacherJoint" translation="0 0.421 -0.46" rotation="-90 261.108 89.8575" nodeId="72"/>
+              </TransformGroup>
+              <TransformGroup name="teleLoaders" translation="0 0.02 -0.05" visibility="false" nodeId="73">
+                <TransformGroup name="attacherJoint" translation="0 0.44 -0.787" rotation="-90 -86.0658 90" nodeId="74"/>
+              </TransformGroup>
+              <TransformGroup name="wheelLoaders" translation="0 0.03 -0.15" visibility="false" nodeId="75">
+                <TransformGroup name="attacherJoint" translation="0 0.246 -0.683" rotation="-90 -84.8496 90" nodeId="76"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="inputAttacherJoints" translation="0.15 0 0" rotation="0 270 0" nodeId="77">
+              <TransformGroup name="skidSteers" translation="0 0.02 -0.3" visibility="false" nodeId="78">
+                <TransformGroup name="attacherJoint" translation="0 0.476 -0.431" rotation="90 -90 -90" nodeId="79"/>
+              </TransformGroup>
+              <TransformGroup name="frontLoaders" translation="0 0.24 -0.25" visibility="false" nodeId="80">
+                <TransformGroup name="attacherJoint" translation="0 0.421 -0.46" rotation="-90 261.108 89.8575" nodeId="81"/>
+              </TransformGroup>
+              <TransformGroup name="teleLoaders" translation="0 0.02 -0.05" visibility="false" nodeId="82">
+                <TransformGroup name="attacherJoint" translation="0 0.44 -0.787" rotation="-90 -86.0658 90" nodeId="83"/>
+              </TransformGroup>
+              <TransformGroup name="wheelLoaders" translation="0 0.03 -0.15" visibility="false" nodeId="84">
+                <TransformGroup name="attacherJoint" translation="0 0.246 -0.683" rotation="-90 -84.8496 90" nodeId="85"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="collisions" visibility="false" clipDistance="10" nodeId="86">
+          <Shape shapeId="5" name="colSolid" compoundChild="true" collisionMask="16781314" density="0.0001" clipDistance="50" nodeId="87" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="colFloor01" translation="-0.00244596 0.0136898 -0.351" compoundChild="true" nodeId="88" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="7" name="colFloor02" translation="-0.00244596 0.0136898 0.00568273" compoundChild="true" nodeId="89" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="colFloor03" translation="-0.00244596 0.0136898 0.3509" compoundChild="true" nodeId="90" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="9" name="col01" compoundChild="true" nodeId="91" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="10" name="col02" compoundChild="true" nodeId="92" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="11" name="col03" compoundChild="true" nodeId="93" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="12" name="col04" compoundChild="true" nodeId="94" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="13" name="col05" compoundChild="true" nodeId="95" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="14" name="col06" compoundChild="true" nodeId="96" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="col07" compoundChild="true" nodeId="97" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="16" name="col08" compoundChild="true" nodeId="98" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="17" name="col09" compoundChild="true" nodeId="99" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <Shape shapeId="18" name="pallet_vis" nodeId="100" materialIds="5" castsShadows="true" receiveShadows="true">
+          <TransformGroup name="fillUnit" translation="0 0.252 0" nodeId="101">
+            <Shape shapeId="19" name="milkContainer01" translation="0.47 0 -0.24" rotation="0 45 0" nodeId="102" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="milkContainer02" translation="0 0 -0.24" rotation="0 90 0" nodeId="103" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="milkContainer03" translation="-0.47 0 -0.24" rotation="0 135 0" nodeId="104" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="milkContainer04" translation="0.47 0 0.24" rotation="0 -45 0" nodeId="105" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="milkContainer05" translation="0 0 0.24" rotation="0 -90 0" nodeId="106" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="19" name="milkContainer06" translation="-0.47 0 0.24" rotation="0 -135 0" nodeId="107" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="20" name="wire" translation="-0.00322998 0.866917 -0.491214" clipDistance="75" nodeId="108" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="21" name="wire1" translation="0.734754 0.866917 0" clipDistance="75" nodeId="109" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="22" name="wire2" translation="-0.00322998 0.866917 0.491214" clipDistance="75" nodeId="110" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="wire3" translation="-0.741214 0.866917 0" clipDistance="75" nodeId="111" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="24" name="wireInside" translation="-0.00322998 0.866917 0" clipDistance="75" nodeId="112" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="25" name="wireSupport" nodeId="113" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

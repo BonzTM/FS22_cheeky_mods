@@ -3,7 +3,9 @@
     <storeData>
         <name>Cheeky Water Tank</name>
         <functions>
-            <function>$l10n_function_fillableLiquidFertilizerTank</function>
+            <function>
+                <en>This silo can be filled with Water.</en>
+            </function>
         </functions>
         <image>textures/store_liquidFlatBottomTank1630.png</image>
         <price>46500</price>

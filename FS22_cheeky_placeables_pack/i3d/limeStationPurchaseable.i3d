@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="limeStation" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/placeables/lizard/limeStation/limeStation_mask.png"/>
+    <File fileId="3" filename="$data/placeables/lizard/limeStation/limeStation_normal.png"/>
+    <File fileId="4" filename="$data/placeables/lizard/limeStation/limeStation_specular.png"/>
+    <File fileId="5" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="2" filename="limeStation_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="limeStation_mat" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="mMaskMap" fileId="6"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="limeStationPurchaseable.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="limeStation" nodeId="11">
+        <TransformGroup name="buyingStation" nodeId="12">
+          <TransformGroup name="mapPosition" translation="0 0 3.5" nodeId="13"/>
+          <TransformGroup name="loadingStation" nodeId="14">
+            <Shape shapeId="1" name="loadingTrigger" translation="0 2.06123 3.5" static="true" trigger="true" collisionMask="1073741824" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="0 3.4728 3.5712" nodeId="16"/>
+            <TransformGroup name="aiNodeLoading" translation="5.47063e-17 0 3.75054" rotation="0 -90 0" nodeId="17"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="18">
+          <TransformGroup name="clearArea1Start" translation="-2 0 -1.5919" nodeId="19">
+            <TransformGroup name="clearArea1Width" translation="0 0 6.5919" nodeId="20"/>
+            <TransformGroup name="clearArea1Height" translation="4 0 -1.7053e-15" nodeId="21"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="22">
+          <TransformGroup name="levelArea1Start" translation="-2 0 -1.5919" nodeId="23">
+            <TransformGroup name="levelArea1Width" translation="0 0 6.5919" nodeId="24"/>
+            <TransformGroup name="levelArea1Height" translation="4 0 -1.7053e-15" nodeId="25"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="26">
+          <TransformGroup name="testArea1Start" translation="-2 0 -1.55437" nodeId="27">
+            <TransformGroup name="testArea1End" translation="4 8.24985 6.55437" nodeId="28"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="29">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-2.18243 0 -2.0616" nodeId="30">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4.31072 0 7.22553" nodeId="31"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="markerLoading" translation="0 0 3.60886" nodeId="32"/>
+        <TransformGroup name="tipCollision" nodeId="33">
+          <Shape shapeId="2" name="tipCollision" translation="0 0.5 0" visibility="false" static="true" collisionMask="524288" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="35">
+          <TransformGroup name="winter" nodeId="36"/>
+          <Shape shapeId="3" name="foodSilo01_small" clipDistance="300" nodeId="37" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" nodeId="38">
+          <Shape shapeId="4" name="collision" translation="0 0.5 0" visibility="false" static="true" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/fillTypes.xsd">
+    <fillTypes>
+        <fillType name="WHEAT" title="$l10n_fillType_wheat">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="BARLEY" title="$l10n_fillType_barley">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="OAT" title="$l10n_fillType_oat">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="CANOLA" title="$l10n_fillType_canola">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="SORGHUM" title="$l10n_fillType_sorghum">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="GRAPE" title="$l10n_fillType_grape">
+            <pallet     filename="$data/objects/pallets/grapePallet/grapePallet.xml"/>
+        </fillType>
+        <fillType name="OLIVE" title="$l10n_fillType_olive">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="SUNFLOWER" title="$l10n_fillType_sunflower">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="SOYBEAN" title="$l10n_fillType_soybean">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="MAIZE" title="$l10n_fillType_maize">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="POTATO" title="$l10n_fillType_potato">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="SUGARBEET" title="$l10n_fillType_sugarBeet">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="SUGARBEET_CUT" title="$l10n_fillType_sugarBeetCut">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="COTTON" title="$l10n_fillType_cotton">
+            <pallet     filename="$data/objects/pallets/woolPallet/woolPallet.xml"/>
+        </fillType>
+        <fillType name="SUGARCANE" title="$l10n_fillType_sugarCane">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="SEEDS" title="$l10n_fillType_seeds">
+            <pallet     filename="$data/objects/bigBag/seeds/bigBag_seeds.xml"/>
+        </fillType>
+        <fillType name="EGG" title="$l10n_fillType_egg">
+            <pallet     filename="$data/objects/pallets/eggBoxPallet/eggBoxPallet.xml"/>
+        </fillType>
+        <fillType name="WOOL" title="$l10n_fillType_wool">
+            <pallet     filename="$data/objects/pallets/woolPallet/woolPallet.xml"/>
+        </fillType>
+        <fillType name="MILK" title="$l10n_fillType_milk">
+            <pallet     filename="xml/pallets/milkTank.xml"/>
+        </fillType>
+        <fillType name="WATER" title="$l10n_fillType_water">
+            <pallet     filename="xml/pallets/liquidTank.xml"/>
+        </fillType>
+        <fillType name="FORAGE" title="$l10n_fillType_forage">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="FORAGE_MIXING" title="$l10n_fillType_forage_mixing">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="CHAFF" title="$l10n_fillType_chaff">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="TREESAPLINGS" title="$l10n_fillType_treeSaplings">
+        </fillType>
+        <fillType name="WOODCHIPS" title="$l10n_fillType_woodChips">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="SILAGE" title="$l10n_fillType_silage">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="OILSEEDRADISH" title="$l10n_fillType_oilRadish">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="POPLAR" title="$l10n_fillType_poplar">
+        </fillType>
+        <fillType name="WOOD" title="$l10n_fillType_wood">
+            <pallet     filename="xml/pallets/woodPallet.xml"/>
+        </fillType>
+        <fillType name="GRASS_WINDROW" title="$l10n_fillType_grass">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="DRYGRASS_WINDROW" title="$l10n_fillType_dryGrass">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="STRAW" title="$l10n_fillType_straw">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="DIESEL" title="$l10n_fillType_diesel">
+            <pallet     filename="xml/pallets/liquidTank.xml"/>
+        </fillType>
+        <fillType name="DEF" title="$l10n_fillType_def">
+            <pallet     filename="xml/pallets/liquidTank.xml"/>
+        </fillType>
+        <fillType name="SNOW" title="$l10n_fillType_snow">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+<!-- __________________ Production Chains start __________________ -->
+        <fillType name="MANURE" title="$l10n_fillType_manure">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+        <fillType name="LIQUIDMANURE" title="$l10n_fillType_liquidManure">
+            <pallet     filename="xml/pallets/liquidTank.xml"/>
+        </fillType>
+        <fillType name="DIGESTATE" title="$l10n_fillType_digestate">
+            <pallet     filename="xml/pallets/liquidTank.xml"/>
+        </fillType>
+        <fillType name="STONE" title="$l10n_fillType_stone">
+            <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
+        </fillType>
+    </fillTypes>
+    <fillTypeCategories>
+        <fillTypeCategory name="PRODUCT">WOOL GRAPE COTTON POPLAR WOOD HONEY TARP SILAGE_ADDITIVE</fillTypeCategory>
+    </fillTypeCategories>
+</map>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) DD ModPassion, All Rights Reserved.</annotation>
+    <storeData>
+        <name>$l10n_category_fillableTanks</name>
+        <image>textures/store_liquidsTank.png</image>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <brand>LIZARD</brand>
+        <category>pallets</category>
+        <financeCategory>PURCHASE_PALLETS</financeCategory>
+        <shopHeight>2</shopHeight>
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="25"/>
+        </storeIconRendering>
+        <shopTranslationOffset>0 0.1 0</shopTranslationOffset>
+        <vertexBufferMemoryUsage>82432</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>17152</indexBufferMemoryUsage>
+        <textureMemoryUsage>2162688</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>i3d/liquidTank.i3d</filename>
+        <size width="1.6" length="1.6" height="1.6"/>
+        <components maxMass="850">
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="100"/>
+        </components>
+        <mapHotspot available="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="LIQUID SPRAYER SLURRYTANK" capacity="2000">
+                        <fillRootNode node="0>"/>
+                    </fillUnit>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <fillTriggerVehicle triggerNode="fillTrigger"/>
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="1.5" jointTransY="0.11" jointLimitToRotY="true"/>
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="100" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true"/>
+    </dischargeable>
+    <tensionBeltObject>
+        <meshNodes>
+            <meshNode node="fertilizerTank_vis"/>
+        </meshNodes>
+    </tensionBeltObject>
+    <ai>
+        <agentAttachment width="2" height="2" length="2"/>
+    </ai>
+    <wearable showOnHud="false"/>
+    <i3dMappings>
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0"/>
+        <i3dMapping id="fillTrigger" node="0>0|1"/>
+        <i3dMapping id="dischargeNode" node="0>0|2"/>
+        <i3dMapping id="fertilizerTank_vis" node="0>2|0"/>
+        <i3dMapping id="materialHerbicide" node="0>2|1"/>
+        <i3dMapping id="materialFertilizer" node="0>2|2"/>
+    </i3dMappings>
+</vehicle>
