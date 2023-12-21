@@ -103,28 +103,28 @@
 
     <productionPoint>
         <productions sharedThroughputCapacity="true">
-            <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="10" costsPerActiveHour="20">
+            <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="8" costsPerActiveHour="20">
                 <inputs>
-                    <input fillType="WATER" amount="30" />
+                    <input fillType="WATER" amount="80" />
                 </inputs>
                 <outputs>
-                    <output fillType="TOMATO" amount="30" />
+                    <output fillType="TOMATO" amount="80" />
                 </outputs>
             </production>
-            <production id="lettuce" name="$l10n_fillType_lettuce" cyclesPerHour="10" costsPerActiveHour="20">
+            <production id="lettuce" name="$l10n_fillType_lettuce" cyclesPerHour="8" costsPerActiveHour="20">
                 <inputs>
-                    <input fillType="WATER" amount="30" />
+                    <input fillType="WATER" amount="80" />
                 </inputs>
                 <outputs>
-                    <output fillType="LETTUCE" amount="15" />
+                    <output fillType="LETTUCE" amount="40" />
                 </outputs>
             </production>
-            <production id="strawberry" name="$l10n_fillType_strawberry" cyclesPerHour="10" costsPerActiveHour="20">
+            <production id="strawberry" name="$l10n_fillType_strawberry" cyclesPerHour="8" costsPerActiveHour="20">
                 <inputs>
-                    <input fillType="WATER" amount="30" />
+                    <input fillType="WATER" amount="80" />
                 </inputs>
                 <outputs>
-                    <output fillType="STRAWBERRY" amount="60" />
+                    <output fillType="STRAWBERRY" amount="160" />
                 </outputs>
             </production>
         </productions>
