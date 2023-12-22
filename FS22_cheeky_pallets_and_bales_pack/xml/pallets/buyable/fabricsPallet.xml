@@ -4,7 +4,7 @@
         <attributes>
             <set path="vehicle.storeData.name" value="$l10n_fillType_fabric"/>
             <set path="vehicle.storeData.image" value="textures/store_fabricsPallet.png"/>
-            <set path="vehicle.storeData.price" value="9000"/>
+            <set path="vehicle.storeData.price" value="4250"/>
             <set path="vehicle.storeData.financeCategory" value="OTHER"/>
             <set path="vehicle.storeData.showInStore" value="true"/>
             <set path="vehicle.storeData.allowLeasing" value="false"/>

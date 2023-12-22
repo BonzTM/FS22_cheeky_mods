@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.6.4.0</version>
+    <version>1.6.5.0</version>
     <title>
         <en>Cheeky Productions Pack</en>
     </title>
@@ -12,6 +12,7 @@
     <storeItems>
         <storeItem xmlFilename="xml/cheeky_bakeryEU.xml"/>
         <storeItem xmlFilename="xml/cheeky_bakeryUS.xml"/>
+        <storeItem xmlFilename="xml/cheeky_carrotFactory.xml"/>
         <storeItem xmlFilename="xml/cheeky_carpenterEU.xml"/>
         <storeItem xmlFilename="xml/cheeky_carpenterUS.xml"/>
         <storeItem xmlFilename="xml/cheeky_cerealFactory.xml"/>
@@ -27,5 +28,8 @@
         <storeItem xmlFilename="xml/cheeky_sugarMill.xml"/>
         <storeItem xmlFilename="xml/cheeky_tailorShop.xml"/>
     </storeItems>
-	<multiplayer supported="true" />      
+	<multiplayer supported="true" />     
+    <dependencies>
+		<dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
+	</dependencies> 
 </modDesc>

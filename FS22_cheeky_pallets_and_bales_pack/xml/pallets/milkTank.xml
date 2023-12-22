@@ -10,7 +10,7 @@
             <weight ignore="true"/>
         </specs>
         <image>textures/store_milkTank.png</image>
-        <price>4200</price>
+        <price>2000</price>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
         <showInStore>true</showInStore>

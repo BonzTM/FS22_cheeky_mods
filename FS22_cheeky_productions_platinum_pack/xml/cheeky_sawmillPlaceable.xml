@@ -10,6 +10,9 @@
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
             
+            <!-- Attempting to allow it to take custom wood pallets -->
+            <!-- <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#exactFillRootNode" value="woodTrigger"/> -->
+
             <!-- Boards (Planks) Production -->
             <set path="placeable.productionPoint.productions.production(0)#name" value="Planks"/>
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>

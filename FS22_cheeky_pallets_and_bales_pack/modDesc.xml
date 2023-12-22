@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.6.4.0</version>
+    <version>1.6.5.0</version>
     <title>
         <en>Cheeky Pallets and Bales Pack</en>
     </title>
@@ -35,6 +35,7 @@
         <storeItem xmlFilename="xml/pallets/buyable/sugarBoxPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/buyable/sunflowerOilPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/buyable/tomatoesBoxPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/buyable/woodPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/buyable/woolPallet.xml"/>
 
         <!-- Platinum DLC -->
@@ -79,9 +80,12 @@
         <storeItem xmlFilename="xml/bales/buyable/cottonSquarebale488.xml"/>
 
         <!-- Additional Pallet Types -->
+        <storeItem xmlFilename="xml/pallets/carrotCakePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/carrotJuicePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/milkTank.xml"/>
         <storeItem xmlFilename="xml/pallets/liquidTank.xml"/>
         <storeItem xmlFilename="xml/pallets/woodPallet.xml"/> 
+
     </storeItems>
 	<multiplayer supported="true" />
 </modDesc>

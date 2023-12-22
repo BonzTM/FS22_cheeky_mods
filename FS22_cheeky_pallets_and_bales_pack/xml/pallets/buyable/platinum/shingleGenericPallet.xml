@@ -9,7 +9,7 @@
             <!-- Store overrides -->
             <set path="vehicle.storeData.image" value="textures/platinum/store_shingleGenericPallet.png"/>
             <set path="vehicle.storeData.name" value="Shingle Pallet"/>
-            <set path="vehicle.storeData.price" value="4000"/>
+            <set path="vehicle.storeData.price" value="1650"/>
             <set path="vehicle.storeData.showInStore" value="true"/>
             <set path="vehicle.storeData.allowLeasing" value="false"/>
             <!-- <set path="vehicle.storeData.canBeSold" value="false"/> -->

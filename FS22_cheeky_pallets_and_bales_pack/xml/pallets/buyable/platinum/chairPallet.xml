@@ -9,7 +9,7 @@
             <!-- Store overrides -->
             <set path="vehicle.storeData.image" value="textures/platinum/store_chairPallet.png"/>
             <set path="vehicle.storeData.name" value="Chair Pallet"/>
-            <set path="vehicle.storeData.price" value="5150"/>
+            <set path="vehicle.storeData.price" value="2080"/>
             <set path="vehicle.storeData.showInStore" value="true"/>
             <set path="vehicle.storeData.allowLeasing" value="false"/>
             <!-- <set path="vehicle.storeData.canBeSold" value="false"/> -->

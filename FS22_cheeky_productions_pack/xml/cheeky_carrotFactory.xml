@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>Cheeky Grape Processor</name>
+        <name>Cheeky Carrot Processor</name>
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
@@ -26,7 +26,7 @@
     </storeData>
 
     <base>
-        <filename>i3d/cheeky_raisinFactory.i3d</filename>
+        <filename>i3d/cheeky_carrotFactory.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
     </base>
 
@@ -101,7 +101,6 @@
         </realLights>
     </lights>
 
-
     <hotspots>
         <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="unloadTriggerMarker" />
     </hotspots>
@@ -114,32 +113,34 @@
 
     <productionPoint>
         <productions sharedThroughputCapacity="false">
-            <production id="raisins" name="$l10n_fillType_raisins" cyclesPerHour="10" costsPerActiveHour="10">
+            <production id="carrotJuice" name="Carrot Juice" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="GRAPE" amount="300" />
+                    <input fillType="CARROT" amount="1000" />
                 </inputs>
                 <outputs>
-                    <output fillType="RAISINS" amount="300" />
+                    <output fillType="CARROTJUICE" amount="180" />
                 </outputs>
             </production>
-            <production id="grapejuice" name="$l10n_fillType_grapeJuice" cyclesPerHour="10" costsPerActiveHour="10">
+            <production id="sweetCarrotJuice" name="Carrot Juice" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="GRAPE" amount="300" />
+                    <input fillType="CARROT" amount="750" />
+                    <input fillType="SUGAR"  amount="100" />
                 </inputs>
                 <outputs>
-                    <output fillType="GRAPEJUICE" amount="260" />
+                    <output fillType="CARROTJUICE" amount="195" />
                 </outputs>
             </production>
+
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="GRAPE"      capacity="900000" />
-            <capacity fillType="RAISINS"    capacity="120000" />
-            <capacity fillType="GRAPEJUICE" capacity="100000" />
+            <capacity fillType="CARROT"      capacity="1000000" />
+            <capacity fillType="SUGAR"       capacity="100000" />
+            <capacity fillType="CARROTJUICE" capacity="60000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="GRAPE"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="SUGAR CARROT"/>
         </sellingStation>
 
         <palletSpawner node="palletSpawner">

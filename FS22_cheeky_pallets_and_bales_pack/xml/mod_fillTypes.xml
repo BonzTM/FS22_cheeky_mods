@@ -117,8 +117,53 @@
         <fillType name="STONE" title="$l10n_fillType_stone">
             <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
         </fillType>
+
+<!-- __________________ Custom Fill Types __________________ -->    
+        <fillType name="CARROTCAKE" title="Carrot Cake" showOnPriceTable="true">
+            <physics massPerLiter="0.85" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="3.3">
+                <factors>
+                    <factor period="1"  value="1.06" />
+                    <factor period="2"  value="1.01" />
+                    <factor period="3"  value="0.96" />
+                    <factor period="4"  value="0.90" />
+                    <factor period="5"  value="0.95" />
+                    <factor period="6"  value="0.95" />
+                    <factor period="7"  value="1.03" />
+                    <factor period="8"  value="1.09" />
+                    <factor period="9"  value="0.98" />
+                    <factor period="10" value="0.96" />
+                    <factor period="11" value="1.08" />
+                    <factor period="12" value="1.07" />
+                </factors>
+            </economy>
+            <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cake.png" />
+            <pallet     filename="xml/pallets/carrotCakePallet.xml" />
+        </fillType>
+
+        <fillType name="CARROTJUICE" title="Carrot Juice" showOnPriceTable="true">
+            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.6">
+                <factors>
+                    <factor period="1"  value="1.02" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="1.05" />
+                    <factor period="4"  value="0.99" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.02" />
+                    <factor period="8"  value="1.05" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.01" />
+                    <factor period="11" value="0.96" />
+                    <factor period="12" value="1.12" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/hud_fill_carrotjuice.png" />
+            <pallet     filename="xml/pallets/carrotJuicePallet.xml" />
+        </fillType>
     </fillTypes>
     <fillTypeCategories>
-        <fillTypeCategory name="PRODUCT">WOOL GRAPE COTTON POPLAR WOOD HONEY TARP SILAGE_ADDITIVE</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">WOOL GRAPE COTTON POPLAR WOOD HONEY TARP SILAGE_ADDITIVE CARROTCAKE CARROTJUICE</fillTypeCategory>
     </fillTypeCategories>
 </map>

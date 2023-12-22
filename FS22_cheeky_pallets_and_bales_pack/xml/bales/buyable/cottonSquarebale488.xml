@@ -10,7 +10,7 @@
             <function>$l10n_function_bales</function>
         </functions>
         <image>textures/store_buyableBales_silage.png</image>
-        <price>75120</price>
+        <price>36300</price>
         <lifetime>600</lifetime>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
@@ -74,13 +74,13 @@
 
     <multipleItemPurchaseAmountConfigurations>
         <multipleItemPurchaseAmountConfiguration name="1" price="0"/>
-        <multipleItemPurchaseAmountConfiguration name="2" price="75120"/>
-        <multipleItemPurchaseAmountConfiguration name="3" price="150240"/>
-        <multipleItemPurchaseAmountConfiguration name="4" price="225360"/>
-        <multipleItemPurchaseAmountConfiguration name="5" price="300480"/>
-        <multipleItemPurchaseAmountConfiguration name="6" price="375600"/>
-        <multipleItemPurchaseAmountConfiguration name="7" price="450720"/>
-        <multipleItemPurchaseAmountConfiguration name="8" price="525840"/>
+        <multipleItemPurchaseAmountConfiguration name="2" price="36300"/>
+        <multipleItemPurchaseAmountConfiguration name="3" price="72600"/>
+        <multipleItemPurchaseAmountConfiguration name="4" price="108900"/>
+        <multipleItemPurchaseAmountConfiguration name="5" price="145200"/>
+        <multipleItemPurchaseAmountConfiguration name="6" price="181500"/>
+        <multipleItemPurchaseAmountConfiguration name="7" price="217800"/>
+        <multipleItemPurchaseAmountConfiguration name="8" price="254100"/>
     </multipleItemPurchaseAmountConfigurations>
 
 </vehicle>

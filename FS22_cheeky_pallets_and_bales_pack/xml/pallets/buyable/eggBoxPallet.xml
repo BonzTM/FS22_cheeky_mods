@@ -4,7 +4,7 @@
         <attributes>
             <set path="vehicle.storeData.name" value="$l10n_fillType_egg"/>
             <set path="vehicle.storeData.image" value="textures/store_eggBoxPallet.png"/>
-            <set path="vehicle.storeData.price" value="4700"/>
+            <set path="vehicle.storeData.price" value="2550"/>
             <set path="vehicle.storeData.financeCategory" value="OTHER"/>
             <set path="vehicle.storeData.showInStore" value="true"/>
             <set path="vehicle.storeData.allowLeasing" value="false"/>
