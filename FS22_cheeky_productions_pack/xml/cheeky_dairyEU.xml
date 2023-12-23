@@ -127,8 +127,8 @@
             <capacity fillType="MILK"       capacity="1000000" />
             <capacity fillType="SUGAR"      capacity="360000" />
             <capacity fillType="BUTTER"     capacity="100000" />
-            <capacity fillType="CHEESE"     capacity="70000" />
-            <capacity fillType="CHOCOLATE"  capacity="70000" />
+            <capacity fillType="CHEESE"     capacity="100000" />
+            <capacity fillType="CHOCOLATE"  capacity="100000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">

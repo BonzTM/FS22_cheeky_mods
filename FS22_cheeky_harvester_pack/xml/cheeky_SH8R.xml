@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>SH8R</name>
+        <specs>
+            <workingWidth>6.8</workingWidth>
+			<combination xmlFilename="xml/cheeky_cs770.xml" />
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>textures/store_SH8R.dds</image>
+        <price>60000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>cottonHarvesting</category>
+		<shopFoldingState>1</shopFoldingState>
+		<shopTranslationOffset>0 -0.035 0</shopTranslationOffset>
+        <shopRotationOffset>-3.516 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>1949184</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>340480</indexBufferMemoryUsage>
+        <textureMemoryUsage>2228224</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>i3d/SH8R.i3d</filename>
+        <size width="9" length="3.5" lengthOffset="0" />
+        <speedLimit value="14.5" />
+        <components>
+            <component centerOfMass="0 0 -0.2" solverIterationCount="10" mass="1600" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER"/>
+        <mapHotspot type="CUTTER" />
+    </base>
+	
+	<lights>
+        <realLights>
+            <low>
+                <turnLightLeft node="0>0|9|0|0" />
+                <turnLightRight node="0>0|9|0|1" />
+            </low>
+            <high>
+                <turnLightLeft node="0>0|9|0|0" />
+                <turnLightRight node="0>0|9|0|1" />
+            </high>
+        </realLights>
+		
+        <turnLights>
+			<turnLightLeft shaderNode="0>0|9|1|0" />
+            <turnLightRight shaderNode="0>0|9|1|1" />
+        </turnLights>
+    </lights>
+	
+    <powerConsumer ptoRpm="470" neededMaxPtoPower="50"/>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="0>0|5|0" jointType="cutter" >
+                <heightNode node="0>0|11|0" />
+                <heightNode node="0>0|11|1" />
+                <heightNode node="0>0|11|2" />
+                <distanceToGround lower="0.11" upper="1.5" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="0>0|3|0"  length="1.5" diameter="0.02" straighteningFactor="1.5"/>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>0|3|1" length="1.5" diameter="0.02" straighteningFactor="1.5"/>
+		<hose inputAttacherJointIndices="1" type="hydraulicIn"  node="0>0|3|2"  length="1.5" diameter="0.02" straighteningFactor="1.5"/>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="0>0|3|3" length="1.5" diameter="0.02" straighteningFactor="1.5"/>
+    </connectionHoses>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="0>0|10|3" threshold="0.5" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="0>0|10|0" widthNode="0>0|10|1" heightNode="0>0|10|2" />
+            <groundReferenceNode index="1" />
+            <testAreas autoGenerate="false"/>
+        </workArea>
+    </workAreas>
+
+    <dynamicMount forceLimitScale="1" />
+
+    <cutter fruitTypes="cotton">
+	    <animationNodes>
+			<animationNode node="0>0|2|0" rotSpeed="500" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|1|0" rotSpeed="500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|2|0" rotSpeed="-500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|3|0" rotSpeed="500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|4|0" rotSpeed="-500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|5|0" rotSpeed="500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|6|0" rotSpeed="-500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|7|0" rotSpeed="500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|8|0" rotSpeed="-500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|9|0" rotSpeed="500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|10|0" rotSpeed="-500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|11|0" rotSpeed="500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|12|0" rotSpeed="-500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|13|0" rotSpeed="500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|14|0" rotSpeed="-500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|15|0" rotSpeed="500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+			<animationNode node="0>0|2|16|0" rotSpeed="-500" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="3" />
+		</animationNodes>
+    </cutter>
+	
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="0>0" aboveAttacher="true" ptoName="LEFT_PTO" color="SHARED_BLACK1" decalColor="WALTERSCHEID_YELLOW1"/>
+    </powerTakeOffs>
+
+    <turnOnVehicle turnedOnByAttacherVehicle="true">
+        <sounds>
+            <start template="DEFAULT_TEDDER" volumeScale="0.6" />
+			<work template="DEFAULT_TEDDER" volumeScale="0.6" />
+			<work template="cropCutting" volumeScale="0.4" />
+        </sounds>
+    </turnOnVehicle>
+
+    <ai>
+        <areaMarkers leftNode="0>0|12|0" rightNode="0>0|12|1" backNode="0>0|12|2" />
+        <collisionTrigger node="0>0|12|3" width="8" height="1.2" />
+        <agentAttachment width="8" height="1.2" length="2.4" lengthOffset="0.1"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-3.5" maxX="3.5" minZ="0.2" maxZ="0.85" yOffset="0.1" node="0>0|6"/>
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+</vehicle>

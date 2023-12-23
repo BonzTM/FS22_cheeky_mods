@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motor template="engineLarge" file="sounds/terraDos/terraDosT4_40_loop.gls" pitchScale="1" linkNodeOffset="0 3 -5">
+                <volume indoor="0.8" outdoor="1.5"/>
+            </motor>
+            <motor file="sounds/terraDos/terraDosT4_40Cabin_loop.gls"  volumeScale="2" pitchScale="0.4" innerRadius="1" linkNodeOffset="0.5 2.8 5.5">
+                <volume indoor="1" outdoor="0" >
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="5.0" modifiedValue="0.4" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="0.6" />
+                    <modifier type="SPEED" value="15.0" modifiedValue="0.7" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="0.8" />
+                    <modifier type="SPEED" value="60.0" modifiedValue="1.0" />
+
+                    <modifier type="MOTOR_LOAD" value="-1.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.20" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.45" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.80" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="1.00" modifiedValue="0.9" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.35" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="0.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="0.9" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.0" modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.08" modifiedValue="0.9" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.3" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="1.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+                </pitch>
+            </motor>
+            <motor file="sounds/terraDos/terraDosT4_40Cabin_loop.gls" volumeScale="2" pitchScale="0.5" innerRadius="1" linkNodeOffset="-0.5 2.8 5.5">
+                <volume indoor="1" outdoor="0" >
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="5.0" modifiedValue="0.4" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="0.6" />
+                    <modifier type="SPEED" value="15.0" modifiedValue="0.7" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="0.8" />
+                    <modifier type="SPEED" value="60.0" modifiedValue="1.0" />
+
+                    <modifier type="MOTOR_LOAD" value="-1.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.20" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.45" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.80" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="1.00" modifiedValue="0.9" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.35" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="0.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.08" modifiedValue="0.9" />
+                    <modifier type="SUSPENSION" value="-0.02" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.0" modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.02" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.08" modifiedValue="0.9" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.3" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="1.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+                </pitch>
+            </motor>
+            <motor template="transmissionLarge" volumeScale="1.25" linkNodeOffset="0 2.8 5.5">
+                <volume indoor="0.65" outdoor="0"/>
+            </motor>
+            <motor template="engineLarge" file="sounds/terraDos/terraDosT4_40Transmission_loop.gls" linkNodeOffset="-2 1.5 5" pitchScale="0.6" volumeScale="1.5" innerRadius="1" >
+                <volume indoor="0.5" outdoor="1" >
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="5.0" modifiedValue="0.6" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="0.7" />
+                    <modifier type="SPEED" value="15.0" modifiedValue="0.8" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="0.8" />
+                    <modifier type="SPEED" value="60.0" modifiedValue="0.8" />
+
+                    <modifier type="MOTOR_LOAD" value="-1.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.20" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.45" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.80" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="1.00" modifiedValue="0.9" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.15" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="0.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.2" modifiedValue="0.9" />
+                    <modifier type="SUSPENSION" value="-0.1" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.0" modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.1" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.2" modifiedValue="0.9" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.1" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="1.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+                </pitch>
+                <lowpassGain indoor="0.5" outdoor="1"/>
+            </motor>
+            <motor template="engineLarge" file="sounds/terraDos/terraDosT4_40Transmission_loop.gls" linkNodeOffset="2 1.5 5" pitchScale="0.7" volumeScale="1.5" innerRadius="1">
+                <volume indoor="0.5" outdoor="1" >
+                    <modifier type="SPEED" value="0.0" modifiedValue="0.0" />
+                    <modifier type="SPEED" value="5.0" modifiedValue="0.6" />
+                    <modifier type="SPEED" value="10.0" modifiedValue="0.7" />
+                    <modifier type="SPEED" value="15.0" modifiedValue="0.8" />
+                    <modifier type="SPEED" value="30.0" modifiedValue="0.8" />
+                    <modifier type="SPEED" value="60.0" modifiedValue="0.8" />
+
+                    <modifier type="MOTOR_LOAD" value="-1.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.00" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.20" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.45" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="0.80" modifiedValue="1.0" />
+                    <modifier type="MOTOR_LOAD" value="1.00" modifiedValue="0.9" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.15" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="0.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+                </volume>
+                <pitch>
+                    <modifier type="SUSPENSION" value="-0.2" modifiedValue="0.9" />
+                    <modifier type="SUSPENSION" value="-0.1" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.0" modifiedValue="1.0" />
+                    <modifier type="SUSPENSION" value="0.1" modifiedValue="0.95" />
+                    <modifier type="SUSPENSION" value="0.2" modifiedValue="0.9" />
+
+                    <modifier type="DRIVING_DIRECTION" value="-1.0" modifiedValue="1.1" />
+                    <modifier type="DRIVING_DIRECTION" value="0.00" modifiedValue="1.0" />
+                    <modifier type="DRIVING_DIRECTION" value="1.00" modifiedValue="1.0" />
+                </pitch>
+                <lowpassGain indoor="0.5" outdoor="1"/>
+            </motor>
+            <motor template="indoorCabinRumble" volumeScale="15" pitchScale="1.3" linkNodeOffset="0 2.8 5.5"/>
+            <reverseDrive file="sounds/terraDos/reverseBeep_TerraVariant435.wav" >
+                <volume indoor="0.2" outdoor="0.7"/>
+                <lowpassGain indoor="0.10" outdoor="1.0" />
+            </reverseDrive>
+        </sounds>
+    </motorized>
+
+    <turnOnVehicle>
+       <sounds>
+           <work template="augerBelt"                pitchScale="0.5" volumeScale="3.6" fadeIn="0.2" fadeOut="1" innerRadius="1.0"  outerRadius="40.0" linkNodeOffset="1.3 4 1"/>
+           <work template="augerBelt"                pitchScale="0.8" volumeScale="2.0" fadeIn="0.2" fadeOut="1" innerRadius="1.0"  outerRadius="40.0" linkNodeOffset="-1.3 4 1"/>
+           <work template="DEFAULT_SPREADER"         pitchScale="0.4" volumeScale="5.0" fadeIn="0.2" fadeOut="1" innerRadius="1.0"  outerRadius="40.0" linkNodeOffset="0 4 0"/>
+           <work template="STRAWBLOWER_WORK"         pitchScale="0.9" volumeScale="4.2" fadeIn="0.2" fadeOut="1" innerRadius="1.0"  outerRadius="40.0" linkNodeOffset="0 4 -4"/>
+           <work template="augerLoop"                pitchScale="0.7" volumeScale="4.0" fadeIn="0.2" fadeOut="2" innerRadius="1.0"  outerRadius="40.0" linkNodeOffset="0 4 -2"/>
+           <work template="dischargeForageHarvester" pitchScale="2"   volumeScale="0.1" fadeIn="0.2" fadeOut="2" innerRadius="10.0" outerRadius="30.0" linkNodeOffset="0 1 6.5"/>
+       </sounds>
+    </turnOnVehicle>
+
+    <lights>
+        <sounds>
+            <toggleLights template="SWITCH_01"  />
+            <turnLight template="SWITCH_TURNLIGHT"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="ATTACH_01" />
+            <hydraulic template="defaultHydraulicSound" />
+        </sounds>
+    </attacherJoints>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="WATER_SPLASH_01" />
+        </sounds>
+    </drivable>
+</sounds>

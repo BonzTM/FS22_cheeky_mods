@@ -75,11 +75,11 @@
 
             <!-- Capacity -->
             <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="PLANKS"/>
-            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="180000"/>
+            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="350000"/>
             <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="METAL"/>
-            <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="50000"/>
+            <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="100000"/>
             <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="BOARDS"/>
-            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="180000"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="350000"/>
             <set path="placeable.productionPoint.storage.capacity(3)#fillType" value="ARMOIRE"/>
             <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="100000"/>
             <set path="placeable.productionPoint.storage.capacity(4)#fillType" value="CHAIR"/>

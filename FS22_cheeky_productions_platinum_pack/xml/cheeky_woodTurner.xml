@@ -71,15 +71,15 @@
 
             <!-- Capacity -->
             <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="WOOD"/>
-            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="300000"/>
+            <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="500000"/>
             <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="300000"/>
             <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="STAIRCASERAILING"/>
-            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="40000"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="100000"/>
             <set path="placeable.productionPoint.storage.capacity(3)#fillType" value="PEPPERGRINDER"/>
-            <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="40000"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="100000"/>
             <set path="placeable.productionPoint.storage.capacity(4)#fillType" value="BOWL"/>
-            <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="40000"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="100000"/>
 
 
             <!-- Sounds -->

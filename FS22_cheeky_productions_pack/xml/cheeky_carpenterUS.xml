@@ -132,8 +132,8 @@
         <storage isExtension="false" fillLevelSyncThreshold="50">
             <capacity fillType="WOOD"      capacity="400000" />
             <capacity fillType="BOARDS"    capacity="180000" />
-            <capacity fillType="FURNITURE" capacity="60000" />
-            <capacity fillType="WOODCHIPS" capacity="10000" />
+            <capacity fillType="FURNITURE" capacity="100000" />
+            <capacity fillType="WOODCHIPS" capacity="200000" />
         </storage>
 
         <loadingStation node="loadingStation" supportsExtension="false">

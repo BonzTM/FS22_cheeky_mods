@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<hub>
+    <filename>tires/cs770/pneu.i3d</filename>
+    <nodes left="1|0" right="1|1" />
+    <color0>0.03 0.03 0.03 0</color0>
+    <color1>0.25 0.25 0.25 0</color1>
+    <scale>0.3 0.3 0.3</scale>
+</hub>

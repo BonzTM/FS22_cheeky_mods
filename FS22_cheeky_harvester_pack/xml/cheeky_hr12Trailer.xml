@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="dynamicMountAttacherTrailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs22/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name params="$l10n_storeItem_headerTrailer">HR 12 %s</name>
+        <specs>
+            <combination xmlFilename="xml/cheeky_hr12.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_cutterTrailer</function>
+        </functions>
+        <image>textures/store_hr12Trailer.png</image>
+        <price>12000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>HOLMER</brand>
+        <category>cutterTrailers</category>
+        <shopTranslationOffset>0 -0.006 0</shopTranslationOffset>
+        <shopRotationOffset>0.012 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>800768</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>115712</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cutterTrailer</typeDesc>
+        <filename>i3d/hr12Trailer.i3d</filename>
+        <size width="3.8" length="12.5" height="4.5" lengthOffset="1" />
+        <components>
+            <component centerOfMass="0 0.5 -2" solverIterationCount="20" mass="950" />
+            <component centerOfMass="0 -0.385 0" solverIterationCount="20" mass="900" />
+            <component solverIterationCount="20" mass="300" />
+            <joint component1="1" component2="2" node="componentJoint01" rotLimit="0 120 0" transLimit="0 0 0" />
+            <joint component1="2" component2="3" node="componentJoint02" rotLimit="0 0 0" transLimit="0 0 0" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="TOOL"/>
+        <mapHotspot type="TOOL_TRAILED" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="trailer" rootNode="hr12Trailer_drawbar_component3" attacherHeight="0.9" />
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+        <brakeForce force="0.3"/>
+    </attachable>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="electric" node="electric" length="1.5" diameter="0.01" straighteningFactor="0.6" adapterNode="electric_ConnectorLinkNode">
+            <objectChange node="electric_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <licensePlates>
+        <licensePlate node="licensePlateBack" position="BACK" preferedType="ELONGATED" placementArea="0.06 0.3 0.06 0.3" frame="false"/>
+    </licensePlates>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="TRELLEBORG" saveId="TRELLBORG_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/400_55R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="0.8" repr="wheelFrontLeft"  forcePointRatio="0.25" initialCompression="10" suspTravel="0.12" spring="55" damper="30" yOffset="0.02" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/400_55R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="0.8" repr="wheelFrontRight" forcePointRatio="0.25" initialCompression="10" suspTravel="0.12" spring="55" damper="30" yOffset="0.02" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/400_55R22_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="0.5" repr="wheelBackLeft"   forcePointRatio="0.25" initialCompression="10" suspTravel="0.12" spring="30" damper="30" yOffset="0.02" />
+                        <wheelChock parkingNode="wheelChock01" />
+                        <wheelChock parkingNode="wheelChock02" isInverted="true" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/T404/400_55R22_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true" >
+                        <physics restLoad="0.5" repr="wheelBackRight"  forcePointRatio="0.25" initialCompression="10" suspTravel="0.12" spring="30" damper="30" yOffset="0.02" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <rimColor material="18">SHARED_WHITE1</rimColor>
+
+        <hubs>
+            <color1>SHARED_GREY3</color1>
+            <hub linkNode="wheelFrontLeft"  filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="true"  scale="0.285 0.285 0.285" offset="0.005"/>
+            <hub linkNode="wheelFrontRight" filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.285 0.285 0.285" offset="0.005"/>
+            <hub linkNode="wheelBackLeft"   filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="true"  scale="0.285 0.285 0.285" offset="0.005"/>
+            <hub linkNode="wheelBackRight"  filename="$data/shared/wheels/hubs/hub_n8_6.xml" isLeft="false" scale="0.285 0.285 0.285" offset="0.005"/>
+        </hubs>
+    </wheels>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="chockSupport01" filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="chockSupport02" filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <lights>
+        <sharedLight linkNode="sideMarker01"       filename="$data/shared/assets/reflectors/lizard/yellowRound_01.xml" />
+        <sharedLight linkNode="sideMarker02"       filename="$data/shared/assets/reflectors/lizard/yellowRound_01.xml" />
+        <sharedLight linkNode="sideMarker03"       filename="$data/shared/assets/lights/lizard/sideMarker03_left.xml" />
+        <sharedLight linkNode="sideMarker04"       filename="$data/shared/assets/lights/lizard/sideMarker03_right.xml" />
+        <sharedLight linkNode="backlightLeft"      filename="$data/shared/assets/lights/lizard/rearLight08_left.xml" />
+        <sharedLight linkNode="backlightRight"     filename="$data/shared/assets/lights/lizard/rearLight08_right.xml" />
+        <sharedLight linkNode="plateNumberLight02" filename="$data/shared/assets/lights/lizard/plateNumberLight02.xml" />
+        <realLights>
+            <high>
+                <light node="backLightsHigh1" lightTypes="0"/>
+                <light node="licensePlateLightHigh" lightTypes="0"/>
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+                <brakeLight node="backLightsHigh1" />
+            </high>
+        </realLights>
+
+        <beaconLights>
+           <beaconLight node="beaconLight" speed="0.015" filename="$data/shared/assets/beaconLights/lizard/beaconLight01.xml" />
+       </beaconLights>
+    </lights>
+
+
+    <animations>
+        <animation name="moveSupport">
+            <part componentJointIndex="2" startTime="0.0" endTime="0.15" startRotLimit="20 0 0" endRotLimit="0 0 0" />
+
+            <sound template="smallImp"     startTime="0.14" direction="1"  volumeScale="1.0" pitchScale="0.9"  outerRadius="25" linkNodeOffset="1 0.5 -4"/>
+            <sound template="fenceWoodImp" startTime="0.14" direction="1"  volumeScale="1.0" pitchScale="0.9"  outerRadius="25" linkNodeOffset="1 0.5 -4"/>
+            <sound template="clackVar6"    startTime="0.01" direction="1"  volumeScale="2"   pitchScale="1.2"  outerRadius="45" linkNodeOffset="0 0.5 -3.5"/>
+            <sound template="clackVar1"    startTime="0.14" direction="-1" volumeScale="2"   pitchScale="0.85" outerRadius="45" linkNodeOffset="0 0.5 -3.5"/>
+            <sound template="clackVar1"    startTime="0.14" direction="-1" volumeScale="2.5" pitchScale="0.65" outerRadius="45" linkNodeOffset="0 0.5 3.5"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingParts>
+            <movingPart node="drawBarSpring" referencePoint="drawBarSpringRef" referenceFrame="drawBarSpringRef" scaleZ="true" isActiveDirty="true" maxUpdateDistance="40"/>
+        </movingParts>
+    </cylindered>
+
+    <dynamicMountAttacher triggerNode="dynamicMountTrigger" rootNode="hr12Trailer_main_component1" jointNode="hr12Trailer_main_component1" forceAcceleration="500" mountType="TYPE_AUTO_ATTACH_XZ" transferMass="true">
+        <lockPosition xmlFilename="hr12/hr12.xml" jointNode="cutterLockNode"/>
+    </dynamicMountAttacher>
+
+    <foliageBending>
+        <bendingNode minX="-1.2" maxX="1.2" minZ="-4.7" maxZ="5.3" yOffset="0.35" />
+    </foliageBending>
+
+    <ai>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="3 4" width="2.8" height="1.9" length="11.2" lengthOffset="4.9" hasCollision="false"/>
+    </ai>
+
+    <baseMaterial>
+        <material name="hr12_mat" baseNode="hr12_vis">
+            <shaderParameter name="colorMat2" value="HOLMER_YELLOW_1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="hr12Trailer_main_component1" node="0>" />
+        <i3dMapping id="hr12_vis" node="0>0" />
+        <i3dMapping id="componentJoint01" node="0>0|0" />
+        <i3dMapping id="chockSupport01" node="0>0|1|0" />
+        <i3dMapping id="chockSupport02" node="0>0|1|1" />
+        <i3dMapping id="wheelChock01" node="0>0|1|2" />
+        <i3dMapping id="wheelChock02" node="0>0|1|3" />
+        <i3dMapping id="wheelBackLeft" node="0>0|2|0" />
+        <i3dMapping id="wheelBackRight" node="0>0|2|1" />
+        <i3dMapping id="wheelChock_detached_scaled" node="0>0|2|2" />
+        <i3dMapping id="sideMarker01" node="0>0|3|0|0" />
+        <i3dMapping id="sideMarker02" node="0>0|3|0|1" />
+        <i3dMapping id="sideMarker03" node="0>0|3|0|2" />
+        <i3dMapping id="sideMarker04" node="0>0|3|0|3" />
+        <i3dMapping id="backlightLeft" node="0>0|3|0|4" />
+        <i3dMapping id="backlightRight" node="0>0|3|0|5" />
+        <i3dMapping id="plateNumberLight02" node="0>0|3|0|6" />
+        <i3dMapping id="beaconLight" node="0>0|3|1" />
+        <i3dMapping id="backLightsHigh1" node="0>0|3|2" />
+        <i3dMapping id="turnLightLeftBack" node="0>0|3|3" />
+        <i3dMapping id="turnLightRightBack" node="0>0|3|4" />
+        <i3dMapping id="licensePlateLightHigh" node="0>0|3|5|0" />
+        <i3dMapping id="cutterLockNode" node="0>0|4|0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|4|1" />
+        <i3dMapping id="licensePlateBack" node="0>0|5|1" />
+        <i3dMapping id="hr12Trailer_dolly_component2" node="1>" />
+        <i3dMapping id="componentJoint02" node="1>0" />
+        <i3dMapping id="wheelFrontLeft" node="1>1|0" />
+        <i3dMapping id="wheelFrontRight" node="1>1|1" />
+        <i3dMapping id="drawBarSpring" node="1>2" />
+        <i3dMapping id="hr12Trailer_drawbar_component3" node="2>" />
+        <i3dMapping id="attacherJoint" node="2>0" />
+        <i3dMapping id="electric" node="2>1|0" />
+        <i3dMapping id="electric_detached" node="2>1|0|0" />
+        <i3dMapping id="electric_ConnectorLinkNode" node="2>1|0|0|0" />
+        <i3dMapping id="drawBarSpringRef" node="2>2" />
+    </i3dMappings>
+</vehicle>

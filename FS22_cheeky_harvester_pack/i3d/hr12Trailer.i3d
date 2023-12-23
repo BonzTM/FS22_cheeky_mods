@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hr12Trailer" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="5" filename="$data/shared/default_normal.png" />
+    <File fileId="4" filename="hr12Decals_diffuse.png" />
+    <File fileId="6" filename="hr12Decals_vmask.png" />
+    <File fileId="1" filename="hr12Trailer_normal.png" />
+    <File fileId="2" filename="hr12Trailer_vmask.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="hr12Trailer_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" customShaderId="3" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat2" value="1.0000 0.7445 0.0002 5"/>
+      <CustomParameter name="colorMat0" value="0.0316 0.0356 0.0461 18"/>
+      <CustomParameter name="colorMat1" value="0.2195 0.2233 0.2310 18"/>
+      <Normalmap fileId="1"/>
+      <Glossmap fileId="2"/>
+    </Material>
+    <Material name="hr12Decals_mat" materialId="3" alphaBlending="true" customShaderId="3" customShaderVariation="Decal">
+      <CustomParameter name="RDT" value="1.0 1.0 5.0 5.0"/>
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hr12Trailer.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="hr12Trailer_main_component1" shapeId="1" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="hr12_vis" translation="0 -0 0" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="2 44 52" nodeId="2">
+        <TransformGroup name="componentJoint01" translation="0.001273 1.208564 4.59456" nodeId="3"/>
+        <TransformGroup name="wheelChocks" translation="0 0 0" nodeId="4">
+          <TransformGroup name="chockSupport01" translation="0.452573 1.045553 -3.544734" rotation="0 -90 0" nodeId="5"/>
+          <TransformGroup name="chockSupport02" translation="-0.452511 1.045553 -3.544734" rotation="0 90 0" nodeId="6"/>
+          <TransformGroup name="wheelChock01" translation="0.6311 1.050659 -3.548463" rotation="0 -90 0" scale="0.922122 1 1" collision="false" clipDistance="300" nodeId="7"/>
+          <TransformGroup name="wheelChock02" translation="-0.631 1.050659 -3.548463" rotation="0 90 0" scale="0.922122 1 1" collision="false" clipDistance="300" nodeId="8"/>
+        </TransformGroup>
+        <TransformGroup name="wheels" nodeId="9">
+          <TransformGroup name="wheelBackLeft" translation="0.924938 0.485589 -4.050951" nodeId="10"/>
+          <TransformGroup name="wheelBackRight" translation="-0.92494 0.485589 -4.050951" nodeId="11"/>
+          <TransformGroup name="wheelChock_detached_scaled" translation="0.622026 1.055273 -3.545105" rotation="0 -90 0" scale="0.831242 0.831242 0.831242" static="true" nodeId="12"/>
+        </TransformGroup>
+        <TransformGroup name="lights" nodeId="13">
+          <TransformGroup name="sharedLights" translation="0 0 0" nodeId="14">
+            <TransformGroup name="sideMarker01" translation="-0.676959 1.320998 5.100329" rotation="90 -90 0" nodeId="15"/>
+            <TransformGroup name="sideMarker02" translation="0.67696 1.320998 5.100329" rotation="90 90 0" nodeId="16"/>
+            <TransformGroup name="sideMarker03" translation="1.098 0.920901 -4.610176" rotation="-0 0 -90" nodeId="17"/>
+            <TransformGroup name="sideMarker04" translation="-1.098001 0.920901 -4.610176" rotation="-0 0 90" nodeId="18"/>
+            <TransformGroup name="backlightLeft" translation="0.910407 0.920172 -4.636709" rotation="90 180 0" nodeId="19"/>
+            <TransformGroup name="backlightRight" translation="-0.910408 0.920172 -4.636709" rotation="90 180 0" nodeId="20"/>
+            <TransformGroup name="plateNumberLight02" translation="-0.320587 0.911785 -4.631379" rotation="-90 0 -90" nodeId="21"/>
+          </TransformGroup>
+          <TransformGroup name="beaconLight" translation="0.499816 1.159282 -4.529432" nodeId="22"/>
+          <Light name="backLightsHigh1" translation="0.921 0.912 -4.697" rotation="-15 -5 0" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2" clipDistance="75" nodeId="23">
+            <Light name="backLightsHigh3" translation="-1.834991 -0.041551 0.155071" rotation="0.220741 9.655936 2.612982" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="120" dropOff="2" clipDistance="75" nodeId="24"/>
+          </Light>
+          <Light name="turnLightLeftBack" translation="0.921256 0.912293 -4.697451" rotation="-8 -5 -0" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="130" dropOff="3" clipDistance="75" nodeId="25"/>
+          <Light name="turnLightRightBack" translation="-0.921 0.912293 -4.697" rotation="-8 5 0" type="spot" color="0.31 0.14 0" emitDiffuse="true" emitSpecular="true" range="4" coneAngle="130" dropOff="3" clipDistance="75" nodeId="26"/>
+          <TransformGroup name="defaultLights" translation="0 0 0" nodeId="27">
+            <Light name="licensePlateLightHigh" translation="-0.329587 0.919557 -4.668421" rotation="0 -70 0" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" range="0.5" coneAngle="120" dropOff="2" clipDistance="75" nodeId="28"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="cutterAttacherJoint" translation="0 0 0" nodeId="29">
+          <TransformGroup name="cutterLockNode" translation="-0.349845 0.529394 0.078237" rotation="-1.843901 -90 0" scale="1 1 1" nodeId="30"/>
+          <Shape name="dynamicMountTrigger" translation="-0.895543 0.709287 0" rotation="0 0 50.766106" visibility="false" shapeId="3" kinematic="true" compound="true" trigger="true" collisionMask="18874368" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="31"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="32">
+          <Shape name="decals" translation="0 0 0.255263" shapeId="4" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="33"/>
+          <TransformGroup name="licensePlateBack" translation="0 0.91987 -4.63501" rotation="0 180 0" nodeId="34"/>
+        </TransformGroup>
+      </Shape>
+      <TransformGroup name="collisions" visibility="false" nodeId="35">
+        <Shape name="colPart01" translation="0 0.565753 -3.777591" shapeId="5" compoundChild="true" density="0.001" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="36"/>
+        <Shape name="colPart02" translation="0 0.565753 4.151352" shapeId="6" compoundChild="true" density="0.001" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="37"/>
+      </TransformGroup>
+    </Shape>
+    <Shape name="hr12Trailer_dolly_component2" translation="0 0.885114 4.594885" shapeId="7" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="38">
+      <TransformGroup name="componentJoint02" translation="0 0.004549 0.621606" nodeId="39"/>
+      <TransformGroup name="wheels" nodeId="40">
+        <TransformGroup name="wheelFrontLeft" translation="0.924939 -0.399525 -0" nodeId="41"/>
+        <TransformGroup name="wheelFrontRight" translation="-0.924938 -0.399525 -0" nodeId="42"/>
+      </TransformGroup>
+      <Shape name="drawBarSpring" translation="0.563519 0.215262 0.573159" rotation="16.056061 -17.145866 0" scale="1 1 1" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="25" nodeId="43"/>
+      <TransformGroup name="dolly_vis" translation="0 -0.118196 -0.083091" collision="false" nodeId="44"/>
+    </Shape>
+    <Shape name="hr12Trailer_drawbar_component3" translation="0 0.890034 5.971467" shapeId="9" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="45">
+      <TransformGroup name="attacherJoint" translation="0 0 0.74209" rotation="0 90 0" nodeId="46"/>
+      <TransformGroup name="connectionHoses" translation="0 -0.890034 -5.971467" nodeId="47">
+        <TransformGroup name="electric" translation="-0.213317 0.925982 5.918338" nodeId="48">
+          <Shape name="electric_detached" translation="0.213317 -0.925982 -5.918338" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="49">
+            <TransformGroup name="electric_ConnectorLinkNode" translation="0.316477 0.738049 6.020729" rotation="87.372459 0 0" nodeId="50"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="drawBarSpringRef" translation="0.411205 0.061645 -0.309726" rotation="16.056061 -17.145866 0" scale="1 1 1" nodeId="51"/>
+      <TransformGroup name="drawbar_vis" translation="0 0.009402 -0.004123" collision="false" nodeId="52"/>
+      <Shape name="hoseAdded" translation="0 -0.890034 -5.971467" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="53"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="5">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChockSupport01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="chockSupport"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="6">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChockSupport01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="chockSupport"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="7">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChock01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="wheelChock01"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="8">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChock01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="wheelChock01"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>
