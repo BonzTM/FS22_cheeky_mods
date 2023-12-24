@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <brand>BKT</brand>
+    <name>Earthmax SR 35</name>
+    <default>
+        <physics radius="0.650" width="0.635" mass="0.231" tireType="offRoad" frictionScale="1.60" maxLongStiffness="12" maxLatStiffness="140" maxLatStiffnessLoad="2"/>
+        <tire filename="$data/shared/wheels/tires/bkt/earthMaxSR35/R25_earthMaxSR35.i3d" node="0|0" maxDeformation="0.07" sideDeformOffset="0.934" isCareWheel="false" tireTrackAtlasIndex="10"/>
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="19.5 25"/>
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="19.5 25"/>
+    </default>
+</wheel>
