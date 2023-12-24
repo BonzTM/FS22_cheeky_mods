@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet">
+    <parentFile xmlFilename="$pdlcdir/forestryPack/objects/pallets/pepperGrinderPallet/pepperGrinderPallet.xml">
+        <attributes>
+            <!-- Base overrides -->
+            <set path="vehicle.base.filename" value="$pdlcdir/forestryPack/objects/pallets/pepperGrinderPallet/pepperGrinderPallet.i3d"/>       
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#capacity" value="1000"/>
+        </attributes>
+    </parentFile>
+</vehicle>

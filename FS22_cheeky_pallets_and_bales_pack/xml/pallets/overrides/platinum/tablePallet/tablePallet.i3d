@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="tablePallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/objects/pallets/euroPallet01_diffuse.png" />
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_normal.png" />
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_specular.png" />
+    <File fileId="7" filename="../../../../textures/plasticFoil_diffuse.png" />
+    <File fileId="8" filename="../../../../textures/plasticFoil_normal.png" />
+    <File fileId="9" filename="../../../../textures/plasticFoil_specular.png" />
+    <File fileId="4" filename="tablePallet_diffuse.png" />
+    <File fileId="5" filename="tablePallet_normal.png" />
+    <File fileId="6" filename="tablePallet_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="euroPallet01_mat" materialId="2">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="tablePallet_mat" materialId="3">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="plasticFoil_mat" materialId="4" alphaBlending="true">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="lambert2" materialId="5" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="lambert3" materialId="6" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="tablePallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="tablePallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="tablePallet_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="100" nodeId="2">
+        <TransformGroup name="contents" nodeId="3">
+          <TransformGroup name="table01" translation="-0.021512 0.203168 -0.00193" rotation="0 90 0" collision="false" clipDistance="100" nodeId="4">
+            <Shape name="table" translation="0.000699 0.002344 -0.000988" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="5"/>
+            <Shape name="plasticFoil" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="100" nodeId="6"/>
+            <Shape name="table01Tension" translation="0.000698 -0.002905 -0.000781" scale="1 1 1" shapeId="5" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="7"/>
+          </TransformGroup>
+          <TransformGroup name="table02" translation="-0.021512 0.301116 -0.00193" rotation="0 90 0" collision="false" clipDistance="100" nodeId="8">
+            <Shape name="table" translation="0.000699 0.002344 -0.000988" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="9"/>
+            <Shape name="plasticFoil" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="100" nodeId="10"/>
+            <Shape name="table02Tension" translation="0.000698 0 -0.000781" scale="1 1 1" shapeId="6" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="11"/>
+          </TransformGroup>
+          <TransformGroup name="table03" translation="-0.021512 0.399486 -0.00193" rotation="0 90 0" collision="false" clipDistance="100" nodeId="12">
+            <Shape name="table" translation="0.000699 0.002344 -0.000988" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="13"/>
+            <Shape name="plasticFoil" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="100" nodeId="14"/>
+            <Shape name="table03Tension" translation="0.000698 0 -0.000781" scale="1 1 1" shapeId="7" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="15"/>
+          </TransformGroup>
+          <TransformGroup name="table04" translation="-0.021512 0.496378 -0.00193" rotation="0 90 0" collision="false" clipDistance="100" nodeId="16">
+            <Shape name="table" translation="0.000699 0.002344 -0.000988" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="17"/>
+            <Shape name="plasticFoil" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="100" nodeId="18"/>
+            <Shape name="table04Tension" translation="0.000698 0 -0.000781" scale="1 1 1" shapeId="8" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="19"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape name="dynamicMountTrigger" translation="0 0.090475 0" visibility="false" shapeId="9" kinematic="true" trigger="true" collisionMask="134217728" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" nodeId="20"/>
+        <TransformGroup name="dischargeNode" translation="0 0.75 0" static="true" nodeId="21"/>
+        <TransformGroup name="collisions" collision="false" clipDistance="10" nodeId="22">
+          <Shape name="floorCollision01" translation="-0.3 0.000057 -0" shapeId="10" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6" nodeId="23"/>
+          <Shape name="floorCollision02" translation="0.3 0.000057 0" shapeId="11" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="6" nodeId="24"/>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

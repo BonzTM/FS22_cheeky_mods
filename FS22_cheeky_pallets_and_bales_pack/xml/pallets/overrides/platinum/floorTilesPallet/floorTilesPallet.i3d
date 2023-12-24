@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="floorTilesPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/objects/pallets/euroPallet01_diffuse.png" />
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_normal.png" />
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_specular.png" />
+    <File fileId="4" filename="floorTilesPallet_diffuse.png" />
+    <File fileId="5" filename="floorTilesPallet_normal.png" />
+    <File fileId="6" filename="floorTilesPallet_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="euroPallet01_mat" materialId="2">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="floorTilesPallet_mat" materialId="3">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="lambert2" materialId="4" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="lambert3" materialId="5" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="floorTilesPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="floorTilesPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="floorTilesPallet_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="2">
+        <TransformGroup name="contents" nodeId="3">
+          <Shape name="floorTiles01" translation="-0.400078 0.143593 0.196304" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="4">
+            <Shape name="floorTiles01Tension" translation="-0 0.107641 -0" scale="1 1 1" shapeId="4" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="5"/>
+          </Shape>
+          <Shape name="floorTiles02" translation="-0.400078 0.143593 -0.201244" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="6">
+            <Shape name="floorTiles02Tension" translation="0.000848 0.107641 -0" scale="1 1 1" shapeId="5" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="7"/>
+          </Shape>
+          <Shape name="floorTiles03" translation="-0.001192 0.143593 0.196304" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="8">
+            <Shape name="floorTiles03Tension" translation="-0 0.107641 -0.001166" scale="1 1 1" shapeId="6" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="9"/>
+          </Shape>
+          <Shape name="floorTiles04" translation="-0.001192 0.143593 -0.201244" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="10">
+            <Shape name="floorTiles04Tension" translation="0.000848 0.107641 -0.001166" scale="1 1 1" shapeId="7" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="11"/>
+          </Shape>
+          <Shape name="floorTiles05" translation="0.398064 0.143593 0.196304" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="12">
+            <Shape name="floorTiles05Tension" translation="-0 0.107641 -0.000169" scale="1 1 1" shapeId="8" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="13"/>
+          </Shape>
+          <Shape name="floorTiles06" translation="0.398064 0.143593 -0.201244" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="14">
+            <Shape name="floorTiles06Tension" translation="0.000848 0.107641 -0.000169" scale="1 1 1" shapeId="9" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="15"/>
+          </Shape>
+          <Shape name="floorTiles07" translation="-0.400078 0.35716 0.196304" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="16">
+            <Shape name="floorTiles07Tension" translation="-0 0.107613 -0" scale="1 1 1" shapeId="10" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="17"/>
+          </Shape>
+          <Shape name="floorTiles08" translation="-0.400078 0.35716 -0.201244" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="18">
+            <Shape name="floorTiles08Tension" translation="0.000848 0.107613 -0" scale="1 1 1" shapeId="11" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="19"/>
+          </Shape>
+          <Shape name="floorTiles09" translation="-0.001192 0.35716 0.196304" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="20">
+            <Shape name="floorTiles09Tension" translation="-0 0.107613 -0.001166" scale="1 1 1" shapeId="12" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="21"/>
+          </Shape>
+          <Shape name="floorTiles10" translation="-0.001192 0.35716 -0.201244" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="22">
+            <Shape name="floorTiles10Tension" translation="0.000848 0.107613 -0.001166" scale="1 1 1" shapeId="13" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="23"/>
+          </Shape>
+          <Shape name="floorTiles11" translation="0.398064 0.35716 0.196304" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="24">
+            <Shape name="floorTiles11Tension" translation="-0 0.107613 -0.000169" scale="1 1 1" shapeId="14" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="25"/>
+          </Shape>
+          <Shape name="floorTiles12" translation="0.398064 0.35716 -0.201244" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="26">
+            <Shape name="floorTiles12Tension" translation="0.000848 0.107613 -0.000169" scale="1 1 1" shapeId="15" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="27"/>
+          </Shape>
+          <Shape name="floorTiles13" translation="-0.400078 0.57817 0.196304" rotation="0 90 0" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="28">
+            <Shape name="floorTiles13Tension" translation="-0 0.116 -0" scale="1 1 1" shapeId="17" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="29"/>
+          </Shape>
+          <Shape name="floorTiles14" translation="-0.400078 0.57817 -0.201244" rotation="0 90 0" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="30">
+            <Shape name="floorTiles14Tension" translation="0.000848 0.116 -0" scale="1 1 1" shapeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="31"/>
+          </Shape>
+          <Shape name="floorTiles15" translation="-0.001192 0.57817 0.196304" rotation="0 90 0" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="32">
+            <Shape name="floorTiles15Tension" translation="-0 0.116 -0.001166" scale="1 1 1" shapeId="19" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="33"/>
+          </Shape>
+          <Shape name="floorTiles16" translation="-0.001192 0.57817 -0.201244" rotation="0 90 0" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="34">
+            <Shape name="floorTiles16Tension" translation="0.000848 0.116 -0.001166" scale="1 1 1" shapeId="20" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="35"/>
+          </Shape>
+          <Shape name="floorTiles17" translation="0.398064 0.57817 0.196304" rotation="0 90 0" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="36">
+            <Shape name="floorTiles17Tension" translation="-0 0.116 -0.000169" scale="1 1 1" shapeId="21" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="37"/>
+          </Shape>
+          <Shape name="floorTiles18" translation="0.398064 0.57817 -0.201244" rotation="0 90 0" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="38">
+            <Shape name="floorTiles18Tension" translation="0.000848 0.115941 -0.000169" scale="1 1 1" shapeId="22" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="39"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="dynamicMountTrigger" translation="0 0.090475 0" visibility="false" shapeId="23" kinematic="true" trigger="true" collisionMask="134217728" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="4" nodeId="40"/>
+        <TransformGroup name="dischargeNode" translation="0 0.75 0" static="true" nodeId="41"/>
+        <TransformGroup name="collisions" collision="false" clipDistance="10" nodeId="42">
+          <Shape name="floorCollision01" translation="-0.3 0.000057 -0" shapeId="24" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" nodeId="43"/>
+          <Shape name="floorCollision02" translation="0.3 0.000057 0" shapeId="25" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" nodeId="44"/>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

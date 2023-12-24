@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_shinglePallet</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>xml/pallets/overrides/shingleGenericPallet/shingleGenericPallet.i3d</filename>
+        <size width="1.3" length="0.9" height="1.4" lengthOffset="0" />
+        <canBeReset>false</canBeReset>
+        <components maxMass="600">
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="500"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="SHINGLE" capacity="1000" ignoreFillLimit="true"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="shingleGenericPallet_vis">
+        <content>
+            <object node="shingleBox01" tensionBeltNode="shingleBox01Tension"/>
+            <object node="shingleBox02" tensionBeltNode="shingleBox02Tension"/>
+            <object node="shingleBox03" tensionBeltNode="shingleBox03Tension"/>
+            <object node="shingleBox04" tensionBeltNode="shingleBox04Tension"/>
+            <object node="shingleBox05" tensionBeltNode="shingleBox05Tension"/>
+            <object node="shingleBox06" tensionBeltNode="shingleBox06Tension"/>
+            <object node="shingleBox07" tensionBeltNode="shingleBox07Tension"/>
+            <object node="shingleBox08" tensionBeltNode="shingleBox08Tension"/>
+            <object node="shingleBox09" tensionBeltNode="shingleBox09Tension"/>
+            <object node="shingleBox10" tensionBeltNode="shingleBox10Tension"/>
+            <object node="shingleBox11" tensionBeltNode="shingleBox11Tension"/>
+            <object node="shingleBox12" tensionBeltNode="shingleBox12Tension"/>
+        </content>
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.9" volumeScale="1"/>
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.34" jointTransY="0.106" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="shingleGenericPallet_main_component1" node="0>" />
+        <i3dMapping id="shingleGenericPallet_vis" node="0>0" />
+        <i3dMapping id="shingleBox01" node="0>0|0|0" />
+        <i3dMapping id="shingleBox01Tension" node="0>0|0|0|0" />
+        <i3dMapping id="shingleBox02" node="0>0|0|1" />
+        <i3dMapping id="shingleBox02Tension" node="0>0|0|1|0" />
+        <i3dMapping id="shingleBox03" node="0>0|0|2" />
+        <i3dMapping id="shingleBox03Tension" node="0>0|0|2|0" />
+        <i3dMapping id="shingleBox04" node="0>0|0|3" />
+        <i3dMapping id="shingleBox04Tension" node="0>0|0|3|0" />
+        <i3dMapping id="shingleBox05" node="0>0|0|4" />
+        <i3dMapping id="shingleBox05Tension" node="0>0|0|4|0" />
+        <i3dMapping id="shingleBox06" node="0>0|0|5" />
+        <i3dMapping id="shingleBox06Tension" node="0>0|0|5|0" />
+        <i3dMapping id="shingleBox07" node="0>0|0|6" />
+        <i3dMapping id="shingleBox07Tension" node="0>0|0|6|0" />
+        <i3dMapping id="shingleBox08" node="0>0|0|7" />
+        <i3dMapping id="shingleBox08Tension" node="0>0|0|7|0" />
+        <i3dMapping id="shingleBox09" node="0>0|0|8" />
+        <i3dMapping id="shingleBox09Tension" node="0>0|0|8|0" />
+        <i3dMapping id="shingleBox10" node="0>0|0|9" />
+        <i3dMapping id="shingleBox10Tension" node="0>0|0|9|0" />
+        <i3dMapping id="shingleBox11" node="0>0|0|10" />
+        <i3dMapping id="shingleBox11Tension" node="0>0|0|10|0" />
+        <i3dMapping id="shingleBox12" node="0>0|0|11" />
+        <i3dMapping id="shingleBox12Tension" node="0>0|0|11|0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|1" />
+        <i3dMapping id="dischargeNode" node="0>0|2" />
+    </i3dMappings>
+</vehicle>

@@ -84,7 +84,7 @@
     </hotspots>
 
     <sellingStation appearsOnStats="true" node="sellingStation" supportsExtension="false">
-        <unloadTrigger exactFillRootNode="unloadTriggerUpper" fillTypes="STONE COAL DIRT MUD TAILINGS SAND GRAVEL IRONORE PEASTONE CEMENT CONCRETE LIMESTONE OVERBURDEN RIVERSAND COKECOAL STONEPOWDER ASPHALT" priceScale="2" />
+        <unloadTrigger exactFillRootNode="unloadTriggerUpper" fillTypes="STONE COAL DIRT MUD TAILINGS SAND GRAVEL IRONORE PEASTONE CEMENT CONCRETE LIMESTONE OVERBURDEN RIVERSAND COKECOAL STONEPOWDER ASPHALT" priceScale="1.4" />
         <!-- give players a bonus for using upper trigger -->
         <unloadTrigger exactFillRootNode="unloadTriggerLower" fillTypes="STONE COAL DIRT MUD TAILINGS SAND GRAVEL IRONORE PEASTONE CEMENT CONCRETE LIMESTONE OVERBURDEN RIVERSAND COKECOAL STONEPOWDER ASPHALT" aiNode="unloadTriggerLowerAINode"/>
 

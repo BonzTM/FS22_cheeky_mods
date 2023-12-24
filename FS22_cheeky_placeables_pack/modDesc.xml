@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.8.0.0</version>
+    <version>1.9.0.0</version>
     <title>
         <en>Cheeky Placeables Pack</en>
     </title>
@@ -15,6 +15,7 @@
         <storeItem xmlFilename="xml/cheeky_water_liquidFlatBottomTank1630.xml"/>
 
         <!-- Selling Points -->
+        <storeItem xmlFilename="xml/cheeky_bhp.xml"/>
         <storeItem xmlFilename="xml/cheeky_debrisCrusher.xml"/>
         <storeItem xmlFilename="xml/cheeky_farmersMarket.xml"/>
         <storeItem xmlFilename="xml/cheeky_fastFoodRestaurant.xml"/>
@@ -27,4 +28,7 @@
         <storeItem xmlFilename="xml/cheeky_supermarket.xml"/>
     </storeItems>
 	<multiplayer supported="true" />
+    <dependencies>
+		<dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
+	</dependencies> 
 </modDesc>

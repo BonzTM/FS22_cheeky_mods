@@ -81,7 +81,7 @@
     </dynamicallyLoadedParts>
 
     <sellingStation appearsOnStats="true" supportsExtension="false" node="sellingStation">
-        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="POTATO WOODCHIPS FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL BUTTER CHEESE SUGAR BREAD CAKE STRAWBERRY LETTUCE TOMATO GRAPE GRAPEJUICE FURNITURE CLOTHES EGG RAISINS CEREAL HONEY TOMATOJUICE BEETJUICE CARROTJUICE VEGETABLEJUICE MOONSHINE"/>
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="POTATO WOODCHIPS FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL BUTTER CHEESE SUGAR BREAD CAKE STRAWBERRY LETTUCE TOMATO GRAPE GRAPEJUICE FURNITURE CLOTHES EGG RAISINS CEREAL HONEY MOONSHINE" fillTypeCategories="CHEEKY_FOOD_PRODUCT CHEEKY_PREM_PRODUCT"/>
         <fillType name="POTATO" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="WOODCHIPS" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 
@@ -107,11 +107,10 @@
         <fillType name="HONEY" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 
         <!-- Custom -->
-        <fillType name="TOMATOJUICE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="BEETJUICE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CARROTJUICE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="VEGETABLEJUICE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="MOONSHINE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+
+        <fillTypeCategory name="CHEEKY_FOOD_PRODUCT" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillTypeCategory name="CHEEKY_PREM_PRODUCT" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 
         <sounds>
             <idle template="storeTemplate"/>

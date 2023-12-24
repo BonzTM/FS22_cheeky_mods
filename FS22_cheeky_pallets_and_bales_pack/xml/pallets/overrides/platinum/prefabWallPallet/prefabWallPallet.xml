@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet">
+    <parentFile xmlFilename="$pdlcdir/forestryPack/objects/pallets/prefabWallPallet/prefabWallPallet.xml">
+        <attributes>
+            <!-- Base overrides -->
+            <set path="vehicle.base.filename" value="$pdlcdir/forestryPack/objects/pallets/prefabWallPallet/prefabWallPallet.i3d"/>       
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#capacity" value="8000"/>
+        </attributes>
+    </parentFile>
+</vehicle>

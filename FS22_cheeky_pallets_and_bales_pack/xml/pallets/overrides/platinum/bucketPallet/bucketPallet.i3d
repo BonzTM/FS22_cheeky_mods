@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="bucketPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_diffuse.png" />
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_normal.png" />
+    <File fileId="5" filename="$data/objects/pallets/euroPallet01_specular.png" />
+    <File fileId="1" filename="bucketPallet_diffuse.png" />
+    <File fileId="2" filename="bucketPallet_normal.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="bucketPallet_mat" materialId="3" specularColor="0.5 0.5 0.5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="2">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+    <Material name="lambert2" materialId="4" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="lambert3" materialId="5" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bucketPallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="bucketPallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="bucketPallet_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="2">
+        <TransformGroup name="contents" nodeId="3">
+          <Shape name="bucket01" translation="-0.394243 0.151648 0.200402" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="4">
+            <Shape name="bucket01Tension" translation="-0 0.304314 0" rotation="0 -90 0" scale="1 1 1" shapeId="4" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="5"/>
+          </Shape>
+          <Shape name="bucket02" translation="0.009266 0.151648 0.200402" rotation="0 90 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="6">
+            <Shape name="bucket02Tension" translation="0.390791 0.304314 -0.403509" rotation="0 -33.104813 0" scale="1 1 1" shapeId="5" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="7"/>
+          </Shape>
+          <Shape name="bucket03" translation="0.419268 0.151648 0.200402" rotation="0 44.788483 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="8">
+            <Shape name="bucket03Tension" translation="-0.290984 0.304314 -0.288843" rotation="0 -44.788483 0" shapeId="6" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="9"/>
+          </Shape>
+          <Shape name="bucket04" translation="-0.394243 0.151648 -0.190389" rotation="0 146.516006 0" scale="1 1 1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="10">
+            <Shape name="bucket04Tension" translation="-0.894102 0.304314 0.122882" rotation="0 169.148026 0" scale="1 1 1" shapeId="7" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="11"/>
+          </Shape>
+          <Shape name="bucket05" translation="0.009266 0.151648 -0.190389" rotation="0 34.73373 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="12">
+            <Shape name="bucket05Tension" translation="-0 0.304314 0" rotation="0 269.757477 0" shapeId="8" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="13"/>
+          </Shape>
+          <Shape name="bucket06" translation="0.419268 0.151648 -0.190389" rotation="0 3.831721 0" scale="1 1 1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="100" nodeId="14">
+            <Shape name="bucket06Tension" translation="-0 0.304314 -0" rotation="0 -85.964287 0" scale="1 1 1" shapeId="9" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="15"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="dynamicMountTrigger" translation="0 0.090475 0" visibility="false" shapeId="10" kinematic="true" trigger="true" collisionMask="134217728" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="4" nodeId="16"/>
+        <TransformGroup name="dischargeNode" translation="0 0.75 0" static="true" nodeId="17"/>
+        <TransformGroup name="collisions" collision="false" clipDistance="10" nodeId="18">
+          <Shape name="floorCollision01" translation="-0.3 0.000057 -0" shapeId="11" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" nodeId="19"/>
+          <Shape name="floorCollision02" translation="0.3 0.000057 0" shapeId="12" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" nodeId="20"/>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

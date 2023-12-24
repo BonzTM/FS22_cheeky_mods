@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="dogHousePallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_diffuse.png" />
+    <File fileId="5" filename="$data/objects/pallets/euroPallet01_normal.png" />
+    <File fileId="6" filename="$data/objects/pallets/euroPallet01_specular.png" />
+    <File fileId="1" filename="dogHousePallet_diffuse.png" />
+    <File fileId="2" filename="dogHousePallet_normal.png" />
+    <File fileId="3" filename="dogHousePallet_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="dogHousePallet_mat" materialId="3">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="2">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="lambert2" materialId="4" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="lambert3" materialId="5" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="dogHousePallet.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="dogHousePallet_main_component1" shapeId="1" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="dogHousePallet_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="100" nodeId="2">
+        <TransformGroup name="contents" nodeId="3">
+          <Shape name="dogHouse" translation="-0.045063 0.609076 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="300" nodeId="4">
+            <Shape name="dogHouseTension" translation="-0.0033 0 0" shapeId="4" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="5"/>
+          </Shape>
+        </TransformGroup>
+        <Shape name="dynamicMountTrigger" translation="0 0.090475 0" visibility="false" shapeId="5" kinematic="true" trigger="true" collisionMask="134217728" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="4" nodeId="6"/>
+        <TransformGroup name="dischargeNode" translation="0 0.75 0" static="true" nodeId="7"/>
+        <TransformGroup name="collisions" collision="false" clipDistance="10" nodeId="8">
+          <Shape name="floorCollision01" translation="-0.3 0.000057 -0" shapeId="6" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" nodeId="9"/>
+          <Shape name="floorCollision02" translation="0.3 0.000057 0" shapeId="7" compoundChild="true" staticFriction="1" dynamicFriction="1" density="0.001" collisionMask="16781578" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" nodeId="10"/>
+        </TransformGroup>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>
