@@ -8,12 +8,12 @@
   <Files>
     <File fileId="19" filename="$data/shaders/glowShader.xml"/>
     <File fileId="39" filename="$data/shaders/mirrorShader.xml"/>
-    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="5"  filename="$data/shaders/vehicleShader.xml"/>
     <File fileId="31" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
     <File fileId="32" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
     <File fileId="33" filename="$data/shared/assets/assetLibraryDecals_vmask.dds"/>
     <File fileId="22" filename="$data/shared/clearPlastic_diffuse.png"/>
-    <File fileId="9" filename="$data/shared/default_normal.png"/>
+    <File fileId="9"  filename="$data/shared/default_normal.png"/>
     <File fileId="10" filename="$data/shared/default_specular.dds"/>
     <File fileId="18" filename="$data/shared/default_vmask.png"/>
     <File fileId="20" filename="$data/shared/rasterPattern_diffuse.png"/>
@@ -30,19 +30,19 @@
     <File fileId="21" filename="$data/vehicles/johnDeere/x9_1100/x9_1100InteriorLights_normal.png"/>
     <File fileId="14" filename="$data/vehicles/johnDeere/x9_1100/x9_1100Interior_normal.dds"/>
     <File fileId="15" filename="$data/vehicles/johnDeere/x9_1100/x9_1100Interior_vmask.dds"/>
-    <File fileId="16" filename="textures/cs770/adesivos_Interior.dds"/>
-    <File fileId="3" filename="textures/cs770/cp690Exterior1_normal.dds"/>
-    <File fileId="4" filename="textures/cs770/cp690Exterior1_vmask.dds"/>
-    <File fileId="25" filename="textures/cs770/cp690Exterior2_normal.png"/>
-    <File fileId="26" filename="textures/cs770/cp690Exterior2_vmask.png"/>
-    <File fileId="43" filename="textures/cs770/cp690Exterior3_normal.png"/>
-    <File fileId="44" filename="textures/cs770/cp690Exterior3_vmask.png"/>
-    <File fileId="30" filename="textures/cs770/cp770ExteriorDecal_diffuse.dds"/>
-    <File fileId="27" filename="textures/cs770/grade_difuse.dds"/>
-    <File fileId="28" filename="textures/cs770/grade_normal.dds"/>
-    <File fileId="40" filename="textures/cs770/vidro1.dds"/>
-    <File fileId="41" filename="textures/cs770/vidro2.dds"/>
-    <File fileId="42" filename="textures/cs770/vidro3.dds"/>
+    <File fileId="16" filename="../textures/cs770/adesivos_Interior.dds"/>
+    <File fileId="3"  filename="../textures/cs770/cp690Exterior1_normal.dds"/>
+    <File fileId="4"  filename="../textures/cs770/cp690Exterior1_vmask.dds"/>
+    <File fileId="25" filename="../textures/cs770/cp690Exterior2_normal.png"/>
+    <File fileId="26" filename="../textures/cs770/cp690Exterior2_vmask.png"/>
+    <File fileId="43" filename="../textures/cs770/cp690Exterior3_normal.png"/>
+    <File fileId="44" filename="../textures/cs770/cp690Exterior3_vmask.png"/>
+    <File fileId="30" filename="../textures/cs770/cp770ExteriorDecal_diffuse.dds"/>
+    <File fileId="27" filename="../textures/cs770/grade_difuse.dds"/>
+    <File fileId="28" filename="../textures/cs770/grade_normal.dds"/>
+    <File fileId="40" filename="../textures/cs770/vidro1.dds"/>
+    <File fileId="41" filename="../textures/cs770/vidro2.dds"/>
+    <File fileId="42" filename="../textures/cs770/vidro3.dds"/>
   </Files>
 
 

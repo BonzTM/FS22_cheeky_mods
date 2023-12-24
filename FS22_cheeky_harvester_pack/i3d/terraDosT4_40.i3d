@@ -14,36 +14,36 @@
     <File fileId="14" filename="$data/shared/default_vmask.png" />
     <File fileId="17" filename="$data/shared/window_diffuse.png" />
     <File fileId="18" filename="$data/shared/window_vmask.png" />
-    <File fileId="28" filename="terraDosT4_40Alfa_diffuse.png" />
-    <File fileId="29" filename="terraDosT4_40Alfa_normal.png" />
-    <File fileId="30" filename="terraDosT4_40Alfa_vmask.png" />
-    <File fileId="1" filename="terraDosT4_40Belt_diffuse.png" />
-    <File fileId="2" filename="terraDosT4_40Belt_normal.png" />
-    <File fileId="3" filename="terraDosT4_40Belt_vmask.png" />
-    <File fileId="7" filename="terraDosT4_40Decals1_diffuse.png" />
-    <File fileId="8" filename="terraDosT4_40Decals1_normal.png" />
-    <File fileId="9" filename="terraDosT4_40Decals1_vmask.png" />
-    <File fileId="12" filename="terraDosT4_40Decals2_diffuse.png" />
-    <File fileId="40" filename="terraDosT4_40Decals3_diffuse.png" />
-    <File fileId="41" filename="terraDosT4_40Decals4_diffuse.png" />
-    <File fileId="19" filename="terraDosT4_40Discs_diffuse.png" />
-    <File fileId="20" filename="terraDosT4_40Discs_normal.png" />
-    <File fileId="21" filename="terraDosT4_40Discs_vmask.png" />
-    <File fileId="25" filename="terraDosT4_40Grid_diffuse.png" />
-    <File fileId="26" filename="terraDosT4_40Grid_normal.png" />
-    <File fileId="27" filename="terraDosT4_40Grid_vmask.png" />
-    <File fileId="10" filename="terraDosT4_40Interior_normal.png" />
-    <File fileId="11" filename="terraDosT4_40Interior_vmask.png" />
-    <File fileId="37" filename="terraDosT4_40Light01_normal.png" />
-    <File fileId="38" filename="terraDosT4_40Light01_vmask.png" />
-    <File fileId="35" filename="terraDosT4_40Light02_normal.png" />
-    <File fileId="36" filename="terraDosT4_40Light02_vmask.png" />
-    <File fileId="33" filename="terraDosT4_40Ligsts_normal.png" />
-    <File fileId="34" filename="terraDosT4_40Ligsts_vmask.png" />
-    <File fileId="15" filename="terraDosT4_40Part1_normal.png" />
-    <File fileId="16" filename="terraDosT4_40Part1_vmask.png" />
-    <File fileId="5" filename="terraDosT4_40Part2_normal.png" />
-    <File fileId="6" filename="terraDosT4_40Part2_vmask.png" />
+    <File fileId="28" filename="../textures/terraDos/terraDosT4_40Alfa_diffuse.png" />
+    <File fileId="29" filename="../textures/terraDos/terraDosT4_40Alfa_normal.png" />
+    <File fileId="30" filename="../textures/terraDos/terraDosT4_40Alfa_vmask.png" />
+    <File fileId="1" filename="../textures/terraDos/terraDosT4_40Belt_diffuse.png" />
+    <File fileId="2" filename="../textures/terraDos/terraDosT4_40Belt_normal.png" />
+    <File fileId="3" filename="../textures/terraDos/terraDosT4_40Belt_vmask.png" />
+    <File fileId="7" filename="../textures/terraDos/terraDosT4_40Decals1_diffuse.png" />
+    <File fileId="8" filename="../textures/terraDos/terraDosT4_40Decals1_normal.png" />
+    <File fileId="9" filename="../textures/terraDos/terraDosT4_40Decals1_vmask.png" />
+    <File fileId="12" filename="../textures/terraDos/terraDosT4_40Decals2_diffuse.png" />
+    <File fileId="40" filename="../textures/terraDos/terraDosT4_40Decals3_diffuse.png" />
+    <File fileId="41" filename="../textures/terraDos/terraDosT4_40Decals4_diffuse.png" />
+    <File fileId="19" filename="../textures/terraDos/terraDosT4_40Discs_diffuse.png" />
+    <File fileId="20" filename="../textures/terraDos/terraDosT4_40Discs_normal.png" />
+    <File fileId="21" filename="../textures/terraDos/terraDosT4_40Discs_vmask.png" />
+    <File fileId="25" filename="../textures/terraDos/terraDosT4_40Grid_diffuse.png" />
+    <File fileId="26" filename="../textures/terraDos/terraDosT4_40Grid_normal.png" />
+    <File fileId="27" filename="../textures/terraDos/terraDosT4_40Grid_vmask.png" />
+    <File fileId="10" filename="../textures/terraDos/terraDosT4_40Interior_normal.png" />
+    <File fileId="11" filename="../textures/terraDos/terraDosT4_40Interior_vmask.png" />
+    <File fileId="37" filename="../textures/terraDos/terraDosT4_40Light01_normal.png" />
+    <File fileId="38" filename="../textures/terraDos/terraDosT4_40Light01_vmask.png" />
+    <File fileId="35" filename="../textures/terraDos/terraDosT4_40Light02_normal.png" />
+    <File fileId="36" filename="../textures/terraDos/terraDosT4_40Light02_vmask.png" />
+    <File fileId="33" filename="../textures/terraDos/terraDosT4_40Ligsts_normal.png" />
+    <File fileId="34" filename="../textures/terraDos/terraDosT4_40Ligsts_vmask.png" />
+    <File fileId="15" filename="../textures/terraDos/terraDosT4_40Part1_normal.png" />
+    <File fileId="16" filename="../textures/terraDos/terraDosT4_40Part1_vmask.png" />
+    <File fileId="5" filename="../textures/terraDos/terraDosT4_40Part2_normal.png" />
+    <File fileId="6" filename="../textures/terraDos/terraDosT4_40Part2_vmask.png" />
   </Files>
 
   <Materials>

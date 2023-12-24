@@ -8,11 +8,11 @@
     <File fileId="5" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
     <File fileId="6" filename="$data/shared/assets/assetLibraryDecals_vmask.png" />
     <File fileId="10" filename="$data/shared/default_normal.png" />
-    <File fileId="7" filename="hr12Blade_diffuse.png" />
-    <File fileId="8" filename="hr12Blade_normal.png" />
-    <File fileId="9" filename="hr12Blade_vmask.png" />
-    <File fileId="1" filename="hr12_normal.png" />
-    <File fileId="2" filename="hr12_vmask.png" />
+    <File fileId="7" filename="../textures/cs770/hr12Blade_diffuse.png" />
+    <File fileId="8" filename="../textures/cs770/hr12Blade_normal.png" />
+    <File fileId="9" filename="../textures/cs770/hr12Blade_vmask.png" />
+    <File fileId="1" filename="../textures/cs770/hr12_normal.png" />
+    <File fileId="2" filename="../textures/cs770/hr12_vmask.png" />
   </Files>
 
   <Materials>

@@ -2,16 +2,16 @@
 <sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="$data/shared/xml/schema/vehicle_sounds.xsd">
     <motorized>
         <sounds>
-            <motor template="engineLarge" file="$data/vehicles/johnDeere/cp690/sounds/cs770/cp690_loop.gls" volumeScale="1.7">
+            <motor template="engineLarge" file="$data/vehicles/johnDeere/cp690/sounds/cp690_loop.gls" volumeScale="1.7">
 			    <volume outdoor="1.0" indoor="0.6"/>
             </motor>
-			<motor template="engineLarge" file="$data/vehicles/johnDeere/cp690/sounds/cs770/cp690_loop.gls" linkNode="0>0|10|3|0" volumeScale="1.7">
+			<motor template="engineLarge" file="$data/vehicles/johnDeere/cp690/sounds/cp690_loop.gls" linkNode="0>0|10|3|0" volumeScale="1.7">
 			    <volume outdoor="0.0" indoor="1.0"/>
             </motor>
             <motor template="indoorCabinRumble" />
             <motor template="rotationLoop" fadeIn="3" fadeOut="2" linkNode="airFilterCleaner"/>
             <gearbox template="transmissionHarvester" volumeScale="0.9" pitchScale="1.05"/>
-            <gearbox file="$data/vehicles/valtra/tSeries/sounds/cs770/Cabin_loop.gls" linkNodeOffset="0.3 3.3 3.3" volumeScale="1" pitchScale="1.0" innerRadius="0.8" supportsReverb="false" fadeIn="0.8">
+            <gearbox file="$data/vehicles/valtra/tSeries/sounds/Cabin_loop.gls" linkNodeOffset="0.3 3.3 3.3" volumeScale="1" pitchScale="1.0" innerRadius="0.8" supportsReverb="false" fadeIn="0.8">
                 <volume indoor="1" outdoor="0" >
                     <modifier type="DIFFERENTIAL_SPEED" value="0.0"  modifiedValue="1.00" />
                     <modifier type="DIFFERENTIAL_SPEED" value="10.0" modifiedValue="1.00" />
@@ -31,7 +31,7 @@
                     <modifier type="DIFFERENTIAL_SPEED" value="53.0" modifiedValue="1.0" />
                 </loopSynthesisRpm>
             </gearbox>
-			<gearbox file="$data/vehicles/valtra/tSeries/sounds/cs770/Cabin_loop.gls" linkNodeOffset="-0.3 3.3 3.3" volumeScale="1" pitchScale="1.0" innerRadius="0.8" supportsReverb="false" fadeIn="0.8">
+			<gearbox file="$data/vehicles/valtra/tSeries/sounds/Cabin_loop.gls" linkNodeOffset="-0.3 3.3 3.3" volumeScale="1" pitchScale="1.0" innerRadius="0.8" supportsReverb="false" fadeIn="0.8">
                 <volume indoor="1" outdoor="0" >
                     <modifier type="DIFFERENTIAL_SPEED" value="0.0"  modifiedValue="1.00" />
                     <modifier type="DIFFERENTIAL_SPEED" value="10.0" modifiedValue="1.00" />

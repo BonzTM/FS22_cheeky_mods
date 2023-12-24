@@ -6,8 +6,8 @@
   </Asset>
 
   <Files>
-    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
-    <File fileId="9" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="5"  filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="9"  filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
     <File fileId="10" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
     <File fileId="11" filename="$data/shared/assets/assetLibraryDecals_vmask.dds"/>
     <File fileId="18" filename="$data/shared/clearPlastic_diffuse.png"/>
@@ -16,11 +16,11 @@
     <File fileId="14" filename="$data/vehicles/johnDeere/cp690/cp690Alpha_vmask.dds"/>
     <File fileId="19" filename="$data/vehicles/johnDeere/cp690/cp690Light_normal.png"/>
     <File fileId="20" filename="$data/vehicles/johnDeere/cp690/cp690Light_vmask.png"/>
-    <File fileId="3" filename="textures/cs770/cp690Exterior3_normal.png"/>
-    <File fileId="4" filename="textures/cs770/cp690Exterior3_vmask.png"/>
-    <File fileId="15" filename="textures/cs770/cp770ExteriorDecal_diffuse.dds"/>
-    <File fileId="12" filename="textures/cs770/grade_difuse.dds"/>
-    <File fileId="13" filename="textures/cs770/grade_normal.dds"/>
+    <File fileId="3"  filename="../textures/cs770/cp690Exterior3_normal.png"/>
+    <File fileId="4"  filename="../textures/cs770/cp690Exterior3_vmask.png"/>
+    <File fileId="15" filename="../textures/cs770/cp770ExteriorDecal_diffuse.dds"/>
+    <File fileId="12" filename="../textures/cs770/grade_difuse.dds"/>
+    <File fileId="13" filename="../textures/cs770/grade_normal.dds"/>
   </Files>
 
 

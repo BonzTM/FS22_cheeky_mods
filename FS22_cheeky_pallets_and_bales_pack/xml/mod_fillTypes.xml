@@ -130,11 +130,11 @@
                     <factor period="5"  value="0.95" />
                     <factor period="6"  value="0.95" />
                     <factor period="7"  value="1.03" />
-                    <factor period="8"  value="1.09" />
+                    <factor period="8"  value="1.18" />
                     <factor period="9"  value="0.98" />
                     <factor period="10" value="0.96" />
-                    <factor period="11" value="1.08" />
-                    <factor period="12" value="1.07" />
+                    <factor period="11" value="1.14" />
+                    <factor period="12" value="1.12" />
                 </factors>
             </economy>
             <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cake.png" />
@@ -143,7 +143,7 @@
 
         <fillType name="CARROTJUICE" title="Carrot Juice" showOnPriceTable="true">
             <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
-            <economy pricePerLiter="1.6">
+            <economy pricePerLiter="1.65">
                 <factors>
                     <factor period="1"  value="1.02" />
                     <factor period="2"  value="1.04" />
@@ -162,8 +162,76 @@
             <image      hud     ="textures/hud_fill_carrotjuice.png" />
             <pallet     filename="xml/pallets/carrotJuicePallet.xml" />
         </fillType>
+
+        <fillType name="TOMATOJUICE" title="Tomato Juice" showOnPriceTable="true">
+            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.2">
+                <factors>
+                    <factor period="1"  value="1.02" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="1.05" />
+                    <factor period="4"  value="0.99" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.02" />
+                    <factor period="8"  value="1.05" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.01" />
+                    <factor period="11" value="0.96" />
+                    <factor period="12" value="1.12" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/hud_fill_tomatojuice.png" />
+            <pallet     filename="xml/pallets/tomatoJuicePallet.xml" />
+        </fillType>        
+
+        <fillType name="BEETJUICE" title="Beet Juice" showOnPriceTable="true">
+            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="1.7">
+                <factors>
+                    <factor period="1"  value="1.02" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="1.05" />
+                    <factor period="4"  value="0.99" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.15" />
+                    <factor period="8"  value="1.05" />
+                    <factor period="9"  value="1.08" />
+                    <factor period="10" value="1.01" />
+                    <factor period="11" value="0.96" />
+                    <factor period="12" value="1.02" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/hud_fill_beetjuice.png" />
+            <pallet     filename="xml/pallets/beetJuicePallet.xml" />
+        </fillType>   
+
+        <fillType name="VEGETABLEJUICE" title="Vegetable Juice" showOnPriceTable="true">
+            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="2.65">
+                <factors>
+                    <factor period="1"  value="1.02" />
+                    <factor period="2"  value="1.04" />
+                    <factor period="3"  value="1.08" />
+                    <factor period="4"  value="0.99" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.99" />
+                    <factor period="7"  value="1.02" />
+                    <factor period="8"  value="1.05" />
+                    <factor period="9"  value="1.11" />
+                    <factor period="10" value="1.01" />
+                    <factor period="11" value="1.10" />
+                    <factor period="12" value="1.19" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/hud_fill_vegetablejuice.png" />
+            <pallet     filename="xml/pallets/vegetableJuicePallet.xml" />
+        </fillType>   
+
     </fillTypes>
     <fillTypeCategories>
-        <fillTypeCategory name="PRODUCT">WOOL GRAPE COTTON POPLAR WOOD HONEY TARP SILAGE_ADDITIVE CARROTCAKE CARROTJUICE</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">WOOL GRAPE COTTON POPLAR WOOD HONEY TARP SILAGE_ADDITIVE CARROTCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE</fillTypeCategory>
+        <fillTypeCategory name="CHEEKY_PRODUCT">CARROTCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE</fillTypeCategory>
     </fillTypeCategories>
 </map>

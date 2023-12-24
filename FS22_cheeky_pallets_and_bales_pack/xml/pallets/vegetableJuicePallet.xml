@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Vegetable Juice Pallet</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>64512</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>8192</indexBufferMemoryUsage>
+        <textureMemoryUsage>1507328</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>i3d/vegetableJuicePallet.i3d</filename>
+        <size width="1.4" length="1" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="VEGETABLEJUICE" capacity="432"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="50" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="pallet_vis">
+        <content>
+            <object node="grapeJuice1" tensionBeltNode="grapeJuice1Tension"/>
+            <object node="grapeJuice2" tensionBeltNode="grapeJuice2Tension"/>
+            <object node="grapeJuice3" tensionBeltNode="grapeJuice3Tension"/>
+            <object node="grapeJuice4" tensionBeltNode="grapeJuice4Tension"/>
+            <object node="grapeJuice5" tensionBeltNode="grapeJuice5Tension"/>
+            <object node="grapeJuice6" tensionBeltNode="grapeJuice6Tension"/>
+            <object node="grapeJuice7" tensionBeltNode="grapeJuice7Tension"/>
+            <object node="grapeJuice8" tensionBeltNode="grapeJuice8Tension"/>
+            <object node="grapeJuice9" tensionBeltNode="grapeJuice9Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillOil" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.75" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="grapeJuicePallet_component1" node="0>" />
+        <i3dMapping id="pallet_vis" node="0>0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1" />
+        <i3dMapping id="grapeJuice1" node="0>0|2|0" />
+        <i3dMapping id="grapeJuice1Tension" node="0>0|2|0|1" />
+        <i3dMapping id="grapeJuice2" node="0>0|2|1" />
+        <i3dMapping id="grapeJuice2Tension" node="0>0|2|1|1" />
+        <i3dMapping id="grapeJuice3" node="0>0|2|2" />
+        <i3dMapping id="grapeJuice3Tension" node="0>0|2|2|1" />
+        <i3dMapping id="grapeJuice4" node="0>0|2|3" />
+        <i3dMapping id="grapeJuice4Tension" node="0>0|2|3|1" />
+        <i3dMapping id="grapeJuice5" node="0>0|2|4" />
+        <i3dMapping id="grapeJuice5Tension" node="0>0|2|4|1" />
+        <i3dMapping id="grapeJuice6" node="0>0|2|5" />
+        <i3dMapping id="grapeJuice6Tension" node="0>0|2|5|1" />
+        <i3dMapping id="grapeJuice7" node="0>0|2|6" />
+        <i3dMapping id="grapeJuice7Tension" node="0>0|2|6|1" />
+        <i3dMapping id="grapeJuice8" node="0>0|2|7" />
+        <i3dMapping id="grapeJuice8Tension" node="0>0|2|7|1" />
+        <i3dMapping id="grapeJuice9" node="0>0|2|8" />
+        <i3dMapping id="grapeJuice9Tension" node="0>0|2|8|1" />
+    </i3dMappings>
+</vehicle>

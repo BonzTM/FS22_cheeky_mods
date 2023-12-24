@@ -5,10 +5,10 @@
   <Files>
     <File fileId="3" filename="$data/shaders/vehicleShader.xml" />
     <File fileId="5" filename="$data/shared/default_normal.png" />
-    <File fileId="4" filename="hr12Decals_diffuse.png" />
-    <File fileId="6" filename="hr12Decals_vmask.png" />
-    <File fileId="1" filename="hr12Trailer_normal.png" />
-    <File fileId="2" filename="hr12Trailer_vmask.png" />
+    <File fileId="4" filename="../textures/cs770/hr12Decals_diffuse.png" />
+    <File fileId="6" filename="../textures/cs770/hr12Decals_vmask.png" />
+    <File fileId="1" filename="../textures/cs770/hr12Trailer_normal.png" />
+    <File fileId="2" filename="../textures/cs770/hr12Trailer_vmask.png" />
   </Files>
 
   <Materials>

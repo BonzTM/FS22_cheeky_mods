@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.7.0.0</version>
+    <version>1.8.0.0</version>
     <title>
         <en>Cheeky Pallets and Bales Pack</en>
     </title>
@@ -82,6 +82,9 @@
         <!-- Additional Pallet Types -->
         <storeItem xmlFilename="xml/pallets/carrotCakePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/carrotJuicePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/tomatoJuicePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/beetJuicePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/vegetableJuicePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/milkTank.xml"/>
         <storeItem xmlFilename="xml/pallets/liquidTank.xml"/>
         <storeItem xmlFilename="xml/pallets/woodPallet.xml"/> 

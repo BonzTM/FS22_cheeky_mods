@@ -9,8 +9,8 @@
     <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
     <File fileId="9" filename="$data/shared/wheels/hubs/hub016_normal.dds"/>
     <File fileId="10" filename="$data/shared/wheels/hubs/hub016_vmask.dds"/>
-    <File fileId="2" filename="../textures/cs770/aroDuplagem_normal.dds"/>
-    <File fileId="3" filename="../textures/cs770/aroDuplagem_vmaks.dds"/>
+    <File fileId="2" filename="../../textures/cs770/aroDuplagem_normal.dds"/>
+    <File fileId="3" filename="../../textures/cs770/aroDuplagem_vmaks.dds"/>
   </Files>
 
 

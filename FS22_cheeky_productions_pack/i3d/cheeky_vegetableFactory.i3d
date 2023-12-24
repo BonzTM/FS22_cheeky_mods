@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<i3D name="cheeky_carrotFactory.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+<i3D name="cheeky_vegetableFactory.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
     <Export program="GIANTS Editor 64bit" version="9.0.6"/>
   </Asset>
@@ -39,7 +39,7 @@
     <File fileId="24" filename="$data/placeables/lizard/productionPoints/raisinFactory/industrialPropRaisinFactory_diffuse.png"/>
     <File fileId="25" filename="$data/placeables/lizard/productionPoints/raisinFactory/industrialPropRaisinFactory_normal.png"/>
     <File fileId="26" filename="$data/placeables/lizard/productionPoints/raisinFactory/industrialPropRaisinFactory_specular.png"/>
-    <File fileId="34" filename="carrotFactoryLogo_diffuse.png"/>
+    <File fileId="34" filename="../textures/vegetableFactoryLogo_diffuse.png"/>
     <File fileId="1" filename="$data/placeables/lizard/productionPoints/raisinFactory/raisinFactory_diffuse.png"/>
     <File fileId="9" filename="$data/placeables/lizard/productionPoints/raisinFactory/raisinFactory_height.png"/>
     <File fileId="5" filename="$data/placeables/lizard/productionPoints/raisinFactory/raisinFactory_mask.png"/>
@@ -136,7 +136,7 @@
   </Materials>
 
 
-  <Shapes externalShapesFile="cheeky_carrotFactory.i3d.shapes">
+  <Shapes externalShapesFile="cheeky_vegetableFactory.i3d.shapes">
   </Shapes>
 
 

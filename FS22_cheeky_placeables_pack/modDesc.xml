@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.7.0.0</version>
+    <version>1.8.0.0</version>
     <title>
         <en>Cheeky Placeables Pack</en>
     </title>
@@ -9,11 +9,22 @@
 		<en><![CDATA[Modded placeables for the Cheeky Bastards.]]></en>
 	</description>	
     <iconFilename>textures/store_liquidFlatBottomTank1630.png</iconFilename>
-    <fillTypes filename="xml/mod_fillTypes.xml"/>
     <storeItems>
         <storeItem xmlFilename="xml/cheeky_limeAndRoadsaltStation.xml"/>
         <storeItem xmlFilename="xml/cheeky_herbicide_liquidFlatBottomTank1630.xml"/>
         <storeItem xmlFilename="xml/cheeky_water_liquidFlatBottomTank1630.xml"/>
+
+        <!-- Selling Points -->
+        <storeItem xmlFilename="xml/cheeky_debrisCrusher.xml"/>
+        <storeItem xmlFilename="xml/cheeky_farmersMarket.xml"/>
+        <storeItem xmlFilename="xml/cheeky_fastFoodRestaurant.xml"/>
+        <storeItem xmlFilename="xml/cheeky_gasStation.xml"/>
+        <storeItem xmlFilename="xml/cheeky_pizzeria.xml"/>
+        <storeItem xmlFilename="xml/cheeky_restaurant.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sellingStationBales.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sellingStationGeneric.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sellingStationWoodHeatingPlant.xml"/>
+        <storeItem xmlFilename="xml/cheeky_supermarket.xml"/>
     </storeItems>
 	<multiplayer supported="true" />
 </modDesc>

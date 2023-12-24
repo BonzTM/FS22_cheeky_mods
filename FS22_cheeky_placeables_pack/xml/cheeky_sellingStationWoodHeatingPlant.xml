@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_station_us_biomassHeatingPlant</name>
+        <image></image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>1464</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>216</indexBufferMemoryUsage>
+        <textureMemoryUsage>174864</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>$data/placeables/mapUS/sellingStationWoodHeatingPlant/sellingStationWoodHeatingPlant.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+    <hotspots>
+        <hotspot type="UNLOADING"  linkNode="hotspotNode" teleportNode="teleportNode" />
+    </hotspots>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadMarker"        filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD"           adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="true" />
+    </triggerMarkers>
+
+    <sellingStation>
+        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WOODCHIPS STRAW" aiNode="aiNode"/>
+
+        <unloadTrigger fillTypes="WOODCHIPS STRAW" aiNode="aiNode">
+            <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
+        </unloadTrigger>
+
+        <unloadTrigger fillTypes="WOOD" aiNode="aiNode" >
+            <woodTrigger triggerNode="woodTrigger" activationTriggerNode="playerInteractionTrigger"/>
+        </unloadTrigger>
+    </sellingStation>
+
+    <i3dMappings>
+        <i3dMapping id="woodTrigger" node="0>0" />
+        <i3dMapping id="unloadMarker" node="0>1" />
+        <i3dMapping id="playerInteractionTrigger" node="0>2" />
+        <i3dMapping id="baleTrigger" node="0>3" />
+        <i3dMapping id="unloadTrigger" node="0>4" />
+        <i3dMapping id="playerTriggerMarker" node="0>5" />
+        <i3dMapping id="hotspotNode" node="0>6" />
+        <i3dMapping id="teleportNode" node="0>7" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>9" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>9|0" />
+        <i3dMapping id="aiNode" node="0>10" />
+        <i3dMapping id="aiSpline" node="0>11" />
+    </i3dMappings>
+</placeable>
