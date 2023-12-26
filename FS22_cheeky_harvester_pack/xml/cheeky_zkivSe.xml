@@ -7,7 +7,7 @@
             <set path="vehicle.storeData.brand" value="dewulf"/>
             <set path="vehicle.storeData.name" value="ZKIVSE"/>
             <set path="vehicle.storeData.price" value="688500"/>
-            <set path="vehicle.base.speedLimit" value="10"/>
+            <set path="vehicle.base.speedLimit#value" value="12"/>
             <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="800"/>
 		</attributes>
     </parentFile>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.4.0</version>
+    <version>1.9.5.0</version>
     <title>
         <en>Cheeky Harvester Pack</en>
     </title>
@@ -57,11 +57,12 @@
         <storeItem xmlFilename="xml/cheeky_header4418N.xml"/>
 
         <!-- DLC harvesters -->
-        <!-- <storeItem xmlFilename="xml/cheeky_zkivSe.xml"/> -->
+        <storeItem xmlFilename="xml/cheeky_zkivSe.xml"/>
     </storeItems>
 
 	<extraSourceFiles>
 		<sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
+        <sourceFile filename="scripts/CombinedEffect.lua" />
 	</extraSourceFiles>
 
     <overwrittenPaths>
@@ -89,7 +90,14 @@
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt01.wav" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt01.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt02.wav" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt02.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/zkivWorkTone.wav" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/sounds/zkivWorkTone.wav" />
-	
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/arm01_fruitsLeaves1x70.dds" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/arm01_fruitsLeaves1x70.dds" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/arm02_fruitsLeaves1x70.dds" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/arm02_fruitsLeaves1x70.dds" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/arm03_fruitsLeaves1x70.dds" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/arm03_fruitsLeaves1x70.dds" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/arm04_fruitsLeaves1x70.dds" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/arm04_fruitsLeaves1x70.dds" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/fruitsCleanArray4x14.dds" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/fruitsCleanArray4x14.dds" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/threshingArray32x20.dds" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/threshingArray32x20.dds" />
+        <overwrittenPath originalPath="vehicles/dewulf/zkivSe/threshingArray32x78.dds" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/threshingArray32x78.dds" />
+
         <!-- DLC Tree Harvesters -->
         <!-- Sounds -->
         <overwrittenPath originalPath="vehicles/komatsu/harvester911/sounds/harvester911.xml" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester911/sounds/harvester911.xml" />
@@ -122,12 +130,22 @@
         <overwrittenPath originalPath="shared/crawlers/komatsu/harvester911Crawler/harvester911CrawlerBack.xml" newPath="$pdlcdir/forestryPack/shared/crawlers/komatsu/harvester911Crawler/harvester911CrawlerBack.xml" />
     </overwrittenPaths>
 
+    <specializations>
+		<specialization name="combineHaulmDrop" className="CombineHaulmDrop" filename="scripts/CombineHaulmDrop.lua"/>
+		<specialization name="combineOverloadingWarning" className="CombineOverloadingWarning" filename="scripts/CombineOverloadingWarning.lua"/>
+		<specialization name="cropRowAdjustedNodes" className="CropRowAdjustedNodes" filename="scripts/CropRowAdjustedNodes.lua"/>
+	</specializations>
+
     <vehicleTypes>
 		<type name="CS770" parent="combineDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
             <specialization name="baler" />
         </type>
-        <type name="cheeky_woodHarvester" parent="woodHarvester" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
-        </type>			
+        <type name="combineDrivableCutter" parent="combineDrivable" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="cutter" />
+            <specialization name="combineHaulmDrop" />
+            <specialization name="combineOverloadingWarning" />
+            <specialization name="cropRowAdjustedNodes" />
+        </type>
 	</vehicleTypes>
 
 	<multiplayer supported="true" />   
