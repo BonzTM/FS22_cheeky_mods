@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>4418 N</name>
+        <specs>
+            <workingWidth>10.0</workingWidth>
+            <combination xmlFilename="$data/vehicles/caseIH/axialFlow250/axialFlow250.xml"/>
+            <combination xmlFilename="$data/vehicles/nardi/n70_30/n70_30.xml" />
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>$data/vehicles/caseIH/header4418N/store_header4418N.png</image>
+        <price>88000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>CASEIH</brand>
+        <category>cornHeaders</category>
+        <shopTranslationOffset>0 0.075 0</shopTranslationOffset>
+        <shopRotationOffset>10.063 0 0</shopRotationOffset>
+        <shopHeight>4</shopHeight>
+        <vertexBufferMemoryUsage>5012224</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1189376</indexBufferMemoryUsage>
+        <textureMemoryUsage>2359296</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>$data/vehicles/caseIH/header4418N/header4418N.i3d</filename>
+        <size width="11.2" length="3.5"/>
+        <speedLimit value="14.5"/>
+        <components>
+            <component solverIterationCount="10" mass="4200"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER" />
+        <mapHotspot type="CUTTER" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="cutter">
+                <heightNode node="heightNode01"/>
+                <heightNode node="heightNode02"/>
+                <heightNode node="heightNode03"/>
+                <distanceToGround lower="0.4" upper="1.8"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+    </attachable>
+
+    <connectionHoses>
+        <customTarget node="cnhMultiCoupler" type="cnhMultiCoupler" inputAttacherJointIndices="1">
+            <objectChange node="cnhMultiCoupler_cover" rotationActive="15 0 -90" rotationInactive="-63 0 -90"/>
+        </customTarget>
+        <customTarget node="electric" type="cnhElectricConnector" inputAttacherJointIndices="1">
+            <objectChange node="electric_cover" rotationActive="85 0 0" rotationInactive="0 0 0"/>
+        </customTarget>
+    </connectionHoses>
+
+    <lights>
+        <states>
+            <state lightTypes="0" />
+        </states>
+
+        <sharedLight linkNode="rearLightLeft_27Orange"  lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight27Orange.xml" />
+        <sharedLight linkNode="rearLightRight_27Orange" lightTypes="0" filename="$data/shared/assets/lights/lizard/rearLight27Orange.xml" />
+
+        <realLights>
+            <high>
+                <light node="sideMarkerLeft"  lightTypes="0"/>
+                <light node="sideMarkerRight" lightTypes="0"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <animations>
+        <animation name="moveSupport">
+            <part node="supportArm" startTime="0" endTime="0.2" startTrans="0 0 0" endTrans="0 -0.25 0" />
+
+            <sound template="metalClose"  startTime="0.01" direction="-1" volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="metalClose"  startTime="0.19" direction="1" volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="clackVar1"   startTime="0.1" direction="1"  volumeScale="1.3" pitchScale="1.8"/>
+            <sound template="clackVar1"   startTime="0.19" direction="-1"  volumeScale="1.3" pitchScale="1.8"/>
+        </animation>
+    </animations>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="ptoInputLeft" aboveAttacher="true" ptoName="LEFT_PTO" detachNode="ptoInputLeftDetach" color="SHARED_BLACK1" decalColor="WALTERSCHEID_YELLOW1"/>
+        <input inputAttacherJointIndices="1" inputNode="ptoInputRight" aboveAttacher="true" ptoName="RIGHT_PTO" detachNode="ptoInputRightDetach" color="SHARED_BLACK1" decalColor="WALTERSCHEID_YELLOW1"/>
+    </powerTakeOffs>
+
+    <powerConsumer ptoRpm="470" neededMaxPtoPower="100"/>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="heightNode02" threshold="0.5" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <chopperArea index="2" />
+            <testAreas autoGenerate="true" zOffset="0.5" xOffset="0" length="0.6" numAreas="18" areaWidthScale="0.25"/>
+        </workArea>
+        <workArea type="auxiliary" >
+            <area startNode="workAreaStrawStart" widthNode="workAreaStrawWidth" heightNode="workAreaStrawHeight" />
+        </workArea>
+    </workAreas>
+
+    <cutter fruitTypeCategories="maizeHeader" strawRatio="0.1">
+        <effect>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER" linkNode="effectNodePlant">
+                <motionPathEffect textureFilename="$data/vehicles/caseIH/header4418N/plantArray.dds" textureRealWidth="11.5" numRows="20" rowLength="8" minFade="0.19" />
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_FRUITS" linkNode="effectNodeFruit">
+                <motionPathEffect textureFilename="$data/vehicles/caseIH/header4418N/fruitArray.dds" textureRealWidth="11.5" numRows="20" rowLength="38" speedScale="0.23" verticalOffset="0" minFade="0.09" startDelay="0.4" stopDelay="0.6" />
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_THRESHING" linkNode="effectNodeThreshing">
+                <motionPathEffect textureFilename="$data/vehicles/caseIH/header4418N/threshingArray.dds" textureRealWidth="11.5" numRows="20" rowLength="10" verticalOffset="0" minFade="0.15" startDelay="0.2" stopDelay="0.6"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
+        </effect>
+
+        <animationNodes>
+            <animationNode node="kardanLeft"  rotSpeed="900" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="7"/>
+            <animationNode node="kardanRight" rotSpeed="900" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="7"/>
+            <animationNode node="kardanLeftPart"  rotSpeed="900" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="7"/>
+            <animationNode node="kardanRightPart" rotSpeed="900" rotAxis="3" turnOnFadeTime="4" turnOffFadeTime="7"/>
+
+            <animationNode node="drumLeft"  rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="7"/>
+            <animationNode node="drumRight" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="7"/>
+
+            <animationNode node="rollerLeft"  rotSpeed="1300" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5"/>
+            <animationNode node="rollerRight" rotSpeed="-1300" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5"/>
+
+            <animationNode node="cutters" shaderParameterName="rotationAngle" rotSpeed="-1800" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="rotationPartLeft" shaderParameterName="rotationAngle" rotSpeed="800" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="rotationPartRight" shaderParameterName="rotationAngle" rotSpeed="800" turnOnFadeTime="2" turnOffFadeTime="4"/>
+
+            <animationNode node="chains" rotSpeed="-300" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+        </animationNodes>
+
+        <automaticTilt raycastNode1="heightNode01" raycastNode2="heightNode03"/>
+        <sounds>
+            <cut template="cropCuttingForage" />
+        </sounds>
+    </cutter>
+
+    <turnOnVehicle turnedOnByAttacherVehicle="true">
+        <sounds>
+            <start template="forageHarvesterStart" volumeScale="0.7"/>
+            <work  template="forageHarvesterWork"  pitchScale="0.8" />
+            <stop  template="forageHarvesterStop"  pitchScale="1.5" volumeScale="0.5" />
+        </sounds>
+    </turnOnVehicle>
+
+    <dynamicMount forceLimitScale="1"/>
+
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <collisionTrigger node="aiCollisionNode" width="10.4 " height="1.6"/>
+        <agentAttachment width="10.4" height="2.2" length="3" lengthOffset="0.1"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-5.2" maxX="5.2" minZ="-1.2" maxZ="0.3" yOffset="0.2" />
+    </foliageBending>
+
+    <designConfigurations>
+        <designConfiguration name="Case IH" price="0">
+            <objectChange node="caseIH_decals" visibilityActive="true" visibilityInactive="false"/>
+            <material name="header4418N_mat" shaderParameter="colorMat0" color="CASEIH_RED1"/>
+            <material name="header4418N_mat" shaderParameter="colorMat4" color="CASEIH_RED1"/>
+        </designConfiguration>
+        <designConfiguration name="New Holland" price="0" isSelectable="false" vehicleBrand="NEWHOLLAND" vehicleName="CR 980" vehicleIcon="$data/vehicles/caseIH/header4418N/store_header4418N.png">
+            <objectChange node="newHoland_decals" visibilityActive="true" visibilityInactive="false"/>
+            <material name="header4418N_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+            <material name="header4418N_mat" shaderParameter="colorMat4" color="NEWHOLLAND_YELLOW1"/>
+        </designConfiguration>
+    </designConfigurations>
+
+    <baseMaterial>
+        <material name="header4418N_mat" baseNode="header4418N_vis">
+            <shaderParameter name="colorMat0" value="CASEIH_RED1"/>
+            <shaderParameter name="colorMat4" value="CASEIH_RED1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="header4418N_main_component1" node="0>" />
+        <i3dMapping id="header4418N_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="heightNode01" node="0>0|0|0|0" />
+        <i3dMapping id="heightNode02" node="0>0|0|0|1" />
+        <i3dMapping id="heightNode03" node="0>0|0|0|2" />
+        <i3dMapping id="ptoInputLeft" node="0>0|0|1" />
+        <i3dMapping id="ptoInputLeftDetach" node="0>0|0|1|0" />
+        <i3dMapping id="ptoInputRight" node="0>0|0|2" />
+        <i3dMapping id="ptoInputRightDetach" node="0>0|0|2|0" />
+        <i3dMapping id="supportArm" node="0>0|0|3|0" />
+        <i3dMapping id="electric" node="0>0|0|4|0" />
+        <i3dMapping id="electric_cover" node="0>0|0|4|0|0" />
+        <i3dMapping id="cnhMultiCoupler" node="0>0|0|4|1" />
+        <i3dMapping id="cnhMultiCoupler_cover" node="0>0|0|4|1|0" />
+        <i3dMapping id="rearLightLeft_27Orange" node="0>0|1|0|0" />
+        <i3dMapping id="rearLightRight_27Orange" node="0>0|1|0|1" />
+        <i3dMapping id="sideMarkerLeft" node="0>0|1|1|0" />
+        <i3dMapping id="sideMarkerRight" node="0>0|1|1|1" />
+        <i3dMapping id="cutters" node="0>0|2|0" />
+        <i3dMapping id="rotationPartLeft" node="0>0|2|1" />
+        <i3dMapping id="rotationPartRight" node="0>0|2|2" />
+        <i3dMapping id="chains" node="0>0|2|3" />
+        <i3dMapping id="gears" node="0>0|2|4" />
+        <i3dMapping id="drumLeft" node="0>0|2|5" />
+        <i3dMapping id="drumRight" node="0>0|2|6" />
+        <i3dMapping id="rollerLeft" node="0>0|2|7|0" />
+        <i3dMapping id="rollerRight" node="0>0|2|8|0" />
+        <i3dMapping id="kardanLeft" node="0>0|2|9|0" />
+        <i3dMapping id="kardanLeftPart" node="0>0|2|10|0" />
+        <i3dMapping id="kardanRight" node="0>0|2|11|0" />
+        <i3dMapping id="kardanRightPart" node="0>0|2|12|0" />
+        <i3dMapping id="workAreaStart" node="0>0|3|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|3|0|0" />
+        <i3dMapping id="workAreaHeight" node="0>0|3|0|1" />
+        <i3dMapping id="workAreaStrawStart" node="0>0|3|1" />
+        <i3dMapping id="workAreaStrawWidth" node="0>0|3|1|0" />
+        <i3dMapping id="workAreaStrawHeight" node="0>0|3|1|1" />
+        <i3dMapping id="groundReferenceNode" node="0>0|3|2" />
+        <i3dMapping id="effectNodePlant" node="0>0|4|0|0" />
+        <i3dMapping id="effectNodeFruit" node="0>0|4|0|1" />
+        <i3dMapping id="effectNodeThreshing" node="0>0|4|0|2" />
+        <i3dMapping id="smokeEmitter" node="0>0|4|1" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|5|0|0" />
+        <i3dMapping id="aiMarkerRight" node="0>0|5|0|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|5|0|2" />
+        <i3dMapping id="aiCollisionNode" node="0>0|5|1" />
+        <i3dMapping id="newHoland_decals" node="0>0|6|0" />
+        <i3dMapping id="caseIH_decals" node="0>0|6|1" />
+    </i3dMappings>
+</vehicle>

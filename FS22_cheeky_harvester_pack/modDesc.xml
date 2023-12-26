@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.2.0</version>
+    <version>1.9.4.0</version>
     <title>
         <en>Cheeky Harvester Pack</en>
     </title>
@@ -25,6 +25,13 @@
         <storeItem xmlFilename="xml/cheeky_ventor4150.xml"/>
         <storeItem xmlFilename="xml/cheeky_x9_1100.xml"/>
 
+        <!-- Tree Harvesters -->
+        <storeItem xmlFilename="xml/cheeky_h21D.xml"/>
+        <storeItem xmlFilename="xml/cheeky_cobra.xml"/>
+        <storeItem xmlFilename="xml/cheeky_xc931.xml"/>
+        <!-- <storeItem xmlFilename="xml/cheeky_harvester911.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/cheeky_harvester951.xml"/> -->
+
         <!-- Sugar Beets -->
         <storeItem xmlFilename="xml/cheeky_tiger6S.xml"/>
         <storeItem xmlFilename="xml/cheeky_terraDosT4_40.xml"/>
@@ -35,6 +42,19 @@
         <storeItem xmlFilename="xml/cheeky_hr12Trailer.xml"/>
         <storeItem xmlFilename="xml/cheeky_SH8R.xml"/>
         <storeItem xmlFilename="xml/cheeky_SH12F.xml"/>
+        <storeItem xmlFilename="xml/cheeky_helianthus12000.xml"/>
+        <storeItem xmlFilename="xml/cheeky_diamant12.xml"/>
+        <storeItem xmlFilename="xml/cheeky_orbis900.xml"/>
+        <storeItem xmlFilename="xml/cheeky_corio1275C.xml"/>
+        <storeItem xmlFilename="xml/cheeky_convioFlex1380.xml"/>
+        <storeItem xmlFilename="xml/cheeky_quasarHS16.xml"/>
+        <storeItem xmlFilename="xml/cheeky_plus390.xml"/>
+        <storeItem xmlFilename="xml/cheeky_plus390_johnDeere.xml"/>
+        <storeItem xmlFilename="xml/cheeky_plus390_newHolland.xml"/>
+        <storeItem xmlFilename="xml/cheeky_headerC16F.xml"/>
+        <storeItem xmlFilename="xml/cheeky_headerHD50F.xml"/>
+        <storeItem xmlFilename="xml/cheeky_collect900_3.xml"/>
+        <storeItem xmlFilename="xml/cheeky_header4418N.xml"/>
 
         <!-- DLC harvesters -->
         <!-- <storeItem xmlFilename="xml/cheeky_zkivSe.xml"/> -->
@@ -69,12 +89,45 @@
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt01.wav" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt01.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt02.wav" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/gkiis/sounds/carrotHarvesterUnloadingBelt02.wav" />
         <overwrittenPath originalPath="vehicles/dewulf/zkivSe/sounds/zkivWorkTone.wav" newPath="$pdlcdir/premiumExpansion/vehicles/dewulf/zkivSe/sounds/zkivWorkTone.wav" />
-	</overwrittenPaths>
+	
+        <!-- DLC Tree Harvesters -->
+        <!-- Sounds -->
+        <overwrittenPath originalPath="vehicles/komatsu/harvester911/sounds/harvester911.xml" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester911/sounds/harvester911.xml" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/harvester951.xml" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/harvester951.xml" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_ladderLoop.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_ladderLoop.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_ladderClose.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_ladderClose.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_ladderOpen.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_ladderOpen.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_frontLadderLoop.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_frontLadderLoop.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_frontLadderOpen.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_frontLadderOpen.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_frontLadderClose.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_frontLadderClose.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_sawCut.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_sawCut.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_toolOpen.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_toolOpen.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_toolClose.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_toolClose.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_frontPoleClose.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_frontPoleClose.wav" />
+        <overwrittenPath originalPath="vehicles/manitou/m504/sounds/forkDown.wav" newPath="$pdlcdir/forestryPack/vehicles/manitou/m504/sounds/forkDown.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/Transmission_loop.gls" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/Transmission_loop.gls" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/Cabin_loop.gls" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/Cabin_loop.gls" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/harvester951_loop.gls" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/harvester951_loop.gls" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/Fan01_loop.gls" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/Fan01_loop.gls" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/komatsu951_horn.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/komatsu951_horn.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester951/sounds/951_delimb.wav" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/sounds/951_delimb.wav" />
+        <overwrittenPath originalPath="vehicles/komatsu/harvester911/sounds/harvester911_loop.gls" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester911/sounds/harvester911_loop.gls" />
+        <overwrittenPath originalPath="vehicles/impex/hannibalT50/sounds/tracksLoop.wav" newPath="$pdlcdir/forestryPack/vehicles/impex/hannibalT50/sounds/tracksLoop.wav" />
+
+
+        <!-- Wheels -->
+        <overwrittenPath originalPath="shared/crawlers/komatsu/harvester911Crawler/harvester911Crawler.i3d" newPath="$pdlcdir/forestryPack/shared/crawlers/komatsu/harvester911Crawler/harvester911Crawler.i3d" />
+        <overwrittenPath originalPath="shared/crawlers/komatsu/harvester951Crawler/harvester951Crawler.i3d" newPath="$pdlcdir/forestryPack/shared/crawlers/komatsu/harvester911Crawler/harvester951Crawler.i3d" />
+        <overwrittenPath originalPath="shared/crawlers/komatsu/harvester911Crawler/harvester911CrawlerFront.xml" newPath="$pdlcdir/forestryPack/shared/crawlers/komatsu/harvester911Crawler/harvester911CrawlerFront.xml" />
+        <overwrittenPath originalPath="shared/crawlers/komatsu/harvester911Crawler/harvester911CrawlerBack.xml" newPath="$pdlcdir/forestryPack/shared/crawlers/komatsu/harvester911Crawler/harvester911CrawlerBack.xml" />
+    </overwrittenPaths>
 
     <vehicleTypes>
 		<type name="CS770" parent="combineDrivable" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
             <specialization name="baler" />
-        </type>				
+        </type>
+        <type name="cheeky_woodHarvester" parent="woodHarvester" className="Vehicle" filename="$dataS/scripts/vehicles/Vehicle.lua">
+        </type>			
 	</vehicleTypes>
 
 	<multiplayer supported="true" />   

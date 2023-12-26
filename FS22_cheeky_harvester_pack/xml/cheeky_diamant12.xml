@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Diamant 12</name>
+        <specs>
+            <workingWidth>9.0</workingWidth>
+            <combination xmlFilename="$data/vehicles/caseIH/axialFlow250/axialFlow250.xml"/>
+            <combination xmlFilename="$data/vehicles/fendt/ideal/ideal.xml"/>
+            <combination xmlFilename="$data/vehicles/masseyFerguson/ideal/ideal.xml"/>
+            <combination xmlFilename="$data/vehicles/claas/lexion8000/lexion8000.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>$data/vehicles/capello/diamant12/store_diamant12.png</image>
+        <price>95000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>CAPELLO</brand>
+        <category>cornHeaders</category>
+        <shopFoldingState>1</shopFoldingState>
+        <shopTranslationOffset>0 -0.009 0</shopTranslationOffset>
+        <shopRotationOffset>7.952 0 0</shopRotationOffset>
+        <shopHeight>4</shopHeight>
+        <vertexBufferMemoryUsage>3907840</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>633088</indexBufferMemoryUsage>
+        <textureMemoryUsage>2031616</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>$data/vehicles/capello/diamant12/diamant12.i3d</filename>
+        <size width="5.8" length="3.5" lengthOffset="0.85"/>
+        <speedLimit value="14.5"/>
+        <components>
+            <component solverIterationCount="10" mass="4500"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER" />
+        <mapHotspot type="CUTTER" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="cutter">
+                <heightNode node="heightNode01"/>
+                <heightNode node="heightNode02"/>
+                <heightNode node="heightNode03"/>
+                <distanceToGround lower="0.4" upper="1.8"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+    </attachable>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" turnOnFoldMaxLimit="0.1" turnOnFoldMinLimit="0" >
+                    <foldingPart animationName="folding" speedScale="2" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <animations>
+        <animation name="folding">
+            <part node="centerFingerLeft"  startTime="0" endTime="2" startRot="0 0 0" endRot="0 0 55" tangentType="spline"/>
+            <part node="centerFingerRight" startTime="0" endTime="2" startRot="0 0 0" endRot="0 0 -55" tangentType="spline"/>
+
+            <part node="armLeft"  startTime="3" endTime="8" startRot="0 0 0" endRot="0 0 35" tangentType="spline" />
+            <part node="armLeft"  startTime="20" endTime="30" startRot="0 0 35" endRot="0 0 179.9" tangentType="spline"/>
+            <part node="armRight" startTime="3" endTime="20" startRot="0 0 0" endRot="0 0 -179.9" tangentType="spline"/>
+
+            <part node="armLeftFinger03" startTime="25" endTime="25.5" startRot="0 0 0" endRot="-20 0 0" direction="1" tangentType="spline" />
+            <part node="armLeftFinger02" startTime="25.5" endTime="26" startRot="0 0 0" endRot="-20 0 0" direction="1" tangentType="spline" />
+            <part node="armLeftFinger01" startTime="26" endTime="26.5" startRot="0 0 0" endRot="-20 0 0" direction="1" tangentType="spline" />
+            <part node="armRightFinger03" startTime="13" endTime="13.5" startRot="0 0 0" endRot="-20 0 0" direction="1" tangentType="spline" />
+            <part node="armRightFinger02" startTime="13.5" endTime="14" startRot="0 0 0" endRot="-20 0 0" direction="1" tangentType="spline" />
+            <part node="armRightFinger01" startTime="14" endTime="14.5" startRot="0 0 0" endRot="-20 0 0" direction="1" tangentType="spline" />
+
+            <part node="armLeftFinger03" startTime="23" endTime="23.5" startRot="0 0 0" endRot="-20 0 0" direction="-1" tangentType="spline" />
+            <part node="armLeftFinger02" startTime="22.5" endTime="23" startRot="0 0 0" endRot="-20 0 0" direction="-1" tangentType="spline" />
+            <part node="armLeftFinger01" startTime="22" endTime="22.5" startRot="0 0 0" endRot="-20 0 0" direction="-1" tangentType="spline" />
+            <part node="armRightFinger03" startTime="10" endTime="10.5" startRot="0 0 0" endRot="-20 0 0" direction="-1" tangentType="spline" />
+            <part node="armRightFinger02" startTime="9.5" endTime="10" startRot="0 0 0" endRot="-20 0 0" direction="-1" tangentType="spline" />
+            <part node="armRightFinger01" startTime="9" endTime="9.5" startRot="0 0 0" endRot="-20 0 0" direction="-1" tangentType="spline" />
+
+            <sound template="clackVar4"              startTime="29.80"  direction="-1" pitchScale="0.5"  volumeScale="5.3" fadeIn="0.4"/>
+            <sound template="metalOpen"              startTime="29.50"  direction="-1" pitchScale="0.8"  volumeScale="3.3" fadeIn="0.4"/>
+            <sound template="clackVar1"              startTime="29.40"  direction="1"  pitchScale="0.8"  volumeScale="1.6"/>
+            <sound template="metalClose"             startTime="29.70"  direction="1"  pitchScale="0.5"  volumeScale="3.4"   fadeIn="0.2"/>
+            <sound template="clackVar2"              startTime="29.60"  direction="1"  pitchScale="1.2"  volumeScale="0.9"/>
+            <sound template="clackVar4"              startTime="19.70"  direction="-1" pitchScale="0.5"  volumeScale="5.3" fadeIn="0.4"/>
+            <sound template="metalOpen"              startTime="19.50"  direction="-1" pitchScale="0.8"  volumeScale="3.3" fadeIn="0.4"/>
+            <sound template="clackVar1"              startTime="19.40"  direction="1"  pitchScale="0.8"  volumeScale="1.6"/>
+            <sound template="metalClose"             startTime="19.70"  direction="1"  pitchScale="0.5"  volumeScale="3.4"   fadeIn="0.2"/>
+            <sound template="clackVar2"              startTime="19.60"  direction="1"  pitchScale="1.2"  volumeScale="0.9"/>
+            <sound template="clackVar4"              startTime="3.10"  direction="1"   pitchScale="0.5"  volumeScale="5.3" fadeIn="0.4"/>
+            <sound template="metalOpen"              startTime="3.29"  direction="1"   pitchScale="0.8"  volumeScale="3.3" fadeIn="0.4"/>
+            <sound template="clackVar1"              startTime="3.3"   direction="-1"  pitchScale="0.8"  volumeScale="1.6"/>
+            <sound template="metalClose"             startTime="3.21"  direction="-1"  pitchScale="0.5"  volumeScale="3.4"   fadeIn="0.2"/>
+            <sound template="clackVar2"              startTime="3.2"   direction="-1"  pitchScale="1.2"  volumeScale="0.9"/>
+            <sound template="clackVar1"              startTime="0.20" direction="-1" volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="clackVar1"              startTime="1.85" direction="1"  volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="clackVar1"              startTime="0.2"  direction="1"  volumeScale="0.7" pitchScale="2.0"/>
+            <sound template="clackVar1"              startTime="1.80" direction="-1" volumeScale="0.7" pitchScale="2.0"/>
+            <sound template="latchSmall"             startTime="0.2"  direction="-1" volumeScale="0.2" pitchScale="0.7"/>
+            <sound template="latchSmall"             startTime="1.75" direction="1"  volumeScale="0.2" pitchScale="0.7"/>
+            <sound template="hydraulicLayerTone3"    startTime="0.01"  endTime="1.99"  direction="0"     volumeScale="0.45" pitchScale="0.9" fadeIn="0.1"/>
+            <sound template="hydraulicLayerTone"     startTime="3.01"  endTime="7.99"  direction="0"     volumeScale="1.0" pitchScale="0.6" fadeIn="0.1"/>
+            <sound template="defaultHydraulicSound"  startTime="3.01"  endTime="19.70" direction="0"     volumeScale="2.8" pitchScale="0.4" fadeIn="0.1"/>
+            <sound template="defaultHydraulicSound"  startTime="20.10" endTime="29.70" direction="0"     volumeScale="2.8" pitchScale="0.4" fadeIn="0.1"/>
+        </animation>
+
+        <animation name="moveSupport">
+            <part node="supportArm" startTime="0" endTime="0.5" startTrans="0 0 0" endTrans="0 0 -0.255" />
+
+            <sound template="metalClose"            startTime="0.01" direction="-1" volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="metalClose"            startTime="0.49" direction="1" volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="clackVar1"             startTime="0.1" direction="1"  volumeScale="1.3" pitchScale="1.8"/>
+            <sound template="clackVar1"             startTime="0.49" direction="-1"  volumeScale="1.3" pitchScale="1.8"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="armLeft" playSound="true" >
+                <dependentPart node="armLeftSwing" />
+            </movingTool>
+
+            <movingTool node="armRight" playSound="true" >
+                <dependentPart node="armRightSwing" />
+            </movingTool>
+
+            <movingTool node="centerFingerLeft" playSound="true" >
+                <dependentPart node="centerFingerLeftHydraulic" />
+            </movingTool>
+            <movingTool node="centerFingerRight" playSound="true" >
+                <dependentPart node="centerFingerRightHydraulic" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="armLeftSwing" localReferencePoint="armLeftSwingPart" referencePoint="armLeftSwingPartRef" referenceFrame="armLeftSwingRefFrame">
+                <dependentPart node="armLeftSwingPart"/>
+                <dependentPart node="armLeftCylinder"/>
+            </movingPart>
+            <movingPart node="armLeftSwingPart" referencePoint="armLeftSwingPartRef" referenceFrame="armLeftSwingPartRef"/>
+            <movingPart node="armLeftCylinder" referencePoint="armLeftCylinderRef" referenceFrame="armLeftCylinderRef">
+                <translatingPart node="armLeftCylinderPunch" />
+            </movingPart>
+
+            <movingPart node="armRightSwing" localReferencePoint="armRightSwingPart" referencePoint="armRightSwingPartRef" referenceFrame="armRightSwingRefFrame">
+                <dependentPart node="armRightSwingPart"/>
+                <dependentPart node="armRightCylinder"/>
+            </movingPart>
+            <movingPart node="armRightSwingPart" referencePoint="armRightSwingPartRef" referenceFrame="armRightSwingPartRef"/>
+            <movingPart node="armRightCylinder" referencePoint="armRightCylinderRef" referenceFrame="armRightCylinderRef">
+                <translatingPart node="armRightCylinderPunch" />
+            </movingPart>
+
+            <movingPart node="centerFingerLeftHydraulic" referencePoint="centerFingerLeftHydraulicRef" referenceFrame="centerFingerLeftHydraulicRef">
+                <translatingPart node="centerFingerLeftHydraulicPunch" />
+            </movingPart>
+            <movingPart node="centerFingerRightHydraulic" referencePoint="centerFingerRightHydraulicRef" referenceFrame="centerFingerRightHydraulicRef">
+                <translatingPart node="centerFingerRightHydraulicPunch" />
+            </movingPart>
+        </movingParts>
+    </cylindered>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="ptoInputLeft" aboveAttacher="true" ptoName="LEFT_PTO" />
+        <input inputAttacherJointIndices="1" inputNode="ptoInputRight" aboveAttacher="true" ptoName="RIGHT_PTO" />
+    </powerTakeOffs>
+
+    <powerConsumer ptoRpm="470" neededMaxPtoPower="100"/>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="heightNode02" threshold="0.5" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <chopperArea index="2" />
+            <testAreas autoGenerate="true" zOffset="0.5" xOffset="0" length="0.6" numAreas="12" areaWidthScale="0.25"/>
+        </workArea>
+        <workArea type="auxiliary" >
+            <area startNode="workAreaStrawStart" widthNode="workAreaStrawWidth" heightNode="workAreaStrawHeight" />
+        </workArea>
+    </workAreas>
+
+    <cutter fruitTypeCategories="maizeHeader" strawRatio="0.1">
+        <effect>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER" linkNode="effectNodePlant">
+                <motionPathEffect textureFilename="$data/vehicles/capello/diamant12/plantArray.dds" numRows="12" rowLength="8" minFade="0.19"/>
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_FRUITS" linkNode="effectNodeFruit">
+                <motionPathEffect textureFilename="$data/vehicles/capello/diamant12/fruitArray.dds" numRows="12" rowLength="28" speedScale="0.23" verticalOffset="0" minFade="0.09" startDelay="0.4" stopDelay="0.6"/>
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_THRESHING" linkNode="effectNodeThreshing">
+                <motionPathEffect textureFilename="$data/vehicles/capello/diamant12/threshingArray.dds" numRows="12" rowLength="10" verticalOffset="0" minFade="0.15" startDelay="0.2" stopDelay="0.6"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
+        </effect>
+
+        <animationNodes>
+            <animationNode node="armLeftDrum"  rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="7"/>
+            <animationNode node="centerDrum"   rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="7"/>
+            <animationNode node="armRightDrum" rotSpeed="900" rotAxis="1" turnOnFadeTime="4" turnOffFadeTime="7"/>
+
+            <animationNode node="armLeftRoller"  rotSpeed="1000" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5"/>
+            <animationNode node="armRightRoller" rotSpeed="-1000" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5"/>
+
+            <animationNode node="armLeftCutter01" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="armLeftCutter02" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="armLeftCutter03" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="centerCutter01" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="centerCutter02" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="centerCutter03" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="centerCutter04" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="centerCutter05" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="centerCutter06" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="armRightCutter01" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="armRightCutter02" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="armRightCutter03" rotSpeed="1800" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+
+            <animationNode node="armLeftGear01" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armLeftGear02" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armLeftGear03" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armLeftGear04" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armLeftGear05" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armLeftGear06" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armLeftGear07" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armLeftGear08" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear01" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear02" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear03" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear04" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear05" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear06" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear07" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear08" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear09" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear10" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear11" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear12" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear13" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="centerGear14" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armRightGear01" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armRightGear02" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armRightGear03" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armRightGear04" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armRightGear05" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armRightGear06" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armRightGear07" rotSpeed="-1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+            <animationNode node="armRightGear08" rotSpeed="1800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2"/>
+
+            <animationNode node="armLeftChains" rotSpeed="-150" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+            <animationNode node="centerChains" rotSpeed="-150" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+            <animationNode node="armRightChains" rotSpeed="-150" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="2" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+
+            <animationNode node="armLeftRoll01" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armLeftRoll02" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armLeftRoll03" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armLeftRoll04" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armLeftRoll05" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armLeftRoll06" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll01" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll02" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll03" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll04" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll05" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll06" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll07" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll08" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll09" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll10" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll11" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="centerRoll12" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armRightRoll01" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armRightRoll02" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armRightRoll03" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armRightRoll04" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armRightRoll05" rotSpeed="800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+            <animationNode node="armRightRoll06" rotSpeed="-800" rotAxis="3" turnOnFadeTime="3" turnOffFadeTime="5" />
+        </animationNodes>
+
+        <automaticTilt raycastNode1="heightNode01" raycastNode2="heightNode03"/>
+        <sounds>
+            <cut template="cropCutting" />
+        </sounds>
+    </cutter>
+
+    <turnOnVehicle turnedOnByAttacherVehicle="true">
+        <sounds>
+            <start template="forageHarvesterStart" volumeScale="0.7"/>
+            <work  template="forageHarvesterWork"  pitchScale="0.8" />
+            <stop  template="forageHarvesterStop"  pitchScale="1.5" volumeScale="0.4" />
+        </sounds>
+    </turnOnVehicle>
+
+    <dynamicMount forceLimitScale="1"/>
+
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <collisionTrigger node="aiCollisionNode" width="9.2" height="1.5"/>
+        <agentAttachment width="5.1" height="2.2" length="3" lengthOffset="1"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-2.33" maxX="2.33" minZ="-0.2" maxZ="1.2" yOffset="0.3" />
+        <bendingNode minX="0" maxX="2.3" minZ="-0.1" maxZ="1.33" yOffset="-0.65" node="armLeft" />
+        <bendingNode minX="-2.3" maxX="0" minZ="-0.1" maxZ="1.33" yOffset="-0.65" node="armRight" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="diamant12_mat" baseNode="diamant12_vis">
+            <shaderParameter name="colorMat0" value="CAPELLO_RED1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="diamant12_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="heightNode01" node="0>0|0|0|0" />
+        <i3dMapping id="heightNode02" node="0>0|0|0|1" />
+        <i3dMapping id="heightNode03" node="0>0|0|0|2" />
+        <i3dMapping id="ptoInputLeft" node="0>0|0|1" />
+        <i3dMapping id="ptoInputLeftDetach" node="0>0|0|1|0" />
+        <i3dMapping id="ptoInputRight" node="0>0|0|2" />
+        <i3dMapping id="ptoInputRightDetach" node="0>0|0|2|0" />
+        <i3dMapping id="supportArm" node="0>0|0|3|0" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|1|0" />
+        <i3dMapping id="aiMarkerRight" node="0>0|1|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|1|2" />
+        <i3dMapping id="aiCollisionNode" node="0>0|1|3" />
+        <i3dMapping id="workAreaStart" node="0>0|2|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|2|0|0" />
+        <i3dMapping id="workAreaHeight" node="0>0|2|0|1" />
+        <i3dMapping id="workAreaStrawStart" node="0>0|2|1" />
+        <i3dMapping id="workAreaStrawWidth" node="0>0|2|1|0" />
+        <i3dMapping id="workAreaStrawHeight" node="0>0|2|1|1" />
+        <i3dMapping id="groundReferenceNode" node="0>0|2|2" />
+        <i3dMapping id="effectNodePlant" node="0>0|3|0|0" />
+        <i3dMapping id="effectNodeFruit" node="0>0|3|0|1" />
+        <i3dMapping id="effectNodeThreshing" node="0>0|3|0|2" />
+        <i3dMapping id="smokeEmitter" node="0>0|3|1" />
+        <i3dMapping id="armLeft" node="0>0|4|0|0" />
+        <i3dMapping id="armLeftChains" node="0>0|4|0|0|0" />
+        <i3dMapping id="armLeftRoll01" node="0>0|4|0|0|1|0|0" />
+        <i3dMapping id="armLeftRoll02" node="0>0|4|0|0|1|1|0" />
+        <i3dMapping id="armLeftRoll03" node="0>0|4|0|0|1|2|0" />
+        <i3dMapping id="armLeftRoll04" node="0>0|4|0|0|1|3|0" />
+        <i3dMapping id="armLeftRoll05" node="0>0|4|0|0|1|4|0" />
+        <i3dMapping id="armLeftRoll06" node="0>0|4|0|0|1|5|0" />
+        <i3dMapping id="armLeftDrum" node="0>0|4|0|0|2|0" />
+        <i3dMapping id="armLeftRoller" node="0>0|4|0|0|3|0" />
+        <i3dMapping id="armLeftFinger01" node="0>0|4|0|0|4|0" />
+        <i3dMapping id="armLeftFinger02" node="0>0|4|0|0|4|1" />
+        <i3dMapping id="armLeftFinger03" node="0>0|4|0|0|4|2" />
+        <i3dMapping id="armLeftCutter01" node="0>0|4|0|0|5|0" />
+        <i3dMapping id="armLeftCutter02" node="0>0|4|0|0|5|1" />
+        <i3dMapping id="armLeftCutter03" node="0>0|4|0|0|5|2" />
+        <i3dMapping id="armLeftGear01" node="0>0|4|0|0|6|1|0" />
+        <i3dMapping id="armLeftGear02" node="0>0|4|0|0|6|2|0" />
+        <i3dMapping id="armLeftGear03" node="0>0|4|0|0|6|3|0" />
+        <i3dMapping id="armLeftGear04" node="0>0|4|0|0|6|4|0" />
+        <i3dMapping id="armLeftGear05" node="0>0|4|0|0|6|5|0" />
+        <i3dMapping id="armLeftGear06" node="0>0|4|0|0|6|6|0" />
+        <i3dMapping id="armLeftGear07" node="0>0|4|0|0|6|7|0" />
+        <i3dMapping id="armLeftGear08" node="0>0|4|0|0|6|8|0" />
+        <i3dMapping id="armLeftSwingPartRef" node="0>0|4|0|0|8" />
+        <i3dMapping id="armLeftSwingRefFrame" node="0>0|4|0|1" />
+        <i3dMapping id="armLeftSwing" node="0>0|4|0|1|0" />
+        <i3dMapping id="armLeftSwingPart" node="0>0|4|0|1|0|0" />
+        <i3dMapping id="armLeftCylinderRef" node="0>0|4|0|1|0|1" />
+        <i3dMapping id="armRight" node="0>0|4|1|0" />
+        <i3dMapping id="armRightChains" node="0>0|4|1|0|0" />
+        <i3dMapping id="armRightRoll01" node="0>0|4|1|0|1|0|0" />
+        <i3dMapping id="armRightRoll02" node="0>0|4|1|0|1|1|0" />
+        <i3dMapping id="armRightRoll03" node="0>0|4|1|0|1|2|0" />
+        <i3dMapping id="armRightRoll04" node="0>0|4|1|0|1|3|0" />
+        <i3dMapping id="armRightRoll05" node="0>0|4|1|0|1|4|0" />
+        <i3dMapping id="armRightRoll06" node="0>0|4|1|0|1|5|0" />
+        <i3dMapping id="armRightDrum" node="0>0|4|1|0|2|0" />
+        <i3dMapping id="armRightRoller" node="0>0|4|1|0|3|0" />
+        <i3dMapping id="armRightFinger01" node="0>0|4|1|0|4|0" />
+        <i3dMapping id="armRightFinger02" node="0>0|4|1|0|4|1" />
+        <i3dMapping id="armRightFinger03" node="0>0|4|1|0|4|2" />
+        <i3dMapping id="armRightCutter01" node="0>0|4|1|0|5|0" />
+        <i3dMapping id="armRightCutter02" node="0>0|4|1|0|5|1" />
+        <i3dMapping id="armRightCutter03" node="0>0|4|1|0|5|2" />
+        <i3dMapping id="armRightGear01" node="0>0|4|1|0|6|1|0" />
+        <i3dMapping id="armRightGear02" node="0>0|4|1|0|6|2|0" />
+        <i3dMapping id="armRightGear03" node="0>0|4|1|0|6|3|0" />
+        <i3dMapping id="armRightGear04" node="0>0|4|1|0|6|4|0" />
+        <i3dMapping id="armRightGear05" node="0>0|4|1|0|6|5|0" />
+        <i3dMapping id="armRightGear06" node="0>0|4|1|0|6|6|0" />
+        <i3dMapping id="armRightGear07" node="0>0|4|1|0|6|7|0" />
+        <i3dMapping id="armRightGear08" node="0>0|4|1|0|6|8|0" />
+        <i3dMapping id="armRightSwingPartRef" node="0>0|4|1|0|8" />
+        <i3dMapping id="armRightSwingRefFrame" node="0>0|4|1|1" />
+        <i3dMapping id="armRightSwing" node="0>0|4|1|1|0" />
+        <i3dMapping id="armRightCylinderRef" node="0>0|4|1|1|0|0" />
+        <i3dMapping id="armRightSwingPart" node="0>0|4|1|1|0|1" />
+        <i3dMapping id="centerChains" node="0>0|4|2|0" />
+        <i3dMapping id="centerRoll01" node="0>0|4|2|1|0|0" />
+        <i3dMapping id="centerRoll02" node="0>0|4|2|1|1|0" />
+        <i3dMapping id="centerRoll03" node="0>0|4|2|1|2|0" />
+        <i3dMapping id="centerRoll04" node="0>0|4|2|1|3|0" />
+        <i3dMapping id="centerRoll05" node="0>0|4|2|1|4|0" />
+        <i3dMapping id="centerRoll06" node="0>0|4|2|1|5|0" />
+        <i3dMapping id="centerRoll07" node="0>0|4|2|1|6|0" />
+        <i3dMapping id="centerRoll08" node="0>0|4|2|1|7|0" />
+        <i3dMapping id="centerRoll09" node="0>0|4|2|1|8|0" />
+        <i3dMapping id="centerRoll10" node="0>0|4|2|1|9|0" />
+        <i3dMapping id="centerRoll11" node="0>0|4|2|1|10|0" />
+        <i3dMapping id="centerRoll12" node="0>0|4|2|1|11|0" />
+        <i3dMapping id="centerDrum" node="0>0|4|2|2|0" />
+        <i3dMapping id="centerCutter01" node="0>0|4|2|3|0" />
+        <i3dMapping id="centerCutter02" node="0>0|4|2|3|1" />
+        <i3dMapping id="centerCutter03" node="0>0|4|2|3|2" />
+        <i3dMapping id="centerCutter04" node="0>0|4|2|3|3" />
+        <i3dMapping id="centerCutter05" node="0>0|4|2|3|4" />
+        <i3dMapping id="centerCutter06" node="0>0|4|2|3|5" />
+        <i3dMapping id="centerFingerLeft" node="0>0|4|2|4|0|0" />
+        <i3dMapping id="centerFingerLeftHydraulicRef" node="0>0|4|2|4|0|0|0" />
+        <i3dMapping id="centerFingerLeftHydraulic" node="0>0|4|2|4|0|1" />
+        <i3dMapping id="centerFingerLeftHydraulicPunch" node="0>0|4|2|4|0|1|0" />
+        <i3dMapping id="centerFingerRight" node="0>0|4|2|4|1|0" />
+        <i3dMapping id="centerFingerRightHydraulicRef" node="0>0|4|2|4|1|0|0" />
+        <i3dMapping id="centerFingerRightHydraulic" node="0>0|4|2|4|1|1" />
+        <i3dMapping id="centerFingerRightHydraulicPunch" node="0>0|4|2|4|1|1|0" />
+        <i3dMapping id="centerGear" node="0>0|4|2|5|0" />
+        <i3dMapping id="centerGear01" node="0>0|4|2|5|1|0" />
+        <i3dMapping id="centerGear02" node="0>0|4|2|5|2|0" />
+        <i3dMapping id="centerGear03" node="0>0|4|2|5|3|0" />
+        <i3dMapping id="centerGear04" node="0>0|4|2|5|4|0" />
+        <i3dMapping id="centerGear05" node="0>0|4|2|5|5|0" />
+        <i3dMapping id="centerGear06" node="0>0|4|2|5|6|0" />
+        <i3dMapping id="centerGear07" node="0>0|4|2|5|7|0" />
+        <i3dMapping id="centerGear08" node="0>0|4|2|5|8|0" />
+        <i3dMapping id="centerGear09" node="0>0|4|2|5|9|0" />
+        <i3dMapping id="centerGear10" node="0>0|4|2|5|10|0" />
+        <i3dMapping id="centerGear11" node="0>0|4|2|5|11|0" />
+        <i3dMapping id="centerGear12" node="0>0|4|2|5|12|0" />
+        <i3dMapping id="centerGear13" node="0>0|4|2|5|13|0" />
+        <i3dMapping id="centerGear14" node="0>0|4|2|5|14|0" />
+        <i3dMapping id="armLeftCylinder" node="0>0|5|0" />
+        <i3dMapping id="armLeftCylinderPunch" node="0>0|5|0|0" />
+        <i3dMapping id="armRightCylinder" node="0>0|5|1" />
+        <i3dMapping id="armRightCylinderPunch" node="0>0|5|1|0" />
+    </i3dMappings>
+</vehicle>

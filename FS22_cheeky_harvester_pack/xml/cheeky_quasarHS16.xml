@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+
+    <storeData>
+        <name>Quasar HS16</name>
+        <specs>
+            <workingWidth>12.0</workingWidth>
+            <combination xmlFilename="$data/vehicles/caseIH/axialFlow250/axialFlow250.xml"/>
+            <combination xmlFilename="$data/vehicles/fendt/ideal/ideal.xml"/>
+            <combination xmlFilename="$data/vehicles/masseyFerguson/ideal/ideal.xml"/>
+            <combination xmlFilename="$data/vehicles/claas/lexion8000/lexion8000.xml"/>
+            <combination xmlFilename="$data/vehicles/johnDeere/x9_1100/x9_1100.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>textures/store_quasarHS16.png</image>
+        <price>199000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>CAPELLO</brand>
+        <category>cornHeaders</category>
+        <shopFoldingState>1</shopFoldingState>
+        <shopTranslationOffset>0 -0.009 0</shopTranslationOffset>
+        <shopRotationOffset>7.952 0 0</shopRotationOffset>
+        <shopHeight>4</shopHeight>
+        <vertexBufferMemoryUsage>1834496</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>247808</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+	
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>i3d/quasarHS16.i3d</filename>
+        <size width="7" length="4" lengthOffset="0.85"/>
+        <speedLimit value="14.5"/>
+        <components>
+            <component solverIterationCount="10" mass="5000"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER" />
+    </base>
+		
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="cutter">
+                <heightNode node="heightNode01"/>
+                <heightNode node="heightNode02"/>
+                <heightNode node="heightNode03"/>
+                <distanceToGround lower="0.45" upper="1.7"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+    </attachable>
+	
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" turnOnFoldMaxLimit="0.1" turnOnFoldMinLimit="0" >
+                    <foldingPart animationName="folding" speedScale="2" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+	
+    <animations>
+        <animation name="folding">
+            <part node="centerFingerLeft"  startTime="0" endTime="2" startRot="0 0 0" endRot="0 0 55" tangentType="spline"/>
+            <part node="centerFingerRight" startTime="0" endTime="2" startRot="0 0 0" endRot="0 0 -55" tangentType="spline"/>
+
+            <part node="armLeft"  startTime="3" endTime="8" startRot="0 0 0" endRot="0 0 35" tangentType="spline" />
+            <part node="armLeft"  startTime="20" endTime="30" startRot="0 0 35" endRot="0 0 180" tangentType="spline"/>
+            <part node="armRight" startTime="3" endTime="20" startRot="0 0 0" endRot="0 0 -180" tangentType="spline"/>
+
+            <sound template="clackVar4"              startTime="29.80"  direction="-1" pitchScale="0.5"  volumeScale="5.3" fadeIn="0.4"/>
+            <sound template="metalOpen"              startTime="29.50"  direction="-1" pitchScale="0.8"  volumeScale="3.3" fadeIn="0.4"/>
+            <sound template="clackVar1"              startTime="29.40"  direction="1"  pitchScale="0.8"  volumeScale="1.6"/>
+            <sound template="metalClose"             startTime="29.70"  direction="1"  pitchScale="0.5"  volumeScale="3.4"   fadeIn="0.2"/>
+            <sound template="clackVar2"              startTime="29.60"  direction="1"  pitchScale="1.2"  volumeScale="0.9"/>
+            <sound template="clackVar4"              startTime="19.70"  direction="-1" pitchScale="0.5"  volumeScale="5.3" fadeIn="0.4"/>
+            <sound template="metalOpen"              startTime="19.50"  direction="-1" pitchScale="0.8"  volumeScale="3.3" fadeIn="0.4"/>
+            <sound template="clackVar1"              startTime="19.40"  direction="1"  pitchScale="0.8"  volumeScale="1.6"/>
+            <sound template="metalClose"             startTime="19.70"  direction="1"  pitchScale="0.5"  volumeScale="3.4"   fadeIn="0.2"/>
+            <sound template="clackVar2"              startTime="19.60"  direction="1"  pitchScale="1.2"  volumeScale="0.9"/>
+            <sound template="clackVar4"              startTime="3.10"  direction="1"   pitchScale="0.5"  volumeScale="5.3" fadeIn="0.4"/>
+            <sound template="metalOpen"              startTime="3.29"  direction="1"   pitchScale="0.8"  volumeScale="3.3" fadeIn="0.4"/>
+            <sound template="clackVar1"              startTime="3.3"   direction="-1"  pitchScale="0.8"  volumeScale="1.6"/>
+            <sound template="metalClose"             startTime="3.21"  direction="-1"  pitchScale="0.5"  volumeScale="3.4"   fadeIn="0.2"/>
+            <sound template="clackVar2"              startTime="3.2"   direction="-1"  pitchScale="1.2"  volumeScale="0.9"/>
+            <sound template="clackVar1"              startTime="0.20" direction="-1" volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="clackVar1"              startTime="1.85" direction="1"  volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="clackVar1"              startTime="0.2"  direction="1"  volumeScale="0.7" pitchScale="2.0"/>
+            <sound template="clackVar1"              startTime="1.80" direction="-1" volumeScale="0.7" pitchScale="2.0"/>
+            <sound template="latchSmall"             startTime="0.2"  direction="-1" volumeScale="0.2" pitchScale="0.7"/>
+            <sound template="latchSmall"             startTime="1.75" direction="1"  volumeScale="0.2" pitchScale="0.7"/>
+            <sound template="hydraulicLayerTone3"    startTime="0.01"  endTime="1.99"  direction="0"     volumeScale="0.45" pitchScale="0.9" fadeIn="0.1"/>
+            <sound template="hydraulicLayerTone"     startTime="3.01"  endTime="7.99"  direction="0"     volumeScale="1.0" pitchScale="0.6" fadeIn="0.1"/>
+            <sound template="defaultHydraulicSound"  startTime="3.01"  endTime="19.70" direction="0"     volumeScale="2.8" pitchScale="0.4" fadeIn="0.1"/>
+            <sound template="defaultHydraulicSound"  startTime="20.10" endTime="29.70" direction="0"     volumeScale="2.8" pitchScale="0.4" fadeIn="0.1"/>
+        </animation>
+        <animation name="moveSupport">
+            <part node="support" startTime="0" duration="0.5" startTrans="0.001 0.501 -1.028" endTrans="0.001 0.322 -1.028"/>
+			
+            <sound template="metalClose"            startTime="0.01" direction="-1" volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="metalClose"            startTime="0.49" direction="1" volumeScale="0.7" pitchScale="2.8"/>
+            <sound template="clackVar1"             startTime="0.1" direction="1"  volumeScale="1.3" pitchScale="1.8"/>
+            <sound template="clackVar1"             startTime="0.49" direction="-1"  volumeScale="1.3" pitchScale="1.8"/>
+        </animation>
+    </animations>
+	
+    <cylindered>
+        <movingTools>
+            <movingTool node="armLeft" playSound="true">
+                <dependentPart node="foldingArmLeft"/>
+            </movingTool>
+            <movingTool node="armRight" playSound="true">
+                <dependentPart node="foldingArmRight"/>
+            </movingTool>
+            <movingTool node="centerFingerLeft" playSound="true">
+                <dependentPart node="hydraulicLeftFoldingPart"/>
+            </movingTool>
+            <movingTool node="centerFingerRight" playSound="true">
+                <dependentPart node="hydraulicRightFoldingPart"/>
+            </movingTool>
+        </movingTools>
+        <movingParts>
+            <movingPart node="foldingArmLeft" referencePoint="foldingArmLeftRef" localReferencePoint="foldingArm2Left" referenceFrame="foldingArmleftRefFrame">
+                <dependentPart node="foldingArm2Left"/>
+                <dependentPart node="hydraulicFoldingArmLeft"/>
+            </movingPart>
+            <movingPart node="foldingArm2Left" referencePoint="foldingArmLeftRef" referenceFrame="foldingArmLeftRef" scaleZ="true"/>
+            <movingPart node="hydraulicFoldingArmLeft" referencePoint="hydraulicFoldingArmLeftRef" referenceFrame="hydraulicFoldingArmLeftRef">
+                <translatingPart node="hydraulicFoldingArmLeftPunch"/>
+            </movingPart>
+            <movingPart node="foldingArmRight" referencePoint="foldingArmRightRef" localReferencePoint="foldingArmRight2" referenceFrame="foldingArmRightRefFrame">
+                <dependentPart node="foldingArmRight2"/>
+                <dependentPart node="hydraulicFoldingArmRight"/>
+            </movingPart>
+            <movingPart node="foldingArmRight2" referencePoint="foldingArmRightRef" referenceFrame="foldingArmRightRef" scaleZ="true"/>
+            <movingPart node="hydraulicFoldingArmRight" referencePoint="hydraulicFoldingArmRightRef" referenceFrame="hydraulicFoldingArmRightRef">
+                <translatingPart node="hydraulicFoldingArmRightPunch"/>
+            </movingPart>
+            <movingPart node="hydraulicLeftFoldingPart" referencePoint="hydraulicLeftFoldingPartRef" referenceFrame="quasarHS16_main_component1" scaleZ="true"/>
+            <movingPart node="hydraulicRightFoldingPart" referencePoint="hydraulicRightFoldingPartRef" referenceFrame="quasarHS16_main_component1" scaleZ="true"/>
+        </movingParts>
+    </cylindered>
+	
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="ptoLeft" aboveAttacher="true" ptoName="LEFT_PTO" />
+        <input inputAttacherJointIndices="1" inputNode="ptoRight" aboveAttacher="true" ptoName="RIGHT_PTO" />
+    </powerTakeOffs>
+	
+    <powerConsumer ptoRpm="540" neededMaxPtoPower="210"/>
+	
+    <groundReferenceNodes>
+        <groundReferenceNode node="heightNode02" threshold="0.3" />
+    </groundReferenceNodes>
+	
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <chopperArea index="2" />
+            <testAreas autoGenerate="true" zOffset="0.5" xOffset="0" length="0.6" numAreas="16" areaWidthScale="0.25"/>
+        </workArea>
+        <workArea type="auxiliary" >
+            <area startNode="workAreaStrawStart" widthNode="workAreaStrawWidth" heightNode="workAreaStrawHeight" />
+        </workArea>
+    </workAreas>
+				
+    <cutter fruitTypeCategories="maizeHeader" strawRatio="0.1">
+        <effect>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER" linkNode="effectNodePlant">
+                <motionPathEffect textureFilename="$data/vehicles/johnDeere/headerC16F/plantArray.dds" textureRealWidth="15.6" numRows="20" rowLength="8" minFade="0.19" />
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_FRUITS" linkNode="effectNodeFruit">
+                <motionPathEffect textureFilename="$data/vehicles/johnDeere/headerC16F/fruitArray.dds" textureRealWidth="15.6" numRows="20" rowLength="38" speedScale="0.23" verticalOffset="0" minFade="0.09" startDelay="0.4" stopDelay="0.6" />
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_THRESHING" linkNode="effectNodeThreshing">
+                <motionPathEffect textureFilename="$data/vehicles/johnDeere/headerC16F/threshingArray.dds" textureRealWidth="15.6" numRows="20" rowLength="10" verticalOffset="0" minFade="0.15" startDelay="0.2" stopDelay="0.6"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
+        </effect>
+		
+        <animationNodes>
+            <animationNode node="drumMain" rotSpeed="600" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="drumLeft" rotSpeed="600" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="drumRight" rotSpeed="600" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="outerRotorLeft" rotSpeed="600" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="outerRotorRight" rotSpeed="-600" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor5" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor6" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor7" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor8" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor9" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor10" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor11" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor12" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor13" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor14" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor15" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor16" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor1" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor2" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor3" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="rotor4" rotSpeed="800" rotAxis="2" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor10" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor9" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor12" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor11" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor14" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor13" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor16" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor15" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor18" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor17" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor20" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor19" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor22" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor21" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor24" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor23" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor26" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor25" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor28" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor27" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor30" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor29" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor32" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor31" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor1" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor2" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor3" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor4" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor6" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor5" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor8" rotSpeed="-800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="upperRotor7" rotSpeed="800" rotAxis="3" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="chainsRight" rotSpeed="200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1" shaderComponentScale="1 0 0 0" shaderParameterName="offsetUV"/>
+            <animationNode node="chains2Right" rotSpeed="100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1" shaderComponentScale="1 0 0 0" shaderParameterName="offsetUV"/>
+            <animationNode node="chainsMain" rotSpeed="200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1" shaderComponentScale="1 0 0 0" shaderParameterName="offsetUV"/>
+            <animationNode node="chains2Main" rotSpeed="100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1" shaderComponentScale="1 0 0 0" shaderParameterName="offsetUV"/>
+            <animationNode node="chainsLeft" rotSpeed="200" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1" shaderComponentScale="1 0 0 0" shaderParameterName="offsetUV"/>
+            <animationNode node="chains2Left" rotSpeed="100" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1" shaderComponentScale="1 0 0 0" shaderParameterName="offsetUV"/>
+        </animationNodes>
+    </cutter>
+	
+    <turnOnVehicle turnedOnByAttacherVehicle="true">
+        <sounds>
+            <start template="forageHarvesterStart" volumeScale="0.7"/>
+            <work  template="forageHarvesterWork"  pitchScale="0.8" />
+            <stop  template="forageHarvesterStop"  pitchScale="1.5" volumeScale="0.4" />
+        </sounds>
+    </turnOnVehicle>
+	
+    <dynamicMount forceLimitScale="1"/>
+	
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <collisionTrigger node="aiCollisionNode" width="12.2" height="1.5"/>
+        <agentAttachment width="12.2" height="2.2" length="3" lengthOffset="1"/>
+    </ai>
+	
+    <foliageBending>
+        <bendingNode minX="-3.1" maxX="3.1" minZ="-1.2" maxZ="0.5" yOffset="0.2"/>
+        <bendingNode minX="0" maxX="3.1" minZ="0.2" maxZ="1.8" yOffset="-0.67" node="armLeft"/>
+        <bendingNode minX="-3.1" maxX="0" minZ="0.2" maxZ="1.8" yOffset="-0.67" node="armRight"/>
+    </foliageBending>
+			
+    <baseMaterial>
+        <material name="capelloQuasar_mat" baseNode="capello_vis">
+            <shaderParameter name="colorMat0" value="CAPELLO_RED1"/>
+            <shaderParameter name="colorMat1" value="CAPELLO_BLACK1"/>
+        </material>
+    </baseMaterial>
+	
+    <baseMaterialConfigurations price="0" useDefaultColors="false" >
+        <baseMaterialConfiguration color="CAPELLO_BLACK1" name="CAPELLO" />
+        <baseMaterialConfiguration color="CASEIH_RED1" name="CASE" price="8000"/>
+        <baseMaterialConfiguration material="32" color="0 0 0" name="IDEAL GRAPHITE" price="5000" />
+        <baseMaterialConfiguration color="CLAAS_GREEN1" name="CLAAS GREEN" price="8000"/>
+        <baseMaterialConfiguration color="CLAAS_WHITE1" name="CLAAS WHITE" price="8000"/>
+        <baseMaterialConfiguration color="JOHNDEERE_GREEN1" name="JOHN DEERE GREEN" price="8000"/>
+        <baseMaterialConfiguration color="JOHNDEERE_YELLOW1" name="JOHN DEERE YELLOW" price="8000"/>
+        <material name="capelloQuasar_mat" shaderParameter="colorMat1" />
+    </baseMaterialConfigurations>
+	
+    <designMaterialConfigurations price="0" useDefaultColors="false" >
+        <designMaterialConfiguration color="CAPELLO_RED1" name="CAPELLO" />
+        <designMaterialConfiguration color="CASEIH_RED1" name="CASE" price="5000" />
+        <designMaterialConfiguration material="0" color="0.045 0.045 0.045" name="IDEAL" price="5000" />
+        <designMaterialConfiguration material="32" color="0 0 0" name="IDEAL GRAPHITE" price="5000" />
+        <designMaterialConfiguration color="CLAAS_GREEN1" name="CLAAS GREEN" price="5000" />
+        <designMaterialConfiguration color="JOHNDEERE_GREEN1" name="JOHN DEERE GREEN" price="5000" />
+        <designMaterialConfiguration color="JOHNDEERE_YELLOW1" name="JOHN DEERE YELLOW" price="5000" />
+        <material name="capelloQuasar_mat" shaderParameter="colorMat0" />
+    </designMaterialConfigurations>
+	
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+	
+    <i3dMappings>
+        <i3dMapping id="quasarHS16_main_component1" node="0>"/>
+        <i3dMapping id="capello_vis" node="0>0"/>
+        <i3dMapping id="attacherJoint" node="0>0|0"/>
+        <i3dMapping id="heightNode01" node="0>0|0|0"/>
+        <i3dMapping id="heightNode02" node="0>0|0|1"/>
+        <i3dMapping id="heightNode03" node="0>0|0|2"/>
+        <i3dMapping id="ptoLeft" node="0>0|1"/>
+        <i3dMapping id="ptoRight" node="0>0|2"/>
+        <i3dMapping id="support" node="0>0|3"/>
+        <i3dMapping id="drumMain" node="0>0|4"/>
+        <i3dMapping id="rotor5" node="0>0|5|0"/>
+        <i3dMapping id="rotor6" node="0>0|5|1"/>
+        <i3dMapping id="rotor7" node="0>0|5|2"/>
+        <i3dMapping id="rotor8" node="0>0|5|3"/>
+        <i3dMapping id="rotor9" node="0>0|5|4"/>
+        <i3dMapping id="rotor10" node="0>0|5|5"/>
+        <i3dMapping id="rotor11" node="0>0|5|6"/>
+        <i3dMapping id="rotor12" node="0>0|5|7"/>
+        <i3dMapping id="upperRotor10" node="0>0|6|0"/>
+        <i3dMapping id="upperRotor9" node="0>0|6|1"/>
+        <i3dMapping id="upperRotor12" node="0>0|6|2"/>
+        <i3dMapping id="upperRotor11" node="0>0|6|3"/>
+        <i3dMapping id="upperRotor14" node="0>0|6|4"/>
+        <i3dMapping id="upperRotor13" node="0>0|6|5"/>
+        <i3dMapping id="upperRotor16" node="0>0|6|6"/>
+        <i3dMapping id="upperRotor15" node="0>0|6|7"/>
+        <i3dMapping id="upperRotor18" node="0>0|6|8"/>
+        <i3dMapping id="upperRotor17" node="0>0|6|9"/>
+        <i3dMapping id="upperRotor20" node="0>0|6|10"/>
+        <i3dMapping id="upperRotor19" node="0>0|6|11"/>
+        <i3dMapping id="upperRotor22" node="0>0|6|12"/>
+        <i3dMapping id="upperRotor21" node="0>0|6|13"/>
+        <i3dMapping id="upperRotor24" node="0>0|6|14"/>
+        <i3dMapping id="upperRotor23" node="0>0|6|15"/>
+        <i3dMapping id="armLeft" node="0>0|7|0"/>
+        <i3dMapping id="drumLeft" node="0>0|7|0|0"/>
+        <i3dMapping id="rotor13" node="0>0|7|0|1|0"/>
+        <i3dMapping id="rotor14" node="0>0|7|0|1|1"/>
+        <i3dMapping id="rotor15" node="0>0|7|0|1|2"/>
+        <i3dMapping id="rotor16" node="0>0|7|0|1|3"/>
+        <i3dMapping id="upperRotor26" node="0>0|7|0|2|0"/>
+        <i3dMapping id="upperRotor25" node="0>0|7|0|2|1"/>
+        <i3dMapping id="upperRotor28" node="0>0|7|0|2|2"/>
+        <i3dMapping id="upperRotor27" node="0>0|7|0|2|3"/>
+        <i3dMapping id="upperRotor30" node="0>0|7|0|2|4"/>
+        <i3dMapping id="upperRotor29" node="0>0|7|0|2|5"/>
+        <i3dMapping id="upperRotor32" node="0>0|7|0|2|6"/>
+        <i3dMapping id="upperRotor31" node="0>0|7|0|2|7"/>
+        <i3dMapping id="outerRotorLeft" node="0>0|7|0|3|0"/>
+        <i3dMapping id="foldingArmLeftRef" node="0>0|7|0|4"/>
+        <i3dMapping id="foldingArmleftRefFrame" node="0>0|7|0|5"/>
+        <i3dMapping id="chainsLeft" node="0>0|7|0|6"/>
+        <i3dMapping id="chains2Left" node="0>0|7|0|7"/>
+        <i3dMapping id="armRight" node="0>0|7|1"/>
+        <i3dMapping id="drumRight" node="0>0|7|1|0"/>
+        <i3dMapping id="rotor1" node="0>0|7|1|1|0"/>
+        <i3dMapping id="rotor2" node="0>0|7|1|1|1"/>
+        <i3dMapping id="rotor3" node="0>0|7|1|1|2"/>
+        <i3dMapping id="rotor4" node="0>0|7|1|1|3"/>
+        <i3dMapping id="upperRotor1" node="0>0|7|1|2|0"/>
+        <i3dMapping id="upperRotor2" node="0>0|7|1|2|1"/>
+        <i3dMapping id="upperRotor3" node="0>0|7|1|2|2"/>
+        <i3dMapping id="upperRotor4" node="0>0|7|1|2|3"/>
+        <i3dMapping id="upperRotor6" node="0>0|7|1|2|4"/>
+        <i3dMapping id="upperRotor5" node="0>0|7|1|2|5"/>
+        <i3dMapping id="upperRotor8" node="0>0|7|1|2|6"/>
+        <i3dMapping id="upperRotor7" node="0>0|7|1|2|7"/>
+        <i3dMapping id="outerRotorRight" node="0>0|7|1|3|0"/>
+        <i3dMapping id="foldingArmRightRef" node="0>0|7|1|4"/>
+        <i3dMapping id="foldingArmRightRefFrame" node="0>0|7|1|5"/>
+        <i3dMapping id="chainsRight" node="0>0|7|1|6"/>
+        <i3dMapping id="chains2Right" node="0>0|7|1|7"/>
+        <i3dMapping id="foldingArmLeft" node="0>0|7|2"/>
+        <i3dMapping id="foldingArm2Left" node="0>0|7|2|0"/>
+        <i3dMapping id="hydraulicFoldingArmLeftRef" node="0>0|7|2|1"/>
+        <i3dMapping id="hydraulicFoldingArmLeft" node="0>0|7|3"/>
+        <i3dMapping id="hydraulicFoldingArmLeftPunch" node="0>0|7|3|0"/>
+        <i3dMapping id="foldingArmRight" node="0>0|7|4"/>
+        <i3dMapping id="foldingArmRight2" node="0>0|7|4|0"/>
+        <i3dMapping id="hydraulicFoldingArmRightRef" node="0>0|7|4|1"/>
+        <i3dMapping id="hydraulicFoldingArmRight" node="0>0|7|5"/>
+        <i3dMapping id="hydraulicFoldingArmRightPunch" node="0>0|7|5|0"/>
+        <i3dMapping id="centerFingerLeft" node="0>0|8|0"/>
+        <i3dMapping id="hydraulicLeftFoldingPartRef" node="0>0|8|0|0"/>
+        <i3dMapping id="hydraulicLeftFoldingPart" node="0>0|8|1"/>
+        <i3dMapping id="centerFingerRight" node="0>0|9|0"/>
+        <i3dMapping id="hydraulicRightFoldingPartRef" node="0>0|9|0|0"/>
+        <i3dMapping id="hydraulicRightFoldingPart" node="0>0|9|1"/>
+        <i3dMapping id="chainsMain" node="0>0|10"/>
+        <i3dMapping id="chains2Main" node="0>0|11"/>
+        <i3dMapping id="workAreaStart" node="0>0|12|0|0"/>
+        <i3dMapping id="workAreaWidth" node="0>0|12|0|1"/>
+        <i3dMapping id="workAreaHeight" node="0>0|12|0|2"/>
+        <i3dMapping id="aiMarkerLeft" node="0>0|13|0|0"/>
+        <i3dMapping id="aiMarkerRight" node="0>0|13|0|1"/>
+        <i3dMapping id="aiMarkerBack" node="0>0|13|0|2"/>
+        <i3dMapping id="aiCollisionNode" node="0>0|13|1" />
+        <i3dMapping id="workAreaStrawStart" node="0>0|12|1"/>
+        <i3dMapping id="workAreaStrawWidth" node="0>0|12|1|0"/>
+        <i3dMapping id="workAreaStrawHeight" node="0>0|12|1|1"/>
+        <i3dMapping id="groundReferenceNode" node="0>0|12|2" />
+        <i3dMapping id="effectNodePlant" node="0>0|14|0|0" />
+        <i3dMapping id="effectNodeFruit" node="0>0|14|0|1" />
+        <i3dMapping id="effectNodeThreshing" node="0>0|14|0|2" />
+        <i3dMapping id="smokeEmitter" node="0>0|14|1" />
+    </i3dMappings>
+</vehicle>

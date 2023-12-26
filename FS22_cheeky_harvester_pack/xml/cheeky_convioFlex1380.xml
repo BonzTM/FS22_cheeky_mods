@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>CONVIO FLEX 1380</name>
+        <specs>
+            <workingWidth>13.8</workingWidth>
+            <combination xmlFilename="$data/vehicles/claas/lexion8000/lexion8000.xml" />
+            <combination xmlFilename="$data/vehicles/nardi/n60_45/n60_45.xml" />
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>$data/vehicles/claas/convioFlex1380/store_convioFlex1380.png</image>
+        <price>90000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>CLAAS</brand>
+        <category>cutters</category>
+        <shopTranslationOffset>0 -0.096 0</shopTranslationOffset>
+        <shopRotationOffset>11.399 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>5934848</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1354752</indexBufferMemoryUsage>
+        <textureMemoryUsage>3342336</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>$data/vehicles/claas/convioFlex1380/convioFlex1380.i3d</filename>
+        <size width="15.5" length="4" lengthOffset="0.2" />
+        <speedLimit value="14.5" />
+        <components>
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="4500" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER" />
+        <mapHotspot type="CUTTER" />
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0">
+                <wheels hasSurfaceSounds="false" autoRotateBackSpeed="2.0">
+                    <wheel>
+                        <physics restLoad="2.8" repr="wheelLeft"  useDriveNodeDirection="true" forcePointRatio="0.25" radius="0.336" width="0.215" initialCompression="30" suspTravel="0.05" spring="92" damper="10" frictionScale="0.1" yOffset="0.02" />
+                    </wheel>
+                    <wheel>
+                        <physics restLoad="2.8" repr="wheelRight" useDriveNodeDirection="true" forcePointRatio="0.25" radius="0.336" width="0.215" initialCompression="30" suspTravel="0.05" spring="92" damper="10" frictionScale="0.1" yOffset="0.02" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <dynamicallyLoadedWheels>
+            <dynamicallyLoadedWheel linkNode="wheelLeft"  filename="$data/shared/wheels/tires/trelleborg/T510/215_65R15.xml" isLeft="true" />
+            <dynamicallyLoadedWheel linkNode="wheelRight" filename="$data/shared/wheels/tires/trelleborg/T510/215_65R15.xml" isLeft="false" />
+        </dynamicallyLoadedWheels>
+
+        <rimColor>CLAAS_RED1</rimColor>
+
+        <hubs>
+            <color0>CLAAS_DARKGREY2</color0>
+            <color1>SHARED_GREY3</color1>
+            <hub linkNode="wheelLeft"  filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="true"  scale="0.1 0.2 0.2" />
+            <hub linkNode="wheelRight" filename="$data/shared/wheels/hubs/hub_n6_1.xml" isLeft="false" scale="0.1 0.2 0.2" />
+        </hubs>
+    </wheels>
+
+    <speedRotatingParts>
+        <speedRotatingPart node="wheelLeft" groundReferenceNodeIndex="1" radius="0.336"/>
+        <speedRotatingPart node="wheelRight" groundReferenceNodeIndex="1" radius="0.336"/>
+    </speedRotatingParts>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="cutter" >
+                <heightNode node="heightNode01" />
+                <heightNode node="heightNode02" />
+                <heightNode node="heightNode03" />
+                <distanceToGround lower="0.35" upper="1.9" />
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+        <lowerAnimation name="lowerAnimation" directionOnDetach="-1"/>
+    </attachable>
+
+    <connectionHoses>
+        <customTarget node="claasMultiCoupler" type="claasMultiCoupler" inputAttacherJointIndices="1"/>
+    </connectionHoses>
+
+    <powerTakeOffs>
+        <input inputAttacherJointIndices="1" inputNode="ptoInputNode" aboveAttacher="true" ptoName="LEFT_PTO"/>
+        <local startNode="localPTOStart" endNode="localPTOEnd" filename="$data/shared/assets/powerTakeOffs/walterscheidW.xml"/>
+    </powerTakeOffs>
+
+    <powerConsumer ptoRpm="540" neededMaxPtoPower="125"/>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="heightNode02" threshold="0.5" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" disableBackwards="true" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <testAreas autoGenerate="true" zOffset="0.5" xOffset="0" length="0.6" numAreas="16" areaWidthScale="0.25" scale="0.97"/>
+        </workArea>
+    </workAreas>
+
+    <animations>
+        <animation name="knifeAnimation" looping="true">
+            <part node="canolaKnifeLeft01" startTime="0.0" endTime="0.5" startTrans="0 0 0" endTrans="0 0 -0.041"/>
+            <part node="canolaKnifeLeft01" startTime="0.5" endTime="1.0" startTrans="0 0 -0.041" endTrans="0 0 0"/>
+            <part node="canolaKnifeLeft02" startTime="0.0" endTime="0.5" startTrans="0 0 0" endTrans="0 0 0.041"/>
+            <part node="canolaKnifeLeft02" startTime="0.5" endTime="1.0" startTrans="0 0 0.041" endTrans="0 0 0"/>
+
+            <part node="canolaKnifeRight01" startTime="0.0" endTime="0.5" startTrans="0 0 0" endTrans="0 0 -0.041"/>
+            <part node="canolaKnifeRight01" startTime="0.5" endTime="1.0" startTrans="0 0 -0.041" endTrans="0 0 0"/>
+            <part node="canolaKnifeRight02" startTime="0.0" endTime="0.5" startTrans="0 0 0" endTrans="0 0 0.041"/>
+            <part node="canolaKnifeRight02" startTime="0.5" endTime="1.0" startTrans="0 0 0.041" endTrans="0 0 0"/>
+        </animation>
+        <animation name="turnedOnAnimation_bottomBlades" looping="true">
+            <part node="knifesDecal" startTime="0.0" endTime="0.5"  startTrans="0.03 0 0"  endTrans="-0.03 0 0" />
+            <part node="knifesDecal" startTime="0.5" endTime="1.0"  startTrans="-0.03 0 0" endTrans="0.03 0 0" />
+        </animation>
+
+        <animation name="reelAnimation" looping="true" isKeyframe="true">
+            <part node="reel" startTime="0.0" endTime="0.99999"  startRot="0.0 0.0 0.0" endRot="360.0 0.0 0.0" />
+            <part node="reel" startTime="0.99999" endTime="1.0"  startRot="360.0 0.0 0.0" endRot="0.0 0.0 0.0" />
+
+            <part node="spike01" startTime="0.0" endTime="0.167"  startRot="111.439 0.0 0.0" endRot="187.304 0.0 0.0" />
+            <part node="spike01" startTime="0.167" endTime="0.333"  startRot="187.304 0.0 0.0" endRot="181.566 0.0 0.0" />
+            <part node="spike01" startTime="0.333" endTime="0.5"  startRot="181.566 0.0 0.0" endRot="162.49 0.0 0.0" />
+            <part node="spike01" startTime="0.5" endTime="0.667"  startRot="162.49 0.0 0.0" endRot="99.284 0.0 0.0" />
+            <part node="spike01" startTime="0.667" endTime="0.833"  startRot="99.284 0.0 0.0" endRot="46.451 0.0 0.0" />
+            <part node="spike01" startTime="0.833" endTime="1.0"  startRot="46.451 0.0 0.0" endRot="111.439 0.0 0.0" />
+            <part node="spike01Part01" startTime="0.0" endTime="0.167"  startRot="89.997 64.769 -90.002" endRot="89.999 -10.62 -89.999" />
+            <part node="spike01Part01" startTime="0.167" endTime="0.333"  startRot="89.999 -10.62 -89.999" endRot="89.998 -4.073 -89.999" />
+            <part node="spike01Part01" startTime="0.333" endTime="0.5"  startRot="89.998 -4.073 -89.999" endRot="89.998 18.885 -90.0" />
+            <part node="spike01Part01" startTime="0.5" endTime="0.667"  startRot="89.998 18.885 -90.0" endRot="89.994 70.327 -90.005" />
+            <part node="spike01Part01" startTime="0.667" endTime="0.833"  startRot="89.994 70.327 -90.005" endRot="90.026 93.662 -89.974" />
+            <part node="spike01Part01" startTime="0.833" endTime="1.0"  startRot="90.026 93.662 -89.974" endRot="89.997 64.769 -90.002" />
+            <part node="spike01Part02" startTime="0.0" endTime="0.167"  startRot="-0.0 -0.0 -21.423" endRot="-0.0 -0.0 21.959" />
+            <part node="spike01Part02" startTime="0.167" endTime="0.333"  startRot="-0.0 -0.0 21.959" endRot="-0.0 -0.0 20.172" />
+            <part node="spike01Part02" startTime="0.333" endTime="0.5"  startRot="-0.0 -0.0 20.172" endRot="0.0 -0.0 14.709" />
+            <part node="spike01Part02" startTime="0.5" endTime="0.667"  startRot="0.0 -0.0 14.709" endRot="0.0 -0.0 -32.067" />
+            <part node="spike01Part02" startTime="0.667" endTime="0.833"  startRot="0.0 -0.0 -32.067" endRot="0.0 -0.0 -76.013" />
+            <part node="spike01Part02" startTime="0.833" endTime="1.0"  startRot="0.0 -0.0 -76.013" endRot="-0.0 -0.0 -21.423" />
+            <part node="spike02" startTime="0.0" endTime="0.167"  startRot="-109.955 0.0 0.0" endRot="-112.681 0.0 0.0" />
+            <part node="spike02" startTime="0.167" endTime="0.333"  startRot="-112.681 0.0 0.0" endRot="-128.139 0.0 0.0" />
+            <part node="spike02" startTime="0.333" endTime="0.5"  startRot="-128.139 0.0 0.0" endRot="-195.897 0.0 0.0" />
+            <part node="spike02" startTime="0.5" endTime="0.667"  startRot="-195.897 0.0 0.0" endRot="-250.808 0.0 0.0" />
+            <part node="spike02" startTime="0.667" endTime="0.833"  startRot="-250.808 0.0 0.0" endRot="-187.579 0.0 0.0" />
+            <part node="spike02" startTime="0.833" endTime="1.0"  startRot="-187.579 0.0 0.0" endRot="-109.955 0.0 0.0" />
+            <part node="spike02Part01" startTime="0.0" endTime="0.167"  startRot="90.0 -17.357 -90.002" endRot="90.0 -14.651 -90.002" />
+            <part node="spike02Part01" startTime="0.167" endTime="0.333"  startRot="90.0 -14.651 -90.002" endRot="90.0 3.856 -90.002" />
+            <part node="spike02Part01" startTime="0.333" endTime="0.5"  startRot="90.0 3.856 -90.002" endRot="90.0 62.21 -90.001" />
+            <part node="spike02Part01" startTime="0.5" endTime="0.667"  startRot="90.0 62.21 -90.001" endRot="90.007 88.575 -89.995" />
+            <part node="spike02Part01" startTime="0.667" endTime="0.833"  startRot="90.007 88.575 -89.995" endRot="90.005 58.458 -89.996" />
+            <part node="spike02Part01" startTime="0.833" endTime="1.0"  startRot="90.005 58.458 -89.996" endRot="90.0 -17.357 -90.002" />
+            <part node="spike02Part02" startTime="0.0" endTime="0.167"  startRot="0.0 0.0 12.432" endRot="0.0 0.0 9.846" />
+            <part node="spike02Part02" startTime="0.167" endTime="0.333"  startRot="0.0 0.0 9.846" endRot="0.0 0.0 9.212" />
+            <part node="spike02Part02" startTime="0.333" endTime="0.5"  startRot="0.0 0.0 9.212" endRot="0.0 0.0 -29.983" />
+            <part node="spike02Part02" startTime="0.5" endTime="0.667"  startRot="0.0 0.0 -29.983" endRot="0.0 0.0 -75.607" />
+            <part node="spike02Part02" startTime="0.667" endTime="0.833"  startRot="0.0 0.0 -75.607" endRot="0.0 0.0 -23.833" />
+            <part node="spike02Part02" startTime="0.833" endTime="1.0"  startRot="0.0 0.0 -23.833" endRot="0.0 0.0 12.432" />
+            <part node="spike03" startTime="0.0" endTime="0.167"  startRot="-48.311 0.0 0.0" endRot="-68.71 0.0 0.0" />
+            <part node="spike03" startTime="0.167" endTime="0.333"  startRot="-68.71 0.0 0.0" endRot="-132.959 0.0 0.0" />
+            <part node="spike03" startTime="0.333" endTime="0.5"  startRot="-132.959 0.0 0.0" endRot="-187.379 0.0 0.0" />
+            <part node="spike03" startTime="0.5" endTime="0.667"  startRot="-187.379 0.0 0.0" endRot="-122.172 0.0 0.0" />
+            <part node="spike03" startTime="0.667" endTime="0.833"  startRot="-122.172 0.0 0.0" endRot="-47.538 0.0 0.0" />
+            <part node="spike03" startTime="0.833" endTime="1.0"  startRot="-47.538 0.0 0.0" endRot="-48.311 0.0 0.0" />
+            <part node="spike03Part01" startTime="0.0" endTime="0.167"  startRot="90.002 -17.714 -90.001" endRot="90.001 5.995 -90.0" />
+            <part node="spike03Part01" startTime="0.167" endTime="0.333"  startRot="90.001 5.995 -90.0" endRot="90.003 59.575 -89.998" />
+            <part node="spike03Part01" startTime="0.333" endTime="0.5"  startRot="90.003 59.575 -89.998" endRot="90.023 85.126 -89.977" />
+            <part node="spike03Part01" startTime="0.5" endTime="0.667"  startRot="90.023 85.126 -89.977" endRot="90.018 55.082 -89.983" />
+            <part node="spike03Part01" startTime="0.667" endTime="0.833"  startRot="90.018 55.082 -89.983" endRot="90.01 -17.325 -89.998" />
+            <part node="spike03Part01" startTime="0.833" endTime="1.0"  startRot="90.01 -17.325 -89.998" endRot="90.002 -17.714 -90.001" />
+            <part node="spike03Part02" startTime="0.0" endTime="0.167"  startRot="-0.0 0.0 13.478" endRot="-0.0 0.0 10.015" />
+            <part node="spike03Part02" startTime="0.167" endTime="0.333"  startRot="-0.0 0.0 10.015" endRot="-0.0 -0.0 -30.958" />
+            <part node="spike03Part02" startTime="0.333" endTime="0.5"  startRot="-0.0 -0.0 -30.958" endRot="-0.0 0.0 -76.681" />
+            <part node="spike03Part02" startTime="0.5" endTime="0.667"  startRot="-0.0 0.0 -76.681" endRot="-0.0 0.0 -21.507" />
+            <part node="spike03Part02" startTime="0.667" endTime="0.833"  startRot="-0.0 0.0 -21.507" endRot="-0.0 0.0 14.832" />
+            <part node="spike03Part02" startTime="0.833" endTime="1.0"  startRot="-0.0 0.0 14.832" endRot="-0.0 0.0 13.478" />
+            <part node="spike04" startTime="0.0" endTime="0.167"  startRot="-8.972 0.0 0.0" endRot="-75.989 0.0 0.0" />
+            <part node="spike04" startTime="0.167" endTime="0.333"  startRot="-75.989 0.0 0.0" endRot="-130.362 0.0 0.0" />
+            <part node="spike04" startTime="0.333" endTime="0.5"  startRot="-130.362 0.0 0.0" endRot="-66.972 0.0 0.0" />
+            <part node="spike04" startTime="0.5" endTime="0.667"  startRot="-66.972 0.0 0.0" endRot="11.049 0.0 0.0" />
+            <part node="spike04" startTime="0.667" endTime="0.833"  startRot="11.049 0.0 0.0" endRot="9.101 0.0 0.0" />
+            <part node="spike04" startTime="0.833" endTime="1.0"  startRot="9.101 0.0 0.0" endRot="-8.972 0.0 0.0" />
+            <part node="spike04Part01" startTime="0.0" endTime="0.167"  startRot="90.001 7.791 -89.999" endRot="90.003 63.315 -89.997" />
+            <part node="spike04Part01" startTime="0.167" endTime="0.333"  startRot="90.003 63.315 -89.997" endRot="90.1 89.057 -89.899" />
+            <part node="spike04Part01" startTime="0.333" endTime="0.5"  startRot="90.1 89.057 -89.899" endRot="90.054 59.737 -89.948" />
+            <part node="spike04Part01" startTime="0.5" endTime="0.667"  startRot="90.054 59.737 -89.948" endRot="90.028 -16.105 -89.997" />
+            <part node="spike04Part01" startTime="0.667" endTime="0.833"  startRot="90.028 -16.105 -89.997" endRot="90.015 -14.179 -90.001" />
+            <part node="spike04Part01" startTime="0.833" endTime="1.0"  startRot="90.015 -14.179 -90.001" endRot="90.001 7.791 -89.999" />
+            <part node="spike04Part02" startTime="0.0" endTime="0.167"  startRot="0.0 0.0 12.326" endRot="0.0 0.0 -31.492" />
+            <part node="spike04Part02" startTime="0.167" endTime="0.333"  startRot="0.0 0.0 -31.492" endRot="0.0 0.0 -75.402" />
+            <part node="spike04Part02" startTime="0.333" endTime="0.5"  startRot="0.0 0.0 -75.402" endRot="0.0 0.0 -24.461" />
+            <part node="spike04Part02" startTime="0.5" endTime="0.667"  startRot="0.0 0.0 -24.461" endRot="0.0 0.0 17.062" />
+            <part node="spike04Part02" startTime="0.667" endTime="0.833"  startRot="0.0 0.0 17.062" endRot="0.0 0.0 15.66" />
+            <part node="spike04Part02" startTime="0.833" endTime="1.0"  startRot="0.0 0.0 15.66" endRot="0.0 0.0 12.326" />
+            <part node="spike05" startTime="0.0" endTime="0.167"  startRot="-15.875 0.0 0.0" endRot="-70.911 0.0 0.0" />
+            <part node="spike05" startTime="0.167" endTime="0.333"  startRot="-70.911 0.0 0.0" endRot="-4.632 0.0 0.0" />
+            <part node="spike05" startTime="0.333" endTime="0.5"  startRot="-4.632 0.0 0.0" endRot="70.589 0.0 0.0" />
+            <part node="spike05" startTime="0.5" endTime="0.667"  startRot="70.589 0.0 0.0" endRot="67.283 0.0 0.0" />
+            <part node="spike05" startTime="0.667" endTime="0.833"  startRot="67.283 0.0 0.0" endRot="49.62 0.0 0.0" />
+            <part node="spike05" startTime="0.833" endTime="1.0"  startRot="49.62 0.0 0.0" endRot="-15.875 0.0 0.0" />
+            <part node="spike05Part01" startTime="0.0" endTime="0.167"  startRot="90.003 63.532 -89.996" endRot="90.165 89.545 -89.834" />
+            <part node="spike05Part01" startTime="0.167" endTime="0.333"  startRot="90.165 89.545 -89.834" endRot="90.026 59.486 -89.976" />
+            <part node="spike05Part01" startTime="0.333" endTime="0.5"  startRot="90.026 59.486 -89.976" endRot="90.01 -14.536 -90.001" />
+            <part node="spike05Part01" startTime="0.5" endTime="0.667"  startRot="90.01 -14.536 -90.001" endRot="90.008 -12.347 -90.003" />
+            <part node="spike05Part01" startTime="0.667" endTime="0.833"  startRot="90.008 -12.347 -90.003" endRot="90.005 9.13 -90.001" />
+            <part node="spike05Part01" startTime="0.833" endTime="1.0"  startRot="90.005 9.13 -90.001" endRot="90.003 63.532 -89.996" />
+            <part node="spike05Part02" startTime="0.0" endTime="0.167"  startRot="-0.0 -0.0 -32.662" endRot="-0.0 -0.0 -76.595" />
+            <part node="spike05Part02" startTime="0.167" endTime="0.333"  startRot="-0.0 -0.0 -76.595" endRot="-0.0 -0.0 -21.931" />
+            <part node="spike05Part02" startTime="0.333" endTime="0.5"  startRot="-0.0 -0.0 -21.931" endRot="-0.0 0.0 18.793" />
+            <part node="spike05Part02" startTime="0.5" endTime="0.667"  startRot="-0.0 0.0 18.793" endRot="-0.0 0.0 15.616" />
+            <part node="spike05Part02" startTime="0.667" endTime="0.833"  startRot="-0.0 0.0 15.616" endRot="-0.0 -0.0 12.048" />
+            <part node="spike05Part02" startTime="0.833" endTime="1.0"  startRot="-0.0 -0.0 12.048" endRot="-0.0 -0.0 -32.662" />
+            <part node="spike06" startTime="0.0" endTime="0.167"  startRot="-11.715 0.0 0.0" endRot="53.587 0.0 0.0" />
+            <part node="spike06" startTime="0.167" endTime="0.333"  startRot="53.587 0.0 0.0" endRot="125.815 0.0 0.0" />
+            <part node="spike06" startTime="0.333" endTime="0.5"  startRot="125.815 0.0 0.0" endRot="126.088 0.0 0.0" />
+            <part node="spike06" startTime="0.5" endTime="0.667"  startRot="126.088 0.0 0.0" endRot="111.146 0.0 0.0" />
+            <part node="spike06" startTime="0.667" endTime="0.833"  startRot="111.146 0.0 0.0" endRot="43.99 0.0 0.0" />
+            <part node="spike06" startTime="0.833" endTime="1.0"  startRot="43.99 0.0 0.0" endRot="-11.715 0.0 0.0" />
+            <part node="spike06Part01" startTime="0.0" endTime="0.167"  startRot="-92.209 89.963 87.792" endRot="-89.997 119.514 90.003" />
+            <part node="spike06Part01" startTime="0.167" endTime="0.333"  startRot="-89.997 119.514 90.003" endRot="-90.179 190.241 89.995" />
+            <part node="spike06Part01" startTime="0.333" endTime="0.5"  startRot="-90.179 190.241 89.995" endRot="-90.675 190.493 89.743" />
+            <part node="spike06Part01" startTime="0.5" endTime="0.667"  startRot="-90.675 190.493 89.743" endRot="-91.104 171.483 89.393" />
+            <part node="spike06Part01" startTime="0.667" endTime="0.833"  startRot="-91.104 171.483 89.393" endRot="-92.477 115.865 87.618" />
+            <part node="spike06Part01" startTime="0.833" endTime="1.0"  startRot="-92.477 115.865 87.618" endRot="-92.209 89.963 87.792" />
+            <part node="spike06Part02" startTime="0.0" endTime="0.167"  startRot="0.0 -0.0 -77.526" endRot="-0.0 -0.0 -23.893" />
+            <part node="spike06Part02" startTime="0.167" endTime="0.333"  startRot="-0.0 -0.0 -23.893" endRot="0.0 -0.0 16.798" />
+            <part node="spike06Part02" startTime="0.333" endTime="0.5"  startRot="0.0 -0.0 16.798" endRot="0.0 -0.0 16.973" />
+            <part node="spike06Part02" startTime="0.5" endTime="0.667"  startRot="0.0 -0.0 16.973" endRot="0.0 -0.0 13.959" />
+            <part node="spike06Part02" startTime="0.667" endTime="0.833"  startRot="0.0 -0.0 13.959" endRot="0.0 -0.0 -32.796" />
+            <part node="spike06Part02" startTime="0.833" endTime="1.0"  startRot="0.0 -0.0 -32.796" endRot="0.0 -0.0 -77.526" />
+            <part node="spike07" startTime="0.0" endTime="0.167"  startRot="-86.977 0.0 0.0" endRot="-98.294 0.0 0.0" />
+            <part node="spike07" startTime="0.167" endTime="0.333"  startRot="-98.294 0.0 0.0" endRot="-138.197 0.0 0.0" />
+            <part node="spike07" startTime="0.333" endTime="0.5"  startRot="-138.197 0.0 0.0" endRot="-229.116 0.0 0.0" />
+            <part node="spike07" startTime="0.5" endTime="0.667"  startRot="-229.116 0.0 0.0" endRot="-213.353 0.0 0.0" />
+            <part node="spike07" startTime="0.667" endTime="0.833"  startRot="-213.353 0.0 0.0" endRot="-116.148 0.0 0.0" />
+            <part node="spike07" startTime="0.833" endTime="1.0"  startRot="-116.148 0.0 0.0" endRot="-86.977 0.0 0.0" />
+            <part node="spike07Part01" startTime="0.0" endTime="0.167"  startRot="90.002 -18.393 -90.001" endRot="90.002 -0.672 -90.001" />
+            <part node="spike07Part01" startTime="0.167" endTime="0.333"  startRot="90.002 -0.672 -90.001" endRot="90.002 43.671 -89.999" />
+            <part node="spike07Part01" startTime="0.333" endTime="0.5"  startRot="90.002 43.671 -89.999" endRot="89.957 92.328 -90.043" />
+            <part node="spike07Part01" startTime="0.5" endTime="0.667"  startRot="89.957 92.328 -90.043" endRot="89.62 87.606 -90.386" />
+            <part node="spike07Part01" startTime="0.667" endTime="0.833"  startRot="89.62 87.606 -90.386" endRot="89.832 22.147 -90.149" />
+            <part node="spike07Part01" startTime="0.833" endTime="1.0"  startRot="89.832 22.147 -90.149" endRot="90.002 -18.393 -90.001" />
+            <part node="spike07Part02" startTime="0.0" endTime="0.167"  startRot="-0.0 0.0 17.316" endRot="-0.0 0.0 15.612" />
+            <part node="spike07Part02" startTime="0.167" endTime="0.333"  startRot="-0.0 0.0 15.612" endRot="-0.0 0.0 -2.042" />
+            <part node="spike07Part02" startTime="0.333" endTime="0.5"  startRot="-0.0 0.0 -2.042" endRot="-0.0 0.0 -79.003" />
+            <part node="spike07Part02" startTime="0.5" endTime="0.667"  startRot="-0.0 0.0 -79.003" endRot="-0.0 -0.0 -62.436" />
+            <part node="spike07Part02" startTime="0.667" endTime="0.833"  startRot="-0.0 -0.0 -62.436" endRot="-0.0 0.0 9.197" />
+            <part node="spike07Part02" startTime="0.833" endTime="1.0"  startRot="-0.0 0.0 9.197" endRot="-0.0 0.0 17.316" />
+            <part node="spike08" startTime="0.0" endTime="0.167"  startRot="179.273 0.0 0.0" endRot="213.614 0.0 0.0" />
+            <part node="spike08" startTime="0.167" endTime="0.333"  startRot="213.614 0.0 0.0" endRot="196.204 0.0 0.0" />
+            <part node="spike08" startTime="0.333" endTime="0.5"  startRot="196.204 0.0 0.0" endRot="158.969 0.0 0.0" />
+            <part node="spike08" startTime="0.5" endTime="0.667"  startRot="158.969 0.0 0.0" endRot="73.21 0.0 0.0" />
+            <part node="spike08" startTime="0.667" endTime="0.833"  startRot="73.21 0.0 0.0" endRot="81.043 0.0 0.0" />
+            <part node="spike08" startTime="0.833" endTime="1.0"  startRot="81.043 0.0 0.0" endRot="179.273 0.0 0.0" />
+            <part node="spike08Part01" startTime="0.0" endTime="0.167"  startRot="90.0 25.874 -90.002" endRot="90.0 -21.556 -90.001" />
+            <part node="spike08Part01" startTime="0.167" endTime="0.333"  startRot="90.0 -21.556 -90.001" endRot="90.0 3.945 -90.002" />
+            <part node="spike08Part01" startTime="0.333" endTime="0.5"  startRot="90.0 3.945 -90.002" endRot="89.999 46.175 -90.002" />
+            <part node="spike08Part01" startTime="0.5" endTime="0.667"  startRot="89.999 46.175 -90.002" endRot="90.009 93.086 -89.993" />
+            <part node="spike08Part01" startTime="0.667" endTime="0.833"  startRot="90.009 93.086 -89.993" endRot="89.95 92.357 -90.051" />
+            <part node="spike08Part01" startTime="0.833" endTime="1.0"  startRot="89.95 92.357 -90.051" endRot="90.0 25.874 -90.002" />
+            <part node="spike08Part02" startTime="0.0" endTime="0.167"  startRot="0.0 0.0 8.322" endRot="0.0 0.0 15.692" />
+            <part node="spike08Part02" startTime="0.167" endTime="0.333"  startRot="0.0 0.0 15.692" endRot="0.0 0.0 14.072" />
+            <part node="spike08Part02" startTime="0.333" endTime="0.5"  startRot="0.0 0.0 14.072" endRot="0.0 0.0 -1.789" />
+            <part node="spike08Part02" startTime="0.5" endTime="0.667"  startRot="0.0 0.0 -1.789" endRot="0.0 0.0 -74.126" />
+            <part node="spike08Part02" startTime="0.667" endTime="0.833"  startRot="0.0 0.0 -74.126" endRot="0.0 0.0 -62.593" />
+            <part node="spike08Part02" startTime="0.833" endTime="1.0"  startRot="0.0 0.0 -62.593" endRot="0.0 0.0 8.322" />
+            <part node="spike09" startTime="0.0" endTime="0.167"  startRot="27.015 0.0 0.0" endRot="119.624 0.0 0.0" />
+            <part node="spike09" startTime="0.167" endTime="0.333"  startRot="119.624 0.0 0.0" endRot="151.748 0.0 0.0" />
+            <part node="spike09" startTime="0.333" endTime="0.5"  startRot="151.748 0.0 0.0" endRot="139.77 0.0 0.0" />
+            <part node="spike09" startTime="0.5" endTime="0.667"  startRot="139.77 0.0 0.0" endRot="104.086 0.0 0.0" />
+            <part node="spike09" startTime="0.667" endTime="0.833"  startRot="104.086 0.0 0.0" endRot="16.77 0.0 0.0" />
+            <part node="spike09" startTime="0.833" endTime="1.0"  startRot="16.77 0.0 0.0" endRot="27.015 0.0 0.0" />
+            <part node="spike09Part01" startTime="0.0" endTime="0.167"  startRot="90.005 86.635 -89.993" endRot="90.0 27.534 -89.998" />
+            <part node="spike09Part01" startTime="0.167" endTime="0.333"  startRot="90.0 27.534 -89.998" endRot="90.001 -15.788 -89.998" />
+            <part node="spike09Part01" startTime="0.333" endTime="0.5"  startRot="90.001 -15.788 -89.998" endRot="90.002 2.258 -89.997" />
+            <part node="spike09Part01" startTime="0.5" endTime="0.667"  startRot="90.002 2.258 -89.997" endRot="90.004 42.583 -89.995" />
+            <part node="spike09Part01" startTime="0.667" endTime="0.833"  startRot="90.004 42.583 -89.995" endRot="90.057 88.152 -89.941" />
+            <part node="spike09Part01" startTime="0.833" endTime="1.0"  startRot="90.057 88.152 -89.941" endRot="90.005 86.635 -89.993" />
+            <part node="spike09Part02" startTime="0.0" endTime="0.167"  startRot="-0.0 -0.0 -64.381" endRot="0.0 -0.0 7.604" />
+            <part node="spike09Part02" startTime="0.167" endTime="0.333"  startRot="0.0 -0.0 7.604" endRot="0.0 -0.0 19.537" />
+            <part node="spike09Part02" startTime="0.333" endTime="0.5"  startRot="0.0 -0.0 19.537" endRot="0.0 -0.0 16.021" />
+            <part node="spike09Part02" startTime="0.5" endTime="0.667"  startRot="0.0 -0.0 16.021" endRot="-0.001 -0.0 -0.818" />
+            <part node="spike09Part02" startTime="0.667" endTime="0.833"  startRot="-0.001 -0.0 -0.818" endRot="-0.0 -0.0 -78.556" />
+            <part node="spike09Part02" startTime="0.833" endTime="1.0"  startRot="-0.0 -0.0 -78.556" endRot="-0.0 -0.0 -64.381" />
+            <part node="spike10" startTime="0.0" endTime="0.167"  startRot="-41.78 0.0 0.0" endRot="-31.162 0.0 0.0" />
+            <part node="spike10" startTime="0.167" endTime="0.333"  startRot="-31.162 0.0 0.0" endRot="68.017 0.0 0.0" />
+            <part node="spike10" startTime="0.333" endTime="0.5"  startRot="68.017 0.0 0.0" endRot="96.136 0.0 0.0" />
+            <part node="spike10" startTime="0.5" endTime="0.667"  startRot="96.136 0.0 0.0" endRot="85.633 0.0 0.0" />
+            <part node="spike10" startTime="0.667" endTime="0.833"  startRot="85.633 0.0 0.0" endRot="48.803 0.0 0.0" />
+            <part node="spike10" startTime="0.833" endTime="1.0"  startRot="48.803 0.0 0.0" endRot="-41.78 0.0 0.0" />
+            <part node="spike10Part01" startTime="0.0" endTime="0.167"  startRot="90.01 85.637 -89.988" endRot="90.007 83.747 -89.991" />
+            <part node="spike10Part01" startTime="0.167" endTime="0.333"  startRot="90.007 83.747 -89.991" endRot="90.001 18.174 -89.998" />
+            <part node="spike10Part01" startTime="0.333" endTime="0.5"  startRot="90.001 18.174 -89.998" endRot="90.003 -21.639 -89.999" />
+            <part node="spike10Part01" startTime="0.5" endTime="0.667"  startRot="90.003 -21.639 -89.999" endRot="90.005 -4.187 -89.997" />
+            <part node="spike10Part01" startTime="0.667" endTime="0.833"  startRot="90.005 -4.187 -89.997" endRot="90.007 37.54 -89.993" />
+            <part node="spike10Part01" startTime="0.833" endTime="1.0"  startRot="90.007 37.54 -89.993" endRot="90.01 85.637 -89.988" />
+            <part node="spike10Part02" startTime="0.0" endTime="0.167"  startRot="0.0 -0.0 -79.39" endRot="0.0 -0.0 -66.665" />
+            <part node="spike10Part02" startTime="0.167" endTime="0.333"  startRot="0.0 -0.0 -66.665" endRot="0.0 -0.0 8.859" />
+            <part node="spike10Part02" startTime="0.333" endTime="0.5"  startRot="0.0 -0.0 8.859" endRot="-0.0 -0.0 17.105" />
+            <part node="spike10Part02" startTime="0.5" endTime="0.667"  startRot="-0.0 -0.0 17.105" endRot="-0.0 -0.0 15.84" />
+            <part node="spike10Part02" startTime="0.667" endTime="0.833"  startRot="-0.0 -0.0 15.84" endRot="0.0 -0.0 -1.551" />
+            <part node="spike10Part02" startTime="0.833" endTime="1.0"  startRot="0.0 -0.0 -1.551" endRot="0.0 -0.0 -79.39" />
+            <part node="spike11" startTime="0.0" endTime="0.167"  startRot="-15.73 0.0 0.0" endRot="-106.049 0.0 0.0" />
+            <part node="spike11" startTime="0.167" endTime="0.333"  startRot="-106.049 0.0 0.0" endRot="-93.51 0.0 0.0" />
+            <part node="spike11" startTime="0.333" endTime="0.5"  startRot="-93.51 0.0 0.0" endRot="5.267 0.0 0.0" />
+            <part node="spike11" startTime="0.5" endTime="0.667"  startRot="5.267 0.0 0.0" endRot="33.829 0.0 0.0" />
+            <part node="spike11" startTime="0.667" endTime="0.833"  startRot="33.829 0.0 0.0" endRot="20.719 0.0 0.0" />
+            <part node="spike11" startTime="0.833" endTime="1.0"  startRot="20.719 0.0 0.0" endRot="-15.73 0.0 0.0" />
+            <part node="spike11Part01" startTime="0.0" endTime="0.167"  startRot="90.002 42.117 -89.998" endRot="89.586 90.158 -90.413" />
+            <part node="spike11Part01" startTime="0.167" endTime="0.333"  startRot="89.586 90.158 -90.413" endRot="88.905 87.153 -91.097" />
+            <part node="spike11Part01" startTime="0.333" endTime="0.5"  startRot="88.905 87.153 -91.097" endRot="89.784 22.333 -90.108" />
+            <part node="spike11Part01" startTime="0.5" endTime="0.667"  startRot="89.784 22.333 -90.108" endRot="89.867 -19.084 -89.959" />
+            <part node="spike11Part01" startTime="0.667" endTime="0.833"  startRot="89.867 -19.084 -89.959" endRot="89.936 0.923 -89.966" />
+            <part node="spike11Part01" startTime="0.833" endTime="1.0"  startRot="89.936 0.923 -89.966" endRot="90.002 42.117 -89.998" />
+            <part node="spike11Part02" startTime="0.0" endTime="0.167"  startRot="0.0 0.0 -1.496" endRot="0.0 0.0 -78.931" />
+            <part node="spike11Part02" startTime="0.167" endTime="0.333"  startRot="0.0 0.0 -78.931" endRot="0.0 0.0 -65.084" />
+            <part node="spike11Part02" startTime="0.333" endTime="0.5"  startRot="0.0 0.0 -65.084" endRot="0.0 -0.0 10.355" />
+            <part node="spike11Part02" startTime="0.5" endTime="0.667"  startRot="0.0 -0.0 10.355" endRot="0.0 -0.0 18.004" />
+            <part node="spike11Part02" startTime="0.667" endTime="0.833"  startRot="0.0 -0.0 18.004" endRot="0.0 -0.0 15.549" />
+            <part node="spike11Part02" startTime="0.833" endTime="1.0"  startRot="0.0 -0.0 15.549" endRot="0.0 0.0 -1.496" />
+            <part node="spike12" startTime="0.0" endTime="0.167"  startRot="-39.968 0.0 0.0" endRot="-77.561 0.0 0.0" />
+            <part node="spike12" startTime="0.167" endTime="0.333"  startRot="-77.561 0.0 0.0" endRot="-167.073 0.0 0.0" />
+            <part node="spike12" startTime="0.333" endTime="0.5"  startRot="-167.073 0.0 0.0" endRot="-155.686 0.0 0.0" />
+            <part node="spike12" startTime="0.5" endTime="0.667"  startRot="-155.686 0.0 0.0" endRot="-56.88 0.0 0.0" />
+            <part node="spike12" startTime="0.667" endTime="0.833"  startRot="-56.88 0.0 0.0" endRot="-28.72 0.0 0.0" />
+            <part node="spike12" startTime="0.833" endTime="1.0"  startRot="-28.72 0.0 0.0" endRot="-39.968 0.0 0.0" />
+            <part node="spike12Part01" startTime="0.0" endTime="0.167"  startRot="90.001 1.748 -89.999" endRot="90.002 44.597 -89.998" />
+            <part node="spike12Part01" startTime="0.167" endTime="0.333"  startRot="90.002 44.597 -89.998" endRot="89.955 91.867 -90.044" />
+            <part node="spike12Part01" startTime="0.333" endTime="0.5"  startRot="89.955 91.867 -90.044" endRot="89.048 89.29 -90.953" />
+            <part node="spike12Part01" startTime="0.5" endTime="0.667"  startRot="89.048 89.29 -90.953" endRot="89.652 24.635 -90.23" />
+            <part node="spike12Part01" startTime="0.667" endTime="0.833"  startRot="89.652 24.635 -90.23" endRot="89.825 -15.346 -90.029" />
+            <part node="spike12Part01" startTime="0.833" endTime="1.0"  startRot="89.825 -15.346 -90.029" endRot="90.001 1.748 -89.999" />
+            <part node="spike12Part02" startTime="0.0" endTime="0.167"  startRot="0.0 0.0 16.004" endRot="0.0 0.0 -0.31" />
+            <part node="spike12Part02" startTime="0.167" endTime="0.333"  startRot="0.0 0.0 -0.31" endRot="0.0 0.0 -78.141" />
+            <part node="spike12Part02" startTime="0.333" endTime="0.5"  startRot="0.0 0.0 -78.141" endRot="0.0 0.0 -64.017" />
+            <part node="spike12Part02" startTime="0.5" endTime="0.667"  startRot="0.0 0.0 -64.017" endRot="0.0 0.0 10.904" />
+            <part node="spike12Part02" startTime="0.667" endTime="0.833"  startRot="0.0 0.0 10.904" endRot="0.0 0.0 17.965" />
+            <part node="spike12Part02" startTime="0.833" endTime="1.0"  startRot="0.0 0.0 17.965" endRot="0.0 0.0 16.004" />
+        </animation>
+        <animation name="lowerAnimation">
+            <part node="wheelArm" startTime="0" endTime="1.5" startRot="-20 0 0" endRot="-20 0 0" />
+            <part node="drum02Arm" startTime="0" endTime="1.5" startRot="-22.674 0 0" endRot="-22.674 0 0" startTrans="0 -0.047 -0.159" endTrans="0 -0.047 -0.159" />
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="reelMover" playSound="true" >
+                <controls axis="AXIS_CUTTER_REEL" invertAxis="false" mouseSpeedFactor="0.25" iconName="REEL_TRANSLATE_X" />
+                <translation transSpeed="0.2" transAcceleration="50" transMax="0" transMin="-0.25" translationAxis="3" startTrans="0"/>
+                <dependentPart node="sensor03" />
+            </movingTool>
+            <movingTool node="reelArm" playSound="true" >
+                <controls axis="AXIS_CUTTER_REEL2" invertAxis="true" mouseSpeedFactor="0.5" iconName="REEL_TRANSLATE_Y" />
+                <rotation rotSpeed="10" rotAcceleration="50" rotMax="1" rotMin="-20" startRot="-10"/>
+                <dependentPart node="hydraulicReel" />
+                <dependentPart node="sensor01" />
+            </movingTool>
+            <movingTool node="wheelArm" wheelIndices="1 2">
+              <dependentPart node="wheelArmHydraulic" />
+              <dependentPart node="wheelArmLeftPart" />
+              <dependentPart node="wheelArmRightPart" />
+            </movingTool>
+            <movingTool node="drum02Arm" playSound="true">
+                <dependentPart node="drum02ArmPart" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="hydraulicReel" referencePoint="hydraulicReelRef" referenceFrame="hydraulicReelRef" >
+                <translatingPart node="hydraulicReelPunch" />
+            </movingPart>
+            <movingPart node="wheelArmHydraulic" referencePoint="wheelArmHydraulicRef" referenceFrame="wheelArmHydraulicRef" >
+                <translatingPart node="wheelArmHydraulicPunch" />
+            </movingPart>
+            <movingPart node="wheelArmLeftPart" referencePoint="wheelArmLeftPartRef" referenceFrame="wheelArmLeftPartRef">
+                <translatingPart node="wheelArmLeftPartPunch" />
+            </movingPart>
+            <movingPart node="wheelArmRightPart" referencePoint="wheelArmRightPartRef" referenceFrame="wheelArmRightPartRef">
+                <translatingPart node="wheelArmRightPartPunch" />
+            </movingPart>
+            <movingPart node="drum02ArmPart" referencePoint="drum02ArmPartRef" referenceFrame="drum02ArmPartRef"/>
+
+            <movingPart node="sensor03" localReferencePoint="sensor04" referencePoint="sensor04Ref" referenceFrame="sensor03RefFrame">
+                <dependentPart node="sensor04" />
+            </movingPart>
+            <movingPart node="sensor04" referencePoint="sensor04Ref" referenceFrame="sensor04Ref"/>
+
+            <movingPart node="sensor01" localReferencePoint="sensor02" referencePoint="sensor02Ref" referenceFrame="sensor01RefFrame">
+                <dependentPart node="sensor02" />
+            </movingPart>
+            <movingPart node="sensor02" referencePoint="sensor02Ref" referenceFrame="sensor02Ref"/>
+        </movingParts>
+    </cylindered>
+
+    <cutter fruitTypeCategories="grainHeader">
+        <effect>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER" linkNode="cutterEffectLinkNode">
+                <motionPathEffect textureFilename="$data/effects/cutter/arrays/grainheader/beltXArray.dds" numRows="32" rowLength="42" minFade="0.06" textureRealWidth="16" speedScale="0.18"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
+        </effect>
+
+        <fruitExtraObjects>
+             <fruitExtraObject fruitType="canola" node="canolaExtension"/>
+             <fruitExtraObject fruitType="wheat" node="grainExtension" isDefault="true"/>
+             <fruitExtraObject fruitType="barley" node="grainExtension"/>
+             <fruitExtraObject fruitType="soybean" node="grainExtension"/>
+             <fruitExtraObject fruitType="oat" node="grainExtension"/>
+             <fruitExtraObject fruitType="sorghum" node="grainExtension"/>
+         </fruitExtraObjects>
+
+        <animationNodes>
+            <animationNode node="drum01" rotAxis="1" rotSpeed="700"  turnOnFadeTime="2" turnOffFadeTime="3"/>
+            <animationNode node="drum02" rotAxis="1" rotSpeed="700"  turnOnFadeTime="2" turnOffFadeTime="3"/>
+            <animationNode node="belt"  rotSpeed="-56"  rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="2" shaderComponentScale="0 1 0 0" shaderParameterName="offsetUV" />
+        </animationNodes>
+
+        <spikedDrums>
+            <spikedDrum node="drum01" spline="drum01SpikeSpline">
+                <spike node="drum01Spike01"/>
+                <spike node="drum01Spike02"/>
+                <spike node="drum01Spike03"/>
+                <spike node="drum01Spike04"/>
+                <spike node="drum01Spike05"/>
+                <spike node="drum01Spike06"/>
+                <spike node="drum01Spike07"/>
+                <spike node="drum01Spike08"/>
+            </spikedDrum>
+        </spikedDrums>
+
+        <automaticTilt raycastNode1="heightNode01" raycastNode2="heightNode03"/>
+        <sounds>
+            <cut template="cropCutting" />
+        </sounds>
+    </cutter>
+
+    <turnOnVehicle turnedOnByAttacherVehicle="true">
+        <turnedOnAnimation name="reelAnimation" speedScale="0.7" turnOnFadeTime="2" turnOffFadeTime="3"/>
+        <turnedOnAnimation name="knifeAnimation" speedScale="6" turnOnFadeTime="2" turnOffFadeTime="2"/>
+        <turnedOnAnimation name="turnedOnAnimation_bottomBlades" speedScale="8" turnOnFadeTime="2" turnOffFadeTime="3"/>
+        <sounds>
+            <start template="HARVESTER_TOOL_START" volumeScale="1.5" />
+            <work  template="HARVESTER_TOOL_WORK"  volumeScale="1.5" />
+            <stop  template="HARVESTER_TOOL_STOP"  volumeScale="1.5" />
+        </sounds>
+    </turnOnVehicle>
+
+    <dynamicMount forceLimitScale="1" />
+
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack" />
+        <sizeMarkers leftNode="sizeMarkerLeft" rightNode="sizeMarkerRight" backNode="sizeMarkerBack" />
+        <collisionTrigger node="aiCollisionNode" width="14.6" height="2.2"/>
+        <agentAttachment width="14.7" height="2.8" length="3.4" lengthOffset="0.1"/>
+    </ai>
+
+    <baseMaterial>
+        <material name="convioFlex1380_vmask_mat" baseNode="convioFlex1380_vis">
+            <shaderParameter name="colorMat0" value="CLAAS_GREEN1"/>
+            <shaderParameter name="colorMat3" value="CLAAS_WHITE1"/>
+        </material>
+    </baseMaterial>
+
+    <foliageBending>
+        <bendingNode minX="-7.2" maxX="7.2" minZ="-1" maxZ="0.5" yOffset="0.3" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="convioFlex1380_main_component1" node="0>" />
+        <i3dMapping id="convioFlex1380_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="heightNode01" node="0>0|0|1|0" />
+        <i3dMapping id="heightNode02" node="0>0|0|1|1" />
+        <i3dMapping id="heightNode03" node="0>0|0|1|2" />
+        <i3dMapping id="ptoInputNode" node="0>0|0|2" />
+        <i3dMapping id="localPTOStart" node="0>0|0|3" />
+        <i3dMapping id="localPTOEnd" node="0>0|0|4" />
+        <i3dMapping id="claasMultiCoupler" node="0>0|0|5" />
+        <i3dMapping id="reelArm" node="0>0|1|0" />
+        <i3dMapping id="reelMover" node="0>0|1|0|0|0" />
+        <i3dMapping id="reel" node="0>0|1|0|0|0|0|0" />
+        <i3dMapping id="spike01" node="0>0|1|0|0|0|0|0|0|0" />
+        <i3dMapping id="spike01Part01" node="0>0|1|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="spike01Part02" node="0>0|1|0|0|0|0|0|0|0|0|0" />
+        <i3dMapping id="spike02" node="0>0|1|0|0|0|0|0|0|1" />
+        <i3dMapping id="spike02Part01" node="0>0|1|0|0|0|0|0|0|1|0" />
+        <i3dMapping id="spike02Part02" node="0>0|1|0|0|0|0|0|0|1|0|0" />
+        <i3dMapping id="spike03" node="0>0|1|0|0|0|0|0|0|2" />
+        <i3dMapping id="spike03Part01" node="0>0|1|0|0|0|0|0|0|2|0" />
+        <i3dMapping id="spike03Part02" node="0>0|1|0|0|0|0|0|0|2|0|0" />
+        <i3dMapping id="spike04" node="0>0|1|0|0|0|0|0|0|3" />
+        <i3dMapping id="spike04Part01" node="0>0|1|0|0|0|0|0|0|3|0" />
+        <i3dMapping id="spike04Part02" node="0>0|1|0|0|0|0|0|0|3|0|0" />
+        <i3dMapping id="spike05" node="0>0|1|0|0|0|0|0|0|4" />
+        <i3dMapping id="spike05Part01" node="0>0|1|0|0|0|0|0|0|4|0" />
+        <i3dMapping id="spike05Part02" node="0>0|1|0|0|0|0|0|0|4|0|0" />
+        <i3dMapping id="spike06" node="0>0|1|0|0|0|0|0|0|5" />
+        <i3dMapping id="spike06Part01" node="0>0|1|0|0|0|0|0|0|5|0" />
+        <i3dMapping id="spike06Part02" node="0>0|1|0|0|0|0|0|0|5|0|0" />
+        <i3dMapping id="spike07" node="0>0|1|0|0|0|0|0|0|6" />
+        <i3dMapping id="spike07Part01" node="0>0|1|0|0|0|0|0|0|6|0" />
+        <i3dMapping id="spike07Part02" node="0>0|1|0|0|0|0|0|0|6|0|0" />
+        <i3dMapping id="spike08" node="0>0|1|0|0|0|0|0|0|7" />
+        <i3dMapping id="spike08Part01" node="0>0|1|0|0|0|0|0|0|7|0" />
+        <i3dMapping id="spike08Part02" node="0>0|1|0|0|0|0|0|0|7|0|0" />
+        <i3dMapping id="spike09" node="0>0|1|0|0|0|0|0|0|8" />
+        <i3dMapping id="spike09Part01" node="0>0|1|0|0|0|0|0|0|8|0" />
+        <i3dMapping id="spike09Part02" node="0>0|1|0|0|0|0|0|0|8|0|0" />
+        <i3dMapping id="spike10" node="0>0|1|0|0|0|0|0|0|9" />
+        <i3dMapping id="spike10Part01" node="0>0|1|0|0|0|0|0|0|9|0" />
+        <i3dMapping id="spike10Part02" node="0>0|1|0|0|0|0|0|0|9|0|0" />
+        <i3dMapping id="spike11" node="0>0|1|0|0|0|0|0|0|10" />
+        <i3dMapping id="spike11Part01" node="0>0|1|0|0|0|0|0|0|10|0" />
+        <i3dMapping id="spike11Part02" node="0>0|1|0|0|0|0|0|0|10|0|0" />
+        <i3dMapping id="spike12" node="0>0|1|0|0|0|0|0|0|11" />
+        <i3dMapping id="spike12Part01" node="0>0|1|0|0|0|0|0|0|11|0" />
+        <i3dMapping id="spike12Part02" node="0>0|1|0|0|0|0|0|0|11|0|0" />
+        <i3dMapping id="sensor04Ref" node="0>0|1|0|0|0|1" />
+        <i3dMapping id="hydraulicReelRef" node="0>0|1|0|1" />
+        <i3dMapping id="sensor03RefFrame" node="0>0|1|0|2" />
+        <i3dMapping id="sensor03" node="0>0|1|0|2|0" />
+        <i3dMapping id="sensor04" node="0>0|1|0|2|0|0" />
+        <i3dMapping id="sensor02Ref" node="0>0|1|0|3" />
+        <i3dMapping id="hydraulicReel" node="0>0|1|1" />
+        <i3dMapping id="hydraulicReelPunch" node="0>0|1|1|0" />
+        <i3dMapping id="drum01" node="0>0|1|2" />
+        <i3dMapping id="drum01Spike01" node="0>0|1|2|0" />
+        <i3dMapping id="drum01Spike02" node="0>0|1|2|1" />
+        <i3dMapping id="drum01Spike03" node="0>0|1|2|2" />
+        <i3dMapping id="drum01Spike04" node="0>0|1|2|3" />
+        <i3dMapping id="drum01Spike05" node="0>0|1|2|4" />
+        <i3dMapping id="drum01Spike06" node="0>0|1|2|5" />
+        <i3dMapping id="drum01Spike07" node="0>0|1|2|6" />
+        <i3dMapping id="drum01Spike08" node="0>0|1|2|7" />
+        <i3dMapping id="drum01SpikeSpline" node="0>0|1|3" />
+        <i3dMapping id="drum02ArmRot" node="0>0|1|4" />
+        <i3dMapping id="drum02Arm" node="0>0|1|4|0" />
+        <i3dMapping id="drum02" node="0>0|1|4|0|0" />
+        <i3dMapping id="drum02ArmPartRef" node="0>0|1|4|0|1" />
+        <i3dMapping id="wheelArm" node="0>0|1|5" />
+        <i3dMapping id="wheelLeft" node="0>0|1|5|0" />
+        <i3dMapping id="wheelRight" node="0>0|1|5|1" />
+        <i3dMapping id="wheelArmHydraulicRef" node="0>0|1|5|2" />
+        <i3dMapping id="wheelArmLeftPartRef" node="0>0|1|5|3" />
+        <i3dMapping id="wheelArmRightPartRef" node="0>0|1|5|4" />
+        <i3dMapping id="wheelArmHydraulic" node="0>0|1|6" />
+        <i3dMapping id="wheelArmHydraulicPunch" node="0>0|1|6|0" />
+        <i3dMapping id="wheelArmLeftPart" node="0>0|1|7" />
+        <i3dMapping id="wheelArmLeftPartPunch" node="0>0|1|7|0" />
+        <i3dMapping id="wheelArmRightPart" node="0>0|1|8" />
+        <i3dMapping id="wheelArmRightPartPunch" node="0>0|1|8|0" />
+        <i3dMapping id="drum02ArmRef" node="0>0|1|9" />
+        <i3dMapping id="drum02ArmPart" node="0>0|1|10" />
+        <i3dMapping id="belt" node="0>0|1|11" />
+        <i3dMapping id="sensor01RefFrame" node="0>0|1|12" />
+        <i3dMapping id="sensor01" node="0>0|1|12|0" />
+        <i3dMapping id="sensor02" node="0>0|1|12|0|0" />
+        <i3dMapping id="knifesDecal" node="0>0|1|13" />
+        <i3dMapping id="workAreaStart" node="0>0|2|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|2|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|2|2" />
+        <i3dMapping id="groundReferenceNode" node="0>0|2|3" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|3|0" />
+        <i3dMapping id="aiMarkerRight" node="0>0|3|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|3|2" />
+        <i3dMapping id="sizeMarkerLeft" node="0>0|3|3" />
+        <i3dMapping id="sizeMarkerRight" node="0>0|3|4" />
+        <i3dMapping id="sizeMarkerBack" node="0>0|3|5" />
+        <i3dMapping id="aiCollisionNode" node="0>0|3|6" />
+        <i3dMapping id="cutterEffectLinkNode" node="0>0|4|0" />
+        <i3dMapping id="smokeEmitter" node="0>0|4|1" />
+        <i3dMapping id="grainExtension" node="0>0|7|0" />
+        <i3dMapping id="canolaExtension" node="0>0|7|1" />
+        <i3dMapping id="canolaKnifeLeft01" node="0>0|7|1|0|0" />
+        <i3dMapping id="canolaKnifeLeft02" node="0>0|7|1|1|0" />
+        <i3dMapping id="canolaKnifeRight01" node="0>0|7|1|2|0" />
+        <i3dMapping id="canolaKnifeRight02" node="0>0|7|1|3|0" />
+    </i3dMappings>
+</vehicle>

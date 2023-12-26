@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>390 Plus</name>
+        <specs>
+            <workingWidth>9.0</workingWidth>
+            <neededPower>750</neededPower>
+            <combination xmlFilename="$data/vehicles/claas/jaguar960TT/jaguar960TT.xml"/>
+            <combination xmlFilename="$data/vehicles/fendt/katana650/katana650.xml"/>
+            <combination xmlFilename="$data/vehicles/johnDeere/series9000/series9000.xml"/>
+            <combination xmlFilename="$data/vehicles/newHolland/fr780/fr780.xml"/>
+            <combination xmlFilename="$data/vehicles/krone/bigX1180/bigX1180.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_cutterForage</function>
+        </functions>
+        <image>$data/vehicles/kemper/plus390/store_plus390.png</image>
+        <price>120000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>KEMPER</brand>
+        <category>forageHarvesterCutters</category>
+        <shopTranslationOffset>0 -0.102 0</shopTranslationOffset>
+        <shopRotationOffset>11.713 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>5867776</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1396480</indexBufferMemoryUsage>
+        <textureMemoryUsage>7929856</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_harvestingHeader</typeDesc>
+        <filename>$data/vehicles/kemper/plus390/plus390.i3d</filename>
+        <size width="4.5" length="3.5" lengthOffset="0.3"/>
+        <speedLimit value="14.5"/>
+        <components>
+            <component centerOfMass="0 0.3 -0.3" solverIterationCount="10" mass="4000"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER"/>
+        <mapHotspot type="CUTTER" />
+    </base>
+
+    <attachable>
+        <inputAttacherJointConfigurations title="$l10n_configuration_inputAttacherJoint">
+            <inputAttacherJointConfiguration name="Claas" price="0" displayBrand="CLAAS">
+                <inputAttacherJoint node="attacherJointClaas" lowerRotLimitScale="0 0 1" jointType="cutterHarvester">
+                    <heightNode node="heightNode01" foldMaxLimit="0.25"/>
+                    <heightNode node="heightNode02" disablingAttacherJointIndices="1"/>
+                    <heightNode node="heightNode03" foldMaxLimit="0.25"/>
+                    <distanceToGround lower="0.10" upper="1.0"/>
+                </inputAttacherJoint>
+
+                <objectChange node="attacherFrameClaas" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="kemperDecalLeft" visibilityActive="true"/>
+                <objectChange node="kemperDecalRight" visibilityActive="true"/>
+                <objectChange node="cnhDecalLeft" visibilityActive="false"/>
+                <objectChange node="cnhDecalRight" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalLeft" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalRight" visibilityActive="false"/>
+                <objectChange node="hosesClaas" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="hosesNewHolland" visibilityActive="false"/>
+                <objectChange node="ptoNewHolland" visibilityActive="false"/>
+
+                <objectChange node="comfortWheelAttacherJointCustomNode" translationActive="0.000 1.026 0.821" rotationActive="90.0 -89.5 -90.0"/>
+
+                <objectChange node="sharedFrameParts" parentNodeActive="claasFrameTilt" />
+
+                <objectChange node="foldingBars" translationActive="0.000 1.434 -0.272" rotationActive="22.493 0 0"/>
+                <objectChange node="hoseArmLeftHydraulicRef" translationActive="0.083 -0.047 -0.371"/>
+                <objectChange node="hoseArmRightHydraulicRef" translationActive="-0.087 -0.047 -0.369"/>
+
+                <objectChange node="supportArmLeftRot" translationActive="1.079 0.424 -0.980" rotationActive="-2.768 13.130 -0.645"/>
+                <objectChange node="supportArmRightRot" translationActive="-1.079 0.427 -0.969" rotationActive="-2.713 -12.228 0.654"/>
+            </inputAttacherJointConfiguration>
+
+            <inputAttacherJointConfiguration name="Krone" price="0" displayBrand="KRONE">
+                <inputAttacherJoint node="attacherJointKrone" lowerRotLimitScale="0 0 1" jointType="cutterHarvester">
+                    <heightNode node="heightNode01" foldMaxLimit="0.25"/>
+                    <heightNode node="heightNode02" disablingAttacherJointIndices="1"/>
+                    <heightNode node="heightNode03" foldMaxLimit="0.25"/>
+                    <distanceToGround lower="0.10" upper="1.0"/>
+                </inputAttacherJoint>
+
+                <objectChange node="attacherFrameKrone" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="kemperDecalLeft" visibilityActive="true"/>
+                <objectChange node="kemperDecalRight" visibilityActive="true"/>
+                <objectChange node="cnhDecalLeft" visibilityActive="false"/>
+                <objectChange node="cnhDecalRight" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalLeft" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalRight" visibilityActive="false"/>
+                <objectChange node="hosesKrone" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="hosesNewHolland" visibilityActive="false"/>
+                <objectChange node="ptoNewHolland" visibilityActive="false"/>
+
+                <objectChange node="comfortWheelAttacherJointCustomNode" translationActive="0.003 1.648 0.897" rotationActive="90.0 -90 -90.0"/>
+
+                <objectChange node="foldingBars" translationActive="0.000 1.296 -0.273" rotationActive="0 0 0"/>
+                <objectChange node="hoseArmLeftHydraulicRef" translationActive="0.083 -0.034 -0.341"/>
+                <objectChange node="hoseArmRightHydraulicRef" translationActive="-0.087 -0.034 -0.341"/>
+
+                <objectChange node="supportArmLeftRot" translationActive="1.141 0.424 -0.892" rotationActive="-0.493 1.558 -0.543"/>
+                <objectChange node="supportArmRightRot" translationActive="-1.136 0.428 -0.881" rotationActive="-0.811 -0.198 0.881"/>
+            </inputAttacherJointConfiguration>
+
+            <inputAttacherJointConfiguration name="Fendt" price="0" displayBrand="FENDT" powerTakeOffConfigId="2">
+                <inputAttacherJoint node="attacherJointFendt" lowerRotLimitScale="0 0 1" jointType="cutterHarvester">
+                    <heightNode node="heightNode01" foldMaxLimit="0.25"/>
+                    <heightNode node="heightNode02" disablingAttacherJointIndices="1"/>
+                    <heightNode node="heightNode03" foldMaxLimit="0.25"/>
+                    <distanceToGround lower="0.10" upper="1.0"/>
+                </inputAttacherJoint>
+
+                <objectChange node="attacherFrameFendt" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="kemperDecalLeft" visibilityActive="true"/>
+                <objectChange node="kemperDecalRight" visibilityActive="true"/>
+                <objectChange node="cnhDecalLeft" visibilityActive="false"/>
+                <objectChange node="cnhDecalRight" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalLeft" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalRight" visibilityActive="false"/>
+                <objectChange node="hosesNewHolland" visibilityActive="true"/>
+                <objectChange node="ptoNewHolland" visibilityActive="false"/>
+
+                <objectChange node="comfortWheelAttacherJointCustomNode" translationActive="-0.005 1.188 0.831" rotationActive="90.0 -95 -90.0"/>
+
+                <objectChange node="foldingBars" translationActive="0.005 1.407 -0.321" rotationActive="10.736 0 0"/>
+                <objectChange node="hoseArmLeftHydraulicRef" translationActive="0.083 -0.034 -0.341"/>
+                <objectChange node="hoseArmRightHydraulicRef" translationActive="-0.087 -0.034 -0.340"/>
+
+                <objectChange node="supportArmLeftRot" translationActive="1.126 0.424 -0.859" rotationActive="0 0 0"/>
+                <objectChange node="supportArmRightRot" translationActive="-1.133 0.427 -0.848" rotationActive="0 0 0"/>
+            </inputAttacherJointConfiguration>
+
+            <!-- Red header with New Holland frame -->
+            <inputAttacherJointConfiguration name="New Holland" price="0" displayBrand="NEWHOLLAND">
+                <inputAttacherJoint node="attacherJointNewHolland" lowerRotLimitScale="0 0 1" jointType="cutterHarvester">
+                    <heightNode node="heightNode01" foldMaxLimit="0.25"/>
+                    <heightNode node="heightNode02" disablingAttacherJointIndices="1"/>
+                    <heightNode node="heightNode03" foldMaxLimit="0.25"/>
+                    <distanceToGround lower="0.10" upper="1.0"/>
+                </inputAttacherJoint>
+
+                <objectChange node="attacherFrameNewHolland" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="kemperDecalLeft" visibilityActive="true"/>
+                <objectChange node="kemperDecalRight" visibilityActive="true"/>
+                <objectChange node="cnhDecalLeft" visibilityActive="false"/>
+                <objectChange node="cnhDecalRight" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalLeft" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalRight" visibilityActive="false"/>
+                <objectChange node="hosesNewHolland" visibilityActive="true"/>
+                <objectChange node="ptoNewHolland" visibilityActive="true"/>
+
+                <objectChange node="comfortWheelAttacherJointCustomNode" translationActive="0.003 1.063 0.888" rotationActive="90.0 -91.5 -90.0"/>
+
+                <objectChange node="foldingBars" translationActive="0.000 1.359 -0.257" rotationActive="15.774 0 0"/>
+                <objectChange node="hoseArmLeftHydraulicRef" translationActive="0.083 -0.038 -0.352"/>
+                <objectChange node="hoseArmRightHydraulicRef" translationActive="-0.087 -0.038 -0.351"/>
+
+                <objectChange node="supportArmLeftRot" translationActive="1.147 0.424 -0.890" rotationActive="0 0 0"/>
+                <objectChange node="supportArmRightRot" translationActive="-1.142 0.427 -0.881" rotationActive="0 0 0"/>
+            </inputAttacherJointConfiguration>
+
+            <!-- Red header with John Deere frame -->
+            <inputAttacherJointConfiguration name="John Deere" price="0" displayBrand="JOHNDEERE">
+                <inputAttacherJoint node="attacherJointJohnDeere" lowerRotLimitScale="0 0 1" jointType="cutterHarvester">
+                    <heightNode node="heightNode01" foldMaxLimit="0.25"/>
+                    <heightNode node="heightNode02" disablingAttacherJointIndices="1"/>
+                    <heightNode node="heightNode03" foldMaxLimit="0.25"/>
+                    <distanceToGround lower="0.10" upper="1.0"/>
+                </inputAttacherJoint>
+
+                <objectChange node="attacherFrameJohnDeere" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="kemperDecalLeft" visibilityActive="true"/>
+                <objectChange node="kemperDecalRight" visibilityActive="true"/>
+                <objectChange node="cnhDecalLeft" visibilityActive="false"/>
+                <objectChange node="cnhDecalRight" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalLeft" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalRight" visibilityActive="false"/>
+                <objectChange node="hosesJD" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="hosesNewHolland" visibilityActive="false"/>
+                <objectChange node="ptoNewHolland" visibilityActive="false"/>
+
+                <objectChange node="comfortWheelAttacherJointCustomNode" translationActive="0.003 1.087 0.837" rotationActive="90.0 -91.5 -90.0"/>
+
+                <objectChange node="foldingBars" translationActive="0.000 1.375 -0.318" rotationActive="14.415 0 0"/>
+                <objectChange node="hoseArmLeftHydraulicRef" translationActive="0.083 -0.016 -0.345"/>
+                <objectChange node="hoseArmRightHydraulicRef" translationActive="-0.087 -0.016 -0.344"/>
+
+                <objectChange node="supportArmLeftRot" translationActive="1.140 0.424 -0.891" rotationActive="0 0 0"/>
+                <objectChange node="supportArmRightRot" translationActive="-1.136 0.427 -0.881" rotationActive="0 0 0"/>
+            </inputAttacherJointConfiguration>
+
+            <!-- New Holland Yellow Config - only available with New Holland store item -->
+            <inputAttacherJointConfiguration name="New Holland" price="0" displayBrand="NEWHOLLAND" isSelectable="false"
+                                             vehicleBrand="NEWHOLLAND" vehicleName="900 SFI" vehicleIcon="$data/vehicles/kemper/plus390/store_plus390_newHolland.png">
+                <inputAttacherJoint node="attacherJointNewHolland" lowerRotLimitScale="0 0 1" jointType="cutterHarvester">
+                    <heightNode node="heightNode01" foldMaxLimit="0.25"/>
+                    <heightNode node="heightNode02" disablingAttacherJointIndices="1"/>
+                    <heightNode node="heightNode03" foldMaxLimit="0.25"/>
+                    <distanceToGround lower="0.10" upper="1.0"/>
+                </inputAttacherJoint>
+
+                <objectChange node="attacherFrameNewHolland" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="kemperDecalLeft" visibilityActive="false"/>
+                <objectChange node="kemperDecalRight" visibilityActive="false"/>
+                <objectChange node="cnhDecalLeft" visibilityActive="true"/>
+                <objectChange node="cnhDecalRight" visibilityActive="true"/>
+                <objectChange node="johnDeereDecalLeft" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalRight" visibilityActive="false"/>
+                <objectChange node="hosesNewHolland" visibilityActive="true" />
+                <objectChange node="ptoNewHolland" visibilityActive="true"/>
+
+                <objectChange node="comfortWheelAttacherJointCustomNode" translationActive="0.003 1.063 0.888" rotationActive="90.0 -91.5 -90.0"/>
+
+                <objectChange node="foldingBars" translationActive="0.000 1.359 -0.257" rotationActive="15.774 0 0"/>
+                <objectChange node="hoseArmLeftHydraulicRef" translationActive="0.083 -0.038 -0.352"/>
+                <objectChange node="hoseArmRightHydraulicRef" translationActive="-0.087 -0.038 -0.351"/>
+
+                <objectChange node="supportArmLeftRot" translationActive="1.147 0.424 -0.890" rotationActive="0 0 0"/>
+                <objectChange node="supportArmRightRot" translationActive="-1.142 0.427 -0.881" rotationActive="0 0 0"/>
+
+                <material name="plus390_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+                <material name="plus390_mat" shaderParameter="colorMat4" color="NEWHOLLAND_YELLOW1"/>
+                <material name="plus390Disc2_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+                <material name="plus390Disc3_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+                <material name="plus390Disc4_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+                <material name="plus390Disc5_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+                <material name="plus390Disc6_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+                <material name="frameNewHolland_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+                <material name="frameNewHollandParts_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+                <material name="additionalSensorParts_mat" shaderParameter="colorMat0" color="NEWHOLLAND_YELLOW1"/>
+            </inputAttacherJointConfiguration>
+
+            <!-- John Deere Yellow Config - only available with John Deere store item -->
+            <inputAttacherJointConfiguration name="John Deere" price="0" displayBrand="JOHNDEERE" isSelectable="false"
+                                             vehicleBrand="JOHNDEERE" vehicleIcon="$data/vehicles/kemper/plus390/store_plus390_johnDeere.png">
+                <inputAttacherJoint node="attacherJointJohnDeere" lowerRotLimitScale="0 0 1" jointType="cutterHarvester">
+                    <heightNode node="heightNode01" foldMaxLimit="0.25"/>
+                    <heightNode node="heightNode02" disablingAttacherJointIndices="1"/>
+                    <heightNode node="heightNode03" foldMaxLimit="0.25"/>
+                    <distanceToGround lower="0.10" upper="1.0"/>
+                </inputAttacherJoint>
+
+                <objectChange node="attacherFrameJohnDeere" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="kemperDecalLeft" visibilityActive="false"/>
+                <objectChange node="kemperDecalRight" visibilityActive="false"/>
+                <objectChange node="cnhDecalLeft" visibilityActive="false"/>
+                <objectChange node="cnhDecalRight" visibilityActive="false"/>
+                <objectChange node="johnDeereDecalLeft" visibilityActive="true"/>
+                <objectChange node="johnDeereDecalRight" visibilityActive="true"/>
+                <objectChange node="hosesJD" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="hosesNewHolland" visibilityActive="false"/>
+                <objectChange node="ptoNewHolland" visibilityActive="false"/>
+
+                <objectChange node="comfortWheelAttacherJointCustomNode" translationActive="0.003 1.087 0.837" rotationActive="90.0 -91.5 -90.0"/>
+
+                <objectChange node="foldingBars" translationActive="0.000 1.375 -0.318" rotationActive="14.415 0 0"/>
+                <objectChange node="hoseArmLeftHydraulicRef" translationActive="0.083 -0.016 -0.345"/>
+                <objectChange node="hoseArmRightHydraulicRef" translationActive="-0.087 -0.016 -0.344"/>
+
+                <objectChange node="supportArmLeftRot" translationActive="1.140 0.424 -0.891" rotationActive="0 0 0"/>
+                <objectChange node="supportArmRightRot" translationActive="-1.136 0.427 -0.881" rotationActive="0 0 0"/>
+
+                <material name="plus390_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+                <material name="plus390_mat" shaderParameter="colorMat4" color="JOHNDEERE_YELLOW1"/>
+                <material name="plus390Disc2_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+                <material name="plus390Disc3_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+                <material name="plus390Disc4_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+                <material name="plus390Disc5_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+                <material name="plus390Disc6_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+                <material name="frameJohnDeere_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+                <material name="frameJohnDeereParts_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+                <material name="additionalSensorParts_mat" shaderParameter="colorMat0" color="JOHNDEERE_YELLOW1"/>
+            </inputAttacherJointConfiguration>
+        </inputAttacherJointConfigurations>
+
+        <support animationName="moveSupport"/>
+    </attachable>
+
+    <attacherJoints>
+        <attacherJoint node="comfortWheelAttacherJoint" jointType="implement" upperRotationOffset="0" lowerRotationOffset="0" upperRotLimit="0 0 0" lowerRotLimit="0 0 0" lowerTransLimit="0 0 0" lockDownTransLimit="false" moveTime="2.5" comboTime="0">
+            <distanceToGround lower="0.0" upper="0.0" />
+            <schema position="1 0" rotation="0" invertX="false" />
+            <subType name="kemperSupportFrame"/>
+            <objectChange node="spike" rotationActive="-35 0 0" rotationInactive="0 0 0"/>
+            <objectChange node="spikePaddleJointLeftRot" translationActive="0.091 -0.009 -0.050" translationInactive="0.087 0 0" rotationActive="-90 80 -90" rotationInactive="-10 0 0"/>
+            <objectChange node="spikePaddleJointRightRot" translationActive="-0.091 -0.009 -0.050" translationInactive="-0.087 0 0" rotationActive="-90 -80 90" rotationInactive="-10 0 0"/>
+        </attacherJoint>
+        <sounds>
+            <attach template="ATTACH_01" linkNode="header390_main_component1" />
+        </sounds>
+    </attacherJoints>
+
+    <powerTakeOffs>
+        <powerTakeOffConfigurations>
+            <powerTakeOffConfiguration>
+                <input inputNode="ptoNewHolland" inputAttacherJointIndices="1" ptoName="LEFT_PTO"/>
+            </powerTakeOffConfiguration>
+            <powerTakeOffConfiguration>
+                <input inputNode="ptoFendt" inputAttacherJointIndices="1" ptoName="LEFT_PTO_LNG"/>
+            </powerTakeOffConfiguration>
+        </powerTakeOffConfigurations>
+    </powerTakeOffs>
+
+    <connectionHoses>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="hydraulicIn01"  length="1.2" diameter="0.02" straighteningFactor="0.5" adapterNode="hydraulicIn01_connector">
+            <objectChange node="hydraulicIn01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut" node="hydraulicOut01" length="1.2" diameter="0.02" straighteningFactor="0.5"  adapterNode="hydraulicOut01_connector">
+            <objectChange node="hydraulicOut01_detached" visibilityActive="false" visibilityInactive="true"/>
+        </hose>
+    </connectionHoses>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="heightNode02" threshold="0.5" />
+    </groundReferenceNodes>
+
+    <powerConsumer ptoRpm="540" neededMaxPtoPower="250">
+        <speedLimitModifier offset="-6" minPowerHp="0" maxPowerHp="399"/>
+        <speedLimitModifier offset="-5" minPowerHp="400" maxPowerHp="449"/>
+        <speedLimitModifier offset="-4" minPowerHp="450" maxPowerHp="499"/>
+        <speedLimitModifier offset="-3" minPowerHp="500" maxPowerHp="599"/>
+        <speedLimitModifier offset="-2" minPowerHp="600" maxPowerHp="699"/>
+        <speedLimitModifier offset="-1" minPowerHp="700" maxPowerHp="749"/>
+        <speedLimitModifier offset="0" minPowerHp="750" maxPowerHp="899"/>
+        <speedLimitModifier offset="1" minPowerHp="900" maxPowerHp="1300"/>
+    </powerConsumer>
+
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" disableBackwards="true" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight"/>
+            <groundReferenceNode index="1" />
+            <folding minLimit="0" maxLimit="0.1" />
+            <testAreas autoGenerate="true" zOffset="0.5" xOffset="0" length="0.6" numAreas="12"/>
+        </workArea>
+    </workAreas>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" turnOnFoldMaxLimit="0.1" turnOnFoldMinLimit="0">
+                    <foldingPart animationName="folding" speedScale="0.6" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <animations>
+        <animation name="folding">
+            <!-- left arm -->
+            <part node="leftOuterArm" startTime="0.75" endTime="4" startRot="0 0 0" endRot="0 0 120" tangentType="spline"/>
+            <part node="leftArm" startTime="4.25" endTime="9" startRot="0 0 0" endRot="0 0 90"/>
+
+            <part node="hoseArmLeft" startTime="2.25" endTime="4" startRot="0 0 0" endRot="0 -70 0" tangentType="spline"/>
+            <part node="leftOuterArmPart" startTime="1.75" endTime="4" startRot="0 0 0" endRot="0 85 0" tangentType="spline"/>
+
+            <!-- right arm -->
+            <part node="rightOuterArm" startTime="0" endTime="3.25" startRot="0 0 0" endRot="0 0 -120" tangentType="spline"/>
+            <part node="rightArm" startTime="4" endTime="8" startRot="0 0 0" endRot="0 0 -90"/>
+
+            <part node="hoseArmRight" startTime="1.5" endTime="3.25" startRot="0 0 0" endRot="0 70 0" tangentType="spline"/>
+            <part node="rightOuterArmPart" startTime="1" endTime="3.25" startRot="0 0 0" endRot="0 -85 0" tangentType="spline"/>
+
+            <sound template="defaultHydraulicSound" startTime="0.01" endTime="3.25" volumeScale="1.4" pitchScale="0.8"/>
+            <sound template="defaultHydraulicSound" startTime="0.75" endTime="3.99" volumeScale="1.4" pitchScale="0.6"/>
+            <sound template="defaultHydraulicSound" startTime="4"    endTime="7.99" volumeScale="1.6" pitchScale="0.5"/>
+            <sound template="defaultHydraulicSound" startTime="4.25" endTime="8.99" volumeScale="1.4" pitchScale="0.7"/>
+            <sound template="clackVar4"             startTime="8.99" direction="-1" volumeScale="1.3" pitchScale="1.6"  />
+            <sound template="clackVar3"             startTime="8.99" direction="-1" volumeScale="1.3" pitchScale="1.6"  />
+            <sound template="clackVar4"             startTime="8"    direction="-1" volumeScale="1.3" pitchScale="1.4"  />
+            <sound template="clackVar1"             startTime="8"    direction="-1" volumeScale="1"   pitchScale="1.6"  />
+            <sound template="clackVar1"             startTime="0.85" direction="-1" pitchScale="0.8"  volumeScale="1.6"/>
+            <sound template="metalClose"            startTime="0.75" direction="-1" pitchScale="0.6"  volumeScale="1.3" />
+            <sound template="clackVar6"             startTime="0.01" direction="-1" pitchScale="0.7"  volumeScale="1.6"/>
+            <sound template="clackVar1"             startTime="0.1"  direction="-1" pitchScale="1"    volumeScale="1.3"/>
+            <sound template="clackVar1"             startTime="0.01" direction="1"  pitchScale="1"    volumeScale="1.6"/>
+            <sound template="clackVar3"             startTime="0.01" direction="1"  pitchScale="1"    volumeScale="1.6"/>
+            <sound template="clackVar6"             startTime="0.8"  direction="1"  pitchScale="0.8"  volumeScale="1.3"/>
+            <sound template="clackVar1"             startTime="0.8"  direction="1"  pitchScale="1.3"  volumeScale="1"/>
+            <sound template="clackVar4"             startTime="3.99" direction="1"  volumeScale="1.5" pitchScale="1.2"  />
+            <sound template="clackVar6"             startTime="3.99" direction="1"  volumeScale="1.5" pitchScale="0.8"  />
+            <sound template="clackVar6"             startTime="2.99" direction="1"  volumeScale="1"   pitchScale="1.2"  />
+            <sound template="sheetImp02"            startTime="2.99" direction="1"  volumeScale="1.5" pitchScale="1.2" />
+            <sound template="clackVar3"             startTime="2.99" direction="1"  volumeScale="1.5" pitchScale="1.2" />
+            <sound template="clackVar4"             startTime="4"    direction="1"  volumeScale="1.3" pitchScale="1.4"  />
+            <sound template="clackVar1"             startTime="4"    direction="1"  volumeScale="1"   pitchScale="1.6"  />
+            <sound template="clackVar4"             startTime="4.25" direction="1"  volumeScale="1.3" pitchScale="1.6"  />
+            <sound template="clackVar3"             startTime="4.25" direction="1"  volumeScale="1.3" pitchScale="1.6"  />
+            <sound template="clackVar1"             startTime="7.9"  direction="1"  pitchScale="0.8"  volumeScale="1.6"/>
+            <sound template="clackVar3"             startTime="8"    direction="1"  pitchScale="0.8"  volumeScale="1.6" />
+            <sound template="clackVar4"             startTime="8.99" direction="1"  volumeScale="1"   pitchScale="1.1"  />
+            <sound template="clackVar1"             startTime="8.9"  direction="1"  volumeScale="1"   pitchScale="1.1"  />
+            <sound template="clackVar6"             startTime="8.99" direction="1"  volumeScale="1.6" pitchScale="0.7"  />
+            <sound template="clackVar4"             startTime="4.25" direction="-1" volumeScale="1.3" pitchScale="1.6"  />
+            <sound template="clackVar3"             startTime="4.25" direction="-1" volumeScale="1.3" pitchScale="1.6"  />
+            <sound template="clackVar2"             startTime="4.25" direction="-1" volumeScale="1.8" pitchScale="1.6"  />
+            <sound template="clackVar4"             startTime="4"    direction="-1" volumeScale="1.3" pitchScale="1.4"  />
+            <sound template="clackVar1"             startTime="4"    direction="-1" volumeScale="1"   pitchScale="1.6"  />
+            <sound template="clackVar4"             startTime="4"    direction="-1" volumeScale="1.3" pitchScale="1.4"  />
+            <sound template="clackVar1"             startTime="4"    direction="-1" volumeScale="1"   pitchScale="1.6"  />
+            <sound template="clackVar4"             startTime="3.25" direction="-1" volumeScale="1.3" pitchScale="1.6"  />
+            <sound template="clackVar3"             startTime="3.25" direction="-1" volumeScale="1.3" pitchScale="1.6"  />
+        </animation>
+        <animation name="moveSupport">
+            <part node="supportCollision01" startTime="0" endTime="0.1" startTrans="0 0 0" endTrans="0 -0.25 0"/>
+            <part node="supportArmLeft" startTime="0" endTime="0.1" startTrans="0 0 0" endTrans="0 -0.16 0"/>
+            <part node="supportArmRight" startTime="0" endTime="0.1" startTrans="0 0 0" endTrans="0 -0.16 0"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="leftArm" playSound="true">
+                <dependentPart node="leftArmHydraulic" />
+                <dependentPart node="leftInterConArm01" />
+            </movingTool>
+            <movingTool node="rightArm" playSound="false">
+                <dependentPart node="rightArmHydraulic" />
+                <dependentPart node="rightInterConArm01" />
+            </movingTool>
+
+            <movingTool node="leftOuterArm" playSound="true">
+                <dependentPart node="leftOuterArmHydraulic" />
+            </movingTool>
+            <movingTool node="rightOuterArm" playSound="false">
+                <dependentPart node="rightOuterArmHydraulic" />
+            </movingTool>
+
+            <movingTool node="hoseArmLeft" playSound="false">
+                <dependentPart node="hoseArmLeftHydraulic" />
+            </movingTool>
+            <movingTool node="hoseArmRight" playSound="false">
+                <dependentPart node="hoseArmRightHydraulic" />
+            </movingTool>
+
+            <movingTool node="claasFrameTilt">
+                <inputAttacherJoint value="true"/>
+                <dependentPart node="claasFrameTiltSpringLeft" />
+                <dependentPart node="claasFrameTiltSpringRight" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <!-- left arm -->
+            <movingPart node="leftArmHydraulic" referencePoint="leftArmHydraulicRef" referenceFrame="leftArmHydraulicRef">
+                <translatingPart node="leftArmHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="leftInterConArm01" localReferencePoint="leftInterConArm02" referencePoint="leftInterConArm02Ref" referenceFrame="leftInterConArm01RefFrame" >
+                <dependentPart node="leftInterConArm02" />
+            </movingPart>
+            <movingPart node="leftInterConArm02" referencePoint="leftInterConArm02Ref" referenceFrame="leftInterConArm02Ref"/>
+            <movingPart node="leftOuterArmHydraulic" referencePoint="leftOuterArmHydraulicRef" referenceFrame="leftOuterArmHydraulicRef">
+                <translatingPart node="leftOuterArmHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="hoseArmLeftHydraulic" referencePoint="hoseArmLeftHydraulicRef" referenceFrame="hoseArmLeftHydraulicRef">
+                <translatingPart node="hoseArmLeftHydraulicPunch" />
+            </movingPart>
+
+            <!-- right arm -->
+            <movingPart node="rightArmHydraulic" referencePoint="rightArmHydraulicRef" referenceFrame="rightArmHydraulicRef">
+                <translatingPart node="rightArmHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="rightInterConArm01" localReferencePoint="rightInterConArm02" referencePoint="rightInterConArm02Ref" referenceFrame="rightInterConArm01RefFrame" >
+                <dependentPart node="rightInterConArm02" />
+            </movingPart>
+            <movingPart node="rightInterConArm02" referencePoint="rightInterConArm02Ref" referenceFrame="rightInterConArm02Ref"/>
+            <movingPart node="rightOuterArmHydraulic" referencePoint="rightOuterArmHydraulicRef" referenceFrame="rightOuterArmHydraulicRef">
+                <translatingPart node="rightOuterArmHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="hoseArmRightHydraulic" referencePoint="hoseArmRightHydraulicRef" referenceFrame="hoseArmRightHydraulicRef">
+                <translatingPart node="hoseArmRightHydraulicPunch" />
+            </movingPart>
+
+            <movingPart node="claasFrameTiltSpringLeft" referencePoint="claasFrameTiltSpringLeftRef" referenceFrame="claasFrameTiltSpringLeftRef" scaleZ="true"/>
+            <movingPart node="claasFrameTiltSpringRight" referencePoint="claasFrameTiltSpringRightRef" referenceFrame="claasFrameTiltSpringRightRef" scaleZ="true"/>
+        </movingParts>
+    </cylindered>
+
+    <cutter fruitTypeCategories="maizeCutter" allowsForageGrowthState="true" fruitTypeConverter="forageHarvester">
+        <effect>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_FORAGE" linkNode="effectLinkNode">
+                <motionPathEffect textureFilename="$data/vehicles/kemper/plus390/plus390Array.dds" numRows="12" rowLength="26" verticalOffset="-0.25" minFade="0.05" visibilityZ="50 -1"/>
+            </effectNode>
+        </effect>
+
+        <animationNodes>
+            <animationNode node="drumLeft01" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumLeft02" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumLeft03" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumLeft04" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumLeft05" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumLeft06" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+
+            <animationNode node="drumRight01" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumRight02" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumRight03" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumRight04" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumRight05" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="drumRight06" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+
+            <animationNode node="disc01" rotSpeed="-1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="10"/>
+            <animationNode node="disc02" rotSpeed="1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="11"/>
+            <animationNode node="disc03" rotSpeed="1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="12"/>
+            <animationNode node="disc04" rotSpeed="1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="11"/>
+            <animationNode node="disc05" rotSpeed="1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="8"/>
+            <animationNode node="disc06" rotSpeed="1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="12"/>
+            <animationNode node="disc07" rotSpeed="-1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="14"/>
+            <animationNode node="disc08" rotSpeed="-1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="9"/>
+            <animationNode node="disc09" rotSpeed="-1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="10"/>
+            <animationNode node="disc10" rotSpeed="-1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="12"/>
+            <animationNode node="disc11" rotSpeed="-1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="7"/>
+            <animationNode node="disc12" rotSpeed="1250" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="14"/>
+
+            <animationNode node="kemper_390plus_disk34" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+            <animationNode node="kemper_390plus_disk33" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="7"/>
+            <animationNode node="kemper_390plus_disk32" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="3"/>
+            <animationNode node="kemper_390plus_disk31" rotSpeed="500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+
+            <animationNode node="kemper_390plus_disk5" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="4"/>
+            <animationNode node="kemper_390plus_disk37" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="6"/>
+            <animationNode node="kemper_390plus_disk36" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="2"/>
+            <animationNode node="kemper_390plus_disk35" rotSpeed="-500" rotAxis="2" turnOnFadeTime="2" turnOffFadeTime="5"/>
+
+            <animationNode node="kemper_390plus_disk6" rotSpeed="500" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="7"/>
+            <animationNode node="kemper_390plus_disk7" rotSpeed="-500" rotAxis="1" turnOnFadeTime="2" turnOffFadeTime="4"/>
+        </animationNodes>
+
+        <automaticTilt raycastNode1="heightNode01" raycastNode2="heightNode03">
+            <automaticTiltNode node="claasFrameTilt" minAngle="-3.5" maxAngle="3.5" maxSpeed="5"/>
+        </automaticTilt>
+        <sounds>
+            <cut template="cropCuttingForage" />
+        </sounds>
+    </cutter>
+
+    <turnOnVehicle turnedOnByAttacherVehicle="true" turnOffIfNotAllowed="true">
+        <sounds>
+            <start template="forageHarvesterStart" />
+            <work  template="forageHarvesterWork" />
+            <stop  template="forageHarvesterStop" />
+        </sounds>
+    </turnOnVehicle>
+
+    <dynamicMount forceLimitScale="1"/>
+
+    <ropes>
+        <rope baseNode="leftCatmullRom" targetNode="leftCatmullRomRef"   baseParameters="0 0 -1 0" targetParameters="0 0 5 0"/>
+        <rope baseNode="rightCatmullRom" targetNode="rightCatmullRomRef" baseParameters="0 0 -1 0" targetParameters="0 0 5 0"/>
+    </ropes>
+
+    <ai>
+        <areaMarkers leftNode="aiLeftMarker" rightNode="aiRightMarker" backNode="aiMarkerBack"/>
+        <collisionTrigger node="aiCollisionNode" width="9.3" height="1.6"/>
+        <agentAttachment width="3.1" height="2.5" length="2.5" lengthOffset="0.2"/>
+    </ai>
+
+    <foliageBending>
+        <bendingNode minX="-1.4" maxX="1.4" minZ="-0.9" maxZ="0" yOffset="0.2" />
+        <bendingNode minX="0.3" maxX="1.72" minZ="-0.15" maxZ="0.6" yOffset="-0.4" node="leftArm" />
+        <bendingNode minX="-1.72" maxX="-0.3" minZ="-0.15" maxZ="0.6" yOffset="-0.4" node="rightArm" />
+        <bendingNode minX="0" maxX="1.7" minZ="-0.15" maxZ="0.56" yOffset="-0.44" node="leftOuterArm" />
+        <bendingNode minX="-1.7" maxX="0.4" minZ="-0.15" maxZ="0.56" yOffset="-0.44" node="rightOuterArm" />
+    </foliageBending>
+
+    <baseMaterial>
+        <material name="plus390_mat" baseNode="plus390_vis">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+            <shaderParameter name="colorMat4" value="KEMPER_RED1"/>
+            <shaderParameter name="colorMat3" value="SHARED_WHITE1"/>
+            <shaderParameter name="colorMat5" value="SHARED_WHITE1"/>
+        </material>
+        <material name="plus390_mat1" baseNode="leftCatmullRom">
+            <shaderParameter name="colorMat0" value="KEMPER_GREEN1"/>
+        </material>
+        <material name="plus390Disc2_mat" baseNode="kemper_390plus_disk20">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="plus390Disc3_mat" baseNode="kemper_390plus_disk3">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="plus390Disc4_mat" baseNode="kemper_390plus_disk4">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="plus390Disc5_mat" baseNode="kemper_390plus_disk5">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="plus390Disc6_mat" baseNode="kemper_390plus_disk7">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="plus390Disc1Yellow_mat" baseNode="kemper_390plus_disk1_yellow9">
+            <shaderParameter name="colorMat0" value="KEMPER_YELLOW_1"/>
+        </material>
+
+        <material name="frameJohnDeere_mat" baseNode="frameJohnDeere_vis">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="frameJohnDeereParts_mat" baseNode="frameJohnDeere_inletGearbox">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="additionalSensorParts_mat" baseNode="additionalSensorParts">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+
+        <material name="frameClaas_mat" baseNode="frameClaas_vis">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+
+        <material name="frameKrone_mat" baseNode="frameKrone_vis">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="frameKroneParts_mat" baseNode="frameKrone_inletGearbox">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+
+        <material name="frameNewHolland_mat" baseNode="frameNewHolland_vis">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+        <material name="frameNewHollandParts_mat" baseNode="frameNewHolland_inletGearbox">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+
+        <material name="frameFendt_mat" baseNode="frameFendt_vis">
+            <shaderParameter name="colorMat0" value="KEMPER_RED1"/>
+        </material>
+    </baseMaterial>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="header390_main_component1" node="0>" />
+        <i3dMapping id="plus390_vis" node="0>0" />
+        <i3dMapping id="attacherJointCustomNode" node="0>0|0|0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0|0" />
+        <i3dMapping id="comfortWheelAttacherJointCustomNode" node="0>0|0|1" />
+        <i3dMapping id="comfortWheelAttacherJoint" node="0>0|0|1|0" />
+        <i3dMapping id="attacherFrameJohnDeere" node="0>0|0|2|0" />
+        <i3dMapping id="attacherJointJohnDeere" node="0>0|0|2|0|0" />
+        <i3dMapping id="comfortWheelAttacherJointJohnDeere" node="0>0|0|2|0|1" />
+        <i3dMapping id="frameJohnDeere_vis" node="0>0|0|2|0|2" />
+        <i3dMapping id="frameJohnDeere_inletGearbox" node="0>0|0|2|0|2|0" />
+        <i3dMapping id="additionalSensorParts" node="0>0|0|2|0|2|1" />
+        <i3dMapping id="attacherFrameClaas" node="0>0|0|2|1" />
+        <i3dMapping id="claasFrameTilt" node="0>0|0|2|1|0|0" />
+        <i3dMapping id="attacherJointClaas" node="0>0|0|2|1|0|0|0" />
+        <i3dMapping id="claasFrameTiltSpringLeftRef" node="0>0|0|2|1|0|0|1" />
+        <i3dMapping id="claasFrameTiltSpringRightRef" node="0>0|0|2|1|0|0|2" />
+        <i3dMapping id="claasFrameTiltSpringLeft" node="0>0|0|2|1|0|1" />
+        <i3dMapping id="claasFrameTiltSpringRight" node="0>0|0|2|1|0|2" />
+        <i3dMapping id="comfortWheelAttacherJointClaas" node="0>0|0|2|1|1" />
+        <i3dMapping id="frameClaas_vis" node="0>0|0|2|1|2" />
+        <i3dMapping id="attacherFrameKrone" node="0>0|0|2|2" />
+        <i3dMapping id="attacherJointKrone" node="0>0|0|2|2|0" />
+        <i3dMapping id="comfortWheelAttacherJointKrone" node="0>0|0|2|2|1" />
+        <i3dMapping id="frameKrone_vis" node="0>0|0|2|2|2" />
+        <i3dMapping id="frameKrone_inletGearbox" node="0>0|0|2|2|2|0" />
+        <i3dMapping id="attacherFrameNewHolland" node="0>0|0|2|3" />
+        <i3dMapping id="attacherJointNewHolland" node="0>0|0|2|3|0" />
+        <i3dMapping id="ptoNewHolland" node="0>0|0|2|3|1" />
+        <i3dMapping id="comfortWheelAttacherJointNewHolland" node="0>0|0|2|3|2" />
+        <i3dMapping id="frameNewHolland_vis" node="0>0|0|2|3|3" />
+        <i3dMapping id="frameNewHolland_inletGearbox" node="0>0|0|2|3|3|0" />
+        <i3dMapping id="attacherFrameFendt" node="0>0|0|2|4" />
+        <i3dMapping id="attacherJointFendt" node="0>0|0|2|4|0" />
+        <i3dMapping id="ptoFendt" node="0>0|0|2|4|2" />
+        <i3dMapping id="frameFendt_vis" node="0>0|0|2|4|3" />
+        <i3dMapping id="supportCollision01" node="0>0|0|3|0" />
+        <i3dMapping id="hydraulicIn01_detached" node="0>0|0|4|0" />
+        <i3dMapping id="hydraulicIn01_connector" node="0>0|0|4|0|0" />
+        <i3dMapping id="hydraulicOut01_detached" node="0>0|0|4|1" />
+        <i3dMapping id="hydraulicOut01_connector" node="0>0|0|4|1|0" />
+        <i3dMapping id="hydraulicOut01" node="0>0|0|4|2" />
+        <i3dMapping id="hydraulicIn01" node="0>0|0|4|3" />
+        <i3dMapping id="leftArm" node="0>0|1|0" />
+        <i3dMapping id="leftInterConArm01RefFrame" node="0>0|1|0|0" />
+        <i3dMapping id="leftInterConArm01" node="0>0|1|0|0|0" />
+        <i3dMapping id="leftInterConArm02" node="0>0|1|0|0|0|0" />
+        <i3dMapping id="leftOuterArm" node="0>0|1|0|0|0|1|0" />
+        <i3dMapping id="leftOuterArmHydraulic" node="0>0|1|0|0|0|1|0|0" />
+        <i3dMapping id="leftOuterArmHydraulicPunch" node="0>0|1|0|0|0|1|0|0|0" />
+        <i3dMapping id="drumLeft05" node="0>0|1|0|0|0|1|0|1|0" />
+        <i3dMapping id="disc02" node="0>0|1|0|0|0|1|0|1|0|0|2" />
+        <i3dMapping id="drumLeft06" node="0>0|1|0|0|0|1|0|1|1" />
+        <i3dMapping id="kemper_390plus_disk3" node="0>0|1|0|0|0|1|0|1|1|0|0" />
+        <i3dMapping id="kemper_390plus_disk20" node="0>0|1|0|0|0|1|0|1|1|0|1" />
+        <i3dMapping id="disc01" node="0>0|1|0|0|0|1|0|1|1|0|2" />
+        <i3dMapping id="kemper_390plus_disk5" node="0>0|1|0|0|0|1|0|1|2" />
+        <i3dMapping id="leftOuterArmPart" node="0>0|1|0|0|0|1|0|2" />
+        <i3dMapping id="leftCatmullRom" node="0>0|1|0|0|0|1|0|2|0" />
+        <i3dMapping id="supportWheelLeftRot" node="0>0|1|0|0|0|1|0|3" />
+        <i3dMapping id="supportWheelLeft" node="0>0|1|0|0|0|1|0|3|0" />
+        <i3dMapping id="kemperDecalLeft" node="0>0|1|0|0|0|1|0|4|0" />
+        <i3dMapping id="cnhDecalLeft" node="0>0|1|0|0|0|1|0|4|1" />
+        <i3dMapping id="johnDeereDecalLeft" node="0>0|1|0|0|0|1|0|4|2" />
+        <i3dMapping id="leftOuterArmHydraulicRef" node="0>0|1|0|0|0|2" />
+        <i3dMapping id="leftArmHydraulic" node="0>0|1|0|1" />
+        <i3dMapping id="leftArmHydraulicPunch" node="0>0|1|0|1|0" />
+        <i3dMapping id="drumLeft03" node="0>0|1|0|2|0" />
+        <i3dMapping id="disc04" node="0>0|1|0|2|0|0|2" />
+        <i3dMapping id="kemper_390plus_disk1_yellow9" node="0>0|1|0|2|0|0|2|0" />
+        <i3dMapping id="drumLeft04" node="0>0|1|0|2|1" />
+        <i3dMapping id="disc03" node="0>0|1|0|2|1|0|2" />
+        <i3dMapping id="kemper_390plus_disk37" node="0>0|1|0|2|2" />
+        <i3dMapping id="kemper_390plus_disk36" node="0>0|1|0|2|3" />
+        <i3dMapping id="leftArmPart02Ref" node="0>0|1|0|4" />
+        <i3dMapping id="rightArm" node="0>0|1|1" />
+        <i3dMapping id="rightInterConArm01RefFrame" node="0>0|1|1|0" />
+        <i3dMapping id="rightInterConArm01" node="0>0|1|1|0|0" />
+        <i3dMapping id="rightInterConArm02" node="0>0|1|1|0|0|0" />
+        <i3dMapping id="rightOuterArm" node="0>0|1|1|0|0|1|0" />
+        <i3dMapping id="rightOuterArmPart" node="0>0|1|1|0|0|1|0|0" />
+        <i3dMapping id="rightCatmullRom" node="0>0|1|1|0|0|1|0|0|0" />
+        <i3dMapping id="supportWheelRightRot" node="0>0|1|1|0|0|1|0|1" />
+        <i3dMapping id="supportWheelRight" node="0>0|1|1|0|0|1|0|1|0" />
+        <i3dMapping id="rightOuterArmHydraulic" node="0>0|1|1|0|0|1|0|2" />
+        <i3dMapping id="rightOuterArmHydraulicPunch" node="0>0|1|1|0|0|1|0|2|0" />
+        <i3dMapping id="drumRight06" node="0>0|1|1|0|0|1|0|3|0" />
+        <i3dMapping id="disc12" node="0>0|1|1|0|0|1|0|3|0|0|2" />
+        <i3dMapping id="drumRight05" node="0>0|1|1|0|0|1|0|3|1" />
+        <i3dMapping id="disc11" node="0>0|1|1|0|0|1|0|3|1|0|2" />
+        <i3dMapping id="kemper_390plus_disk34" node="0>0|1|1|0|0|1|0|3|2" />
+        <i3dMapping id="kemperDecalRight" node="0>0|1|1|0|0|1|0|4|0" />
+        <i3dMapping id="cnhDecalRight" node="0>0|1|1|0|0|1|0|4|1" />
+        <i3dMapping id="johnDeereDecalRight" node="0>0|1|1|0|0|1|0|4|2" />
+        <i3dMapping id="rightOuterArmHydraulicRef" node="0>0|1|1|0|0|2" />
+        <i3dMapping id="rightArmHydraulic" node="0>0|1|1|1" />
+        <i3dMapping id="rightArmHydraulicPunch" node="0>0|1|1|1|0" />
+        <i3dMapping id="drumRight04" node="0>0|1|1|2|0" />
+        <i3dMapping id="disc10" node="0>0|1|1|2|0|0|2" />
+        <i3dMapping id="drumRight03" node="0>0|1|1|2|1" />
+        <i3dMapping id="disc09" node="0>0|1|1|2|1|0|2" />
+        <i3dMapping id="kemper_390plus_disk32" node="0>0|1|1|2|2" />
+        <i3dMapping id="kemper_390plus_disk33" node="0>0|1|1|2|3" />
+        <i3dMapping id="rightArmPart03Ref" node="0>0|1|1|4" />
+        <i3dMapping id="sharedFrameParts" node="0>0|1|2" />
+        <i3dMapping id="foldingBars" node="0>0|1|2|0" />
+        <i3dMapping id="hoseArmLeft" node="0>0|1|2|0|0|0" />
+        <i3dMapping id="leftCatmullRomRef" node="0>0|1|2|0|0|0|0" />
+        <i3dMapping id="hoseArmLeftHydraulic" node="0>0|1|2|0|0|0|1" />
+        <i3dMapping id="hoseArmLeftHydraulicPunch" node="0>0|1|2|0|0|0|1|0" />
+        <i3dMapping id="hoseArmRight" node="0>0|1|2|0|1|0" />
+        <i3dMapping id="rightCatmullRomRef" node="0>0|1|2|0|1|0|0" />
+        <i3dMapping id="hoseArmRightHydraulic" node="0>0|1|2|0|1|0|1" />
+        <i3dMapping id="hoseArmRightHydraulicPunch" node="0>0|1|2|0|1|0|1|0" />
+        <i3dMapping id="hoseArmLeftHydraulicRef" node="0>0|1|2|0|2" />
+        <i3dMapping id="hoseArmRightHydraulicRef" node="0>0|1|2|0|3" />
+        <i3dMapping id="supportArmLeftRot" node="0>0|1|2|1" />
+        <i3dMapping id="supportArmLeft" node="0>0|1|2|1|0" />
+        <i3dMapping id="supportArmRightRot" node="0>0|1|2|2" />
+        <i3dMapping id="supportArmRight" node="0>0|1|2|2|0" />
+        <i3dMapping id="drum01" node="0>0|1|3|0" />
+        <i3dMapping id="kemper_390plus_disk31" node="0>0|1|3|0|0" />
+        <i3dMapping id="drum02" node="0>0|1|3|1" />
+        <i3dMapping id="kemper_390plus_disk35" node="0>0|1|3|1|0" />
+        <i3dMapping id="drumLeft01" node="0>0|1|3|2" />
+        <i3dMapping id="kemper_390plus_disk4" node="0>0|1|3|2|0|1" />
+        <i3dMapping id="disc06" node="0>0|1|3|2|0|3" />
+        <i3dMapping id="drumLeft02" node="0>0|1|3|3" />
+        <i3dMapping id="disc05" node="0>0|1|3|3|0|2" />
+        <i3dMapping id="drumRight01" node="0>0|1|3|4" />
+        <i3dMapping id="disc07" node="0>0|1|3|4|0|3" />
+        <i3dMapping id="drumRight02" node="0>0|1|3|5" />
+        <i3dMapping id="disc08" node="0>0|1|3|5|0|2" />
+        <i3dMapping id="kemper_390plus_disk7" node="0>0|1|3|6|0" />
+        <i3dMapping id="kemper_390plus_disk6" node="0>0|1|3|7|0" />
+        <i3dMapping id="leftArmHydraulicRef" node="0>0|1|4" />
+        <i3dMapping id="rightArmHydraulicRef" node="0>0|1|5" />
+        <i3dMapping id="spike" node="0>0|1|6" />
+        <i3dMapping id="spikePaddleJointLeftRot" node="0>0|1|6|0|0" />
+        <i3dMapping id="spikePaddleJointRightRot" node="0>0|1|6|0|1" />
+        <i3dMapping id="leftInterConArm02Ref" node="0>0|1|7" />
+        <i3dMapping id="rightInterConArm02Ref" node="0>0|1|8" />
+        <i3dMapping id="rightArmPart01Ref" node="0>0|2|0" />
+        <i3dMapping id="leftArmPart03Ref" node="0>0|2|1" />
+        <i3dMapping id="chainLeftRef" node="0>0|2|2" />
+        <i3dMapping id="chainRightRef" node="0>0|2|3" />
+        <i3dMapping id="springRightRef" node="0>0|2|4" />
+        <i3dMapping id="springLeftRef" node="0>0|2|5" />
+        <i3dMapping id="aiLeftMarker" node="0>0|3|0|0" />
+        <i3dMapping id="aiRightMarker" node="0>0|3|0|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|3|0|2" />
+        <i3dMapping id="aiCollisionNode" node="0>0|3|1" />
+        <i3dMapping id="effectLinkNode" node="0>0|4|0" />
+        <i3dMapping id="workAreaStart" node="0>0|5|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|5|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|5|2" />
+        <i3dMapping id="heightNode01" node="0>0|5|3" />
+        <i3dMapping id="heightNode02" node="0>0|5|4" />
+        <i3dMapping id="heightNode03" node="0>0|5|5" />
+        <i3dMapping id="hosesClaas" node="0>1|0" />
+        <i3dMapping id="hosesJD" node="0>1|1" />
+        <i3dMapping id="hosesKrone" node="0>1|2" />
+        <i3dMapping id="hosesNewHolland" node="0>1|3" />
+    </i3dMappings>
+</vehicle>

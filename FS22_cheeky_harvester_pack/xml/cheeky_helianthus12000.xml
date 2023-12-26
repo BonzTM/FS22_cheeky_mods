@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicle type="cutter" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Helianthus 12000</name>
+        <specs>
+            <workingWidth>12.0</workingWidth>
+            <combination xmlFilename="$data/vehicles/caseIH/axialFlow250/axialFlow250.xml"/>
+            <combination xmlFilename="$data/vehicles/fendt/ideal/ideal.xml"/>
+            <combination xmlFilename="$data/vehicles/masseyFerguson/ideal/ideal.xml"/>
+            <combination xmlFilename="$data/vehicles/claas/lexion8000/lexion8000.xml"/>
+            <combination xmlFilename="$data/vehicles/nardi/n60_40/n60_40.xml" />
+        </specs>
+        <functions>
+            <function>$l10n_function_cutter</function>
+        </functions>
+        <image>$data/vehicles/capello/helianthus12000/store_helianthus12000.png</image>
+        <price>92000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>CAPELLO</brand>
+        <category>cutters</category>
+        <shopTranslationOffset>0 -0.072 0</shopTranslationOffset>
+        <shopRotationOffset>0.136 0 0</shopRotationOffset>
+        <vertexBufferMemoryUsage>925184</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>137984</indexBufferMemoryUsage>
+        <textureMemoryUsage>1376256</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cutter</typeDesc>
+        <filename>$data/vehicles/capello/helianthus12000/helianthus12000.i3d</filename>
+        <size width="13" length="3"/>
+        <speedLimit value="19.4"/>
+        <components>
+            <component centerOfMass="0 0.2 0" mass="3500" />
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="COMBINE_HEADER" />
+        <mapHotspot type="CUTTER" />
+    </base>
+
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="cutter" >
+                <heightNode node="heightNode01"/>
+                <heightNode node="heightNode02"/>
+                <heightNode node="heightNode03"/>
+                <distanceToGround lower="0.6" upper="2.1"/>
+            </inputAttacherJoint>
+        </inputAttacherJoints>
+    </attachable>
+
+    <powerTakeOffs>
+        <input inputNode="pto" inputAttacherJointIndices="1" aboveAttacher="true" ptoName="LEFT_PTO"/>
+    </powerTakeOffs>
+
+    <powerConsumer ptoRpm="540" neededMaxPtoPower="100"/>
+
+    <groundReferenceNodes>
+        <groundReferenceNode node="heightNode02" threshold="0.5" />
+    </groundReferenceNodes>
+
+    <workAreas>
+        <workArea type="cutter" functionName="processCutterArea" >
+            <area startNode="workAreaStart" widthNode="workAreaWidth" heightNode="workAreaHeight" />
+            <groundReferenceNode index="1" />
+            <chopperArea index="2" />
+            <testAreas autoGenerate="true" zOffset="0.5" xOffset="0" length="0.6" numAreas="14" areaWidthScale="0.25"/>
+        </workArea>
+        <workArea type="auxiliary" >
+            <area startNode="workAreaStrawStart" widthNode="workAreaStrawWidth" heightNode="workAreaStrawHeight" />
+        </workArea>
+    </workAreas>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="reelArm" playSound="true">
+                <controls axis="AXIS_CUTTER_REEL2" invertAxis="true" mouseSpeedFactor="0.3" iconName="REEL_TRANSLATE_Y" />
+                <rotation rotSpeed="20" rotAcceleration="50" rotMax="0" rotMin="-16"/>
+            </movingTool>
+        </movingTools>
+        <sounds>
+            <hydraulic template="defaultHydraulicSound" pitchScale="1.2" volumeScale="1.0" fadeIn="0.1" fadeOut="0.05" linkNode="0>"/>
+        </sounds>
+    </cylindered>
+
+    <cutter fruitTypes="sunflower">
+        <effect>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER" linkNode="effectNodePlant">
+                <motionPathEffect textureFilename="$data/vehicles/capello/helianthus12000/plantArray.dds" textureRealWidth="14.2" numRows="20" rowLength="8" verticalOffset="-0.25" minFade="0.19"/>
+            </effectNode>
+            <effectNode effectClass="CutterMotionPathEffect" effectType="CUTTER_FRUITS" linkNode="effectNodeFruit">
+                <motionPathEffect textureFilename="$data/vehicles/capello/helianthus12000/fruitArray.dds" textureRealWidth="14.2" numRows="20" rowLength="38" speedScale="0.23" verticalOffset="0" minFade="0.09" startDelay="0.4" stopDelay="0.6"/>
+            </effectNode>
+            <effectNode effectClass="ParticleEffect" effectNode="smokeEmitter" particleType="SMOKE" materialType="smokeParticle" emitCountScale="0.1" worldSpace="false" useCuttingWidth="false"/>
+        </effect>
+
+        <animationNodes>
+            <animationNode node="mainDrum" rotSpeed="900" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+            <animationNode node="reel" rotSpeed="400" rotAxis="1" turnOnFadeTime="1" turnOffFadeTime="1"/>
+        </animationNodes>
+
+        <automaticTilt raycastNode1="heightNode01" raycastNode2="heightNode03"/>
+        <sounds>
+            <cut template="cropCutting" />
+        </sounds>
+    </cutter>
+
+    <turnOnVehicle turnedOnByAttacherVehicle="true">
+        <sounds>
+            <start template="HARVESTER_TOOL_START" volumeScale="1.5" />
+            <work template="HARVESTER_TOOL_WORK" volumeScale="1.5" />
+            <stop template="HARVESTER_TOOL_STOP" volumeScale="1.5" />
+        </sounds>
+    </turnOnVehicle>
+
+    <ai>
+        <areaMarkers leftNode="aiMarkerLeft" rightNode="aiMarkerRight" backNode="aiMarkerBack"/>
+        <collisionTrigger node="aiCollisionNode" width="12.2" height="1.3"/>
+        <agentAttachment width="12.2" height="2.8" length="2.6" lengthOffset="0"/>
+    </ai>
+
+    <dynamicMount forceLimitScale="1"/>
+
+    <baseMaterial>
+        <material name="capelloHelianthus12000_mat" baseNode="capello_vis">
+            <shaderParameter name="colorMat0" value="CAPELLO_RED1"/>
+            <shaderParameter name="colorMat1" value="CAPELLO_BLACK1"/>
+        </material>
+    </baseMaterial>
+
+    <foliageBending>
+        <bendingNode minX="-6" maxX="6" minZ="-1" maxZ="0.7" yOffset="0.15" />
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+
+    <i3dMappings>
+        <i3dMapping id="helianthus12000_main_component1" node="0>" />
+        <i3dMapping id="capello_vis" node="0>0" />
+        <i3dMapping id="attacherJoint" node="0>0|0|0" />
+        <i3dMapping id="heightNode01" node="0>0|0|0|0" />
+        <i3dMapping id="heightNode02" node="0>0|0|0|1" />
+        <i3dMapping id="heightNode03" node="0>0|0|0|2" />
+        <i3dMapping id="pto" node="0>0|0|1" />
+        <i3dMapping id="mainDrum" node="0>0|1|0" />
+        <i3dMapping id="reelArm" node="0>0|1|1" />
+        <i3dMapping id="reel" node="0>0|1|1|0" />
+        <i3dMapping id="workAreaStart" node="0>0|2|0" />
+        <i3dMapping id="workAreaWidth" node="0>0|2|1" />
+        <i3dMapping id="workAreaHeight" node="0>0|2|2" />
+        <i3dMapping id="groundReferenceNode" node="0>0|2|3" />
+        <i3dMapping id="aiMarkerLeft" node="0>0|3|0" />
+        <i3dMapping id="aiMarkerRight" node="0>0|3|1" />
+        <i3dMapping id="aiMarkerBack" node="0>0|3|2" />
+        <i3dMapping id="aiCollisionNode" node="0>0|3|3" />
+        <i3dMapping id="smokeEmitter" node="0>0|4|0" />
+        <i3dMapping id="effectNodePlant" node="0>0|4|1|0" />
+        <i3dMapping id="effectNodeFruit" node="0>0|4|1|1" />
+        <i3dMapping id="workAreaStrawStart" node="0>0|4|2|0" />
+        <i3dMapping id="workAreaStrawWidth" node="0>0|4|2|1" />
+        <i3dMapping id="workAreaStrawHeight" node="0>0|4|2|2" />
+    </i3dMappings>
+</vehicle>
