@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<universalAutoLoad>
+    <containerConfigurations>
+        <!-- Cheeky Platinum Custom pallets -->
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:armoirePallet" sizeX="2.45" sizeY="2.45" sizeZ="1.65"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:barrelPallet" sizeX="1.65" sizeY="1.05" sizeZ="1.25"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:bathtubPallet" sizeX="2.45" sizeY="0.7" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:birdHousePallet" sizeX="1.25" sizeY="0.58" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:bowlsPallet" sizeX="1.25" sizeY="0.96" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:bucketPallet" sizeX="1.25" sizeY="0.77" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:cartonRollPallet" sizeX="2.47" sizeY="1.7" sizeZ="1.65"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:catTreePallet" sizeX="1.25" sizeY="0.98" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:chairPallet" sizeX="1.25" sizeY="1.28" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:dogHousePallet" sizeX="1.25" sizeY="1.1" sizeZ="0.88" neverStack="true"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:easelPallet" sizeX="1.25" sizeY="0.70" sizeZ="0.88"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:floorTilesPallet" sizeX="1.25" sizeY="0.82" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:metalPallet" sizeX="1.25" sizeY="0.9" sizeZ="0.85" neverStack="true"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:paperRollPallet" sizeX="2.47" sizeY="1.7" sizeZ="1.65"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:pepperGrinderPallet" sizeX="1.25" sizeY="1.0" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:pictureFramePallet" sizeX="1.25" sizeY="0.5" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:planksPallet" sizeX="2.5" sizeY="0.78" sizeZ="0.90"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:prefabWallPallet" sizeX="2.47" sizeY="2.65" sizeZ="1.76"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:shingleGenericPallet" sizeX="1.24" sizeY="1.36" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:staircaseRailingPallet" sizeX="1.25" sizeY="0.85" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:tablePallet" sizeX="2.44" sizeY="0.58" sizeZ="0.85"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:woodBeamPallet" sizeX="2.74" sizeY="0.94" sizeZ="0.92"/>
+    </containerConfigurations>
+</universalAutoLoad>

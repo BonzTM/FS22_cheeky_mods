@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.1.0</version>
+    <version>1.9.2.0</version>
     <title>
         <en>Cheeky Placeables Pack</en>
     </title>
@@ -24,7 +24,6 @@
         <storeItem xmlFilename="xml/cheeky_restaurant.xml"/>
         <storeItem xmlFilename="xml/cheeky_sellingStationBales.xml"/>
         <storeItem xmlFilename="xml/cheeky_sellingStationGeneric.xml"/>
-        <storeItem xmlFilename="xml/cheeky_sellingStationWoodHeatingPlant.xml"/>
         <storeItem xmlFilename="xml/cheeky_supermarket.xml"/>
     </storeItems>
 	<multiplayer supported="true" />

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<modDesc descVersion="79">
+    <author>Cheeky B#$!ards; GIANTS Software</author>
+    <version>1.9.2.0</version>
+    <title>
+        <en>Cheeky UAL Patcher</en>
+    </title>
+	<description>
+		<en><![CDATA[Patches UAL with Cheeky Vehicles and Pallets.]]></en>
+	</description>	
+    <iconFilename>icon_UAL.png</iconFilename>
+
+    <extraSourceFiles>
+        <sourceFile filename="UALAddon.lua"/>
+    </extraSourceFiles>
+
+    <dependencies>
+        <dependency>FS22_UniversalAutoload</dependency>
+    </dependencies>
+
+	<multiplayer supported="true" />
+</modDesc>
