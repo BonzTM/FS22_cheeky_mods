@@ -249,7 +249,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Module Express 635" hp="415" price="0">
+            <motorConfiguration name="Cheeky Module Express 635" hp="415" price="0">
                 <motor torqueScale="1.754" minRpm="850" maxRpm="2200" minSpeed="0.01" maxForwardSpeed="25" maxBackwardSpeed="12" brakeForce="12" lowBrakeForceScale="0.22" accelerationLimit="1.7" dampingRateScale="2">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <brand>CONTINENTAL</brand>
+    <name>Truck Conti Hybrid HD3</name>
+    <default>
+        <physics radius="0.502" width="0.315" mass="0.104" tireType="street" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2"/>
+        <tire filename="$data/shared/wheels/tires/continental/contiHybridHD3/R22_5_contiHybridHD3.i3d" nodeLeft="5|0" nodeRight="5|0" maxDeformation="0.02" sideDeformOffset="0.996" isCareWheel="false" tireTrackAtlasIndex="4"/>
+        <innerRim filename="wheels/wheels.i3d" nodeLeft="0|2|0" nodeRight="0|2|1"/>
+    </default>
+    <configurations>
+        <configuration id="dual" >
+            <innerRim filename="wheels/wheels.i3d" nodeLeft="0|2|0" nodeRight="0|2|1" />
+        </configuration>
+    </configurations>
+</wheel>

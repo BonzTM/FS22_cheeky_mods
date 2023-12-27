@@ -551,7 +551,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="IDEAL 7T" hp="451" price="0" consumerConfigurationIndex="1">
+            <motorConfiguration name="Cheeky IDEAL 7T" hp="451" price="0" consumerConfigurationIndex="1">
                 <motor torqueScale="2.205" minRpm="850" maxRpm="1900" minSpeed="0.01" maxForwardSpeed="42" maxBackwardSpeed="14.9" brakeForce="15.5" lowBrakeForceScale="0.22" dampingRateScale="3">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>
@@ -567,7 +567,7 @@
                 <objectChange node="tracks_decals"          visibilityActive="true" />
                 <objectChange node="paraLevel_decals"       visibilityActive="false" />
             </motorConfiguration>
-            <motorConfiguration name="IDEAL 8T" hp="538" price="43500" consumerConfigurationIndex="2">
+            <motorConfiguration name="Cheeky IDEAL 8T" hp="538" price="43500" consumerConfigurationIndex="2">
                 <motor torqueScale="2.63" dampingRateScale="3.5"/>
                 <objectChange node="mfClass8Decals"         visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="fendtClass8Decals"      visibilityActive="true" visibilityInactive="false"/>
@@ -575,7 +575,7 @@
                 <objectChange node="tracks_decals"          visibilityActive="true" />
                 <objectChange node="paraLevel_decals"       visibilityActive="false" />
             </motorConfiguration>
-            <motorConfiguration name="IDEAL 9T" hp="647" price="98000" consumerConfigurationIndex="3">
+            <motorConfiguration name="Cheeky IDEAL 9T" hp="647" price="98000" consumerConfigurationIndex="3">
                 <motor torqueScale="3.162" dampingRateScale="4.5"/>
                 <objectChange node="mfClass9Decals"         visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="fendtClass9Decals"      visibilityActive="true" visibilityInactive="false"/>
@@ -583,7 +583,7 @@
                 <objectChange node="tracks_decals"          visibilityActive="true" />
                 <objectChange node="paraLevel_decals"       visibilityActive="false" />
             </motorConfiguration>
-            <motorConfiguration name="IDEAL 10T" hp="790" price="169500" consumerConfigurationIndex="4">
+            <motorConfiguration name="Cheeky IDEAL 10T" hp="790" price="169500" consumerConfigurationIndex="4">
                 <motor torqueScale="3.861" dampingRateScale="5.8"/>
                 <objectChange node="mfClass10Decals"         visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="fendtClass10Decals"      visibilityActive="true" visibilityInactive="false"/>
@@ -592,7 +592,7 @@
                 <objectChange node="paraLevel_decals"        visibilityActive="false" />
             </motorConfiguration>
 
-            <motorConfiguration name="IDEAL 7PL" hp="451" price="0" consumerConfigurationIndex="1">
+            <motorConfiguration name="Cheeky IDEAL 7PL" hp="451" price="0" consumerConfigurationIndex="1">
                 <motor torqueScale="2.205" dampingRateScale="3"/>
                 <objectChange node="mfClass7Decals"         visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="fendtClass7Decals"      visibilityActive="true" visibilityInactive="false"/>
@@ -600,7 +600,7 @@
                 <objectChange node="tracks_decals"          visibilityActive="false" />
                 <objectChange node="paraLevel_decals"       visibilityActive="true" />
             </motorConfiguration>
-            <motorConfiguration name="IDEAL 8PL" hp="538" price="43500" consumerConfigurationIndex="2">
+            <motorConfiguration name="Cheeky IDEAL 8PL" hp="538" price="43500" consumerConfigurationIndex="2">
                 <motor torqueScale="2.63" dampingRateScale="3.5"/>
                 <objectChange node="mfClass8Decals"         visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="fendtClass8Decals"      visibilityActive="true" visibilityInactive="false"/>
@@ -608,7 +608,7 @@
                 <objectChange node="tracks_decals"          visibilityActive="false" />
                 <objectChange node="paraLevel_decals"       visibilityActive="true" />
             </motorConfiguration>
-            <motorConfiguration name="IDEAL 9PL" hp="647" price="98000" consumerConfigurationIndex="3">
+            <motorConfiguration name="Cheeky IDEAL 9PL" hp="647" price="98000" consumerConfigurationIndex="3">
                 <motor torqueScale="3.162" dampingRateScale="4.5"/>
                 <objectChange node="mfClass9Decals"         visibilityActive="true" visibilityInactive="false"/>
                 <objectChange node="fendtClass9Decals"      visibilityActive="true" visibilityInactive="false"/>

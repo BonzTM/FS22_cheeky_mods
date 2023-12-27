@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.5.0</version>
+    <version>1.9.5.2</version>
     <title>
         <en>Cheeky Misc Pack</en>
     </title>
@@ -13,7 +13,81 @@
         <storeItem xmlFilename="xml/cheeky_fastBale.xml"/>
         <storeItem xmlFilename="xml/cheeky_bigPack1290HDPVC.xml"/>
         <storeItem xmlFilename="xml/cheeky_baleCollect.xml"/>
+        <!-- Transport Trailers -->
+        <!-- <storeItem xmlFilename="xml/cheeky_transportTrailer19M.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/cheeky_transportTrailer25M.xml"/> -->
     </storeItems>
     <fillTypes filename="xml/mod_fillTypes.xml" />
 	<multiplayer supported="true" />
+	<l10n>
+		<!-- 19/25M WHEELS -->
+		<text name="configuration_rodaFerro"><en>Iron Wheel</en><de>Eisernes Rad</de><br>Roda De Ferro</br></text>
+		<text name="configuration_rodaSemCamara"><en>Wheel Without Camera</en><de>Rad ohne Kamera</de><br>Roda Sem Câmara</br></text>
+        <text name="configuration_rodaAluminio"> <en>Aluminum Wheel</en> <de>Aluminiumrad</de><br>Roda De Alumínio</br></text>
+		<text name="configuration_rodaAluminioSimples"><en>Simple Aluminum Wheel</en><de>Einfaches Aluminiumrad</de><br>Roda De Alumínio Simples</br></text>
+        <text name="configuration_raias5"><en>5 spoke wheel</en><de>5-teiliges Speichenrad</de><br>Roda Raiada de 5 Raios</br></text>
+        <text name="configuration_raias6"> <en>6 spoke wheel</en> <de>6-teiliges Speichenrad</de><br>Roda Raiada de 6 Raios</br></text>
+		<!-- 19/25M TRAILERS -->
+        <text name="configuration_cutterBarSuport"><en>Cutting Bar Support</en><de>Unterstützung für Schneidwerk</de><br>Suporte Para Barra de Corte</br></text>
+        <text name="configuration_suporte25ft"><en>Support For Cutting Bars 25ft</en><de>Unterstützung für Schneidwerk 25ft</de><br>Suporte Para Barras de Corte 25ft</br></text>
+        <text name="configuration_suporte30ft"><en>Support For Cutting Bars 30ft</en><de>Unterstützung für Schneidwerk 30ft</de><br>Suporte Para Barras de Corte 30ft</br></text>
+        <text name="configuration_suporte45ft"> <en>Support For Cutting Bars 45ft</en> <de>Unterstützung für Schneidwerk 45ft</de><br>Suporte Para Barras de Corte 45ft</br></text>
+        <text name="configuration_suporte60ft"><en>Support For Cutting Bars 60ft</en><de>Unterstützung für Schneidwerk 60ft</de><br>Suporte Para Barras de Corte 60ft</br></text>
+		<text name="configuration_assoalhosExtensao"><en>Floors and Extensions</en><de>Böden und Erweiterungen</de><br>Assoalhos E Extensões</br></text>
+        <text name="configuration_assoalhoTrilhos"> <en>Rails</en> <de>Schienen</de><br>Trilhos</br></text>
+		<text name="configuration_assoalhoDeMetal"><en>Metal Floor</en><de>Metallboden</de><br>Assoalho de Metal</br></text>
+        <text name="configuration_assoalhoPranchasMadeira"><en>Wooden boards</en><de>Hölzerne Läden</de><br>Pranchas De Madeira</br></text>
+        <text name="configuration_assoalhoTabuasVelhas"> <en>Extension with Old Boards</en> <de>Erweiterung mit alten Brettern</de><br>Extensão com Tábuas Velhas</br></text>
+		<text name="configuration_cabecalho"><en>Body</en><de>Karosserie</de><br>Chassi</br></text>
+		<text name="configuration_alertPlatesRear"><en>Rear Warning Signs</en><de>Warnschilder hinten</de><br>Placas De Alerta Traseira</br></text>
+        <text name="configuration_dimensoes"> <en>Dimension Plate</en> <de>Maßplatte</de><br>Placa De Dimensão</br></text>
+		<text name="configuration_Oversize"><en>Oversize</en><de>Übergröße</de><br>Oversize</br></text>
+        <text name="configuration_All"><en>All</en><de>Alle</de><br>Todas</br></text>
+        <text name="configuration_Triangles"> <en>Triangles</en> <de>Dreiecke</de><br>Triângulos</br></text>
+		<text name="configuration_lanternasTraseiras"><en>Taillights</en><de>Rückleuchten</de><br>Lanternas Traseiras</br></text>
+        <text name="configuration_model"><en>Model</en><de>Variante</de><br>Modelo</br></text>
+		<text name="configuration_pneusDesmontados"><en>Disassembled tires</en><de>Demontierte Reifen</de><br>Pneus Desmontados</br></text>
+   		<text name="configuration_rodoar"><en>Round</en><de>Runden</de><br>Rodoar</br></text>     
+		<text name="configuration_rodoarComCalotas"><en>Rotate With Hubcaps</en><de>Mit Radkappen drehen</de><br>Rodoar Com Calotas</br></text>
+        <text name="configuration_sapatasAuxiliares"> <en>Auxiliary shoes</en> <de>Hilfsstütze</de><br>Sapatas Auxiliares</br></text>
+		<text name="configuration_bumpers"><en>Bumpers</en><de>Stoßstange</de><br>Parachoques</br></text>
+		<text name="configuration_ExtensaoRampa"><en>Ramp Extension</en><de>Rampenverlängerung</de><br>Extensão Da Rampa</br></text>
+        <text name="configuration_chassiColor"> <en>Chassis Color</en> <de>Gehäusefarbe</de><br>Cor Do Chassi</br></text>
+        <text name="configuration_cutterColor"><en>Support Color for Cutting Bars</en><de>Stützfarbe für Schneidwerksträger</de><br>Cor Do Suporte Para Barras De Corte</br></text>
+		<text name="configuration_bumperColor"><en>Bumper Color</en><de>Stoßstangenfarbe</de><br>Cor Dos Parachoques</br></text>
+		<text name="group_ramp"><en>Ramp</en><de>Rampe</de><br>Rampa</br></text>
+        <text name="group_cutterAjust"><en>Visual Adjustment of the Position of the Cutter Bar</en><de>Visuelle Einstellung der Position des Schneidbalkens</de><br>Ajuste Visual Da Posição da Barra de Corte</br></text>
+		<!-- 19/25M COLORS -->
+        <text name="configuration_PRATAMETALICO"> <en>Silver Metallic</en> <de>Silber Metallic</de> <br>Prata Metálico</br></text>
+        <text name="configuration_PRETOMETALICO"> <en>Black Metallic</en> <de>Metallisch Schwarz</de> <br>Preto Metálico</br></text>
+        <text name="configuration_VERMELHO"> <en>Red</en> <de>Rot</de> <br>Vermelho</br></text>
+        <text name="configuration_VERMELHOMETALICO"> <en>Red Metalic</en> <de>Metallisch Rot</de> <br>Vermelho Metálico</br></text>
+        <text name="configuration_VERMELHOCROMADO"> <en>Red Chrome</en> <de>Rotes Chrom</de> <br>Vermelho Cromado</br></text>
+        <text name="configuration_VERMELHOFOSCO"> <en>Red Matte</en> <de>Mattes Rot</de> <br>Vermelho Fosco</br></text>
+        <text name="configuration_LARANJA"> <en>Orange</en> <de>Orange</de> <br>Laranja</br></text>
+        <text name="configuration_TANGERINA"> <en>Tangerine</en> <de>Mandarine</de> <br>Tangerina</br></text>
+        <text name="configuration_LARANJAFRUTA"> <en>Orange Fruit</en> <de>Orange Frucht</de> <br>Laranja Fruta</br></text>
+        <text name="configuration_AMARELO"> <en>Yellow</en> <de>Gelb</de> <br>Amarelo</br></text>
+        <text name="configuration_AMARELOACAFRAO"> <en>Saffron Yellow</en> <de>Safrangelb</de> <br>Amarelo Açafrão</br></text>
+        <text name="configuration_AMARELOMARACUJA"> <en>Passion Fruit Yellow</en> <de>Passionsfrucht Gelb</de> <br>Amarelo Maracuja</br></text>
+        <text name="configuration_VERDE"> <en>Green</en> <de>Grün</de> <br>Verde</br></text>
+        <text name="configuration_VERDEBANDEIRA"> <en>Green Flag</en> <de>Grüne Flagge</de> <br>Verde Bandeira</br></text>
+        <text name="configuration_VERDELIMONADA"> <en>Lemonade Green</en> <de>Zitronengrün</de> <br>Verde Limonada</br></text>
+        <text name="configuration_VERDEMENTA"> <en>Mint Green</en> <de>Mintgrün</de> <br>Verde Menta</br></text>
+        <text name="configuration_VERDEFOLHA"> <en>Leaf Green</en> <de>Blattgrün</de> <br>Verde Folha</br></text>
+        <text name="configuration_VERDEFLORESTA"> <en>Forest Green</en> <de>Waldgrün</de> <br>Verde Floresta</br></text>
+        <text name="configuration_VERDEAGUA"> <en>Green Water</en> <de>Grünes Wasser</de> <br>Verde Agua</br></text>
+        <text name="configuration_AZUL"> <en>Blue</en> <de>Blau</de> <br>Azul</br></text>
+        <text name="configuration_AZULMETALICO"> <en>Blue Metalic</en> <de>Blau Metallisch</de> <br>Azul Metalico</br></text>
+        <text name="configuration_AZULFOSCO"> <en>Blue Matte</en> <de>Matte Blau</de> <br>Azul Fosco</br></text>
+        <text name="configuration_AZULMAR"> <en>Ocean Blue</en> <de>Meeresblau</de> <br>Azul Mar</br></text>
+        <text name="configuration_AZULCIANO"> <en>Cyan Blue</en> <de>Cyanblau</de> <br>Azul Ciano</br></text>
+        <text name="configuration_AZULPETROLEO"> <en>Petrol Blue</en> <de>Petroleum Blau</de> <br>Azul Petróleo</br></text>
+        <text name="configuration_AZULPERSA"> <en>Persian Blue</en> <de>Persisch Blau</de> <br>Azul Persa</br></text>
+        <text name="configuration_AZULMEIANOITE"> <en>Midnight Blue</en> <de>Mitternachtsblau</de> <br>Azul Meia Noite</br></text>
+        <text name="configuration_ROXOCEBOLA"> <en>Onion Purple</en> <de>Zwiebel violett</de> <br>Roxo Cebola</br></text>
+        <text name="configuration_ROXOMISTICO"> <en>Mystic Purple</en> <de>Mystisch Violett</de> <br>Roxo Místico</br></text>
+        <text name="configuration_MARROMBARRO"> <en>Brown Clay</en> <de>Brauner Lehm</de> <br>Marrom Barro</br></text>
+        <text name="configuration_MARROMMETALICO"> <en>Metallic Brown</en> <de>Metallisch Braun</de> <br>Marrom Metálico</br></text>
+	</l10n>	
 </modDesc>

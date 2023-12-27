@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.5.0</version>
+    <version>1.9.5.2</version>
     <title>
         <en>Cheeky Harvester Pack</en>
     </title>
@@ -29,6 +29,8 @@
         <storeItem xmlFilename="xml/cheeky_h21D.xml"/>
         <storeItem xmlFilename="xml/cheeky_cobra.xml"/>
         <storeItem xmlFilename="xml/cheeky_xc931.xml"/>
+        <storeItem xmlFilename="xml/cheeky_cobra_xl.xml"/>
+        <storeItem xmlFilename="xml/cheeky_xc931_xl.xml"/>
         <!-- <storeItem xmlFilename="xml/cheeky_harvester911.xml"/> -->
         <!-- <storeItem xmlFilename="xml/cheeky_harvester951.xml"/> -->
 
@@ -122,7 +124,6 @@
         <overwrittenPath originalPath="vehicles/komatsu/harvester911/sounds/harvester911_loop.gls" newPath="$pdlcdir/forestryPack/vehicles/komatsu/harvester911/sounds/harvester911_loop.gls" />
         <overwrittenPath originalPath="vehicles/impex/hannibalT50/sounds/tracksLoop.wav" newPath="$pdlcdir/forestryPack/vehicles/impex/hannibalT50/sounds/tracksLoop.wav" />
 
-
         <!-- Wheels -->
         <overwrittenPath originalPath="shared/crawlers/komatsu/harvester911Crawler/harvester911Crawler.i3d" newPath="$pdlcdir/forestryPack/shared/crawlers/komatsu/harvester911Crawler/harvester911Crawler.i3d" />
         <overwrittenPath originalPath="shared/crawlers/komatsu/harvester951Crawler/harvester951Crawler.i3d" newPath="$pdlcdir/forestryPack/shared/crawlers/komatsu/harvester911Crawler/harvester951Crawler.i3d" />
@@ -145,6 +146,9 @@
             <specialization name="combineHaulmDrop" />
             <specialization name="combineOverloadingWarning" />
             <specialization name="cropRowAdjustedNodes" />
+        </type>
+        <type name="harvester911" parent="woodHarvester" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="woodHarvesterExtended" />
         </type>
 	</vehicleTypes>
 

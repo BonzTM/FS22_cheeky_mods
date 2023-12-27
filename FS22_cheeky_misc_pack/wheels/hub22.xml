@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<hub>
+    <filename>wheels/wheels.i3d</filename>
+    <nodes left="0|4|0" right="0|4|1" />
+    <scale>1 1 1</scale>
+</hub>

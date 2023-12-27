@@ -468,7 +468,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="CR10.90" hp="700">
+            <motorConfiguration name="Cheeky CR10.90" hp="700">
                 <motor torqueScale="2.954" minRpm="850" maxRpm="2200" maxForwardSpeed="32" maxBackwardSpeed="14.9" brakeForce="18" lowBrakeForceScale="0.22" accelerationLimit="1.7" dampingRateScale="4">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

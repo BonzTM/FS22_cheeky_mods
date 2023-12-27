@@ -256,7 +256,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Super-Liner 6x4" hp="850" price="0">
+            <motorConfiguration name="Cheeky Super-Liner 6x4" hp="850" price="0">
                 <motor torqueScale="6" minRpm="850" maxRpm="2200" maxForwardSpeed="137" maxBackwardSpeed="15" brakeForce="9" lowBrakeForceScale="0.22" dampingRateScale="2.2" >
                     <torque rpm="850" torque="0.9"/>
                     <torque rpm="1000" torque="1"/>

@@ -374,7 +374,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="931XC" hp="251" price="0">
+            <motorConfiguration name="Cheeky 931XC" hp="251" price="0">
                 <motor torqueScale="1.061" minRpm="850" maxRpm="2200" maxForwardSpeed="21" maxBackwardSpeed="20" brakeForce="6" lowBrakeForceScale="0.5" accelerationLimit="1.6">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>
@@ -682,14 +682,14 @@
     </animations>
 
     <woodHarvester>
-        <cutNode node="cutNode" attachNode="xc931_cutter_component8" attachReferenceNode="attachReference" sizeY="1.1" sizeZ="1.1" maxRadius="0.355" releasedComponentJointIndex="7" releasedComponentJoint2Index="6" />
+        <cutNode node="cutNode" attachNode="xc931_cutter_component8" attachReferenceNode="attachReference" sizeY="1.3" sizeZ="1.8" maxRadius="0.355" releasedComponentJointIndex="7" releasedComponentJoint2Index="6" />
         <headerJointTilt animationName="headerTiltAnimation" speedFactor="1" />
         <!-- <cutLengths values="2.5 3 4 5 6 8 9 12 15 20 0" startIndex="4"/> -->
         <cutLengths min="1" max="25" step="0.5" />
-        <delimbNode node="sideCutNode" sizeX="0.1" sizeY="1.1" sizeZ="1.1" delimbOnCut="true" />
+        <delimbNode node="sideCutNode" sizeX="0.1" sizeY="1.3" sizeZ="1.8" delimbOnCut="true" />
         <cutAnimation name="cutAnimation" speedScale="1" cutTime="0.5" />
         <grabAnimation name="grabberAnimation" speedScale="1" />
-        <treeSizeMeasure node="treeSizeMeasure" rotMaxRadius="0.3" />
+        <treeSizeMeasure node="treeSizeMeasure" rotMaxRadius="0.5" />
 
         <cutEffects>
             <effectNode effectClass="ParticleEffect" effectNode="woodChipsEmitter" particleType="CRUSHER_WOOD" emitCountScale="150"/>

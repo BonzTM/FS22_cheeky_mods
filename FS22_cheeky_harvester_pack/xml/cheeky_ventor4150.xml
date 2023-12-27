@@ -440,7 +440,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Ventor 4150" hp="530" price="0">
+            <motorConfiguration name="Cheeky Ventor 4150" hp="530" price="0">
                 <motor torqueScale="2.238" minRpm="850" maxRpm="2200" maxForwardSpeed="27" maxBackwardSpeed="15" brakeForce="23" lowBrakeForceScale="0.22" lowBrakeForceSpeedLimit="1" accelerationLimit="1.7" dampingRateScale="2.5">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

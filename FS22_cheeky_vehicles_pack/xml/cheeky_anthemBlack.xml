@@ -8,9 +8,9 @@
             <set path="vehicle.storeData.image" value="textures/store_anthemBlack.png"/>
             <set path="vehicle.storeData.price" value="143500"/>
             <set path="vehicle.baseMaterialConfigurations#useDefaultColors" value="false"/>
-            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(0)#name" value="Black Anthem 6x4 (MP7 425)"/>
-            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(1)#name" value="Black Anthem 6x4 (MP8 650)"/>
-            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(2)#name" value="Black Anthem 6x4 (MP8 850)"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(0)#name" value="Cheeky Black Anthem 6x4 (MP7 425)"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(1)#name" value="Cheeky Black Anthem 6x4 (MP8 650)"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(2)#name" value="Cheeky Black Anthem 6x4 (MP8 850)"/>
 
             <clearList path="vehicle.baseMaterialConfigurations.baseMaterialConfiguration" keepIndex="2"/>
             <clearList path="vehicle.configurationSets.configurationSet" keepIndex="5"/>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="rodaRaiada" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="2" filename="wheels_normal.dds"/>
+    <File fileId="3" filename="wheels_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="wheels_mat" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="4" customShaderVariation="colorMask">
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="1 1 1 18"/>
+      <CustomParameter name="colorMat1" value="0 0 0 0"/>
+      <CustomParameter name="colorMat2" value="1 1 1 8"/>
+      <CustomParameter name="colorMat3" value="1 1 0.6 8"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="wheels.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="group2" clipDistance="300" nodeId="20">
+        <TransformGroup name="raiada" clipDistance="300" nodeId="21"/>
+        <TransformGroup name="rodaFerroAntiga" visibility="false" nodeId="22">
+          <Shape shapeId="1" name="rodaFerroAntigaLeft" clipDistance="300" nodeId="23" materialIds="4,4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="rodaFerroAntigaRight" clipDistance="300" nodeId="24" materialIds="4,4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="rodaAluminio" visibility="false" nodeId="25">
+          <Shape shapeId="3" name="rodaAluminioLeft" clipDistance="300" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="rodaAluminioRight" clipDistance="300" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="rodaFerroNova" visibility="false" nodeId="28">
+          <Shape shapeId="5" name="rodaFerroNovaLeft" clipDistance="300" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="rodaFerroNovaRight" clipDistance="300" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="hubs" nodeId="31">
+          <Shape shapeId="7" name="hubLeft" clipDistance="300" nodeId="32" materialIds="4,4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="8" name="hubRight" clipDistance="300" nodeId="33" materialIds="4,4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="raiada5" scale="1.05 1.01 1.01" nodeId="34">
+        <Shape shapeId="9" name="raiada5Left" clipDistance="300" nodeId="35" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="raiada5Right" clipDistance="300" nodeId="36" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="raiada6" scale="1.1 1.01 1.01" nodeId="37">
+        <Shape shapeId="11" name="raiada6Left" clipDistance="300" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="12" name="raiada6Right" clipDistance="300" nodeId="39" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="raiadaDentro" scale="1.05 1.01 1.01" nodeId="40">
+        <Shape shapeId="13" name="raiadaDentroLeft" clipDistance="300" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="14" name="raiadaDentroRight" clipDistance="300" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

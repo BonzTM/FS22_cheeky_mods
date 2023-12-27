@@ -1,0 +1,2122 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="trailer" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Transport Trailer 25m</name>
+        <specs>
+            <combination xmlFilename="$data/vehicles/mack/superliner1979/superliner1979.xml"/>
+            <combination xmlFilename="$data/vehicles/mack/pinnacle/pinnacle.xml"/>
+            <combination xmlFilename="$data/vehicles/mack/anthem/anthem.xml"/>
+        </specs>
+        <functions>
+            <function>$l10n_function_lowLoader</function>
+            <function>$l10n_function_cutterTrailer</function>
+        </functions>
+        <image>store/store25.dds</image>
+        <price>28000</price>
+        <lifetime>600</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <category>lowloaders</category>
+        <shopTranslationOffset>0 0.189 0</shopTranslationOffset>
+        <vertexBufferMemoryUsage>2003712</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>336384</indexBufferMemoryUsage>
+        <textureMemoryUsage>3080192</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_lowLoader</typeDesc>
+        <filename>i3d/transportTrailer25M.i3d</filename>
+        <size width="3.7" length="25" lengthOffset="-2.563" />
+        <components>
+            <component centerOfMass="0 0 -6.5" solverIterationCount="10" mass="8800" />
+            <component centerOfMass="0 2.7 0" solverIterationCount="10" mass="200"/>
+            <component centerOfMass="0 2.7 0" solverIterationCount="10" mass="200"/>
+            <component centerOfMass="0 -0.4 0" solverIterationCount="40" mass="20"/>
+            <component centerOfMass="0 -0.4 0" solverIterationCount="40" mass="20"/>
+            <component centerOfMass="0 -0.4 0" solverIterationCount="40" mass="20"/>
+            <component centerOfMass="0 -0.4 0" solverIterationCount="40" mass="20"/>
+            <component centerOfMass="0 -0.4 0" solverIterationCount="40" mass="20"/>
+            <joint component1="1" component2="2" node="componentJoint1" rotLimit="0 0 0" transLimit="0 0 0" />
+            <joint component1="1" component2="3" node="componentJoint2" rotLimit="0 0 0" transLimit="0 0 0" />
+            <joint component1="1" component2="4" node="componentJoint4" rotLimit="11 0 0" transLimit="0 0 0" rotLimitSpring="8000 0 4000" rotLimitDamping="1500 0 20" maxRotDriveForce="0 0 10" rotDriveRotation="20 0 0" rotDriveSpring="20 0 20" rotDriveDamping="20 0 20" breakable="false"/>
+            <joint component1="1" component2="5" node="componentJoint5" rotLimit="5 0 0" transLimit="0 0 0" rotLimitSpring="8000 0 4000" rotLimitDamping="1500 0 20" maxRotDriveForce="0 0 10" rotDriveRotation="20 0 0" rotDriveSpring="20 0 20" rotDriveDamping="20 0 20" breakable="false"/>
+            <joint component1="1" component2="6" node="componentJoint6" rotLimit="10 0 0" transLimit="0 0 0" rotLimitSpring="8000 0 4000" rotLimitDamping="1500 0 20" maxRotDriveForce="0 0 10" rotDriveRotation="20 0 0" rotDriveSpring="20 0 20" rotDriveDamping="20 0 20" breakable="false"/>
+            <joint component1="1" component2="7" node="componentJoint7" rotLimit="15 0 0" transLimit="0 0 0" rotLimitSpring="8000 0 4000" rotLimitDamping="1500 0 20" maxRotDriveForce="0 0 10" rotDriveRotation="20 0 0" rotDriveSpring="20 0 20" rotDriveDamping="20 0 20" breakable="false"/>
+            <joint component1="1" component2="8" node="componentJoint8" rotLimit="8 0 0" transLimit="0 0 0" rotLimitSpring="8000 0 4000" rotLimitDamping="1500 0 20" maxRotDriveForce="0 0 10" rotDriveRotation="20 0 0" rotDriveSpring="20 0 20" rotDriveDamping="20 0 20" breakable="false"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT" />
+        <mapHotspot type="TRAILER" />
+    </base>
+
+    <wheels>
+        <wheelConfigurations>
+            <wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="LIZARD" saveId="LIZARD_DEFAULT">
+                <wheels>
+                    <wheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dual" isLeft="true"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.4" repr="wheelLeftAxis1"  driveNode="wheelLeftAxis1_ref"  forcePointRatio="0.5" initialCompression="50" suspTravel="0.13" spring="40" damper="80" transRatio="1" brakeFactor="0.01"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dualRim" isLeft="true" offset="0.1" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dual" isLeft="false"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.4" repr="wheelRightAxis1"  driveNode="wheelRightAxis1_ref"  forcePointRatio="1" initialCompression="50" suspTravel="0.13" spring="40" damper="80" transRatio="1" brakeFactor="0.01"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dualRim" isLeft="false" offset="0.1" />
+                    </wheel>
+
+                    <wheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dual" isLeft="true"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.4" repr="wheelLeftAxis2"  driveNode="wheelLeftAxis2_ref"  forcePointRatio="0.5" initialCompression="50" suspTravel="0.15" spring="40" damper="80" transRatio="1" brakeFactor="0.01"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dualRim" isLeft="true" offset="0.1" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dual" isLeft="false"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.4" repr="wheelRightAxis2"  driveNode="wheelRightAxis2_ref"  forcePointRatio="0.5" initialCompression="50" suspTravel="0.15" spring="40" damper="80" transRatio="1" brakeFactor="0.01"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dualRim" isLeft="false" offset="0.1" />
+                    </wheel>
+
+                    <wheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dual" isLeft="true"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.4" repr="wheelLeftAxis3"  driveNode="wheelLeftAxis3_ref"  forcePointRatio="0.5" initialCompression="50" suspTravel="0.18" spring="40" damper="80" transRatio="1" brakeFactor="0.01"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dualRim" isLeft="true" offset="0.1" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dual" isLeft="false"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.4" repr="wheelRightAxis3"  driveNode="wheelRightAxis3_ref"  forcePointRatio="0.5" initialCompression="50" suspTravel="0.18" spring="40" damper="80" transRatio="1" brakeFactor="0.01"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dualRim" isLeft="false" offset="0.1" />
+                    </wheel>
+
+                    <wheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dual" isLeft="true"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.4" repr="wheelLeftAxis4"  driveNode="wheelLeftAxis4_ref"  forcePointRatio="0.5" initialCompression="50" suspTravel="0.2" spring="40" damper="80" transRatio="1" brakeFactor="0.01"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dualRim" isLeft="true" offset="0.1" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dual" isLeft="false"  hasTireTracks="true" hasParticles="true" >
+                        <physics rotSpeed="0"  restLoad="1.4" repr="wheelRightAxis4"  driveNode="wheelRightAxis4_ref"  forcePointRatio="0.5" initialCompression="50" suspTravel="0.2" spring="40" damper="80" transRatio="1" brakeFactor="0.01"/>
+                        <additionalWheel filename="$data/shared/wheels/tires/lizard/truck/_11R22_5.xml" configId="dualRim" isLeft="false" offset="0.1" />
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+
+
+		<!-- RODA FERRO -->
+
+
+           <wheelConfiguration name="$l10n_configuration_rodaFerro" price="1000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/MBcontiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaFerro" price="1000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/MBcontiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBcontiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBcontiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaFerro" price="1000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/MBoffRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHCS.xml" configId="dual" >
+                        <additionalWheel filename="wheels/MBoffRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaFerro" price="1000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/MBoffRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHDO.xml" configId="dual" >
+                        <additionalWheel filename="wheels/MBoffRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/MBoffRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/MBoffRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+
+		<!-- Sem Camara -->
+
+
+           <wheelConfiguration name="$l10n_configuration_rodaSemCamara" price="1500" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaSemCamara" price="1500" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_contiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaSemCamara" price="1500" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" >
+                        <additionalWheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaSemCamara" price="1500" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" >
+                        <additionalWheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/Ferro_offRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+
+		<!-- Aluminio -->
+
+
+           <wheelConfiguration name="$l10n_configuration_rodaAluminio" price="2000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaAluminio" price="2000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaAluminio" price="2000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" >
+                        <additionalWheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaAluminio" price="2000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" >
+                        <additionalWheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" isLeft="false" offset="-0.7"/>
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" isLeft="true" offset="-0.7"/>
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+
+		<!-- Aluminio Simples -->
+
+
+           <wheelConfiguration name="$l10n_configuration_rodaAluminioSimples" price="1000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual" >
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiCrossHS3.xml" configId="dual">
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaAluminioSimples" price="1000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual" >
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_contiHybridHD3.xml" configId="dual">
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaAluminioSimples" price="1000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual" >
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHCS.xml" configId="dual">
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+           <wheelConfiguration name="$l10n_configuration_rodaAluminioSimples" price="1000" brand="CONTINENTAL" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual" >
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                    </wheel>
+                    <wheel filename="wheels/aluminio_offRoadHDO.xml" configId="dual">
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+
+
+		<!-- RANDON -->
+
+
+           <wheelConfiguration name="$l10n_configuration_raias5" price="1000" brand="RANDON" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/raias5_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_raias5" price="1000" brand="RANDON" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/raias5_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_raias5" price="1000" brand="RANDON" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHCS.xml" configId="dual" />
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual" >
+                        <additionalWheel filename="wheels/raias5_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_raias5" price="1000" brand="RANDON" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual" >
+                        <additionalWheel filename="wheels/raias5_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias5_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_raias6" price="1000" brand="RANDON" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/raias6_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiCrossHS3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiCrossHS3.xml" configId="dual"/>
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_raias6" price="1000" brand="RANDON" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual" >
+                        <additionalWheel filename="wheels/raias6_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_contiHybridHD3.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_contiHybridHD3.xml" configId="dual"/>
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_raias6" price="1000" brand="RANDON" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHCS.xml" configId="dual" />
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual" >
+                        <additionalWheel filename="wheels/raias6_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHCS.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHCS.xml" configId="dual"/>
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+
+            <wheelConfiguration name="$l10n_configuration_raias6" price="1000" brand="RANDON" >
+                <wheels baseConfig="LIZARD_DEFAULT">
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual" >
+                        <additionalWheel filename="wheels/raias6_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                    <wheel filename="wheels/raiasDentro_offRoadHDO.xml" configId="dual">
+                        <additionalWheel filename="wheels/raias6_offRoadHDO.xml" configId="dual"/>
+                    </wheel>
+                </wheels>
+			        <objectChange node="hub01" visibilityActive="false"/>
+			        <objectChange node="hub02" visibilityActive="false"/>
+			        <objectChange node="hub03" visibilityActive="false"/>
+			        <objectChange node="hub04" visibilityActive="false"/>    
+    			    <objectChange node="hub05" visibilityActive="false"/>
+			        <objectChange node="hub06" visibilityActive="false"/>
+			        <objectChange node="hub07" visibilityActive="false"/>
+			        <objectChange node="hub08" visibilityActive="false"/>   
+            </wheelConfiguration>
+        </wheelConfigurations>
+
+        <dynamicallyLoadedWheels>
+            <dynamicallyLoadedWheel linkNode="jd01" filename="wheels/transport/transport.xml" color="1.0000 0.7231 0.0000 0"/>
+            <dynamicallyLoadedWheel linkNode="jd02" filename="wheels/transport/transport.xml" color="1.0000 0.7231 0.0000 0"/>
+            <dynamicallyLoadedWheel linkNode="jd03" filename="wheels/transport/transportRear.xml" color="1.0000 0.7231 0.0000 0"/>
+            <dynamicallyLoadedWheel linkNode="jd04" filename="wheels/transport/transportRear.xml" color="1.0000 0.7231 0.0000 0"/>          
+            <dynamicallyLoadedWheel linkNode="ch01" filename="wheels/transport/transport.xml" color="0.6456 0.6456 0.6456 18"/>
+            <dynamicallyLoadedWheel linkNode="ch02" filename="wheels/transport/transport.xml" color="0.6456 0.6456 0.6456 18"/>
+            <dynamicallyLoadedWheel linkNode="ch03" filename="wheels/transport/transportRear.xml" color="0.6456 0.6456 0.6456 18"/>
+            <dynamicallyLoadedWheel linkNode="ch04" filename="wheels/transport/transportRear.xml" color="0.6456 0.6456 0.6456 18"/>  
+            <dynamicallyLoadedWheel linkNode="nh01" filename="wheels/transport/transport.xml" color="0.9157 0.9157 0.9157 0"/>
+            <dynamicallyLoadedWheel linkNode="nh02" filename="wheels/transport/transport.xml" color="0.9157 0.9157 0.9157 0"/>
+            <dynamicallyLoadedWheel linkNode="nh03" filename="wheels/transport/transportRear.xml" color="0.9157 0.9157 0.9157 0"/>
+            <dynamicallyLoadedWheel linkNode="nh04" filename="wheels/transport/transportRear.xml" color="0.9157 0.9157 0.9157 0"/>  
+            <dynamicallyLoadedWheel linkNode="CLASS01" filename="wheels/transport/transport.xml" color="0.5310 0.0357 0.0112 0"/>
+            <dynamicallyLoadedWheel linkNode="CLASS02" filename="wheels/transport/transport.xml" color="0.5310 0.0357 0.0112 0"/>
+            <dynamicallyLoadedWheel linkNode="CLASS03" filename="wheels/transport/transportRear.xml" color="0.5310 0.0357 0.0112 0"/>
+            <dynamicallyLoadedWheel linkNode="CLASS04" filename="wheels/transport/transportRear.xml" color="0.5310 0.0357 0.0112 0"/>  
+        </dynamicallyLoadedWheels>
+
+        <hubs>
+            <hub linkNode="hub01"  filename="wheels/hub22.xml" isLeft="true"  scale="1 1 1" />
+            <hub linkNode="hub02" filename="wheels/hub22.xml" isLeft="false" scale="1 1 1" />
+            <hub linkNode="hub03"  filename="wheels/hub22.xml" isLeft="true"  scale="1 1 1" />
+            <hub linkNode="hub04" filename="wheels/hub22.xml" isLeft="false" scale="1 1 1" />
+            <hub linkNode="hub05"  filename="wheels/hub22.xml" isLeft="true"  scale="1 1 1" />
+            <hub linkNode="hub06" filename="wheels/hub22.xml" isLeft="false" scale="1 1 1" />
+            <hub linkNode="hub07"  filename="wheels/hub22.xml" isLeft="true"  scale="1 1 1" />
+            <hub linkNode="hub08" filename="wheels/hub22.xml" isLeft="false" scale="1 1 1" />
+        </hubs>
+    </wheels>
+
+	<rimColorConfigurations useDefaultColors="true" price="100" >
+	    <rimColorConfiguration name="$l10n_configuration_PRATAMETALICO" color="ITRUNNER_WHITE1" material="27"/>
+	    <rimColorConfiguration name="$l10n_configuration_PRATAMETALICO" color="ITRUNNER_WHITE1" material="3"/>
+        <rimColorConfiguration name="$l10n_configuration_PRETOMETALICO" color="FIAT_BLACKPAINT" material="27"/>
+	    <rimColorConfiguration name="$l10n_configuration_AMARELO" color="0.9386 0.4678 0.0123 1" material="32"/>
+        <rimColorConfiguration name="$l10n_configuration_VERMELHO" color="VICON_RED1"/>	
+        <rimColorConfiguration name="$l10n_configuration_VERMELHOMETALICO" color="0.49 0 0" material="8" />
+        <rimColorConfiguration name="$l10n_configuration_VERMELHOCROMADO" color="1 0 0" material="3" />
+		<rimColorConfiguration name="$l10n_configuration_VERMELHOFOSCO" color="0.494 0.001 0.003" material="27" />
+		<rimColorConfiguration name="$l10n_configuration_LARANJA" color="1 0.13 0.043 0"/>
+		<rimColorConfiguration name="$l10n_configuration_TANGERINA" color="1 0.2 0"/> 
+        <rimColorConfiguration name="$l10n_configuration_LARANJAFRUTA" color="1 0.4 0.112"/>
+        <rimColorConfiguration name="$l10n_configuration_AMARELO" color="1 0.44 0 0"/>	
+        <rimColorConfiguration name="$l10n_configuration_AMARELOACAFRAO" color="1 0.545 0"/>
+		<rimColorConfiguration name="$l10n_configuration_AMARELOMARACUJA" color="0.95 0.706 0"/>
+		<rimColorConfiguration name="$l10n_configuration_VERDE" color="0 0.13 0.05 0"/>	
+		<rimColorConfiguration name="$l10n_configuration_VERDEBANDEIRA" color="0.096 0.198 0.061"/>
+        <rimColorConfiguration name="$l10n_configuration_VERDELIMONADA" color="0.51 0.686 0.322"/>
+        <rimColorConfiguration name="$l10n_configuration_VERDEMENTA" color="0.51 0.686 0.322"/>
+        <rimColorConfiguration name="$l10n_configuration_VERDEFOLHA" color="STARA_GREEN"/>
+        <rimColorConfiguration name="$l10n_configuration_VERDEFLORESTA" color="BERGMANN_GREEN1"/>
+	    <rimColorConfiguration name="$l10n_configuration_VERDEAGUA" color="0.041 0.245 0.223 1.0"/>	
+		<rimColorConfiguration name="$l10n_configuration_AZUL" color="0 0.49 1 0"/>      
+		<rimColorConfiguration name="$l10n_configuration_AZULMETALICO" color="0 0.117 0.41" material="8"/>
+		<rimColorConfiguration name="$l10n_configuration_AZULFOSCO" color="0 0.117 0.42" material="27"/>
+        <rimColorConfiguration name="$l10n_configuration_AZULMAR" color="0.1 0.05 0.325"/>
+        <rimColorConfiguration name="$l10n_configuration_AZULCIANO" color="0.298 0.573 0.604"/>
+		<rimColorConfiguration name="$l10n_configuration_AZULPETROLEO" color="0.051 0.145 0.247"/>
+		<rimColorConfiguration name="$l10n_configuration_AZULPERSA" color="0.4 0.443 0.451"/>
+	    <rimColorConfiguration name="$l10n_configuration_AZULMETALICO" color="FLIEGL_BLUE1" material="27" />
+	    <rimColorConfiguration name="$l10n_configuration_AZULMEIANOITE" color="0.001 0 0.015 1"/>
+ 		<rimColorConfiguration name="$l10n_configuration_ROXOCEBOLA" color="0.1 0 0.122"/>
+		<rimColorConfiguration name="$l10n_configuration_ROXOMISTICO" color="0.2 0 0.1"/>
+		<rimColorConfiguration name="$l10n_configuration_MARROMBARRO" color="0.318 0.071 0.102"/>
+        <rimColorConfiguration name="$l10n_configuration_MARROMMETALICO" color="FLIEGL_BROWN1" material="27" />
+    </rimColorConfigurations>
+
+    <licensePlates>
+        <licensePlate node="plate" position="BACK" preferedType="SQUARISH" placementArea="0.10 0.16 0.11 0.16"/>
+    </licensePlates>
+	
+    <attachable>
+        <inputAttacherJoints>
+            <inputAttacherJoint node="attacherJoint" jointType="semitrailer" upperRotationOffset="0"/>
+        </inputAttacherJoints>
+        <support animationName="moveSupport" />
+    </attachable>
+	
+    <attacherJoints>
+  	    <attacherJoint node="cutterSuportAttacher" jointType="cutter" allowsJointLimitMovement="false" allowsLowering="false" lowerRotLimit="0 0 0" enableCollision="false">
+                <schema position="0 1" rotation="0" invertX="false" />
+	    </attacherJoint>
+        <attacherJointConfigurations>
+            <attacherJointConfiguration name="$l10n_configuration_valueNo" price="0" > 
+                <objectChange node="rearReds" visibilityActive="true" />
+            </attacherJointConfiguration>
+            <attacherJointConfiguration name="$l10n_configuration_trailerAttacherBack" price="200" >
+                <attacherJoint node="rearTrailerAttacher" jointType="trailerLow"  lowerRotLimit="10 80 12" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
+                <schema position="1 0" rotation="0" invertX="false"/>
+                </attacherJoint>
+                <attacherJoint node="rearTrailerAttacher" jointType="trailer"  lowerRotLimit="10 80 12" upperRotationOffset="0" allowsJointLimitMovement="false" canTurnOnImplement="false" comboTime="1">
+                <schema position="1 0" rotation="0" invertX="false"/>
+                </attacherJoint>
+                <objectChange node="rearTrailer" visibilityActive="true" />
+                <objectChange node="rearReds" visibilityActive="false" />
+            </attacherJointConfiguration>
+        </attacherJointConfigurations>
+        <sounds>
+            <attach template="ATTACH_01" linkNode="rearTrailerAttacher" />
+        </sounds>
+    </attacherJoints>
+	
+	<connectionHoses>
+        <hose inputAttacherJointIndices="1" type="airDoubleYellow"  node="referencePointAirYellowFront"  length="0.5" diameter="0.015" minCenterPointOffset="0 0.1 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" socket="air_red" color="SHARED_YELLOW1" >
+        </hose>
+        <hose inputAttacherJointIndices="1" type="airDoubleRed"  node="referencePointAirRedFront"  length="0.5" diameter="0.015" minCenterPointOffset="0 0.1 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" socket="air_red" color="SHARED_RD1" >
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicIn"  node="referencePointHydraulic01Front"  length="0.5" diameter="0.015" minCenterPointOffset="0 0.1 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" color="SHARED_BLACK0" >
+        </hose>
+        <hose inputAttacherJointIndices="1" type="hydraulicOut"  node="referencePointHydraulic02Front"  length="0.5" diameter="0.015" minCenterPointOffset="0 0.1 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" color="SHARED_BLACK0" >
+        </hose>
+        <hose inputAttacherJointIndices="1" type="electric"  node="referencePointElectricFront"  length="0.5" diameter="0.008" minCenterPointOffset="0 0.1 0" maxCenterPointOffset="0 0 0" straighteningFactor="1" outgoingAdapter="DEFAULT" socket="electric" color="SHARED_BLUE1" >
+        </hose>
+		<target attacherJointIndices="2 3" type="airDoubleYellow" node="referencePointAirYellow"/>
+		<target attacherJointIndices="2 3" type="airDoubleRed" node="referencePointAirRed"/>
+        <target attacherJointIndices="2 3" type="electric" node="referencePointElectric"/>
+    </connectionHoses>
+
+    <lights>
+        <sharedLight linkNode="plateNumberLight01"    filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml" />
+        <sharedLight linkNode="plateNumberLight02"    filename="$data/shared/assets/lights/lizard/plateNumberLight01.xml" />
+        <sharedLight linkNode="rearLight31_left"    filename="$data/shared/assets/lights/lizard/rearLight31_left.xml" />
+        <sharedLight linkNode="rearLight31_right"    filename="$data/shared/assets/lights/lizard/rearLight31_right.xml" />
+        <sharedLight linkNode="rearLight32_left"    filename="$data/shared/assets/lights/lizard/rearLight32_left.xml" />
+        <sharedLight linkNode="rearLight32_right"    filename="$data/shared/assets/lights/lizard/rearLight32_right.xml" />
+        <sharedLight linkNode="rearLight08_left"    filename="$data/shared/assets/lights/lizard/rearLight08_left.xml" />
+        <sharedLight linkNode="rearLight08_right"    filename="$data/shared/assets/lights/lizard/rearLight08_right.xml" />
+        <sharedLight linkNode="rearLight28_left"    filename="$data/shared/assets/lights/lizard/rearLight28_left.xml" />
+        <sharedLight linkNode="rearLight28_right"    filename="$data/shared/assets/lights/lizard/rearLight28_right.xml" />
+        <sharedLight linkNode="rearLight01_left"    filename="$data/shared/assets/lights/grimme/rearLight01_left.xml" />
+        <sharedLight linkNode="rearLight01_right"    filename="$data/shared/assets/lights/grimme/rearLight01_right.xml" />
+        <sharedLight linkNode="rearLight53Left"    filename="$data/shared/assets/lights/lizard/rearLight53_left.xml" />
+        <sharedLight linkNode="rearLight53Right"    filename="$data/shared/assets/lights/lizard/rearLight53_right.xml" />
+        <sharedLight linkNode="rearLight22Red_01"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Red_02"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Red_03"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_01"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_02"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_03"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_04"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_05"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_06"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_07"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_08"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_09"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_10"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_11"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_12"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_13"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_14"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_15"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_16"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_17"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_18"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_19"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_20"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_21"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_22"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_23"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_24"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_25"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_26"    filename="xml/zRearLight22Red.xml" />
+
+        <state lightTypes="0" />
+
+        <realLights>
+			<low>
+				<light node="backLightsHigh1" lightTypes="0" />
+				<light node="licensePlateLightHigh" lightTypes="0" />
+				<brakeLight node="brakeLightsHigh1" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+                <reverseLight node="reverseLight" />
+            </low>
+            <high>
+				<light node="backLightsHigh1" lightTypes="0" />
+				<light node="licensePlateLightHigh" lightTypes="0" />
+				<brakeLight node="brakeLightsHigh1" />
+                <turnLightLeft node="turnLightLeftBack" />
+                <turnLightRight node="turnLightRightBack" />
+                <reverseLight node="reverseLight" />
+            </high>
+        </realLights>
+    </lights>
+
+    <animations>
+        <animation name="folding">
+            <sound template="beltClose"         startTime="0.0" direction="-1"  volumeScale="1"   pitchScale="1" linkNode="tensionGanchosLeft"/>
+            <sound template="beltClose"         startTime="0.0" direction="-1"  volumeScale="1"   pitchScale="1" linkNode="tensionGanchosRight"/>
+            <part node="componentJointL" startTime="0.00" endTime="4.00" startRot="0 0 0" endRot="-107 0 0" />
+            <part componentJointIndex="1"   startTime="0" endTime="1" startRotLimit="1 0 0" endRotLimit="20 0 0" />
+            <part node="tensionGanchosLeft" startTime="0" endTime="0.01" visibility="true" />
+            <part node="tensionGanchosLeft" startTime="0.01" endTime="0.02" visibility="false" />
+            <part node="componentJointR" startTime="0.00" endTime="4.00" startRot="0 0 0" endRot="-107 0 0" />
+            <part componentJointIndex="2"   startTime="0" endTime="1" startRotLimit="1 0 0" endRotLimit="20 0 0" />
+            <part node="tensionGanchosRight" startTime="0" endTime="0.01" visibility="true" />
+            <part node="tensionGanchosRight" startTime="0.01" endTime="0.02" visibility="false" />
+            <sound template="hydraulicLayerTone" startTime="0.01" endTime="4" volumeScale="0.9" pitchScale="1.1" fadeIn="0.1" linkNode="rampPistonRight"/>
+            <sound template="clackVar6"          startTime="3.99" direction="1" volumeScale="1.5" pitchScale="0.6" linkNode="rampPistonRight"/>
+            <sound template="sheetImp02"         startTime="3.99" direction="1" volumeScale="1.4" pitchScale="1.4" linkNode="rampPistonRight"/>
+            <sound template="clackVar5"          startTime="0.01" direction="-1"  volumeScale="3.5" pitchScale="0.6" linkNode="rampPistonRight"/>
+            <sound template="sheetImp02"         startTime="0.01" direction="-1"  volumeScale="3"   pitchScale="1.4" linkNode="rampPistonRight"/>
+        </animation>
+		<animation name="cutterSuportTranslation">
+            <part node="cutterSuport" startTime="0" endTime="3" startTrans="0 1.342 5" endTrans="0 1.342 1.353" />
+            <part node="rool01" startTime="0" endTime="3" startRot="0 0 0" endRot="-5000 0 0" />
+            <part node="rool02" startTime="0" endTime="3" startRot="0 0 0" endRot="-5000 0 0" />
+            <part node="rool03" startTime="0" endTime="3" startRot="0 0 0" endRot="-5000 0 0" />
+            <part node="rool04" startTime="0" endTime="3" startRot="0 0 0" endRot="-5000 0 0" />
+            <sound file="$data/sounds/animations/impacts/metalLowVar3_01.ogg"          startTime="2.99" direction="1"  volumeScale="1.5" pitchScale="0.6" linkNode="rool01"/>
+            <sound file="$data/sounds/animations/impacts/sheetImp02.ogg"         startTime="0.01" direction="1"  volumeScale="1.5"   pitchScale="1.4" linkNode="rool01"/>
+            <sound file="$data/sounds/vehicles/shared/metalClanksVehBack01.ogg"         startTime="0.01" endTime="2.99" direction="1"  volumeScale="2"   pitchScale="0.5" fadeIn="0.2" fadeOut="0.5" linkNode="cutterSuport"/>
+            <sound file="$data/sounds/animations/impacts/cylinderImpact03.ogg"          startTime="0.01" direction="-1"  volumeScale="1.5" pitchScale="0.6" linkNode="rool01"/>
+            <sound file="$data/sounds/animations/impacts/sheetImp02.ogg"         startTime="2.99" direction="-1"  volumeScale="1.5"   pitchScale="1.4" linkNode="rool01"/>
+            <sound file="$data/sounds/vehicles/shared/metalClanksVehBack01.ogg"         startTime="0.01" endTime="2.99" direction="-1"  volumeScale="2"   pitchScale="0.5" fadeIn="0.2" fadeOut="0.5" linkNode="cutterSuport"/>
+        </animation>            
+		<animation name="cutterSuportRotation">
+            <part node="cutterSuportRot" startTime="0" endTime="3" startRot="0 0 0" endRot="0 180 0" />
+            <sound file="$data/sounds/animations/clacks/clack4Var01.ogg"          startTime="2.99" direction="1"  volumeScale="1.5" pitchScale="0.6" linkNode="cutterSuportRot"/>
+            <sound file="$data/sounds/animations/clacks/clack4Var01.ogg"          startTime="2.99" direction="-1"  volumeScale="1.5" pitchScale="1.4" linkNode="cutterSuportRot"/>
+            <sound file="$data/sounds/animations/clacks/clack4Var01.ogg"         startTime="0.01" direction="1"  volumeScale="1.5"   pitchScale="1.4" linkNode="cutterSuportRot"/>
+            <sound file="$data/sounds/animations/clacks/clack4Var01.ogg"         startTime="0.01" direction="-1"  volumeScale="1.5"   pitchScale="0.6" linkNode="cutterSuportRot"/>
+            <sound file="$data/sounds/prefab/gate/garageDoorLoop.ogg"         startTime="0.01" endTime="2.99" direction="1"  volumeScale="6"   pitchScale="0.1" fadeIn="0.2" fadeOut="0.5" linkNode="cutterSuportRot"/>
+            <sound file="$data/sounds/prefab/gate/garageDoorLoop.ogg"         startTime="0.01" endTime="2.99" direction="-1"  volumeScale="6"   pitchScale="0.1" fadeIn="0.2" fadeOut="0.5" linkNode="cutterSuportRot"/>
+        </animation>
+		<animation name="sapatas">
+            <part node="movingSapataDianteira" startTime="0" endTime="1.21" startTrans="0 0.066 0" endTrans="0 -0.507 0" />
+            <part node="movingSapataTraseira" startTime="0" endTime="1.21" startTrans="0 0.066 0" endTrans="0 -0.507 0" />
+            <sound template="clackVar6" direction="1" startTime="1.2" volumeScale="2" pitchScale="0.6" linkNode="movingSapataTraseira" />
+            <sound template="metalOpen" direction="-1" startTime="0.1" volumeScale="2" pitchScale="0.6" linkNode="movingSapataTraseira" />
+        </animation>
+        <animation name="moveSupport">
+            <part node="movingSuports" startTime="0.2" endTime="1.2" startTrans="0 0.632 4.458" endTrans="0 0.245 4.458" />
+            <part node="levealer1" startTime="0" endTime="0.2" startRot="0 0 0" endRot="0 0 -90" />
+            <part node="levealer1" startTime="1.2" endTime="1.4" startRot="0 0 -90" endRot="0 0 0" />
+            <part node="axisLevealer1" startTime="0.2" endTime="1.2" startRot="0 0 0" endRot="1080 0 0" />
+            <sound template="metalOpen" direction="1" startTime="1.2" volumeScale="7" pitchScale="0.6" linkNode="movingSuports" />
+            <sound template="clackVar6" direction="-1" startTime="0.1" volumeScale="6" pitchScale="0.6" linkNode="movingSuports" />
+            <sound template="dischargeLoop" direction="1" startTime="0.2" endTime="3.2" volumeScale="1.3" pitchScale="1.0" linkNode="axisLevealer1" />
+            <sound template="clackVar2" direction="1"  startTime="0.01"  volumeScale="4.4" pitchScale="0.7" linkNode="levealer1"/>
+            <sound template="clackVar2" direction="1"  startTime="1.2"  volumeScale="4.4" pitchScale="0.7" linkNode="levealer1"/>
+            <sound template="dischargeLoop" direction="-1" startTime="0.2" endTime="1.2" volumeScale="1.3" pitchScale="1.0" linkNode="axisLevealer1" />
+            <sound template="clackVar2" direction="-1"  startTime="0.01"  volumeScale="4.4" pitchScale="0.7" linkNode="levealer1"/>
+            <sound template="clackVar2" direction="-1"  startTime="1.2"  volumeScale="4.4" pitchScale="0.7" linkNode="levealer1"/>
+        </animation>
+        <animation name="openCover">
+            <part node="tampa" startTime="0.2" endTime="0.21" visibility="true" />
+            <part node="tampa" startTime="0.21" endTime="0.22" visibility="false" />
+            <part node="coverAssoalhoLargo" startTime="0.2" endTime="0.22" startTrans="0 0.121 0" endTrans="0 -0.121 0" />
+            <part node="coverAssoalhoEstreito" startTime="0.2" endTime="0.22" startTrans="0 0.121 0" endTrans="0 -0.121 0" />
+            <sound file="$data/sounds/animations/impacts/metalLowVar2_01.ogg" direction="-1" startTime="0.21" volumeScale="2.3" pitchScale="1.0" linkNode="tampa" />
+        </animation>
+		<animation name="cutterSuportMoving">
+            <part node="cutterSuportMove" startTime="0" endTime="3" startTrans="0.727 0.865 0" endTrans="0.727 1.509 0" />
+       </animation>      
+		<animation name="cutterSuportRotting">
+            <part node="cutterSuportRote" startTime="0" endTime="3" startRot="0 0 0" endRot="0 0 -10" />
+       </animation>    
+    </animations>
+
+    <cylindered>
+        <movingTools>
+			<controlGroups>
+                <controlGroup name="$l10n_group_ramp" />
+                <controlGroup name="$l10n_configuration_cutterBarSuport" />
+                <controlGroup name="$l10n_configuration_sapatasAuxiliares" />
+                <controlGroup name="$l10n_group_cutterAjust" />
+            </controlGroups>
+            <movingTool node="0>0|3" playSound="false" >
+                <controls groupIndex="1" axis="AXIS_CRANE_ARM3" invertAxis="true"  mouseSpeedFactor="0.25" />
+                <animation animSpeed="0.7" animAcceleration="200" animName="folding" />
+            </movingTool>
+            <movingTool node="cutterSuport">
+                <controls groupIndex="2" axis="AXIS_CRANE_ARM3" invertAxis="true" mouseSpeedFactor="0.2" />
+            	<animation animName="cutterSuportTranslation" animSpeed="0.45" />
+                <attacherJoint jointIndices="1"/>
+            </movingTool>
+            <movingTool node="cutterSuportRot">
+                <controls groupIndex="2" axis="AXIS_CRANE_ARM4" invertAxis="false" mouseSpeedFactor="0.2" />
+            	<animation animName="cutterSuportRotation" animSpeed="0.35" />
+                <attacherJoint jointIndices="1"/>
+            </movingTool>	
+            <movingTool node="sapatas" playSound="false" >
+                <controls groupIndex="3" axis="AXIS_CRANE_ARM3" invertAxis="false" mouseSpeedFactor="0.25"/>
+                <animation animSpeed="1" animAcceleration="200" animName="sapatas"/>
+                <componentJoint index="1" anchorActor="0" />
+            </movingTool>
+            <movingTool node="cutterSuportMove" playSound="false">
+                <controls groupIndex="4" axis="AXIS_CRANE_ARM3" invertAxis="false" mouseSpeedFactor="0.25" />
+                <animation animSpeed="0.8" animAcceleration="200" animName="cutterSuportMoving"/>
+                <attacherJoint jointIndices="1"/>
+            </movingTool>
+            <movingTool node="cutterSuportRote" playSound="false">
+                <controls groupIndex="4" axis="AXIS_CRANE_ARM4" invertAxis="false" mouseSpeedFactor="0.25" />
+                <animation animSpeed="1" animAcceleration="200" animName="cutterSuportRotting"/>
+                <attacherJoint jointIndices="1"/>
+            </movingTool>
+		    <movingTool node="componentJointL" playSound="false">
+                <componentJoint index="1" anchorActor="0" />
+			</movingTool>
+		    <movingTool node="componentJointR" playSound="false">
+                <componentJoint index="2" anchorActor="0" />
+			</movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="rampPistonLeft" referencePoint="rampPistonRefLeft" referenceFrame="rampPistonRefLeft" isActiveDirty="true" maxUpdateDistance="300">
+                <translatingPart node="rampCilinderLeft" />
+            </movingPart>
+            <movingPart node="rampPistonRight" referencePoint="rampPistonRefRight" referenceFrame="rampPistonRefRight" isActiveDirty="true" maxUpdateDistance="300">
+                <translatingPart node="rampCilinderRight" />
+            </movingPart>
+			<movingPart node="axis1" referencePoint="axis5_ref" referenceFrame="axis5_ref" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80"/>
+			<movingPart node="axis2" referencePoint="axis6_ref" referenceFrame="axis6_ref" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80"/>
+			<movingPart node="axis3" referencePoint="axis7_ref" referenceFrame="axis7_ref" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80"/>
+			<movingPart node="axis4" referencePoint="axis8_ref" referenceFrame="axis8_ref" isActiveDirty="true" scaleZ="true" maxUpdateDistance="80"/>
+            <movingPart node="rampLeft" referencePoint="rampRefLeft" referenceFrame="rampRefLeft" isActiveDirty="true" maxUpdateDistance="300" />
+            <movingPart node="rampRight" referencePoint="rampRefLRight" referenceFrame="rampRefLRight" isActiveDirty="true" maxUpdateDistance="300" />
+         </movingParts>
+    </cylindered>
+
+    <cover>
+        <coverConfigurations>
+            <coverConfiguration>
+                <cover openAnimation="openCover"/>
+            </coverConfiguration>
+        </coverConfigurations>
+    </cover>
+
+    <foliageBending>
+        <bendingNode minX="-1.38" maxX="1.38" minZ="0.13" maxZ="9.846" yOffset="1.177"  node="0>" />
+        <bendingNode minX="-0.73" maxX="0.73" minZ="-14.752" maxZ="5.077" yOffset="0.469"  node="0>"/>
+        <bendingNode minX="-1.557" maxX="1.557" minZ="-15.131" maxZ="3.964" yOffset="0.664"  node="0>"/>
+        <bendingNode minX="-0.028" maxX="1.029" minZ="0" maxZ="2.822" yOffset="0.178" node="rampLeft"/>
+        <bendingNode minX="-1.029" maxX="0.028" minZ="2.822" maxZ="0" yOffset="0.178" node="rampRight"/>
+    </foliageBending>
+
+
+		<!-- Opcionais -->
+
+
+	<designConfigurations title="$l10n_configuration_cutterBarSuport">
+        <designConfiguration name="$l10n_configuration_valueNo" price="0">
+			<objectChange node="cutterSuport" visibilityActive="false" />
+            <objectChange node="colPart_cutter30ft" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPart_cutterRot01" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPart_cutterRot02" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPart_cutterMoving" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="cutterSuportAttacher" translationActive="0 0 0" />
+		</designConfiguration>
+        <designConfiguration name="$l10n_configuration_suporte30ft" price="300">
+			<objectChange node="cutterSuport" visibilityActive="true" />
+			<objectChange node="ft30" visibilityActive="true" />
+			<objectChange node="ft45" visibilityActive="false" />
+            <objectChange node="cutterSuportAttacher" translationActive="0 0 0" />
+		</designConfiguration>
+        <designConfiguration name="$l10n_configuration_suporte45ft" price="400">
+			<objectChange node="cutterSuport" visibilityActive="true" />
+			<objectChange node="ft30" visibilityActive="false" />
+			<objectChange node="ft45" visibilityActive="true" />
+            <objectChange node="cutterSuportAttacher" translationActive="0 0 0" />
+		</designConfiguration>
+        <designConfiguration name="$l10n_configuration_suporte60ft" price="400">
+			<objectChange node="cutterSuport" visibilityActive="true" />
+			<objectChange node="ft30" visibilityActive="false" />
+			<objectChange node="ft45" visibilityActive="true" />
+            <objectChange node="cutterSuportAttacher" translationActive="0 0 -0.4" />
+		</designConfiguration>
+    </designConfigurations> 
+
+    <design2Configurations title="$l10n_configuration_assoalhosExtensao">
+        <design2Configuration name="$l10n_configuration_valueDefault" price="0">
+			<objectChange node="tampasPadrao" visibilityActive="true"/>
+			<objectChange node="tampasPranchao" visibilityActive="false"/>
+            <objectChange node="coverAssoalhoLargo" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension01" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension02" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension03" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension04" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartRampExtensionRight" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartRampExtensionLeft" compoundChildActive="false" compoundChildInactive="true" />
+		</design2Configuration>
+		<design2Configuration name="$l10n_configuration_assoalhoTrilhos" price="100">
+			<objectChange node="tampasPadrao" visibilityActive="true"/>
+			<objectChange node="tampasPranchao" visibilityActive="false"/>
+			<objectChange node="trilhoTraseiros" visibilityActive="true"/>
+            <objectChange node="coverAssoalhoLargo" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension01" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension02" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension03" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension04" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartRampExtensionRight" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartRampExtensionLeft" compoundChildActive="false" compoundChildInactive="true" />
+		</design2Configuration>
+		<design2Configuration name="$l10n_configuration_assoalhoDeMetal" price="150">
+			<objectChange node="tampasPadrao" visibilityActive="true"/>
+			<objectChange node="tampasPranchao" visibilityActive="false"/>
+			<objectChange node="metalFloor1" visibilityActive="true"/>
+            <objectChange node="coverAssoalhoLargo" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension01" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension02" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension03" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartExtension04" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartRampExtensionRight" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartRampExtensionLeft" compoundChildActive="false" compoundChildInactive="true" />
+		</design2Configuration>
+		<design2Configuration name="$l10n_configuration_assoalhoPranchasMadeira" price="120">
+			<objectChange node="tampasPadrao" visibilityActive="false"/>
+			<objectChange node="tampasPranchao" visibilityActive="true"/>
+			<objectChange node="woodFloor" visibilityActive="true"/>
+			<objectChange node="extensionWoodRamp1" visibilityActive="true"/>
+			<objectChange node="extensionWoodRamp2" visibilityActive="true"/>
+            <objectChange node="coverAssoalhoEstreito" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartPadrao01" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartPadrao02" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartPadrao03" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartPadrao04" compoundChildActive="false" compoundChildInactive="true" />
+		</design2Configuration>
+		<design2Configuration name="$l10n_configuration_assoalhoTabuasVelhas" price="200">
+			<objectChange node="tampasPadrao" visibilityActive="false"/>
+			<objectChange node="tampasPranchao" visibilityActive="true"/>
+			<objectChange node="extensionWood" visibilityActive="true"/>
+			<objectChange node="extensionWoodRamp1" visibilityActive="true"/>
+			<objectChange node="extensionWoodRamp2" visibilityActive="true"/>
+            <objectChange node="coverAssoalhoEstreito" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartPadrao01" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartPadrao02" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartPadrao03" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPartPadrao04" compoundChildActive="false" compoundChildInactive="true" />
+		</design2Configuration>
+	</design2Configurations>
+
+    <design3Configurations title="$l10n_configuration_ExtensaoRampa">
+        <design3Configuration name="$l10n_configuration_valueNo" price="0">
+        	<objectChange node="extensionLeft" visibilityActive="false"/>
+			<objectChange node="extensionRight" visibilityActive="false"/>
+            <objectChange node="colPart_rampLeft" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPart_rampRight" compoundChildActive="false" compoundChildInactive="true" />
+		</design3Configuration>
+		<design3Configuration name="$l10n_configuration_valueYes" price="100">
+        	<objectChange node="extensionLeft" visibilityActive="true"/>
+			<objectChange node="extensionRight" visibilityActive="true"/>
+		</design3Configuration>
+	</design3Configurations>
+
+    <design4Configurations title="$l10n_configuration_cabecalho">
+        <design4Configuration name="$l10n_configuration_valueDefault" price="0">
+			<objectChange node="engate01" visibilityActive="true"/>
+			<objectChange node="engate02" visibilityActive="false"/>
+            <objectChange node="engate02_colPart1" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="engate02_colPart2" compoundChildActive="false" compoundChildInactive="true" />
+		</design4Configuration>
+		<design4Configuration name="$l10n_configuration_valueDefault" price="10">
+			<objectChange node="engate01" visibilityActive="false"/>
+			<objectChange node="engate02" visibilityActive="true"/>
+            <objectChange node="engate01_colPart1" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="engate01_colPart2" compoundChildActive="false" compoundChildInactive="true" />
+		</design4Configuration>
+	</design4Configurations>
+
+    <design5Configurations title="$l10n_configuration_alertPlatesRear">
+        <design5Configuration name="$l10n_configuration_dimensoes" price="0">
+			<objectChange node="dimensionPlateLeft" visibilityActive="true"/>
+			<objectChange node="dimensionPlateRight" visibilityActive="true"/>
+			<objectChange node="oversizeOPC" visibilityActive="false"/>
+		</design5Configuration>
+		<design5Configuration name="$l10n_configuration_Oversize" price="20">
+			<objectChange node="dimensionPlateLeft" visibilityActive="false"/>
+			<objectChange node="dimensionPlateRight" visibilityActive="false"/>
+			<objectChange node="oversizeOPC" visibilityActive="true"/>
+		</design5Configuration>
+		<design5Configuration name="$l10n_configuration_All" price="50">
+			<objectChange node="dimensionPlateLeft" visibilityActive="true"/>
+			<objectChange node="dimensionPlateRight" visibilityActive="true"/>
+			<objectChange node="oversizeOPC" visibilityActive="true"/>
+		</design5Configuration>
+		<design5Configuration name="$l10n_configuration_valueNo" price="0">
+			<objectChange node="dimensionPlateLeft" visibilityActive="false"/>
+			<objectChange node="dimensionPlateRight" visibilityActive="false"/>
+			<objectChange node="oversizeOPC" visibilityActive="false"/>
+		</design5Configuration>
+	</design5Configurations>
+
+    <design6Configurations title="$l10n_configuration_Triangles">
+		<design6Configuration  name="$l10n_configuration_valueNo" price="0">
+                <objectChange node="triangles" visibilityActive="false" />
+		</design6Configuration>
+        <design6Configuration name="$l10n_configuration_valueYes" price="10">
+                <objectChange node="triangles" visibilityActive="true" />
+		</design6Configuration>
+	</design6Configurations>
+
+    <design7Configurations title="$l10n_configuration_lanternasTraseiras">
+		<design7Configuration  name="$l10n_configuration_model" price="0">
+                <objectChange node="model01" visibilityActive="true" />
+		</design7Configuration>
+        <design7Configuration name="$l10n_configuration_model" price="20">
+                <objectChange node="model02" visibilityActive="true" />
+		</design7Configuration>
+		<design7Configuration  name="$l10n_configuration_model" price="20">
+                <objectChange node="model03" visibilityActive="true" />
+		</design7Configuration>
+        <design7Configuration name="$l10n_configuration_model" price="20">
+                <objectChange node="model04" visibilityActive="true" />
+		</design7Configuration>
+		<design7Configuration  name="$l10n_configuration_model" price="20">
+                <objectChange node="model05" visibilityActive="true" />
+		</design7Configuration>
+        <design7Configuration name="$l10n_configuration_model" price="20">
+                <objectChange node="model06" visibilityActive="true" />
+		</design7Configuration>
+	</design7Configurations>
+
+    <design8Configurations title="$l10n_configuration_rodoar">
+		<design8Configuration  name="$l10n_configuration_valueNo" price="0">
+                <objectChange node="suportesRodoar" visibilityActive="false" />
+                <objectChange node="1rodoar1L" visibilityActive="false" />
+                <objectChange node="1calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="1springLeft" visibilityActive="false" />
+                <objectChange node="2rodoar1L" visibilityActive="false" />
+                <objectChange node="2calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="2springLeft" visibilityActive="false" />
+                <objectChange node="3rodoar1L" visibilityActive="false" />
+                <objectChange node="3calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="3springLeft" visibilityActive="false" />
+                <objectChange node="4rodoar1L" visibilityActive="false" />
+                <objectChange node="4calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="4springLeft" visibilityActive="false" />
+                <objectChange node="5rodoar1L" visibilityActive="false" />
+                <objectChange node="5calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="5springLeft" visibilityActive="false" />
+                <objectChange node="6rodoar1L" visibilityActive="false" />
+                <objectChange node="6calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="6springLeft" visibilityActive="false" />
+                <objectChange node="7rodoar1L" visibilityActive="false" />
+                <objectChange node="7calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="7springLeft" visibilityActive="false" />
+                <objectChange node="8rodoar1L" visibilityActive="false" />
+                <objectChange node="8calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="8springLeft" visibilityActive="false" />
+		</design8Configuration>
+		<design8Configuration  name="$l10n_configuration_rodoar" price="1000">
+                <objectChange node="suportesRodoar" visibilityActive="true" />
+                <objectChange node="1rodoar1L" visibilityActive="true" />
+                <objectChange node="1calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="1springLeft" visibilityActive="true" />
+                <objectChange node="2rodoar1L" visibilityActive="true" />
+                <objectChange node="2calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="2springLeft" visibilityActive="true" />
+                <objectChange node="3rodoar1L" visibilityActive="true" />
+                <objectChange node="3calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="3springLeft" visibilityActive="true" />
+                <objectChange node="4rodoar1L" visibilityActive="true" />
+                <objectChange node="4calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="4springLeft" visibilityActive="true" />
+                <objectChange node="5rodoar1L" visibilityActive="true" />
+                <objectChange node="5calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="5springLeft" visibilityActive="true" />
+                <objectChange node="6rodoar1L" visibilityActive="true" />
+                <objectChange node="6calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="6springLeft" visibilityActive="true" />
+                <objectChange node="7rodoar1L" visibilityActive="true" />
+                <objectChange node="7calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="7springLeft" visibilityActive="true" />
+                <objectChange node="8rodoar1L" visibilityActive="true" />
+                <objectChange node="8calotaRodoar1L" visibilityActive="false" />
+                <objectChange node="8springLeft" visibilityActive="true" />
+		</design8Configuration>
+		<design8Configuration  name="$l10n_configuration_rodoarComCalotas" price="1600">
+                <objectChange node="suportesRodoar" visibilityActive="true" />
+                <objectChange node="1rodoar1L" visibilityActive="true" />
+                <objectChange node="1calotaRodoar1L" visibilityActive="true" />
+                <objectChange node="1springLeft" visibilityActive="true" />
+                <objectChange node="2rodoar1L" visibilityActive="true" />
+                <objectChange node="2calotaRodoar1L" visibilityActive="true" />
+                <objectChange node="2springLeft" visibilityActive="true" />
+                <objectChange node="3rodoar1L" visibilityActive="true" />
+                <objectChange node="3calotaRodoar1L" visibilityActive="true" />
+                <objectChange node="3springLeft" visibilityActive="true" />
+                <objectChange node="4rodoar1L" visibilityActive="true" />
+                <objectChange node="4calotaRodoar1L" visibilityActive="true" />
+                <objectChange node="4springLeft" visibilityActive="true" />
+                <objectChange node="5rodoar1L" visibilityActive="true" />
+                <objectChange node="5calotaRodoar1L" visibilityActive="true" />
+                <objectChange node="5springLeft" visibilityActive="true" />
+                <objectChange node="6rodoar1L" visibilityActive="true" />
+                <objectChange node="6calotaRodoar1L" visibilityActive="true" />
+                <objectChange node="6springLeft" visibilityActive="true" />
+                <objectChange node="7rodoar1L" visibilityActive="true" />
+                <objectChange node="7calotaRodoar1L" visibilityActive="true" />
+                <objectChange node="7springLeft" visibilityActive="true" />
+                <objectChange node="8rodoar1L" visibilityActive="true" />
+                <objectChange node="8calotaRodoar1L" visibilityActive="true" />
+                <objectChange node="8springLeft" visibilityActive="true" />
+		</design8Configuration>
+	</design8Configurations>
+
+    <vehicleTypeConfigurations title="$l10n_configuration_sapatasAuxiliares">
+        <vehicleTypeConfiguration name="$l10n_configuration_valueNo" price="0" vehicleType="trailer">
+            <objectChange node="sapatas" visibilityActive="false" />
+            <objectChange node="colPart_sapataDianteira" compoundChildActive="false" compoundChildInactive="true" />
+            <objectChange node="colPart_sapataTraseira" compoundChildActive="false" compoundChildInactive="true" />
+        </vehicleTypeConfiguration>
+        <vehicleTypeConfiguration name="$l10n_configuration_valueYes" price="500" vehicleType="trailer">
+                <objectChange node="sapatas" visibilityActive="true" />
+        </vehicleTypeConfiguration>
+	</vehicleTypeConfigurations>
+
+    <tensionBelts>
+        <tensionBeltsConfigurations title="$l10n_configuration_bumpers">
+            <tensionBeltsConfiguration name="$l10n_configuration_model" price="0">
+                <tensionBelts linkNode="tensionBelts" jointNode="0>" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="startPoint01" endNode="startPoint01End" />
+                    <tensionBelt startNode="startPoint02" endNode="startPoint02End" />
+                    <tensionBelt startNode="startPoint03" endNode="startPoint03End" />
+                    <tensionBelt startNode="startPoint04" endNode="startPoint04End" />
+                    <tensionBelt startNode="startPoint05" endNode="startPoint05End" />
+                    <tensionBelt startNode="startPoint06" endNode="startPoint06End" />
+                    <tensionBelt startNode="startPoint07" endNode="startPoint07End" />
+                    <tensionBelt startNode="startPoint08" endNode="startPoint08End" />
+                    <tensionBelt startNode="startPoint09" endNode="startPoint09End" />
+                    <tensionBelt startNode="startPoint10" endNode="startPoint10End" />
+                    <tensionBelt startNode="startPoint11" endNode="startPoint11End" />
+                    <tensionBelt startNode="startPoint12" endNode="startPoint12End" />
+                    <tensionBelt startNode="startPoint13" endNode="startPoint13End" />
+                    <tensionBelt startNode="startPoint14" endNode="startPoint14End" />
+                    <tensionBelt startNode="startPoint15" endNode="startPoint15End" />
+                    <sounds>
+                        <addBelt    template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+                <objectChange node="bumper01" visibilityActive="true" />
+                <objectChange node="bumper02" visibilityActive="false" />
+                <objectChange node="bumper03" visibilityActive="false" />
+            </tensionBeltsConfiguration>
+            <tensionBeltsConfiguration name="$l10n_configuration_model" price="50">
+                <tensionBelts linkNode="tensionBelts" jointNode="0>" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="startPoint01" endNode="startPoint01End" />
+                    <tensionBelt startNode="startPoint02" endNode="startPoint02End" />
+                    <tensionBelt startNode="startPoint03" endNode="startPoint03End" />
+                    <tensionBelt startNode="startPoint04" endNode="startPoint04End" />
+                    <tensionBelt startNode="startPoint05" endNode="startPoint05End" />
+                    <tensionBelt startNode="startPoint06" endNode="startPoint06End" />
+                    <tensionBelt startNode="startPoint07" endNode="startPoint07End" />
+                    <tensionBelt startNode="startPoint08" endNode="startPoint08End" />
+                    <tensionBelt startNode="startPoint09" endNode="startPoint09End" />
+                    <tensionBelt startNode="startPoint10" endNode="startPoint10End" />
+                    <tensionBelt startNode="startPoint11" endNode="startPoint11End" />
+                    <tensionBelt startNode="startPoint12" endNode="startPoint12End" />
+                    <tensionBelt startNode="startPoint13" endNode="startPoint13End" />
+                    <tensionBelt startNode="startPoint14" endNode="startPoint14End" />
+                    <tensionBelt startNode="startPoint15" endNode="startPoint15End" />
+                    <sounds>
+                        <addBelt    template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+                <objectChange node="bumper01" visibilityActive="false" />
+                <objectChange node="bumper02" visibilityActive="true" />
+                <objectChange node="bumper03" visibilityActive="false" />
+            </tensionBeltsConfiguration>
+            <tensionBeltsConfiguration name="$l10n_configuration_model" price="50">
+                <tensionBelts linkNode="tensionBelts" jointNode="0>" maxEdgeLength="0.1" geometryBias="0.01" ratchetPosition="0.2" defaultOffset="0.1" defaultOffsetSide="0.1" defaultHeight="4" activationTrigger="beltActivationTrigger">
+                    <tensionBelt startNode="startPoint01" endNode="startPoint01End" />
+                    <tensionBelt startNode="startPoint02" endNode="startPoint02End" />
+                    <tensionBelt startNode="startPoint03" endNode="startPoint03End" />
+                    <tensionBelt startNode="startPoint04" endNode="startPoint04End" />
+                    <tensionBelt startNode="startPoint05" endNode="startPoint05End" />
+                    <tensionBelt startNode="startPoint06" endNode="startPoint06End" />
+                    <tensionBelt startNode="startPoint07" endNode="startPoint07End" />
+                    <tensionBelt startNode="startPoint08" endNode="startPoint08End" />
+                    <tensionBelt startNode="startPoint09" endNode="startPoint09End" />
+                    <tensionBelt startNode="startPoint10" endNode="startPoint10End" />
+                    <tensionBelt startNode="startPoint11" endNode="startPoint11End" />
+                    <tensionBelt startNode="startPoint12" endNode="startPoint12End" />
+                    <tensionBelt startNode="startPoint13" endNode="startPoint13End" />
+                    <tensionBelt startNode="startPoint14" endNode="startPoint14End" />
+                    <tensionBelt startNode="startPoint15" endNode="startPoint15End" />
+                    <sounds>
+                        <addBelt    template="beltOpen" />
+                        <removeBelt template="beltClose" />
+                    </sounds>
+                </tensionBelts>
+                <objectChange node="bumper01" visibilityActive="false" />
+                <objectChange node="bumper02" visibilityActive="false" />
+                <objectChange node="bumper03" visibilityActive="true" />
+            </tensionBeltsConfiguration>
+        </tensionBeltsConfigurations>
+    </tensionBelts>
+
+	<foldable>
+        <foldingConfigurations title="$l10n_configuration_pneusDesmontados">
+            <foldingConfiguration name="$l10n_configuration_valueNo" price="0">
+				<objectChange node="NH" visibilityActive="false" />
+				<objectChange node="CH" visibilityActive="false" />
+				<objectChange node="JD" visibilityActive="false" />
+				<objectChange node="CLASS" visibilityActive="false" />
+            </foldingConfiguration>
+            <foldingConfiguration name="New Holland" price="10" displayBrand="NEWHOLLAND">
+				<objectChange node="NH" visibilityActive="true" />
+				<objectChange node="nh01" visibilityActive="true" />
+				<objectChange node="nh02" visibilityActive="true" />
+				<objectChange node="nh03" visibilityActive="false" />
+				<objectChange node="nh04" visibilityActive="false" />
+				<objectChange node="CH" visibilityActive="false" />
+				<objectChange node="JD" visibilityActive="false" />
+				<objectChange node="CLASS" visibilityActive="false" />
+            </foldingConfiguration>
+            <foldingConfiguration name="New Holland ALL" price="10" displayBrand="NEWHOLLAND">
+				<objectChange node="NH" visibilityActive="true" />
+				<objectChange node="nh01" visibilityActive="true" />
+				<objectChange node="nh02" visibilityActive="true" />
+				<objectChange node="nh03" visibilityActive="true" />
+				<objectChange node="nh04" visibilityActive="true" />
+				<objectChange node="CH" visibilityActive="false" />
+				<objectChange node="JD" visibilityActive="false" />
+				<objectChange node="CLASS" visibilityActive="false" />
+            </foldingConfiguration>
+            <foldingConfiguration name="Case IH" price="10" displayBrand="CASEIH">
+				<objectChange node="NH" visibilityActive="false" />
+				<objectChange node="CH" visibilityActive="true" />
+				<objectChange node="ch01" visibilityActive="true" />
+				<objectChange node="ch02" visibilityActive="true" />
+				<objectChange node="ch03" visibilityActive="false" />
+				<objectChange node="ch04" visibilityActive="false" />
+				<objectChange node="JD" visibilityActive="false" />
+				<objectChange node="CLASS" visibilityActive="false" />
+            </foldingConfiguration>
+            <foldingConfiguration name="Case IH ALL" price="10" displayBrand="CASEIH">
+				<objectChange node="NH" visibilityActive="false" />
+				<objectChange node="CH" visibilityActive="true" />
+				<objectChange node="ch01" visibilityActive="true" />
+				<objectChange node="ch02" visibilityActive="true" />
+				<objectChange node="ch03" visibilityActive="true" />
+				<objectChange node="ch04" visibilityActive="true" />
+				<objectChange node="JD" visibilityActive="false" />
+				<objectChange node="CLASS" visibilityActive="false" />
+            </foldingConfiguration>
+            <foldingConfiguration name="John Deere" price="10" displayBrand="JOHNDEERE">
+				<objectChange node="NH" visibilityActive="false" />
+				<objectChange node="CH" visibilityActive="false" />
+				<objectChange node="JD" visibilityActive="true" />
+				<objectChange node="jd01" visibilityActive="true" />
+				<objectChange node="jd02" visibilityActive="true" />
+				<objectChange node="jd03" visibilityActive="false" />
+				<objectChange node="jd04" visibilityActive="false" />
+				<objectChange node="CLASS" visibilityActive="false" />
+            </foldingConfiguration>
+            <foldingConfiguration name="John Deere ALL" price="10" displayBrand="JOHNDEERE">
+				<objectChange node="NH" visibilityActive="false" />
+				<objectChange node="CH" visibilityActive="false" />
+				<objectChange node="JD" visibilityActive="true" />
+				<objectChange node="jd01" visibilityActive="true" />
+				<objectChange node="jd02" visibilityActive="true" />
+				<objectChange node="jd03" visibilityActive="true" />
+				<objectChange node="jd04" visibilityActive="true" />
+				<objectChange node="CLASS" visibilityActive="false" />
+            </foldingConfiguration>
+            <foldingConfiguration name="Claas" price="10" displayBrand="CLAAS">
+				<objectChange node="NH" visibilityActive="false" />
+				<objectChange node="CH" visibilityActive="false" />
+				<objectChange node="JD" visibilityActive="false" />
+				<objectChange node="CLASS" visibilityActive="true" />
+				<objectChange node="CLASS01" visibilityActive="true" />
+				<objectChange node="CLASS02" visibilityActive="true" />
+				<objectChange node="CLASS03" visibilityActive="false" />
+				<objectChange node="CLASS04" visibilityActive="false" />
+            </foldingConfiguration>
+            <foldingConfiguration name="Claas ALL" price="10" displayBrand="CLAAS">
+				<objectChange node="NH" visibilityActive="false" />
+				<objectChange node="CH" visibilityActive="false" />
+				<objectChange node="JD" visibilityActive="false" />
+				<objectChange node="CLASS" visibilityActive="true" />
+				<objectChange node="CLASS01" visibilityActive="true" />
+				<objectChange node="CLASS02" visibilityActive="true" />
+				<objectChange node="CLASS03" visibilityActive="true" />
+				<objectChange node="CLASS04" visibilityActive="true" />
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+
+		<!-- Cores -->
+
+
+	<baseMaterial>
+        <material name="transportTrailer25m_mat" baseNode="transportTrailer25m_vis">
+            <shaderParameter name="colorMat0" value="CHALLENGER_ORANGE1"/>
+        </material>
+        <material name="engate_mat" baseNode="engate01">
+            <shaderParameter name="colorMat0" value="CHALLENGER_ORANGE1"/>
+        </material>
+        <material name="metalAssoalho1_mat" baseNode="metalFloor1">
+            <shaderParameter name="colorMat0" value="CHALLENGER_ORANGE1"/>
+        </material>
+        <material name="metalAssoalho2_mat" baseNode="metalFloor1">
+            <shaderParameter name="colorMat1" value="CHALLENGER_ORANGE1"/>
+        </material>
+        <material name="metalAssoalho3_mat" baseNode="metalFloor1">
+            <shaderParameter name="colorMat2" value="CHALLENGER_ORANGE1"/>
+        </material>
+        <material name="chassi_mat" baseNode="transportTrailer25m_vis">
+            <shaderParameter name="colorMat1" value="CHALLENGER_ORANGE1"/>
+        </material>
+		<material name="cutterSuport_mat" baseNode="cutterSuport">
+            <shaderParameter name="colorMat2" value="CHALLENGER_ORANGE1"/>
+        </material>
+        <material name="bumper_mat" baseNode="bumper02">
+            <shaderParameter name="colorMat3" value="CHALLENGER_ORANGE1"/>
+        </material>
+    </baseMaterial>
+
+    <baseMaterialConfigurations price="1000" useDefaultColors="true" defaultColorIndex="0">
+        <baseMaterialConfiguration name="$l10n_configuration_AMARELO" color="0.784 0.42 0.021 0"/>	
+        <baseMaterialConfiguration name="$l10n_configuration_AMARELO" color="0.784 0.32 0.021 0"/>	
+		<baseMaterialConfiguration name="$l10n_configuration_VERDE" color="0 0.15 0 0"/>
+		<baseMaterialConfiguration name="$l10n_configuration_AZUL" color="0 0 0.3 0"/>     
+        <baseMaterialConfiguration name="$l10n_configuration_VERMELHO" color="0.4 0 0 0"/>	
+	    <baseMaterialConfiguration name="$l10n_configuration_PRATAMETALICO" color="ITRUNNER_WHITE1" material="27"/>
+        <baseMaterialConfiguration name="$l10n_configuration_PRETOMETALICO" color="FIAT_BLACKPAINT" material="27"/>
+        <baseMaterialConfiguration name="$l10n_configuration_VERMELHO" color="VICON_RED1"/>	
+        <baseMaterialConfiguration name="$l10n_configuration_VERMELHOMETALICO" color="0.49 0 0" material="8" />
+        <baseMaterialConfiguration name="$l10n_configuration_VERMELHOCROMADO" color="1 0 0" material="3" />
+		<baseMaterialConfiguration name="$l10n_configuration_VERMELHOFOSCO" color="0.494 0.001 0.003" material="27" />
+		<baseMaterialConfiguration name="$l10n_configuration_LARANJA" color="1 0.13 0.043 0"/>
+		<baseMaterialConfiguration name="$l10n_configuration_TANGERINA" color="1 0.2 0"/> 
+        <baseMaterialConfiguration name="$l10n_configuration_LARANJAFRUTA" color="1 0.4 0.112"/>
+        <baseMaterialConfiguration name="$l10n_configuration_AMARELO" color="1 0.44 0 0"/>	
+        <baseMaterialConfiguration name="$l10n_configuration_AMARELOACAFRAO" color="1 0.545 0"/>
+		<baseMaterialConfiguration name="$l10n_configuration_AMARELOMARACUJA" color="0.95 0.706 0"/>
+		<baseMaterialConfiguration name="$l10n_configuration_VERDE" color="0 0.13 0.05 0"/>	
+		<baseMaterialConfiguration name="$l10n_configuration_VERDEBANDEIRA" color="0.096 0.198 0.061"/>
+        <baseMaterialConfiguration name="$l10n_configuration_VERDELIMONADA" color="0.51 0.686 0.322"/>
+        <baseMaterialConfiguration name="$l10n_configuration_VERDEMENTA" color="0.51 0.686 0.322"/>
+        <baseMaterialConfiguration name="$l10n_configuration_VERDEFOLHA" color="STARA_GREEN"/>
+        <baseMaterialConfiguration name="$l10n_configuration_VERDEFLORESTA" color="BERGMANN_GREEN1"/>
+	    <baseMaterialConfiguration name="$l10n_configuration_VERDEAGUA" color="0.041 0.245 0.223 1.0"/>	
+		<baseMaterialConfiguration name="$l10n_configuration_AZUL" color="0 0.49 1 0"/>      
+		<baseMaterialConfiguration name="$l10n_configuration_AZULMETALICO" color="0 0.117 0.41" material="8"/>
+		<baseMaterialConfiguration name="$l10n_configuration_AZULFOSCO" color="0 0.117 0.42" material="27"/>
+        <baseMaterialConfiguration name="$l10n_configuration_AZULMAR" color="0.1 0.05 0.325"/>
+        <baseMaterialConfiguration name="$l10n_configuration_AZULCIANO" color="0.298 0.573 0.604"/>
+		<baseMaterialConfiguration name="$l10n_configuration_AZULPETROLEO" color="0.051 0.145 0.247"/>
+		<baseMaterialConfiguration name="$l10n_configuration_AZULPERSA" color="0.4 0.443 0.451"/>
+	    <baseMaterialConfiguration name="$l10n_configuration_AZULMETALICO" color="FLIEGL_BLUE1" material="27" />
+	    <baseMaterialConfiguration name="$l10n_configuration_AZULMEIANOITE" color="0.001 0 0.015 1"/>
+ 		<baseMaterialConfiguration name="$l10n_configuration_ROXOCEBOLA" color="0.1 0 0.122"/>
+		<baseMaterialConfiguration name="$l10n_configuration_ROXOMISTICO" color="0.2 0 0.1"/>
+		<baseMaterialConfiguration name="$l10n_configuration_MARROMBARRO" color="0.318 0.071 0.102"/>
+        <baseMaterialConfiguration name="$l10n_configuration_MARROMMETALICO" color="FLIEGL_BROWN1" material="27" />
+        <material name="transportTrailer25m_mat" shaderParameter="colorMat0" />
+        <material name="engate_mat" shaderParameter="colorMat0" />
+        <material name="metalAssoalho1_mat" shaderParameter="colorMat0" />
+        <material name="metalAssoalho2_mat" shaderParameter="colorMat1" />
+        <material name="metalAssoalho3_mat" shaderParameter="colorMat2" />
+    </baseMaterialConfigurations>
+
+    <designMaterialConfigurations price="100" useDefaultColors="true" title="$l10n_configuration_chassiColor">
+        <designMaterialConfiguration name="$l10n_configuration_PRETOMETALICO" color="FIAT_BLACKPAINT" material="27"/>
+        <designMaterialConfiguration name="$l10n_configuration_AMARELO" color="0.784 0.42 0.021 0"/>	
+        <designMaterialConfiguration name="$l10n_configuration_AMARELO" color="0.784 0.32 0.021 0"/>	
+		<designMaterialConfiguration name="$l10n_configuration_VERDE" color="0 0.15 0 0"/>
+		<designMaterialConfiguration name="$l10n_configuration_AZUL" color="0 0 0.3 0"/>     
+        <designMaterialConfiguration name="$l10n_configuration_VERMELHO" color="0.4 0 0 0"/>
+	    <designMaterialConfiguration name="$l10n_configuration_AMARELO" color="0.9386 0.4678 0.0123 1" material="32"/>
+	    <designMaterialConfiguration name="$l10n_configuration_PRATAMETALICO" color="ITRUNNER_WHITE1" material="27"/>
+        <designMaterialConfiguration name="$l10n_configuration_VERMELHO" color="VICON_RED1"/>	
+        <designMaterialConfiguration name="$l10n_configuration_VERMELHOMETALICO" color="0.49 0 0" material="8" />
+        <designMaterialConfiguration name="$l10n_configuration_VERMELHOCROMADO" color="1 0 0" material="3" />
+		<designMaterialConfiguration name="$l10n_configuration_VERMELHOFOSCO" color="0.494 0.001 0.003" material="27" />
+		<designMaterialConfiguration name="$l10n_configuration_LARANJA" color="1 0.13 0.043 0"/>
+		<designMaterialConfiguration name="$l10n_configuration_TANGERINA" color="1 0.2 0"/> 
+        <designMaterialConfiguration name="$l10n_configuration_LARANJAFRUTA" color="1 0.4 0.112"/>
+        <designMaterialConfiguration name="$l10n_configuration_AMARELO" color="1 0.44 0 0"/>	
+        <designMaterialConfiguration name="$l10n_configuration_AMARELOACAFRAO" color="1 0.545 0"/>
+		<designMaterialConfiguration name="$l10n_configuration_AMARELOMARACUJA" color="0.95 0.706 0"/>
+		<designMaterialConfiguration name="$l10n_configuration_VERDE" color="0 0.13 0.05 0"/>	
+		<designMaterialConfiguration name="$l10n_configuration_VERDEBANDEIRA" color="0.096 0.198 0.061"/>
+        <designMaterialConfiguration name="$l10n_configuration_VERDELIMONADA" color="0.51 0.686 0.322"/>
+        <designMaterialConfiguration name="$l10n_configuration_VERDEMENTA" color="0.51 0.686 0.322"/>
+        <designMaterialConfiguration name="$l10n_configuration_VERDEFOLHA" color="STARA_GREEN"/>
+        <designMaterialConfiguration name="$l10n_configuration_VERDEFLORESTA" color="BERGMANN_GREEN1"/>
+	    <designMaterialConfiguration name="$l10n_configuration_VERDEAGUA" color="0.041 0.245 0.223 1.0"/>	
+		<designMaterialConfiguration name="$l10n_configuration_AZUL" color="0 0.49 1 0"/>      
+		<designMaterialConfiguration name="$l10n_configuration_AZULMETALICO" color="0 0.117 0.41" material="8"/>
+		<designMaterialConfiguration name="$l10n_configuration_AZULFOSCO" color="0 0.117 0.42" material="27"/>
+        <designMaterialConfiguration name="$l10n_configuration_AZULMAR" color="0.1 0.05 0.325"/>
+        <designMaterialConfiguration name="$l10n_configuration_AZULCIANO" color="0.298 0.573 0.604"/>
+		<designMaterialConfiguration name="$l10n_configuration_AZULPETROLEO" color="0.051 0.145 0.247"/>
+		<designMaterialConfiguration name="$l10n_configuration_AZULPERSA" color="0.4 0.443 0.451"/>
+	    <designMaterialConfiguration name="$l10n_configuration_AZULMETALICO" color="FLIEGL_BLUE1" material="27" />
+	    <designMaterialConfiguration name="$l10n_configuration_AZULMEIANOITE" color="0.001 0 0.015 1"/>
+ 		<designMaterialConfiguration name="$l10n_configuration_ROXOCEBOLA" color="0.1 0 0.122"/>
+		<designMaterialConfiguration name="$l10n_configuration_ROXOMISTICO" color="0.2 0 0.1"/>
+		<designMaterialConfiguration name="$l10n_configuration_MARROMBARRO" color="0.318 0.071 0.102"/>
+        <designMaterialConfiguration name="$l10n_configuration_MARROMMETALICO" color="FLIEGL_BROWN1" material="27" />
+        <material name="chassi_mat" shaderParameter="colorMat1"/>
+    </designMaterialConfigurations>
+
+    <designMaterial2Configurations price="50" useDefaultColors="true" title="$l10n_configuration_cutterColor">
+		<designMaterial2Configuration name="$l10n_configuration_VERDE" color="0 0.15 0 0"/>
+        <designMaterial2Configuration name="$l10n_configuration_AMARELO" color="0.784 0.42 0.021 0"/>	
+        <designMaterial2Configuration name="$l10n_configuration_AMARELO" color="0.784 0.32 0.021 0"/>	
+		<designMaterial2Configuration name="$l10n_configuration_AZUL" color="0 0 0.3 0"/>     
+        <designMaterial2Configuration name="$l10n_configuration_VERMELHO" color="0.4 0 0 0"/>
+	    <designMaterial2Configuration name="$l10n_configuration_AMARELO" color="0.9386 0.4678 0.0123 1" material="32"/>
+	    <designMaterial2Configuration name="$l10n_configuration_PRATAMETALICO" color="ITRUNNER_WHITE1" material="27"/>
+        <designMaterial2Configuration name="$l10n_configuration_PRETOMETALICO" color="FIAT_BLACKPAINT" material="27"/>
+        <designMaterial2Configuration name="$l10n_configuration_VERMELHO" color="VICON_RED1"/>	
+        <designMaterial2Configuration name="$l10n_configuration_VERMELHOMETALICO" color="0.49 0 0" material="8" />
+        <designMaterial2Configuration name="$l10n_configuration_VERMELHOCROMADO" color="1 0 0" material="3" />
+		<designMaterial2Configuration name="$l10n_configuration_VERMELHOFOSCO" color="0.494 0.001 0.003" material="27" />
+		<designMaterial2Configuration name="$l10n_configuration_LARANJA" color="1 0.13 0.043 0"/>
+		<designMaterial2Configuration name="$l10n_configuration_TANGERINA" color="1 0.2 0"/> 
+        <designMaterial2Configuration name="$l10n_configuration_LARANJAFRUTA" color="1 0.4 0.112"/>
+        <designMaterial2Configuration name="$l10n_configuration_AMARELO" color="1 0.44 0 0"/>	
+        <designMaterial2Configuration name="$l10n_configuration_AMARELOACAFRAO" color="1 0.545 0"/>
+		<designMaterial2Configuration name="$l10n_configuration_AMARELOMARACUJA" color="0.95 0.706 0"/>
+		<designMaterial2Configuration name="$l10n_configuration_VERDE" color="0 0.13 0.05 0"/>	
+		<designMaterial2Configuration name="$l10n_configuration_VERDEBANDEIRA" color="0.096 0.198 0.061"/>
+        <designMaterial2Configuration name="$l10n_configuration_VERDELIMONADA" color="0.51 0.686 0.322"/>
+        <designMaterial2Configuration name="$l10n_configuration_VERDEMENTA" color="0.51 0.686 0.322"/>
+        <designMaterial2Configuration name="$l10n_configuration_VERDEFOLHA" color="STARA_GREEN"/>
+        <designMaterial2Configuration name="$l10n_configuration_VERDEFLORESTA" color="BERGMANN_GREEN1"/>
+	    <designMaterial2Configuration name="$l10n_configuration_VERDEAGUA" color="0.041 0.245 0.223 1.0"/>	
+		<designMaterial2Configuration name="$l10n_configuration_AZUL" color="0 0.49 1 0"/>      
+		<designMaterial2Configuration name="$l10n_configuration_AZULMETALICO" color="0 0.117 0.41" material="8"/>
+		<designMaterial2Configuration name="$l10n_configuration_AZULFOSCO" color="0 0.117 0.42" material="27"/>
+        <designMaterial2Configuration name="$l10n_configuration_AZULMAR" color="0.1 0.05 0.325"/>
+        <designMaterial2Configuration name="$l10n_configuration_AZULCIANO" color="0.298 0.573 0.604"/>
+		<designMaterial2Configuration name="$l10n_configuration_AZULPETROLEO" color="0.051 0.145 0.247"/>
+		<designMaterial2Configuration name="$l10n_configuration_AZULPERSA" color="0.4 0.443 0.451"/>
+	    <designMaterial2Configuration name="$l10n_configuration_AZULMETALICO" color="FLIEGL_BLUE1" material="27" />
+	    <designMaterial2Configuration name="$l10n_configuration_AZULMEIANOITE" color="0.001 0 0.015 1"/>
+ 		<designMaterial2Configuration name="$l10n_configuration_ROXOCEBOLA" color="0.1 0 0.122"/>
+		<designMaterial2Configuration name="$l10n_configuration_ROXOMISTICO" color="0.2 0 0.1"/>
+		<designMaterial2Configuration name="$l10n_configuration_MARROMBARRO" color="0.318 0.071 0.102"/>
+        <designMaterial2Configuration name="$l10n_configuration_MARROMMETALICO" color="FLIEGL_BROWN1" material="27" />
+        <material name="cutterSuport_mat" shaderParameter="colorMat2"/>
+    </designMaterial2Configurations>
+
+    <designMaterial3Configurations price="10" useDefaultColors="true" title="$l10n_configuration_bumperColor">
+        <designMaterial3Configuration name="$l10n_configuration_AMARELO" color="0.784 0.32 0.021 0"/>	
+        <designMaterial3Configuration name="$l10n_configuration_AMARELO" color="0.784 0.42 0.021 0"/>	
+		<designMaterial3Configuration name="$l10n_configuration_VERDE" color="0 0.15 0 0"/>
+		<designMaterial3Configuration name="$l10n_configuration_AZUL" color="0 0 0.3 0"/>     
+        <designMaterial3Configuration name="$l10n_configuration_VERMELHO" color="0.4 0 0 0"/>
+	    <designMaterial3Configuration name="$l10n_configuration_AMARELO" color="0.9386 0.4678 0.0123 1" material="32"/>
+	    <designMaterial3Configuration name="$l10n_configuration_PRATAMETALICO" color="ITRUNNER_WHITE1" material="27"/>
+        <designMaterial3Configuration name="$l10n_configuration_PRETOMETALICO" color="FIAT_BLACKPAINT" material="27"/>
+        <designMaterial3Configuration name="$l10n_configuration_VERMELHO" color="VICON_RED1"/>	
+        <designMaterial3Configuration name="$l10n_configuration_VERMELHOMETALICO" color="0.49 0 0" material="8" />
+        <designMaterial3Configuration name="$l10n_configuration_VERMELHOCROMADO" color="1 0 0" material="3" />
+		<designMaterial3Configuration name="$l10n_configuration_VERMELHOFOSCO" color="0.494 0.001 0.003" material="27" />
+		<designMaterial3Configuration name="$l10n_configuration_LARANJA" color="1 0.13 0.043 0"/>
+		<designMaterial3Configuration name="$l10n_configuration_TANGERINA" color="1 0.2 0"/> 
+        <designMaterial3Configuration name="$l10n_configuration_LARANJAFRUTA" color="1 0.4 0.112"/>
+        <designMaterial3Configuration name="$l10n_configuration_AMARELO" color="1 0.44 0 0"/>	
+        <designMaterial3Configuration name="$l10n_configuration_AMARELOACAFRAO" color="1 0.545 0"/>
+		<designMaterial3Configuration name="$l10n_configuration_AMARELOMARACUJA" color="0.95 0.706 0"/>
+		<designMaterial3Configuration name="$l10n_configuration_VERDE" color="0 0.13 0.05 0"/>	
+		<designMaterial3Configuration name="$l10n_configuration_VERDEBANDEIRA" color="0.096 0.198 0.061"/>
+        <designMaterial3Configuration name="$l10n_configuration_VERDELIMONADA" color="0.51 0.686 0.322"/>
+        <designMaterial3Configuration name="$l10n_configuration_VERDEMENTA" color="0.51 0.686 0.322"/>
+        <designMaterial3Configuration name="$l10n_configuration_VERDEFOLHA" color="STARA_GREEN"/>
+        <designMaterial3Configuration name="$l10n_configuration_VERDEFLORESTA" color="BERGMANN_GREEN1"/>
+	    <designMaterial3Configuration name="$l10n_configuration_VERDEAGUA" color="0.041 0.245 0.223 1.0"/>	
+		<designMaterial3Configuration name="$l10n_configuration_AZUL" color="0 0.49 1 0"/>      
+		<designMaterial3Configuration name="$l10n_configuration_AZULMETALICO" color="0 0.117 0.41" material="8"/>
+		<designMaterial3Configuration name="$l10n_configuration_AZULFOSCO" color="0 0.117 0.42" material="27"/>
+        <designMaterial3Configuration name="$l10n_configuration_AZULMAR" color="0.1 0.05 0.325"/>
+        <designMaterial3Configuration name="$l10n_configuration_AZULCIANO" color="0.298 0.573 0.604"/>
+		<designMaterial3Configuration name="$l10n_configuration_AZULPETROLEO" color="0.051 0.145 0.247"/>
+		<designMaterial3Configuration name="$l10n_configuration_AZULPERSA" color="0.4 0.443 0.451"/>
+	    <designMaterial3Configuration name="$l10n_configuration_AZULMETALICO" color="FLIEGL_BLUE1" material="27" />
+	    <designMaterial3Configuration name="$l10n_configuration_AZULMEIANOITE" color="0.001 0 0.015 1"/>
+ 		<designMaterial3Configuration name="$l10n_configuration_ROXOCEBOLA" color="0.1 0 0.122"/>
+		<designMaterial3Configuration name="$l10n_configuration_ROXOMISTICO" color="0.2 0 0.1"/>
+		<designMaterial3Configuration name="$l10n_configuration_MARROMBARRO" color="0.318 0.071 0.102"/>
+        <designMaterial3Configuration name="$l10n_configuration_MARROMMETALICO" color="FLIEGL_BROWN1" material="27" />
+        <material name="bumper_mat" shaderParameter="colorMat3"/>
+    </designMaterial3Configurations>
+
+    <ai>
+        <agentAttachment jointNode="attacherJoint" rotCenterWheelIndices="1 2 3 4 5 6 7 8" width="3.7" height="3.3" length="25.3" lengthOffset="9"/>
+    </ai>   
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="3" fieldMultiplier="2"/>
+
+<i3dMappings>
+    <i3dMapping id="transportTrailer25m_vis" node="0"/>
+    <i3dMapping id="attacherJoint" node="0|0|0"/>
+    <i3dMapping id="rearTrailer" node="0|0|1"/>
+    <i3dMapping id="rearTrailerAttacher" node="0|0|1|0"/>
+    <i3dMapping id="referencePointAirYellow" node="0|0|1|1|0|0"/>
+    <i3dMapping id="referencePointAirRed" node="0|0|1|1|1|0"/>
+    <i3dMapping id="referencePointElectric" node="0|0|1|1|2|0"/>
+    <i3dMapping id="referencePointElectricFront" node="0|0|2|0|0"/>
+    <i3dMapping id="referencePointHydraulic01Front" node="0|0|2|1|0"/>
+    <i3dMapping id="referencePointHydraulic02Front" node="0|0|2|2|0"/>
+    <i3dMapping id="referencePointAirYellowFront" node="0|0|2|3|0"/>
+    <i3dMapping id="referencePointAirRedFront" node="0|0|2|4|0"/>
+    <i3dMapping id="componentJoint1" node="0|3|0|1|0"/>
+    <i3dMapping id="componentJoint2" node="0|3|6|1|0"/>
+    <i3dMapping id="componentJointL" node="0|3|0|1"/>
+    <i3dMapping id="componentJointR" node="0|3|6|1"/>
+    <i3dMapping id="wheelLeftAxis1" node="0|1|0"/>
+    <i3dMapping id="wheelLeftAxis1_ref" node="0|1|0|0"/>
+    <i3dMapping id="wheelRightAxis1" node="0|1|1"/>
+    <i3dMapping id="wheelRightAxis1_ref" node="0|1|1|0"/>
+    <i3dMapping id="axis5_ref" node="0|1|1|1"/>
+    <i3dMapping id="axis1" node="0|1|0|1"/>
+    <i3dMapping id="wheelLeftAxis2" node="0|1|2"/>
+    <i3dMapping id="wheelLeftAxis2_ref" node="0|1|2|0"/>
+    <i3dMapping id="wheelRightAxis2" node="0|1|3"/>
+    <i3dMapping id="wheelRightAxis2_ref" node="0|1|3|0"/>
+    <i3dMapping id="axis6_ref" node="0|1|3|1"/>
+    <i3dMapping id="axis2" node="0|1|2|1"/>
+    <i3dMapping id="wheelLeftAxis3" node="0|1|4"/>
+    <i3dMapping id="wheelLeftAxis3_ref" node="0|1|4|0"/>
+    <i3dMapping id="wheelRightAxis3" node="0|1|5"/>
+    <i3dMapping id="wheelRightAxis3_ref" node="0|1|5|0"/>
+    <i3dMapping id="axis7_ref" node="0|1|5|1"/>
+    <i3dMapping id="axis3" node="0|1|4|1"/>
+    <i3dMapping id="wheelLeftAxis4" node="0|1|6"/>
+    <i3dMapping id="wheelLeftAxis4_ref" node="0|1|6|0"/>
+    <i3dMapping id="wheelRightAxis4" node="0|1|7"/>
+    <i3dMapping id="wheelRightAxis4_ref" node="0|1|7|0"/>
+    <i3dMapping id="axis8_ref" node="0|1|7|1"/>
+    <i3dMapping id="axis4" node="0|1|6|1"/>
+    <i3dMapping id="plate" node="0|2|0|2|0"/>
+    <i3dMapping id="plateNumberLight01" node="0|2|0|2|1"/>
+    <i3dMapping id="plateNumberLight02" node="0|2|0|2|2"/>
+    <i3dMapping id="licensePlateLightHigh" node="0|2|0|2|3"/>
+    <i3dMapping id="backLightsHigh1" node="0|2|0|0|0|0"/>
+    <i3dMapping id="turnLightLeftBack" node="0|2|0|0|1|0"/>
+    <i3dMapping id="turnLightRightBack" node="0|2|0|0|1|1"/>
+    <i3dMapping id="reverseLight" node="0|2|0|0|2|0"/>
+    <i3dMapping id="brakeLightsHigh1" node="0|2|0|0|3|0"/>
+    <i3dMapping id="model01" node="0|2|0|1|0"/>
+    <i3dMapping id="rearLight31_left" node="0|2|0|1|0|0"/>
+    <i3dMapping id="rearLight31_right" node="0|2|0|1|0|1"/>
+    <i3dMapping id="model02" node="0|2|0|1|1"/>
+    <i3dMapping id="rearLight32_left" node="0|2|0|1|1|0"/>
+    <i3dMapping id="rearLight32_right" node="0|2|0|1|1|1"/>
+    <i3dMapping id="model03" node="0|2|0|1|2"/>
+    <i3dMapping id="rearLight08_left" node="0|2|0|1|2|0"/>
+    <i3dMapping id="rearLight08_right" node="0|2|0|1|2|1"/>
+    <i3dMapping id="model04" node="0|2|0|1|3"/>
+    <i3dMapping id="rearLight28_left" node="0|2|0|1|3|0"/>
+    <i3dMapping id="rearLight28_right" node="0|2|0|1|3|1"/>
+    <i3dMapping id="model05" node="0|2|0|1|4"/>
+    <i3dMapping id="rearLight01_left" node="0|2|0|1|4|0"/>
+    <i3dMapping id="rearLight01_right" node="0|2|0|1|4|1"/>
+    <i3dMapping id="model06" node="0|2|0|1|5"/>
+    <i3dMapping id="rearLight53Left" node="0|2|0|1|5|0"/>
+    <i3dMapping id="rearLight53Right" node="0|2|0|1|5|1"/>
+    <i3dMapping id="rearReds" node="0|2|0|1|6"/>
+    <i3dMapping id="rearLight22Red_01" node="0|2|0|1|6|0"/>
+    <i3dMapping id="rearLight22Red_02" node="0|2|0|1|6|1"/>
+    <i3dMapping id="rearLight22Red_03" node="0|2|0|1|6|2"/>
+    <i3dMapping id="lateralYellons" node="0|2|0|1|7"/>
+    <i3dMapping id="rearLight22Yellon_01" node="0|2|0|1|7|0"/>
+    <i3dMapping id="rearLight22Yellon_02" node="0|2|0|1|7|1"/>
+    <i3dMapping id="rearLight22Yellon_03" node="0|2|0|1|7|2"/>
+    <i3dMapping id="rearLight22Yellon_04" node="0|2|0|1|7|3"/>
+    <i3dMapping id="rearLight22Yellon_05" node="0|2|0|1|7|4"/>
+    <i3dMapping id="rearLight22Yellon_06" node="0|2|0|1|7|5"/>
+    <i3dMapping id="rearLight22Yellon_07" node="0|2|0|1|7|6"/>
+    <i3dMapping id="rearLight22Yellon_08" node="0|2|0|1|7|7"/>
+    <i3dMapping id="rearLight22Yellon_09" node="0|2|0|1|7|8"/>
+    <i3dMapping id="rearLight22Yellon_10" node="0|2|0|1|7|9"/>
+    <i3dMapping id="rearLight22Yellon_11" node="0|2|0|1|7|10"/>
+    <i3dMapping id="rearLight22Yellon_12" node="0|2|0|1|7|11"/>
+    <i3dMapping id="rearLight22Yellon_13" node="0|2|0|1|7|12"/>
+    <i3dMapping id="rearLight22Yellon_14" node="0|2|0|1|7|13"/>
+    <i3dMapping id="rearLight22Yellon_15" node="0|2|0|1|7|14"/>
+    <i3dMapping id="rearLight22Yellon_16" node="0|2|0|1|7|15"/>
+    <i3dMapping id="rearLight22Yellon_17" node="0|2|0|1|7|16"/>
+    <i3dMapping id="rearLight22Yellon_18" node="0|2|0|1|7|17"/>
+    <i3dMapping id="rearLight22Yellon_19" node="0|2|0|1|7|18"/>
+    <i3dMapping id="rearLight22Yellon_20" node="0|2|0|1|7|19"/>
+    <i3dMapping id="rearLight22Yellon_21" node="0|2|0|1|7|20"/>
+    <i3dMapping id="rearLight22Yellon_22" node="0|2|0|1|7|21"/>
+    <i3dMapping id="rearLight22Yellon_23" node="0|2|0|1|7|22"/>
+    <i3dMapping id="rearLight22Yellon_24" node="0|2|0|1|7|23"/>
+    <i3dMapping id="rearLight22Yellon_25" node="0|2|0|1|7|24"/>
+    <i3dMapping id="rearLight22Yellon_26" node="0|2|0|1|7|25"/>
+    <i3dMapping id="rampPartLeft" node="0|3|0"/>
+    <i3dMapping id="rampLeft" node="0>0|3|0|1|1"/>
+    <i3dMapping id="rampPistonRefLeft" node="0>0|3|0|1|1|3"/>
+    <i3dMapping id="rampRefLeft" node="1>0"/>
+    <i3dMapping id="extensionLeft" node="0>0|3|0|1|1|0"/>
+    <i3dMapping id="dimensionPlateLeft" node="0>0|3|0|1|1|1"/>
+    <i3dMapping id="oversize" node="0>0|3|0|1|1|2"/>
+    <i3dMapping id="oversizeOPC" node="0>0|3|0|1|1|2|0"/>
+    <i3dMapping id="rampPartRight" node="0|3|6"/>
+    <i3dMapping id="rampRight" node="0|3|6|1|1"/>
+    <i3dMapping id="rampPistonRefRight" node="0>0|3|6|1|1|2"/>
+    <i3dMapping id="rampRefLRight" node="2>0"/>
+    <i3dMapping id="extensionRight" node="0>0|3|6|1|1|0"/>
+    <i3dMapping id="dimensionPlateRight" node="0>0|3|6|1|1|1"/>
+    <i3dMapping id="rampPistonLeft" node="0|3|1|0"/>
+    <i3dMapping id="rampCilinderLeft" node="0|3|1|0|0"/>
+    <i3dMapping id="rampPistonRight" node="0|3|1|1"/>
+    <i3dMapping id="rampCilinderRight" node="0|3|1|1|0"/>
+    <i3dMapping id="cutterSuport" node="0|3|2"/>
+    <i3dMapping id="cutterSuportRot" node="0|3|2|0"/>
+    <i3dMapping id="cutterSuportMove" node="0>0|3|2|0|0"/>
+    <i3dMapping id="cutterSuportRote" node="0>0|3|2|0|0|0"/>
+    <i3dMapping id="cutterSuportAttacher" node="0>0|3|2|0|0|0|0"/>
+    <i3dMapping id="ft30" node="0|3|2|0|1"/>
+    <i3dMapping id="ft45" node="0|3|2|0|2"/>
+    <i3dMapping id="colPart_cutter30ft" node="0|3|2|0|3"/>
+    <i3dMapping id="colPart_cutterRot01" node="0|3|2|0|4"/>
+    <i3dMapping id="colPart_cutterRot02" node="0|3|2|0|5"/>
+    <i3dMapping id="rools" node="0|3|2|1"/>
+    <i3dMapping id="rool01" node="0|3|2|1|0"/>
+    <i3dMapping id="rool02" node="0|3|2|1|1"/>
+    <i3dMapping id="rool03" node="0|3|2|1|2"/>
+    <i3dMapping id="rool04" node="0|3|2|1|3"/>
+    <i3dMapping id="colPart_cutterMoving" node="0|3|2|2"/>
+    <i3dMapping id="movingSuports" node="0|3|3"/>
+    <i3dMapping id="sapatas" node="0|4|3"/>
+    <i3dMapping id="sapatasDianteiras" node="0|4|3|0"/>
+    <i3dMapping id="movingSapataDianteira" node="0|4|3|0|0"/>
+    <i3dMapping id="sapatasTraseiras" node="0|4|3|1"/>
+    <i3dMapping id="movingSapataTraseira" node="0|4|3|1|0"/>
+    <i3dMapping id="tensionGanchosLeft" node="0|3|4|0"/>
+    <i3dMapping id="tensionGanchosRight" node="0|3|4|1"/>
+    <i3dMapping id="axisLevealer1" node="0|3|5|0"/>
+    <i3dMapping id="levealer1" node="0|3|5|0|0"/>
+    <i3dMapping id="suspension01" node="0|4|6|1"/>
+    <i3dMapping id="suspension02" node="0|4|6|2"/>
+    <i3dMapping id="suspension03" node="0|4|6|3"/>
+    <i3dMapping id="suspension04" node="0|4|6|4"/>
+    <i3dMapping id="suspension05" node="0|4|6|5"/>
+    <i3dMapping id="componentJoint4" node="0|4|6|1"/>
+    <i3dMapping id="componentJoint5" node="0|4|6|2"/>
+    <i3dMapping id="componentJoint6" node="0|4|6|3"/>
+    <i3dMapping id="componentJoint7" node="0|4|6|4"/>
+    <i3dMapping id="componentJoint8" node="0|4|6|5"/>
+    <i3dMapping id="tensionBelts" node="2"/>
+    <i3dMapping id="beltActivationTrigger" node="2|0"/>
+    <i3dMapping id="startPoint01" node="2|1"/>
+    <i3dMapping id="startPoint01End" node="2|1|0"/>
+    <i3dMapping id="startPoint02" node="2|2"/>
+    <i3dMapping id="startPoint02End" node="2|2|0"/>
+    <i3dMapping id="startPoint03" node="2|3"/>
+    <i3dMapping id="startPoint03End" node="2|3|0"/>
+    <i3dMapping id="startPoint04" node="2|4"/>
+    <i3dMapping id="startPoint04End" node="2|4|0"/>
+    <i3dMapping id="startPoint05" node="2|5"/>
+    <i3dMapping id="startPoint05End" node="2|5|0"/>
+    <i3dMapping id="startPoint06" node="2|6"/>
+    <i3dMapping id="startPoint06End" node="2|6|0"/>
+    <i3dMapping id="startPoint07" node="2|7"/>
+    <i3dMapping id="startPoint07End" node="2|7|0"/>
+    <i3dMapping id="startPoint08" node="2|8"/>
+    <i3dMapping id="startPoint08End" node="2|8|0"/>
+    <i3dMapping id="startPoint09" node="2|9"/>
+    <i3dMapping id="startPoint09End" node="2|9|0"/>
+    <i3dMapping id="startPoint10" node="2|10"/>
+    <i3dMapping id="startPoint10End" node="2|10|0"/>
+    <i3dMapping id="startPoint11" node="2|11"/>
+    <i3dMapping id="startPoint11End" node="2|11|0"/>
+    <i3dMapping id="startPoint12" node="2|12"/>
+    <i3dMapping id="startPoint12End" node="2|12|0"/>
+    <i3dMapping id="startPoint13" node="2|13"/>
+    <i3dMapping id="startPoint13End" node="2|13|0"/>
+    <i3dMapping id="startPoint14" node="2|14"/>
+    <i3dMapping id="startPoint14End" node="2|14|0"/>
+    <i3dMapping id="startPoint15" node="2|15"/>
+    <i3dMapping id="startPoint15End" node="2|15|0"/>
+    <i3dMapping id="colPartPadrao01" node="1|2|0"/>
+    <i3dMapping id="colPartPadrao02" node="1|2|1"/>
+    <i3dMapping id="colPartPadrao03" node="1|2|2"/>
+    <i3dMapping id="colPartPadrao04" node="1|2|3"/>
+    <i3dMapping id="colPartExtension01" node="1|3|0"/>
+    <i3dMapping id="colPartExtension02" node="1|3|1"/>
+    <i3dMapping id="colPartExtension03" node="1|3|2"/>
+    <i3dMapping id="colPartExtension04" node="1|3|3"/>
+    <i3dMapping id="tampasPadrao" node="0|4|7|0"/>
+    <i3dMapping id="tampasPranchao" node="0|4|7|1"/>
+    <i3dMapping id="coverAssoalhoLargo" node="1|1|0"/>
+    <i3dMapping id="coverAssoalhoEstreito" node="1|1|1"/>
+    <i3dMapping id="tampa" node="0|4|7"/>
+    <i3dMapping id="metalFloor1" node="0|4|1|0"/>
+    <i3dMapping id="trilhoTraseiros" node="0|4|1|1"/>
+    <i3dMapping id="extensionWood" node="0|4|1|2"/>
+    <i3dMapping id="woodFloor" node="0|4|1|3"/>
+    <i3dMapping id="colPart_rampLeft" node="1>1"/>
+    <i3dMapping id="colPart_rampRight" node="2>1"/>
+    <i3dMapping id="engate01" node="0|4|0|0"/>
+    <i3dMapping id="engate01_colPart1" node="0|4|0|0|1"/>
+    <i3dMapping id="engate01_colPart2" node="0|4|0|0|2"/>
+    <i3dMapping id="engate02" node="0|4|0|1"/>
+    <i3dMapping id="engate02_colPart1" node="0|4|0|1|0"/>
+    <i3dMapping id="engate02_colPart2" node="0|4|0|1|1"/>
+    <i3dMapping id="triangles" node="0|2|0|3"/>
+    <i3dMapping id="suportesRodoar" node="0|1|8|4"/>
+    <i3dMapping id="1rodoar1L" node="0|1|0|0|0|0"/>
+    <i3dMapping id="1calotaRodoar1L" node="0|1|0|0|0|1"/>
+    <i3dMapping id="1springLeft" node="0|1|0|2"/>
+    <i3dMapping id="2rodoar1L" node="0|1|1|0|0|0"/>
+    <i3dMapping id="2calotaRodoar1L" node="0|1|1|0|0|1"/>
+    <i3dMapping id="2springLeft" node="0|1|1|2"/>
+    <i3dMapping id="3rodoar1L" node="0|1|2|0|0|0"/>
+    <i3dMapping id="3calotaRodoar1L" node="0|1|2|0|0|1"/>
+    <i3dMapping id="3springLeft" node="0|1|2|2"/>
+    <i3dMapping id="4rodoar1L" node="0|1|3|0|0|0"/>
+    <i3dMapping id="4calotaRodoar1L" node="0|1|3|0|0|1"/>
+    <i3dMapping id="4springLeft" node="0|1|3|2"/>
+    <i3dMapping id="5rodoar1L" node="0|1|4|0|0|0"/>
+    <i3dMapping id="5calotaRodoar1L" node="0|1|4|0|0|1"/>
+    <i3dMapping id="5springLeft" node="0|1|4|2"/>
+    <i3dMapping id="6rodoar1L" node="0|1|5|0|0|0"/>
+    <i3dMapping id="6calotaRodoar1L" node="0|1|5|0|0|1"/>
+    <i3dMapping id="6springLeft" node="0|1|5|2"/>
+    <i3dMapping id="7rodoar1L" node="0|1|6|0|0|0"/>
+    <i3dMapping id="7calotaRodoar1L" node="0|1|6|0|0|1"/>
+    <i3dMapping id="7springLeft" node="0|1|6|2"/>
+    <i3dMapping id="8rodoar1L" node="0|1|7|0|0|0"/>
+    <i3dMapping id="8calotaRodoar1L" node="0|1|7|0|0|1"/>
+    <i3dMapping id="8springLeft" node="0|1|7|2"/>
+    <i3dMapping id="colPart_sapataDianteira" node="0|4|3|0|0|0"/>
+    <i3dMapping id="colPart_sapataTraseira" node="0|4|3|1|0|0"/>
+    <i3dMapping id="bumper01" node="0|4|2|0"/>
+    <i3dMapping id="bumper02" node="0|4|2|1"/>
+    <i3dMapping id="bumper03" node="0|4|2|2"/>
+    <i3dMapping id="hub01" node="0|1|0|0|1"/>
+    <i3dMapping id="hub02" node="0|1|1|0|1"/>
+    <i3dMapping id="hub03" node="0|1|2|0|1"/>
+    <i3dMapping id="hub04" node="0|1|3|0|1"/>
+    <i3dMapping id="hub05" node="0|1|4|0|1"/>
+    <i3dMapping id="hub06" node="0|1|5|0|1"/>
+    <i3dMapping id="hub07" node="0|1|6|0|1"/>
+    <i3dMapping id="hub08" node="0|1|7|0|1"/>
+    <i3dMapping id="extensionWoodRamp1" node="1>2"/>
+    <i3dMapping id="colPartRampExtensionLeft" node="1>3"/>
+    <i3dMapping id="extensionWoodRamp2" node="2>2"/>
+    <i3dMapping id="colPartRampExtensionRight" node="2>3"/>
+    <i3dMapping id="dynamicWheels" node="0|4|8"/>
+    <i3dMapping id="JD" node="0|4|8|0"/>
+    <i3dMapping id="jd01" node="0|4|8|0|0"/>
+    <i3dMapping id="jd02" node="0|4|8|0|1"/>
+    <i3dMapping id="jd03" node="0|4|8|0|2"/>
+    <i3dMapping id="jd04" node="0|4|8|0|3"/>
+    <i3dMapping id="CH" node="0|4|8|1"/>
+    <i3dMapping id="ch01" node="0|4|8|1|0"/>
+    <i3dMapping id="ch02" node="0|4|8|1|1"/>
+    <i3dMapping id="ch03" node="0|4|8|1|2"/>
+    <i3dMapping id="ch04" node="0|4|8|1|3"/>
+    <i3dMapping id="NH" node="0|4|8|2"/>
+    <i3dMapping id="nh01" node="0|4|8|2|0"/>
+    <i3dMapping id="nh02" node="0|4|8|2|1"/>
+    <i3dMapping id="nh03" node="0|4|8|2|2"/>
+    <i3dMapping id="nh04" node="0|4|8|2|3"/>
+    <i3dMapping id="CLASS" node="0|4|8|3"/>
+    <i3dMapping id="CLASS01" node="0|4|8|3|0"/>
+    <i3dMapping id="CLASS02" node="0|4|8|3|1"/>
+    <i3dMapping id="CLASS03" node="0|4|8|3|2"/>
+    <i3dMapping id="CLASS04" node="0|4|8|3|3"/>
+</i3dMappings>
+</vehicle>

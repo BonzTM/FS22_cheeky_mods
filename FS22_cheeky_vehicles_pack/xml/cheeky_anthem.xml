@@ -261,7 +261,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Anthem 6x4 (MP7 425)" hp="425" price="0">
+            <motorConfiguration name="Cheeky Anthem 6x4 (MP7 425)" hp="425" price="0">
                 <motor torqueScale="2.036" minRpm="850" maxRpm="2200" maxForwardSpeed="137" maxBackwardSpeed="15" brakeForce="9" lowBrakeForceScale="0.22" dampingRateScale="1.9" >
                     <torque rpm="850" torque="0.9"/>
                     <torque rpm="1000" torque="1"/>
@@ -293,10 +293,10 @@
                     <backwardGear gearRatio="9.04" name="R2"/>
                 </transmission>
             </motorConfiguration>
-            <motorConfiguration name="Anthem 6x4 (MP8 650)" hp="650" price="10000" consumerConfigurationIndex="2">
+            <motorConfiguration name="Cheeky Anthem 6x4 (MP8 650)" hp="650" price="10000" consumerConfigurationIndex="2">
                 <motor torqueScale="4" dampingRateScale="2.0"/>
             </motorConfiguration>
-            <motorConfiguration name="Anthem 6x4 (MP8 850)" hp="850" price="26500" consumerConfigurationIndex="3">
+            <motorConfiguration name="Cheeky Anthem 6x4 (MP8 850)" hp="850" price="26500" consumerConfigurationIndex="3">
                 <motor torqueScale="6" dampingRateScale="2.2"/>
             </motorConfiguration>
         </motorConfigurations>

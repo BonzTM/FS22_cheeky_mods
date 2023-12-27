@@ -387,7 +387,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="H21D" hp="305" price="0">
+            <motorConfiguration name="Cheeky H21D" hp="305" price="0">
                 <motor torqueScale="1.288" minRpm="850" maxRpm="2200" maxForwardSpeed="22" maxBackwardSpeed="22" brakeForce="7.5" lowBrakeForceScale="0.5" dampingRateScale="1.9">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

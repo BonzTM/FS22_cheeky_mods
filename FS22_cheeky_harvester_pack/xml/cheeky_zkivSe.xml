@@ -9,6 +9,7 @@
             <set path="vehicle.storeData.price" value="688500"/>
             <set path="vehicle.base.speedLimit#value" value="12"/>
             <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="800"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(0)#name" value="Cheeky ZKIVSE"/>
 		</attributes>
     </parentFile>
 

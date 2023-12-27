@@ -393,7 +393,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Tiger 6 XL" hp="768" price="0">
+            <motorConfiguration name="Cheeky Tiger 6 XL" hp="768" price="0">
                 <motor torqueScale="3.241" minRpm="850" maxRpm="2200" maxForwardSpeed="43" maxBackwardSpeed="15" brakeForce="19" lowBrakeForceScale="0.22" lowBrakeForceSpeedLimit="1" accelerationLimit="1.7" dampingRateScale="5">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../shared/xml/schema/wheel.xsd">
+    <brand>MICHELIN</brand>
+    <name>TRANSPORT</name>
+    <default>
+        <physics radius="0.847" width="1.05" mass="0.384" tireType="mud" frictionScale="1.60" maxLongStiffness="8" maxLatStiffness="100" maxLatStiffnessLoad="2" />
+        <tire filename="wheels/transport/pneu.i3d" nodeLeft="1|0" nodeRight="1|0" maxDeformation="0.105" sideDeformOffset="0.977" isCareWheel="false" tireTrackAtlasIndex="0" />
+        <outerRim filename="wheels/transport/pneu.i3d" node="1|1" />
+    </default>
+</wheel>

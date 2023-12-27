@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<vehicle type="cheeky_woodHarvester" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/vehicle.xsd">
+<vehicle type="harvester911" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/vehicle.xsd">
     <parentFile xmlFilename="$pdlcdir/forestryPack/vehicles/komatsu/harvester911/harvester911.xml">
     <attributes>
 			<set path="vehicle.base.filename" value="$pdlcdir/forestryPack/vehicles/komatsu/harvester911/harvester911.i3d"/>
@@ -7,6 +7,7 @@
             <set path="vehicle.woodHarvester.cutLengths#min" value="1"/>
             <set path="vehicle.woodHarvester.cutLengths#max" value="25"/>
             <set path="vehicle.woodHarvester.cutLengths#step" value="0.5"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(0)#name" value="Cheeky 911.5 X3M (2011)"/>
 		</attributes>
     </parentFile>
 

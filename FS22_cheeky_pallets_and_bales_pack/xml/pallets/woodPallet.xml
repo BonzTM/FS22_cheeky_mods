@@ -21,7 +21,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/boardsStackPallet/boardsStackPallet.i3d</filename>
+        <filename>i3d/woodPallet.i3d</filename>
         <size width="1.4" length="1" height="0.8" />
         <canBeReset>false</canBeReset>
         <components maxMass="600">

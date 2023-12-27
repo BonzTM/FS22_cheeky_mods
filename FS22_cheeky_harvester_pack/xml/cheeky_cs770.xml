@@ -339,7 +339,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="CS770" hp="515" price="0">
+            <motorConfiguration name="Cheeky CS770" hp="515" price="0">
                 <motor torqueScale="2.17" minRpm="850" maxRpm="2200" maxForwardSpeed="32" maxBackwardSpeed="15" brakeForce="15" lowBrakeForceScale="0.22" accelerationLimit="1.6" dampingRateScale="2.5" startAnimationName="barragps">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

@@ -861,7 +861,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Axial-Flow 9250" hp="634">
+            <motorConfiguration name="Cheeky Axial-Flow 9250" hp="634">
                 <motor torqueScale="2.676" minRpm="850" maxRpm="2200" maxForwardSpeed="32" maxBackwardSpeed="14.9" brakeForce="13" lowBrakeForceScale="0.22" accelerationLimit="1.7" dampingRateScale="4">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

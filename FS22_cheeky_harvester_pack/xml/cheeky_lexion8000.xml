@@ -599,7 +599,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="LEXION 8900" hp="780">
+            <motorConfiguration name="Cheeky LEXION 8900" hp="780">
                 <motor torqueScale="3.293" minRpm="1200" maxRpm="2200" minSpeed="0.01" maxForwardSpeed="42" maxBackwardSpeed="14.9" brakeForce="17" lowBrakeForceScale="0.22" accelerationLimit="1.7" rotInertia="0.002">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

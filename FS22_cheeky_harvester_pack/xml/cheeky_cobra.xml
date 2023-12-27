@@ -366,7 +366,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Cobra" hp="285" price="0">
+            <motorConfiguration name="Cheeky Cobra" hp="285" price="0">
                 <motor torqueScale="1.204" minRpm="850" maxRpm="2200" maxForwardSpeed="20" maxBackwardSpeed="20" brakeForce="7" lowBrakeForceScale="0.5" dampingRateScale="2">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>
@@ -809,7 +809,7 @@
         <delimbNode node="delimbNode" sizeX="0.1" sizeY="1.3" sizeZ="1.8" delimbOnCut="true" />
         <cutAnimation name="cutAnimation" speedScale="1" cutTime="0.5" />
         <grabAnimation name="grabberAnimation" speedScale="1" />
-        <treeSizeMeasure node="treeSizeMeasure" rotMaxRadius="0.3" />
+        <treeSizeMeasure node="treeSizeMeasure" rotMaxRadius="0.5" />
 
         <cutEffects>
             <effectNode effectClass="ParticleEffect" effectNode="woodChipsEmitter" particleType="CRUSHER_WOOD" emitCountScale="150"/>
@@ -834,7 +834,7 @@
     </woodHarvester>
 
     <treeAutomaticArmControl foldMinLimit="0" foldMaxLimit="0">
-        <treeDetectionNode node="treeAutoDetectionNode" minRadius="3.5" maxRadius="7" cutHeight="0.4" maxAngle="45"/>
+        <treeDetectionNode node="treeAutoDetectionNode" minRadius="3.5" maxRadius="8" cutHeight="0.4" maxAngle="45"/>
         <xAlignment movingToolNode="craneBaseYRotPhy" speedScale="1"/>
         <yAlignment movingToolNode="scTargetNodeY" speedScale="0.5" referenceNode="treeAutoYReferenceNode"/>
         <zAlignment movingToolNode="scTargetNodeZ" speedScale="0.5" referenceNode="treeAutoZReferenceNode" moveBackDistance="1.5"/>

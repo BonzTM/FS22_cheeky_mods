@@ -7,6 +7,7 @@
             <set path="vehicle.woodHarvester.cutLengths#min" value="1"/>
             <set path="vehicle.woodHarvester.cutLengths#max" value="25"/>
             <set path="vehicle.woodHarvester.cutLengths#step" value="0.5"/>
+            <set path="vehicle.motorized.motorConfigurations.motorConfiguration(0)#name" value="Cheeky 951"/>
 		</attributes>
     </parentFile>
 

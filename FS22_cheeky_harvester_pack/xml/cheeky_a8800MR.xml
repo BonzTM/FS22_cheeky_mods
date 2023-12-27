@@ -123,7 +123,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Austoft 8800 MR" hp="353" price="0">
+            <motorConfiguration name="Cheeky Austoft 8800 MR" hp="353" price="0">
                 <motor torqueScale="1.727" minRpm="850" maxRpm="1900" minSpeed="0.01" maxForwardSpeed="20" maxBackwardSpeed="12" brakeForce="6" lowBrakeForceScale="0.22">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>

@@ -372,7 +372,7 @@
         </differentialConfigurations>
 
         <motorConfigurations>
-            <motorConfiguration name="Terra Dos T4-40" hp="626" price="0">
+            <motorConfiguration name="Cheeky Terra Dos T4-40" hp="626" price="0">
                 <motor torqueScale="2.907" minRpm="850" maxRpm="2000" maxForwardSpeed="42" maxBackwardSpeed="15" brakeForce="20" lowBrakeForceScale="0.22" dampingRateScale="4.2">
                     <torque normRpm="0.45" torque="0.9"/>
                     <torque normRpm="0.5" torque="0.97"/>
