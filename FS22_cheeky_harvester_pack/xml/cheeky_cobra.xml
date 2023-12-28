@@ -31,7 +31,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_woodHarvester</typeDesc>
-        <filename>$data/vehicles/ponsse/cobra/cobra.i3d</filename>
+        <filename>i3d/cobra.i3d</filename>
         <sounds filename="$data/vehicles/ponsse/cobra/sounds/cobra.xml"/>
         <size width="4.5" length="13" height="4.1" lengthOffset="-1.5" />
         <components>

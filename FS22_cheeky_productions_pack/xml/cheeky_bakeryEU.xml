@@ -105,6 +105,7 @@
             <production id="bread" name="$l10n_fillType_bread" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="FLOUR" amount="200" />
+                    <input fillType="WATER" amount="50" />
                 </inputs>
                 <outputs>
                     <output fillType="BREAD" amount="130" />
@@ -113,7 +114,8 @@
             <production id="cake" name="$l10n_fillType_cake" cyclesPerHour="10" costsPerActiveHour="12">
                 <inputs>
                     <input fillType="FLOUR"      amount="40" />
-                    <input fillType="SUGAR"      amount="40" />
+                    <input fillType="SUGAR"      amount="40" mix="1"/>
+                    <input fillType="CORNSYRUP"  amount="40" mix="1"/>
                     <input fillType="MILK"       amount="40" />
                     <input fillType="EGG"        amount="40" />
                     <input fillType="BUTTER"     amount="40" />
@@ -126,7 +128,8 @@
             <production id="carrotCake" name="Carrot Cake" cyclesPerHour="10" costsPerActiveHour="12">
                 <inputs>
                     <input fillType="FLOUR"      amount="40" />
-                    <input fillType="SUGAR"      amount="40" />
+                    <input fillType="SUGAR"      amount="40" mix="1"/>
+                    <input fillType="CORNSYRUP"  amount="40" mix="1"/>
                     <input fillType="MILK"       amount="40" />
                     <input fillType="EGG"        amount="40" />
                     <input fillType="BUTTER"     amount="40" />
@@ -140,7 +143,7 @@
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK EGG BUTTER STRAWBERRY CARROT" />
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK EGG BUTTER STRAWBERRY WATER CARROT CORNSYRUP" />
         </sellingStation>
 
         <palletSpawner node="palletSpawner">
@@ -155,6 +158,7 @@
             <capacity fillType="CARROT"     capacity="650000" />
             <capacity fillType="FLOUR"      capacity="650000" />
             <capacity fillType="SUGAR"      capacity="100000" />
+            <capacity fillType="CORNSYRUP"  capacity="100000" />
             <capacity fillType="MILK"       capacity="100000" />
             <capacity fillType="EGG"        capacity="100000" />
             <capacity fillType="BUTTER"     capacity="100000" />
@@ -162,6 +166,7 @@
             <capacity fillType="BREAD"      capacity="100000" />
             <capacity fillType="CAKE"       capacity="100000" />
             <capacity fillType="CARROTCAKE" capacity="100000" />
+            <capacity fillType="WATER"      capacity="100000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />

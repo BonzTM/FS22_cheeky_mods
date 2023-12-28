@@ -111,11 +111,11 @@
         <productions sharedThroughputCapacity="false">
             <production id="furnitureWood" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_wood" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="WOOD" amount="120" />
+                    <input fillType="WOOD" amount="170" />
                 </inputs>
                 <outputs>
-                    <output fillType="FURNITURE" amount="100" />
-                    <output fillType="WOODCHIPS" amount="10" />
+                    <output fillType="FURNITURE" amount="150" />
+                    <output fillType="WOODCHIPS" amount="15" />
                 </outputs>
             </production>
             <production id="furnitureBoards" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_boards" cyclesPerHour="15" costsPerActiveHour="10">
@@ -124,7 +124,7 @@
                 </inputs>
                 <outputs>
                     <output fillType="FURNITURE" amount="140" />
-                    <output fillType="WOODCHIPS" amount="10" />
+                    <output fillType="WOODCHIPS" amount="15" />
                 </outputs>
             </production>
         </productions>

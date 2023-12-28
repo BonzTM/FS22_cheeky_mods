@@ -125,9 +125,11 @@
             <production id="grapejuice" name="$l10n_fillType_grapeJuice" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="GRAPE" amount="300" />
+                    <input fillType="SUGAR" amount="50" mix="1"/>
+                    <input fillType="CORNSYRUP" amount="50" mix="1"/>
                 </inputs>
                 <outputs>
-                    <output fillType="GRAPEJUICE" amount="260" />
+                    <output fillType="GRAPEJUICE" amount="285" />
                 </outputs>
             </production>
         </productions>
@@ -135,11 +137,13 @@
         <storage isExtension="false" fillLevelSyncThreshold="50">
             <capacity fillType="GRAPE"      capacity="900000" />
             <capacity fillType="RAISINS"    capacity="120000" />
+            <capacity fillType="SUGAR"      capacity="120000" />
+            <capacity fillType="CORNSYRUP"  capacity="120000" />
             <capacity fillType="GRAPEJUICE" capacity="100000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="GRAPE"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="GRAPE SUGAR CORNSYRUP"/>
         </sellingStation>
 
         <palletSpawner node="palletSpawner">

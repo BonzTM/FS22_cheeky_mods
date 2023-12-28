@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_fillType_emptyPallet</name>
+        <image>textures/store_emptyPallet.dds</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+		<allowLeasing>false</allowLeasing>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>50688</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>6912</indexBufferMemoryUsage>
+        <textureMemoryUsage>1048576</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>i3d/emptyPallet.i3d</filename>
+        <size width="1.4" length="1" height="1.5" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="40"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="EMPTYPALLET" capacity="2000"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="pallet_vis">
+        <content>
+            <object node="pallet_vis01" tensionBeltNode="Pallet01Tension"/>
+            <object node="pallet_vis02" tensionBeltNode="Pallet02Tension"/>
+            <object node="pallet_vis03" tensionBeltNode="Pallet03Tension"/>
+            <object node="pallet_vis04" tensionBeltNode="Pallet04Tension"/>
+            <object node="pallet_vis05" tensionBeltNode="Pallet05Tension"/>
+            <object node="pallet_vis06" tensionBeltNode="Pallet06Tension"/>
+			<object node="pallet_vis07" tensionBeltNode="Pallet07Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillSugar" pitchScale="0.9" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.1" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="sugarBoxPallet_component1" node="0>" />
+        <i3dMapping id="pallet_vis" node="0>0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1" />
+        <i3dMapping id="pallet_vis01" node="0>0|2|0" />
+        <i3dMapping id="Pallet01Tension" node="0>0|2|0|0" />
+        <i3dMapping id="pallet_vis02" node="0>0|2|1" />
+        <i3dMapping id="Pallet02Tension" node="0>0|2|1|0" />
+        <i3dMapping id="pallet_vis03" node="0>0|2|2" />
+        <i3dMapping id="Pallet03Tension" node="0>0|2|2|0" />
+        <i3dMapping id="pallet_vis04" node="0>0|2|3" />
+        <i3dMapping id="Pallet04Tension" node="0>0|2|3|0" />
+        <i3dMapping id="pallet_vis05" node="0>0|2|4" />
+        <i3dMapping id="Pallet05Tension" node="0>0|2|4|0" />
+        <i3dMapping id="pallet_vis06" node="0>0|2|5" />
+        <i3dMapping id="Pallet06Tension" node="0>0|2|5|0" />
+        <i3dMapping id="pallet_vis07" node="0>0|2|6" />
+        <i3dMapping id="Pallet07Tension" node="0>0|2|6|0" />
+
+    </i3dMappings>
+</vehicle>

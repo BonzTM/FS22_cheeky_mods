@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.5.2</version>
+    <version>1.9.6.0</version>
     <title>
         <en>Cheeky Productions Pack</en>
     </title>
@@ -30,6 +30,7 @@
     </storeItems>
 	<multiplayer supported="true" />     
     <dependencies>
-		<dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
+		<dependency>FS22_A_ProductionRevamp</dependency>
+        <dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
 	</dependencies> 
 </modDesc>

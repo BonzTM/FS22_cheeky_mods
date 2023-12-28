@@ -118,27 +118,16 @@
                     <output fillType="CHEESE" amount="220" />
                 </outputs>
             </production>
-            <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="12" costsPerActiveHour="12">
-                <inputs>
-                    <input fillType="MILK" amount="200" />
-                    <input fillType="SUGAR" amount="110" />
-                </inputs>
-                <outputs>
-                    <output fillType="CHOCOLATE" amount="200" />
-                </outputs>
-            </production>
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
             <capacity fillType="MILK"       capacity="1000000" />
-            <capacity fillType="SUGAR"      capacity="360000" />
             <capacity fillType="BUTTER"     capacity="100000" />
             <capacity fillType="CHEESE"     capacity="100000" />
-            <capacity fillType="CHOCOLATE"  capacity="100000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="MILK SUGAR"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="MILK"/>
         </sellingStation>
 
         <palletSpawner node="palletSpawner">

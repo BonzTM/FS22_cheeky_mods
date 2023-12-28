@@ -29,7 +29,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_woodHarvester</typeDesc>
-        <filename>$data/vehicles/rottne/h21D/h21D.i3d</filename>
+        <filename>i3d/h21D.i3d</filename>
         <sounds filename="$data/vehicles/rottne/h21D/sounds/h21D.xml" />
         <size width="4.5" length="14.5" lengthOffset="1.5" />
         <components>

@@ -30,7 +30,7 @@
 
     <base>
         <typeDesc>$l10n_typeDesc_woodHarvester</typeDesc>
-        <filename>$data/vehicles/komatsu/xc931/xc931.i3d</filename>
+        <filename>i3d/xc931.i3d</filename>
         <sounds filename="$data/vehicles/komatsu/xc931/sounds/xc931.xml"/>
         <size width="4" length="11.5" height="6" lengthOffset="0.3" />
         <components>
