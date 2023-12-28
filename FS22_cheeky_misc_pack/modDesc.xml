@@ -13,6 +13,8 @@
         <storeItem xmlFilename="xml/cheeky_fastBale.xml"/>
         <storeItem xmlFilename="xml/cheeky_bigPack1290HDPVC.xml"/>
         <storeItem xmlFilename="xml/cheeky_baleCollect.xml"/>
+        <storeItem xmlFilename="xml/cheeky_kuw2000.xml"/>
+        <storeItem xmlFilename="xml/cheeky_rrw500.xml"/>
         <!-- Transport Trailers -->
         <!-- <storeItem xmlFilename="xml/cheeky_transportTrailer19M.xml"/> -->
         <!-- <storeItem xmlFilename="xml/cheeky_transportTrailer25M.xml"/> -->
