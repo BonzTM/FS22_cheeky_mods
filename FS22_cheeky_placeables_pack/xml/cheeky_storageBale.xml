@@ -35,7 +35,7 @@
 	<boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
-	 <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90">
+	 <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5">
         <testAreas>
             <testArea startNode="testAreaStart" endNode="testAreaEnd" />
         </testAreas>
