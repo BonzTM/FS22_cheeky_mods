@@ -10,7 +10,7 @@
         <en>Loose silage can be stored here.</en>
       </function>
     </functions>
-    <price>15000</price>
+    <price>25000</price>
     <dailyUpkeep>45</dailyUpkeep>
     <lifetime>1000</lifetime>
     <rotation>0</rotation>

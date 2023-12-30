@@ -23,6 +23,7 @@
         <storeItem xmlFilename="xml/cheeky_sugarBeetCutStorage.xml"/>
         <storeItem xmlFilename="xml/cheeky_sugarcaneStorage.xml"/>
         <storeItem xmlFilename="xml/cheeky_woodchipsStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_rootCropStorage.xml"/>
 
         <!-- Selling Points -->
         <storeItem xmlFilename="xml/cheeky_bhp.xml"/>
@@ -37,6 +38,11 @@
         <storeItem xmlFilename="xml/cheeky_supermarket.xml"/>
     </storeItems>
 	<multiplayer supported="true" />
+    <l10n>
+        <text name="function_rootStorage">
+            <en>Storage Building for Beets, Potatoes, Carrots, Parsnip, and Beetroot.</en>
+        </text>
+    </l10n>	
     <dependencies>
 		<dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
 	</dependencies> 
