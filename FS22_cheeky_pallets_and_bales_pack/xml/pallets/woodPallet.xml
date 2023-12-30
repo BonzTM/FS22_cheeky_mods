@@ -5,7 +5,6 @@
     <storeData>
         <name>Wood</name>
         <image>$data/objects/pallets/boardsStackPallet/boardsStackPallet.png</image>
-        <price>1300</price>
         <category>pallets</category>
         <brand>LIZARD</brand>
         <showInStore>false</showInStore>

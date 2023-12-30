@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sugarbeetProcessing" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="13" filename="../textures/sugarbeetProcessor/sugarbeetProcessing_diffuse.dds"/>
+    <File fileId="21" filename="../textures/sugarbeetProcessor/sugarbeetProcessing_height.dds"/>
+    <File fileId="17" filename="../textures/sugarbeetProcessor/sugarbeetProcessing_mask.dds"/>
+    <File fileId="14" filename="../textures/sugarbeetProcessor/sugarbeetProcessing_normal.dds"/>
+    <File fileId="15" filename="../textures/sugarbeetProcessor/sugarbeetProcessing_specular.dds"/>
+    <File fileId="22" filename="../textures/sugarbeetProcessor/sugarbeetProcessing_decals.dds"/>
+    <File fileId="23" filename="../textures/sugarbeetProcessor/sugarbeetProcessing_decals_normal.dds"/>
+    <File fileId="24" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="25" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="20" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="16" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="26" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="7" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="3" filename="$data/shared/default_normal.dds"/>
+    <File fileId="6" filename="$data/shared/default_specular.dds"/>
+    <File fileId="11" filename="$data/vehicles/amityTech/beetCart/beetCartBelt_normal.dds"/>
+    <File fileId="12" filename="$data/vehicles/amityTech/beetCart/beetCartBelt_vmask.dds"/>
+    <File fileId="5" filename="$data/vehicles/lizard/s710/s710Belts_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="belt01_Mat" materialId="4" diffuseColor="0.8 0.8 0.8 1" customShaderId="7" customShaderVariation="uvScroll_colorMask">
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="offsetUV" value="0 0 0 0"/>
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 0"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="belt02_Mat" materialId="5" diffuseColor="0.8 0.8 0.8 1" customShaderId="7" customShaderVariation="uvScroll_colorMask">
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="offsetUV" value="0 0 0 0"/>
+      <CustomParameter name="colorMat0" value="0.03 0.03 0.03 8"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="effectMat" materialId="6" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0">
+      <Normalmap fileId="3"/>
+    </Material>
+    <Material name="sugarbeetProcessing" materialId="7" customShaderId="16" customShaderVariation="colorScale_customParallax">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <Custommap name="mMaskMap" fileId="17"/>
+      <Custommap name="mParallaxMap" fileId="21"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 1"/>
+      <CustomParameter name="dirtMossMix" value="1 1 120000 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 1"/>
+      <CustomParameter name="colorScale0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorScale1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorScale2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorScale3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorScale4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorScale5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorScale6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorScale7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="sugarbeetProcessing_decals" materialId="8" alphaBlending="true" customShaderId="7" customShaderVariation="Decal">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="6"/>
+      <CustomParameter name="RDT" value="0 0 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+    </Material>
+    <Material name="i3d_default_material" materialId="9" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="snow_Mat" materialId="10" customShaderId="26">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="20"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sugarbeetProcessing.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="sugarbeetProcessing01" nodeId="33">
+        <TransformGroup name="clearAreas" nodeId="34">
+          <TransformGroup name="clearArea01Start" translation="8.04504 0 -12.9159" nodeId="35">
+            <TransformGroup name="clearArea01Height" translation="0 0 25.8317" nodeId="36"/>
+            <TransformGroup name="clearArea01Width" translation="-12.3747 0 0" nodeId="37"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="collision" nodeId="38">
+          <Shape shapeId="1" name="collider" static="true" nodeId="39" materialIds="9" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="hotspotNode" nodeId="40"/>
+        <Shape shapeId="2" name="infoTrigger" translation="1.85771 3.81144 0" static="true" trigger="true" collisionMask="1048576" nodeId="41" materialIds="9" nonRenderable="true"/>
+        <TransformGroup name="levelingAreas" nodeId="42">
+          <TransformGroup name="levelingArea01Start" translation="8.04504 0 -12.9159" nodeId="43">
+            <TransformGroup name="levelingArea01Height" translation="-12.3747 0 0" nodeId="44"/>
+            <TransformGroup name="levelingArea01Width" translation="0 0 25.8317" nodeId="45"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="loadingStation" nodeId="46">
+          <Shape shapeId="3" name="exactFillRootNode01" translation="7.223 1.213 4.942" static="true" collisionMask="1073741824" nodeId="47" materialIds="9" nonRenderable="true"/>
+          <Shape shapeId="4" name="exactFillRootNode02" translation="2.35203 0.0331903 10.4009" static="true" collisionMask="1073741824" nodeId="48" materialIds="9" nonRenderable="true"/>
+          <TransformGroup name="unloadTriggerAINode01" translation="8.932 0 4.943" nodeId="49"/>
+          <TransformGroup name="unloadTriggerAINode02" translation="2.25052 -1.49012e-08 9.53148" nodeId="50"/>
+        </TransformGroup>
+        <TransformGroup name="productionPoint" nodeId="51">
+          <Shape shapeId="5" name="playerTrigger" translation="3.53366 1.25106 -2.85834" static="true" trigger="true" collisionMask="1048576" nodeId="52" materialIds="9" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" translation="0 -1.25106 0" nodeId="53"/>
+          </Shape>
+          <TransformGroup name="teleportNode" translation="6.50029 0 -1.00173" nodeId="54"/>
+        </TransformGroup>
+        <TransformGroup name="sellingStation" nodeId="55">
+          <TransformGroup name="dischargeNode01" translation="-1.73668 5.32558 -10.6416" nodeId="56">
+            <Shape shapeId="6" name="pipeEffect01" translation="-4.76837e-07 -0.288736 0.0348101" rotation="90 1.63865e-18 -1.05819e-13" nodeId="57" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="pipeEffectSmoke01" translation="0 -4.41595 0" nodeId="58" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="dischargeNode02" translation="-1.73668 3.88252 11.3172" nodeId="59">
+            <Shape shapeId="6" name="pipeEffect02" translation="-0.62606 -0.247987 -0.155143" rotation="90 -180 2.32213e-12" nodeId="60" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="pipeEffectSmoke02" translation="-0.573023 -2.97289 0" rotation="-0 -180 -0" nodeId="61" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="dischargeNode03" translation="7.2463 2.65729 -5.97697" nodeId="62"/>
+          <Shape shapeId="8" name="loadingStation01" translation="-1.73668 0 -10.6416" static="true" trigger="true" collisionMask="1073741824" nodeId="63" materialIds="9" nonRenderable="true">
+            <TransformGroup name="loadTriggerMarker01" nodeId="64"/>
+          </Shape>
+          <Shape shapeId="9" name="loadingStation02" translation="-2.3097 0 11.3172" static="true" trigger="true" collisionMask="1073741824" nodeId="65" materialIds="9" nonRenderable="true">
+            <TransformGroup name="loadTriggerMarker02" nodeId="66"/>
+          </Shape>
+          <Shape shapeId="10" name="loadingStation03" translation="7.2463 0 -5.97697" static="true" trigger="true" collisionMask="1073741824" nodeId="67" materialIds="9" nonRenderable="true">
+            <TransformGroup name="loadTriggerMarker03" nodeId="68"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="storage" nodeId="69">
+          <Shape shapeId="11" name="stoneFillVolume" translation="-2.36274 0 11.2199" clipDistance="400" nodeId="70" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="12" name="sugarbeetCutFillVolume" translation="-1.66692 0 -10.6416" clipDistance="400" nodeId="71" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="13" name="sugarbeetDynamicFillVolume" translation="4.6648 1.46494 4.95245" clipDistance="1000" nodeId="72" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="73">
+          <TransformGroup name="testArea1Start" translation="-3 0 -7.80554" nodeId="74">
+            <TransformGroup name="testArea1End" translation="6 0 15.5" nodeId="75"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollision" nodeId="76">
+          <Shape shapeId="14" name="tipCollider" static="true" collisionMask="524288" nodeId="77" materialIds="9" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="78">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-3 0 -7.80554" nodeId="79">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="6.00001 0 15.5" nodeId="80"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="81" lodDistance="0 100">
+          <TransformGroup name="LOD0" nodeId="82">
+            <Shape shapeId="15" name="beltStones" translation="-2.36274 4.08731 11.2265" rotation="145 3.7292e-05 7.08683e-06" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="beltSugarbeets01" translation="4.81231 0.807063 4.9425" nodeId="84" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="15" name="beltSugarbeetsCut" translation="-1.73668 5.43756 -10.7297" rotation="-45 -4.59901e-05 180" nodeId="85" materialIds="5" receiveShadows="true"/>
+            <TransformGroup name="lightSwitch01" translation="3.00856 1.3 -3.76989" rotation="90 90 0" nodeId="86"/>
+            <TransformGroup name="lightSwitch02" translation="3.00001 1.3 2.39321" rotation="90 90 0" nodeId="87"/>
+            <TransformGroup name="lightSwitch03" translation="1.27553 1.3 7.70301" rotation="90 -3.45369e-13 1.00179e-05" nodeId="88"/>
+            <TransformGroup name="lightSwitch04" translation="1.27553 1.3 -7.8141" rotation="90 -180 1.00179e-05" nodeId="89"/>
+            <TransformGroup name="powerSwitch01" translation="6.1598 1.01187 2.26194" rotation="-180 -0 90" nodeId="90"/>
+            <TransformGroup name="powerSwitch02" translation="3.53146 0.923909 -7.21802" rotation="90 -0 90" nodeId="91"/>
+            <TransformGroup name="powerSwitch03" translation="-2.19708 1.3 -7.80554" rotation="-1.00179e-05 -180 1.00179e-05" nodeId="92"/>
+            <TransformGroup name="powerSwitch04" translation="-1.51149 1.29999 7.69445" rotation="1.00179e-05 2.73208e-05 1.00179e-05" nodeId="93"/>
+            <Shape shapeId="17" name="sugarbeetProcessing01_vis" clipDistance="100" nodeId="94" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="18" name="sugarbeetProcessing01_decals" nodeId="95" materialIds="8" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="96">
+            <Shape shapeId="19" name="sugarbeetProcessing01_vis_LOD" clipDistance="1000" nodeId="97" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="lights" nodeId="98">
+            <TransformGroup name="linkedLight01" translation="3.00001 4.80906 4.9425" rotation="-90 90 0" nodeId="99"/>
+            <TransformGroup name="linkedLight02" translation="-0.103301 4.11256 7.7584" rotation="-90 6.83019e-06 1.11905e-05" nodeId="100"/>
+            <TransformGroup name="linkedLight03" translation="3 4.80906 -6.03868" rotation="-90 90 0" nodeId="101"/>
+            <TransformGroup name="linkedLight04" translation="0.428624 4.3002 -7.80554" rotation="90 8.65142e-06 -180" nodeId="102"/>
+            <TransformGroup name="realLightsHigh" nodeId="103">
+              <Light name="spotLight01" translation="3.00001 4.80906 4.9425" rotation="-90 -0 35" clipDistance="1000" nodeId="104" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="20" coneAngle="160" dropOff="4"/>
+              <Light name="spotLight02" translation="-0.103301 4.11256 7.7584" rotation="0.000247086 -145 -90.0001" clipDistance="1000" nodeId="105" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="20" coneAngle="160" dropOff="4"/>
+              <Light name="spotLight03" translation="3.00001 4.80906 -6.03868" rotation="-90 -0 35" clipDistance="1000" nodeId="106" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="20" coneAngle="160" dropOff="4"/>
+              <Light name="spotLight04" translation="0.428624 4.3002 -7.80554" rotation="0.000190712 35 90.0001" clipDistance="1000" nodeId="107" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="20" coneAngle="160" dropOff="4"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="20" name="occluderMesh" clipDistance="1000" nodeId="108" materialIds="9" nonRenderable="true" occluder="true"/>
+          <Shape shapeId="21" name="snowMesh" clipDistance="1000" nodeId="109" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -300,7 +300,7 @@
         <fillType name="EMPTYPALLET" title="Empty Pallet" showOnPriceTable="true">
             <physics massPerLiter="0.17" maxPhysicalSurfaceAngle="38" />
             <economy pricePerLiter="1.6"></economy>
-            <image      hud     ="textures/hud_euroPallet.dds" />
+            <image      hud     ="textures/hud_fill_emptypallet2.dds" />
             <pallet     filename="xml/pallets/emptyPallet.xml" />
         </fillType> 
 

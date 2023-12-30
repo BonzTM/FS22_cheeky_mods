@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='utf-8'?>
+<placeable type="productionPoint">
+  <storeData>
+    <name>$l10n_sugarbeetProcessingPlant</name>
+    <image>textures/store_sugarbeetProcessing.dds</image>
+    <functions>
+      <function>$l10n_function_productionPoint</function>
+    </functions>
+    <price>125000</price>
+    <dailyUpkeep>60</dailyUpkeep>
+    <canBeSold>true</canBeSold>
+    <showInStore>true</showInStore>
+    <lifetime>1000</lifetime>
+    <rotation>0</rotation>
+    <brand>NONE</brand>
+    <species>placeable</species>
+    <category>productionPoints</category>
+    <brush>
+      <type>placeable</type>
+      <category>production</category>
+      <tab>factories</tab>
+    </brush>
+        <vertexBufferMemoryUsage>1531648</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>181248</indexBufferMemoryUsage>
+        <textureMemoryUsage>3866624</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+  </storeData>
+  <base>
+    <filename>i3d/sugarbeetProcessing.i3d</filename>
+    <canBeRenamed>true</canBeRenamed>
+  </base>
+  <placement useRandomYRotation="false" useManualYRotation="true">
+    <testAreas>
+      <testArea startNode="testArea1Start" endNode="testArea1End" />
+    </testAreas>
+    <sounds>
+      <place template="smallImp" />
+    </sounds>
+  </placement>
+  <clearAreas>
+    <clearArea startNode="clearArea01Start" widthNode="clearArea01Width" heightNode="clearArea01Height" />
+  </clearAreas>
+  <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+    <levelAreas>
+      <levelArea startNode="levelingArea01Start" widthNode="levelingArea01Width" heightNode="levelingArea01Height" groundType="concrete" />
+    </levelAreas>
+  </leveling>
+  <indoorAreas />
+  <tipOcclusionUpdateAreas>
+    <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+  </tipOcclusionUpdateAreas>
+  <ai>
+    <updateAreas>
+      <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </updateAreas>
+  </ai>
+  <infoTrigger triggerNode="infoTrigger" />
+  <triggerMarkers>
+    <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" />
+    <triggerMarker node="loadTriggerMarker01" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+    <triggerMarker node="loadTriggerMarker02" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+    <triggerMarker node="loadTriggerMarker03" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+    <triggerMarker node="unloadTriggerAINode01" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    <triggerMarker node="unloadTriggerAINode02" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+  </triggerMarkers>
+  <hotspots>
+    <hotspot type="PRODUCTION_POINT" linkNode="teleportNode" teleportNode="teleportNode" />
+  </hotspots>
+  <lights>
+    <sharedLight filename="$data/shared/assets/lights/terraLed/spotlight20W.xml" linkNode="linkedLight01" groupIndex="1">
+      <rotationNode name="rotationNode01" rotation="55 0 0" />
+    </sharedLight>
+    <sharedLight filename="$data/shared/assets/lights/terraLed/spotlight20W.xml" linkNode="linkedLight02" groupIndex="1">
+      <rotationNode name="rotationNode01" rotation="35 0 0" />
+    </sharedLight>
+    <sharedLight filename="$data/shared/assets/lights/terraLed/spotlight20W.xml" linkNode="linkedLight03" groupIndex="1">
+      <rotationNode name="rotationNode01" rotation="55 0 0" />
+    </sharedLight>
+    <sharedLight filename="$data/shared/assets/lights/terraLed/spotlight20W.xml" linkNode="linkedLight04" groupIndex="1">
+      <rotationNode name="rotationNode01" rotation="35 0 0" />
+    </sharedLight>
+    <realLights>
+      <low>
+        <!--light node="realLightsLow" groupIndex="1"/-->
+      </low>
+      <high>
+        <light node="realLightsHigh" groupIndex="1" />
+      </high>
+    </realLights>
+    <group name="$l10n_action_placeableLightShed" activateTime="17:30" deactivateTime="8:20" />
+  </lights>
+  <dynamicallyLoadedParts>
+    <dynamicallyLoadedPart node="0" linkNode="powerSwitch01" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="powerSwitch02" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="powerSwitch03" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="powerSwitch04" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="lightSwitch01" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="lightSwitch02" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="lightSwitch03" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+    <dynamicallyLoadedPart node="0" linkNode="lightSwitch04" filename="$data/shared/assets/lights/terraLed/switch.i3d" />
+  </dynamicallyLoadedParts>
+  <productionPoint>
+    <productions sharedThroughputCapacity="false">
+      <production id="sugarbeet_cut" name="Sugarbeet Cut" cyclesPerHour="10" costsPerActiveHour="20">
+        <inputs>
+          <input fillType="SUGARBEET" amount="1600" />
+          <input fillType="WATER" amount="160" />
+        </inputs>
+        <outputs>
+          <output fillType="SUGARBEET_CUT" amount="1600" />
+          <output fillType="LIQUIDMANURE" amount="480" />
+          <output fillType="STONE" amount="80" />
+        </outputs>
+      </production>
+    </productions>
+    <storage isExtension="false" fillLevelSyncThreshold="50">
+      <capacity fillType="SUGARBEET" capacity="500000" />
+      <capacity fillType="SUGARBEET_CUT" capacity="600000" />
+      <capacity fillType="WATER" capacity="200000" />
+      <capacity fillType="STONE" capacity="500000" />
+      <capacity fillType="LIQUIDMANURE" capacity="1000000" />
+      <!--fillPlane fillType="SUGARBEET" node="sugarbeetFillVolume" minY="0" maxY="0" /-->
+      <dynamicFillPlane node="sugarbeetDynamicFillVolume" allSidePlanes="true" maxAllowedHeapAngle="30" maxDelta="0.3" defaultFillType="SUGARBEET" />
+      <!--dynamicFillPlane node="sugarbeetCutFillVolume" allSidePlanes="true" maxAllowedHeapAngle="30" maxDelta="0.3" defaultFillType="SUGARBEET_CUT" /-->
+      <!--dynamicFillPlane node="stoneFillVolume" allSidePlanes="true" maxAllowedHeapAngle="30" maxDelta="0.3" defaultFillType="STONE" /-->
+    </storage>
+    <loadingStation node="loadingStation" supportsExtension="false">
+      <loadTrigger triggerNode="loadingStation01" fillTypes="SUGARBEET_CUT" fillLitersPerSecond="1000" dischargeNode="dischargeNode01">
+        <effectNode effectNode="pipeEffect01" effectClass="PipeEffect" materialType="pipe" fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="3 0 0 0" />
+        <effectNode effectNode="pipeEffectSmoke01" materialType="unloadingSmoke" fadeTime="0.5" />
+      </loadTrigger>
+      <loadTrigger triggerNode="loadingStation02" fillTypes="STONE" fillLitersPerSecond="1000" dischargeNode="dischargeNode02">
+        <effectNode effectNode="pipeEffect02" effectClass="PipeEffect" materialType="pipe" fadeTime="0.5" maxBending="0" shapeScaleSpread="0.8 0.8 1 0" controlPoint="3 0 0 0" />
+        <effectNode effectNode="pipeEffectSmoke02" materialType="unloadingSmoke" fadeTime="0.5" />
+      </loadTrigger>
+      <loadTrigger triggerNode="loadingStation03" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" dischargeNode="dischargeNode03" />
+    </loadingStation>
+    <sellingStation node="sellingStation" supportsExtension="false">
+      <unloadTrigger exactFillRootNode="exactFillRootNode01" aiNode="unloadTriggerAINode01" fillTypes="SUGARBEET" />
+      <unloadTrigger exactFillRootNode="exactFillRootNode02" aiNode="unloadTriggerAINode02" fillTypes="WATER" />
+    </sellingStation>
+    <playerTrigger node="playerTrigger" />
+    <sounds>
+      <idle template="sugarMillIdle" linkNode="0>" />
+      <active template="sugarMillWork" linkNode="0>" />
+    </sounds>
+    <animationNodes>
+      <animationNode node="beltStones" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderParameterComponent="1" scrollLength="10" scrollSpeed="-0.25" turnOnFadeTime="0.5" turnOffFadeTime="2" />
+      <animationNode node="beltSugarbeets01" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderParameterComponent="2" scrollLength="10" scrollSpeed="-0.125" turnOnFadeTime="0.5" turnOffFadeTime="2" />
+      <animationNode node="beltSugarbeetsCut" class="ScrollingAnimation" shaderParameterName="offsetUV" shaderParameterComponent="1" scrollLength="10" scrollSpeed="-0.25" turnOnFadeTime="0.5" turnOffFadeTime="2" />
+    </animationNodes>
+  </productionPoint>
+  <colorable>
+    <nodes>
+      <node node="sugarbeetProcessing01_vis" />
+      <node node="sugarbeetProcessing01_vis_LOD" />
+    </nodes>
+    <colors>
+      <color value="WALLCOLOR_PETROL" />
+      <color value="WALLCOLOR_CYAN" />
+      <color value="WALLCOLOR_LIGHTBLUE" />
+      <color value="WALLCOLOR_DARKBLUE" />
+      <color value="WALLCOLOR_YELLOW" />
+      <color value="WALLCOLOR_BRIGHTRED" />
+      <color value="WALLCOLOR_DARKRED" />
+      <color value="WALLCOLOR_BORDEAUX" />
+      <color value="WALLCOLOR_SAND" />
+      <color value="WALLCOLOR_BROWN" />
+      <color value="WALLCOLOR_BRIGHTGREEN" />
+      <color value="WALLCOLOR_GREEN" />
+      <color value="WALLCOLOR_OLIVE" />
+      <color value="WALLCOLOR_DARKGREY" />
+      <color value="WALLCOLOR_BRIGHTGREY" />
+      <color value="WALLCOLOR_WHITE" />
+      <color value="WALLCOLOR_BLACK" />
+    </colors>
+  </colorable>
+  <i3dMappings>
+    <i3dMapping id="sugarbeetProcessing01" node="0>" />
+    <i3dMapping id="clearArea01Start" node="0>0|0" />
+    <i3dMapping id="clearArea01Height" node="0>0|0|0" />
+    <i3dMapping id="clearArea01Width" node="0>0|0|1" />
+    <i3dMapping id="hotspotNode" node="0>2" />
+    <i3dMapping id="infoTrigger" node="0>3" />
+    <i3dMapping id="levelingArea01Start" node="0>4|0" />
+    <i3dMapping id="levelingArea01Height" node="0>4|0|0" />
+    <i3dMapping id="levelingArea01Width" node="0>4|0|1" />
+    <i3dMapping id="exactFillRootNode01" node="0>5|0" />
+    <i3dMapping id="exactFillRootNode02" node="0>5|1" />
+    <i3dMapping id="unloadTriggerAINode01" node="0>5|2" />
+    <i3dMapping id="unloadTriggerAINode02" node="0>5|3" />
+    <i3dMapping id="playerTrigger" node="0>6|0" />
+    <i3dMapping id="playerTriggerMarker" node="0>6|0|0" />
+    <i3dMapping id="teleportNode" node="0>6|1" />
+    <i3dMapping id="dischargeNode01" node="0>7|0" />
+    <i3dMapping id="pipeEffect01" node="0>7|0|0" />
+    <i3dMapping id="pipeEffectSmoke01" node="0>7|0|1" />
+    <i3dMapping id="dischargeNode02" node="0>7|1" />
+    <i3dMapping id="pipeEffect02" node="0>7|1|0" />
+    <i3dMapping id="pipeEffectSmoke02" node="0>7|1|1" />
+    <i3dMapping id="dischargeNode03" node="0>7|2" />
+    <i3dMapping id="loadingStation01" node="0>7|3" />
+    <i3dMapping id="loadTriggerMarker01" node="0>7|3|0" />
+    <i3dMapping id="loadingStation02" node="0>7|4" />
+    <i3dMapping id="loadTriggerMarker02" node="0>7|4|0" />
+    <i3dMapping id="loadingStation03" node="0>7|5" />
+    <i3dMapping id="loadTriggerMarker03" node="0>7|5|0" />
+    <i3dMapping id="storage" node="0>8" />
+    <i3dMapping id="stoneFillVolume" node="0>8|0" />
+    <i3dMapping id="sugarbeetCutFillVolume" node="0>8|1" />
+    <i3dMapping id="sugarbeetDynamicFillVolume" node="0>8|2" />
+    <i3dMapping id="testArea1Start" node="0>9|0" />
+    <i3dMapping id="testArea1End" node="0>9|0|0" />
+    <i3dMapping id="tipCollider" node="0>10|0" />
+    <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>11|0" />
+    <i3dMapping id="tipOcclusionUpdateArea1End" node="0>11|0|0" />
+    <i3dMapping id="beltStones" node="0>12|0|0" />
+    <i3dMapping id="beltSugarbeets01" node="0>12|0|1" />
+    <i3dMapping id="beltSugarbeetsCut" node="0>12|0|2" />
+    <i3dMapping id="lightSwitch01" node="0>12|0|3" />
+    <i3dMapping id="lightSwitch02" node="0>12|0|4" />
+    <i3dMapping id="lightSwitch03" node="0>12|0|5" />
+    <i3dMapping id="lightSwitch04" node="0>12|0|6" />
+    <i3dMapping id="powerSwitch01" node="0>12|0|7" />
+    <i3dMapping id="powerSwitch02" node="0>12|0|8" />
+    <i3dMapping id="powerSwitch03" node="0>12|0|9" />
+    <i3dMapping id="powerSwitch04" node="0>12|0|10" />
+    <i3dMapping id="sugarbeetProcessing01_vis" node="0>12|0|11" />
+    <i3dMapping id="sugarbeetProcessing01_vis_LOD" node="0>12|1|0" />
+    <i3dMapping id="linkedLight01" node="0>12|2|0" />
+    <i3dMapping id="linkedLight02" node="0>12|2|1" />
+    <i3dMapping id="linkedLight03" node="0>12|2|2" />
+    <i3dMapping id="linkedLight04" node="0>12|2|3" />
+    <i3dMapping id="realLightsHigh" node="0>12|2|4" />
+    <i3dMapping id="spotLight01" node="0>12|2|4|0" />
+    <i3dMapping id="spotLight02" node="0>12|2|4|1" />
+    <i3dMapping id="spotLight03" node="0>12|2|4|2" />
+    <i3dMapping id="spotLight04" node="0>12|2|4|3" />
+    <i3dMapping id="occluderMesh" node="0>12|3" />
+    <i3dMapping id="snowMesh" node="0>12|4" />
+  </i3dMappings>
+</placeable>

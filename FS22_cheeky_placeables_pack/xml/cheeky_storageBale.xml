@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="objectStorage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+     <storeData>
+        <name>Cheeky Bale and Pallet Storage</name>
+        <functions>
+            <function>
+                <en>This shed gives you the opportunity to store bales and pallets.</en>
+            </function>
+        </functions>
+        <image>textures/store_storageSmall01.png</image>
+        <price>15000</price>
+		<dailyUpkeep>15</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>storages</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>silos</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <showInStore>true</showInStore>
+        <vertexBufferMemoryUsage>633344</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>85504</indexBufferMemoryUsage>
+        <textureMemoryUsage>4259840</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+	<base>
+    <filename>i3d/storageBale.i3d</filename>
+	<boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+	 <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5" placementRotationSnapAngle="90">
+        <testAreas>
+            <testArea startNode="testAreaStart" endNode="testAreaEnd" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearAreaStart" widthNode="clearAreaWidth" heightNode="clearAreaHeight"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="5" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelingAreaStart" widthNode="levelingAreaWidth" heightNode="levelingAreaHeight" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorAreaStart" widthNode="indoorAreaWidth" heightNode="indoorAreaHeight"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateAreaStart" endNode="tipOcclusionUpdateAreaEnd" />
+        </updateAreas>
+    </ai>
+
+	<!-- BallenTrigger-->
+
+	 <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD"   adjustToGround="true" />
+        <triggerMarker node="objectTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="LOADING" />
+    </hotspots>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <objectStorage capacity="600" supportsBales="true" supportsPallets="true" maxLength="8.5" maxWidth="6" maxHeight="4">
+        <playerTrigger node="playerTrigger" />
+        <objectTrigger node="objectTrigger" />
+        <spawnAreas>
+            <spawnArea startNode="spawnArea1Start" endNode="spawnArea1End"/>
+        </spawnAreas>
+        <storageAreas>
+            <storageArea startNode="storageArea1Start" endNode="storageArea1End"/>
+        </storageAreas>
+    </objectStorage>
+
+    <pointOfInterest>
+        <point triggerNode="objectTrigger" text="$l10n_poi_objectStorageUnload" showOwner="true"  showEveryone="false"/>
+        <point triggerNode="playerTrigger" text="$l10n_poi_objectStorageLoad"   showOwner="true"  showEveryone="false" />
+    </pointOfInterest>
+
+	<!--ballenTrigger END-->
+
+	<lights>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode01" groupIndex="1">
+            <rotationNode name="rotationNode01" />
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode02" groupIndex="1">
+            <rotationNode name="rotationNode01" />
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode03" groupIndex="1">
+            <rotationNode name="rotationNode01" />
+        </sharedLight>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode04" groupIndex="1">
+            <rotationNode name="rotationNode01" />
+        </sharedLight>
+
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+
+        <group name="$l10n_action_placeableLightShed" triggerNode="lightTrigger">
+            <sounds>
+                <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
+            </sounds>
+        </group>
+	</lights>
+ <!-- Animation Tore -->
+	<animatedObjects>
+        <animatedObject saveId="door01" >
+            <animation duration="5">
+                <part node="door01">
+                    <keyFrame time="0.0" translation="-8.912 0 -0.040"/>
+                    <keyFrame time="1.0" translation="-3.130 0 -0.040"/>
+                </part>
+            </animation>
+            <controls triggerNode="triggerDoor01" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving template="slidingGateMetalLoop" linkNode="door1" />
+                <posEnd template="slidingGateMetalOpen" linkNode="door1" />
+                <negEnd template="slidingGateMetalClose" linkNode="door1" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="door02" >
+            <animation duration="3.5">
+                <part node="door02">
+                    <keyFrame time="0.0" translation="-2.960 0 0.040"/>
+                    <keyFrame time="1.0" translation="-8.950 0 0.040"/>
+                </part>
+            </animation>
+            <controls triggerNode="triggerDoor02" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving template="slidingGateMetalLoop" linkNode="door2" />
+                <posEnd template="slidingGateMetalOpen" linkNode="door2" />
+                <negEnd template="slidingGateMetalClose" linkNode="door2" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="door03" >
+            <animation duration="5">
+                <part node="door03">
+                    <keyFrame time="0.0" translation="2.960 0 -0.040"/>
+                    <keyFrame time="1.0" translation="8.880 0 -0.040"/>
+                </part>
+            </animation>
+            <controls triggerNode="triggerDoor03" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving template="slidingGateMetalLoop" linkNode="door3" />
+                <posEnd template="slidingGateMetalOpen" linkNode="door3" />
+                <negEnd template="slidingGateMetalClose" linkNode="door3" />
+            </sounds>
+        </animatedObject>
+		<animatedObject saveId="door04" >
+            <animation duration="5">
+                <part node="door04">
+                    <keyFrame time="0.0" translation="8.912 0 0.040"/>
+                    <keyFrame time="1.0" translation="3.100 0 0.040"/>
+                </part>
+            </animation>
+            <controls triggerNode="triggerDoor04" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+            <sounds>
+                <moving template="slidingGateMetalLoop" linkNode="door4" />
+                <posEnd template="slidingGateMetalOpen" linkNode="door4" />
+                <negEnd template="slidingGateMetalClose" linkNode="door4" />
+            </sounds>
+        </animatedObject>
+	</animatedObjects>
+	<colorable>
+        <nodes>
+            <node node="storage01_vis" />
+            <node node="storage01_vis_LOD1" />
+        </nodes>
+        <colors>
+			<color  value="0.2349 0.0072 0.005" />
+			<color  value="0.1275 0.0084 0.0127" />
+			<color  value="0.0582 0.0638 0.0738" />
+			<color  value="0.2011 0.212 0.2271" />
+			<color  value="0.0119 0.0478 0.0041" />
+			<color  value="0.0055 0.021 0.0017" />
+        </colors>
+    </colorable>
+    <i3dMappings>
+        <i3dMapping id="door1" node="0>0|0" />
+        <i3dMapping id="door01" node="0>0|0|0" />
+        <i3dMapping id="triggerDoor01" node="0>0|0|1" />
+        <i3dMapping id="door2" node="0>0|1" />
+        <i3dMapping id="door02" node="0>0|1|0" />
+        <i3dMapping id="triggerDoor02" node="0>0|1|1" />
+        <i3dMapping id="door3" node="0>0|2" />
+        <i3dMapping id="door03" node="0>0|2|0" />
+        <i3dMapping id="triggerDoor03" node="0>0|2|1" />
+        <i3dMapping id="door4" node="0>0|3" />
+        <i3dMapping id="door04" node="0>0|3|0" />
+        <i3dMapping id="triggerDoor04" node="0>0|3|1" />
+        <i3dMapping id="lightTrigger" node="0>1|0" />
+        <i3dMapping id="lightNode01" node="0>1|1" />
+        <i3dMapping id="lightNode02" node="0>1|2" />
+        <i3dMapping id="lightNode03" node="0>1|3" />
+        <i3dMapping id="lightNode04" node="0>1|4" />
+        <i3dMapping id="realLightsLow" node="0>1|5|0" />
+        <i3dMapping id="realLightsHigh" node="0>1|5|1" />
+        <i3dMapping id="testAreaStart" node="0>2|0" />
+        <i3dMapping id="testAreaEnd" node="0>2|0|0" />
+        <i3dMapping id="clearAreaStart" node="0>3|0" />
+        <i3dMapping id="clearAreaWidth" node="0>3|0|0" />
+        <i3dMapping id="clearAreaHeight" node="0>3|0|1" />
+        <i3dMapping id="levelingAreaStart" node="0>4|0" />
+        <i3dMapping id="levelingAreaWidth" node="0>4|0|0" />
+        <i3dMapping id="levelingAreaHeight" node="0>4|0|1" />
+        <i3dMapping id="indoorAreaStart" node="0>5|0" />
+        <i3dMapping id="indoorAreaWidth" node="0>5|0|0" />
+        <i3dMapping id="indoorAreaHeight" node="0>5|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreaStart" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateAreaEnd" node="0>6|0|0" />
+        <i3dMapping id="storage01_vis" node="0>7|0|1" />
+        <i3dMapping id="storage01_vis_LOD1" node="0>7|1|0" />
+        <i3dMapping id="spawnArea1Start" node="0>8|0|0" />
+        <i3dMapping id="spawnArea1End" node="0>8|0|0|0" />
+        <i3dMapping id="storageArea1Start" node="0>8|0|1" />
+        <i3dMapping id="storageArea1End" node="0>8|0|1|0" />
+        <i3dMapping id="objectTrigger" node="0>8|1" />
+        <i3dMapping id="objectTriggerMarker" node="0>8|1|0" />
+        <i3dMapping id="playerTrigger" node="0>8|2" />
+        <i3dMapping id="playerTriggerMarker" node="0>8|2|0" />
+        <i3dMapping id="infoTrigger" node="0>8|3" />
+        <i3dMapping id="warningStripes" node="0>8|4" />
+    </i3dMappings>
+</placeable>

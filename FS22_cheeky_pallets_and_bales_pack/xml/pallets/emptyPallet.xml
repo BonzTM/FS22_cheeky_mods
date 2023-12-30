@@ -3,7 +3,7 @@
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
-        <name>$l10n_fillType_emptyPallet</name>
+        <name>Empty Pallets</name>
         <image>textures/store_emptyPallet.dds</image>
         <category>pallets</category>
         <brand>LIZARD</brand>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.6.0</version>
+    <version>1.9.7.1</version>
     <title>
         <en>Cheeky Placeables Pack</en>
     </title>
@@ -11,8 +11,18 @@
     <iconFilename>textures/store_liquidFlatBottomTank1630.png</iconFilename>
     <storeItems>
         <storeItem xmlFilename="xml/cheeky_limeAndRoadsaltStation.xml"/>
+        <!-- Cheeky Silos -->
         <storeItem xmlFilename="xml/cheeky_herbicide_liquidFlatBottomTank1630.xml"/>
         <storeItem xmlFilename="xml/cheeky_water_liquidFlatBottomTank1630.xml"/>
+        <storeItem xmlFilename="xml/cheeky_storageBale.xml"/>
+        <storeItem xmlFilename="xml/cheeky_chaffStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_grassStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_hayStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_silageStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_strawStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sugarBeetCutStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sugarcaneStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_woodchipsStorage.xml"/>
 
         <!-- Selling Points -->
         <storeItem xmlFilename="xml/cheeky_bhp.xml"/>

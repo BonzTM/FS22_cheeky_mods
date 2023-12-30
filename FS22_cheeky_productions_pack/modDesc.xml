@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.6.0</version>
+    <version>1.9.7.1</version>
     <title>
         <en>Cheeky Productions Pack</en>
     </title>
@@ -27,7 +27,37 @@
         <storeItem xmlFilename="xml/cheeky_sugarMill.xml"/>
         <storeItem xmlFilename="xml/cheeky_tailorShop.xml"/>
         <storeItem xmlFilename="xml/cheeky_vegetableFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_sugarbeetProcessing.xml"/>
+        <storeItem xmlFilename="xml/cheeky_chocolateFactory.xml"/>
     </storeItems>
+
+    <l10n>
+		<text name="sugarbeetProcessingPlant">
+            <en>Sugarbeet Processing Plant</en>
+            <de>Rübenschnitzelanlage</de>
+		</text>
+	</l10n>
+
+    <brandColors>
+        <color name="WALLCOLOR_PETROL" value="0.0265 0.1193 0.1275 0" />
+        <color name="WALLCOLOR_CYAN" value="0.1139 0.2632 0.3066 0" />
+        <color name="WALLCOLOR_LIGHTBLUE" value="0.0781 0.2508 0.7012 0" />
+        <color name="WALLCOLOR_DARKBLUE" value="0.0430 0.0461 0.1087 0" />
+        <color name="WALLCOLOR_YELLOW" value="0.9158 0.8200 0.0759 0" />
+        <color name="WALLCOLOR_BRIGHTRED" value="0.7519 0.0677 0.0677 0" />
+        <color name="WALLCOLOR_DARKRED" value="0.1450 0.0179 0.0179 0" />
+        <color name="WALLCOLOR_BORDEAUX" value="0.1139 0.0066 0.0254 0" />
+        <color name="WALLCOLOR_SAND" value="0.5418 0.3993 0.1701 0" />
+        <color name="WALLCOLOR_BROWN" value="0.1511 0.0781 0.0461 0" />
+        <color name="WALLCOLOR_BRIGHTGREEN" value="0.1390 0.4259 0.0802 0" />
+        <color name="WALLCOLOR_GREEN" value="0.0284 0.0595 0.0395 0" />
+        <color name="WALLCOLOR_OLIVE" value="0.0415 0.0619 0.0066 0" />
+        <color name="WALLCOLOR_DARKGREY" value="0.0442 0.0442 0.0442 0" />
+        <color name="WALLCOLOR_BRIGHTGREY" value="0.3084 0.3084 0.3084 0" />
+        <color name="WALLCOLOR_WHITE" value="0.8 0.8 0.8 0" />
+        <color name="WALLCOLOR_BLACK" value="0.03 0.03 0.03 0" />
+    </brandColors>
+
 	<multiplayer supported="true" />     
     <dependencies>
 		<dependency>FS22_A_ProductionRevamp</dependency>
