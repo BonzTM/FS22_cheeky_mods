@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; loki_79; ddewar</author>
-    <version>1.9.7.1</version>
+    <version>1.9.7.2</version>
     <title>
         <en>Cheeky Pallets and Bales Pack</en>
     </title>
@@ -40,64 +40,64 @@
 
         <!-- Platinum DLC -->
         <!-- Pallet Overrides -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/armoirePallet/armoirePallet.xml"/> -->
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/armoirePallet/armoirePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/overrides/platinum/barrelPallet/barrelPallet.xml"/>
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/bathtubPallet/bathtubPallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/birdHousePallet/birdHousePallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/bowlsPallet/bowlsPallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/bucketPallet/bucketPallet.xml"/> -->
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/bathtubPallet/bathtubPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/birdHousePallet/birdHousePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/bowlsPallet/bowlsPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/bucketPallet/bucketPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/overrides/platinum/cartonRollPallet/cartonRollPallet.xml"/>
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/catTreePallet/catTreePallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/chairPallet/chairPallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/dogHousePallet/dogHousePallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/easelPallet/easelPallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/floorTilesPallet/floorTilesPallet.xml"/> -->
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/catTreePallet/catTreePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/chairPallet/chairPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/dogHousePallet/dogHousePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/easelPallet/easelPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/floorTilesPallet/floorTilesPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/overrides/platinum/metalPallet/metalPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/overrides/platinum/paperRollPallet/paperRollPallet.xml"/>
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/pepperGrinderPallet/pepperGrinderPallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/pictureFramePallet/pictureFramePallet.xml"/> -->
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/pepperGrinderPallet/pepperGrinderPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/pictureFramePallet/pictureFramePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/overrides/platinum/planksPallet/planksPallet.xml"/>
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/prefabWallPallet/prefabWallPallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/shingleGenericPallet/shingleGenericPallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/staircaseRailingPallet/staircaseRailingPallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/tablePallet/tablePallet.xml"/> -->
-        <!-- <storeItem xmlFilename="xml/pallets/overrides/platinum/woodBeamPallet/woodBeamPallet.xml"/> -->
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/prefabWallPallet/prefabWallPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/shingleGenericPallet/shingleGenericPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/staircaseRailingPallet/staircaseRailingPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/tablePallet/tablePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/overrides/platinum/woodBeamPallet/woodBeamPallet.xml"/>
 
         <!-- Buyable Pallets -->`
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/armoirePallet.xml"/>
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/armoirePallet.xml"/> -->
         <storeItem xmlFilename="xml/pallets/buyable/platinum/barrelPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/bathtubPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/birdHousePallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/bowlsPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/bucketPallet.xml"/>
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/bathtubPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/birdHousePallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/bowlsPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/bucketPallet.xml"/> -->
         <storeItem xmlFilename="xml/pallets/buyable/platinum/cartonRollPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/catTreePallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/chairPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/dogHousePallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/easelPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/floorTilesPallet.xml"/>
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/catTreePallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/chairPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/dogHousePallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/easelPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/floorTilesPallet.xml"/> -->
         <storeItem xmlFilename="xml/pallets/buyable/platinum/metalPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/buyable/platinum/paperRollPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/pepperGrinderPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/pictureFramePallet.xml"/>
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/pepperGrinderPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/pictureFramePallet.xml"/> -->
         <storeItem xmlFilename="xml/pallets/buyable/platinum/planksPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/prefabWallPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/shingleGenericPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/staircaseRailingPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/tablePallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/platinum/woodBeamPallet.xml"/>
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/prefabWallPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/shingleGenericPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/staircaseRailingPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/tablePallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/platinum/woodBeamPallet.xml"/> -->
 
         <!-- Premium DLC -->
         <!-- Buyable Pallets -->
-        <storeItem xmlFilename="xml/pallets/buyable/premium/potatoChipsPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/premium/preservedFoodBeetRootPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/premium/preservedFoodCarrotsPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/premium/preservedFoodParsnipPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPalletBeetroot.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPalletCarrots.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPalletParsnip.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPalletPotato.xml"/>
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/potatoChipsPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/preservedFoodBeetRootPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/preservedFoodCarrotsPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/preservedFoodParsnipPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPallet.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPalletBeetroot.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPalletCarrots.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPalletParsnip.xml"/> -->
+        <!-- <storeItem xmlFilename="xml/pallets/buyable/premium/soupCansPalletPotato.xml"/> -->
 
         <!-- Buyable Bales -->
         <storeItem xmlFilename="xml/bales/buyable/cottonRoundbale238.xml"/>
