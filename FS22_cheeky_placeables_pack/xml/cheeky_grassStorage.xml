@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="silo"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
   <storeData>
     <name>
       <en>Loose grass storage</en>
@@ -19,22 +20,22 @@
     <category>silos</category>
     <brush>
       <type>placeable</type>
-      <category>buildings</category>
+      <category>cheeky</category>
       <tab>silos</tab>
     </brush>
-        <vertexBufferMemoryUsage>395520</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>57856</indexBufferMemoryUsage>
-        <textureMemoryUsage>7208960</textureMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    <vertexBufferMemoryUsage>395520</vertexBufferMemoryUsage>
+    <indexBufferMemoryUsage>57856</indexBufferMemoryUsage>
+    <textureMemoryUsage>7208960</textureMemoryUsage>
+    <audioMemoryUsage>0</audioMemoryUsage>
+    <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+    <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
   </storeData>
 
   <base>
     <filename>i3d/grassStorage.i3d</filename>
   </base>
 
-  <placement useRandomYRotation="false" useManualYRotation="true" >
+  <placement useRandomYRotation="false" useManualYRotation="true">
     <testAreas>
       <testArea startNode="testArea1Start" endNode="testArea1End" />
     </testAreas>
@@ -84,8 +85,8 @@
     </unloadingStation>
 
     <storages>
-      <storage isExtension="false" fillLevelSyncThreshold="50" >
-        <capacity fillType="GRASS_WINDROW" capacity="5000000"  />
+      <storage isExtension="false" fillLevelSyncThreshold="50">
+        <capacity fillType="GRASS_WINDROW" capacity="5000000" />
         <fillPlane fillType="GRASS_WINDROW" node="fillPlane" minY="-2.238" maxY="0.784" />
       </storage>
     </storages>
@@ -96,7 +97,7 @@
   </hotspots>
 
   <animatedObjects>
-    <animatedObject saveId="b05_Licht04" >
+    <animatedObject saveId="b05_Licht04">
       <animation duration="0.5">
         <part node="18|1|1|0">
           <keyFrame time="0.00" rotation="-51 0 0" />
@@ -153,7 +154,7 @@
       </animation>
       <controls triggerNode="18|1|0" posAction="ACTIVATE_HANDTOOL" posText="action_turnOnLight" negText="action_turnOffLight" />
     </animatedObject>
-    <animatedObject saveId="p01_Switch_01" >
+    <animatedObject saveId="p01_Switch_01">
       <animation duration="0.5">
         <part node="18|2|1|0">
           <keyFrame time="0.00" rotation="-51 0 0" />

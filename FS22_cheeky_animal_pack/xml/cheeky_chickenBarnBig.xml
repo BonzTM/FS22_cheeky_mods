@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="chickenHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="chickenHusbandry"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Chicken Coop</name>
         <image>textures/store_chickenBarnBig.png</image>
@@ -13,10 +14,15 @@
         <brand>RUDOLFHOERMANN</brand>
         <species>placeable</species>
         <category>animalpens</category>
-        <brush>
+        <!-- <brush>
             <type>placeable</type>
             <category>animals</category>
             <tab>chickens</tab>
+        </brush> -->
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>animals</tab>
         </brush>
         <vertexBufferMemoryUsage>1443328</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>195328</indexBufferMemoryUsage>
@@ -48,14 +54,14 @@
     </placement>
 
     <clearAreas>
-         <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
-         <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
     </clearAreas>
 
     <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
-         <levelAreas>
-             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
-         </levelAreas>
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt"/>
+        </levelAreas>
 
         <paintAreas>
             <paintArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" groundType="grass" />
@@ -67,7 +73,7 @@
     </foliageAreas>
 
     <indoorAreas>
-         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
     </indoorAreas>
 
     <tipOcclusionUpdateAreas>
@@ -90,11 +96,11 @@
     </triggerMarkers>
 
     <hotspots>
-         <hotspot type="CHICKEN" teleportNode="teleportNode" />
+        <hotspot type="CHICKEN" teleportNode="teleportNode" />
     </hotspots>
 
     <animatedObjects>
-        <animatedObject saveId="door1" >
+        <animatedObject saveId="door1">
             <animation duration="1.5">
                 <part node="door1">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -108,7 +114,7 @@
                 <negEnd linkNode="door1Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door2" >
+        <animatedObject saveId="door2">
             <animation duration="1.5">
                 <part node="door2">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -122,7 +128,7 @@
                 <negEnd linkNode="door2Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="doorBig" >
+        <animatedObject saveId="doorBig">
             <animation duration="1.5">
                 <part node="doorBigRight">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -140,7 +146,7 @@
                 <negEnd linkNode="doorBigBase" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="sideDoor1" >
+        <animatedObject saveId="sideDoor1">
             <animation duration="3.0">
                 <part node="frameInner">
                     <keyFrame time="0.0" translation="0 0 0"/>
@@ -222,13 +228,13 @@
 
         <loadingStation supportsExtension="false" />
 
-        <animals type="CHICKEN" maxNumAnimals="2000" >
+        <animals type="CHICKEN" maxNumAnimals="2000">
             <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/chickenBarnBig/navigationMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
 
-        <food capacity="60000" >
-             <feedingTrough exactFillRootNode="exactFillRootNodeFood" />
+        <food capacity="60000">
+            <feedingTrough exactFillRootNode="exactFillRootNodeFood" />
             <foodPlane node="foodPlane" minY="0.098" maxY="0.210" changeVisibility="true" defaultFillType="WHEAT"/>
         </food>
 

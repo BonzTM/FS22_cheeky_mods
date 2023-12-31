@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="sellingStation"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Bales</name>
         <image>$data/store/store_empty.png</image>
@@ -10,7 +11,12 @@
         <rotation>0</rotation>
         <brand>NONE</brand>
         <species>placeable</species>
-        <category>placeableMisc</category>
+        <category>sellingPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>sellingPoints</tab>
+        </brush>
         <vertexBufferMemoryUsage>1152</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>144</indexBufferMemoryUsage>
         <textureMemoryUsage>64</textureMemoryUsage>
@@ -39,20 +45,20 @@
     </hotspots>
 
     <triggerMarkers>
-        <triggerMarker node="unloadMarker"  filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="unloadMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
     </triggerMarkers>
 
     <sellingStation supportsExtension="false" litersForFullPriceDrop="100000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="STRAW DRYGRASS_WINDROW GRASS_WINDROW SILAGE SUGARBEET_CUT FORAGE" aiNode="aiNode" >
+        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="STRAW DRYGRASS_WINDROW GRASS_WINDROW SILAGE SUGARBEET_CUT FORAGE" aiNode="aiNode">
             <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
         </unloadTrigger>
 
-        <fillType name="STRAW"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="STRAW" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="DRYGRASS_WINDROW" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="GRASS_WINDROW"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="SILAGE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="SUGARBEET_CUT"    priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="FORAGE"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="GRASS_WINDROW" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SILAGE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SUGARBEET_CUT" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FORAGE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
 
     <clearAreas></clearAreas>

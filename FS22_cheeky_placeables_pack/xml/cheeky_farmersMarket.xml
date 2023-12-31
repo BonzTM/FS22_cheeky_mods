@@ -15,7 +15,7 @@
         <category>sellingPoints</category>
         <brush>
             <type>placeable</type>
-            <category>production</category>
+            <category>cheeky</category>
             <tab>sellingPoints</tab>
         </brush>
         <vertexBufferMemoryUsage>640256</vertexBufferMemoryUsage>
@@ -125,7 +125,7 @@
         <fillType name="WOODCHIPS" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SEEDS" priceScale="0.33" supportsGreatDemand="true" disablePriceDrop="false" />
 
-                <!-- Custom -->
+        <!-- Custom -->
         <fillType name="MOONSHINE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
 
         <fillTypeCategory name="CHEEKY_PRODUCT" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />

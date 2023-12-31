@@ -1,24 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.7.2</version>
+    <version>1.9.8.0</version>
     <title>
         <en>Cheeky Premium Productions Pack</en>
     </title>
-	<description>
-		<en><![CDATA[10x Modded Premium expansion productions for the Cheeky Bastards.]]></en>
-	</description>	
+    <description>
+        <en><![CDATA[10x Modded Premium expansion productions for the Cheeky Bastards.]]></en>
+    </description>
     <iconFilename>textures/store_grainMill.png</iconFilename>
     <storeItems>
         <storeItem xmlFilename="xml/cheeky_potatoProcessingPlantPlaceable.xml"/>
         <storeItem xmlFilename="xml/cheeky_preservedFoodFactoryPlaceable.xml"/>
         <storeItem xmlFilename="xml/cheeky_soupFactoryPlaceable.xml"/>
     </storeItems>
-    
+
     <extraSourceFiles>
-		<sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
-	</extraSourceFiles>
- 
+        <sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
+    </extraSourceFiles>
+
     <overwrittenPaths>
         <overwrittenPath originalPath="effects/chimneySmoke/smokeTrailSubUV.i3d" newPath="$pdlcdir/premiumExpansion/effects/chimneySmoke/smokeTrailSubUV.i3d" />
         <overwrittenPath originalPath="placeables/sellingStationGeneretic/sellingStationGenericNoCoverWideGrid.i3d" newPath="$pdlcdir/premiumExpansion/placeables/sellingStationGeneretic/sellingStationGenericNoCoverWideGrid.i3d" />
@@ -28,8 +28,14 @@
         <overwrittenPath originalPath="placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodIdle.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodIdle.wav" />
         <overwrittenPath originalPath="placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodActive.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodActive.wav" />
         <overwrittenPath originalPath="placeables/productionPoints/soupFactory/sounds/soupFactoryIdle.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryIdle.wav" />
-        <overwrittenPath originalPath="placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav" />    
+        <overwrittenPath originalPath="placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav" newPath="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav" />
     </overwrittenPaths>
-    
-	<multiplayer supported="true" /> 
+
+    <multiplayer supported="true" />
+
+    <dependencies>
+        <dependency>FS22_A_ProductionRevamp</dependency>
+        <dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
+        <dependency>FS22_cheeky_placeables_pack</dependency>
+    </dependencies>
 </modDesc>

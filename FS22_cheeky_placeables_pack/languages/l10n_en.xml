@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<l10n>
+	<texts>
+		<!--New Shop Item Names & Functions-->
+		<text name="shopItem_lumberStorage_spruce"  text="Timber Storage - Spruce"/>
+		<text name="shopItem_lumberStorage_pine"    text="Timber Storage - Pine"/>
+		<text name="shopItem_lumberPile_spruce"     text="Timber Pile - Spruce"/>
+		<text name="shopItem_lumberPile_pine"       text="Timber Pile - Pine"/>
+		<text name="function_lumberStorage_spruce"  text="This shed will allow you to store your spruce logs"/>
+		<text name="function_lumberStorage_pine"    text="This shed will allow you to store your pine logs"/>
+		<text name="function_lumberPile_spruce"     text="This pile will allow you to store your spruce logs"/>
+		<text name="function_lumberPile_pine"       text="This pile will allow you to store your pine logs"/>
+
+		<!--New Functions - Silo Output-->
+		<text name="ExtractLogs"              text="Output Logs"/>
+		<text name="SingleLog"                text="Log" />
+		<text name="MultiLog"                 text="Logs" />
+		<text name="ChooseOutputAmount"       text="Choose Number of Logs to Output" />
+		<text name="NoLogsToOutput"           text="Not enough timber in storage to output a log" />
+
+		<!--New Functions - Silo Input-->
+		<text name="InputLogs"                text="Store Logs"/>
+		<text name="BadInputChipped"          text="Invalid log types sent to wood chipper" />
+		<text name="BadInputNotChipped"       text="Invalid log types ignored" />
+		<text name="FullStorage"              text="Storage racks are full, extra logs ignored" />
+
+		<text name="InfoHudIsFull"            text="Silo is Full" />
+		<text name="InfoHudFull"              text="Full" />
+
+	</texts>
+</l10n>

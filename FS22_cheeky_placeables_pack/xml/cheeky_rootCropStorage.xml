@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="silo"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>
-			<en>Root Crop Storage</en>
+            <en>Root Crop Storage</en>
         </name>
         <functions>
             <function>$l10n_function_rootStorage</function>
@@ -17,10 +18,10 @@
         <category>silos</category>
         <brush>
             <type>placeable</type>
-            <category>buildings</category>
+            <category>cheeky</category>
             <tab>silos</tab>
         </brush>
-		
+
         <vertexBufferMemoryUsage>913152</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>126208</indexBufferMemoryUsage>
         <textureMemoryUsage>6553600</textureMemoryUsage>
@@ -34,7 +35,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
         </testAreas>
@@ -75,7 +76,7 @@
     </hotspots>
 
     <triggerMarkers>
-        <triggerMarker node="markerLoading"   filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
         <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
     </triggerMarkers>
 
@@ -83,25 +84,25 @@
 
     <silo>
         <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="50">
-			<loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="POTATO SUGARBEET CARROT PARSNIP BEETROOT" aiNode="aiLoadingNode">
-                <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
-                <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />           
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="POTATO SUGARBEET CARROT PARSNIP BEETROOT" aiNode="aiLoadingNode">
+                <effectNode effectClass="PipeEffect" effectNode="pipeEffect" materialType="pipe" fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0"/>
+                <effectNode effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
             </loadTrigger>
         </loadingStation>
-		
-		<fillType name="POTATO" priceScale="1"/>
-		<fillType name="SUGARBEET" priceScale="1"/>
-		<fillType name="CARROT" priceScale="1"/>
-		<fillType name="PARSNIP" priceScale="1"/>
-		<fillType name="BEETROOT" priceScale="1"/>
+
+        <fillType name="POTATO" priceScale="1"/>
+        <fillType name="SUGARBEET" priceScale="1"/>
+        <fillType name="CARROT" priceScale="1"/>
+        <fillType name="PARSNIP" priceScale="1"/>
+        <fillType name="BEETROOT" priceScale="1"/>
 
         <unloadingStation supportsExtension="true" storageRadius="50">
-		    <effectNodes>					<!--  add unloadEffect  -->		
-					<effectNode effectClass="MorphPositionEffect" effectNode="unloadEffect1" materialType="belt" delay="0" fadeTime="0" speed="0" scrollLength="1" scrollSpeed="0.6"/>
-			</effectNodes>		
-			<unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="POTATO SUGARBEET CARROT PARSNIP BEETROOT" aiNode="aiUnloadingNode"/>
-        </unloadingStation>		
-		
+            <effectNodes>                <!--  add unloadEffect  -->
+                <effectNode effectClass="MorphPositionEffect" effectNode="unloadEffect1" materialType="belt" delay="0" fadeTime="0" speed="0" scrollLength="1" scrollSpeed="0.6"/>
+            </effectNodes>
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="POTATO SUGARBEET CARROT PARSNIP BEETROOT" aiNode="aiUnloadingNode"/>
+        </unloadingStation>
+
         <storages>
             <storage node="storage" fillTypes="POTATO SUGARBEET CARROT PARSNIP BEETROOT" capacity="5000000" isExtension="true"/>
         </storages>
@@ -130,9 +131,9 @@
         <i3dMapping id="storage" node="0>0|1" />
         <i3dMapping id="loadingTrigger" node="0>0|2|0|0" />
         <i3dMapping id="dischargeNode" node="0>0|2|0|1" />
-        <i3dMapping id="dischargeEffect" node="0>0|2|0|2" />		
-        <i3dMapping id="pipeEffect" node="0>0|2|0|2|0" />	
-        <i3dMapping id="pipeEffectSmoke" node="0>0|2|0|2|1" />		
+        <i3dMapping id="dischargeEffect" node="0>0|2|0|2" />
+        <i3dMapping id="pipeEffect" node="0>0|2|0|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>0|2|0|2|1" />
         <i3dMapping id="aiLoadingNode" node="0>0|2|0|3" />
         <i3dMapping id="exactFillRootNode" node="0>0|3|0" />
         <i3dMapping id="grainGutterLinkNode" node="0>0|3|1" />
@@ -154,7 +155,7 @@
         <i3dMapping id="markerUnloading" node="0>6" />
         <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>7|0" />
         <i3dMapping id="tipOcclusionUpdateArea1End" node="0>7|0|0" />
-        <i3dMapping id="teleportNode" node="0>10" />		
+        <i3dMapping id="teleportNode" node="0>10" />
         <i3dMapping id="realLightsLow" node="0>11|0|0" />
         <i3dMapping id="realLightsHigh" node="0>11|0|1" />
         <i3dMapping id="linkedLight01" node="0>11|1|0" />

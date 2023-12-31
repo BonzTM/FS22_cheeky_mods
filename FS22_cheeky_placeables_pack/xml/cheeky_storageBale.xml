@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="objectStorage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
-     <storeData>
+<placeable type="objectStorage"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
         <name>Cheeky Bale and Pallet Storage</name>
         <functions>
             <function>
@@ -9,7 +10,7 @@
         </functions>
         <image>textures/store_storageSmall01.png</image>
         <price>25000</price>
-		<dailyUpkeep>15</dailyUpkeep>
+        <dailyUpkeep>15</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -17,8 +18,8 @@
         <category>storages</category>
         <brush>
             <type>placeable</type>
-            <category>buildings</category>
-            <tab>silos</tab>
+            <category>cheeky</category>
+            <tab>storages</tab>
         </brush>
         <canBeSold>true</canBeSold>
         <showInStore>true</showInStore>
@@ -30,12 +31,12 @@
         <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
     </storeData>
 
-	<base>
-    <filename>i3d/storageBale.i3d</filename>
-	<boughtWithFarmland>true</boughtWithFarmland>
+    <base>
+        <filename>i3d/storageBale.i3d</filename>
+        <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
-	 <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5">
+    <placement useRandomYRotation="false" useManualYRotation="true" placementPositionSnapSize="0.5">
         <testAreas>
             <testArea startNode="testAreaStart" endNode="testAreaEnd" />
         </testAreas>
@@ -69,11 +70,11 @@
         </updateAreas>
     </ai>
 
-	<!-- BallenTrigger-->
+    <!-- BallenTrigger-->
 
-	 <triggerMarkers>
+    <triggerMarkers>
         <triggerMarker node="warningStripes" />
-        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD"   adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
         <triggerMarker node="objectTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
     </triggerMarkers>
 
@@ -95,13 +96,13 @@
     </objectStorage>
 
     <pointOfInterest>
-        <point triggerNode="objectTrigger" text="$l10n_poi_objectStorageUnload" showOwner="true"  showEveryone="false"/>
-        <point triggerNode="playerTrigger" text="$l10n_poi_objectStorageLoad"   showOwner="true"  showEveryone="false" />
+        <point triggerNode="objectTrigger" text="$l10n_poi_objectStorageUnload" showOwner="true" showEveryone="false"/>
+        <point triggerNode="playerTrigger" text="$l10n_poi_objectStorageLoad" showOwner="true" showEveryone="false" />
     </pointOfInterest>
 
-	<!--ballenTrigger END-->
+    <!--ballenTrigger END-->
 
-	<lights>
+    <lights>
         <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="lightNode01" groupIndex="1">
             <rotationNode name="rotationNode01" />
         </sharedLight>
@@ -129,10 +130,10 @@
                 <toggle template="lizardFloodLight" innerRadius="50" outerRadius="100" volumeScale="0.2"/>
             </sounds>
         </group>
-	</lights>
- <!-- Animation Tore -->
-	<animatedObjects>
-        <animatedObject saveId="door01" >
+    </lights>
+    <!-- Animation Tore -->
+    <animatedObjects>
+        <animatedObject saveId="door01">
             <animation duration="5">
                 <part node="door01">
                     <keyFrame time="0.0" translation="-8.912 0 -0.040"/>
@@ -146,7 +147,7 @@
                 <negEnd template="slidingGateMetalClose" linkNode="door1" />
             </sounds>
         </animatedObject>
-		<animatedObject saveId="door02" >
+        <animatedObject saveId="door02">
             <animation duration="3.5">
                 <part node="door02">
                     <keyFrame time="0.0" translation="-2.960 0 0.040"/>
@@ -160,7 +161,7 @@
                 <negEnd template="slidingGateMetalClose" linkNode="door2" />
             </sounds>
         </animatedObject>
-		<animatedObject saveId="door03" >
+        <animatedObject saveId="door03">
             <animation duration="5">
                 <part node="door03">
                     <keyFrame time="0.0" translation="2.960 0 -0.040"/>
@@ -174,7 +175,7 @@
                 <negEnd template="slidingGateMetalClose" linkNode="door3" />
             </sounds>
         </animatedObject>
-		<animatedObject saveId="door04" >
+        <animatedObject saveId="door04">
             <animation duration="5">
                 <part node="door04">
                     <keyFrame time="0.0" translation="8.912 0 0.040"/>
@@ -188,19 +189,19 @@
                 <negEnd template="slidingGateMetalClose" linkNode="door4" />
             </sounds>
         </animatedObject>
-	</animatedObjects>
-	<colorable>
+    </animatedObjects>
+    <colorable>
         <nodes>
             <node node="storage01_vis" />
             <node node="storage01_vis_LOD1" />
         </nodes>
         <colors>
-			<color  value="0.2349 0.0072 0.005" />
-			<color  value="0.1275 0.0084 0.0127" />
-			<color  value="0.0582 0.0638 0.0738" />
-			<color  value="0.2011 0.212 0.2271" />
-			<color  value="0.0119 0.0478 0.0041" />
-			<color  value="0.0055 0.021 0.0017" />
+            <color value="0.2349 0.0072 0.005" />
+            <color value="0.1275 0.0084 0.0127" />
+            <color value="0.0582 0.0638 0.0738" />
+            <color value="0.2011 0.212 0.2271" />
+            <color value="0.0119 0.0478 0.0041" />
+            <color value="0.0055 0.021 0.0017" />
         </colors>
     </colorable>
     <i3dMappings>

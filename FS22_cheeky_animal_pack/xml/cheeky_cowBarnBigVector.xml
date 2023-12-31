@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="cowHusbandryFeedingRobot" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="cowHusbandryFeedingRobot"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Cow Barn (Large) w/ Robot</name>
         <image>textures/store_cowBarnBigVector.png</image>
@@ -13,10 +14,15 @@
         <brand>RUDOLFHOERMANN</brand>
         <species>placeable</species>
         <category>animalpens</category>
-        <brush>
+        <!-- <brush>
             <type>placeable</type>
             <category>animals</category>
             <tab>cows</tab>
+        </brush> -->
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>animals</tab>
         </brush>
         <vertexBufferMemoryUsage>5529088</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>998912</indexBufferMemoryUsage>
@@ -35,7 +41,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
             <testArea startNode="testArea2Start" endNode="testArea2End" />
@@ -81,20 +87,21 @@
     <indoorAreas>
         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
 
-        <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height"/>  <!-- vector garage -->
+        <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height"/>
+        <!-- vector garage -->
 
         <!-- vector path -->
         <indoorArea startNode="indoorArea3Start" widthNode="indoorArea3Width" heightNode="indoorArea3Height"/>
         <indoorArea startNode="indoorArea4Start" widthNode="indoorArea4Width" heightNode="indoorArea4Height"/>
-        <indoorArea startNode="paintArea1Start"  widthNode="paintArea1Width"  heightNode="paintArea1Height" />
-        <indoorArea startNode="paintArea2Start"  widthNode="paintArea2Width"  heightNode="paintArea2Height" />
-        <indoorArea startNode="paintArea3Start"  widthNode="paintArea3Width"  heightNode="paintArea3Height" />
+        <indoorArea startNode="paintArea1Start" widthNode="paintArea1Width" heightNode="paintArea1Height" />
+        <indoorArea startNode="paintArea2Start" widthNode="paintArea2Width" heightNode="paintArea2Height" />
+        <indoorArea startNode="paintArea3Start" widthNode="paintArea3Width" heightNode="paintArea3Height" />
     </indoorAreas>
 
     <triggerMarkers>
-        <triggerMarker node="markerMilk"         filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
-        <triggerMarker node="markerFood"         filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
-        <triggerMarker node="markerAnimals"      filename="$data/shared/assets/marker/markerIcons.xml" id="ANIMALS" />
+        <triggerMarker node="markerMilk" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerFood" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIcons.xml" id="ANIMALS" />
         <triggerMarker node="markerLiquidManure" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
     </triggerMarkers>
 
@@ -115,7 +122,7 @@
     </hotspots>
 
     <animatedObjects>
-        <animatedObject saveId="milk" >
+        <animatedObject saveId="milk">
             <animation duration="1.5">
                 <part node="door1Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -133,7 +140,7 @@
                 <negEnd linkNode="door1Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="rollingDoor1" >
+        <animatedObject saveId="rollingDoor1">
             <animation duration="5">
                 <part node="rollingDoor1">
                     <keyFrame time="0.0" translation="0 0 0"/>
@@ -160,7 +167,7 @@
                 <negEnd linkNode="rollingDoor1Base" template="slidingGateMetalClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="rollingDoor2" >
+        <animatedObject saveId="rollingDoor2">
             <animation duration="5">
                 <part node="rollingDoor2">
                     <keyFrame time="0.0" translation="0 0 0"/>
@@ -187,7 +194,7 @@
                 <negEnd linkNode="rollingDoor2Base" template="slidingGateMetalClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door2" >
+        <animatedObject saveId="door2">
             <animation duration="1.5">
                 <part node="door2">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -201,7 +208,7 @@
                 <negEnd linkNode="door2Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door3" >
+        <animatedObject saveId="door3">
             <animation duration="1.5">
                 <part node="door3Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -219,7 +226,7 @@
                 <negEnd linkNode="door3Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door4" >
+        <animatedObject saveId="door4">
             <animation duration="1.5">
                 <part node="door4Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -237,7 +244,7 @@
                 <negEnd linkNode="door4Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door5" >
+        <animatedObject saveId="door5">
             <animation duration="1.5">
                 <part node="door5Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -255,7 +262,7 @@
                 <negEnd linkNode="door5Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door6" >
+        <animatedObject saveId="door6">
             <animation duration="1.5">
                 <part node="door6Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -273,7 +280,7 @@
                 <negEnd linkNode="door6Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="slidingDoor" >
+        <animatedObject saveId="slidingDoor">
             <dependency animatedObjectIndex="6" minTime="0" maxTime="0" />
             <animation duration="2.5">
                 <part node="slidingDoor">
@@ -361,7 +368,7 @@
             <loadTrigger triggerNode="milkTrigger" fillTypes="MILK" fillLitersPerSecond="2000" aiNode="aiLoadingNodeMilk"/>
         </loadingStation>
 
-        <animals type="COW" maxNumAnimals="600" >
+        <animals type="COW" maxNumAnimals="600">
             <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/cowBarnBig/navigationMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>

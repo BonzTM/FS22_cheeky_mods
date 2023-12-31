@@ -6,6 +6,7 @@
             <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/woodTurner/store_woodTurner.png"/>
             <set path="placeable.storeData.name" value="Cheeky Wood Turner"/>
             <set path="placeable.storeData.price" value="400000"/>
+            <set path="placeable.storeData.brush.category" value="cheeky"/>
 
             <!-- Props linkage -->
             <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlcdir/forestryPack/placeables/productionPoints/woodTurner/props.i3d"/>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="15" filename="$data/maps/mapUS/textures/props/industrialWallLight_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapUS/textures/props/industrialWallLight_normal.png"/>
+    <File fileId="17" filename="$data/maps/mapUS/textures/props/industrialWallLight_specular.png"/>
+    <File fileId="11" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="9" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="23" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="24" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="25" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="5" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="18" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="13" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="20" filename="$data/shared/default_normal.png"/>
+    <File fileId="19" filename="$data/shared/window02_diffuse.png"/>
+    <File fileId="21" filename="$data/shared/window02_specular.png"/>
+    <File fileId="2" filename="../textures/palletBaleStorage/shedStone_diffuse.dds"/>
+    <File fileId="10" filename="../textures/palletBaleStorage/shedStone_height.dds"/>
+    <File fileId="6" filename="../textures/palletBaleStorage/shed_mask.dds"/>
+    <File fileId="3" filename="../textures/palletBaleStorage/shedStone_normal.dds"/>
+    <File fileId="4" filename="../textures/palletBaleStorage/shedStone_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="industrialWallLight_mat" materialId="4" customShaderId="18">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <CustomParameter name="lightControl" value="1.5 0 0 0"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="occluderMaterial" materialId="6" diffuseColor="0.8 0.8 0.8 1">
+    </Material>
+    <Material name="shedMaterial" materialId="7" customShaderId="5" customShaderVariation="colorScale_customParallax">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="mMaskMap" fileId="6"/>
+      <Custommap name="mParallaxMap" fileId="10"/>
+      <CustomParameter name="dirtMossSmoothness" value="1 1 0 0"/>
+      <CustomParameter name="dirtMossMix" value="0.48 0.69 2 0.5"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+      <CustomParameter name="colorScale0" value="1 1 1 1"/>
+      <CustomParameter name="colorScale1" value="0.054 0.053 0.076 1"/>
+      <CustomParameter name="colorScale2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorScale3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorScale4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorScale5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorScale6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorScale7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="snow_mat" materialId="8" customShaderId="13">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12" bumpDepth="0.5"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="69">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+    </Material>
+    <Material name="window02_mat" materialId="10" alphaBlending="true" customShaderId="18">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <CustomParameter name="lightControl" value="3 5 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="palletBaleStorage.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="shedSmall" nodeId="24">
+        <TransformGroup name="areas" rotation="0 -90 0" nodeId="25">
+          <TransformGroup name="testAreas" nodeId="26">
+            <TransformGroup name="Area1Start" translation="-5.86084 0 -12.3875" nodeId="27">
+              <TransformGroup name="Area1End" translation="23.4461 5 24.996" nodeId="28"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="clearAreas" nodeId="29">
+            <TransformGroup name="Area1Start" translation="-5.44548 0 -12" nodeId="30">
+              <TransformGroup name="Area1Width" translation="0 0 24" nodeId="31"/>
+              <TransformGroup name="Area1Height" translation="23.9764 0 0" nodeId="32"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" nodeId="33">
+            <TransformGroup name="Area1Start" translation="-5.44548 0 -12" nodeId="98">
+              <TransformGroup name="Area1Width" translation="0 0 24" nodeId="99"/>
+              <TransformGroup name="Area1Height" translation="23.9764 0 0" nodeId="100"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" nodeId="37">
+            <TransformGroup name="Area1Start" translation="-5.44548 0 -12" nodeId="95">
+              <TransformGroup name="Area1Width" translation="0 0 24" nodeId="96"/>
+              <TransformGroup name="Area1Height" translation="23.9764 0 0" nodeId="97"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="41">
+            <TransformGroup name="Area1Start" translation="-4.31341 0 -10.591" nodeId="42">
+              <TransformGroup name="Area1End" translation="8.42087 4 21.137" nodeId="43"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipCollision" nodeId="44">
+            <Shape shapeId="1" name="tipCollision" translation="0 0 -7.60956e-17" visibility="false" static="true" collisionMask="524288" clipDistance="300" nodeId="45" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="46">
+          <TransformGroup name="shedSmall" rotation="-90 90 0" nodeId="47">
+            <TransformGroup name="building" clipDistance="600" nodeId="48" lodDistance="0 150" lodBlending="false">
+              <Shape shapeId="2" name="shedSmall" translation="0 -1.67795e-09 0" clipDistance="300" nodeId="49" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="3" name="shedSmallLOD1" static="true" clipDistance="600" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="backWall" nodeId="51">
+              <Shape shapeId="4" name="shedSmallBack" translation="0 0 4.35426" kinematic="true" clipDistance="600" nodeId="53" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="winter" translation="-4.63874e-05 -2.54121e-06 0.00111033" rotation="90 4.45112e-12 -1.36604e-05" nodeId="56">
+              <Shape shapeId="5" name="snow" translation="0.254896 -0.109481 0" clipDistance="150" nodeId="57" materialIds="8" castsShadows="true" receiveShadows="true" weatherPreventMask="0"/>
+            </TransformGroup>
+            <Shape shapeId="6" name="industrialWallLight" lockedgroup="true" translation="-0.507419 -5 4.39883" rotation="-180 4.52476 3.74416e-06" clipDistance="150" nodeId="58" materialIds="4" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="1.5">
+              <Shape shapeId="7" name="glass" clipDistance="80" nodeId="59" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="3"/>
+              <Shape shapeId="8" name="col" visibility="false" static="true" density="0.0001" nodeId="60" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true" weatherPreventMask="0"/>
+              <Light name="light" translation="0 -0.015 0.2" nodeId="61" type="point" color="0.8 0.6 0.4" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="12" weatherRequiredMask="64"/>
+            </Shape>
+            <Shape shapeId="6" name="industrialWallLight" lockedgroup="true" translation="-0.485989 5 4.40766" rotation="-180 4.52484 3.74458e-06" clipDistance="150" nodeId="62" materialIds="4" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="1.5">
+              <Shape shapeId="7" name="glass" clipDistance="80" nodeId="63" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="3"/>
+              <Shape shapeId="8" name="col" visibility="false" static="true" density="0.0001" nodeId="64" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true" weatherPreventMask="0"/>
+              <Light name="light" translation="0 -0.015 0.2" nodeId="65" type="point" color="0.8 0.6 0.4" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="12" weatherRequiredMask="64"/>
+            </Shape>
+            <Shape shapeId="9" name="shedSmallOccluder" rotation="1.98217e-18 -0 0" nodeId="66" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" distanceBlending="false" occluder="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="objectStorage" nodeId="75">
+          <TransformGroup name="areas" nodeId="76">
+            <TransformGroup name="spawnArea1Start" translation="3.05183 -0.01 11.7568" rotation="0 -90 0" nodeId="77">
+              <TransformGroup name="spawnArea1End" translation="6.17439 0 8.81944" nodeId="78"/>
+            </TransformGroup>
+            <TransformGroup name="storageArea1Start" translation="9.99275 0 -4.22309" rotation="0 -90 0" nodeId="79">
+              <TransformGroup name="storageArea1End" translation="7.56889 0 19.9863" nodeId="80"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="10" name="objectTrigger" translation="0 0 9.22042" static="true" trigger="true" collisionMask="3149824" nodeId="81" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="objectTriggerMarker" nodeId="82"/>
+            <Shape shapeId="11" name="warningStripes" translation="0 0.01 0" clipDistance="300" nodeId="83" materialIds="69" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="12" name="playerTrigger" translation="4.64719 0.5 12.8778" static="true" trigger="true" collisionMask="3145728" nodeId="84" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" nodeId="85"/>
+          </Shape>
+          <Shape shapeId="13" name="infoTrigger" translation="-5e-06 1.66444 8.98635" static="true" trigger="true" collisionMask="3145728" nodeId="86" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="collisions" nodeId="91">
+          <Shape shapeId="14" name="interiorCollision" translation="0 1.22584 0.073" visibility="false" static="true" nodeId="92" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="15" name="tipCollisionWall" translation="0 0 -0.593672" visibility="false" static="true" collisionMask="524288" nodeId="93" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="16" name="tipCollision" translation="0 0 11.3831" visibility="false" static="true" collisionMask="524288" nodeId="94" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="93">
+      <Attribute name="collisionHeight" type="float" value="4"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="LumberStorage"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_lumberPile_spruce</name>
+        <functions>
+            <function>$l10n_function_lumberPile_spruce</function>
+        </functions>
+        <image>textures/store_Lumber_Pile_Spruce.dds</image>
+        <price>15000</price>
+        <dailyUpkeep>20</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>storages</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>i3d/log_storage_pile.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <!-- aLumberSilo Notes:
+        triggerNode      - the output selection trigger (on foot)
+            non-renderable, small cube, rigid body static collision trigger, bit 20
+
+        spawnNode        - where the output logs drop (from around 2m high)
+            whatever, transform group. log length runs along Z axis.
+
+        isPine           - true == pine, false == spruce
+
+        woodchipRatio    - (0.5) - percentage for woodchip conversion.  1.0 is base game, less is a debuff
+
+        maxPerSpawn      - (18) - max number of logs that will fit in the spawn area
+
+        inputNode        - where the logs go in
+            non-renderable, box to cover whole area, rigid body static collision trigger, bit 24
+
+        inputTriggerNode - activation trigger for input (on foot)
+            non-renderable, small cube, rigid body static collision trigger, bit 20
+
+        logFill(s)
+            showPercent  - decimal percentage where this node becomes visible
+            showNode     - i3d node to toggle visibility on (usual rules apply, mesh or transform)
+
+        logFill itterates over all of the entries, so there is no programatic upper limit to the
+        amount of them (but there probably is a performance upper limit).  Duplicate percentages
+        should work just fine too
+    -->
+    <aLumberSilo triggerNode="outputWoodInteract" useWoodChips="false" spawnNode="outputWoodSpawn" isPine="false" inputNode="inputWoodTriggerBox" inputTriggerNode="inputWoodInteract">
+        <logFill showNode="log_spruce_bottom_0" showPercent="0.125" />
+        <logFill showNode="log_spruce_top_0" showPercent="0.25" />
+        <logFill showNode="log_spruce_bottom_1" showPercent="0.375" />
+        <logFill showNode="log_spruce_bottom_2" showPercent="0.5" />
+        <logFill showNode="log_spruce_top_1" showPercent="0.625" />
+        <logFill showNode="log_spruce_top_2" showPercent="0.75" />
+        <logFill showNode="log_spruce_bottom_3" showPercent="0.875" />
+        <logFill showNode="log_spruce_top_3" showPercent="1.0" />
+    </aLumberSilo>
+
+    <deletedNodes>
+        <deletedNode node="pine" />
+    </deletedNodes>
+
+    <indoorAreas>
+      
+    </indoorAreas>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height" />
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="dirt" />
+        </levelAreas>
+    </leveling>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+
+    <silo>
+        <!-- this is a dummy, but I believe it needs to exist.  you can also dump woodchips here if you really want to -->
+        <unloadingStation supportsExtension="false" storageRadius="50">
+            <!-- <unloadTrigger exactFillRootNode="exactFillRootNodeChips" fillTypes="WOODCHIPS" aiNode="aiUnloadingNode" /> -->
+            <unloadTrigger fillTypes="WOOD" aiNode="aiUnloadingNode">
+                <!-- <woodTrigger triggerNode="baleTrigger" activationTriggerNode="storageTrigger" /> -->
+            </unloadTrigger>
+        </unloadingStation>
+
+        <!-- this is where woodchips come out -->
+        <!-- <loadingStation supportsExtension="false">
+            <loadTrigger triggerNode="loadingTrigger" fillTypes="WOODCHIPS" fillLitersPerSecond="2500" dischargeNode="dischargeNode" aiNode="aiNodeLoading">
+                <effectNode effectNode="grain" materialType="unloading" materialTypeId="3" fadeTime="0.5" />
+                <effectNode effectNode="smoke" materialType="smoke" materialTypeId="1" fadeTime="0.5" />
+
+            </loadTrigger>
+        </loadingStation> -->
+
+        <storages>
+            <!-- first listed must be for wood.  2nd listed needs to be for woodchips. -->
+            <storage fillLevelSyncThreshold="50" node="storage" fillTypes="WOOD" isExtension="false">
+                <capacity fillType="WOOD" capacity="1000000" />
+                <!-- Note - 100x Spruce == 186200(94), 100x Pine == 97300(49) -->
+            </storage>
+            <storage fillLevelSyncThreshold="50" node="storage" fillTypes="WOODCHIPS" isExtension="false">
+                <capacity fillType="WOODCHIPS" capacity="1000000" />
+                <!-- <dynamicFillPlane node="bunkerFillVolume" allSidePlanes="false" maxAllowedHeapAngle="10" maxDelta="0.3" defaultFillType="WOODCHIPS" /> -->
+            </storage>
+        </storages>
+    </silo>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="inputWoodTriggerMarker" teleportNode="outputWoodInteractMarker" />
+    </hotspots>
+
+    <triggerMarkers>
+        <!-- these are just visual, they don't matter to the script -->
+        <triggerMarker node="outputWoodInteractMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="false" />
+        <triggerMarker node="inputWoodInteractMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="false" />
+        <triggerMarker node="inputWoodTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <!-- <triggerMarker node="outputChipsMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" /> -->
+    </triggerMarkers>
+
+    <i3dMappings>
+        <i3dMapping id="storage" node="0>" />
+        <i3dMapping id="main" node="0>" />
+        <i3dMapping id="warningStripes" node="0>0" />
+        <i3dMapping id="markers" node="0>1" />
+        <i3dMapping id="levelAreas" node="0>1|0" />
+        <i3dMapping id="levelArea1Start" node="0>1|0|0" />
+        <i3dMapping id="levelArea1Width" node="0>1|0|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>1|0|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreas" node="0>1|1" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>1|1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>1|1|0|0" />
+        <i3dMapping id="clearAreas" node="0>1|2" />
+        <i3dMapping id="clearArea1Start" node="0>1|2|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|2|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|2|0|1" />
+        <i3dMapping id="functionality" node="0>2" />
+        <i3dMapping id="outputWoodSpawn" node="0>2|0" />
+        <i3dMapping id="inputWoodInteractMarker" node="0>2|1" />
+        <i3dMapping id="inputWoodInteract" node="0>2|1|0" />
+        <i3dMapping id="inputWoodTriggerMarker" node="0>2|2" />
+        <i3dMapping id="inputWoodTriggerBox" node="0>2|2|0" />
+        <i3dMapping id="aiUnloadingNode" node="0>2|2|1" />
+        <i3dMapping id="outputWoodInteractMarker" node="0>2|3" />
+        <i3dMapping id="outputWoodInteract" node="0>2|3|0" />
+        <i3dMapping id="infoTrigger" node="0>2|4" />
+        <i3dMapping id="fillVolumes" node="0>3" />
+        <i3dMapping id="spruce" node="0>3|0" />
+        <i3dMapping id="bay1_0" node="0>3|0|0" />
+        <i3dMapping id="log_spruce_bottom_0" node="0>3|0|0|0" />
+        <i3dMapping id="log_spruce_top_0" node="0>3|0|0|1" />
+        <i3dMapping id="log_spruce_bottom_1" node="0>3|0|0|2" />
+        <i3dMapping id="log_spruce_bottom_2" node="0>3|0|0|3" />
+        <i3dMapping id="log_spruce_top_1" node="0>3|0|0|4" />
+        <i3dMapping id="log_spruce_top_2" node="0>3|0|0|5" />
+        <i3dMapping id="log_spruce_bottom_3" node="0>3|0|0|6" />
+        <i3dMapping id="log_spruce_top_3" node="0>3|0|0|7" />
+        <i3dMapping id="pine" node="0>3|1" />
+        <i3dMapping id="bay1_1" node="0>3|1|0" />
+        <i3dMapping id="log_pine_bottom_0" node="0>3|1|0|0" />
+        <i3dMapping id="log_pine_mid_0" node="0>3|1|0|1" />
+        <i3dMapping id="log_pine_top_0" node="0>3|1|0|2" />
+        <i3dMapping id="log_pine_top_1" node="0>3|1|0|3" />
+        <i3dMapping id="log_pine_top_2" node="0>3|1|0|4" />
+        <i3dMapping id="log_pine_top_3" node="0>3|1|0|5" />
+        <i3dMapping id="log_pine_bottom_1" node="0>3|1|0|6" />
+        <i3dMapping id="log_pine_mid_1" node="0>3|1|0|7" />
+        <i3dMapping id="log_pine_top_4" node="0>3|1|0|8" />
+        <i3dMapping id="testArea1Start" node="0>4|0" />
+        <i3dMapping id="testArea1End" node="0>4|0|0" />
+    </i3dMappings>
+</placeable>

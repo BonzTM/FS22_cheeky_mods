@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="cowHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="cowHusbandry"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Cow Barn (Medium)</name>
         <image>textures/store_cowBarnMedium.png</image>
@@ -13,10 +14,15 @@
         <brand>RUDOLFHOERMANN</brand>
         <species>placeable</species>
         <category>animalpens</category>
-        <brush>
+        <!-- <brush>
             <type>placeable</type>
             <category>animals</category>
             <tab>cows</tab>
+        </brush> -->
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>animals</tab>
         </brush>
         <vertexBufferMemoryUsage>2978048</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>392704</indexBufferMemoryUsage>
@@ -35,7 +41,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
             <testArea startNode="testArea2Start" endNode="testArea2End" />
@@ -94,7 +100,7 @@
     </hotspots>
 
     <animatedObjects>
-        <animatedObject saveId="milk" >
+        <animatedObject saveId="milk">
             <animation duration="1.5">
                 <part node="doorMilkLeft">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -112,7 +118,7 @@
                 <negEnd linkNode="doorMilkBase" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="rollingDoor1" >
+        <animatedObject saveId="rollingDoor1">
             <animation duration="5">
                 <part node="rollingDoor1ColBottom">
                     <keyFrame time="0.0" translation="0 0 0"/>
@@ -139,7 +145,7 @@
                 <negEnd linkNode="rollingDoor1Base" template="slidingGateMetalClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="rollingDoor2" >
+        <animatedObject saveId="rollingDoor2">
             <animation duration="5">
                 <part node="rollingDoor2ColBottom">
                     <keyFrame time="0.0" translation="0 0 0"/>
@@ -166,7 +172,7 @@
                 <negEnd linkNode="rollingDoor2Base" template="slidingGateMetalClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door1" >
+        <animatedObject saveId="door1">
             <animation duration="1.5">
                 <part node="door1Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -184,7 +190,7 @@
                 <negEnd linkNode="door1Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door2" >
+        <animatedObject saveId="door2">
             <animation duration="1.5">
                 <part node="door2Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -202,7 +208,7 @@
                 <negEnd linkNode="door2Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door3" >
+        <animatedObject saveId="door3">
             <dependency animatedObjectIndex="8" minTime="0" maxTime="0" />
             <animation duration="1.5">
                 <part node="door3Left">
@@ -235,7 +241,7 @@
                 <negEnd linkNode="door4Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="slideDoor" >
+        <animatedObject saveId="slideDoor">
             <dependency animatedObjectIndex="6" minTime="0" maxTime="0" />
             <animation duration="1.5">
                 <part node="slideDoor">
@@ -310,7 +316,7 @@
             <loadingTrigger node="loadingTrigger" />
         </animals>
 
-        <food capacity="200000" >
+        <food capacity="200000">
             <foodPlaces>
                 <foodPlace node="foodPlace1" />
                 <foodPlace node="foodPlace2" />

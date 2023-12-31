@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="silo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="silo"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Herbicide Tank</name>
         <functions>
@@ -17,7 +18,7 @@
         <category>fillableTanks</category>
         <brush>
             <type>placeable</type>
-            <category>buildings</category>
+            <category>cheeky</category>
             <tab>containers</tab>
         </brush>
         <vertexBufferMemoryUsage>134656</vertexBufferMemoryUsage>
@@ -33,7 +34,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true"  >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
         </testAreas>
@@ -68,11 +69,11 @@
     <infoTrigger triggerNode="infoTrigger"/>
 
     <silo playerActionTrigger="refillPlayerTrigger">
-        <loadingStation node="loadingTrigger" supportsExtension="false" >
+        <loadingStation node="loadingTrigger" supportsExtension="false">
             <loadTrigger triggerNode="loadingTrigger" aiNode="loadingTriggerAINode" fillLitersPerSecond="200" fillTypes="HERBICIDE"/>
         </loadingStation>
 
-        <unloadingStation supportsExtension="false" >
+        <unloadingStation supportsExtension="false">
             <unloadTrigger exactFillRootNode="exactFillRootNode" aiNode="unloadingStationAINode" fillTypes="HERBICIDE"/>
         </unloadingStation>
 
@@ -88,7 +89,7 @@
     </hotspots>
 
     <triggerMarkers>
-        <triggerMarker node="markerLoading"       filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
         <triggerMarker node="refillTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" />
     </triggerMarkers>
 

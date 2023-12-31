@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="buyingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="buyingStation"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Gas Station</name>
-        <image>$data/store/store_empty.png</image>
-        <price>1</price>
+        <image>textures/store_gasStation.dds</image>
+        <price>1000000</price>
         <canBeSold>false</canBeSold>
-        <showInStore>false</showInStore>
+        <showInStore>true</showInStore>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
         <species>placeable</species>
-        <category>placeableMisc</category>
+        <category>sellingPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>sellingPoints</tab>
+        </brush>
         <vertexBufferMemoryUsage>576</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>72</indexBufferMemoryUsage>
         <textureMemoryUsage>64</textureMemoryUsage>
@@ -28,7 +34,7 @@
         <hotspot type="FUEL" teleportNode="0>1" />
     </hotspots>
 
-    <buyingStation node="0" supportsExtension="false" >
+    <buyingStation node="0" supportsExtension="false">
         <loadTrigger triggerNode="0" fillTypes="DIESEL" fillLitersPerSecond="20" autoStart="true" infiniteCapacity="true" startFillText="$l10n_action_refuel" stopFillText="$l10n_action_stopRefuel"/>
         <fillType name="diesel" priceScale="1" />
     </buyingStation>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/placeable.xsd">
+<placeable type="sellingStation"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Selling station Generic</name>
         <image>$data/placeables/sellingStationGeneric/store_sellingStationGeneric.png</image>
@@ -13,7 +14,7 @@
         <category>sellingPoints</category>
         <brush>
             <type>placeable</type>
-            <category>production</category>
+            <category>cheeky</category>
             <tab>sellingPoints</tab>
         </brush>
         <vertexBufferMemoryUsage>367104</vertexBufferMemoryUsage>
@@ -28,7 +29,7 @@
         <filename>$data/placeables/sellingStationGeneric/sellingStationGeneric.i3d</filename>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <sounds>
             <place template="largeImp" />
         </sounds>
@@ -41,21 +42,21 @@
     <indoorAreas></indoorAreas>
 
     <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="0>3"  fillTypes="WHEAT BARLEY CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARCANE COTTON"/>
-        <fillType name="wheat"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="barley"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="canola"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="sunflower"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="soybean"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="maize"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="potato"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="sugarBeet"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="sugarCane"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="cotton"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <unloadTrigger exactFillRootNode="0>3" fillTypes="WHEAT BARLEY CANOLA SUNFLOWER SOYBEAN MAIZE POTATO SUGARBEET SUGARCANE COTTON"/>
+        <fillType name="wheat" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="barley" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="canola" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="sunflower" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="soybean" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="maize" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="potato" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="sugarBeet" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="sugarCane" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="cotton" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
 
     <animatedObjects>
-        <animatedObject saveId="gate_01" >
+        <animatedObject saveId="gate_01">
             <animation duration="3">
                 <part node="0>1">
                     <keyFrame time="0.0" rotation="-99 0 0"/>

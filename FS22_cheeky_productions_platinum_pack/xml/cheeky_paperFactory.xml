@@ -6,6 +6,7 @@
             <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/paperFactory/store_paperFactory.png"/>
             <set path="placeable.storeData.name" value="Cheeky Paper Factory"/>
             <set path="placeable.storeData.price" value="650000"/>
+            <set path="placeable.storeData.brush.category" value="cheeky"/>
 
             <!-- Props linkage -->
             <set path="placeable.dynamicallyLoadedParts.dynamicallyLoadedPart(0)#filename" value="$pdlcdir/forestryPack/placeables/productionPoints/paperFactory/props.i3d"/>

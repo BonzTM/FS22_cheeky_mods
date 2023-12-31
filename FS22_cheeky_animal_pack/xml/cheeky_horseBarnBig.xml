@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="horseHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="horseHusbandry"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Horse Barn</name>
         <image>textures/store_horseBarnBig.png</image>
@@ -13,10 +14,15 @@
         <brand>RUDOLFHOERMANN</brand>
         <species>placeable</species>
         <category>animalpens</category>
-        <brush>
+        <!-- <brush>
             <type>placeable</type>
             <category>animals</category>
             <tab>horses</tab>
+        </brush> -->
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>animals</tab>
         </brush>
         <vertexBufferMemoryUsage>978688</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>141824</indexBufferMemoryUsage>
@@ -61,7 +67,7 @@
     </leveling>
 
     <indoorAreas>
-         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
     </indoorAreas>
 
     <foliageAreas>
@@ -88,7 +94,7 @@
     </hotspots>
 
     <animatedObjects>
-        <animatedObject saveId="bigDoorBase" >
+        <animatedObject saveId="bigDoorBase">
             <animation duration="1.5">
                 <part node="bigDoorRight">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -106,7 +112,7 @@
                 <negEnd linkNode="bigDoorBase" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="smallDoorBase" >
+        <animatedObject saveId="smallDoorBase">
             <animation duration="1.5">
                 <part node="smallDoor">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -158,13 +164,13 @@
             <capacity fillType="MANURE" capacity="0" />
         </storage>
 
-         <unloadingStation supportsExtension="true" hideFromPricesMenu="true" storageRadius="65">
-             <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" >
+        <unloadingStation supportsExtension="true" hideFromPricesMenu="true" storageRadius="65">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW">
                 <baleTrigger triggerNode="baleTriggerStraw"/>
             </unloadTrigger>
-         </unloadingStation>
+        </unloadingStation>
 
-         <loadingStation supportsExtension="true" storageRadius="50" fillTypes="straw" />
+        <loadingStation supportsExtension="true" storageRadius="50" fillTypes="straw" />
 
         <animals type="HORSE" maxNumAnimals="70">
             <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/horseBarnBig/navigationMesh.i3d" />
@@ -175,10 +181,10 @@
             </deliveryAreas>
         </animals>
 
-        <food capacity="125000" >
+        <food capacity="125000">
             <foodPlane node="foodPlane" minRotX="90" maxRotX="0" changeVisibility="true" defaultFillType="OAT" />
             <feedingTrough exactFillRootNode="exactFillRootNodeFood">
-               <baleTrigger triggerNode="baleTrigger"/>
+                <baleTrigger triggerNode="baleTrigger"/>
             </feedingTrough>
         </food>
 

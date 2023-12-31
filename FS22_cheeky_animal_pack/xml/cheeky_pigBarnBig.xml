@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="pigHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="pigHusbandry"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Pig Barn</name>
         <image>textures/store_pigBarnBig.png</image>
@@ -13,10 +14,15 @@
         <brand>RUDOLFHOERMANN</brand>
         <species>placeable</species>
         <category>animalpens</category>
-        <brush>
+        <!-- <brush>
             <type>placeable</type>
             <category>animals</category>
             <tab>pigs</tab>
+        </brush> -->
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>animals</tab>
         </brush>
         <vertexBufferMemoryUsage>2031360</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>277760</indexBufferMemoryUsage>
@@ -72,7 +78,7 @@
     </leveling>
 
     <indoorAreas>
-         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
     </indoorAreas>
 
     <tipOcclusionUpdateAreas>
@@ -96,7 +102,7 @@
     </hotspots>
 
     <animatedObjects>
-        <animatedObject saveId="sideDoor" >
+        <animatedObject saveId="sideDoor">
             <animation duration="3.0">
                 <part node="sideDoor1">
                     <keyFrame time="0.0" translation="0 0 0"/>
@@ -130,7 +136,7 @@
                 <negEnd linkNode="sideDoorsBase" template="plasticDoorClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="doorSmall" >
+        <animatedObject saveId="doorSmall">
             <animation duration="1.5">
                 <part node="doorSmall">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -139,12 +145,12 @@
             </animation>
             <controls triggerNode="doorSmallTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
             <sounds>
-                 <moving linkNode="doorSmallBase" template="metalDoorsLoop" />
-                 <posEnd linkNode="doorSmallBase" template="metalDoorsOpen" />
-                 <negEnd linkNode="doorSmallBase" template="metalDoorsClose" />
+                <moving linkNode="doorSmallBase" template="metalDoorsLoop" />
+                <posEnd linkNode="doorSmallBase" template="metalDoorsOpen" />
+                <negEnd linkNode="doorSmallBase" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="doorControl" >
+        <animatedObject saveId="doorControl">
             <animation duration="1.5">
                 <part node="doorControl">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -153,12 +159,12 @@
             </animation>
             <controls triggerNode="doorControlTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
             <sounds>
-                 <moving linkNode="doorControlBase" template="glassDoorLoop" />
-                 <posEnd linkNode="doorControlBase" template="metalDoorsOpen" />
-                 <negEnd linkNode="doorControlBase" template="metalDoorsClose" />
+                <moving linkNode="doorControlBase" template="glassDoorLoop" />
+                <posEnd linkNode="doorControlBase" template="metalDoorsOpen" />
+                <negEnd linkNode="doorControlBase" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="doorLoading" >
+        <animatedObject saveId="doorLoading">
             <animation duration="1.5">
                 <part node="doorLoadingRight">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -171,9 +177,9 @@
             </animation>
             <controls triggerNode="doorLoadingTrigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
             <sounds>
-                 <moving linkNode="doorLoadingBase" template="woodBigDoorLoop" />
-                 <posEnd linkNode="doorLoadingBase" template="metalDoorsOpen" />
-                 <negEnd linkNode="doorLoadingBase" template="metalDoorsClose" />
+                <moving linkNode="doorLoadingBase" template="woodBigDoorLoop" />
+                <posEnd linkNode="doorLoadingBase" template="metalDoorsOpen" />
+                <negEnd linkNode="doorLoadingBase" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
     </animatedObjects>
@@ -221,16 +227,16 @@
             <capacity fillType="MANURE" capacity="0" />
         </storage>
 
-         <unloadingStation supportsExtension="true" storageRadius="50" hideFromPricesMenu="true">
-             <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW" >
+        <unloadingStation supportsExtension="true" storageRadius="50" hideFromPricesMenu="true">
+            <unloadTrigger exactFillRootNode="exactFillRootNodeStraw" fillTypes="STRAW">
                 <baleTrigger triggerNode="baleTriggerStraw"/>
             </unloadTrigger>
             <unloadTrigger fillTypes="MANURE LIQUIDMANURE" />
-         </unloadingStation>
+        </unloadingStation>
 
-         <loadingStation supportsExtension="true" storageRadius="50">
-             <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure"/>
-         </loadingStation>
+        <loadingStation supportsExtension="true" storageRadius="50">
+            <loadTrigger triggerNode="liquidManureTrigger" fillTypes="LIQUIDMANURE" fillLitersPerSecond="2000" aiNode="aiLoadingNodeLiquidManure"/>
+        </loadingStation>
 
         <animals type="PIG" maxNumAnimals="1500">
             <navigation rootNode="navigationRootNode" filename="$data/placeables/rudolfHormann/pigBarnBig/navigationMesh.i3d" />
@@ -242,16 +248,16 @@
             <strawPlane node="strawPlane" minY="0" maxY="0" changeVisibility="true" />
         </straw>
 
-        <food capacity="500000" >
+        <food capacity="500000">
             <foodPlane node="foodPlane" minY="-0.017" maxY="0.144" changeVisibility="true" defaultFillType="WHEAT" />
             <foodPlaces>
-                 <foodPlace node="foodPlace1" />
-                 <foodPlace node="foodPlace2" />
-                 <foodPlace node="foodPlace3" />
-                 <foodPlace node="foodPlace4" />
-                 <foodPlace node="foodPlace5" />
+                <foodPlace node="foodPlace1" />
+                <foodPlace node="foodPlace2" />
+                <foodPlace node="foodPlace3" />
+                <foodPlace node="foodPlace4" />
+                <foodPlace node="foodPlace5" />
             </foodPlaces>
-             <feedingTrough exactFillRootNode="exactFillRootNodeFood" />
+            <feedingTrough exactFillRootNode="exactFillRootNodeFood" />
         </food>
 
         <water automaticWaterSupply="true" />

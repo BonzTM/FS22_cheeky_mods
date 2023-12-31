@@ -6,6 +6,7 @@
             <set path="placeable.storeData.image" value="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/store_potatoProcessingPlantPlaceable.png"/>
             <set path="placeable.storeData.name" value="Cheeky Potato Processing Plant"/>
             <set path="placeable.storeData.price" value="600000"/>
+            <set path="placeable.storeData.brush.category" value="cheeky"/>
 
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>

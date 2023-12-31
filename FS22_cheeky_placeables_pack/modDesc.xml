@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.7.2</version>
+    <version>1.9.8.0</version>
     <title>
         <en>Cheeky Placeables Pack</en>
     </title>
-	<description>
-		<en><![CDATA[Modded placeables for the Cheeky Bastards.]]></en>
-	</description>	
+    <description>
+        <en><![CDATA[Modded placeables for the Cheeky Bastards.]]></en>
+    </description>
     <iconFilename>textures/store_liquidFlatBottomTank1630.png</iconFilename>
     <storeItems>
         <storeItem xmlFilename="xml/cheeky_limeAndRoadsaltStation.xml"/>
@@ -25,6 +25,37 @@
         <storeItem xmlFilename="xml/cheeky_woodchipsStorage.xml"/>
         <storeItem xmlFilename="xml/cheeky_rootCropStorage.xml"/>
 
+        <!-- PalletBale Storage Pack -->
+        <storeItem xmlFilename="xml/animalTraderOpenHallBlue.xml"/>
+        <storeItem xmlFilename="xml/animalTraderOpenHallBrown.xml"/>
+        <storeItem xmlFilename="xml/animalTraderOpenHallGreen.xml"/>
+        <storeItem xmlFilename="xml/animalTraderOpenHallLightBrown.xml"/>
+        <storeItem xmlFilename="xml/animalTraderOpenHallRed.xml"/>
+
+        <storeItem xmlFilename="xml/objectStorageBlue.xml"/>
+        <storeItem xmlFilename="xml/objectStorageBrown.xml"/>
+        <storeItem xmlFilename="xml/objectStorageGreen.xml"/>
+        <storeItem xmlFilename="xml/objectStorageLightBrown.xml"/>
+        <storeItem xmlFilename="xml/objectStorageRed.xml"/>
+
+        <storeItem xmlFilename="xml/palletBaleStorage.xml"/>
+        <storeItem xmlFilename="xml/palletBaleStorageStone.xml"/>
+        <storeItem xmlFilename="xml/palletBaleStorageWood.xml"/>
+
+        <storeItem xmlFilename="xml/smallHallBlue.xml"/>
+        <storeItem xmlFilename="xml/smallHallBrown.xml"/>
+        <storeItem xmlFilename="xml/smallHallGreen.xml"/>
+        <storeItem xmlFilename="xml/smallHallLightBrown.xml"/>
+        <storeItem xmlFilename="xml/smallHallRed.xml"/>
+
+        <!-- Timber Storage -->
+        <storeItem xmlFilename="xml/timberPilePine.xml"/>
+        <storeItem xmlFilename="xml/timberPileSpruce.xml"/>
+        <storeItem xmlFilename="xml/timberStoragePineClosed.xml"/>
+        <storeItem xmlFilename="xml/timberStoragePineOpen.xml"/>
+        <storeItem xmlFilename="xml/timberStorageSpruceClosed.xml"/>
+        <storeItem xmlFilename="xml/timberStorageSpruceOpen.xml"/>
+
         <!-- Selling Points -->
         <storeItem xmlFilename="xml/cheeky_bhp.xml"/>
         <storeItem xmlFilename="xml/cheeky_debrisCrusher.xml"/>
@@ -37,13 +68,87 @@
         <storeItem xmlFilename="xml/cheeky_sellingStationGeneric.xml"/>
         <storeItem xmlFilename="xml/cheeky_supermarket.xml"/>
     </storeItems>
-	<multiplayer supported="true" />
+    <multiplayer supported="true" />
     <l10n>
         <text name="function_rootStorage">
             <en>Storage Building for Beets, Potatoes, Carrots, Parsnip, and Beetroot.</en>
         </text>
-    </l10n>	
+        <text name="shopItem_lumberStorage_spruce">
+            <en>Timber Storage - Spruce</en>
+        </text>
+        <text name="shopItem_lumberStorage_pine">
+            <en>Timber Storage - Pine</en>
+        </text>
+        <text name="shopItem_lumberPile_spruce">
+            <en>Timber Pile - Spruce</en>
+        </text>
+        <text name="shopItem_lumberPile_pine">
+            <en>Timber Pile - Pine</en>
+        </text>
+        <text name="function_lumberStorage_spruce">
+            <en>This shed will allow you to store your spruce logs</en>
+        </text>
+        <text name="function_lumberStorage_pine">
+            <en>This shed will allow you to store your pine logs</en>
+        </text>
+        <text name="function_lumberPile_spruce">
+            <en>This pile will allow you to store your spruce logs</en>
+        </text>
+        <text name="function_lumberPile_pine">
+            <en>This pile will allow you to store your pine logs</en>
+        </text>
+
+        <!--New Functions - Silo Output-->
+        <text name="ExtractLogs">
+            <en>Output Logs</en>
+        </text>
+        <text name="SingleLog">
+            <en>Log</en>
+        </text>
+        <text name="MultiLog">
+            <en>Logs</en>
+        </text>
+        <text name="ChooseOutputAmount">
+            <en>Choose Number of Logs to Output</en>
+        </text>
+        <text name="NoLogsToOutput">
+            <en>Not enough timber in storage to output a log</en>
+        </text>
+
+        <!--New Functions - Silo Input-->
+        <text name="InputLogs">
+            <en>Store Logs</en>
+        </text>
+        <text name="BadInputChipped">
+            <en>Invalid log types sent to wood chipper</en>
+        </text>
+        <text name="BadInputNotChipped">
+            <en>Invalid log types ignored</en>
+        </text>
+        <text name="FullStorage">
+            <en>Storage racks are full, extra logs ignored</en>
+        </text>
+
+        <text name="InfoHudIsFull">
+            <en>Silo is Full</en>
+        </text>
+        <text name="InfoHudFull">
+            <en>Full</en>
+        </text>
+
+    </l10n>
+    <extraSourceFiles>
+        <sourceFile filename="scripts/main.lua" />
+        <sourceFile filename="scripts/AddConstructionTab.lua"/>
+    </extraSourceFiles>
+
+    <placeableTypes>
+        <type name="LumberStorage" parent="silo" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="aLumberSilo" />
+        </type>
+    </placeableTypes>
+
     <dependencies>
-		<dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
-	</dependencies> 
+        <dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
+    </dependencies>
 </modDesc>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="sheepHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+<placeable type="sheepHusbandry"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Sheep Barn</name>
         <image>textures/store_sheepBarnBig.png</image>
@@ -13,10 +14,15 @@
         <brand>RUDOLFHOERMANN</brand>
         <species>placeable</species>
         <category>animalpens</category>
-        <brush>
+        <!-- <brush>
             <type>placeable</type>
             <category>animals</category>
             <tab>sheeps</tab>
+        </brush> -->
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>animals</tab>
         </brush>
         <vertexBufferMemoryUsage>965888</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>132352</indexBufferMemoryUsage>
@@ -67,8 +73,8 @@
     </foliageAreas>
 
     <indoorAreas>
-         <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
-         <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height"/>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+        <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height"/>
     </indoorAreas>
 
     <tipOcclusionUpdateAreas>
@@ -91,11 +97,11 @@
     </triggerMarkers>
 
     <hotspots>
-         <hotspot type="SHEEP" teleportNode="teleportNode" />
+        <hotspot type="SHEEP" teleportNode="teleportNode" />
     </hotspots>
 
     <animatedObjects>
-        <animatedObject saveId="door1" >
+        <animatedObject saveId="door1">
             <animation duration="1.5">
                 <part node="door1">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -109,7 +115,7 @@
                 <negEnd linkNode="door1Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door2" >
+        <animatedObject saveId="door2">
             <animation duration="1.5">
                 <part node="door2">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -123,7 +129,7 @@
                 <negEnd linkNode="door2Base" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="doorBig" >
+        <animatedObject saveId="doorBig">
             <animation duration="1.5">
                 <part node="doorBigRight">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -180,7 +186,7 @@
             <loadingTrigger node="loadingTrigger" />
         </animals>
 
-        <food capacity="75000" >
+        <food capacity="75000">
             <foodPlane node="foodPlane" minY="0.19" maxY="0.373" changeVisibility="true" defaultFillType="DRYGRASS_WINDROW" />
             <feedingTrough exactFillRootNode="exactFillRootNodeFood">
                 <baleTrigger triggerNode="baleTrigger"/>

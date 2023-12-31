@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.7.2</version>
+    <version>1.9.8.0</version>
     <title>
         <en>Cheeky Platinum Productions Pack</en>
     </title>
-	<description>
-		<en><![CDATA[10x Modded Platinum expansion productions for the Cheeky Bastards.]]></en>
-	</description>	
+    <description>
+        <en><![CDATA[10x Modded Platinum expansion productions for the Cheeky Bastards.]]></en>
+    </description>
     <iconFilename>textures/store_raisinFactory.png</iconFilename>
     <storeItems>
         <storeItem xmlFilename="xml/cheeky_barrelFactory.xml"/>
@@ -23,9 +23,9 @@
     </storeItems>
 
     <extraSourceFiles>
-		<sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
-	</extraSourceFiles>
- 
+        <sourceFile filename="scripts/GetFilenameFixForDLC.lua" />
+    </extraSourceFiles>
+
     <overwrittenPaths>
         <overwrittenPath originalPath="placeables/productionPoints/barrelFactory/sounds/barrelFactoryIdle.wav" newPath="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/sounds/barrelFactoryIdle.wav" />
         <overwrittenPath originalPath="placeables/productionPoints/barrelFactory/sounds/barrelFactoryWork.wav" newPath="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/sounds/barrelFactoryWork.wav" />
@@ -41,7 +41,14 @@
         <overwrittenPath originalPath="placeables/productionPoints/sawmillPlaceable/sounds/sawWork.wav" newPath="$pdlcdir/forestryPack/placeables/productionPoints/sawmillPlaceable/sounds/sawWork.wav" />
         <overwrittenPath originalPath="placeables/productionPoints/woodTurner/sounds/woodTurnerIdle.wav" newPath="$pdlcdir/forestryPack/placeables/productionPoints/woodTurner/sounds/woodTurnerIdle.wav" />
         <overwrittenPath originalPath="placeables/productionPoints/woodTurner/sounds/woodTurnerWork.wav" newPath="$pdlcdir/forestryPack/placeables/productionPoints/woodTurner/sounds/woodTurnerWork.wav" />
-	</overwrittenPaths>
+    </overwrittenPaths>
 
     <multiplayer supported="true" />
+
+    <dependencies>
+        <dependency>FS22_A_ProductionRevamp</dependency>
+        <dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
+        <dependency>FS22_cheeky_placeables_pack</dependency>
+    </dependencies>
+
 </modDesc>

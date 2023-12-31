@@ -14,7 +14,7 @@
         <category>productionPoints</category>
         <brush>
             <type>placeable</type>
-            <category>production</category>
+            <category>cheeky</category>
             <tab>factories</tab>
         </brush>
         <vertexBufferMemoryUsage>1126656</vertexBufferMemoryUsage>
