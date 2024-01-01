@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Euro Pallet</name>
+        <image>$data/objects/pallets/euroPallet/store_euroPallet.png</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>24768</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>2496</indexBufferMemoryUsage>
+        <textureMemoryUsage>6291560</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/euroPallet/euroPallet.i3d</filename>
+        <size width="1.2" length="0.8" lengthOffset="0" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+    </base>
+
+    <!-- <fillUnit> -->
+        <!-- <fillUnitConfigurations> -->
+            <!-- <fillUnitConfiguration> -->
+                <!-- <fillUnits removeVehicleIfEmpty="true"> -->
+                    <!-- <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="bulk" capacity="1000"> -->
+                        <!-- <exactFillRootNode node="exactFillRootNode" /> -->
+                    <!-- </fillUnit> -->
+                <!-- </fillUnits> -->
+            <!-- </fillUnitConfiguration> -->
+        <!-- </fillUnitConfigurations> -->
+    <!-- </fillUnit> -->
+
+    <!-- <fillVolume> -->
+        <!-- <fillVolumeConfigurations> -->
+            <!-- <fillVolumeConfiguration> -->
+                <!-- <volumes> -->
+                    <!-- <volume node="fillVolume" maxAllowedHeapAngle="10" fillUnitIndex="1" /> -->
+                <!-- </volumes> -->
+            <!-- </fillVolumeConfiguration> -->
+        <!-- </fillVolumeConfigurations> -->
+    <!-- </fillVolume> -->
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <!-- <dischargeNode node="fillablePallet_main_component1" emptySpeed="99999" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" /> -->
+    </dischargeable>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" />
+
+    <designConfigurations>
+        <designConfiguration name="$l10n_configuration_valueDefault" price="0" />
+        <designConfiguration name="$l10n_configuration_valueDefault" price="0">
+            <material node="pallet_vis" refNode="pallet02_mat" />
+        </designConfiguration>
+    </designConfigurations>
+
+     <tensionBeltObject>
+         <meshNodes>
+             <meshNode node="pallet_vis"/>
+         </meshNodes>
+     </tensionBeltObject>
+
+    <i3dMappings>
+        <i3dMapping id="euroPallet_component1" node="0>" />
+        <i3dMapping id="pallet_vis" node="0>0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1" />
+        <i3dMapping id="pallet02_mat" node="0>0|3" />
+    </i3dMappings>
+</vehicle>

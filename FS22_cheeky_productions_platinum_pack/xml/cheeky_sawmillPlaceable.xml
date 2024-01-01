@@ -20,6 +20,10 @@
             <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="WOOD"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="210"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="5"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="BOARDS"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="280"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(1)#fillType" value="WOODCHIPS"/>
@@ -31,6 +35,10 @@
             <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="WOOD"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="210"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="4"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#boostfactor" value="0.05"/>            
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="188"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(1)#fillType" value="WOODCHIPS"/>
@@ -42,6 +50,10 @@
             <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="WOOD"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="210"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="4"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="WOODBEAM"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="125"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(1)#fillType" value="WOODCHIPS"/>
@@ -53,6 +65,10 @@
             <set path="placeable.productionPoint.productions.production(3)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#fillType" value="WOOD"/>
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="215"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(1)#amount" value="6"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#fillType" value="PREFABWALL"/>
             <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="75"/>
 
@@ -69,6 +85,11 @@
             <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="120000"/>
             <set path="placeable.productionPoint.storage.capacity(5)#fillType" value="PREFABWALL"/>
             <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="120000"/>
+            <set path="placeable.productionPoint.storage.capacity(6)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(6)#capacity" value="15000"/>
+
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="WOOD EMPTYPALLET"/>
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(1)#fillTypes" value="WOOD EMPTYPALLET"/>
 
             <!-- Sounds -->
             <!-- Replaced with script -->

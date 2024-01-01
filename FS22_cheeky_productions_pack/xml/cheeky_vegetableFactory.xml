@@ -119,6 +119,7 @@
                     <input fillType="CARROT" amount="750" />
                     <input fillType="SUGAR" amount="100" mix="1"/>
                     <input fillType="CORNSYRUP" amount="100" mix="1"/>
+                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="CARROTJUICE" amount="188" />
@@ -129,6 +130,7 @@
                     <input fillType="BEETROOT" amount="750" />
                     <input fillType="SUGAR" amount="100" mix="1"/>
                     <input fillType="CORNSYRUP" amount="100" mix="1"/>
+                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="BEETJUICE" amount="172" />
@@ -139,6 +141,7 @@
                     <input fillType="TOMATO" amount="375" />
                     <input fillType="SUGAR" amount="55" mix="1"/>
                     <input fillType="CORNSYRUP" amount="55" mix="1"/>
+                    <input fillType="EMPTYPALLET" amount="5" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="TOMATOJUICE" amount="300" />
@@ -152,6 +155,7 @@
                     <input fillType="CARROT" amount="600" mix="1"/>
                     <input fillType="SUGAR" amount="50" mix="2"/>
                     <input fillType="CORNSYRUP" amount="50" mix="2"/>
+                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="VEGETABLEJUICE" amount="215" />
@@ -170,10 +174,11 @@
             <capacity fillType="TOMATOJUICE" capacity="100000" />
             <capacity fillType="BEETJUICE" capacity="100000" />
             <capacity fillType="VEGETABLEJUICE" capacity="100000" />
+            <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="SUGAR CARROT BEETROOT LETTUCE TOMATO CORNSYRUP"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="SUGAR CARROT BEETROOT LETTUCE TOMATO CORNSYRUP EMPTYPALLET"/>
         </sellingStation>
 
         <palletSpawner node="palletSpawner">

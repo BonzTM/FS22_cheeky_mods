@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.8.0</version>
+    <version>1.10.0.0</version>
     <title>
         <en>Cheeky Productions Pack</en>
     </title>
@@ -21,6 +21,7 @@
         <storeItem xmlFilename="xml/cheeky_greenhouseLarge.xml"/>
         <storeItem xmlFilename="xml/cheeky_oilPlant.xml"/>
         <storeItem xmlFilename="xml/cheeky_raisinFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_realGreenhouseLarge.xml"/>
         <storeItem xmlFilename="xml/cheeky_sawmill.xml"/>
         <storeItem xmlFilename="xml/cheeky_spinneryEU.xml"/>
         <storeItem xmlFilename="xml/cheeky_spinneryUS.xml"/>
@@ -29,13 +30,26 @@
         <storeItem xmlFilename="xml/cheeky_vegetableFactory.xml"/>
         <storeItem xmlFilename="xml/cheeky_sugarbeetProcessing.xml"/>
         <storeItem xmlFilename="xml/cheeky_chocolateFactory.xml"/>
+        <storeItem xmlFilename="xml/cheeky_mayoFactory.xml"/>
     </storeItems>
 
     <l10n>
 		<text name="sugarbeetProcessingPlant">
             <en>Cheeky Sugarbeet Processor</en>
-            <de>Rübenschnitzelanlage</de>
 		</text>
+
+		<text name="production_chain_1">
+            <en>Mayonnaise with Sunflower Oil</en>
+        </text>
+		
+		<text name="production_chain_2">
+            <en>Mayonnaise with Canola Oil</en>
+        </text>
+		
+		<text name="production_chain_3">
+            <en>Mayonnaise with Olive Oil</en>
+        </text>
+
 	</l10n>
 
     <brandColors>

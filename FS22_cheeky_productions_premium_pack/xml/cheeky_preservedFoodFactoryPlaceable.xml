@@ -2,7 +2,7 @@
 <placeable type="productionPoint">
     <parentFile xmlFilename="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/preservedFoodFactoryPlaceable.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/preservedFoodFactoryPlaceable.i3d"/>       
+            <set path="placeable.base.filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/preservedFoodFactoryPlaceable.i3d"/>
             <set path="placeable.storeData.image" value="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/store_preservedFoodFactoryPlaceable.png"/>
             <set path="placeable.storeData.name" value="Cheeky Preserved Food Factory"/>
             <set path="placeable.storeData.price" value="550000"/>
@@ -10,22 +10,30 @@
 
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
-            
+
             <!-- Preserved Food Carrots Production -->
             <set path="placeable.productionPoint.productions.production(0)#name" value="Preserved Food Carrots"/>
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="40"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="CARROT"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="1000"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="5"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="PRESERVEDCARROTS"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="380"/>
-            
+
             <!-- Preserved Food Parsnip Production -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Preserved Food Parsnip"/>
             <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="40"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="PARSNIP"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="1000"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="5"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="PRESERVEDPARSNIP"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="375"/>
 
@@ -35,6 +43,10 @@
             <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="40"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="BEETROOT"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="1000"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="5"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="PRESERVEDBEETROOT"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="350"/>
 
@@ -51,13 +63,10 @@
             <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="450000"/>
             <set path="placeable.productionPoint.storage.capacity(5)#fillType" value="PRESERVEDBEETROOT"/>
             <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="450000"/>
-            <!-- Sounds -->
-            <!-- Currently broken -->
-            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
-            <remove path="placeable.productionPoint.sounds.active(0)#template" />
-            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodPlaceableIdle.wav"/>
-            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/preservedFoodFactory/sounds/preservedFactoryFoodPlaceableActive.wav"/> -->
+            <set path="placeable.productionPoint.storage.capacity(6)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(6)#capacity" value="15000"/>
 
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="CARROT PARSNIP BEETROOT EMPTYPALLET"/>
 
         </attributes>
     </parentFile>

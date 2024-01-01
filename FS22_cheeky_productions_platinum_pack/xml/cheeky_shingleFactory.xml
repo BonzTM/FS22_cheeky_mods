@@ -2,7 +2,7 @@
 <placeable type="productionPoint">
     <parentFile xmlFilename="$pdlcdir/forestryPack/placeables/productionPoints/shingleFactory/shingleFactory.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/shingleFactory/shingleFactory.i3d"/>       
+            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/shingleFactory/shingleFactory.i3d"/>
             <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/shingleFactory/store_shingleFactory.png"/>
             <set path="placeable.storeData.name" value="Cheeky Shingle Factory"/>
             <set path="placeable.storeData.price" value="350000"/>
@@ -19,6 +19,10 @@
             <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="90"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="4"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="SHINGLE"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="210"/>
 
@@ -27,6 +31,10 @@
             <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="100000"/>
             <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="SHINGLE"/>
             <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="10000"/>
+
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="PLANKS EMPTYPALLET"/>
 
             <!-- Sounds -->
             <!-- Replaced with script (fancyFurnitureFactory)-->

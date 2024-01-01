@@ -2,7 +2,7 @@
 <placeable type="productionPoint">
     <parentFile xmlFilename="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.i3d"/>       
+            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/barrelFactory.i3d"/>
             <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/barrelFactory/store_barrelFactory.png"/>
             <set path="placeable.storeData.name" value="Cheeky Barrel Factory"/>
             <set path="placeable.storeData.price" value="600000"/>
@@ -24,6 +24,10 @@
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="50"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="25"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#amount" value="5"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="BARREL"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="235"/>
 
@@ -35,6 +39,10 @@
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="25"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="25"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#amount" value="5"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="BUCKET"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="145"/>
 
@@ -46,6 +54,10 @@
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="30"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="10"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(2)#amount" value="5"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(2)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(2)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="BATHTUB"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="65"/>
 
@@ -60,6 +72,10 @@
             <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="100000"/>
             <set path="placeable.productionPoint.storage.capacity(4)#fillType" value="BATHTUB"/>
             <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="10000"/>
+
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="PLANKS METAL EMPTYPALLET"/>
 
             <!-- Sounds -->
             <!-- Replaced with script -->

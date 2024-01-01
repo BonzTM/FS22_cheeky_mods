@@ -637,33 +637,33 @@
         <sharedLight linkNode="rearLight01_right"    filename="$data/shared/assets/lights/grimme/rearLight01_right.xml" />
         <sharedLight linkNode="rearLight53Left"    filename="$data/shared/assets/lights/lizard/rearLight53_left.xml" />
         <sharedLight linkNode="rearLight53Right"    filename="$data/shared/assets/lights/lizard/rearLight53_right.xml" />
-        <sharedLight linkNode="rearLight22Red_01"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Red_02"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Red_03"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_01"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_02"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_03"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_04"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_05"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_06"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_07"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_08"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_09"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_10"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_11"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_12"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_13"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_14"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_15"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_16"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_17"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_18"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_19"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_20"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_21"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_22"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_23"    filename="xml/zRearLight22Red.xml" />
-        <sharedLight linkNode="rearLight22Yellon_24"    filename="xml/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Red_01"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Red_02"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Red_03"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_01"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_02"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_03"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_04"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_05"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_06"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_07"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_08"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_09"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_10"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_11"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_12"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_13"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_14"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_15"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_16"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_17"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_18"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_19"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_20"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_21"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_22"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_23"    filename="xml/transportTrailer/zRearLight22Red.xml" />
+        <sharedLight linkNode="rearLight22Yellon_24"    filename="xml/transportTrailer/zRearLight22Red.xml" />
 
         <state lightTypes="0" />
 

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_fillType_egg</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>200192</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>25088</indexBufferMemoryUsage>
+        <textureMemoryUsage>1245184</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/eggBoxPallet/eggBoxPallet.i3d</filename>
+        <size width="1.4" length="1" height="0.6" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_pieces" fillTypes="EGG" capacity="1400"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="100" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="pallet_vis">
+        <content>
+            <object node="eggBoxes01" tensionBeltNode="eggBoxes01Tension"/>
+            <object node="eggBoxes02" tensionBeltNode="eggBoxes02Tension"/>
+            <object node="eggBoxes03" tensionBeltNode="eggBoxes03Tension"/>
+            <object node="eggBoxes04" tensionBeltNode="eggBoxes04Tension"/>
+            <object node="eggBoxes05" tensionBeltNode="eggBoxes05Tension"/>
+            <object node="eggBoxes06" tensionBeltNode="eggBoxes06Tension"/>
+            <object node="eggBoxes07" tensionBeltNode="eggBoxes07Tension"/>
+            <object node="eggBoxes08" tensionBeltNode="eggBoxes08Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPlastic" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.5" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="eggBoxPallet_component1" node="0>" />
+        <i3dMapping id="pallet_vis" node="0>0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1" />
+        <i3dMapping id="eggBoxes01" node="0>0|2|0" />
+        <i3dMapping id="eggBoxes01Tension" node="0>0|2|0|0" />
+        <i3dMapping id="eggBoxes02" node="0>0|2|1" />
+        <i3dMapping id="eggBoxes02Tension" node="0>0|2|1|0" />
+        <i3dMapping id="eggBoxes03" node="0>0|2|2" />
+        <i3dMapping id="eggBoxes03Tension" node="0>0|2|2|0" />
+        <i3dMapping id="eggBoxes04" node="0>0|2|3" />
+        <i3dMapping id="eggBoxes04Tension" node="0>0|2|3|0" />
+        <i3dMapping id="eggBoxes05" node="0>0|2|4" />
+        <i3dMapping id="eggBoxes05Tension" node="0>0|2|4|0" />
+        <i3dMapping id="eggBoxes06" node="0>0|2|5" />
+        <i3dMapping id="eggBoxes06Tension" node="0>0|2|5|0" />
+        <i3dMapping id="eggBoxes07" node="0>0|2|6" />
+        <i3dMapping id="eggBoxes07Tension" node="0>0|2|6|0" />
+        <i3dMapping id="eggBoxes08" node="0>0|2|7" />
+        <i3dMapping id="eggBoxes08Tension" node="0>0|2|7|0" />
+    </i3dMappings>
+</vehicle>

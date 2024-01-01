@@ -22,6 +22,10 @@
             <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="30"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="105"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="4"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="BIRDHOUSE"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="195"/>
 
@@ -33,6 +37,10 @@
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="90"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="WOOL"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="100"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#amount" value="4"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="CATTREE"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="160"/>
 
@@ -42,6 +50,10 @@
             <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="20"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="90"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="4"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="DOGHOUSE"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="105"/>
 
@@ -56,6 +68,10 @@
             <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="100000"/>
             <set path="placeable.productionPoint.storage.capacity(4)#fillType" value="DOGHOUSE"/>
             <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="10000"/>
+
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="PLANKS WOOL EMPTYPALLET"/>
 
             <!-- Sounds -->
             <!-- Replaced with script -->

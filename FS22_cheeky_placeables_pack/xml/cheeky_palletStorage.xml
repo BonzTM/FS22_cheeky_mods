@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="FS22_A_ProductionRevamp.RevampSilo"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Cheeky Pallet Storage</name>
+        <functions>
+            <function>$l10n_function_palletStorage</function>
+        </functions>
+        <image>textures/store_palletStorage.dds</image>
+        <price>25000</price>
+        <dailyUpkeep>120</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>storages</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>i3d/palletStorage.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <!-- Stripped old v1.0.0.0 of Achimobil's script in favor of revamp -->
+    <aPalletSilo triggerNode="palletMenuTrigger">
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" />
+                <spawnPlace startNode="spawnSpace2start" />
+                <spawnPlace startNode="spawnSpace3start" />
+            </spawnPlaces>
+        </palletSpawner>
+    </aPalletSilo>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+        <indoorArea startNode="indoorArea2Start" widthNode="indoorArea2Width" heightNode="indoorArea2Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <silo>
+        <loadingStation storageRadius="1" fillTypeCategories="BULK PRODUCT PALLET_GOODS VEGETABLES FRUITS">
+        </loadingStation>
+
+        <unloadingStation supportsExtension="true" storageRadius="50">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="BULK PRODUCT PALLET_GOODS VEGETABLES FRUITS" aiNode="aiUnloadingNode"/>
+        </unloadingStation>
+
+        <storages>
+            <storage node="storage" fillTypeCategories="BULK PRODUCT PALLET_GOODS VEGETABLES FRUITS" isExtension="false" capacity="1000000" />
+        </storages>
+    </silo>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="infoMarker" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="infoMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="false"/>
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
+        <triggerMarker node="loadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true"/>
+    </triggerMarkers>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+    </lights>
+
+    <i3dMappings>
+        <i3dMapping id="storage" node="0>" />
+        <i3dMapping id="infoTrigger" node="0>1" />
+
+        <i3dMapping id="exactFillRootNode" node="0>2|0" />
+        <i3dMapping id="aiUnloadingNode" node="0>2|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>2|2" />
+
+        <i3dMapping id="infoMarker" node="0>4" />
+        <i3dMapping id="palletMenuTrigger" node="0>4|0" />
+
+        <i3dMapping id="clearArea1Start" node="0>5|0" />
+        <i3dMapping id="clearArea1Width" node="0>5|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>5|0|1" />
+
+        <i3dMapping id="levelArea1Start" node="0>6|0" />
+        <i3dMapping id="levelArea1Width" node="0>6|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>6|0|1" />
+
+        <i3dMapping id="indoorArea1Start" node="0>7|0" />
+        <i3dMapping id="indoorArea1Width" node="0>7|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>7|0|1" />
+
+        <i3dMapping id="indoorArea2Start" node="0>7|1" />
+        <i3dMapping id="indoorArea2Width" node="0>7|1|0" />
+        <i3dMapping id="indoorArea2Height" node="0>7|1|1" />
+
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>8|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>8|0|0" />
+
+
+        <i3dMapping id="palletSpawner" node="0>3" />
+        <i3dMapping id="spawnSpace1start" node="0>3|0" />
+        <i3dMapping id="spawnSpace2start" node="0>3|1" />
+        <i3dMapping id="spawnSpace3start" node="0>3|2" />
+        <i3dMapping id="loadTriggerMarker" node="0>3|4" />
+    </i3dMappings>
+</placeable>

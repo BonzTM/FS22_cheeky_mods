@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="FS22_A_ProductionRevamp.RevampSilo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Cheeky Small Wood Storage</name>
+        <functions>
+            <function>$l10n_function_woodStorage</function>
+        </functions>
+        <image>textures/store_woodstorage.dds</image>
+        <price>50000</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>50</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>storages</tab>
+        </brush>
+    </storeData>
+    
+    <base>
+        <filename>i3d/woodStorage.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+    
+    <aPalletSilo triggerNode="palletMenuTrigger" woodSpawnPlace="woodSpawner" maxWoodLogs="10" minWoodLogLength="6" maxWoodLogLength="12">
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="palletSpawnerRight1start"/>
+                <spawnPlace startNode="palletSpawnerLeft1start"/>
+            </spawnPlaces>
+        </palletSpawner>
+    </aPalletSilo>
+    
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="triggerMarker" teleportNode="triggerMarker"/>
+    </hotspots>
+    
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+    
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="forestGround"/>
+        </levelAreas>
+    </leveling>
+	
+    <indoorAreas>
+        <!-- <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/> -->
+    </indoorAreas>
+	
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+    </tipOcclusionUpdateAreas>
+    
+    <placement>
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End"/>
+        </testAreas>
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+	
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+        </updateAreas>
+    </ai>
+    
+    <infoTrigger triggerNode="infoTrigger"/>
+    
+    <silo>
+        <loadingStation fillTypes="WOOD" storageRadius="0" supportsExtension="false">
+        </loadingStation>
+        
+        <unloadingStation supportsExtension="false" storageRadius="0">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="WOOD">
+                <woodTrigger triggerNode="woodTrigger" activationTriggerNode="woodSellTrigger"/>
+            </unloadTrigger>
+        </unloadingStation>
+                
+        <storages>
+            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="5000000">
+            </storage>
+        </storages>
+            
+        <siloObjectFillLevels useSubNodesInsteadOfMainNodes="true">
+            <siloObjectFillLevel fillType="WOOD" rootNode="woodplane" maxAtFillLevel="5000000"/>
+        </siloObjectFillLevels>
+        
+    </silo>
+    
+    <triggerMarkers>
+		<triggerMarker node="markerUnloading" filename="xml/smallWoodStorage/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="triggerMarker" filename="xml/smallWoodStorage/markerIcons.xml" id="WRENCH"/>
+        <triggerMarker node="palletStripes" adjustToGround="false" />
+        <triggerMarker node="unloadingStripes" adjustToGround="false" />
+        <triggerMarker node="woodSellTriggerMarker" filename="xml/smallWoodStorage/markerIcons.xml" id="EXCLAMATION_MARK" />
+    </triggerMarkers>
+    
+    <i3dMappings>
+        <i3dMapping id="storage" node="0>" />
+        <i3dMapping id="woodplane" node="0>0|2"/>
+        <i3dMapping id="clearArea1Start" node="0>1|0"/>
+        <i3dMapping id="clearArea1Width" node="0>1|0|0"/>
+        <i3dMapping id="clearArea1Height" node="0>1|0|1"/>
+        <i3dMapping id="levelArea1Start" node="0>2|0"/>
+        <i3dMapping id="levelArea1Width" node="0>2|0|0"/>
+        <i3dMapping id="levelArea1Height" node="0>2|0|1"/>
+        <i3dMapping id="palletSpawner" node="0>3"/>
+        <i3dMapping id="palletStripes" node="0>3|0" />
+        <i3dMapping id="palletSpawnerRight1start" node="0>3|1|0"/>
+        <i3dMapping id="palletSpawnerLeft1start" node="0>3|1|1"/>
+        <i3dMapping id="woodSpawner" node="0>3|2"/>
+        <i3dMapping id="palletMenuTrigger" node="0>4|0"/>
+        <i3dMapping id="infoTrigger" node="0>4|1"/>
+        <i3dMapping id="triggerMarker" node="0>4|2"/>
+        <i3dMapping id="woodSellTrigger" node="0>4|3"/>
+        <i3dMapping id="woodSellTriggerMarker" node="0>4|4"/>
+        <i3dMapping id="exactFillRootNode" node="0>5|0" />
+        <i3dMapping id="markerUnloading" node="0>5|1" />
+        <i3dMapping id="unloadingStripes" node="0>5|2" />
+        <i3dMapping id="woodTrigger" node="0>5|3"/>
+        <i3dMapping id="indoorArea1Start" node="0>7|0"/>
+        <i3dMapping id="indoorArea1Width" node="0>7|0|0"/>
+        <i3dMapping id="indoorArea1Height" node="0>7|0|1"/>
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>8|0"/>
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>8|0|0"/>
+        <i3dMapping id="testArea1Start" node="0>9|0"/>
+        <i3dMapping id="testArea1End" node="0>9|0|0"/>
+    </i3dMappings>
+</placeable>

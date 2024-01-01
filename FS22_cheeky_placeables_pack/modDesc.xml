@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>1.9.8.0</version>
+    <version>1.10.0.0</version>
     <title>
         <en>Cheeky Placeables Pack</en>
     </title>
@@ -9,6 +9,7 @@
         <en><![CDATA[Modded placeables for the Cheeky Bastards.]]></en>
     </description>
     <iconFilename>textures/store_liquidFlatBottomTank1630.png</iconFilename>
+    <fillTypes filename="xml/mod_fillTypes.xml"/>
     <storeItems>
         <storeItem xmlFilename="xml/cheeky_limeAndRoadsaltStation.xml"/>
         <!-- Cheeky Silos -->
@@ -24,8 +25,10 @@
         <storeItem xmlFilename="xml/cheeky_sugarcaneStorage.xml"/>
         <storeItem xmlFilename="xml/cheeky_woodchipsStorage.xml"/>
         <storeItem xmlFilename="xml/cheeky_rootCropStorage.xml"/>
+        <storeItem xmlFilename="xml/cheeky_milkStorage.xml"/>
 
-        <!-- PalletBale Storage Pack -->
+        <!-- Cheeky Storages -->
+        <!-- Pallets/Bales -->
         <storeItem xmlFilename="xml/animalTraderOpenHallBlue.xml"/>
         <storeItem xmlFilename="xml/animalTraderOpenHallBrown.xml"/>
         <storeItem xmlFilename="xml/animalTraderOpenHallGreen.xml"/>
@@ -48,7 +51,12 @@
         <storeItem xmlFilename="xml/smallHallLightBrown.xml"/>
         <storeItem xmlFilename="xml/smallHallRed.xml"/>
 
-        <!-- Timber Storage -->
+        <!-- Pallets-as-Silo -->
+        <storeItem xmlFilename="xml/cheeky_palletStorage.xml"/>
+
+        <!-- Timber Storages -->
+        <storeItem xmlFilename="xml/cheeky_woodStorage.xml"/>
+
         <storeItem xmlFilename="xml/timberPilePine.xml"/>
         <storeItem xmlFilename="xml/timberPileSpruce.xml"/>
         <storeItem xmlFilename="xml/timberStoragePineClosed.xml"/>
@@ -74,16 +82,16 @@
             <en>Storage Building for Beets, Potatoes, Carrots, Parsnip, and Beetroot.</en>
         </text>
         <text name="shopItem_lumberStorage_spruce">
-            <en>Timber Storage - Spruce</en>
+            <en>Cheeky Timber Storage - Spruce</en>
         </text>
         <text name="shopItem_lumberStorage_pine">
-            <en>Timber Storage - Pine</en>
+            <en>Cheeky Timber Storage - Pine</en>
         </text>
         <text name="shopItem_lumberPile_spruce">
-            <en>Timber Pile - Spruce</en>
+            <en>Cheeky Timber Pile - Spruce</en>
         </text>
         <text name="shopItem_lumberPile_pine">
-            <en>Timber Pile - Pine</en>
+            <en>Cheeky Timber Pile - Pine</en>
         </text>
         <text name="function_lumberStorage_spruce">
             <en>This shed will allow you to store your spruce logs</en>
@@ -136,9 +144,37 @@
             <en>Full</en>
         </text>
 
+        <!-- Pallet Storage -->
+        <text name="PalletSilo">
+            <en>Cheeky Pallet Silo</en>
+        </text>
+        <text name="ChooseAmountToPutOut">
+            <en>Choose Output Amount</en>
+        </text>
+        <text name="ChooseWhatToPutOut">
+            <en>Choose Material"</en>
+        </text>
+        <text name="ExtractPallets">
+            <en>Extract Pallets</en>
+        </text>
+        <text name="palletStorage">
+            <en>PalletStorage</en>
+        </text>
+        <text name="function_palletStorage">
+            <en>Storage for pallets</en>
+        </text>
+
+        <!-- Small Wood Storage -->
+        <text name="woodStorage">
+            <en>Wood Storage</en>
+        </text>
+        <text name="function_woodStorage">
+            <en>Storage for Wood</en>
+        </text>
+
     </l10n>
     <extraSourceFiles>
-        <sourceFile filename="scripts/main.lua" />
+        <sourceFile filename="scripts/initLumberSilo.lua" />
         <sourceFile filename="scripts/AddConstructionTab.lua"/>
     </extraSourceFiles>
 
@@ -146,9 +182,14 @@
         <type name="LumberStorage" parent="silo" filename="$dataS/scripts/placeables/Placeable.lua">
             <specialization name="aLumberSilo" />
         </type>
+        <!-- <type name="SiloWithPallet" parent="silo" filename="$dataS/scripts/placeables/Placeable.lua">
+            <specialization name="aPalletSilo"/>
+        </type> -->
     </placeableTypes>
 
     <dependencies>
+        <dependency>FS22_A_ProductionRevamp</dependency>
+        <dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
         <dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
     </dependencies>
 </modDesc>

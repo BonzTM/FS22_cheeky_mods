@@ -19,6 +19,10 @@
             <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="50"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="IRONORE"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="416"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="9"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#boostfactor" value="0.02"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="380"/>
 
@@ -27,9 +31,10 @@
             <set path="placeable.productionPoint.storage.capacity(0)#capacity" value="600000"/>
             <set path="placeable.productionPoint.storage.capacity(1)#fillType" value="METAL"/>
             <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="200000"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="10000"/>
 
-            <!-- Sounds -->
-            <!-- Replaced with script -->
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="IRONORE EMPTYPALLET"/>
 
         </attributes>
     </parentFile>

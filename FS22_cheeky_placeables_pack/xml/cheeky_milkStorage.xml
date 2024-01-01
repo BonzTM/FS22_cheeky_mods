@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="silo"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+            <en>Cheeky Milk Storage</en>
+        </name>
+        <image>textures/store_milkStorage.dds</image>
+        <functions>
+            <function>$l10n_function_MilkStorage</function>
+        </functions>
+        <price>25000</price>
+        <dailyUpkeep>25</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>RUDOLFHOERMANN</brand>
+        <species>placeable</species>
+        <category>storages</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>silos</tab>
+        </brush>
+
+
+        <storeIconRendering>
+            <settings cameraXRot="-25" advancedBoundingBox="true" />
+        </storeIconRendering>
+
+        <vertexBufferMemoryUsage>347392</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>47104</indexBufferMemoryUsage>
+        <textureMemoryUsage>4325376</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>i3d/cheeky_milkStorage.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="gravel"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <silo>
+        <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="70">
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="MILK" aiNode="aiLoadingNode" />
+        </loadingStation>
+
+        <unloadingStation supportsExtension="true" storageRadius="50">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="MILK" aiNode="aiLoadingNode"/>
+        </unloadingStation>
+
+        <storages>
+            <storage node="storage" fillTypes="MILK" capacity="500000" isExtension="true"/>
+        </storages>
+    </silo>
+
+    <hotspots>
+        <hotspot type="LOADING" linkNode="mapPosition" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+    </triggerMarkers>
+
+    <dynamicallyLoadedParts>
+        <dynamicallyLoadedPart node="0" linkNode="milkContainer1" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="milkContainer2" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="milkContainer3" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="milkContainer4" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+        <dynamicallyLoadedPart node="0" linkNode="milkContainer5" filename="$data/placeables/lely/nautilus/nautilus.i3d"/>
+    </dynamicallyLoadedParts>
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="linkedLights1" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="linkedLights2" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="linkedLights3" groupIndex="1"/>
+
+        <realLights>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+    <i3dMappings>
+        <i3dMapping id="mILK_sTORAGE" node="0>" />
+        <i3dMapping id="silo" node="0>0" />
+        <i3dMapping id="mapPosition" node="0>0|0" />
+        <i3dMapping id="storage" node="0>0|1" />
+        <i3dMapping id="loadingStation" node="0>0|2" />
+        <i3dMapping id="loadingTriggers" node="0>0|2|0" />
+        <i3dMapping id="loadingTrigger" node="0>0|2|0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|2|0|1" />
+        <i3dMapping id="aiLoadingNode" node="0>0|2|1" />
+        <i3dMapping id="aiSpline" node="0>0|2|2" />
+        <i3dMapping id="unloadingStation" node="0>0|3" />
+        <i3dMapping id="exactFillRootNode" node="0>0|3|0" />
+        <i3dMapping id="infoTrigger" node="0>0|4" />
+        <i3dMapping id="clearAreas" node="0>1" />
+        <i3dMapping id="clearArea1Start" node="0>1|0" />
+        <i3dMapping id="clearArea1Width" node="0>1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>1|0|1" />
+        <i3dMapping id="levelAreas" node="0>2" />
+        <i3dMapping id="levelArea1Start" node="0>2|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|1" />
+        <i3dMapping id="testAreas" node="0>3" />
+        <i3dMapping id="testArea1Start" node="0>3|0" />
+        <i3dMapping id="testArea1End" node="0>3|0|0" />
+        <i3dMapping id="indoorAreas" node="0>4" />
+        <i3dMapping id="indoorArea1Start" node="0>4|0" />
+        <i3dMapping id="indoorArea1Width" node="0>4|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>4|0|1" />
+        <i3dMapping id="tipOcclusionUpdateAreas" node="0>5" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>5|0|0" />
+        <i3dMapping id="markerUnloading" node="0>6" />
+        <i3dMapping id="markerLoading" node="0>7" />
+        <i3dMapping id="teleportNode" node="0>8" />
+        <i3dMapping id="garageWoodRoof" node="0>9" />
+        <i3dMapping id="visuals" node="0>9|0" />
+        <i3dMapping id="LOD0" node="0>9|0|0" />
+        <i3dMapping id="woodStructure" node="0>9|0|0|0" />
+        <i3dMapping id="screwsDecals" node="0>9|0|0|1" />
+        <i3dMapping id="winter" node="0>9|0|0|2" />
+        <i3dMapping id="snow" node="0>9|0|0|2|0" />
+        <i3dMapping id="icicles" node="0>9|0|0|2|1" />
+        <i3dMapping id="garageWoodRoof01" node="0>9|0|0|3" />
+        <i3dMapping id="LOD1" node="0>9|0|1" />
+        <i3dMapping id="garageWoodRoof01_LOD" node="0>9|0|1|0" />
+        <i3dMapping id="woodStructure_LOD" node="0>9|0|1|1" />
+        <i3dMapping id="occluderMesh" node="0>9|0|2" />
+        <i3dMapping id="logoGreenDecal" node="0>9|0|3" />
+        <i3dMapping id="collision_0" node="0>9|1" />
+        <i3dMapping id="collision_1" node="0>9|1|0" />
+        <i3dMapping id="milkContainer1" node="0>9|2" />
+        <i3dMapping id="milkContainer2" node="0>9|3" />
+        <i3dMapping id="milkContainer3" node="0>9|4" />
+        <i3dMapping id="milkContainer4" node="0>9|5" />
+        <i3dMapping id="milkContainer5" node="0>9|6" />
+        <i3dMapping id="WoodenRailing" node="0>9|7" />
+        <i3dMapping id="LIGHTS" node="0>10" />
+        <i3dMapping id="linkedLighst" node="0>10|0" />
+        <i3dMapping id="linkedLights1" node="0>10|0|0" />
+        <i3dMapping id="linkedLights2" node="0>10|0|1" />
+        <i3dMapping id="linkedLights3" node="0>10|0|2" />
+        <i3dMapping id="realLightsHigh" node="0>10|1" />
+        <i3dMapping id="pointLight1" node="0>10|1|0" />
+        <i3dMapping id="pointLight2" node="0>10|1|1" />
+        <i3dMapping id="pointLight3" node="0>10|1|2" />
+    </i3dMappings>
+</placeable>

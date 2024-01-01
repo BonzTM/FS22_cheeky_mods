@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="productionPoint"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Spinnery</name>
         <functions>
@@ -30,7 +31,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
             <testArea startNode="testArea2Start" endNode="testArea2End" />
@@ -48,7 +49,7 @@
         <clearArea startNode="clearArea3Start" widthNode="clearArea3Width" heightNode="clearArea3Height"/>
     </clearAreas>
 
-    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
         <levelAreas>
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
             <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="asphalt"/>
@@ -105,6 +106,7 @@
             <production id="fabric_wool" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_wool" cyclesPerHour="12" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="WOOL" amount="300" />
+                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="FABRIC" amount="205" />
@@ -113,6 +115,7 @@
             <production id="fabric_cotton" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_cotton" cyclesPerHour="12" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="COTTON" amount="300" />
+                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="FABRIC" amount="235" />
@@ -121,13 +124,14 @@
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="WOOL"   capacity="500000" />
+            <capacity fillType="WOOL" capacity="500000" />
             <capacity fillType="COTTON" capacity="500000" />
             <capacity fillType="FABRIC" capacity="100000" />
+            <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false" appearsOnStats="true">
-            <unloadTrigger exactFillRootNode="unloadTrigger"  aiNode="unloadTriggerAINode" fillTypes="WOOL COTTON">
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="WOOL COTTON EMPTYPALLET">
                 <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="4000" />
             </unloadTrigger>
         </sellingStation>

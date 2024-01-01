@@ -3,11 +3,12 @@
     <parentFile xmlFilename="xml/pallets/woodPallet.xml">
         <attributes>
             <set path="vehicle.storeData.showInStore" value="true"/>
+            <set path="vehicle.storeData.price" value="1400"/>
             <!-- <set path="vehicle.storeData.specs.weight#ignore" value="true"/> -->
             <!-- <set path="vehicle.base.components.component(0)#mass" value="100"/> -->
             <!-- <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#updateMass" value="false"/> -->
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillType" value="WOOD"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillLevel" value="1400"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillLevel" value="1000"/>
         </attributes>
     </parentFile>
 

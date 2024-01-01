@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="productionPoint"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Cereal Factory</name>
         <functions>
@@ -30,7 +31,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
             <testArea startNode="testArea2Start" endNode="testArea2End" />
@@ -47,7 +48,7 @@
         <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
     </clearAreas>
 
-    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
         <levelAreas>
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" />
             <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" />
@@ -122,6 +123,7 @@
                     <input fillType="RAISINS" amount="100" />
                     <input fillType="OAT" amount="200" />
                     <input fillType="MAIZE" amount="200" />
+                    <input fillType="EMPTYPALLET" amount="5" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="CEREAL" amount="350" />
@@ -130,15 +132,16 @@
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="HONEY"   capacity="300000" />
+            <capacity fillType="HONEY" capacity="300000" />
             <capacity fillType="RAISINS" capacity="300000" />
-            <capacity fillType="OAT"     capacity="600000" />
-            <capacity fillType="MAIZE"   capacity="600000" />
-            <capacity fillType="CEREAL"  capacity="100000" />
+            <capacity fillType="OAT" capacity="600000" />
+            <capacity fillType="MAIZE" capacity="600000" />
+            <capacity fillType="CEREAL" capacity="100000" />
+            <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="HONEY RAISINS OAT MAIZE"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="HONEY RAISINS OAT MAIZE EMPTYPALLET"/>
         </sellingStation>
 
         <palletSpawner node="palletSpawner">

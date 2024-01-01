@@ -2,7 +2,7 @@
 <placeable type="productionPoint">
     <parentFile xmlFilename="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/soupFactoryPlaceable.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/soupFactoryPlaceable.i3d"/>       
+            <set path="placeable.base.filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/soupFactoryPlaceable.i3d"/>
             <set path="placeable.storeData.image" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/store_soupFactoryPlaceable.png"/>
             <set path="placeable.storeData.name" value="Cheeky Soup Factory"/>
             <set path="placeable.storeData.price" value="675000"/>
@@ -10,7 +10,7 @@
 
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
-            
+
             <!-- Triple Soup Production -->
             <set path="placeable.productionPoint.productions.production(0)#name" value="Triple Soup"/>
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="10"/>
@@ -20,16 +20,24 @@
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="PARSNIP"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="500"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#fillType" value="BEETROOT"/>
-            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#amount" value="500"/>            
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#amount" value="500"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(3)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(3)#amount" value="6"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(3)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(3)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="SOUPCANSMIXED"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="375"/>
-            
+
             <!-- Carrot Soup Production -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Carrot Soup"/>
             <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="10"/>
             <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="50"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="CARROT"/>
-            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="1800"/>         
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="1800"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="7"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="SOUPCANSCARROTS"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="525"/>
 
@@ -39,6 +47,10 @@
             <set path="placeable.productionPoint.productions.production(2)#costsPerActiveHour" value="50"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#fillType" value="PARSNIP"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="1800"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="7"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="SOUPCANSPARSNIP"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="550"/>
 
@@ -48,8 +60,12 @@
             <set path="placeable.productionPoint.productions.production(3)#costsPerActiveHour" value="50"/>
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#fillType" value="BEETROOT"/>
             <set path="placeable.productionPoint.productions.production(3).inputs.input(0)#amount" value="1800"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(1)#amount" value="7"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(3).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#fillType" value="SOUPCANSBEETROOT"/>
-            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="510"/>            
+            <set path="placeable.productionPoint.productions.production(3).outputs.output(0)#amount" value="510"/>
 
             <!-- Potato Soup Production -->
             <set path="placeable.productionPoint.productions.production(4)#name" value="Potato Soup"/>
@@ -57,8 +73,12 @@
             <set path="placeable.productionPoint.productions.production(4)#costsPerActiveHour" value="50"/>
             <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#fillType" value="POTATO"/>
             <set path="placeable.productionPoint.productions.production(4).inputs.input(0)#amount" value="1800"/>
+            <set path="placeable.productionPoint.productions.production(4).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(4).inputs.input(1)#amount" value="7"/>
+            <set path="placeable.productionPoint.productions.production(4).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(4).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#fillType" value="SOUPCANSPOTATO"/>
-            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="575"/>  
+            <set path="placeable.productionPoint.productions.production(4).outputs.output(0)#amount" value="575"/>
 
 
             <!-- Capacity -->
@@ -80,14 +100,10 @@
             <set path="placeable.productionPoint.storage.capacity(7)#capacity" value="450000"/>
             <set path="placeable.productionPoint.storage.capacity(8)#fillType" value="SOUPCANSPOTATO"/>
             <set path="placeable.productionPoint.storage.capacity(8)#capacity" value="450000"/>
+            <set path="placeable.productionPoint.storage.capacity(9)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(9)#capacity" value="15000"/>
 
-            <!-- Sounds -->
-            <!-- Currently broken -->
-            <!-- <remove path="placeable.productionPoint.sounds.idle(0)#template" />
-            <remove path="placeable.productionPoint.sounds.active(0)#template" />
-            <set path="placeable.productionPoint.sounds.idle(0)#filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryIdle.wav"/>
-            <set path="placeable.productionPoint.sounds.active(0)#filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/soupFactory/sounds/soupFactoryActive.wav"/> -->
-
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="CARROT PARSNIP BEETROOT POTATO EMPTYPALLET"/>
 
         </attributes>
     </parentFile>

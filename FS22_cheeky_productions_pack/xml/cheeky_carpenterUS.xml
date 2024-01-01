@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="productionPoint"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Carpenter</name>
         <functions>
@@ -30,7 +31,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
             <testArea startNode="testArea2Start" endNode="testArea2End" />
@@ -46,7 +47,7 @@
         <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
     </clearAreas>
 
-    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
         <levelAreas>
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
             <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="asphalt"/>
@@ -79,8 +80,8 @@
 
     <triggerMarkers>
         <triggerMarker node="warningStripes" />
-        <triggerMarker node="playerTriggerMarker"         filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH"           adjustToGround="true" />
-        <triggerMarker node="unloadTriggerMarker"         filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD"           adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
         <triggerMarker node="woodActivationTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="true" />
     </triggerMarkers>
 
@@ -91,8 +92,8 @@
         <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight2" groupIndex="1"/>
         <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight3" groupIndex="1"/>
         <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="linkedLight4" groupIndex="1"/>
-        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml"          linkNode="linkedLight5" groupIndex="1" />
-        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml"          linkNode="linkedLight6" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="linkedLight5" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/terraLed/fluorescentTube50W.xml" linkNode="linkedLight6" groupIndex="1" />
 
         <lightShape node="interiorSelfIllum" groupIndex="1"/>
         <lightShape node="interiorSelfIllumLOD" groupIndex="1"/>
@@ -112,40 +113,55 @@
             <production id="furnitureWood" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_wood" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="WOOD" amount="170" />
+                    <input fillType="EMPTYPALLET" amount="5" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="FURNITURE" amount="150" />
-                    <output fillType="WOODCHIPS" amount="15" />
+                    <output fillType="WOODCHIPS" amount="20" />
                 </outputs>
             </production>
             <production id="furnitureBoards" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_boards" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="BOARDS" amount="125" />
+                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="FURNITURE" amount="140" />
-                    <output fillType="WOODCHIPS" amount="15" />
+                    <output fillType="WOODCHIPS" amount="20" />
+                </outputs>
+            </production>
+            <production id="emptyPallets" name="Empty Pallets" cyclesPerHour="13" costsPerActiveHour="7">
+                <inputs>
+                    <!-- <input fillType="WOODCHIPS" amount="1860" mix="1"/> -->
+                    <input fillType="WOODCHIPS" amount="425" mix="1"/>
+                    <input fillType="WOOD" amount="185" mix="1"/>
+                    <input fillType="BOARDS" amount="150" mix="1"/>
+                </inputs>
+                <outputs>
+                    <output fillType="EMPTYPALLET" amount="192" />
                 </outputs>
             </production>
         </productions>
-        
+
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="WOOD"      capacity="400000" />
-            <capacity fillType="BOARDS"    capacity="180000" />
-            <capacity fillType="FURNITURE" capacity="100000" />
+            <capacity fillType="WOOD" capacity="500000" />
+            <capacity fillType="BOARDS" capacity="180000" />
+            <capacity fillType="FURNITURE" capacity="120000" />
             <capacity fillType="WOODCHIPS" capacity="200000" />
+            <capacity fillType="EMPTYPALLET" capacity="250000" />
         </storage>
 
+
         <loadingStation node="loadingStation" supportsExtension="false">
-            <loadTrigger triggerNode="loadTrigger" fillTypes="FURNITURE WOODCHIPS" fillLitersPerSecond="2000" dischargeNode="dischargeNode">
+            <loadTrigger triggerNode="loadTrigger" fillTypes="FURNITURE WOODCHIPS EMPTYPALLET" fillLitersPerSecond="2000" dischargeNode="dischargeNode">
                 <!-- <effectNode effectClass="PipeEffect" effectNode="0|1|0|0|2|0" materialType="pipe" materialTypeId="1" fadeTime="0.5" maxBending="0" controlPoint="3.25 0 0 0"/> -->
-                <!-- <effectNode                          effectNode="0|1|0|0|2|1" materialType="smoke"     materialTypeId="1" fadeTime="0.5" /> -->
+                <!-- <effectNode effectNode="0|1|0|0|2|1" materialType="smoke" materialTypeId="1" fadeTime="0.5" /> -->
             </loadTrigger>
         </loadingStation>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="BOARDS" />
-            <unloadTrigger fillTypes="WOOD BOARDS" >
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WOOD BOARDS EMPTYPALLET" />
+            <unloadTrigger fillTypes="WOOD BOARDS EMPTYPALLET">
                 <woodTrigger triggerNode="woodTrigger" activationTriggerNode="woodActivationTrigger" />
             </unloadTrigger>
         </sellingStation>
@@ -154,7 +170,7 @@
             <spawnPlaces>
                 <spawnPlace startNode="spawnSpace1start" />
                 <spawnPlace startNode="spawnSpace1start-1high" />
-                <spawnPlace startNode="spawnSpace1start-2high" />                
+                <spawnPlace startNode="spawnSpace1start-2high" />
             </spawnPlaces>
         </palletSpawner>
 
@@ -218,11 +234,11 @@
         <i3dMapping id="playerTriggerMarker" node="0>11|0|0" />
         <i3dMapping id="palletSpawner" node="0>12" />
         <i3dMapping id="spawnSpace1start" node="0>12|0" />
-        <i3dMapping id="spawnSpace1end" node="0>12|0|0" />        
+        <i3dMapping id="spawnSpace1end" node="0>12|0|0" />
         <i3dMapping id="spawnSpace1start-1high" node="0>12|1" />
-        <i3dMapping id="spawnSpace1end-1high" node="0>12|1|0" />    
+        <i3dMapping id="spawnSpace1end-1high" node="0>12|1|0" />
         <i3dMapping id="spawnSpace1start-2high" node="0>12|2" />
-        <i3dMapping id="spawnSpace1end-2high" node="0>12|2|0" />                    
+        <i3dMapping id="spawnSpace1end-2high" node="0>12|2|0" />
         <i3dMapping id="warningStripes" node="0>13" />
     </i3dMappings>
 </placeable>

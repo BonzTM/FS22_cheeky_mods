@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapUS/textures/bioMassPowerPlant02_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/bioMassPowerPlant02_height.png"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/bioMassPowerPlant02_mask.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/bioMassPowerPlant02_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/bioMassPowerPlant02_specular.png"/>
+    <File fileId="11" filename="$data/maps/mapUS/textures/buildingDecals01_diffuse.png"/>
+    <File fileId="12" filename="$data/maps/mapUS/textures/buildingDecals01_normal.png"/>
+    <File fileId="13" filename="$data/maps/mapUS/textures/buildingDecals01_specular.png"/>
+    <File fileId="24" filename="$data/maps/mapUS/textures/props/lightWarm_emissive.png"/>
+    <File fileId="19" filename="$data/maps/textures/shared/props/warehouseWallLamp_diffuse.png"/>
+    <File fileId="20" filename="$data/maps/textures/shared/props/warehouseWallLamp_normal.png"/>
+    <File fileId="21" filename="$data/maps/textures/shared/props/warehouseWallLamp_specular.png"/>
+    <File fileId="15" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="26" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="28" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="14" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="22" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="17" filename="$data/shaders/snowHeapShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bioMassPowerPlant02_mat" materialId="4" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="9"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 0.5 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="buildingDecals01_mat" materialId="5" alphaBlending="true" customShaderId="14">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="snow_mat" materialId="7" customShaderId="17">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16" bumpDepth="0.5"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="8" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warehouseWallLamp_mat" materialId="9" customShaderId="22" customShaderVariation="customEmissiveMap">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+    </Material>
+    <Material name="warehouseWallLampLit_mat" materialId="10" customShaderId="22" customShaderVariation="customEmissiveMap">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Emissivemap fileId="19"/>
+      <Custommap name="mEmissiveMap" fileId="24"/>
+      <CustomParameter name="lightControl" value="7 0 0 0"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="11">
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+      <Glossmap fileId="28"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="palletStorage.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="main" nodeId="28">
+        <TransformGroup name="storageBuilding" nodeId="29" lodDistance="0 100">
+          <TransformGroup name="LOD0" nodeId="30">
+            <Shape shapeId="1" name="bioMassPowerPlantShack02" clipDistance="400" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="windows" translation="4.88281e-06 0 0" clipDistance="400" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="decals" nodeId="33">
+              <Shape shapeId="3" name="decals_building" translation="-5.2177 1.79332 8.00957" clipDistance="120" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+            </TransformGroup>
+            <TransformGroup name="winter" nodeId="35">
+              <Shape shapeId="4" name="snow" clipDistance="100" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="LOD1" translation="-162 0 80" nodeId="37">
+            <Shape shapeId="5" name="bioMassPowerPlantShack02" translation="162 3.49691e-06 -80" static="true" clipDistance="300" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="6" name="occluderMesh" translation="0 3.49691e-06 0" clipDistance="250" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+          <Shape shapeId="7" name="warehouseWallLamp1" lockedgroup="true" translation="4 3.65 7" rotation="0 0 2.52945e-12" clipDistance="55" nodeId="40" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="8" name="warehouseWallLampWire" clipDistance="55" nodeId="41" materialIds="9" receiveShadows="true"/>
+            <Shape shapeId="9" name="bulbUnlit1" clipDistance="300" nodeId="42" materialIds="9" receiveShadows="true"/>
+            <TransformGroup name="illum" nodeId="43">
+              <TransformGroup name="selfLit" nodeId="44">
+                <Shape shapeId="10" name="warehouseWallLampWireLit" clipDistance="55" nodeId="45" materialIds="9" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                <Shape shapeId="11" name="warehouseWallLampInnerLit" clipDistance="300" nodeId="46" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                <Shape shapeId="12" name="bulbLit" clipDistance="300" nodeId="47" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="48">
+                <Light name="spotLight" translation="0.673 -0.134596 -3.4427e-08" rotation="-90 0 0" clipDistance="300" nodeId="49" type="spot" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="140" dropOff="3" weatherRequiredMask="64" visibleShaderParameter="5"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="7" name="warehouseWallLamp2" lockedgroup="true" translation="4 3.65 -7" rotation="0 0 2.52945e-12" clipDistance="55" nodeId="50" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="8" name="warehouseWallLampWire" clipDistance="55" nodeId="51" materialIds="9" receiveShadows="true"/>
+            <Shape shapeId="9" name="bulbUnlit" clipDistance="300" nodeId="52" materialIds="9" receiveShadows="true"/>
+            <TransformGroup name="illum" nodeId="53">
+              <TransformGroup name="selfLit" nodeId="54">
+                <Shape shapeId="10" name="warehouseWallLampWireLit" clipDistance="55" nodeId="55" materialIds="9" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                <Shape shapeId="11" name="warehouseWallLampInnerLit" clipDistance="300" nodeId="56" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                <Shape shapeId="12" name="bulbLit" clipDistance="300" nodeId="57" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="58">
+                <Light name="spotLight" translation="0.673 -0.134596 -3.4427e-08" rotation="-90 0 0" clipDistance="300" nodeId="59" type="spot" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="140" dropOff="3" weatherRequiredMask="64" visibleShaderParameter="5"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="7" name="warehouseWallLamp3" lockedgroup="true" translation="-4 3.65 7" rotation="0 180 0" clipDistance="55" nodeId="60" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="8" name="warehouseWallLampWire" clipDistance="55" nodeId="61" materialIds="9" receiveShadows="true"/>
+            <Shape shapeId="9" name="bulbUnlit" clipDistance="300" nodeId="62" materialIds="9" receiveShadows="true"/>
+            <TransformGroup name="illum" nodeId="63">
+              <TransformGroup name="selfLit" nodeId="64">
+                <Shape shapeId="10" name="warehouseWallLampWireLit" clipDistance="55" nodeId="65" materialIds="9" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                <Shape shapeId="11" name="warehouseWallLampInnerLit" clipDistance="300" nodeId="66" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                <Shape shapeId="12" name="bulbLit" clipDistance="300" nodeId="67" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="68">
+                <Light name="spotLight" translation="0.673 -0.134596 -3.4427e-08" rotation="-90 0 0" clipDistance="300" nodeId="69" type="spot" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="140" dropOff="3" weatherRequiredMask="64" visibleShaderParameter="5"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="7" name="warehouseWallLamp4" lockedgroup="true" translation="-4 3.65 -7" rotation="0 180 2.52945e-12" clipDistance="55" nodeId="70" materialIds="9" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="8" name="warehouseWallLampWire" clipDistance="55" nodeId="71" materialIds="9" receiveShadows="true"/>
+            <Shape shapeId="9" name="bulbUnlit" clipDistance="300" nodeId="72" materialIds="9" receiveShadows="true"/>
+            <TransformGroup name="illum" nodeId="73">
+              <TransformGroup name="selfLit" nodeId="74">
+                <Shape shapeId="10" name="warehouseWallLampWireLit" clipDistance="55" nodeId="75" materialIds="9" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                <Shape shapeId="11" name="warehouseWallLampInnerLit" clipDistance="300" nodeId="76" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+                <Shape shapeId="12" name="bulbLit" clipDistance="300" nodeId="77" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" visibleShaderParameter="5"/>
+              </TransformGroup>
+              <TransformGroup name="realLights" nodeId="78">
+                <Light name="spotLight" translation="0.673 -0.134596 -3.4427e-08" rotation="-90 0 0" clipDistance="300" nodeId="79" type="spot" color="0.7 0.5 0.3" emitDiffuse="true" emitSpecular="true" range="8" coneAngle="140" dropOff="3" weatherRequiredMask="64" visibleShaderParameter="5"/>
+              </TransformGroup>
+            </TransformGroup>
+          </Shape>
+        </TransformGroup>
+        <Shape shapeId="13" name="infoTrigger" translation="0 1 1.01915" scale="15 2 18" static="true" trigger="true" collisionMask="1048576" nodeId="80" materialIds="8" nonRenderable="true" distanceBlending="false"/>
+        <TransformGroup name="unloadingStation" translation="6 0 0" nodeId="81">
+          <Shape shapeId="13" name="exactFillRootNode" translation="0 -1 0" scale="4 1 16" static="true" trigger="true" collisionMask="1073741824" nodeId="82" materialIds="8" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="aiUnloadingNode" nodeId="83"/>
+          <TransformGroup name="unloadTriggerMarker" translation="0 0.5 0" nodeId="84"/>
+          <Shape shapeId="14" name="warningStripes_palletSpawnArea" translation="0 0.01 -1.6" rotation="0 90 0" scale="1.8 1 1" visibility="false" clipDistance="300" nodeId="85" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="warningStripesUnload" rotation="0 90 0" nodeId="122">
+            <Shape shapeId="15" name="markerCornerDecal1" translation="-8 0.01 -1.6" clipDistance="100" nodeId="123" materialIds="11" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="16" name="markerCornerDecal2" translation="8.3 0.01 -1.6" clipDistance="100" nodeId="124" materialIds="11" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="17" name="markerCornerDecal3" translation="8.3 0.01 1.6" clipDistance="100" nodeId="125" materialIds="11" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="18" name="markerCornerDecal4" translation="-8 0.01 1.6" clipDistance="100" nodeId="126" materialIds="11" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="palletSpawner" translation="-6 0 0" nodeId="86">
+          <TransformGroup name="spawnSpace1start" translation="-1 0 -7.75" nodeId="87">
+            <TransformGroup name="spawnSpace1end" translation="0 0 15" nodeId="88"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace2start" translation="0 0 -7.75" nodeId="89">
+            <TransformGroup name="spawnSpace2end" translation="0 0 15" nodeId="90"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace3start" translation="1 0 -7.75" nodeId="91">
+            <TransformGroup name="spawnSpace3end" translation="0 0 15" nodeId="92"/>
+          </TransformGroup>
+          <Shape shapeId="14" name="warningStripes_palletSpawnArea" translation="0 0.01 -1.6" rotation="-0 90 0" scale="1.8 1 1" visibility="false" clipDistance="300" nodeId="93" materialIds="11" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="loadTriggerMarker" translation="0 0.5 0" nodeId="94"/>
+          <TransformGroup name="warningStripesPallet" rotation="0 90 0" nodeId="127">
+            <Shape shapeId="15" name="markerCornerDecal1" translation="-8 0.01 -1.6" clipDistance="100" nodeId="128" materialIds="11" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="16" name="markerCornerDecal2" translation="8 0.01 -1.6" clipDistance="100" nodeId="129" materialIds="11" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="17" name="markerCornerDecal3" translation="8 0.01 1.6" clipDistance="100" nodeId="130" materialIds="11" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="18" name="markerCornerDecal4" translation="-8 0.01 1.6" clipDistance="100" nodeId="131" materialIds="11" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="infoMarker" translation="-3 0 8.7" nodeId="95">
+          <Shape shapeId="19" name="palletMenuTrigger" translation="0 1 0" static="true" trigger="true" collisionMask="1048576" nodeId="96" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="97">
+          <TransformGroup name="clearArea1Start" translation="7.5 0 8" nodeId="98">
+            <TransformGroup name="clearArea1Width" translation="-15.25 0 0" nodeId="99"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 -16.25" nodeId="100"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="101">
+          <TransformGroup name="levelArea1Start" translation="7.5 -0.1 8" nodeId="102">
+            <TransformGroup name="levelArea1Width" translation="-15.25 0 0" nodeId="103"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 -16.25" nodeId="104"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="105">
+          <TransformGroup name="indoorArea1Start" translation="6 0 8" nodeId="106">
+            <TransformGroup name="indoorArea1Width" translation="-2 0 0" nodeId="107"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 -16" nodeId="108"/>
+          </TransformGroup>
+          <TransformGroup name="indoorArea2Start" translation="-6 0 8" nodeId="109">
+            <TransformGroup name="indoorArea2Width" translation="2 0 0" nodeId="110"/>
+            <TransformGroup name="indoorArea2Height" translation="0 0 -16" nodeId="111"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="112">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="8 0 9" nodeId="113">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="-16 0 -18" nodeId="114"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

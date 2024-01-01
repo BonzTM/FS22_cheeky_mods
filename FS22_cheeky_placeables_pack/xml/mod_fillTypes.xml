@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<map xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../shared/xml/schema/fillTypes.xsd">
+    <fillTypeCategories>
+        <fillTypeCategory name="PRODUCT">HONEY</fillTypeCategory>
+        <fillTypeCategory name="PALLET_GOODS">LIQUIDFERTILIZER HERBICIDE FERTILIZER POPLAR SILAGE_ADDITIVE OILSEEDRADISH WOOL EGG</fillTypeCategory>
+        <fillTypeCategory name="TRAINWAGON">HONEY</fillTypeCategory>
+        <fillTypeCategory name="VEGETABLES"></fillTypeCategory>
+        <fillTypeCategory name="FRUITS"></fillTypeCategory>
+    </fillTypeCategories>
+</map>

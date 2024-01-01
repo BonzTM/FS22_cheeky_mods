@@ -1,18 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; loki_79; ddewar</author>
-    <version>1.9.8.0</version>
+    <version>1.10.0.0</version>
     <title>
         <en>Cheeky Pallets and Bales Pack</en>
     </title>
-	<description>
-		<en><![CDATA[Buyable pallets for the Cheeky Bastards.]]></en>
-	</description>	
+    <description>
+        <en><![CDATA[Buyable pallets for the Cheeky Bastards.]]></en>
+    </description>
     <iconFilename>textures/store_cakePallet.png</iconFilename>
     <fillTypes filename="xml/mod_fillTypes.xml"/>
     <storeItems>
         <!-- Base Game -->
-		<!-- Buyable Pallets -->
+        <!-- Pallet Overrides -->
+        <storeItem xmlFilename="xml/pallets/overrides/sugarBoxPallet.xml"/>
+
+        <!-- Buyable Pallets -->
         <!-- <storeItem xmlFilename="xml/pallets/buyable/bakeryBoxPallet.xml"/> -->
         <storeItem xmlFilename="xml/pallets/buyable/boardsStackPallet.xml"/>
         <storeItem xmlFilename="xml/pallets/buyable/butterBoxPallet.xml"/>
@@ -106,7 +109,7 @@
         <!-- Additional Pallet Types -->
         <!-- Buyable Pallets -->
         <storeItem xmlFilename="xml/pallets/buyable/emptyPallet.xml"/>
-        <storeItem xmlFilename="xml/pallets/buyable/cornSyrupPallet.xml"/> 
+        <storeItem xmlFilename="xml/pallets/buyable/cornSyrupPallet.xml"/>
         <!-- Pallet Definitions -->
         <storeItem xmlFilename="xml/pallets/carrotCakePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/carrotJuicePallet.xml"/>
@@ -115,9 +118,10 @@
         <storeItem xmlFilename="xml/pallets/vegetableJuicePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/milkTank.xml"/>
         <storeItem xmlFilename="xml/pallets/liquidTank.xml"/>
-        <storeItem xmlFilename="xml/pallets/woodPallet.xml"/> 
-        <storeItem xmlFilename="xml/pallets/emptyPallet.xml"/> 
-        <storeItem xmlFilename="xml/pallets/cornSyrupPallet.xml"/> 
+        <storeItem xmlFilename="xml/pallets/woodPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/emptyPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/cornSyrupPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/mayonnaiseBoxPallet.xml"/>
     </storeItems>
-	<multiplayer supported="true" />
+    <multiplayer supported="true" />
 </modDesc>

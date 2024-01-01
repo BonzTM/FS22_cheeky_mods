@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Cheeky Real Greenhouse (Large)</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>textures/store_realGreenhouseLarge.png</image>
+        <price>250000</price>
+        <dailyUpkeep>1000</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>greenhouses</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <vertexBufferMemoryUsage>991744</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>149504</indexBufferMemoryUsage>
+        <textureMemoryUsage>5177344</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="30" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>i3d/cheeky_realGreenhouseLarge.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="gravel"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD"  adjustToGround="false" />
+    </triggerMarkers>
+
+    <greenhouse>
+        <plants>
+            <plant fillType="LETTUCE"    xmlFilename="$data/placeables/lizard/greenhouses/lettuce/lettuce.xml" />
+            <plant fillType="STRAWBERRY" xmlFilename="$data/placeables/lizard/greenhouses/strawberry/strawberry.xml" />
+            <plant fillType="TOMATO"     xmlFilename="$data/placeables/lizard/greenhouses/tomatoes/tomatoes.xml" />
+        </plants>
+
+        <plantSpaces>
+            <spacesParent node="plantNodes" />
+        </plantSpaces>
+    </greenhouse>
+
+    <productionPoint>
+        <productions>
+            <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="1" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="LIME" amount="35" />
+					<input fillType="SEEDS" amount="200" />
+					<input fillType="FERTILIZER" amount="70" />
+					<input fillType="WOODCHIPS" amount="600" />
+					<input fillType="SILAGE" amount="1800" />
+                    <input fillType="EMPTYPALLET" amount="8" mix="boost" boostfactor="0.05"/>
+                </inputs>
+                <outputs>
+                    <output fillType="TOMATO" amount="3000" />
+                </outputs>
+            </production>
+            <production id="lettuce" name="$l10n_fillType_lettuce" cyclesPerHour="1" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="LIME" amount="35" />
+					<input fillType="SEEDS" amount="200" />
+					<input fillType="FERTILIZER" amount="70" />
+					<input fillType="WOODCHIPS" amount="600" />
+					<input fillType="SILAGE" amount="1800" />
+                    <input fillType="EMPTYPALLET" amount="8" mix="boost" boostfactor="0.05"/>
+                </inputs>
+                <outputs>
+                    <output fillType="LETTUCE" amount="1500" />
+                </outputs>
+            </production>
+            <production id="strawberry" name="$l10n_fillType_strawberry" cyclesPerHour="1" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="LIME" amount="35" />
+					<input fillType="SEEDS" amount="200" />
+					<input fillType="FERTILIZER" amount="70" />
+					<input fillType="WOODCHIPS" amount="600" />
+					<input fillType="SILAGE" amount="1800" />
+                    <input fillType="EMPTYPALLET" amount="8" mix="boost" boostfactor="0.05"/>
+                </inputs>
+                <outputs>
+                    <output fillType="STRAWBERRY" amount="6000" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="LIME EMPTYPALLET" aiNode="unloadTriggerAINode" />
+			<unloadTrigger exactFillRootNode="unloadTrigger1" fillTypes="SEEDS EMPTYPALLET" aiNode="unloadTriggerAINode1" />
+			<unloadTrigger exactFillRootNode="unloadTrigger2" fillTypes="FERTILIZER EMPTYPALLET" aiNode="unloadTriggerAINode2" />
+			<unloadTrigger exactFillRootNode="unloadTrigger3" fillTypes="WOODCHIPS EMPTYPALLET" aiNode="unloadTriggerAINode3" />
+			<unloadTrigger exactFillRootNode="unloadTrigger4" fillTypes="SILAGE EMPTYPALLET" aiNode="unloadTriggerAINode4" />
+			<unloadTrigger fillTypes="SILAGE">
+				<baleTrigger triggerNode="baleTriggerBunker" />
+			</unloadTrigger>
+        </sellingStation>
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnPlace1Start" />
+				<spawnPlace startNode="spawnPlace1Start1" />
+				<spawnPlace startNode="spawnPlace1Start2" />
+				<spawnPlace startNode="spawnPlace1Start3" />
+				<spawnPlace startNode="spawnPlace1Start4" />
+				<spawnPlace startNode="spawnPlace1Start5" />
+				<spawnPlace startNode="spawnPlace1Start6" />
+				<spawnPlace startNode="spawnPlace1Start7" />
+            </spawnPlaces>
+        </palletSpawner>
+
+		<storage node="storage" isExtension="false" fillLevelSyncThreshold="50" fillTypes="TOMATO LETTUCE STRAWBERRY LIME SEEDS FERTILIZER SILAGE WOODCHIPS EMPTYPALLET" >
+			<capacity fillType="TOMATO"      		capacity="100000" />
+			<capacity fillType="LETTUCE"      		capacity="100000" />
+			<capacity fillType="STRAWBERRY"      	capacity="100000" />
+			<capacity fillType="LIME"      			capacity="10000" />
+            <capacity fillType="EMPTYPALLET"      			capacity="10000" />
+			<capacity fillType="SEEDS"      		capacity="60000" />
+			<capacity fillType="FERTILIZER"     	capacity="20000" />
+			<capacity fillType="SILAGE" 			capacity="170000"/>
+			<capacity fillType="WOODCHIPS"      	capacity="170000" />
+			<fillPlane fillType="SILAGE" node="bunkerFillVolume1" minY="-1" maxY="0" />
+			<fillPlane fillType="WOODCHIPS" node="bunkerFillVolume2" minY="-1" maxY="0" />
+        </storage>
+		
+        <playerTrigger node="playerTrigger" />
+    </productionPoint>
+
+    <animatedObjects>
+        <animatedObject saveId="door1" >
+            <animation duration="3">
+                <part node="door1Left">
+                    <keyFrame time="0.0" translation="0 0 0"/>
+                    <keyFrame time="1.0" translation="2 0 0"/>
+                </part>
+                <part node="door1Right">
+                    <keyFrame time="0.0" translation="-1.857 0 0.097"/>
+                    <keyFrame time="1.0" translation="2 0 0.097"/>
+                </part>
+            </animation>
+            <controls triggerNode="door1Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door1" template="glassDoorLoop"/>
+                <negEnd linkNode="door1" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+        <animatedObject saveId="door2" >
+            <animation duration="3">
+                <part node="door2">
+                    <keyFrame time="0.0" rotation="0 0 0"/>
+                    <keyFrame time="1.0" rotation="0 -100 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="door2Trigger" posAction="ACTIVATE_HANDTOOL" posText="action_openDoor" negText="action_closeDoor" />
+            <sounds>
+                <moving linkNode="door2" template="glassDoorLoop"/>
+                <negEnd linkNode="door2" template="metalDoorsClose" />
+            </sounds>
+        </animatedObject>
+    </animatedObjects>
+
+    <i3dMappings>
+        <i3dMapping id="plantNodes" node="0>0|1" />
+		<i3dMapping id="effectNodes" node="0>0|2" />
+        <i3dMapping id="sellingStation" node="0>0|3" />
+        <i3dMapping id="unloadTrigger" node="0>0|3|0" />
+		<i3dMapping id="unloadTrigger1" node="0>0|3|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|3|2" />
+        <i3dMapping id="unloadTriggerAINode" node="0>0|3|3" />
+		<i3dMapping id="unloadTriggerAINode1" node="0>0|3|4" />
+		<i3dMapping id="unloadTrigger2" node="0>0|3|5" />
+		<i3dMapping id="unloadTriggerAINode2" node="0>0|3|6" />
+		<i3dMapping id="unloadTriggerAINode3" node="0>0|3|9" />
+		<i3dMapping id="unloadTriggerAINode4" node="0>0|3|10" />
+		<i3dMapping id="unloadTrigger3" node="0>0|3|7" />
+		<i3dMapping id="unloadTrigger4" node="0>0|3|8" />
+        <i3dMapping id="storage" node="0>0|4" />
+        <i3dMapping id="playerTrigger" node="0>0|5" />
+        <i3dMapping id="playerTriggerMarker" node="0>0|6" />
+        <i3dMapping id="palletSpawner" node="0>0|7" />
+        <i3dMapping id="spawnPlace1Start" node="0>0|7|0" />
+        <i3dMapping id="spawnPlace1End" node="0>0|7|0|0" />
+		<i3dMapping id="spawnPlace1Start1" node="0>0|7|1" />
+        <i3dMapping id="spawnPlace1End1" node="0>0|7|1|0" />
+		<i3dMapping id="spawnPlace1Start2" node="0>0|7|2" />
+        <i3dMapping id="spawnPlace1End2" node="0>0|7|2|0" />
+		<i3dMapping id="spawnPlace1Start3" node="0>0|7|3" />
+        <i3dMapping id="spawnPlace1End3" node="0>0|7|3|0" />
+		<i3dMapping id="spawnPlace1Start4" node="0>0|7|4" />
+        <i3dMapping id="spawnPlace1End4" node="0>0|7|4|0" />
+		<i3dMapping id="spawnPlace1Start5" node="0>0|7|5" />
+        <i3dMapping id="spawnPlace1End5" node="0>0|7|5|0" />
+		<i3dMapping id="spawnPlace1Start6" node="0>0|7|6" />
+        <i3dMapping id="spawnPlace1End6" node="0>0|7|6|0" />
+		<i3dMapping id="spawnPlace1Start7" node="0>0|7|7" />
+        <i3dMapping id="spawnPlace1End7" node="0>0|7|7|0" />
+        <i3dMapping id="door1" node="0>1|0" />
+        <i3dMapping id="door1Left" node="0>1|0|0" />
+        <i3dMapping id="door1Right" node="0>1|0|1" />
+        <i3dMapping id="door1Trigger" node="0>1|0|2" />
+        <i3dMapping id="door2" node="0>1|1" />
+        <i3dMapping id="door2" node="0>1|1|0" />
+        <i3dMapping id="door2Trigger" node="0>1|1|1" />
+        <i3dMapping id="clearArea1Start" node="0>2|0" />
+        <i3dMapping id="clearArea1Width" node="0>2|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>3|0" />
+        <i3dMapping id="levelArea1Width" node="0>3|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>3|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>4|0" />
+        <i3dMapping id="indoorArea1Width" node="0>4|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>4|0|1" />
+        <i3dMapping id="testArea1Start" node="0>5|0" />
+        <i3dMapping id="testArea1End" node="0>5|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0" />
+        <i3dMapping id="infoTrigger" node="0>7" />
+        <i3dMapping id="warningStripes" node="0>8" />
+        <i3dMapping id="teleportNode" node="0>11" />
+		<i3dMapping id="baleTriggerBunker" node="0>0|3|11" />
+		<i3dMapping id="bunkerFillVolume1" node="0>0|4|0" />
+		<i3dMapping id="bunkerFillVolume2" node="0>0|4|1" />
+    </i3dMappings>
+</placeable>

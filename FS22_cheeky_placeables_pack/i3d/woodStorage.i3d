@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="woodStorage.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="13" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="15" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="10" filename="$data/maps/trees/spruce/spruceTrunk_diffuse.dds"/>
+    <File fileId="11" filename="$data/maps/trees/spruce/spruceTrunk_normal.dds"/>
+    <File fileId="1" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_diffuse.dds"/>
+    <File fileId="2" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_normal.dds"/>
+    <File fileId="3" filename="$data/placeables/lizard/bunkerSilo/bunkerSilo_specular.dds"/>
+    <File fileId="6" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="bunkerSilo_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="6" shadingRate="4x2">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+    </Material>
+    <Material name="shader" materialId="7" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0" customShaderId="6" customShaderVariation="colorMask">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="8" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="9">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="woodStorage.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="woodStorage" nodeId="21">
+        <TransformGroup name="visuals" rotation="0 90 0" nodeId="22">
+          <TransformGroup name="wall" translation="13.5048 -9.57718e-09 8.96942" rotation="3.76281e-06 90 3.76193e-06" nodeId="23">
+            <TransformGroup name="wall_small_all" translation="13.6294 0 1.17442" nodeId="34">
+              <TransformGroup name="wall_small_leftOpen" translation="0 0 0.5" nodeId="35">
+                <Shape shapeId="1" name="concrete_wall_small_leftOpen" static="true" clipDistance="350" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="metal_small_leftOpen" static="true" clipDistance="350" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_rightOpen" translation="0 0 -1.5" nodeId="38">
+                <Shape shapeId="3" name="concrete_wall_small_rightOpen" static="true" clipDistance="350" nodeId="39" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="metal_small_rightOpen" static="true" clipDistance="350" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesOpen" translation="0 0 -0.5" nodeId="41">
+                <Shape shapeId="5" name="concrete_wall_small_sidesOpen" static="true" clipDistance="350" nodeId="42" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="metal_small_sidesOpen" static="true" clipDistance="350" nodeId="43" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="wall_small_all" translation="13.6294 0 -5.5" nodeId="44">
+              <TransformGroup name="wall_small_leftOpen" translation="0 0 0.5" nodeId="45">
+                <Shape shapeId="1" name="concrete_wall_small_leftOpen" static="true" clipDistance="350" nodeId="46" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="metal_small_leftOpen" static="true" clipDistance="350" nodeId="47" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_rightOpen" translation="0 0 -1.5" nodeId="48">
+                <Shape shapeId="3" name="concrete_wall_small_rightOpen" static="true" clipDistance="350" nodeId="49" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="metal_small_rightOpen" static="true" clipDistance="350" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesOpen" translation="0 0 -0.5" nodeId="51">
+                <Shape shapeId="5" name="concrete_wall_small_sidesOpen" static="true" clipDistance="350" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="metal_small_sidesOpen" static="true" clipDistance="350" nodeId="53" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="woodSpawner" translation="0 -0.0299942 0" nodeId="64">
+              <TransformGroup name="woodPlace1Start" translation="15.5084 2.5 1.5" rotation="180 0 180" nodeId="65">
+                <TransformGroup name="spawnPlace1End" translation="-6.82121e-15 0.5 -15.374" nodeId="66"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="wall2" translation="13.5048 -9.57718e-09 8.96942" rotation="8.76103e-10 90 0" nodeId="67">
+            <TransformGroup name="wall_small_all" translation="11.589 -3.38269e-08 1.10206" rotation="-180 90 180" nodeId="68">
+              <TransformGroup name="wall_small_leftOpen" translation="0 0 0.5" nodeId="69">
+                <Shape shapeId="1" name="concrete_wall_small_leftOpen" static="true" clipDistance="350" nodeId="70" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="metal_small_leftOpen" static="true" clipDistance="350" nodeId="71" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_rightOpen" translation="0 0 -1.5" nodeId="72">
+                <Shape shapeId="3" name="concrete_wall_small_rightOpen" static="true" clipDistance="350" nodeId="73" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="metal_small_rightOpen" static="true" clipDistance="350" nodeId="74" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesOpen" translation="0 0 -0.5" nodeId="75">
+                <Shape shapeId="5" name="concrete_wall_small_sidesOpen" static="true" clipDistance="350" nodeId="76" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="metal_small_sidesOpen" static="true" clipDistance="350" nodeId="77" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="wall_small_all" translation="8.348 -5.12615e-08 1.102" rotation="3.64247e-06 90 0" nodeId="78">
+              <TransformGroup name="wall_small_leftOpen" translation="0 0 0.5" nodeId="79">
+                <Shape shapeId="1" name="concrete_wall_small_leftOpen" static="true" clipDistance="350" nodeId="80" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="metal_small_leftOpen" static="true" clipDistance="350" nodeId="81" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_rightOpen" translation="0 0 -1.5" nodeId="82">
+                <Shape shapeId="3" name="concrete_wall_small_rightOpen" static="true" clipDistance="350" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="metal_small_rightOpen" static="true" clipDistance="350" nodeId="84" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesOpen" translation="0 0 -0.5" nodeId="85">
+                <Shape shapeId="5" name="concrete_wall_small_sidesOpen" static="true" clipDistance="350" nodeId="86" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="metal_small_sidesOpen" static="true" clipDistance="350" nodeId="87" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="wall_small_all" translation="11.589 -1.45383e-08 -23.166" rotation="-180 90 180" nodeId="88">
+              <TransformGroup name="wall_small_leftOpen" translation="0 0 0.5" nodeId="89">
+                <Shape shapeId="1" name="concrete_wall_small_leftOpen" static="true" clipDistance="350" nodeId="90" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="metal_small_leftOpen" static="true" clipDistance="350" nodeId="91" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_rightOpen" translation="0 0 -1.5" nodeId="92">
+                <Shape shapeId="3" name="concrete_wall_small_rightOpen" static="true" clipDistance="350" nodeId="93" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="metal_small_rightOpen" static="true" clipDistance="350" nodeId="94" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesOpen" translation="0 0 -0.5" nodeId="95">
+                <Shape shapeId="5" name="concrete_wall_small_sidesOpen" static="true" clipDistance="350" nodeId="96" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="metal_small_sidesOpen" static="true" clipDistance="350" nodeId="97" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="wall_small_all" translation="8.348 -1.45383e-08 -23.166" rotation="-180 90 180" nodeId="98">
+              <TransformGroup name="wall_small_leftOpen" translation="0 0 0.5" nodeId="99">
+                <Shape shapeId="1" name="concrete_wall_small_leftOpen" static="true" clipDistance="350" nodeId="100" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="2" name="metal_small_leftOpen" static="true" clipDistance="350" nodeId="101" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_rightOpen" translation="0 0 -1.5" nodeId="102">
+                <Shape shapeId="3" name="concrete_wall_small_rightOpen" static="true" clipDistance="350" nodeId="103" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="4" name="metal_small_rightOpen" static="true" clipDistance="350" nodeId="104" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="wall_small_sidesOpen" translation="0 0 -0.5" nodeId="105">
+                <Shape shapeId="5" name="concrete_wall_small_sidesOpen" static="true" clipDistance="350" nodeId="106" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="6" name="metal_small_sidesOpen" static="true" clipDistance="350" nodeId="107" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="woodplane" rotation="-0 -90 0" nodeId="108">
+            <TransformGroup name="row1" rotation="-0 90 0" nodeId="109">
+              <Shape shapeId="7" name="Stamm" translation="-9.13 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="110" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-8.3 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="111" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-7.47 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="112" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-6.64 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="113" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-5.81 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="114" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.98 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="115" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.15 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="116" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-3.32 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="117" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-2.49 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="118" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-1.66 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="119" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-0.83 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="120" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="121" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0.83 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="122" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="1.66 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="123" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="2.49 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="124" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="3.32 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="125" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.15 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="126" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.98 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="127" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="5.81 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="128" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="6.64 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="129" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="7.47 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="130" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="8.3 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="131" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.13 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="132" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.96 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="133" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="10.79 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="134" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="11.62 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="135" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="12.45 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="136" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="13.28 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="137" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="14.11 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="138" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="row1" translation="-3.52264e-08 0.68 0.415" rotation="0 90 0" nodeId="139">
+              <Shape shapeId="7" name="Stamm" translation="-8.3 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="140" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-7.47 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="141" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-6.64 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="142" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-5.81 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="143" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.98 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="144" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.15 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="145" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-3.32 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="146" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-2.49 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="147" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-1.66 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="148" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-0.83 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="149" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="150" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0.83 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="151" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="1.66 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="152" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="2.49 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="153" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="3.32 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="154" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.15 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="155" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.98 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="156" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="5.81 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="157" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="6.64 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="158" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="7.47 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="159" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="8.3 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="160" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.13 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="161" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.96 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="162" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="10.79 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="163" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="11.62 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="164" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="12.45 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="165" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="13.28 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="166" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="14.11 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="167" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="row1" translation="-3.52264e-08 1.36 0.83" rotation="-0 90 0" nodeId="168">
+              <Shape shapeId="7" name="Stamm" translation="-7.47 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="169" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-6.64 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="170" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-5.81 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="171" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.98 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="172" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.15 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="173" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-3.32 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="174" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-2.49 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="175" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-1.66 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="176" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-0.83 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="177" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="178" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0.83 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="179" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="1.66 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="180" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="2.49 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="181" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="3.32 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="182" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.15 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="183" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.98 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="184" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="5.81 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="185" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="6.64 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="186" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="7.47 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="187" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="8.3 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="188" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.13 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="189" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.96 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="190" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="10.79 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="191" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="11.62 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="192" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="12.45 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="193" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="13.28 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="194" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="14.11 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="195" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="row1" translation="-3.52264e-08 2.04 1.245" rotation="-0 90 0" nodeId="196">
+              <Shape shapeId="7" name="Stamm" translation="-6.64 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="197" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-5.81 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="198" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.98 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="199" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.15 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="200" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-3.32 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="201" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-2.49 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="202" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-1.66 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="203" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-0.83 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="204" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="205" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0.83 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="206" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="1.66 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="207" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="2.49 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="208" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="3.32 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="209" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.15 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="210" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.98 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="211" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="5.81 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="212" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="6.64 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="213" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="7.47 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="214" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="8.3 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="215" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.13 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="216" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.96 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="217" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="10.79 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="218" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="11.62 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="219" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="12.45 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="220" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="13.28 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="221" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="14.11 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="222" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="row1" translation="-3.52264e-08 2.72 1.66" rotation="-0 90 0" nodeId="223">
+              <Shape shapeId="7" name="Stamm" translation="-5.81 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="224" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.98 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="225" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-4.15 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="226" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-3.32 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="227" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-2.49 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="228" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-1.66 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="229" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="-0.83 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="230" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0 0.4 -1" rotation="90 -0 180" scale="0.4 0.5 0.4" static="true" nodeId="231" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="0.83 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="232" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="1.66 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="233" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="2.49 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="234" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="3.32 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="235" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.15 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="236" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="4.98 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="237" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="5.81 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="238" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="6.64 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="239" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="7.47 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="240" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="8.3 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="241" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.13 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="242" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="9.96 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="243" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="10.79 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="244" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="11.62 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="245" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="12.45 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="246" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="13.28 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="247" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="Stamm" translation="14.11 0.4 -1" rotation="90 0 180" scale="0.4 0.5 0.4" static="true" nodeId="248" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="8" name="plane" translation="2.57894 0 -3.989" scale="26.4341 5.45872 13.9687" visibility="false" nodeId="249" materialIds="8" distanceBlending="false"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" translation="-25 0 -35" nodeId="250">
+          <TransformGroup name="clearArea1Start" translation="11.243 0 17.529" nodeId="251">
+            <TransformGroup name="clearArea1Width" translation="17.065 0 0" nodeId="252"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 28.92" nodeId="253"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" translation="-25 0 -35" nodeId="254">
+          <TransformGroup name="levelArea1Start" translation="11.243 0 17.529" nodeId="255">
+            <TransformGroup name="levelArea1Width" translation="17.065 0 0" nodeId="256"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 28.92" nodeId="257"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="palletSpawner" translation="-8 0 -6.83503" rotation="0 90 0" nodeId="258">
+          <TransformGroup name="palletStripes" nodeId="259">
+            <Shape shapeId="9" name="warningStripesCorner" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="260" materialIds="9" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="9" name="warningStripesCorner" translation="1.96718e-07 0 3" rotation="0 90 0" clipDistance="200" nodeId="261" materialIds="9" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="9" name="warningStripesCorner" translation="9 7.51326e-06 3" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="262" materialIds="9" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="9" name="warningStripesCorner" translation="0 0 3" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="263" materialIds="9" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="palletSpawner" translation="0 0.3 1" nodeId="264">
+            <TransformGroup name="palletSpawnerRight1start" nodeId="265">
+              <TransformGroup name="palletSpawnerRight1end" translation="9 0 0" nodeId="266"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerLeft1start" translation="4.76995e-08 0 1" nodeId="267">
+              <TransformGroup name="palletSpawnerLeft1end" translation="9 0 0" nodeId="268"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="woodSpawner" translation="1 3 1.5" rotation="0 90 0" nodeId="269"/>
+        </TransformGroup>
+        <TransformGroup name="playerTrigger" nodeId="270">
+          <Shape shapeId="10" name="palletMenuTrigger" translation="-10.9032 1 -12.058" scale="4 2 4" static="true" trigger="true" collisionMask="1048576" nodeId="271" materialIds="8" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="10" name="infoTrigger" translation="-4.44069 1 -2.465" scale="15.3973 2 25.7562" static="true" trigger="true" collisionMask="1048576" nodeId="272" materialIds="8" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="triggerMarker" translation="-10.584 0 -11.7068" nodeId="273"/>
+          <Shape shapeId="10" name="woodSellTrigger" translation="-8.812 1 12.2332" scale="4 2 4" static="true" trigger="true" collisionMask="1048576" nodeId="274" materialIds="8" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="woodSellTriggerMarker" translation="-9.41623 0 12.5071" nodeId="275"/>
+        </TransformGroup>
+        <TransformGroup name="unloadingStation" translation="-8.01265 0 2.622" nodeId="276">
+          <Shape shapeId="10" name="exactFillRootNode" translation="0 -0.5 0" scale="6 1 16" static="true" trigger="true" collisionMask="1073741824" nodeId="277" materialIds="8" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="markerUnloading" nodeId="278"/>
+          <TransformGroup name="unloadingStripes" translation="0 0 8" rotation="0 90 0" nodeId="279">
+            <Shape shapeId="9" name="warningStripesCorner" translation="1.74846e-07 0 -3" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="280" materialIds="9" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="9" name="warningStripesCorner" translation="7.03351e-07 -4.4576e-13 6" rotation="0 90 0" clipDistance="200" nodeId="281" materialIds="9" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="9" name="warningStripesCorner" translation="16 5.64713e-06 3" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="282" materialIds="9" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="9" name="warningStripesCorner" translation="7.86805e-07 5.43934e-14 6" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="283" materialIds="9" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+          </TransformGroup>
+          <Shape shapeId="10" name="woodTrigger" translation="0 2 0" scale="6 4 16" static="true" trigger="true" collisionMask="16777216" nodeId="284" materialIds="8" nonRenderable="true" distanceBlending="false"/>
+        </TransformGroup>
+        <TransformGroup name="foliageAreas" nodeId="285"/>
+        <TransformGroup name="indoorAreas" translation="-25 0 -35" nodeId="286">
+          <TransformGroup name="indoorArea1Start" translation="11.243 0 17.529" nodeId="287">
+            <TransformGroup name="indoorArea1Width" translation="17.065 0 0" nodeId="288"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 28.92" nodeId="289"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="-25 0 -35" nodeId="290">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="11.243 0 17.529" nodeId="291">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="17.4064 0 28.2873" nodeId="292"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" translation="-25 0 -35" nodeId="293">
+          <TransformGroup name="testArea1Start" translation="11.243 0 17.529" nodeId="294">
+            <TransformGroup name="testArea1End" translation="12.7259 7 17.3858" nodeId="295"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Camera name="Camera" translation="-19.541 10.5711 3.95408" rotation="-26.4553 -29.8621 1.61517e-07" visibility="false" nodeId="296" fov="35" nearClip="0.1" farClip="100" orthographicHeight="1"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

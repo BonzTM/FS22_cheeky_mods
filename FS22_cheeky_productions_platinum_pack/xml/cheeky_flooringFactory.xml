@@ -2,7 +2,7 @@
 <placeable type="productionPoint">
     <parentFile xmlFilename="$pdlcdir/forestryPack/placeables/productionPoints/flooringFactory/flooringFactory.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/flooringFactory/flooringFactory.i3d"/>       
+            <set path="placeable.base.filename" value="$pdlcdir/forestryPack/placeables/productionPoints/flooringFactory/flooringFactory.i3d"/>
             <set path="placeable.storeData.image" value="$pdlcdir/forestryPack/placeables/productionPoints/flooringFactory/store_flooringFactory.png"/>
             <set path="placeable.storeData.name" value="Cheeky Flooring Factory"/>
             <set path="placeable.storeData.price" value="550000"/>
@@ -15,13 +15,17 @@
 
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
-            
+
             <!-- Floor Tiles Production 1 -->
             <set path="placeable.productionPoint.productions.production(0)#name" value="Floor Tiles"/>
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="12"/>
             <set path="placeable.productionPoint.productions.production(0)#costsPerActiveHour" value="18"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#fillType" value="PLANKS"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="88"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="4"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="FLOORTILES"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="145"/>
 
@@ -31,6 +35,10 @@
             <set path="placeable.productionPoint.productions.production(1)#costsPerActiveHour" value="35"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#fillType" value="BOARDS"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="140"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="5"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="FLOORTILES"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="140"/>
 
@@ -42,6 +50,10 @@
             <set path="placeable.productionPoint.storage.capacity(1)#capacity" value="150000"/>
             <set path="placeable.productionPoint.storage.capacity(2)#fillType" value="FLOORTILES"/>
             <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="10000"/>
+
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="PLANKS BOARDS EMPTYPALLET"/>
 
         </attributes>
     </parentFile>

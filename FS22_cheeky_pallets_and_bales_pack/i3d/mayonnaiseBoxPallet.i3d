@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="mayonnaiseBoxPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/objects/pallets/chocolateBoxPallet/chocolateBox_normal.png"/>
+    <File fileId="7" filename="$data/objects/pallets/chocolateBoxPallet/chocolateBox_specular.png"/>
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_normal.dds"/>
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_specular.dds"/>
+    <File fileId="5" filename="../textures/mayonnaiseBoxPallet/mayonnaiseBox_diffuse.dds"/>
+    <File fileId="2" filename="../textures/mayonnaiseBoxPallet/pallet_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="raisinBox_mat" materialId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="mayonnaiseBoxPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="mayonnaiseBoxPallet_component1" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="150" nodeId="16" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="pallet_vis" nodeId="17" materialIds="5" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="18" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" translation="0 0.75 0" nodeId="19"/>
+          <TransformGroup name="content" nodeId="20">
+            <Shape shapeId="4" name="mayonnaiseBox01" translation="-0.303998 0.145827 -0.197137" clipDistance="100" nodeId="21" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox01Tension" translation="-1.64761e-06 0.000172607 -0.00266033" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox02" translation="-0.302418 0.145827 0.204286" clipDistance="100" nodeId="23" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox02Tension" translation="-0.00158211 0.000172607 -0.00226686" nodeId="24" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox03" translation="0.297613 0.145033 -0.197137" clipDistance="100" nodeId="25" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox03Tension" translation="-0.000739592 0.000966713 -0.00266033" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox04" translation="0.299194 0.145033 0.204286" clipDistance="100" nodeId="27" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox04Tension" translation="-0.00232005 0.000966713 -0.00226686" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox05" translation="-0.303998 0.346826 -0.197137" rotation="0 180 0" clipDistance="100" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox05Tension" translation="1.64761e-06 -8.67861e-05 0.00266033" rotation="0 180 0" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox06" translation="-0.302418 0.346826 0.204286" rotation="0 180 0" clipDistance="100" nodeId="31" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox06Tension" translation="0.00158211 -8.67861e-05 0.00226686" rotation="0 180 0" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox07" translation="0.297613 0.346032 -0.197137" rotation="0 180 0" clipDistance="100" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox07Tension" translation="0.000739592 0.00070732 0.00266033" rotation="0 180 0" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox08" translation="0.299194 0.346032 0.204286" rotation="0 180 0" clipDistance="100" nodeId="35" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox08Tension" translation="0.00232005 0.00070732 0.00226686" rotation="0 180 0" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox09" translation="-0.303998 0.547071 -0.197137" clipDistance="100" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox09Tension" translation="-1.64761e-06 -0.000393256 -0.00266033" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox10" translation="-0.302418 0.547071 0.204286" clipDistance="100" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox10Tension" translation="-0.00158211 -0.000393256 -0.00226686" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox11" translation="0.297613 0.546277 -0.197137" clipDistance="100" nodeId="41" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox11Tension" translation="-0.000739592 0.00040085 -0.00266033" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="mayonnaiseBox12" translation="0.299194 0.546277 0.204286" clipDistance="100" nodeId="43" materialIds="7" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="mayonnaiseBox12Tension" translation="-0.00232005 0.00040085 -0.00226686" nodeId="44" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="45">
+            <Shape shapeId="6" name="floorCollision01" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="7" name="floorCollision02" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

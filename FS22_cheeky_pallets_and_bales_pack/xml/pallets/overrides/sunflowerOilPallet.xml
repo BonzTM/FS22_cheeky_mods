@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_sunflowerOilPallet</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>141312</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>23040</indexBufferMemoryUsage>
+        <textureMemoryUsage>1835008</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/sunflowerOilPallet/sunflowerOilPallet.i3d</filename>
+        <size width="1.4" length="1" height="0.5" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="SUNFLOWER_OIL" capacity="1000"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="pallet_vis">
+        <content>
+            <object node="sunflowerOil01" tensionBeltNode="sunflowerOil01Tension"/>
+            <object node="sunflowerOil02" tensionBeltNode="sunflowerOil02Tension"/>
+            <object node="sunflowerOil03" tensionBeltNode="sunflowerOil03Tension"/>
+            <object node="sunflowerOil04" tensionBeltNode="sunflowerOil04Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillOil" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.4" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="sunflowerOilPallet_component1" node="0>" />
+        <i3dMapping id="pallet_vis" node="0>0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1" />
+        <i3dMapping id="sunflowerOil01" node="0>0|2|0" />
+        <i3dMapping id="sunflowerOil01Tension" node="0>0|2|0|0" />
+        <i3dMapping id="sunflowerOil02" node="0>0|2|1" />
+        <i3dMapping id="sunflowerOil02Tension" node="0>0|2|1|0" />
+        <i3dMapping id="sunflowerOil03" node="0>0|2|2" />
+        <i3dMapping id="sunflowerOil03Tension" node="0>0|2|2|0" />
+        <i3dMapping id="sunflowerOil04" node="0>0|2|3" />
+        <i3dMapping id="sunflowerOil04Tension" node="0>0|2|3|0" />
+    </i3dMappings>
+</vehicle>

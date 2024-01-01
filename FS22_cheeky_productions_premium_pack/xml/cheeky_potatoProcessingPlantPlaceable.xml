@@ -2,7 +2,7 @@
 <placeable type="productionPoint">
     <parentFile xmlFilename="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/potatoProcessingPlantPlaceable.xml">
         <attributes>
-            <set path="placeable.base.filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/potatoProcessingPlantPlaceable.i3d"/>       
+            <set path="placeable.base.filename" value="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/potatoProcessingPlantPlaceable.i3d"/>
             <set path="placeable.storeData.image" value="$pdlcdir/premiumExpansion/placeables/productionPoints/potatoProcessingPlant/store_potatoProcessingPlantPlaceable.png"/>
             <set path="placeable.storeData.name" value="Cheeky Potato Processing Plant"/>
             <set path="placeable.storeData.price" value="600000"/>
@@ -10,7 +10,7 @@
 
             <!-- Shared Throughput -->
             <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
-            
+
             <!-- Potato Chips Production 1 -->
             <set path="placeable.productionPoint.productions.production(0)#name" value="Potato Chips"/>
             <set path="placeable.productionPoint.productions.production(0)#cyclesPerHour" value="20"/>
@@ -19,9 +19,13 @@
             <set path="placeable.productionPoint.productions.production(0).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#fillType" value="SUNFLOWER_OIL"/>
             <set path="placeable.productionPoint.productions.production(0).inputs.input(1)#amount" value="100"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#amount" value="9"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(0).inputs.input(2)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#fillType" value="POTATOCHIPS"/>
             <set path="placeable.productionPoint.productions.production(0).outputs.output(0)#amount" value="450"/>
-            
+
             <!-- Potato Chips Production 2 -->
             <set path="placeable.productionPoint.productions.production(1)#name" value="Potato Chips"/>
             <set path="placeable.productionPoint.productions.production(1)#cyclesPerHour" value="20"/>
@@ -30,9 +34,14 @@
             <set path="placeable.productionPoint.productions.production(1).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#fillType" value="CANOLA_OIL"/>
             <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="100"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(1)#amount" value="100"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#amount" value="9"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(1).inputs.input(2)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#fillType" value="POTATOCHIPS"/>
-            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="440"/>    
-                    
+            <set path="placeable.productionPoint.productions.production(1).outputs.output(0)#amount" value="440"/>
+
             <!-- Potato Chips Production 3 -->
             <set path="placeable.productionPoint.productions.production(2)#name" value="Potato Chips"/>
             <set path="placeable.productionPoint.productions.production(2)#cyclesPerHour" value="20"/>
@@ -41,8 +50,12 @@
             <set path="placeable.productionPoint.productions.production(2).inputs.input(0)#amount" value="1000"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#fillType" value="OLIVE_OIL"/>
             <set path="placeable.productionPoint.productions.production(2).inputs.input(1)#amount" value="80"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(2)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(2)#amount" value="7"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(2)#mix" value="boost"/>
+            <set path="placeable.productionPoint.productions.production(2).inputs.input(2)#boostfactor" value="0.05"/>
             <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#fillType" value="POTATOCHIPS"/>
-            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="475"/>   
+            <set path="placeable.productionPoint.productions.production(2).outputs.output(0)#amount" value="475"/>
 
             <!-- Capacity -->
             <set path="placeable.productionPoint.storage.capacity(0)#fillType" value="POTATO"/>
@@ -53,6 +66,12 @@
             <set path="placeable.productionPoint.storage.capacity(2)#capacity" value="240000"/>
             <set path="placeable.productionPoint.storage.capacity(3)#fillType" value="OLIVE_OIL"/>
             <set path="placeable.productionPoint.storage.capacity(3)#capacity" value="240000"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#fillType" value="POTATOCHIPS"/>
+            <set path="placeable.productionPoint.storage.capacity(4)#capacity" value="100000"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#fillType" value="EMPTYPALLET"/>
+            <set path="placeable.productionPoint.storage.capacity(5)#capacity" value="10000"/>
+
+            <set path="placeable.productionPoint.sellingStation.unloadTrigger(0)#fillTypes" value="POTATO SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL EMPTYPALLET"/>
 
         </attributes>
     </parentFile>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>Mayonnaise</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>40192</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>5632</indexBufferMemoryUsage>
+        <textureMemoryUsage>917504</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>i3d/mayonnaiseBoxPallet.i3d</filename>
+        <size width="1.4" length="1" height="0.8" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MAYONNAISE" capacity="1000"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="400" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="pallet_vis">
+        <content>
+            <object node="mayonnaiseBox01" tensionBeltNode="mayonnaiseBox01Tension"/>
+            <object node="mayonnaiseBox02" tensionBeltNode="mayonnaiseBox02Tension"/>
+            <object node="mayonnaiseBox03" tensionBeltNode="mayonnaiseBox03Tension"/>
+            <object node="mayonnaiseBox04" tensionBeltNode="mayonnaiseBox04Tension"/>
+            <object node="mayonnaiseBox05" tensionBeltNode="mayonnaiseBox05Tension"/>
+            <object node="mayonnaiseBox06" tensionBeltNode="mayonnaiseBox06Tension"/>
+            <object node="mayonnaiseBox07" tensionBeltNode="mayonnaiseBox07Tension"/>
+            <object node="mayonnaiseBox08" tensionBeltNode="mayonnaiseBox08Tension"/>
+            <object node="mayonnaiseBox09" tensionBeltNode="mayonnaiseBox09Tension"/>
+            <object node="mayonnaiseBox10" tensionBeltNode="mayonnaiseBox10Tension"/>
+            <object node="mayonnaiseBox11" tensionBeltNode="mayonnaiseBox11Tension"/>
+            <object node="mayonnaiseBox12" tensionBeltNode="mayonnaiseBox12Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPaper" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.75" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="mayonnaiseBoxPallet_component1" node="0>" />
+        <i3dMapping id="pallet_vis" node="0>0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1" />
+        <i3dMapping id="mayonnaiseBox01" node="0>0|2|0" />
+        <i3dMapping id="mayonnaiseBox01Tension" node="0>0|2|0|0" />
+        <i3dMapping id="mayonnaiseBox02" node="0>0|2|1" />
+        <i3dMapping id="mayonnaiseBox02Tension" node="0>0|2|1|0" />
+        <i3dMapping id="mayonnaiseBox03" node="0>0|2|2" />
+        <i3dMapping id="mayonnaiseBox03Tension" node="0>0|2|2|0" />
+        <i3dMapping id="mayonnaiseBox04" node="0>0|2|3" />
+        <i3dMapping id="mayonnaiseBox04Tension" node="0>0|2|3|0" />
+        <i3dMapping id="mayonnaiseBox05" node="0>0|2|4" />
+        <i3dMapping id="mayonnaiseBox05Tension" node="0>0|2|4|0" />
+        <i3dMapping id="mayonnaiseBox06" node="0>0|2|5" />
+        <i3dMapping id="mayonnaiseBox06Tension" node="0>0|2|5|0" />
+        <i3dMapping id="mayonnaiseBox07" node="0>0|2|6" />
+        <i3dMapping id="mayonnaiseBox07Tension" node="0>0|2|6|0" />
+        <i3dMapping id="mayonnaiseBox08" node="0>0|2|7" />
+        <i3dMapping id="mayonnaiseBox08Tension" node="0>0|2|7|0" />
+        <i3dMapping id="mayonnaiseBox09" node="0>0|2|8" />
+        <i3dMapping id="mayonnaiseBox09Tension" node="0>0|2|8|0" />
+        <i3dMapping id="mayonnaiseBox10" node="0>0|2|9" />
+        <i3dMapping id="mayonnaiseBox10Tension" node="0>0|2|9|0" />
+        <i3dMapping id="mayonnaiseBox11" node="0>0|2|10" />
+        <i3dMapping id="mayonnaiseBox11Tension" node="0>0|2|10|0" />
+        <i3dMapping id="mayonnaiseBox12" node="0>0|2|11" />
+        <i3dMapping id="mayonnaiseBox12Tension" node="0>0|2|11|0" />
+    </i3dMappings>
+</vehicle>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="greenhouse"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Cheeky Greenhouse (Large)</name>
         <functions>
@@ -35,7 +36,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
         </testAreas>
@@ -78,14 +79,14 @@
     <triggerMarkers>
         <triggerMarker node="warningStripes" />
         <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
-        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WATER"  adjustToGround="false" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WATER" adjustToGround="false" />
     </triggerMarkers>
 
     <greenhouse>
         <plants>
-            <plant fillType="LETTUCE"    xmlFilename="$data/placeables/lizard/greenhouses/lettuce/lettuce.xml" />
+            <plant fillType="LETTUCE" xmlFilename="$data/placeables/lizard/greenhouses/lettuce/lettuce.xml" />
             <plant fillType="STRAWBERRY" xmlFilename="$data/placeables/lizard/greenhouses/strawberry/strawberry.xml" />
-            <plant fillType="TOMATO"     xmlFilename="$data/placeables/lizard/greenhouses/tomatoes/tomatoes.xml" />
+            <plant fillType="TOMATO" xmlFilename="$data/placeables/lizard/greenhouses/tomatoes/tomatoes.xml" />
         </plants>
 
         <plantSpaces>
@@ -97,7 +98,7 @@
         </sounds>
 
         <!--<effectNodes>-->
-            <!--<effectNode effectNode="0>4|1" materialType="smoke" materialTypeId="1" fadeTime="0.5" />-->
+        <!--<effectNode effectNode="0>4|1" materialType="smoke" materialTypeId="1" fadeTime="0.5" />-->
         <!--</effectNodes>-->
     </greenhouse>
 
@@ -106,6 +107,7 @@
             <production id="tomato" name="$l10n_fillType_tomato" cyclesPerHour="8" costsPerActiveHour="20">
                 <inputs>
                     <input fillType="WATER" amount="80" />
+                    <input fillType="EMPTYPALLET" amount="1" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="TOMATO" amount="80" />
@@ -114,6 +116,7 @@
             <production id="lettuce" name="$l10n_fillType_lettuce" cyclesPerHour="8" costsPerActiveHour="20">
                 <inputs>
                     <input fillType="WATER" amount="80" />
+                    <input fillType="EMPTYPALLET" amount="1" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="LETTUCE" amount="40" />
@@ -122,6 +125,7 @@
             <production id="strawberry" name="$l10n_fillType_strawberry" cyclesPerHour="8" costsPerActiveHour="20">
                 <inputs>
                     <input fillType="WATER" amount="80" />
+                    <input fillType="EMPTYPALLET" amount="1" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="STRAWBERRY" amount="160" />
@@ -130,7 +134,7 @@
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
-            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WATER" aiNode="unloadTriggerAINode" />
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WATER EMPTYPALLET" aiNode="unloadTriggerAINode" />
         </sellingStation>
 
         <loadingStation fillTypes="WATER" supportsExtension="true" />
@@ -143,18 +147,19 @@
             </spawnPlaces>
         </palletSpawner>
 
-        <storage node="storage" isExtension="false" fillTypes="WATER" >
-            <capacity fillType="WATER"      capacity="200000" />
-            <capacity fillType="LETTUCE"    capacity="120000" />
-            <capacity fillType="TOMATO"     capacity="80000" />
+        <storage node="storage" isExtension="false" fillTypes="WATER">
+            <capacity fillType="WATER" capacity="200000" />
+            <capacity fillType="LETTUCE" capacity="120000" />
+            <capacity fillType="TOMATO" capacity="80000" />
             <capacity fillType="STRAWBERRY" capacity="240000" />
+            <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />
     </productionPoint>
 
     <animatedObjects>
-        <animatedObject saveId="door1" >
+        <animatedObject saveId="door1">
             <animation duration="3">
                 <part node="door1Left">
                     <keyFrame time="0.1" rotation="0 0 0"/>
@@ -171,7 +176,7 @@
                 <negEnd linkNode="door1" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door2" >
+        <animatedObject saveId="door2">
             <animation duration="3">
                 <part node="door2Left">
                     <keyFrame time="0.1" rotation="0 0 0"/>
@@ -188,7 +193,7 @@
                 <negEnd linkNode="door2" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door3" >
+        <animatedObject saveId="door3">
             <animation duration="3">
                 <part node="door3Left">
                     <keyFrame time="0.1" rotation="0 0 0"/>
@@ -205,7 +210,7 @@
                 <negEnd linkNode="door3" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door4" >
+        <animatedObject saveId="door4">
             <animation duration="3">
                 <part node="door4Left">
                     <keyFrame time="0.1" rotation="0 0 0"/>
@@ -222,7 +227,7 @@
                 <negEnd linkNode="door4" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door5" >
+        <animatedObject saveId="door5">
             <animation duration="3">
                 <part node="door5Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>
@@ -235,7 +240,7 @@
                 <negEnd linkNode="door5" template="metalDoorsClose" />
             </sounds>
         </animatedObject>
-        <animatedObject saveId="door6" >
+        <animatedObject saveId="door6">
             <animation duration="3">
                 <part node="door6Left">
                     <keyFrame time="0.0" rotation="0 0 0"/>

@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>
-            <en>Root Crop Storage</en>
+            <en>Cheeky Root Crop Storage</en>
         </name>
         <functions>
             <function>$l10n_function_rootStorage</function>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>$l10n_storeItem_bakeryBoxPallet</name>
+        <image>$data/store/store_empty.png</image>
+        <category>pallets</category>
+        <brand>LIZARD</brand>
+        <showInStore>false</showInStore>
+        <canBeSold>false</canBeSold>
+        <financeCategory>OTHER</financeCategory>
+        <vertexBufferMemoryUsage>91392</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18432</indexBufferMemoryUsage>
+        <textureMemoryUsage>1835008</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
+        <filename>$data/objects/pallets/bakeryBoxPallet/bakeryBoxPallet.i3d</filename>
+        <size width="1.4" length="1" height="1.1" />
+        <canBeReset>false</canBeReset>
+        <components>
+            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="30"/>
+        </components>
+        <showInVehicleMenu>false</showInVehicleMenu>
+        <mapHotspot available="false" />
+        <input allowed="false"/>
+    </base>
+
+    <fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration>
+                <fillUnits removeVehicleIfEmpty="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="BREAD" capacity="1000"/>
+                </fillUnits>
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+
+    <dischargeable requiresTipOcclusionArea="false">
+        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+    </dischargeable>
+
+    <pallet fillUnitIndex="1" node="pallet_vis">
+        <content>
+            <object node="bakeryBox01" tensionBeltNode="bakeryBox01Tension"/>
+            <object node="bakeryBox02" tensionBeltNode="bakeryBox02Tension"/>
+            <object node="bakeryBox03" tensionBeltNode="bakeryBox03Tension"/>
+            <object node="bakeryBox04" tensionBeltNode="bakeryBox04Tension"/>
+            <object node="bakeryBox05" tensionBeltNode="bakeryBox05Tension"/>
+            <object node="bakeryBox06" tensionBeltNode="bakeryBox06Tension"/>
+            <object node="bakeryBox07" tensionBeltNode="bakeryBox07Tension"/>
+            <object node="bakeryBox08" tensionBeltNode="bakeryBox08Tension"/>
+        </content>
+
+        <sounds>
+            <unload template="palletsFillPlastic" pitchScale="0.8" />
+        </sounds>
+    </pallet>
+
+    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="0.85" jointTransY="0.11" jointLimitToRotY="true"/>
+
+    <i3dMappings>
+        <i3dMapping id="bakeryBoxPallet_component1" node="0>" />
+        <i3dMapping id="pallet_vis" node="0>0" />
+        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
+        <i3dMapping id="dischargeNode" node="0>0|1" />
+        <i3dMapping id="bakeryBox01" node="0>0|2|0" />
+        <i3dMapping id="bakeryBox01Tension" node="0>0|2|0|0|0" />
+        <i3dMapping id="bakeryBox02" node="0>0|2|1" />
+        <i3dMapping id="bakeryBox02Tension" node="0>0|2|1|0|0" />
+        <i3dMapping id="bakeryBox03" node="0>0|2|2" />
+        <i3dMapping id="bakeryBox03Tension" node="0>0|2|2|0|0" />
+        <i3dMapping id="bakeryBox04" node="0>0|2|3" />
+        <i3dMapping id="bakeryBox04Tension" node="0>0|2|3|0|0" />
+        <i3dMapping id="bakeryBox05" node="0>0|2|4" />
+        <i3dMapping id="bakeryBox05Tension" node="0>0|2|4|0|0" />
+        <i3dMapping id="bakeryBox06" node="0>0|2|5" />
+        <i3dMapping id="bakeryBox06Tension" node="0>0|2|5|0|0" />
+        <i3dMapping id="bakeryBox07" node="0>0|2|6" />
+        <i3dMapping id="bakeryBox07Tension" node="0>0|2|6|0|0" />
+        <i3dMapping id="bakeryBox08" node="0>0|2|7" />
+        <i3dMapping id="bakeryBox08Tension" node="0>0|2|7|0|0" />
+    </i3dMappings>
+</vehicle>

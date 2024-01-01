@@ -42,7 +42,7 @@
     </fillUnit>
 
     <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
+        <dischargeNode node="dischargeNode" emptySpeed="500" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
     </dischargeable>
 
     <pallet fillUnitIndex="1" node="pallet_vis">
