@@ -1,8 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <universalAutoLoad>
     <containerConfigurations>
-        <!-- Cheeky custom pallets -->
+        <!-- Cheeky Base custom pallets -->
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:lettuceBoxPallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:tomatoesBoxPallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:strawberriesBoxPallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:butterBoxPallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:chocolateBoxPallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:furnitureStackPallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:grapeJuicePallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:raisinBoxPallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:grapePallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:euroPallet" sizeY="0.200"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:oliveOilPallet" sizeY="0.450"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:canolaOilPallet" sizeY="0.450"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:sunflowerOilPallet" sizeY="0.450"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:bonsilagePallet" sizeY="0.450"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:cakePallet" sizeY="0.475"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:eggBoxPallet" sizeY="0.550"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:fabricsPallet" sizeY="0.600"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:honeyBoxPallet" sizeY="0.650"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:boardsStackPallet" sizeY="0.666"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:fillablePallet" sizeY="0.800"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:bakeryBoxPallet" sizeY="0.920"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:cheesePallet" sizeY="1.000"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:clothesBoxPallet" sizeY="1.000"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:cerealsPallet" sizeY="1.100"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:flourBoxPallet" sizeY="1.125"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:sugarBoxPallet" sizeY="1.125"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:woolPallet" sizeY="1.250"/>
+        <!-- Cheeky Custom Pallets -->
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:beetJuicePallet"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:carrotJuicePallet"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:tomatoJuicePallet"/>
