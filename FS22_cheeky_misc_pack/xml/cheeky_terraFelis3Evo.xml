@@ -17,7 +17,7 @@
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>HOLMER</brand>
-        <category>vegetable technology</category>
+        <category>vegetableVehicles</category>
         <shopLoadingDelay initial="0.4"/>
         <shopTranslationOffset>0 -0.05 0</shopTranslationOffset>
         <shopRotationOffset>-0.938 0 0</shopRotationOffset>

@@ -16,7 +16,7 @@ function addConstructionCategory:addOwnCategory()
 		-- g_storeManager:addConstructionTab("Cheeky", "siloExtensions", "Silo Extensions", "$dataS/menu/construction/ui_construction_icons.png", GuiUtils.getUVs("200px 0px 32px 32px",string.getVectorN("256 256", 2)), "")
         g_storeManager:addConstructionTab("Cheeky", "storages", "Storages", "$dataS/menu/construction/ui_construction_icons.dds", GuiUtils.getUVs("80px 0 32px 32px",string.getVectorN("256 256", 2)), "")
 		g_storeManager:addConstructionTab("Cheeky", "greenhouses", "Greenhouses", "$dataS/menu/construction/ui_construction_icons.dds", GuiUtils.getUVs("40px 120px 32px 32px",string.getVectorN("256 256", 2)), "")
-		-- g_storeManager:addConstructionTab("Cheeky", "containers", "Containers", "$dataS/menu/construction/ui_construction_icons.dds", GuiUtils.getUVs("120px 0 32px 32px",string.getVectorN("256 256", 2)), "")
+		g_storeManager:addConstructionTab("Cheeky", "containers", "Containers", "$dataS/menu/construction/ui_construction_icons.dds", GuiUtils.getUVs("120px 0 32px 32px",string.getVectorN("256 256", 2)), "")
 		
 end
 --Commitment

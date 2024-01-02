@@ -17,7 +17,7 @@
         <lifetime>600</lifetime>
         <rotation>0</rotation>
         <brand>ROPA</brand>
-        <category>vegetable technology</category>
+        <category>vegetableVehicles</category>
         <shopTranslationOffset>0 0.004 0</shopTranslationOffset>
         <vertexBufferMemoryUsage>10286592</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>2105600</indexBufferMemoryUsage>

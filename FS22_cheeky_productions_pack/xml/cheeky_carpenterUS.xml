@@ -160,8 +160,8 @@
         </loadingStation>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WOOD BOARDS EMPTYPALLET" />
-            <unloadTrigger fillTypes="WOOD BOARDS EMPTYPALLET">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WOOD BOARDS WOODCHIPS EMPTYPALLET" />
+            <unloadTrigger fillTypes="WOOD BOARDS WOODCHIPS EMPTYPALLET">
                 <woodTrigger triggerNode="woodTrigger" activationTriggerNode="woodActivationTrigger" />
             </unloadTrigger>
         </sellingStation>

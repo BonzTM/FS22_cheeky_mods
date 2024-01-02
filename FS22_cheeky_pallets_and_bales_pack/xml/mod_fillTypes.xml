@@ -56,10 +56,10 @@
             <pallet filename="$data/objects/pallets/woolPallet/woolPallet.xml"/>
         </fillType>
         <fillType name="MILK" title="$l10n_fillType_milk">
-            <pallet filename="xml/pallets/milkTank.xml"/>
+            <pallet filename="xml/pallets/custom/milkTank.xml"/>
         </fillType>
         <fillType name="WATER" title="$l10n_fillType_water">
-            <pallet filename="xml/pallets/liquidTank.xml"/>
+            <pallet filename="xml/pallets/custom/liquidTank.xml"/>
         </fillType>
         <fillType name="FORAGE" title="$l10n_fillType_forage">
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
@@ -84,7 +84,7 @@
         <fillType name="POPLAR" title="$l10n_fillType_poplar">
         </fillType>
         <fillType name="WOOD" title="$l10n_fillType_wood">
-            <pallet filename="xml/pallets/woodPallet.xml"/>
+            <pallet filename="xml/pallets/custom/woodPallet.xml"/>
         </fillType>
         <fillType name="GRASS_WINDROW" title="$l10n_fillType_grass">
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
@@ -96,80 +96,80 @@
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
         </fillType>
         <fillType name="DIESEL" title="$l10n_fillType_diesel">
-            <pallet filename="xml/pallets/liquidTank.xml"/>
+            <pallet filename="xml/pallets/custom/liquidTank.xml"/>
         </fillType>
         <fillType name="DEF" title="$l10n_fillType_def">
-            <pallet filename="xml/pallets/liquidTank.xml"/>
+            <pallet filename="xml/pallets/custom/liquidTank.xml"/>
         </fillType>
         <fillType name="SNOW" title="$l10n_fillType_snow">
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
         </fillType>
         <!-- __________________ DLC Pallet Overrides start __________________ -->
         <fillType name="ARMOIRE" title="Armoire">
-            <pallet filename="xml/pallets/overrides/platinum/armoirePallet/armoirePallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/armoirePallet.xml" />
         </fillType>
         <fillType name="BARREL" title="Barrel">
-            <pallet filename="xml/pallets/overrides/platinum/barrelPallet/barrelPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/barrelPallet.xml" />
         </fillType>
         <fillType name="BATHTUB" title="Bathtub">
-            <pallet filename="xml/pallets/overrides/platinum/bathtubPallet/bathtubPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/bathtubPallet.xml" />
         </fillType>
         <fillType name="BIRDHOUSE" title="Bird House">
-            <pallet filename="xml/pallets/overrides/platinum/birdHousePallet/birdHousePallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/birdHousePallet.xml" />
         </fillType>
         <fillType name="BOWL" title="Bowl">
-            <pallet filename="xml/pallets/overrides/platinum/bowlsPallet/bowlsPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/bowlsPallet.xml" />
         </fillType>
         <fillType name="BUCKET" title="Bucket">
-            <pallet filename="xml/pallets/overrides/platinum/bucketPallet/bucketPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/bucketPallet.xml" />
         </fillType>
         <fillType name="CARTONROLL" title="Carton Roll">
-            <pallet filename="xml/pallets/overrides/platinum/cartonRollPallet/cartonRollPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/cartonRollPallet.xml" />
         </fillType>
         <fillType name="CATTREE" title="Cat Tree">
-            <pallet filename="xml/pallets/overrides/platinum/catTreePallet/catTreePallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/catTreePallet.xml" />
         </fillType>
         <fillType name="CHAIR" title="Chair">
-            <pallet filename="xml/pallets/overrides/platinum/chairPallet/chairPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/chairPallet.xml" />
         </fillType>
         <fillType name="DOGHOUSE" title="Dog House">
-            <pallet filename="xml/pallets/overrides/platinum/dogHousePallet/dogHousePallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/dogHousePallet.xml" />
         </fillType>
         <fillType name="EASEL" title="Easel">
-            <pallet filename="xml/pallets/overrides/platinum/easelPallet/easelPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/easelPallet.xml" />
         </fillType>
         <fillType name="FLOORTILES" title="Floor Tiles">
-            <pallet filename="xml/pallets/overrides/platinum/floorTilesPallet/floorTilesPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/floorTilesPallet.xml" />
         </fillType>
         <fillType name="METAL" title="Metal">
-            <pallet filename="xml/pallets/overrides/platinum/metalPallet/metalPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/metalPallet.xml" />
         </fillType>
         <fillType name="PAPERROLL" title="Paper Roll">
-            <pallet filename="xml/pallets/overrides/platinum/paperRollPallet/paperRollPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/paperRollPallet.xml" />
         </fillType>
         <fillType name="PEPPERGRINDER" title="Pepper Grinder">
-            <pallet filename="xml/pallets/overrides/platinum/pepperGrinderPallet/pepperGrinderPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/pepperGrinderPallet.xml" />
         </fillType>
         <fillType name="PICTUREFRAME" title="Picture Frame">
-            <pallet filename="xml/pallets/overrides/platinum/pictureFramePallet/pictureFramePallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/pictureFramePallet.xml" />
         </fillType>
         <fillType name="PLANKS" title="Planks Long">
-            <pallet filename="xml/pallets/overrides/platinum/planksPallet/planksPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/planksPallet.xml" />
         </fillType>
         <fillType name="PREFABWALL" title="Prefab Wall">
-            <pallet filename="xml/pallets/overrides/platinum/prefabWallPallet/prefabWallPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/prefabWallPallet.xml" />
         </fillType>
         <fillType name="SHINGLE" title="Shingle">
-            <pallet filename="xml/pallets/overrides/platinum/shingleGenericPallet/shingleGenericPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/shingleGenericPallet.xml" />
         </fillType>
         <fillType name="STAIRCASERAILING" title="Staircase Railing">
-            <pallet filename="xml/pallets/overrides/platinum/staircaseRailingPallet/staircaseRailingPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/staircaseRailingPallet.xml" />
         </fillType>
         <fillType name="TABLE" title="Table">
-            <pallet filename="xml/pallets/overrides/platinum/tablePallet/tablePallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/tablePallet.xml" />
         </fillType>
         <fillType name="WOODBEAM" title="Wood Beam">
-            <pallet filename="xml/pallets/overrides/platinum/woodBeamPallet/woodBeamPallet.xml" />
+            <pallet filename="xml/pallets/overrides/platinum/woodBeamPallet.xml" />
         </fillType>
 
         <!-- __________________ Production Chains start __________________ -->
@@ -177,14 +177,79 @@
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
         </fillType>
         <fillType name="LIQUIDMANURE" title="$l10n_fillType_liquidManure">
-            <pallet filename="xml/pallets/liquidTank.xml"/>
+            <pallet filename="xml/pallets/custom/liquidTank.xml"/>
         </fillType>
         <fillType name="DIGESTATE" title="$l10n_fillType_digestate">
-            <pallet filename="xml/pallets/liquidTank.xml"/>
+            <pallet filename="xml/pallets/custom/liquidTank.xml"/>
         </fillType>
         <fillType name="STONE" title="$l10n_fillType_stone">
             <pallet filename="$data/objects/pallets/fillablePallet/fillablePallet.xml"/>
         </fillType>
+        <!-- To use Custom Pallet Types, uncomment these -->
+        <!-- Be sure to customize the price in the buyable pallets to match the changes -->
+        <!-- <fillType name="FLOUR" title="$l10n_fillType_flour" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/flourPallet/flourBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="BREAD" title="$l10n_fillType_bread" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/bakeryBoxPallet/bakeryBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="CAKE" title="$l10n_fillType_cake" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/cakePallet/cakePallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="BUTTER" title="$l10n_fillType_butter" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/butterBoxPallet/butterBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="CHEESE" title="$l10n_fillType_cheese" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/cheesePallet/cheesePallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="FABRIC" title="$l10n_fillType_fabric" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/fabricsPallet/fabricsPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="CLOTHES" title="$l10n_fillType_clothes" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/clothesBoxPallet/clothesBoxPallet.xml" />
+        </fillType> -->
+        <fillType name="SUGAR" title="$l10n_fillType_sugar" showOnPriceTable="true">
+            <pallet filename="xml/pallets/overrides/sugarBoxPallet.xml" />
+        </fillType>
+        <!-- <fillType name="HONEY" title="$l10n_fillType_honey" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/honeyBoxPallet/honeyBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="CEREAL" title="$l10n_fillType_cereal" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/cerealsPallet/cerealsPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="SUNFLOWER_OIL" title="$l10n_fillType_sunflowerOil" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/sunflowerOilPallet/sunflowerOilPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="CANOLA_OIL" title="$l10n_fillType_canolaOil" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/canolaOilPallet/canolaOilPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="OLIVE_OIL" title="$l10n_fillType_oliveOil" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/oliveOilPallet/oliveOilPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="RAISINS" title="$l10n_fillType_raisins" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/raisinBoxPallet/raisinBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="GRAPEJUICE" title="$l10n_fillType_grapeJuice" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/grapeJuicePallet/grapeJuicePallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="LETTUCE" title="$l10n_fillType_lettuce" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/lettuceBoxPallet/lettuceBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="TOMATO" title="$l10n_fillType_tomato" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/tomatoesBoxPallet/tomatoesBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="STRAWBERRY" title="$l10n_fillType_strawberry" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/strawberriesBoxPallet/strawberriesBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="CHOCOLATE" title="$l10n_fillType_chocolate" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/chocolateBoxPallet/chocolateBoxPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="BOARDS" title="$l10n_fillType_boards" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/boardsStackPallet/boardsStackPallet.xml" />
+        </fillType> -->
+        <!-- <fillType name="FURNITURE" title="$l10n_fillType_furniture" showOnPriceTable="true">
+            <pallet filename="$data/objects/pallets/furnitureStackPallet/furnitureStackPallet.xml" />
+        </fillType> -->
 
         <!-- __________________ Custom Fill Types start__________________ -->
         <fillType name="CARROTCAKE" title="Carrot Cake" showOnPriceTable="true">
@@ -206,7 +271,7 @@
                 </factors>
             </economy>
             <image      hud     ="$dataS/menu/hud/fillTypes/hud_fill_cake.png" />
-            <pallet filename="xml/pallets/carrotCakePallet.xml" />
+            <pallet filename="xml/pallets/custom/carrotCakePallet.xml" />
         </fillType>
 
         <fillType name="CARROTJUICE" title="Carrot Juice" showOnPriceTable="true">
@@ -228,7 +293,7 @@
                 </factors>
             </economy>
             <image      hud     ="textures/hud_fill_carrotjuice.png" />
-            <pallet filename="xml/pallets/carrotJuicePallet.xml" />
+            <pallet filename="xml/pallets/custom/carrotJuicePallet.xml" />
         </fillType>
 
         <fillType name="TOMATOJUICE" title="Tomato Juice" showOnPriceTable="true">
@@ -250,7 +315,7 @@
                 </factors>
             </economy>
             <image      hud     ="textures/hud_fill_tomatojuice.png" />
-            <pallet filename="xml/pallets/tomatoJuicePallet.xml" />
+            <pallet filename="xml/pallets/custom/tomatoJuicePallet.xml" />
         </fillType>
 
         <fillType name="BEETJUICE" title="Beet Juice" showOnPriceTable="true">
@@ -272,7 +337,7 @@
                 </factors>
             </economy>
             <image      hud     ="textures/hud_fill_beetjuice.png" />
-            <pallet filename="xml/pallets/beetJuicePallet.xml" />
+            <pallet filename="xml/pallets/custom/beetJuicePallet.xml" />
         </fillType>
 
         <fillType name="VEGETABLEJUICE" title="Vegetable Juice" showOnPriceTable="true">
@@ -294,14 +359,14 @@
                 </factors>
             </economy>
             <image      hud     ="textures/hud_fill_vegetablejuice.png" />
-            <pallet filename="xml/pallets/vegetableJuicePallet.xml" />
+            <pallet filename="xml/pallets/custom/vegetableJuicePallet.xml" />
         </fillType>
 
         <fillType name="EMPTYPALLET" title="Empty Pallet" showOnPriceTable="true">
             <physics massPerLiter="0.17" maxPhysicalSurfaceAngle="38" />
             <economy pricePerLiter="1.6"></economy>
             <image      hud     ="textures/hud_fill_emptypallet2.dds" />
-            <pallet filename="xml/pallets/emptyPallet.xml" />
+            <pallet filename="xml/pallets/custom/emptyPallet.xml" />
         </fillType>
 
         <fillType name="CORNSYRUP" title="Corn Syrup" showOnPriceTable="true">
@@ -323,7 +388,7 @@
                 </factors>
             </economy>
             <image      hud     ="textures/hud_fill_cornsyrup.png" />
-            <pallet filename="xml/pallets/cornSyrupPallet.xml" />
+            <pallet filename="xml/pallets/custom/cornSyrupPallet.xml" />
         </fillType>
 
         <fillType name="MAYONNAISE" title="Mayonnaise" showOnPriceTable="true">
@@ -345,17 +410,19 @@
                 </factors>
             </economy>
             <image      hud     ="textures/hud_fill_mayonnaise.dds" />
-            <pallet filename="xml/pallets/mayonnaiseBoxPallet.xml" />
+            <pallet filename="xml/pallets/custom/mayonnaiseBoxPallet.xml" />
         </fillType>
 
     </fillTypes>
     <fillTypeCategories>
         <fillTypeCategory name="PRODUCT">WOOL GRAPE COTTON POPLAR WOOD HONEY TARP SILAGE_ADDITIVE CARROTCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE</fillTypeCategory>
+        <fillTypeCategory name="SHOVEL">BEETROOT CARROT PARSNIP</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_PRODUCT">CARROTCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_FOOD_PRODUCT">CARROTCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE CORNSYRUP MAYONNAISE</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_PLAT_RESOURCE">IRONORE</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_PLAT_PRODUCT">ARMOIRE BARREL BATHTUB BIRDHOUSE BOWL BUCKET CARTONROLL CATTREE CHAIR DOGHOUSE EASEL FLOORTILES METAL PAPERROLL PEPPERGRINDER PICTUREFRAME PLANKS PREFABWALL SHINGLE STAIRCASERAILING TABLE WOODBEAM</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_PREM_PRODUCT">POTATOCHIPS PRESERVEDCARROTS PRESERVEDPARSNIP PRESERVEDBEETROOT SOUPCANSMIXED SOUPCANSCARROTS SOUPCANSPARSNIP SOUPCANSBEETROOT SOUPCANSPOTATO</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_SUGARS">SUGAR CORNSYRUP</fillTypeCategory>
+        <fillTypeCategory name="VEGETABLES">BEETROOT CARROT PARSNIP</fillTypeCategory>
     </fillTypeCategories>
 </map>

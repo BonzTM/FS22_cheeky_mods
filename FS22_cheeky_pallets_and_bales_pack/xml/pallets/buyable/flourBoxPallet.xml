@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
-    <parentFile xmlFilename="$data/objects/pallets/fabricsPallet/fabricsPallet.xml">
+    <parentFile xmlFilename="$data/objects/pallets/flourPallet/flourBoxPallet.xml">
         <attributes>
-            <set path="vehicle.storeData.name" value="$l10n_fillType_fabric"/>
-            <set path="vehicle.storeData.image" value="textures/store_fabricsPallet.png"/>
-            <set path="vehicle.storeData.price" value="4250"/>
+            <set path="vehicle.storeData.name" value="$l10n_fillType_flour"/>
+            <set path="vehicle.storeData.image" value="textures/store_flourPallet.png"/>
+            <set path="vehicle.storeData.price" value="760"/>
             <set path="vehicle.storeData.showInStore" value="true"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#fillTypes" value="FABRIC"/>
-            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillType" value="FABRIC"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#fillTypes" value="FLOUR"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillType" value="FLOUR"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="1000"/>
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#startFillLevel" value="1000"/>
             <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="400"/>
@@ -16,8 +16,8 @@
 
     <!-- ONLY FOR ICON GENERATION -->
     <storeData>
-        <name>$l10n_fillType_fabric</name>
-        <image>textures/store_fabricsPallet.png</image>
+        <name>$l10n_fillType_flour</name>
+        <image>textures/store_flourPallet.png</image>
         <brand>LIZARD</brand>
         <category>pallets</category>
         <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>

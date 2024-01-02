@@ -1,101 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
-    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
-
-    <storeData>
-        <name>$l10n_storeItem_sugarBoxPallet</name>
-        <image>$data/store/store_empty.png</image>
-        <category>pallets</category>
-        <brand>LIZARD</brand>
-        <showInStore>false</showInStore>
-        <canBeSold>false</canBeSold>
-        <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>50688</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>6912</indexBufferMemoryUsage>
-        <textureMemoryUsage>1048576</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
-    </storeData>
-
-    <base>
-        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/sugarPallet/sugarBoxPallet.i3d</filename>
-        <size width="1.4" length="1" height="1.2" />
-        <canBeReset>false</canBeReset>
-        <components>
-            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="40"/>
-        </components>
-        <showInVehicleMenu>false</showInVehicleMenu>
-        <mapHotspot available="false" />
-        <input allowed="false"/>
-    </base>
-
-    <fillUnit>
-        <fillUnitConfigurations>
-            <fillUnitConfiguration>
-                <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="SUGAR" capacity="1500"/>
-                </fillUnits>
-            </fillUnitConfiguration>
-        </fillUnitConfigurations>
-    </fillUnit>
-
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <pallet fillUnitIndex="1" node="pallet_vis">
-        <content>
-            <object node="sugarBox01" tensionBeltNode="sugarBox01Tension"/>
-            <object node="sugarBox02" tensionBeltNode="sugarBox02Tension"/>
-            <object node="sugarBox03" tensionBeltNode="sugarBox03Tension"/>
-            <object node="sugarBox04" tensionBeltNode="sugarBox04Tension"/>
-            <object node="sugarBox05" tensionBeltNode="sugarBox05Tension"/>
-            <object node="sugarBox06" tensionBeltNode="sugarBox06Tension"/>
-            <object node="sugarBox07" tensionBeltNode="sugarBox07Tension"/>
-            <object node="sugarBox08" tensionBeltNode="sugarBox08Tension"/>
-            <object node="sugarBox09" tensionBeltNode="sugarBox09Tension"/>
-            <object node="sugarBox10" tensionBeltNode="sugarBox10Tension"/>
-            <object node="sugarBox11" tensionBeltNode="sugarBox11Tension"/>
-            <object node="sugarBox12" tensionBeltNode="sugarBox12Tension"/>
-        </content>
-
-        <sounds>
-            <unload template="palletsFillSugar" pitchScale="0.9" />
-        </sounds>
-    </pallet>
-
-    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="1.1" jointTransY="0.11" jointLimitToRotY="true"/>
-
-    <i3dMappings>
-        <i3dMapping id="sugarBoxPallet_component1" node="0>" />
-        <i3dMapping id="pallet_vis" node="0>0" />
-        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
-        <i3dMapping id="dischargeNode" node="0>0|1" />
-        <i3dMapping id="sugarBox01" node="0>0|2|0" />
-        <i3dMapping id="sugarBox01Tension" node="0>0|2|0|0" />
-        <i3dMapping id="sugarBox02" node="0>0|2|1" />
-        <i3dMapping id="sugarBox02Tension" node="0>0|2|1|0" />
-        <i3dMapping id="sugarBox03" node="0>0|2|2" />
-        <i3dMapping id="sugarBox03Tension" node="0>0|2|2|0" />
-        <i3dMapping id="sugarBox04" node="0>0|2|3" />
-        <i3dMapping id="sugarBox04Tension" node="0>0|2|3|0" />
-        <i3dMapping id="sugarBox05" node="0>0|2|4" />
-        <i3dMapping id="sugarBox05Tension" node="0>0|2|4|0" />
-        <i3dMapping id="sugarBox06" node="0>0|2|5" />
-        <i3dMapping id="sugarBox06Tension" node="0>0|2|5|0" />
-        <i3dMapping id="sugarBox07" node="0>0|2|6" />
-        <i3dMapping id="sugarBox07Tension" node="0>0|2|6|0" />
-        <i3dMapping id="sugarBox08" node="0>0|2|7" />
-        <i3dMapping id="sugarBox08Tension" node="0>0|2|7|0" />
-        <i3dMapping id="sugarBox09" node="0>0|2|8" />
-        <i3dMapping id="sugarBox09Tension" node="0>0|2|8|0" />
-        <i3dMapping id="sugarBox10" node="0>0|2|9" />
-        <i3dMapping id="sugarBox10Tension" node="0>0|2|9|0" />
-        <i3dMapping id="sugarBox11" node="0>0|2|10" />
-        <i3dMapping id="sugarBox11Tension" node="0>0|2|10|0" />
-        <i3dMapping id="sugarBox12" node="0>0|2|11" />
-        <i3dMapping id="sugarBox12Tension" node="0>0|2|11|0" />
-    </i3dMappings>
+    <parentFile xmlFilename="$data/objects/pallets/sugarPallet/sugarBoxPallet.xml">
+        <attributes>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#fillTypes" value="SUGAR"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="1500"/>
+            <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="500"/>
+        </attributes>
+    </parentFile>
 </vehicle>

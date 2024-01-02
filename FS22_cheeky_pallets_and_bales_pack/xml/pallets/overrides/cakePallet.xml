@@ -1,85 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
-    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
-
-    <storeData>
-        <name>$l10n_storeItem_cakePallet</name>
-        <image>$data/store/store_empty.png</image>
-        <category>pallets</category>
-        <brand>LIZARD</brand>
-        <showInStore>false</showInStore>
-        <canBeSold>false</canBeSold>
-        <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>108288</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>18944</indexBufferMemoryUsage>
-        <textureMemoryUsage>2818048</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
-    </storeData>
-
-    <base>
-        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/cakePallet/cakePallet.i3d</filename>
-        <size width="1.4" length="1" height="0.5" />
-        <canBeReset>false</canBeReset>
-        <components>
-            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="30"/>
-        </components>
-        <showInVehicleMenu>false</showInVehicleMenu>
-        <mapHotspot available="false" />
-        <input allowed="false"/>
-    </base>
-
-
-
-    <fillUnit>
-        <fillUnitConfigurations>
-            <fillUnitConfiguration>
-                <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="CAKE" capacity="400"/>
-                </fillUnits>
-            </fillUnitConfiguration>
-        </fillUnitConfigurations>
-    </fillUnit>
-
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="50" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="true"/>
-    </dischargeable>
-
-    <pallet fillUnitIndex="1" node="pallet_vis">
-        <content>
-            <object node="cakeBox1" tensionBeltNode="cakeBox1Tension"/>
-            <object node="cakeBox2" tensionBeltNode="cakeBox2Tension"/>
-            <object node="cakeBox3" tensionBeltNode="cakeBox3Tension"/>
-            <object node="cakeBox4" tensionBeltNode="cakeBox4Tension"/>
-            <object node="cakeBox5" tensionBeltNode="cakeBox5Tension"/>
-            <object node="cakeBox6" tensionBeltNode="cakeBox6Tension"/>
-        </content>
-
-        <sounds>
-            <unload template="palletsFillPlastic" pitchScale="2.2" />
-        </sounds>
-    </pallet>
-
-    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.45" jointTransY="0.11" jointLimitToRotY="true"/>
-
-    <i3dMappings>
-        <i3dMapping id="cakePallet_component1" node="0>" />
-        <i3dMapping id="pallet_vis" node="0>0" />
-        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
-        <i3dMapping id="dischargeNode" node="0>0|1" />
-        <i3dMapping id="cakeBox1" node="0>0|2|0" />
-        <i3dMapping id="cakeBox1Tension" node="0>0|2|0|4" />
-        <i3dMapping id="cakeBox2" node="0>0|2|1" />
-        <i3dMapping id="cakeBox2Tension" node="0>0|2|1|4" />
-        <i3dMapping id="cakeBox3" node="0>0|2|2" />
-        <i3dMapping id="cakeBox3Tension" node="0>0|2|2|4" />
-        <i3dMapping id="cakeBox4" node="0>0|2|3" />
-        <i3dMapping id="cakeBox4Tension" node="0>0|2|3|4" />
-        <i3dMapping id="cakeBox5" node="0>0|2|4" />
-        <i3dMapping id="cakeBox5Tension" node="0>0|2|4|4" />
-        <i3dMapping id="cakeBox6" node="0>0|2|5" />
-        <i3dMapping id="cakeBox6Tension" node="0>0|2|5|4" />
-    </i3dMappings>
+    <parentFile xmlFilename="$data/objects/pallets/cakePallet/cakePallet.xml">
+        <attributes>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#fillTypes" value="CAKE"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="400"/>
+            <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="100"/>
+        </attributes>
+    </parentFile>
 </vehicle>

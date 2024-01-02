@@ -1,101 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
-    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
-
-    <storeData>
-        <name>$l10n_storeItem_lettuceBoxPallet</name>
-        <image>$data/store/store_empty.png</image>
-        <category>pallets</category>
-        <brand>LIZARD</brand>
-        <showInStore>false</showInStore>
-        <canBeSold>false</canBeSold>
-        <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>105984</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>16128</indexBufferMemoryUsage>
-        <textureMemoryUsage>2031616</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
-    </storeData>
-
-    <base>
-        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/lettuceBoxPallet/lettuceBoxPallet.i3d</filename>
-        <size width="1.4" length="1" height="0.8" />
-        <canBeReset>false</canBeReset>
-        <components maxMass="400">
-            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
-        </components>
-        <showInVehicleMenu>false</showInVehicleMenu>
-        <mapHotspot available="false" />
-        <input allowed="false"/>
-    </base>
-
-    <fillUnit>
-        <fillUnitConfigurations>
-            <fillUnitConfiguration>
-                <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="LETTUCE" capacity="500" ignoreFillLimit="true"/>
-                </fillUnits>
-            </fillUnitConfiguration>
-        </fillUnitConfigurations>
-    </fillUnit>
-
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="40" fillUnitIndex="1" maxDistance="4" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <pallet fillUnitIndex="1" node="pallet_vis">
-        <content>
-            <object node="lettuceBox01" tensionBeltNode="lettuceBox01Tension"/>
-            <object node="lettuceBox02" tensionBeltNode="lettuceBox02Tension"/>
-            <object node="lettuceBox03" tensionBeltNode="lettuceBox03Tension"/>
-            <object node="lettuceBox04" tensionBeltNode="lettuceBox04Tension"/>
-            <object node="lettuceBox05" tensionBeltNode="lettuceBox05Tension"/>
-            <object node="lettuceBox06" tensionBeltNode="lettuceBox06Tension"/>
-            <object node="lettuceBox07" tensionBeltNode="lettuceBox07Tension"/>
-            <object node="lettuceBox08" tensionBeltNode="lettuceBox08Tension"/>
-            <object node="lettuceBox09" tensionBeltNode="lettuceBox09Tension"/>
-            <object node="lettuceBox10" tensionBeltNode="lettuceBox10Tension"/>
-            <object node="lettuceBox11" tensionBeltNode="lettuceBox11Tension"/>
-            <object node="lettuceBox12" tensionBeltNode="lettuceBox12Tension"/>
-        </content>
-
-        <sounds>
-            <unload template="palletsFillPlastic" pitchScale="0.8" />
-        </sounds>
-    </pallet>
-
-    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="0.8" jointTransY="0.11" jointLimitToRotY="true"/>
-
-    <i3dMappings>
-        <i3dMapping id="lettuceBoxPallet_component1" node="0>" />
-        <i3dMapping id="pallet_vis" node="0>0" />
-        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
-        <i3dMapping id="dischargeNode" node="0>0|1" />
-        <i3dMapping id="lettuceBox01" node="0>0|2|0" />
-        <i3dMapping id="lettuceBox01Tension" node="0>0|2|0|0|1" />
-        <i3dMapping id="lettuceBox02" node="0>0|2|1" />
-        <i3dMapping id="lettuceBox02Tension" node="0>0|2|1|0|0" />
-        <i3dMapping id="lettuceBox03" node="0>0|2|2" />
-        <i3dMapping id="lettuceBox03Tension" node="0>0|2|2|0|0" />
-        <i3dMapping id="lettuceBox04" node="0>0|2|3" />
-        <i3dMapping id="lettuceBox04Tension" node="0>0|2|3|0|0" />
-        <i3dMapping id="lettuceBox05" node="0>0|2|4" />
-        <i3dMapping id="lettuceBox05Tension" node="0>0|2|4|0|0" />
-        <i3dMapping id="lettuceBox06" node="0>0|2|5" />
-        <i3dMapping id="lettuceBox06Tension" node="0>0|2|5|0|0" />
-        <i3dMapping id="lettuceBox07" node="0>0|2|6" />
-        <i3dMapping id="lettuceBox07Tension" node="0>0|2|6|0|0" />
-        <i3dMapping id="lettuceBox08" node="0>0|2|7" />
-        <i3dMapping id="lettuceBox08Tension" node="0>0|2|7|0|0" />
-        <i3dMapping id="lettuceBox09" node="0>0|2|8" />
-        <i3dMapping id="lettuceBox09Tension" node="0>0|2|8|0|0" />
-        <i3dMapping id="lettuceBox10" node="0>0|2|9" />
-        <i3dMapping id="lettuceBox10Tension" node="0>0|2|9|0|0" />
-        <i3dMapping id="lettuceBox11" node="0>0|2|10" />
-        <i3dMapping id="lettuceBox11Tension" node="0>0|2|10|0|0" />
-        <i3dMapping id="lettuceBox12" node="0>0|2|11" />
-        <i3dMapping id="lettuceBox12Tension" node="0>0|2|11|0|0" />
-    </i3dMappings>
+    <parentFile xmlFilename="$data/objects/pallets/lettuceBoxPallet/lettuceBoxPallet.xml">
+        <attributes>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#fillTypes" value="LETTUCE"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="500"/>
+            <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="200"/>
+        </attributes>
+    </parentFile>
 </vehicle>

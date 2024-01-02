@@ -1,92 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <vehicle type="pallet" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
-    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
-
-    <storeData>
-        <name>$l10n_storeItem_cheesePallet</name>
-        <image>$data/store/store_empty.png</image>
-        <category>pallets</category>
-        <brand>LIZARD</brand>
-        <showInStore>false</showInStore>
-        <canBeSold>false</canBeSold>
-        <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>146176</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>23040</indexBufferMemoryUsage>
-        <textureMemoryUsage>1638400</textureMemoryUsage>
-        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
-        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
-        <audioMemoryUsage>0</audioMemoryUsage>
-    </storeData>
-
-    <base>
-        <typeDesc>$l10n_typeDesc_pallet</typeDesc>
-        <filename>$data/objects/pallets/cheesePallet/cheesePallet.i3d</filename>
-        <size width="1.4" length="1" height="1.1" />
-        <canBeReset>false</canBeReset>
-        <components>
-            <component centerOfMass="0 0.1 0" solverIterationCount="10" mass="60"/>
-        </components>
-        <showInVehicleMenu>false</showInVehicleMenu>
-        <mapHotspot available="false" />
-        <input allowed="false"/>
-    </base>
-
-    <fillUnit>
-        <fillUnitConfigurations>
-            <fillUnitConfiguration>
-                <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="CHEESE" capacity="1000"/>
-                </fillUnits>
-            </fillUnitConfiguration>
-        </fillUnitConfigurations>
-    </fillUnit>
-
-    <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="200" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true" playSound="false"/>
-    </dischargeable>
-
-    <pallet fillUnitIndex="1" node="pallet_vis">
-        <content>
-            <object node="cheeseCrate1" tensionBeltNode="cheeseCrate1Tension"/>
-            <object node="cheeseCrate2" tensionBeltNode="cheeseCrate2Tension"/>
-            <object node="cheeseCrate3" tensionBeltNode="cheeseCrate3Tension"/>
-            <object node="cheeseCrate4" tensionBeltNode="cheeseCrate4Tension"/>
-            <object node="cheeseCrate5" tensionBeltNode="cheeseCrate5Tension"/>
-            <object node="cheeseCrate6" tensionBeltNode="cheeseCrate6Tension"/>
-            <object node="cheeseCrate7" tensionBeltNode="cheeseCrate7Tension"/>
-            <object node="cheeseCrate8" tensionBeltNode="cheeseCrate8Tension"/>
-            <object node="cheeseCrate9" tensionBeltNode="cheeseCrate9Tension"/>
-        </content>
-
-        <sounds>
-            <unload template="palletsFillWood" pitchScale="0.8" />
-        </sounds>
-    </pallet>
-
-    <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="4" additionalMountDistance="0.95" jointTransY="0.11" jointLimitToRotY="true"/>
-
-    <i3dMappings>
-        <i3dMapping id="cheesePallet_component1" node="0>" />
-        <i3dMapping id="pallet_vis" node="0>0" />
-        <i3dMapping id="dynamicMountTrigger" node="0>0|0" />
-        <i3dMapping id="dischargeNode" node="0>0|1" />
-        <i3dMapping id="cheeseCrate1" node="0>0|2|0" />
-        <i3dMapping id="cheeseCrate1Tension" node="0>0|2|0|0|1" />
-        <i3dMapping id="cheeseCrate2" node="0>0|2|1" />
-        <i3dMapping id="cheeseCrate2Tension" node="0>0|2|1|0|0" />
-        <i3dMapping id="cheeseCrate3" node="0>0|2|2" />
-        <i3dMapping id="cheeseCrate3Tension" node="0>0|2|2|0|0" />
-        <i3dMapping id="cheeseCrate4" node="0>0|2|3" />
-        <i3dMapping id="cheeseCrate4Tension" node="0>0|2|3|0|0" />
-        <i3dMapping id="cheeseCrate5" node="0>0|2|4" />
-        <i3dMapping id="cheeseCrate5Tension" node="0>0|2|4|0|0" />
-        <i3dMapping id="cheeseCrate6" node="0>0|2|5" />
-        <i3dMapping id="cheeseCrate6Tension" node="0>0|2|5|0|0" />
-        <i3dMapping id="cheeseCrate7" node="0>0|2|6" />
-        <i3dMapping id="cheeseCrate7Tension" node="0>0|2|6|0|0" />
-        <i3dMapping id="cheeseCrate8" node="0>0|2|7" />
-        <i3dMapping id="cheeseCrate8Tension" node="0>0|2|7|0|0" />
-        <i3dMapping id="cheeseCrate9" node="0>0|2|8" />
-        <i3dMapping id="cheeseCrate9Tension" node="0>0|2|8|0|0" />
-    </i3dMappings>
+    <parentFile xmlFilename="$data/objects/pallets/cheesePallet/cheesePallet.xml">
+        <attributes>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#fillTypes" value="CHEESE"/>
+            <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit#capacity" value="1000"/>
+            <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="400"/>
+        </attributes>
+    </parentFile>
 </vehicle>

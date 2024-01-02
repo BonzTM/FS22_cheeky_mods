@@ -16,11 +16,11 @@
     <lifetime>1000</lifetime>
     <rotation>0</rotation>
     <brand>NONE</brand>
-    <species>cheeky</species>
+    <species>placeable</species>
     <category>silos</category>
     <brush>
       <type>placeable</type>
-      <category>buildings</category>
+      <category>cheeky</category>
       <tab>silos</tab>
     </brush>
     <vertexBufferMemoryUsage>395520</vertexBufferMemoryUsage>
