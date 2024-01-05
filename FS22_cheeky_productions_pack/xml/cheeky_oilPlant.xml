@@ -134,11 +134,11 @@
             </production>
             <production id="olive_oil" name="$l10n_fillType_oliveOil" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="OLIVE" amount="250" />
+                    <input fillType="OLIVE" amount="300" />
                     <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="OLIVE_OIL" amount="140" />
+                    <output fillType="OLIVE_OIL" amount="175" />
                 </outputs>
             </production>
         </productions>

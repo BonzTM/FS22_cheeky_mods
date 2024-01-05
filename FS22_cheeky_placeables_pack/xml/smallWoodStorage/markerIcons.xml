@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <markerIcons>
-    <filename>i3d/markerIcons.i3d</filename>
+    <filename>i3d/smallWoodStorageRevamp/markerIcons.i3d</filename>
     <variations>
         <variation node="0|0" id="UNLOAD" />
         <variation node="0|1" id="WRENCH" />

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="cheeky_timber_spawner.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+    </Asset>
+    <Files>
+        <File fileId="1" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+        <File fileId="2" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+        <File fileId="3" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    </Files>
+    <Materials>
+        <Material name="warningStripes_mat" materialId="9">
+            <Texture fileId="1"/>
+            <Normalmap fileId="2"/>
+            <Glossmap fileId="3"/>
+        </Material>
+    </Materials>
+    <Shapes externalShapesFile="cheeky_timber_spawner.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="palletSpawner" translation="-8 0 -6.83503" rotation="0 90 0" nodeId="238">
+            <TransformGroup name="palletStripes" nodeId="239">
+                <Shape shapeId="1" name="warningStripesCorner" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="240" materialIds="9" receiveShadows="true" decalLayer="1">
+                    <Shape shapeId="1" name="warningStripesCorner" translation="1.96718e-07 0 3" rotation="0 90 0" clipDistance="200" nodeId="241" materialIds="9" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+                <Shape shapeId="1" name="warningStripesCorner" translation="9 7.51326e-06 3" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="242" materialIds="9" receiveShadows="true" decalLayer="1">
+                    <Shape shapeId="1" name="warningStripesCorner" translation="0 0 3" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="243" materialIds="9" receiveShadows="true" decalLayer="1"/>
+                </Shape>
+            </TransformGroup>
+            <TransformGroup name="palletSpawner" translation="0 0.3 1" nodeId="244">
+                <TransformGroup name="palletSpawnerRight1start" nodeId="245">
+                    <TransformGroup name="palletSpawnerRight1end" translation="9 0 0" nodeId="246"/>
+                </TransformGroup>
+                <TransformGroup name="palletSpawnerLeft1start" translation="4.76995e-08 0 1" nodeId="247">
+                    <TransformGroup name="palletSpawnerLeft1end" translation="9 0 0" nodeId="248"/>
+                </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="woodSpawner" translation="1 3 1.5" rotation="0 90 0" nodeId="249"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

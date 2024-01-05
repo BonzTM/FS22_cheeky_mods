@@ -4,6 +4,7 @@
         <!-- Cheeky Custom Pallets -->
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:beetJuicePallet"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:carrotJuicePallet"/>
+        <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:mayonnaiseBoxPallet"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:tomatoJuicePallet"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:vegetableJuicePallet"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:cornSyrupPallet" sizeY="0.450"/>

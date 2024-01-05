@@ -6,7 +6,7 @@
             <function>$l10n_function_woodStorage</function>
         </functions>
         <image>textures/store_woodstorage.dds</image>
-        <price>50000</price>
+        <price>25000</price>
         <lifetime>1000</lifetime>
         <dailyUpkeep>50</dailyUpkeep>
         <rotation>0</rotation>
@@ -84,22 +84,22 @@
         </unloadingStation>
                 
         <storages>
-            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="5000000">
+            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="2000000">
             </storage>
         </storages>
             
         <siloObjectFillLevels useSubNodesInsteadOfMainNodes="true">
-            <siloObjectFillLevel fillType="WOOD" rootNode="woodplane" maxAtFillLevel="5000000"/>
+            <siloObjectFillLevel fillType="WOOD" rootNode="woodplane" maxAtFillLevel="2000000"/>
         </siloObjectFillLevels>
         
     </silo>
     
     <triggerMarkers>
-		<triggerMarker node="markerUnloading" filename="xml/smallWoodStorage/markerIcons.xml" id="UNLOAD" />
-        <triggerMarker node="triggerMarker" filename="xml/smallWoodStorage/markerIcons.xml" id="WRENCH"/>
+		<triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="triggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH"/>
         <triggerMarker node="palletStripes" adjustToGround="false" />
         <triggerMarker node="unloadingStripes" adjustToGround="false" />
-        <triggerMarker node="woodSellTriggerMarker" filename="xml/smallWoodStorage/markerIcons.xml" id="EXCLAMATION_MARK" />
+        <triggerMarker node="woodSellTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" />
     </triggerMarkers>
     
     <i3dMappings>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="FS22_A_ProductionRevamp.RevampSilo"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Cheeky Timber Storage (Spruce)</name>
+        <functions>
+            <function>This building will store timber for you</function>
+        </functions>
+        <image>textures/store_timberStorageSpruceOpen.dds</image>
+        <price>50000</price>
+        <dailyUpkeep>50</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>storages</tab>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>i3d/cheeky_timber_storage.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true">
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+
+    <aPalletSilo triggerNode="outputWoodInteract" woodSpawnPlace="outputWoodSpawn" maxWoodLogs="18" minWoodLogLength="6" maxWoodLogLength="12">
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="palletSpawnerRight1start"/>
+                <spawnPlace startNode="palletSpawnerLeft1start"/>
+            </spawnPlaces>
+        </palletSpawner>
+    </aPalletSilo>
+
+    <deletedNodes>
+        <deletedNode node="pine" />
+        <deletedNode node="siding" />
+        <deletedNode node="siding01col" />
+        <deletedNode node="siding02col" />
+    </deletedNodes>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height" />
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt" />
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <lights>
+        <group weatherRequiredFlags="NIGHT" />
+        <group />
+
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="poleLight01" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="poleLight02" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="poleLight03" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/industrialWallLight.xml" linkNode="poleLight04" groupIndex="1"/>
+
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight01" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight02" groupIndex="2" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight03" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight04" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight05" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight06" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight07" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight08" groupIndex="1" />
+        <sharedLight filename="$data/shared/assets/lights/rudolfHormann/light300.xml" linkNode="ceilingLight09" groupIndex="1" />
+
+        <realLights>
+            <low>
+                <light node="overhead_low" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="overhead_01" groupIndex="1"/>
+                <light node="overhead_02" groupIndex="2"/>
+                <light node="overhead_03" groupIndex="1"/>
+                <light node="overhead_04" groupIndex="1"/>
+                <light node="overhead_05" groupIndex="1"/>
+                <light node="overhead_06" groupIndex="1"/>
+                <light node="overhead_07" groupIndex="1"/>
+                <light node="overhead_08" groupIndex="1"/>
+                <light node="overhead_09" groupIndex="1"/>
+                <light node="poleLight01_real" groupIndex="1"/>
+                <light node="poleLight02_real" groupIndex="1"/>
+                <light node="poleLight03_real" groupIndex="1"/>
+                <light node="poleLight04_real" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+
+    <silo>
+        <unloadingStation supportsExtension="false" storageRadius="0">
+            <!-- <unloadTrigger exactFillRootNode="exactFillRootNodeChips" fillTypes="WOOD" aiNode="aiUnloadingNode" /> -->
+            <unloadTrigger exactFillRootNode="exactFillRootNodeChips" fillTypes="WOOD" aiNode="aiUnloadingNode">
+                <woodTrigger triggerNode="inputWoodTriggerBox" activationTriggerNode="inputWoodInteract" />
+            </unloadTrigger>
+        </unloadingStation>
+
+        <!-- this is where woodchips come out -->
+        <!-- <loadingStation supportsExtension="false" storageRadius="50">
+            <loadTrigger triggerNode="loadingTrigger" fillTypes="WOODCHIPS" fillLitersPerSecond="2500" dischargeNode="dischargeNode" aiNode="aiNodeLoading">
+                <effectNode effectNode="grain" materialType="unloading" materialTypeId="3" fadeTime="0.5" />
+                <effectNode effectNode="smoke" materialType="smoke" materialTypeId="1" fadeTime="0.5" />
+            </loadTrigger>
+        </loadingStation> -->
+        <loadingStation fillTypes="WOOD" storageRadius="0" supportsExtension="false">
+        </loadingStation>
+
+        <storages>
+            <!-- first listed must be for wood.  2nd listed needs to be for woodchips. -->
+            <storage node="storage" fillTypes="WOOD" isExtension="false" capacity="5000000" />
+                <!-- <capacity fillType="WOOD" capacity="5000000" /> -->
+                <!-- Note - 100x Spruce == 186200, 100x Pine == 97300 -->
+            <!-- </storage> -->
+            <!-- <storage fillLevelSyncThreshold="50" node="storage" fillTypes="WOODCHIPS" isExtension="false"> -->
+                <!-- <capacity fillType="WOODCHIPS" capacity="5000000" /> -->
+                <!-- <dynamicFillPlane node="bunkerFillVolume" allSidePlanes="false" maxAllowedHeapAngle="10" maxDelta="0.3" defaultFillType="WOODCHIPS" /> don't uncomment this -->
+            <!-- </storage> -->
+        </storages>
+        <siloObjectFillLevels useSubNodesInsteadOfMainNodes="true">
+            <siloObjectFillLevel fillType="WOOD" rootNode="spruce" maxAtFillLevel="5000000"/>
+        </siloObjectFillLevels>
+    </silo>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="inputWoodTriggerMarker" teleportNode="outputWoodInteractMarker" />
+    </hotspots>
+
+    <triggerMarkers>
+        <!-- these are just visual, they don't matter to the script -->
+        <triggerMarker node="outputWoodInteractMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="false" />
+        <triggerMarker node="inputWoodInteractMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="false" />
+        <triggerMarker node="inputWoodTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="outputChipsMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <colorable>
+        <nodes>
+            <node node="roof" />
+            <node node="truss" />
+            <node node="crossMembers" />
+            <node node="crossSupports" />
+            <node node="pipeSupport" />
+        </nodes>
+
+        <colors>
+            <color value="RUDOLFHOERMANN_LIGHTGREY" />
+            <color value="RUDOLFHOERMANN_DARKGREY" />
+            <color value="RUDOLFHOERMANN_GREEN" />
+            <color value="RUDOLFHOERMANN_BEIGE" />
+            <color value="RUDOLFHOERMANN_RED" />
+            <color value="RUDOLFHOERMANN_BLUE" />
+            <color value="RUDOLFHOERMANN_WHITEALU" />
+            <color value="RUDOLFHOERMANN_GREYALU" />
+            <color value="RUDOLFHOERMANN_OXIDRED" />
+            <color value="RUDOLFHOERMANN_WOODDARK" />
+            <color value="RUDOLFHOERMANN_WOODBRIGHT" />
+            <color value="RUDOLFHOERMANN_LIGHTGREEN" />
+            <color value="RUDOLFHOERMANN_BROWN" />
+            <color value="RUDOLFHOERMANN_DARKBEIGE" />
+        </colors>
+    </colorable>
+
+    <i3dMappings>
+        <i3dMapping id="main" node="0>" />
+        <i3dMapping id="storage" node="0>" />
+        <i3dMapping id="siding" node="0>1|10" />
+        <i3dMapping id="markers" node="0>2" />
+        <i3dMapping id="levelAreas" node="0>2|0" />
+        <i3dMapping id="levelArea1Start" node="0>2|0|0" />
+        <i3dMapping id="levelArea1Width" node="0>2|0|1" />
+        <i3dMapping id="levelArea1Height" node="0>2|0|2" />
+        <i3dMapping id="tipOcclusionUpdateAreas" node="0>2|1" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>2|1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>2|1|0|0" />
+        <i3dMapping id="clearAreas" node="0>2|2" />
+        <i3dMapping id="clearArea1Start" node="0>2|2|0" />
+        <i3dMapping id="clearArea1Width" node="0>2|2|1" />
+        <i3dMapping id="clearArea1Height" node="0>2|2|2" />
+        <i3dMapping id="indoorAreas" node="0>2|3" />
+        <i3dMapping id="indoorArea1Start" node="0>2|3|0" />
+        <i3dMapping id="indoorArea1Width" node="0>2|3|1" />
+        <i3dMapping id="indoorArea1Height" node="0>2|3|2" />
+        <i3dMapping id="functionality" node="0>3" />
+        <i3dMapping id="outputWoodSpawn" node="0>3|0" />
+        <i3dMapping id="inputWoodInteractMarker" node="0>3|1" />
+        <i3dMapping id="inputWoodInteract" node="0>3|1|0" />
+        <i3dMapping id="inputWoodTriggerMarker" node="0>3|2" />
+        <i3dMapping id="inputWoodTriggerBox" node="0>3|2|0" />
+        <i3dMapping id="exactFillRootNodeChips" node="0>3|2|1" />
+        <i3dMapping id="aiUnloadingNode" node="0>3|2|2" />
+        <i3dMapping id="outputWoodInteractMarker" node="0>3|3" />
+        <i3dMapping id="outputWoodInteract" node="0>3|3|0" />
+        <i3dMapping id="loadingStation" node="0>3|4" />
+        <i3dMapping id="loadingTrigger" node="0>3|4|0" />
+        <i3dMapping id="dischargeNode" node="0>3|4|1" />
+        <i3dMapping id="aiNodeLoading" node="0>3|4|2" />
+        <i3dMapping id="dischargeEffect" node="0>3|4|3" />
+        <i3dMapping id="grain" node="0>3|4|3|0" />
+        <i3dMapping id="smoke" node="0>3|4|3|1" />
+        <i3dMapping id="outputChipsMarker" node="0>3|5" />
+        <i3dMapping id="infoTrigger" node="0>3|6" />
+        <i3dMapping id="lights" node="0>3|7" />
+        <i3dMapping id="static" node="0>3|7|0" />
+        <i3dMapping id="ceilingLight01" node="0>3|7|0|0" />
+        <i3dMapping id="ceilingLight02" node="0>3|7|0|1" />
+        <i3dMapping id="ceilingLight03" node="0>3|7|0|2" />
+        <i3dMapping id="poleLight01" node="0>3|7|0|3" />
+        <i3dMapping id="poleLight02" node="0>3|7|0|4" />
+        <i3dMapping id="poleLight03" node="0>3|7|0|5" />
+        <i3dMapping id="poleLight04" node="0>3|7|0|6" />
+        <i3dMapping id="ceilingLight04" node="0>3|7|0|7" />
+        <i3dMapping id="ceilingLight05" node="0>3|7|0|8" />
+        <i3dMapping id="ceilingLight06" node="0>3|7|0|9" />
+        <i3dMapping id="ceilingLight07" node="0>3|7|0|10" />
+        <i3dMapping id="ceilingLight08" node="0>3|7|0|11" />
+        <i3dMapping id="ceilingLight09" node="0>3|7|0|12" />
+        <i3dMapping id="real_night" node="0>3|7|1" />
+        <i3dMapping id="overhead_01" node="0>3|7|1|0" />
+        <i3dMapping id="overhead_03" node="0>3|7|1|1" />
+        <i3dMapping id="poleLight01_real" node="0>3|7|1|2" />
+        <i3dMapping id="poleLight02_real" node="0>3|7|1|3" />
+        <i3dMapping id="poleLight03_real" node="0>3|7|1|4" />
+        <i3dMapping id="poleLight04_real" node="0>3|7|1|5" />
+        <i3dMapping id="overhead_04" node="0>3|7|1|6" />
+        <i3dMapping id="overhead_05" node="0>3|7|1|7" />
+        <i3dMapping id="overhead_06" node="0>3|7|1|8" />
+        <i3dMapping id="overhead_07" node="0>3|7|1|9" />
+        <i3dMapping id="overhead_08" node="0>3|7|1|10" />
+        <i3dMapping id="overhead_09" node="0>3|7|1|11" />
+        <i3dMapping id="real_allday" node="0>3|7|2" />
+        <i3dMapping id="overhead_02" node="0>3|7|2|0" />
+        <i3dMapping id="overhead_low" node="0>3|7|2|1" />
+        <i3dMapping id="palletSpawner" node="0>3|8"/>
+        <i3dMapping id="palletStripes" node="0>3|8|0" />
+        <i3dMapping id="palletSpawnerRight1start" node="0>3|8|1|0"/>
+        <i3dMapping id="palletSpawnerLeft1start" node="0>3|8|1|1"/>        
+        <i3dMapping id="fillVolumes" node="0>4" />
+        <i3dMapping id="spruce" node="0>4|0" />
+        <i3dMapping id="siding01col" node="0>0|9" />
+        <i3dMapping id="siding02col" node="0>0|10" />
+        <i3dMapping id="pine" node="0>4|1" />
+        <i3dMapping id="testArea1Start" node="0>5|0" />
+        <i3dMapping id="testArea1End" node="0>5|0|0" />
+        <i3dMapping id="roof" node="0>1|7" />
+        <i3dMapping id="truss" node="0>1|8" />
+        <i3dMapping id="crossMembers" node="0>1|9" />
+        <i3dMapping id="crossSupports" node="0>1|11" />
+        <i3dMapping id="pipeSupport" node="0>1|12" />
+        <i3dMapping id="siding01" node="0>1|10|0" />
+        <i3dMapping id="siding02" node="0>1|10|1" />
+        <i3dMapping id="trim01" node="0>1|10|2" />
+        <i3dMapping id="trim02" node="0>1|10|3" />
+        <i3dMapping id="trim03" node="0>1|10|4" />
+        <i3dMapping id="trim04" node="0>1|10|5" />
+    </i3dMappings>
+</placeable>

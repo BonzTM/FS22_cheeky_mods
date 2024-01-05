@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="FS22_A_ProductionRevamp.RevampSilo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_roundBaleDryGrassStorage</name>
+        <functions>
+            <function>$l10n_function_roundBaleDryGrassStorage</function>
+        </functions>
+        <image>textures/baleStorageRevamp/roundbaleDryGrass.dds</image>
+        <price>25000</price>
+        <lifetime>1000</lifetime>
+        <dailyUpkeep>15</dailyUpkeep>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>storages</tab>
+        </brush>
+    </storeData>
+    
+    <base>
+        <filename>i3d/baleStorageRevamp/roundbaleDryGrass.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+    
+    <aPalletSilo triggerNode="palletMenuTrigger">
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="palletSpawnerRight1start"/>
+                <spawnPlace startNode="palletSpawnerLeft1start"/>
+                <spawnPlace startNode="palletSpawnerRight2start"/>
+                <spawnPlace startNode="palletSpawnerLeft2start"/>
+                <spawnPlace startNode="palletSpawnerRight3start"/>
+                <spawnPlace startNode="palletSpawnerLeft3start"/>
+            </spawnPlaces>
+        </palletSpawner>
+    </aPalletSilo>
+    
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="triggerMarker" teleportNode="triggerMarker"/>
+    </hotspots>
+    
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+    </clearAreas>
+    
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="gravel"/>
+        </levelAreas>
+    </leveling>
+	
+	<foliageAreas>
+    </foliageAreas>
+    
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+	
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+    </tipOcclusionUpdateAreas>
+    
+    <placement>
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End"/>
+        </testAreas>
+        <sounds>
+            <place template="smallImp"/>
+        </sounds>
+    </placement>
+    
+    <ai>
+        <updateAreas>
+		    <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End"/>
+		</updateAreas>
+    </ai>
+    
+    <infoTrigger triggerNode="infoTrigger"/>
+    
+    <silo>
+        <loadingStation fillTypes="DRYGRASS_WINDROW" storageRadius="0" supportsExtension="false">
+        </loadingStation>
+        
+        <unloadingStation supportsExtension="false" storageRadius="0">
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="DRYGRASS_WINDROW">
+                <baleTrigger triggerNode="baleTrigger"/>
+            </unloadTrigger>
+        </unloadingStation>
+                
+        <storages>
+            <storage node="storage" fillTypes="DRYGRASS_WINDROW" isExtension="false" capacity="2000000">
+            </storage>
+        </storages>
+            
+        <siloObjectFillLevels useSubNodesInsteadOfMainNodes="true">
+            <siloObjectFillLevel fillType="DRYGRASS_WINDROW" rootNode="bales" maxAtFillLevel="2000000"/>
+        </siloObjectFillLevels>
+        
+        <SiloDisplays>
+            <SiloDisplay fillType="DRYGRASS_WINDROW" node="Display" size="0.12" mask="0000000"/>
+        </SiloDisplays>
+    </silo>
+    
+    <triggerMarkers>
+		<triggerMarker node="markerUnloading" filename="xml/baleStorageRevamp/markerIcons.xml" id="BALE" />
+        <triggerMarker node="triggerMarker" filename="xml/baleStorageRevamp/markerIcons.xml" adjustToGround="true" id="WORK"/>
+        <triggerMarker node="palletStripes" adjustToGround="false" />
+        <triggerMarker node="unloadingStripes" adjustToGround="false" />
+    </triggerMarkers>
+    
+    <colorable>
+        <colors>
+            <color value="1 1 1" />
+            <color value="0 0 0" />
+            <color value="0.8671 0.6121 0.0430" />
+            <color value="0.0600 0.2801 0.0254" />
+            <color value="0.0478 0.4591 0.0846" />
+            <color value="0.9743 0.9743 0.0111" />
+			<color value="0.0189 0.1332 0.1975" />
+			<color value="0 0.212 0.5795" />
+			<color value="0 0.1253 0.5068" />
+			<color value="1 0.1975 0.0278" />
+            <!-- Für die Mädels -->
+            <color value="0.8879 0.0545 0.3005" />
+            <color value="1.0000 0.2195 0.6524" />
+        </colors>
+        <nodes>
+            <node node="0>0|0|5|0" />
+            <node node="0>0|1|5|0" />
+            <node node="0>0|2|5|0" />
+            <node node="0>0|3|5|0" />
+            <node node="0>0|4|5|0" />
+            <node node="0>0|5|5|0" />
+            <node node="0>0|6|5|0" />
+            <node node="0>0|7|5|0" />
+            <node node="0>0|8|5|0" />
+            <node node="0>0|9|5|0" />
+            <node node="0>0|10|5|0" />
+            <node node="0>0|11|5|0" />
+			<node node="bodenplane" />
+        </nodes>
+    </colorable>
+    
+    <i3dMappings>
+        <i3dMapping id="storage" node="0>" />
+        <i3dMapping id="bales" node="0>0"/>
+		<i3dMapping id="bodenplane" node="0>0|12"/>
+        <i3dMapping id="clearArea1Start" node="0>2|0"/>
+        <i3dMapping id="clearArea1Width" node="0>2|0|0"/>
+        <i3dMapping id="clearArea1Height" node="0>2|0|1"/>
+        <i3dMapping id="clearArea2Start" node="0>2|1"/>
+        <i3dMapping id="clearArea2Width" node="0>2|1|0"/>
+        <i3dMapping id="clearArea2Height" node="0>2|1|1"/>
+        <i3dMapping id="levelArea1Start" node="0>3|0"/>
+        <i3dMapping id="levelArea1Width" node="0>3|0|0"/>
+        <i3dMapping id="levelArea1Height" node="0>3|0|1"/>
+        <i3dMapping id="palletSpawner" node="0>4"/>
+        <i3dMapping id="palletStripes" node="0>4|0" />
+        <i3dMapping id="palletSpawnerRight1start" node="0>4|1|0"/>
+        <i3dMapping id="palletSpawnerRight2start" node="0>4|1|1"/>
+        <i3dMapping id="palletSpawnerRight3start" node="0>4|1|2"/>
+        <i3dMapping id="palletSpawnerLeft1start" node="0>4|2|0"/>
+        <i3dMapping id="palletSpawnerLeft2start" node="0>4|2|1"/>
+        <i3dMapping id="palletSpawnerLeft3start" node="0>4|2|2"/>
+        <i3dMapping id="palletMenuTrigger" node="0>5|0"/>
+        <i3dMapping id="infoTrigger" node="0>5|1"/>
+        <i3dMapping id="triggerMarker" node="0>5|2"/>
+        <i3dMapping id="exactFillRootNode" node="0>6|0" />
+        <i3dMapping id="baleTrigger" node="0>6|1" />
+        <i3dMapping id="markerUnloading" node="0>6|2" />
+        <i3dMapping id="unloadingStripes" node="0>6|3" />
+        <i3dMapping id="Display" node="0>1|0|2" />
+        <i3dMapping id="indoorArea1Start" node="0>7|0"/>
+        <i3dMapping id="indoorArea1Width" node="0>7|0|0"/>
+        <i3dMapping id="indoorArea1Height" node="0>7|0|1"/>
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>8|0"/>
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>8|0|0"/>
+        <i3dMapping id="testArea1Start" node="0>9|0"/>
+        <i3dMapping id="testArea1End" node="0>9|0|0"/>
+    </i3dMappings>
+</placeable>

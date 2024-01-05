@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+	<brand>NOKIAN</brand>
+    <name>Forest King TRS2</name>
+    <default>
+        <physics radius="0.75" width="0.8" mass="0.2" tireType="mud" frictionScale="1.60" maxLongStiffness="11" maxLatStiffness="130" maxLatStiffnessLoad="2" />
+        <tire filename="wheels/jd1270g/nokianForestKingTRS2.i3d" nodeLeft="0|0" nodeRight="0|0" maxDeformation="0.067" isCareWheel="false" tireTrackAtlasIndex="9" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="30.5 26.5" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="30.5 26.5" />
+    </default>
+</wheel>

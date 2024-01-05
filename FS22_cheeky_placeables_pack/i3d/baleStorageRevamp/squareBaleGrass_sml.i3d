@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="quarderR.blend" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/maps/mapFR/textures/props/garageCeilingLamp_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapFR/textures/props/garageCeilingLamp_normal.png"/>
+    <File fileId="16" filename="$data/maps/mapFR/textures/props/garageCeilingLamp_specular.png"/>
+    <File fileId="18" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="19" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="34" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="35" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="36" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="27" filename="$data/objects/squarebales/squarebale220/squarebale220_alpha.png"/>
+    <File fileId="24" filename="$data/objects/squarebales/squarebale220/squarebale220_normal.png"/>
+    <File fileId="25" filename="$data/objects/squarebales/squarebale220/squarebale220_specular.png"/>
+    <File fileId="23" filename="$data/objects/squarebales/squarebale220/squarebaleGrass220_diffuse.png"/>
+    <File fileId="28" filename="$data/objects/squarebales/squarebaleWrapDefault_diffuse.png"/>
+    <File fileId="29" filename="$data/objects/squarebales/squarebaleWrapDefault_normal.png"/>
+    <File fileId="30" filename="$data/placeables/lizard/weighingStation/weighingStationProps_diffuse.dds"/>
+    <File fileId="31" filename="$data/placeables/lizard/weighingStation/weighingStationProps_normal.dds"/>
+    <File fileId="32" filename="$data/placeables/lizard/weighingStation/weighingStationProps_specular.dds"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="13" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="17" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="33" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="26" filename="$data/shaders/silageBaleShader.xml"/>
+    <File fileId="20" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="10" filename="$data/shared/assets/assetLibraryDecals_diffuse.dds"/>
+    <File fileId="11" filename="$data/shared/assets/assetLibraryDecals_normal.dds"/>
+    <File fileId="12" filename="$data/shared/assets/assetLibraryDecals_vmask.dds"/>
+    <File fileId="38" filename="$dataS/menu/hud/fillTypes/hud_fill_squareBaleGrass.dds"/>
+    <File fileId="1" filename="../../textures/baleStorageRevamp/Unterstand_diffuse.dds"/>
+    <File fileId="2" filename="../../textures/baleStorageRevamp/Unterstand_normal.dds"/>
+    <File fileId="3" filename="../../textures/baleStorageRevamp/Unterstand_specular.dds"/>
+    <File fileId="5" filename="../../textures/baleStorageRevamp/storageBarn_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="garageCeilingLamp_mat" materialId="5">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+    </Material>
+    <Material name="garageCeilingLampLit_mat" materialId="6" customShaderId="17">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <CustomParameter name="lightControl" value="1 0 0 0"/>
+    </Material>
+    <Material name="lambert1" materialId="236" customShaderId="33">
+      <Texture fileId="30"/>
+      <Normalmap fileId="31"/>
+      <Glossmap fileId="32"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="lambert1" materialId="7" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="lambert2" materialId="8" customShaderId="13">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+    </Material>
+    <Material name="lambert3" materialId="9" diffuseColor="0 0 0 1">
+    </Material>
+    <Material name="snow_mat" materialId="10" customShaderId="20">
+      <Texture fileId="18"/>
+      <Normalmap fileId="19" bumpDepth="0.5"/>
+    </Material>
+    <Material name="squareBaleGrass" materialId="11">
+      <Texture fileId="38"/>
+    </Material>
+    <Material name="squarebaleGrass220_mat" materialId="12" customShaderId="26">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24" bumpDepth="0.3"/>
+      <Glossmap fileId="25"/>
+      <Custommap name="alphaMap" fileId="27"/>
+      <Custommap name="wrapDiffuseMap" fileId="28"/>
+      <Custommap name="wrapNormalMap" fileId="29"/>
+      <CustomParameter name="wrappingState" value="0 0 0 0"/>
+      <CustomParameter name="colorScale" value="0.6662 0.3839 0.5481 1"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="13" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="14">
+      <Texture fileId="34"/>
+      <Normalmap fileId="35"/>
+      <Glossmap fileId="36"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="squareBaleGrass_sml.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="squareBaleGrass_sml" translation="0 -0.088059 0" clipDistance="500" nodeId="27">
+        <TransformGroup name="visuals" nodeId="28">
+          <Shape shapeId="1" name="Unterstand_klein1" rotation="-0 90 0" clipDistance="500" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="boltDecals" rotation="-0 90 0" clipDistance="500" nodeId="30" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="garageCeilingLamp1" lockedgroup="true" translation="-6.99009 6.47685 0.0133634" static="true" clipDistance="150" nodeId="31" materialIds="5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="garageCeilingLampBulb" clipDistance="150" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Light name="light" translation="-0.00560793 -0.947476 0.0101007" rotation="-90 -0 0" clipDistance="150" nodeId="33" type="spot" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50" pcssLightDistance="50" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="12" coneAngle="140" dropOff="2"/>
+          </Shape>
+          <TransformGroup name="winter" nodeId="34">
+            <Shape shapeId="5" name="snow" translation="-6.86546 6.50784 2.97369e-06" rotation="-0 90 0" scale="0.85 0.932 0.29" clipDistance="200" nodeId="35" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+          </TransformGroup>
+          <Shape shapeId="6" name="col2" translation="0 0 -5.89119e-07" rotation="-0 90 0" static="true" density="0.0001" nodeId="36" materialIds="9,9" nonRenderable="true" distanceBlending="false"/>
+        </TransformGroup>
+        <TransformGroup name="bales" translation="-10.9222 0.088059 3.25064" nodeId="37">
+          <TransformGroup name="bales1" nodeId="38">
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 0.0238905" static="true" clipDistance="300" nodeId="39" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -2.20188" static="true" clipDistance="300" nodeId="40" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -4.44897" static="true" clipDistance="300" nodeId="41" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.446 -6.66516" static="true" clipDistance="300" nodeId="42" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 0.0238905" static="true" clipDistance="300" nodeId="43" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -2.20188" static="true" clipDistance="300" nodeId="44" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -4.44897" static="true" clipDistance="300" nodeId="45" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -6.66516" static="true" clipDistance="300" nodeId="46" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bales2" translation="1.2 0 0" nodeId="47">
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 0.445961 0.0238905" static="true" clipDistance="300" nodeId="48" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -2.20188" static="true" clipDistance="300" nodeId="49" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -4.44897" static="true" clipDistance="300" nodeId="50" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.446 -6.66516" static="true" clipDistance="300" nodeId="51" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 0.0238905" static="true" clipDistance="300" nodeId="52" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -2.20188" static="true" clipDistance="300" nodeId="53" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -4.449" static="true" clipDistance="300" nodeId="54" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -6.665" static="true" clipDistance="300" nodeId="55" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 1.35 0.0238905" static="true" clipDistance="300" nodeId="56" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -2.20188" static="true" clipDistance="300" nodeId="57" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -4.44897" static="true" clipDistance="300" nodeId="58" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -6.66516" static="true" clipDistance="300" nodeId="59" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 0.0238905" static="true" clipDistance="300" nodeId="60" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -2.20188" static="true" clipDistance="300" nodeId="61" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -4.44897" static="true" clipDistance="300" nodeId="62" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -6.66516" static="true" clipDistance="300" nodeId="63" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bales3" translation="2.4 0 0" nodeId="64">
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 0.445961 0.0238905" static="true" clipDistance="300" nodeId="65" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -2.20188" static="true" clipDistance="300" nodeId="66" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -4.44897" static="true" clipDistance="300" nodeId="67" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.446 -6.66516" static="true" clipDistance="300" nodeId="68" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 0.0238905" static="true" clipDistance="300" nodeId="69" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -2.20188" static="true" clipDistance="300" nodeId="70" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -4.449" static="true" clipDistance="300" nodeId="71" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -6.665" static="true" clipDistance="300" nodeId="72" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 1.35 0.0238905" static="true" clipDistance="300" nodeId="73" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -2.20188" static="true" clipDistance="300" nodeId="74" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -4.44897" static="true" clipDistance="300" nodeId="75" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -6.66516" static="true" clipDistance="300" nodeId="76" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 0.0238905" static="true" clipDistance="300" nodeId="77" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -2.20188" static="true" clipDistance="300" nodeId="78" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -4.44897" static="true" clipDistance="300" nodeId="79" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -6.66516" static="true" clipDistance="300" nodeId="80" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bales4" translation="3.6 0 0" nodeId="81">
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 0.445961 0.0238905" static="true" clipDistance="300" nodeId="82" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -2.20188" static="true" clipDistance="300" nodeId="83" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -4.44897" static="true" clipDistance="300" nodeId="84" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.446 -6.66516" static="true" clipDistance="300" nodeId="85" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 0.0238905" static="true" clipDistance="300" nodeId="86" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -2.20188" static="true" clipDistance="300" nodeId="87" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -4.449" static="true" clipDistance="300" nodeId="88" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -6.665" static="true" clipDistance="300" nodeId="89" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 1.35 0.0238905" static="true" clipDistance="300" nodeId="90" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -2.20188" static="true" clipDistance="300" nodeId="91" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -4.44897" static="true" clipDistance="300" nodeId="92" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -6.66516" static="true" clipDistance="300" nodeId="93" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 0.0238905" static="true" clipDistance="300" nodeId="94" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -2.20188" static="true" clipDistance="300" nodeId="95" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -4.44897" static="true" clipDistance="300" nodeId="96" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -6.66516" static="true" clipDistance="300" nodeId="97" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bales5" translation="4.8 0 0" nodeId="98">
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 0.445961 0.0238905" static="true" clipDistance="300" nodeId="99" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -2.20188" static="true" clipDistance="300" nodeId="100" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -4.44897" static="true" clipDistance="300" nodeId="101" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.446 -6.66516" static="true" clipDistance="300" nodeId="102" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 0.0238905" static="true" clipDistance="300" nodeId="103" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -2.20188" static="true" clipDistance="300" nodeId="104" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -4.449" static="true" clipDistance="300" nodeId="105" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -6.665" static="true" clipDistance="300" nodeId="106" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 1.35 0.0238905" static="true" clipDistance="300" nodeId="107" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -2.20188" static="true" clipDistance="300" nodeId="108" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -4.44897" static="true" clipDistance="300" nodeId="109" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -6.66516" static="true" clipDistance="300" nodeId="110" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 0.0238905" static="true" clipDistance="300" nodeId="111" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -2.20188" static="true" clipDistance="300" nodeId="112" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -4.44897" static="true" clipDistance="300" nodeId="113" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -6.66516" static="true" clipDistance="300" nodeId="114" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bales6" translation="6 0 0" nodeId="115">
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 0.445961 0.0238905" static="true" clipDistance="300" nodeId="116" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -2.20188" static="true" clipDistance="300" nodeId="117" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -4.44897" static="true" clipDistance="300" nodeId="118" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.446 -6.66516" static="true" clipDistance="300" nodeId="119" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 0.0238905" static="true" clipDistance="300" nodeId="120" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -2.20188" static="true" clipDistance="300" nodeId="121" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -4.449" static="true" clipDistance="300" nodeId="122" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -6.665" static="true" clipDistance="300" nodeId="123" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 1.35 0.0238905" static="true" clipDistance="300" nodeId="124" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -2.20188" static="true" clipDistance="300" nodeId="125" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -4.44897" static="true" clipDistance="300" nodeId="126" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -6.66516" static="true" clipDistance="300" nodeId="127" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 0.0238905" static="true" clipDistance="300" nodeId="128" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -2.20188" static="true" clipDistance="300" nodeId="129" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -4.44897" static="true" clipDistance="300" nodeId="130" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -6.66516" static="true" clipDistance="300" nodeId="131" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bales7" translation="7.2 0 0" nodeId="132">
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 0.445961 0.0238905" static="true" clipDistance="300" nodeId="133" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -2.20188" static="true" clipDistance="300" nodeId="134" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -4.44897" static="true" clipDistance="300" nodeId="135" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.446 -6.66516" static="true" clipDistance="300" nodeId="136" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 0.0238905" static="true" clipDistance="300" nodeId="137" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -2.20188" static="true" clipDistance="300" nodeId="138" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -4.449" static="true" clipDistance="300" nodeId="139" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -6.665" static="true" clipDistance="300" nodeId="140" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 1.35 0.0238905" static="true" clipDistance="300" nodeId="141" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -2.20188" static="true" clipDistance="300" nodeId="142" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -4.44897" static="true" clipDistance="300" nodeId="143" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -6.66516" static="true" clipDistance="300" nodeId="144" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 0.0238905" static="true" clipDistance="300" nodeId="145" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -2.20188" static="true" clipDistance="300" nodeId="146" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -4.44897" static="true" clipDistance="300" nodeId="147" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -6.66516" static="true" clipDistance="300" nodeId="148" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bales8" translation="8.4 0 0" nodeId="149">
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 0.445961 0.0238905" static="true" clipDistance="300" nodeId="150" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -2.20188" static="true" clipDistance="300" nodeId="151" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.445961 -4.44897" static="true" clipDistance="300" nodeId="152" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 0.446 -6.66516" static="true" clipDistance="300" nodeId="153" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 0.0238905" static="true" clipDistance="300" nodeId="154" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -2.20188" static="true" clipDistance="300" nodeId="155" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -4.449" static="true" clipDistance="300" nodeId="156" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -6.665" static="true" clipDistance="300" nodeId="157" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="0 1.35 0.0238905" static="true" clipDistance="300" nodeId="158" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -2.20188" static="true" clipDistance="300" nodeId="159" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -4.44897" static="true" clipDistance="300" nodeId="160" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-8.28536e-09 1.35 -6.66516" static="true" clipDistance="300" nodeId="161" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 0.0238905" static="true" clipDistance="300" nodeId="162" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -2.20188" static="true" clipDistance="300" nodeId="163" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -4.44897" static="true" clipDistance="300" nodeId="164" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -6.66516" static="true" clipDistance="300" nodeId="165" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bales9" translation="9.6 0 0" nodeId="166">
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 0.0238905" static="true" clipDistance="300" nodeId="167" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -2.20188" static="true" clipDistance="300" nodeId="168" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -4.449" static="true" clipDistance="300" nodeId="169" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 2.238 -6.665" static="true" clipDistance="300" nodeId="170" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 0.0238905" static="true" clipDistance="300" nodeId="171" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -2.202" static="true" clipDistance="300" nodeId="172" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -4.44897" static="true" clipDistance="300" nodeId="173" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="squarebale220_vis" translation="-1.2 3.125 -6.66516" static="true" clipDistance="300" nodeId="174" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="fence" translation="3.57032 0.088059 -0.416706" nodeId="175">
+          <TransformGroup name="OP_Display2" translation="-5.5947 5.82792 0.408483" rotation="-0 90 0" nodeId="240">
+            <Shape shapeId="8" name="Arm" translation="-0.0238552 0.084 -0.0990352" rotation="5.00896e-06 90 0" clipDistance="250" nodeId="241" materialIds="236" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="9" name="Display" translation="-0.00481606 0.0219884 -2.71302e-09" rotation="-5.53234e-06 1.73035e-07 12.354" clipDistance="250" nodeId="242" materialIds="236" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <TransformGroup name="Display" translation="0.45 0.0247035 0.0712566" rotation="12.3536 1.16005e-07 0" nodeId="243"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="179">
+          <TransformGroup name="clearArea1Start" translation="3.73117 0 6.57434" nodeId="180">
+            <TransformGroup name="clearArea1Width" translation="-16.0231 0 0" nodeId="181"/>
+            <TransformGroup name="clearArea1Height" translation="0 0 -12.6114" nodeId="182"/>
+          </TransformGroup>
+          <TransformGroup name="clearArea2Start" translation="-1.07362 0 -5.87585" nodeId="183">
+            <TransformGroup name="clearArea2Width" translation="-11.3655 0 0" nodeId="184"/>
+            <TransformGroup name="clearArea2Height" translation="0 0 -4.92862" nodeId="185"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="186">
+          <TransformGroup name="levelArea1Start" translation="4.44875 0 7.18254" nodeId="187">
+            <TransformGroup name="levelArea1Width" translation="-17.911 0 0" nodeId="188"/>
+            <TransformGroup name="levelArea1Height" translation="0 0 -18.0035" nodeId="189"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="palletSpawner" translation="-1.62408 0.0880578 -6.27602" rotation="-180 -5.00896e-06 180" nodeId="190">
+          <TransformGroup name="palletStripes" nodeId="191">
+            <Shape shapeId="10" name="warningStripesCorner" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="192" materialIds="14" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="10" name="warningStripesCorner" translation="1.96718e-07 0 4" rotation="0 90 0" clipDistance="200" nodeId="193" materialIds="14" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="10" name="warningStripesCorner" translation="10.5177 4.89954e-06 4" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="194" materialIds="14" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="10" name="warningStripesCorner" translation="0 0 4" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="195" materialIds="14" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="palletSpawnerRight" translation="0 0.3 1" nodeId="196">
+            <TransformGroup name="palletSpawnerRight1start" nodeId="197">
+              <TransformGroup name="palletSpawnerRight1end" translation="10.34 0 0" nodeId="198"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerRight2start" translation="0 1.25 0" nodeId="199">
+              <TransformGroup name="palletSpawnerRight2end" translation="10.34 0 0" nodeId="200"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerRight3start" translation="0 2.5 0" nodeId="201">
+              <TransformGroup name="palletSpawnerRight3end" translation="10.34 0 0" nodeId="202"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="palletSpawnerLeft" translation="0 0.3 3" nodeId="203">
+            <TransformGroup name="palletSpawnerLeft1start" nodeId="204">
+              <TransformGroup name="palletSpawnerLeft1end" translation="10.34 0 0" nodeId="205"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerLeft2start" translation="0 1.25 0" nodeId="206">
+              <TransformGroup name="palletSpawnerLeft2end" translation="10.34 0 0" nodeId="207"/>
+            </TransformGroup>
+            <TransformGroup name="palletSpawnerLeft3start" translation="0 2.5 0" nodeId="208">
+              <TransformGroup name="palletSpawnerLeft3end" translation="10.34 0 0" nodeId="209"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="playerTrigger" translation="-3.27506 0.088059 -0.416707" rotation="0 -90 0" nodeId="210">
+          <Shape shapeId="11" name="palletMenuTrigger" translation="0 1 -2" scale="6 2 2" static="true" trigger="true" collisionMask="1048576" nodeId="211" materialIds="13" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="11" name="infoTrigger" translation="0.216107 1 3.62847" scale="14 2 12.3612" static="true" trigger="true" collisionMask="1048576" nodeId="212" materialIds="13" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="triggerMarker" translation="0 0 -2.34931" nodeId="213"/>
+        </TransformGroup>
+        <TransformGroup name="unloadingStation" translation="0.70269 0.088059 -0.0265022" nodeId="214">
+          <Shape shapeId="11" name="exactFillRootNode" translation="0 0.405875 0" scale="5 1 10" static="true" trigger="true" collisionMask="1073741824" nodeId="215" materialIds="13" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="11" name="baleTrigger" translation="0 1.5 0" scale="5 3 10" static="true" trigger="true" collisionMask="16777216" nodeId="216" materialIds="13" nonRenderable="true" distanceBlending="false"/>
+          <TransformGroup name="markerUnloading" translation="0.117804 0 0.0878053" nodeId="217"/>
+          <TransformGroup name="unloadingStripes" translation="-2.5 0 5" rotation="0 90 0" nodeId="218">
+            <Shape shapeId="10" name="warningStripesCorner" rotation="3.73728e-12 0 2.73162e-05" clipDistance="200" nodeId="219" materialIds="14" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="10" name="warningStripesCorner" translation="1.78814e-07 0 5" rotation="0 90 0" clipDistance="200" nodeId="220" materialIds="14" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="10" name="warningStripesCorner" translation="10 5.64713e-06 5" rotation="3.73728e-12 180 2.73162e-05" clipDistance="200" nodeId="221" materialIds="14" receiveShadows="true" decalLayer="1">
+              <Shape shapeId="10" name="warningStripesCorner" translation="0 0 5" rotation="0 90 2.73162e-05" clipDistance="200" nodeId="222" materialIds="14" receiveShadows="true" decalLayer="1"/>
+            </Shape>
+            <Shape shapeId="12" name="squarebale_grass" translation="4.95171 0.01 2.62" nodeId="223" materialIds="11" distanceBlending="false"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" translation="0 0.088059 0" nodeId="224">
+          <TransformGroup name="indoorArea1Start" translation="-11.9087 0 -5.93721" nodeId="225">
+            <TransformGroup name="indoorArea1Width" translation="9.96475 0 0" nodeId="226"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 11.9208" nodeId="227"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="0 0.088059 0" nodeId="228">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-13.0707 0 -10.3853" nodeId="229">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="16.7863 0 17.4717" nodeId="230"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" translation="0 0.088059 0" nodeId="231">
+          <TransformGroup name="testArea1Start" translation="-12.816 0 -10.428" nodeId="232">
+            <TransformGroup name="testArea1End" translation="16.4891 7.89484 17.6818" nodeId="233"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

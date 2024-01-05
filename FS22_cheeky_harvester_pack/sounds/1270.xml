@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<sounds xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/vehicle_sounds.xsd">
+    <motorized>
+        <sounds>
+            <motor template="engineLarge" file="$data/vehicles/johnDeere/series8R/sounds/series8R_loop.gls" volumeScale="1.1"/>
+            <motor template="indoorCabinRumble" />
+            <gearbox template="transmissionLarge" file="$data/sounds/vehicles/transmission/transmissionLoop.wav" pitchScale="0.8" volumeScale="0.8"/>
+            <compressedAir template="compressedAir"/>
+            <airCompressorRun template="brakeCompressorLarge" />
+            <airCompressorStop template="compressedAir"/>
+            <reverseDrive template="REVERSE_BEEP_03" />
+        </sounds>
+    </motorized>
+
+    <lights>
+        <sounds>
+            <toggleLights template="SWITCH_01"  />
+            <turnLight template="SWITCH_TURNLIGHT"  />
+        </sounds>
+    </lights>
+
+    <attacherJoints>
+        <sounds>
+            <attach template="ATTACH_01" />
+            <hydraulic template="defaultHydraulicSound" />
+        </sounds>
+    </attacherJoints>
+    
+    <cylindered>
+        <sounds>
+            <hydraulic template="defaultHydraulicSound" />
+        </sounds>
+    </cylindered>
+
+    <drivable>
+        <sounds>
+            <waterSplash template="WATER_SPLASH_01" />
+        </sounds>
+    </drivable>
+    
+    
+
+    <honk>
+        <sound template="hornDefault" pitchScale="0.85" linkNode="h21D_front_component1" />
+    </honk>
+</sounds>

@@ -1,0 +1,2545 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="JDharvester" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/vehicle.xsd">
+    <annotation>Dr. ILiIKzZ, olli0710.</annotation>
+
+    <storeData>
+        <name>
+			<en>1270 G 8WD (XL)</en>
+		</name>
+        <specs>
+            <power>305</power>
+            <maxSpeed>23</maxSpeed>
+        </specs>
+        <functions>
+            <function>$l10n_function_forestryCutter</function>
+            <function>$l10n_function_forestryTreeLimit</function>			
+        </functions>
+        <image>textures/store_jd1270g.dds</image>
+        <price>470000</price>
+        <lifetime>400</lifetime>
+        <rotation>0</rotation>
+        <brand>JOHNDEERE</brand>
+        <category>woodHarvesting</category>
+        <shopTranslationOffset>0 -0.1 0</shopTranslationOffset>
+        <shopRotationOffset>1 0 0</shopRotationOffset>
+        
+        
+        <vertexBufferMemoryUsage>8173824</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>1673728</indexBufferMemoryUsage>
+        <textureMemoryUsage>5832704</textureMemoryUsage>
+        <audioMemoryUsage>463231</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_woodHarvester</typeDesc>
+        <filename>i3d/JD1270G.i3d</filename>
+        <size width="3.5" length="11" lengthOffset="0.4" />
+        <components>
+            <component centerOfMass="0 0.724 2.6" solverIterationCount="40" mass="4500"/>
+            <component centerOfMass="0 0.724 -2.0" solverIterationCount="40" mass="5200"/>
+			
+			<component                             solverIterationCount="20" mass="3000"/>
+            <component                             solverIterationCount="20" mass="3000"/>
+            <component                             solverIterationCount="20" mass="3000"/>
+            <component                             solverIterationCount="20" mass="3000"/>
+			
+			<component centerOfMass="0 0 0" solverIterationCount="20" mass="300" />
+            <component centerOfMass="0 0 0.3" solverIterationCount="20" mass="150" />
+			<component centerOfMass="1 -2 0" solverIterationCount="10" mass="5" />
+			
+            <joint component1="1" component2="2" node="steeringJointRot" rotLimit="0 0 0" transLimit="0 0 0" rotLimitSpring="0 0 300" rotLimitDamping="0 0 15" />
+			<joint component1="1" component2="3" node="jd1270GfrontRightBoogie" rotLimit="10 0 0" transLimit="0 0 0" />
+            <joint component1="1" component2="4" node="jd1270GfrontLeftBoogie"  rotLimit="10 0 0" transLimit="0 0 0" />
+			<joint component1="2" component2="5" node="jd1270GbackRightBoogie" rotLimit="10 0 0" transLimit="0 0 0" />
+            <joint component1="2" component2="6" node="jd1270GbackLeftBoogie"  rotLimit="10 0 0" transLimit="0 0 0" />
+			<joint component1="1" component2="7" node="dummyCutterHolderColJoint" zRotationNode="dummyZRot" nodeActor1="cutterBaseJoint_indexActor" rotLimit="0 50 140" rotMinLimit="0 -50 -140" rotDriveVelocity="0 0 0" maxRotDriveForce="0.5 0.5 0.5"   transLimit="0 0 0" transLimitSpring="600 600 600" transLimitDamping="11 11 11" />
+            <joint component1="7" component2="8" node="cutterColJoint" rotMinLimit="0 0 0" rotLimit="0 0 0" transLimit="0 0 0" />
+			<joint component1="1" component2="9" node="jointMeshRot" rotMinLimit="-50 0 -20" rotLimit="10 0 20" transLimit="0 0 0"/>
+			
+			
+			
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="VEHICLE"/>
+        <mapHotspot type="HARVESTER" /> 
+		<sounds filename="sounds/1270.xml" />
+		
+		<objectChanges>
+            <objectChange node="baseBone" translationActive="0 1.747 -1.191" translationInactive="0 2.042 -1.832" rotationActive="3.252 0 0" rotationInactive="47.112 0 0"/>
+        </objectChanges>
+    </base>
+	
+	    <wheels>
+        <wheelConfigurations>
+			<!--Nokian F2-->
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="NOKIAN" saveId="NOKIAN_DEFAULT">
+                <wheels autoRotateBackSpeed="2.2" differentialIndex="1" >
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieFrontWheel"                                                forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieBackWheel" driveNode="frontLeftBoggieBackWheelDriveNode"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieFrontWheel"                                               forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieBackWheel" driveNode="frontRightBoggieBackWheelDriveNode" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="2.9" repr="backLeftBoggieFrontWheel"                                                 forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="backLeftBoggieBackWheel" driveNode="backLeftBoggieBackWheelDriveNode"     forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="2.9" repr="backRightBoggieFrontWheel"                                                forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="backRightBoggieBackWheel" driveNode="backRightBoggieBackWheelDriveNode"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<!--Nokian F2 all Tracks-->
+            <wheelConfiguration name="ECO-TRACK" price="8000" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_NOKIAN">
+                <wheels baseConfig="NOKIAN_DEFAULT">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+			<wheelConfiguration name="EVO-BALTIC" price="8000" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_All_Nokian">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="8000" brand="OLOFSFORS" saveId="OLOFSFORS_EX_All_Nokian">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="8000" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_All_Nokian">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="8000" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_All_Nokian">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+			<!--Nokian F2 front Tracks-->
+			<wheelConfiguration name="ECO-TRACK" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_NOKIAN_FRONT">
+                <wheels baseConfig="NOKIAN_DEFAULT">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+						<wheelConfiguration name="EVO-BALTIC" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_HALF_Nokian">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN_FRONT">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_EX_HALF_Nokian">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN_FRONT">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_HALF_Nokian">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN_FRONT">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_HALF_Nokian">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN_FRONT">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+			<!--Trelleborg TF-->
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="500" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT">
+                <wheels autoRotateBackSpeed="2.2" differentialIndex="1" >
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="2.9" repr="frontLeftBoggieFrontWheel"  forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="58" damper="50" transRatio="1.0" frictionScale="2" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.9" repr="frontLeftBoggieBackWheel"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="58" damper="50" transRatio="1.0" frictionScale="2" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="2.9" repr="frontRightBoggieFrontWheel" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="58" damper="50" transRatio="1.0" frictionScale="2" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.9" repr="frontRightBoggieBackWheel"  forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="58" damper="50" transRatio="1.0" frictionScale="2" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="backLeftBoggieFrontWheel"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="50" damper="50" transRatio="1.0" frictionScale="2" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="backLeftBoggieBackWheel"    forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="50" damper="50" transRatio="1.0" frictionScale="2" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="2.4" repr="backRightBoggieFrontWheel"  forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="50" damper="50" transRatio="1.0" frictionScale="2" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="2.4" repr="backRightBoggieBackWheel"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="50" damper="50" transRatio="1.0" frictionScale="2" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<!--Trelleborg TF all Tracks--> 
+			<wheelConfiguration name="ECO-TRACK" price="8500" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_TRELLEBORG">
+                <wheels baseConfig="TRELLEBORG_DEFAULT">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+						<wheelConfiguration name="EVO-BALTIC" price="8500" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_ALL_Trelleborg">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="8500" brand="OLOFSFORS" saveId="OLOFSFORS_EX_ALL_Trelleborg">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="8500" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_ALL_Trelleborg">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="8500" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_ALL_Trelleborg">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+			<!--Trelleborg TF front Tracks--> 
+						<wheelConfiguration name="ECO-TRACK" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_TRELLEBORG_FRONT">
+                <wheels baseConfig="TRELLEBORG_DEFAULT">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+						<wheelConfiguration name="EVO-BALTIC" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_HALF_Trelleborg">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG_FRONT">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_EX_HALF_Trelleborg">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG_FRONT">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_HALF_Trelleborg">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG_FRONT">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_HALF_Trelleborg">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG_FRONT">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+            </wheelConfiguration>
+			<!--Nokian TRS-->
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="1000" brand="NOKIAN" saveId="NOKIAN_DEFAULTTRS">
+                <wheels autoRotateBackSpeed="2.2" differentialIndex="1" >
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieFrontWheel"                                                forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieBackWheel" driveNode="frontLeftBoggieBackWheelDriveNode"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieFrontWheel"                                               forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieBackWheel" driveNode="frontRightBoggieBackWheelDriveNode" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="2.9" repr="backLeftBoggieFrontWheel"                                                 forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="backLeftBoggieBackWheel" driveNode="backLeftBoggieBackWheelDriveNode"     forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="2.9" repr="backRightBoggieFrontWheel"                                                forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="backRightBoggieBackWheel" driveNode="backRightBoggieBackWheelDriveNode"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                </wheels>
+            </wheelConfiguration>
+			<!--Nokian TRS all Tracks-->
+            <wheelConfiguration name="ECO-TRACK" price="9000" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_NOKIANTRS">
+                <wheels baseConfig="NOKIAN_DEFAULTTRS">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="EVO-BALTIC" price="9000" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_All_NokianTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIANTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="9000" brand="OLOFSFORS" saveId="OLOFSFORS_EX_All_NokianTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIANTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="9000" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_All_NokianTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIANTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="9000" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_All_NokianTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIANTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerBackLeft"   wheelIndices="5 6" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerBackRight"  wheelIndices="7 8" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+			<!--Nokian TRS front Tracks-->
+			<wheelConfiguration name="ECO-TRACK" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_NOKIAN_FRONTTRS">
+                <wheels baseConfig="NOKIAN_DEFAULTTRS">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+						<wheelConfiguration name="EVO-BALTIC" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_HALF_NokianTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN_FRONTTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_EX_HALF_NokianTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN_FRONTTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_HALF_NokianTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN_FRONTTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_HALF_NokianTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN_FRONTTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerBackRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+			<!--6WD Wheel Configs-->
+			<!--Nokian F2 6wd-->
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="0" brand="NOKIAN" saveId="NOKIAN_DEFAULT6wd">
+                <wheels autoRotateBackSpeed="2.2" differentialIndex="2" >
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieFrontWheel"                                                forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieBackWheel" driveNode="frontLeftBoggieBackWheelDriveNode"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieFrontWheel"                                               forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/nokian/forestKingF2/710_45__26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieBackWheel" driveNode="frontRightBoggieBackWheelDriveNode" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    
+                    <wheel filename="wheels/jd1270g/nokianLoggerKingLS2.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="6wdWheelLeftBack" driveNode="6wdWheelLeftBackDrive"     forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianLoggerKingLS2.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="6wdWheelRightBack" driveNode="6wdWheelRightBackDrive"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                </wheels>
+				
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="ECO-TRACK" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_NOKIAN6wd">
+                <wheels baseConfig="NOKIAN_DEFAULT6wd">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="EVO-BALTIC" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_NOKIAN6wd">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN6wd">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_EX_NOKIAN6wd">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN6wd">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_NOKIAN6wd">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN6wd">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="4000" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_NOKIAN6wd">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN6wd">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+			<!--TRELLEBORG 6wd-->
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="500" brand="TRELLEBORG" saveId="TRELLEBORG_DEFAULT6wd">
+                <wheels autoRotateBackSpeed="2.2" differentialIndex="2" >
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieFrontWheel"                                                forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieBackWheel" driveNode="frontLeftBoggieBackWheelDriveNode"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieFrontWheel"                                               forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry428SB/710_45R26_5.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieBackWheel" driveNode="frontRightBoggieBackWheelDriveNode" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry422SB/710_55R34.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="6wdWheelLeftBack" driveNode="6wdWheelLeftBackDrive"     forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="$data/shared/wheels/tires/trelleborg/TwinForestry422SB/710_55R34.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="6wdWheelRightBack" driveNode="6wdWheelRightBackDrive"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                </wheels>
+				
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="ECO-TRACK" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_TRELLEBORG6wd">
+                <wheels baseConfig="TRELLEBORG_DEFAULT6wd">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="EVO-BALTIC" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_TRELLEBORG6wd">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG6wd">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_EX_TRELLEBORG6wd">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG6wd">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_TRELLEBORG6wd">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG6wd">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="4500" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_TRELLEBORG6wd">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_TRELLEBORG6wd">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+            </wheelConfiguration>
+			<!--Nokian TRS 6wd-->
+			<wheelConfiguration name="$l10n_configuration_valueDefault" price="1000" brand="NOKIAN" saveId="NOKIAN_DEFAULT6wdTRS">
+                <wheels autoRotateBackSpeed="2.2" differentialIndex="2" >
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieFrontWheel"                                                forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontLeftBoggieBackWheel" driveNode="frontLeftBoggieBackWheelDriveNode"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="false">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieFrontWheel"                                               forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianForestKingTRS2.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.2" repr="frontRightBoggieBackWheel" driveNode="frontRightBoggieBackWheelDriveNode" forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="64" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    
+                    <wheel filename="wheels/jd1270g/nokianLoggerKingLS2.xml" isLeft="true" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="6wdWheelLeftBack" driveNode="6wdWheelLeftBackDrive"     forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                    <wheel filename="wheels/jd1270g/nokianLoggerKingLS2.xml" isLeft="false" hasTireTracks="true" hasParticles="true">
+                        <physics rotSpeed="1" restLoad="3.1" repr="6wdWheelRightBack" driveNode="6wdWheelRightBackDrive"   forcePointRatio="0.7" showSteeringAngle="false" initialCompression="30" suspTravel="0.15" spring="60" damper="150" transRatio="1.0" frictionScale="1.8" />
+                    </wheel>
+                </wheels>
+				
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="ECO-TRACK" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_ECO-TRACK_NOKIAN6wdTRS">
+                <wheels baseConfig="NOKIAN_DEFAULT6wdTRS">
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel>
+                        <physics radius="0.79"/>
+                        <tire tireTrackAtlasIndex="5" maxDeformation="0" sideDeformOffset="1"/>
+                    </wheel>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ecoTrack.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+			<wheelConfiguration name="EVO-BALTIC" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_EVO-BALTIC_NOKIAN6wdTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN6wdTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_evoBaltic.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="EX" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_EX_NOKIAN6wdTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN6wdTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_ex.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="KOVAX" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_KOVAX_NOKIAN6wdTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN6wdTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_kovaX.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+            <wheelConfiguration name="MAGNUM" price="5000" brand="OLOFSFORS" saveId="OLOFSFORS_MAGNUM_NOKIAN6wdTRS">
+                <wheels baseConfig="OLOFSFORS_ECO-TRACK_NOKIAN6wdTRS">
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                    <wheel/>
+                </wheels>
+                <crawlers>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontLeft"  wheelIndices="1 2" isLeft="true"/>
+                     <crawler filename="$data/shared/crawlers/olofsfors/track710_45R26_5/track710_45R26_5_magnum.xml" linkNode="crawlerFrontRight" wheelIndices="3 4" isLeft="false"/>
+                </crawlers>
+				<objectChange node="6WD_parts" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="8WD_parts" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="6wdWheelLeftBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="6wdWheelRightBack" visibilityActive="true" visibilityInactive="false"/>
+				<objectChange node="backLeftBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backLeftBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieFrontWheel" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="backRightBoggieBackWheelDriveNode" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieLeftBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="boogieRightBackVis" visibilityActive="false" visibilityInactive="true"/>
+				<objectChange node="jd1270G_backLeftAxis_component5" translationActive="0.80 0.724 -1.99" translationInactive="1 0.724 -1.99"/>
+				<objectChange node="jd1270G_backRightAxis_component6" translationActive="-0.80 0.724 -1.99" translationInactive="-1 0.724 -1.99"/>
+				<objectChange node="attacherJointTrailer" translationActive="0 1 -3.938" translationInactive="0 1 -4.155"/>
+				<objectChange node="configProtection" translationActive="0 0 0.2" translationInactive="0 0 0"/>
+				<objectChange node="crawlerFrontLeft" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+				<objectChange node="crawlerFrontRight" scaleActive="1.05 1 1" scaleInactive="1 1 1"/>
+            </wheelConfiguration>
+        </wheelConfigurations>
+		
+		<ackermannSteeringConfigurations>
+            <ackermannSteering rotSpeed="25" rotMax="15" rotCenter="0 -0.3" />
+        </ackermannSteeringConfigurations>
+		
+        <rimColor>JOHNDEERE_YELLOW1</rimColor>
+		
+        <hubs>
+            <color0>JOHNDEERE_YELLOW1</color0>
+            <color1>0.98 0.98 0.98</color1>
+            <hub linkNode="frontLeftBoggieFrontWheel" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="true" scale="0.38 0.40 0.40"/>
+            <hub linkNode="frontLeftBoggieBackWheelDriveNode" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="true" scale="0.38 0.40 0.40"/>
+            <hub linkNode="frontRightBoggieFrontWheel" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="false" scale="0.38 0.40 0.40"/>
+            <hub linkNode="frontRightBoggieBackWheelDriveNode" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="false" scale="0.38 0.40 0.40"/>
+            <hub linkNode="backLeftBoggieFrontWheel" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="true" scale="0.38 0.40 0.40"/>
+            <hub linkNode="backLeftBoggieBackWheelDriveNode" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="true" scale="0.38 0.40 0.40"/>
+            <hub linkNode="backRightBoggieFrontWheel" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="false" scale="0.38 0.40 0.40"/>
+            <hub linkNode="backRightBoggieBackWheelDriveNode" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="false" scale="0.38 0.40 0.40"/>
+			
+			<hub linkNode="6wdWheelLeftBackDrive" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="true" scale="0.38 0.40 0.40"/>
+            <hub linkNode="6wdWheelRightBackDrive" filename="wheels/jd1270g/hub_n12_6.xml" isLeft="false" scale="0.38 0.40 0.40"/>
+        </hubs>
+    </wheels>
+	
+	<articulatedAxis rotNode="steeringJoint" componentJointIndex="1" anchorActor="0" rotSpeed="-44" rotMax="44" rotMin="-44" customWheelIndices1="1 2 3 4" customWheelIndices2="5 6 7 8"/>
+	
+	<powerConsumer ptoRpm="350" neededMinPtoPower="5" neededMaxPtoPower="40"/>
+	
+	<speedRotatingParts>
+        <speedRotatingPart node="cardanPart01" wheelIndex="1" wheelScale="4"/>
+        <speedRotatingPart node="cardanPart04" wheelIndex="1" wheelScale="4"/>
+    </speedRotatingParts>
+	
+    <enterable isTabbable="true" >
+        <enterReferenceNode node="jd1270G_front_component1" />
+        <exitPoint node="exitPoint" />
+		<cameras>
+            <camera node="outdoorCamera" rotatable="true" rotateNode="outdoorCameraTarget" limit="true" useWorldXZRotation="true" rotMinX="-1.4" rotMaxX="1" transMin="7.7" transMax="40" translation="0 0 8.5" rotation="-7.5 180 0">
+                <raycastNode node="cameraRaycastNode1"/>
+                <raycastNode node="cameraRaycastNode2"/>
+                <raycastNode node="cameraRaycastNode3"/>
+            </camera>
+            <camera node="indoorCamera" rotatable="true" limit="true" rotMinX="-1.1" rotMaxX="0.4" transMin="0" transMax="0" useMirror="true" isInside="true" shadowFocusBox="shadowFocusBox"/>
+            <camera node="cameraArm" rotatable="false" useWorldXZRotation="false" isInside="false" allowHeadTracking="true"/>
+        </cameras>
+        <characterNode node="playerSkin" cameraMinDistance="1.5" spineRotation="-90 0 90">
+            <target ikChain="rightFoot" targetNode="playerRightFootTarget"/>
+            <target ikChain="leftFoot" targetNode="playerLeftFootTarget"/>
+            <target ikChain="rightArm" targetNode="playerRightHandTarget"/>
+            <target ikChain="leftArm" targetNode="playerLeftHandTarget"/>
+        </characterNode>
+        <characterTargetNodeModifier node="playerRightFootTarget" transitionTime="0.1">
+            <state node="playerRightFootTargetGas" referenceNode="gasPedal"/>
+            <state node="playerRightFootTargetBrake" referenceNode="brakePedal"/>
+        </characterTargetNodeModifier>
+        
+        
+		<dashboards>
+            <dashboard displayType="TEXT" valueType="time"    			node="numbersTime" 				textColor="1 1 1 1" 	textSize="0.004" 	textMask="00:00" 	font="GENERIC_BOLD" 	textAlignment="CENTER" 	emissiveScale="0.5" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="operatingTime" 	node="numbersOperatingTime" 	textColor="1 1 1 1" 	textSize="0.004" 	textMask="00:00" 	font="GENERIC_BOLD" 	textAlignment="CENTER" 	emissiveScale="0.5" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+		<enterAnimation name="enterAnimation" />
+    </enterable>
+	
+	<drivable>
+        
+        <dashboards>
+            <dashboard displayType="ROT" valueType="accelerationAxis" node="gasPedal" minRot="0 0 0" maxRot="20 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="decelerationAxis" node="brakePedal" minRot="0 0 0" maxRot="20 0 0" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </drivable>
+	
+	<lights>
+		
+		<sharedLight linkNode="hellaWorkingLightSquare_01_front_15" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+		<sharedLight linkNode="hellaWorkingLightSquare_01_front_16" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+		<sharedLight linkNode="hellaWorkingLightSquare_01_front_17" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+		<sharedLight linkNode="hellaWorkingLightSquare_01_front_18" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+		<sharedLight linkNode="hellaWorkingLightSquare_01_front_19" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+		<sharedLight linkNode="hellaWorkingLightSquare_01_front_20" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_03" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="0 1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_04" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="0 1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_05" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="0 1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_06" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="0 1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_07" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_08" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_09" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_10" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_11" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_12" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_13" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_14" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_15" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_16" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="1"/>
+		
+		<sharedLight linkNode="hellaWorkingLightSquare_01_17" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_18" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_19" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+        <sharedLight linkNode="hellaWorkingLightSquare_01_20" filename="$data/shared/assets/lights/hella/hellaWorkingLightSquare_01_front.xml" lightTypes="2"/>
+
+        <states>
+            <state lightTypes="0"/>
+            <state lightTypes="0 1"/>
+            <state lightTypes="0 1 2"/>
+        </states>
+        <realLights>
+            <low>
+                
+                <light node="workLightFrontCab" lightTypes="0 1"/>
+                <light node="workLightBackCab" lightTypes=" 1"/>
+                <light node="workLightFrontSideRightCab" lightTypes=" 1"/>
+                <light node="workLightFrontSideLeftCab" lightTypes=" 1"/>
+                <light node="workLightBackSideRightCab" lightTypes=" 1"/>
+                <light node="workLightBackSideLeftCab" lightTypes=" 1"/>
+                <interiorLight node="interiorScreenLight"/>
+				
+				<light node="workLightFrontLeft" lightTypes=" 2"/>
+                <light node="workLightFrontRight" lightTypes=" 2"/>
+				
+				<light node="workLightArmTop" lightTypes=" 2"/>
+                <light node="workLightArmBottom" lightTypes=" 2"/>
+            </low>
+			
+			<high>
+                
+                <light node="workLightFrontCab" lightTypes="0 1"/>
+                <light node="workLightBackCab" lightTypes=" 1"/>
+                <light node="workLightFrontSideRightCab" lightTypes=" 1"/>
+                <light node="workLightFrontSideLeftCab" lightTypes=" 1"/>
+                <light node="workLightBackSideRightCab" lightTypes=" 1"/>
+                <light node="workLightBackSideLeftCab" lightTypes=" 1"/>
+                <interiorLight node="interiorScreenLight"/>
+				
+				<light node="workLightFrontLeft" lightTypes=" 2"/>
+                <light node="workLightFrontRight" lightTypes=" 2"/>
+				
+				<light node="workLightArmTop" lightTypes=" 2"/>
+                <light node="workLightArmBottom" lightTypes=" 2"/>
+            </high>
+        </realLights>
+        
+        <dashboards>
+            <dashboard displayType="EMITTER" valueType="lightState" node="interiorDisplayDecal" intensity="0.3" lightTypes="0" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </lights>
+	
+	<fillUnit>
+        <fillUnitConfigurations>
+            <fillUnitConfiguration name="$l10n_configuration_smallTank" price="0" params="390" >
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="390" />
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="def" capacity="23"/>					
+				</fillUnits>
+				<objectChange node="additionalPartsFront" visibilityActive="false" visibilityInactive="true" />
+            </fillUnitConfiguration>
+			<fillUnitConfiguration name="$l10n_configuration_bigTank" price="1000" params="480" >
+                <fillUnits>
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="diesel" capacity="480" />
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" showOnHud="false" showInShop="false" fillTypes="def" capacity="23"/>					
+				</fillUnits>
+				<objectChange node="additionalPartsFront" visibilityActive="true" visibilityInactive="false" />
+            </fillUnitConfiguration>
+        </fillUnitConfigurations>
+    </fillUnit>
+	
+
+    <motorized>
+        <consumerConfigurations>
+            <consumerConfiguration>
+                <consumer fillUnitIndex="1" usage="35"  fillType="diesel" /> 
+				<!-- usage is per hour at max load and max rpm -->
+                <consumer fillUnitIndex="2" usage="1" fillType="def"/>
+                <!-- usage is per hour at max load and max rpm -->				
+            </consumerConfiguration>
+        </consumerConfigurations>
+
+        <differentialConfigurations>
+            <differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="3.0" wheelIndex1="1" wheelIndex2="2" /> <!-- front right-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="3.0" wheelIndex1="3" wheelIndex2="4" /> <!-- front left-left -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="3.0" wheelIndex1="5" wheelIndex2="6" /> <!-- back left-left -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="3.0" wheelIndex1="7" wheelIndex2="8" /> <!-- back right-right -->
+
+                    <differential torqueRatio="0.5" maxSpeedRatio="4.0" differentialIndex1="1" differentialIndex2="2" /><!-- front-left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="4.0" differentialIndex1="3" differentialIndex2="4" /><!-- back-left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.0" differentialIndex1="5" differentialIndex2="6" /><!-- front-back -->
+                </differentials>
+            </differentialConfiguration>
+			<differentialConfiguration>
+                <differentials>
+                    <differential torqueRatio="0.5" maxSpeedRatio="3.0" wheelIndex1="1" wheelIndex2="2" /> <!-- front right-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="3.0" wheelIndex1="3" wheelIndex2="4" /> <!-- front left-left -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="3.0" wheelIndex1="5" wheelIndex2="6" /> <!-- back left-right -->
+
+                    <differential torqueRatio="0.5" maxSpeedRatio="4.0" differentialIndex1="1" differentialIndex2="2" /><!-- front-left-right -->
+                    <differential torqueRatio="0.5" maxSpeedRatio="2.0" differentialIndex1="3" differentialIndex2="4" /><!-- front-back -->
+                </differentials>
+            </differentialConfiguration>
+        </differentialConfigurations>
+
+        <motorConfigurations>
+            <motorConfiguration name="Cheeky JD 1270G XL" hp="305" price="0">
+                <motor torqueScale="1.288" minRpm="800" maxRpm="2200" maxForwardSpeed="23" maxBackwardSpeed="20" brakeForce="18" lowBrakeForceScale="0.5" dampingRateScale="2">
+                    <torque normRpm="0.45" torque="1.9"/>
+                    <torque normRpm="0.5" torque="0.97"/>
+                    <torque normRpm="0.59" torque="1"/>
+                    <torque normRpm="0.72" torque="1"/>
+                    <torque normRpm="0.86" torque="0.88"/>
+                    <torque normRpm="1" torque="0.72"/>
+                </motor>
+                <transmission minForwardGearRatio="34" maxForwardGearRatio="290" minBackwardGearRatio="34" maxBackwardGearRatio="290" name="$l10n_info_transmission_cvt"/>
+            </motorConfiguration>
+        </motorConfigurations>
+
+        <exhaustEffects>
+            <exhaustEffect node="exhausParticles" filename="$data/effects/exhaust/exhaust.i3d" minRpmColor="0.9 0.9 0.9 0.1" maxRpmColor="0.9 0.9 0.9 0.4" minRpmScale="0.05" maxRpmScale="0.5" xzRotationsOffset="90 0" xzRotationsForward="-45 0" xzRotationsBackward="90 0" xzRotationsLeft="0 -100" xzRotationsRight="0 100" />
+        </exhaustEffects>
+
+        <brakeCompressor capacity="10000" fillSpeed="100" />
+        <motorStartDuration>2500</motorStartDuration>
+
+		
+		<dashboards>
+            <dashboard displayType="TEXT" valueType="rpm" 				node="numbersRpm" 					textColor="1 1 1 1" 	textSize="0.004" 	fontThickness="0.4" 	textMask="0000" 	font="GENERIC_BOLD" 	textAlignment="CENTER" 	groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="speed" 			node="numbersSpeed" 				textColor="1 1 1 1" 	textSize="0.004" 	fontThickness="0.4" 	textMask="00.0" 	font="GENERIC_BOLD" 	textAlignment="CENTER" 	groups="MOTOR_ACTIVE"/>
+			<dashboard displayType="TEXT" valueType="fuelUsage" 		node="numbersFuelUsageTerminal" 	textColor="1 1 1 1" 	textSize="0.004" 	fontThickness="0.4" 	textMask="00.0" 	font="GENERIC_BOLD" 	textAlignment="CENTER" 	groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="motorTemperature" 	node="numbersTempTerminal" 			textColor="1 1 1 1" 	textSize="0.004" 	fontThickness="0.4" 	textMask="00.0" 	font="GENERIC_BOLD" 	textAlignment="CENTER" 	groups="MOTOR_ACTIVE"/>
+		</dashboards>
+		
+    </motorized>
+	
+	<cylindered loadMovingToolStatesAfterFolding="true" loadMovingToolStatesFoldTime="0">
+        <movingTools>
+		
+			<controlGroups>
+                <controlGroup name="$l10n_controlGroup_crane"/>
+                <controlGroup name="$l10n_controlGroup_loadBay"/>
+            </controlGroups>
+			<!-- crane -->
+			<movingTool node="dummyMainArm" delayedNode="mainArm" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+                <controls groupIndex="1" axis="AXIS_CRANE_ARM" invertAxis="true" mouseSpeedFactor="0.5" iconName="CRANE_ARM1_ROTATE_Y" />
+                <rotation rotSpeed="30" rotAcceleration="40" rotMax="120" rotMin="-120" startRot="0" rotationAxis="2" rotSendNumBits="9" />
+				<dependentPart node="cabinCraneFollowingMovement" />
+				<dependentPart node="dummyCutterHolderColJoint"/>
+				<dependentPart node="jointMeshRot"/>
+				
+            </movingTool>
+			<movingTool node="dummyCraneBase" delayedNode="craneBase" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+                <controls groupIndex="2" axis="AXIS_CRANE_ARM2" invertAxis="true" mouseSpeedFactor="0.5" iconName="CRANE_ARM1_ROTATE_Y" />
+                <rotation rotSpeed="30" rotAcceleration="40" rotMax="18" rotMin="-18" startRot="0" rotationAxis="1" rotSendNumBits="9" />
+				<dependentPart node="craneBaseHyd" />
+				<dependentPart node="dummyCutterHolderColJoint"/>
+				<dependentPart node="jointMeshRot"/>
+				
+            </movingTool>
+			<movingTool node="dummySecondArm" delayedNode="secondArm" playSound="true"  isConsumingPower="true">
+                <controls groupIndex="1" axis="AXIS_CRANE_ARM2" invertAxis="true" mouseSpeedFactor="0.5" iconName="CRANE_ARM1_ROTATE_X" />
+                <rotation rotSpeed="30" rotAcceleration="40" rotMax="17.2" rotMin="-71.3" startRot="-37.126" rotationAxis="1" rotSendNumBits="10" />
+				<dependentPart node="dummyCutterHolderColJoint"/>
+				<dependentPart node="jointMeshRot"/>
+				<dependentPart node="moveFourth1" />
+				
+            </movingTool>
+			 <movingTool node="dummyThirdArm" delayedNode="thirdArm" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+                <controls groupIndex="1" axis="AXIS_CRANE_ARM3" invertAxis="false" mouseSpeedFactor="0.2" iconName="CRANE_ARM2_ROTATE_X" />
+                <rotation rotSpeed="30" rotAcceleration="40" rotMax="19.675" rotMin="-38.075" startRot="28.875" rotationAxis="1" rotSendNumBits="11"/>
+				<dependentPart node="dummyCutterHolderColJoint"/>
+				<dependentPart node="jointMeshRot"/>
+				<dependentMovingTool node="dummyFourthArm" speedScale="1"/>
+				<dependentPart node="moveFourth1" />
+				
+			</movingTool>
+			<movingTool node="dummyFourthArm" delayedNode="fourthArm" isConsumingPower="true">
+                <rotation rotSpeed="-60" rotAcceleration="80" rotMax="157" rotMin="41.5" startRot="57.75" rotationAxis="1" rotSendNumBits="11"/>
+				<dependentPart node="dummyCutterHolderColJoint"/>
+				<dependentPart node="jointMeshRot"/>
+				<dependentPart node="armMover1" />
+				<dependentPart node="moveFourth1" />
+				
+			</movingTool>
+			<movingTool node="dummyFifthArm" delayedNode="fifthArm" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+                <controls groupIndex="1" axis="AXIS_CRANE_ARM4" invertAxis="false" mouseSpeedFactor="0.5" iconName="CRANE_ARM2_TRANSLATE" />
+                <translation transSpeed="1.4" transAcceleration="80" transMax="5.371" transMin="2.528" startTrans="2.528" translationAxis="3" />
+				<animation animName="hoseAnimation" animAcceleration="80" animSpeed="5.4" />
+				<dependentPart node="dummyCutterHolderColJoint"/>
+				<dependentMovingTool node="dependetMovingtoolFifthArm" speedScale="1"/>
+				<dependentPart node="jointMeshRot"/>
+				<componentJoint index="6" anchorActor="0"/>
+            </movingTool>
+			<movingTool node="dependetMovingtoolFifthArm" >
+                <translation transSpeed="1.4" transAcceleration="80" transMax="2" transMin="0" startTrans="0" translationAxis="2" />				
+            </movingTool>
+			<movingTool node="secondArm">
+            </movingTool>
+			<movingTool node="thirdArm">
+            </movingTool>
+			<movingTool node="fourthArm">
+            </movingTool>
+			<movingTool node="jointMeshRot">
+                <componentJoint index="8" anchorActor="0"/>
+            </movingTool>
+			<!-- cutter base col joint -->
+            <movingTool node="dummyCutterHolderColJoint">
+                <componentJoint index="6" anchorActor="0"/>
+            </movingTool>
+			<!-- cutter x rotation -->
+            <movingTool node="cutterBaseJoint_rot" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+                <controls groupIndex="1" axis="AXIS_CRANE_TOOL2" invertAxis="true" mouseSpeedFactor="1.0" iconName="FRONTLOADER_ARM_ROTATE_TOOL" />
+                <rotation rotSpeed="-80" rotAcceleration="160" rotMax="170" rotMin="-170" rotationAxis="2" />
+                <componentJoint index="6" anchorActor="1" />
+            </movingTool>
+			<movingTool node="cutterColJoint" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+                <controls groupIndex="1" l10nName="label_arm" axis="AXIS_CRANE_TOOL3" invertAxis="false" mouseSpeedFactor="1" iconName="GRABBER_ROTATE_Y" />
+                <rotation rotSpeed="70" rotAcceleration="140" rotMax="100" rotMin="0" rotationAxis="1" />
+                <componentJoint index="7" anchorActor="0" />
+            </movingTool>
+            <movingTool node="cutterTopClaw1" playSound="true" foldMaxLimit="0" isConsumingPower="true">
+                <controls groupIndex="1" l10nName="label_arm" axis="AXIS_CRANE_TOOL" invertAxis="false" mouseSpeedFactor="0.6" iconName="GRABBER_OPEN_CLOSE" />
+                <animation animName="grabberAnimation" animAcceleration="5" animSpeed="1" />
+                <componentJoint index="6" anchorActor="0" />
+            </movingTool>
+			<!-- manuellCabControl -->
+            <movingTool node="cabineManuelMovement" playSound="true" isConsumingPower="true">
+                <controls groupIndex="2" axis="AXIS_CRANE_TOOL3" invertAxis="true" mouseSpeedFactor="0.5" iconName="CRANE_ARM2_TRANSLATE"/>
+                <rotation rotSpeed="30" rotAcceleration="80" rotMax="180" rotMin="-180" rotationAxis="2" startRot="0"/>
+            </movingTool>
+        </movingTools>
+		<sounds>
+            <actionSound template="hydraulicLayerTone2"   pitchScale="1.1" volumeScale="0.5" linkNode="dummyThirdArm"                  actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="dummyThirdArm"                  fadeIn="0.1" fadeOut="0.1" />
+            <actionSound template="defaultHydraulicSound" pitchScale="0.6" volumeScale="1.2" linkNode="dummyFifthArm"             actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="dummyFifthArm"             fadeIn="0.1" fadeOut="0.1" />
+            <actionSound template="hydraulicLayerTone"    pitchScale="0.4" volumeScale="1.6" linkNode="dummyMainArm"                actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="dummyMainArm"                fadeIn="0.1" fadeOut="0.1" />
+            <actionSound template="defaultHydraulicSmall" pitchScale="0.4" volumeScale="1.6" linkNode="cutterTopClaw1" actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="cutterTopClaw1" fadeIn="0.1" fadeOut="0.1" />
+            <actionSound template="clackVar6"             pitchScale="0.7" volumeScale="1.3" linkNode="dummyThirdArm"                  actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyThirdArm" />
+            <actionSound template="cylinderPunch"         pitchScale="1"   volumeScale="0.3" linkNode="dummyThirdArm"                  actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyThirdArm" />
+            <actionSound template="sheetImp02"            pitchScale="1.5" volumeScale="0.7" linkNode="dummyFifthArm"             actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyFifthArm" />
+            <actionSound template="clackVar6"             pitchScale="0.7" volumeScale="1.9" linkNode="dummyFifthArm"             actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyFifthArm" />
+            <actionSound template="clackVar6"             pitchScale="0.7" volumeScale="1.3" linkNode="dummyMainArm"                actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyMainArm" />
+            <actionSound template="thudVar1"              pitchScale="0.7" volumeScale="1.3" linkNode="dummyMainArm"                actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyMainArm" />
+            <actionSound template="sheetImp02"            pitchScale="0.8" volumeScale="0.8" linkNode="cutterTopClaw1"         actionNames="TOOL_MOVE_END_POS_LIMIT"                         nodes="cutterTopClaw1" />
+            <actionSound template="clackVar6"             pitchScale="0.6" volumeScale="1.8" linkNode="cutterTopClaw1"         actionNames="TOOL_MOVE_END_POS_LIMIT"                         nodes="cutterTopClaw1" />
+            <actionSound template="foldStartMed02"        pitchScale="0.5" volumeScale="1.3" linkNode="cutterTopClaw1"         actionNames="TOOL_MOVE_END_NEG_LIMIT"                         nodes="cutterTopClaw1" />
+			
+			<actionSound template="hydraulicLayerTone2"   pitchScale="1.1" volumeScale="0.5" linkNode="dummySecondArm"                  actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="dummySecondArm"                  fadeIn="0.1" fadeOut="0.1" />
+			<actionSound template="clackVar6"             pitchScale="0.7" volumeScale="1.3" linkNode="dummySecondArm"                  actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummySecondArm" />
+            <actionSound template="cylinderPunch"         pitchScale="1"   volumeScale="0.3" linkNode="dummySecondArm"                  actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummySecondArm" />
+			<actionSound template="hydraulicLayerTone2"   pitchScale="1.1" volumeScale="0.5" linkNode="dummyFourthArm"                  actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="dummyFourthArm"                  fadeIn="0.1" fadeOut="0.1" />
+			<actionSound template="clackVar6"             pitchScale="0.7" volumeScale="1.3" linkNode="dummyFourthArm"                  actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyFourthArm" />
+            <actionSound template="cylinderPunch"         pitchScale="1"   volumeScale="0.3" linkNode="dummyFourthArm"                  actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyFourthArm" />
+			<actionSound template="hydraulicLayerTone2"   pitchScale="1.1" volumeScale="0.5" linkNode="dummyCraneBase"                  actionNames="TOOL_MOVE_POS TOOL_MOVE_NEG"                     nodes="dummyCraneBase"                  fadeIn="0.1" fadeOut="0.1" />
+			<actionSound template="clackVar6"             pitchScale="0.7" volumeScale="1.3" linkNode="dummyCraneBase"                  actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyCraneBase" />
+            <actionSound template="cylinderPunch"         pitchScale="1"   volumeScale="0.3" linkNode="dummyCraneBase"                  actionNames="TOOL_MOVE_END_POS_LIMIT TOOL_MOVE_END_NEG_LIMIT" nodes="dummyCraneBase" />
+        </sounds>
+		<movingParts>
+			<!-- additional arms Hyd-->
+			<movingPart node="secondArmHyd" referencePoint="secondArmHydRef" referenceFrame="secondArmHydRef" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="secondArmHydPunch" />
+            </movingPart>
+			<movingPart node="fourthArmHyd" referencePoint="fourthArmHydRef" referenceFrame="fourthArmHydRef" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="fourthArmHydPunch" />
+            </movingPart>
+			<!-- additional arms -->
+			<movingPart node="armMover1" referencePoint="armMover2Ref" localReferencePoint="armMover2" referenceFrame="armMover1RefFrame" isActiveDirty="true" maxUpdateDistance="-">
+                <dependentPart node="armMover2"/>
+				<dependentPart node="moveFourth1"/>
+			</movingPart>
+			<movingPart node="armMover2" referencePoint="armMover2Ref" referenceFrame="armMover2Ref" isActiveDirty="true" maxUpdateDistance="-"/>
+			<movingPart node="moveFourth1" referencePoint="moveFourth2Ref" localReferencePoint="moveFourth2" referenceFrame="moveFourth2RefFrame" isActiveDirty="true" maxUpdateDistance="-">
+                <dependentPart node="moveFourth2"/>
+				<dependentPart node="moveFourth3"/>
+				<dependentPart node="fourthArmHyd"/>
+			</movingPart>
+			<movingPart node="moveFourth2" referencePoint="moveFourth2Ref" referenceFrame="moveFourth2Ref" isActiveDirty="true" maxUpdateDistance="-"/>
+			<movingPart node="moveFourth3" referencePoint="moveFourth3Ref" referenceFrame="moveFourth3Ref" scaleZ="true" isActiveDirty="true" maxUpdateDistance="-"/>
+			<!-- generals -->
+			<movingPart node="hydSteeringRight" referencePoint="hydSteeringRightRef" referenceFrame="hydSteeringRightRef" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="hydSteeringRightPunch" />
+            </movingPart>
+            <movingPart node="hydSteeringLeft" referencePoint="hydSteeringLeftRef" referenceFrame="hydSteeringLeftRef" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="hydSteeringLeftPunch" />
+            </movingPart>
+			<movingPart node="craneBaseHyd" referencePoint="craneBaseHydRef" referenceFrame="craneBaseHydRef" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="craneBaseHydPunch" />
+            </movingPart>			
+			<!-- cab -->
+            <movingPart node="cabHydRight" referencePoint="hydraulicCabinRightRef" referenceFrame="hydraulicCabinRightRef" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="cabHydRightPunch" />
+            </movingPart>
+            <movingPart node="cabHydLeft" referencePoint="hydraulicCabinLeftRef" referenceFrame="hydraulicCabinLeftRef" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="cabHydLeftPunch" />
+            </movingPart>
+			<!-- cab tilt movement -->
+			<movingPart node="cabinZRot" referenceFrame="cabinZRotRefFrame" limitedAxis="1" minRot="-17" maxRot="17" alignToWorldY="true" isActiveDirty="true" foldMinLimit="0" foldMaxLimit="0" smoothedDirectionScale="true" directionThreshold="0.03" maxUpdateDistance="-">
+                <dependentPart node="cabinXRot"/>
+                <dependentPart node="cabHydLeft"/>
+                <dependentPart node="cabHydRight"/>
+            </movingPart>
+            <movingPart node="cabinXRot" referenceFrame="cabinXRotRefFrame" limitedAxis="1" minRot="-9" maxRot="9" alignToWorldY="true" foldMinLimit="0" foldMaxLimit="0" smoothedDirectionScale="true" directionThreshold="0.03" maxUpdateDistance="-"/>
+			<!-- cab head movement -->
+			<movingPart node="cabinCraneFollowingMovement" referencePoint="cabinCraneFollowingMovementRef" referenceFrame="cabinCraneFollowingMovementRefFrame" isActiveDirty="true" limitedAxis="2" maxUpdateDistance="-">
+            </movingPart>
+			<!-- cutter joints and cutter frame -->
+            <movingPart node="cutterJoint1" referencePoint="cutterJointRef" referenceFrame="cutterJoint1RefFrame" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="-">
+                <dependentPart node="cutterJoint2" />
+                <dependentPart node="cutterFrame" />
+            </movingPart>
+            <movingPart node="cutterJoint2" referencePoint="cutterJointRef" referenceFrame="cutterJoint2RefFrame" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="-"/>
+            <movingPart node="cutterFrame" referencePoint="cutterFrameRef" referenceFrame="jd1270G_cutterBase_component7" isActiveDirty="true" maxUpdateDistance="-"/>
+            <!-- cutter body -->
+            <movingPart node="cutterBody" referencePoint="cutterBodyRef" referenceFrame="cutterBodyRef" isActiveDirty="true" maxUpdateDistance="-">
+                <dependentPart node="hydraulicCutterBody" />
+            </movingPart>
+            <!-- cutter hydraulics -->
+			<movingPart node="hydraulicCutterBody" referencePoint="hydraulicCutterBodyRef" referenceFrame="hydraulicCutterBodyRefFrame">
+                <translatingPart node="hydraulicCutterBodyPunch" />
+            </movingPart>
+            <movingPart node="hydraulicCutterBottomClaw1" referencePoint="hydraulicCutterBottomClaw1Ref" referenceFrame="hydraulicCutterBottomClaw1Ref" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="hydraulicCutterBottomClaw1Punch" />
+            </movingPart>
+			<movingPart node="hydraulicCutterBottomClaw2" referencePoint="hydraulicCutterBottomClaw2Ref" referenceFrame="hydraulicCutterBottomClaw2Ref" isActiveDirty="true"  maxUpdateDistance="-">
+                <translatingPart node="hydraulicCutterBottomClaw2Punch" />
+            </movingPart>
+			<movingPart node="hydraulicCutterTopClaw1" referencePoint="hydraulicCutterTopClaw1Ref" referenceFrame="hydraulicCutterTopClaw1Ref" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="hydraulicCutterTopClaw1Punch" />
+            </movingPart>
+			<movingPart node="hydraulicCutterTopClaw2" referencePoint="hydraulicCutterTopClaw2Ref" referenceFrame="hydraulicCutterTopClaw2Ref" isActiveDirty="true"  maxUpdateDistance="-">
+                <translatingPart node="hydraulicCutterTopClaw2Punch" />
+            </movingPart>
+			<movingPart node="hydraulicCutterWheel1Frame" referencePoint="hydraulicCutterWheel1FrameRef" referenceFrame="hydraulicCutterWheel1FrameRef" isActiveDirty="true" invertZ="true" maxUpdateDistance="-">
+                <translatingPart node="hydraulicCutterWheel1FramePunch" />
+            </movingPart>
+			<movingPart node="hydraulicCutterWheel2Frame" referencePoint="hydraulicCutterWheel2FrameRef" referenceFrame="hydraulicCutterWheel2FrameRef" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="hydraulicCutterWheel2FramePunch" />
+            </movingPart>
+			<movingPart node="cardanPart02" referencePoint="cardanPart02Ref" referenceFrame="cardanPart02Ref" isActiveDirty="true" maxUpdateDistance="-">
+                <translatingPart node="cardanPart03" />
+            </movingPart>
+			<movingPart node="damper" referencePoint="refPointDamper" referenceFrame="refPointDamper" scaleZ="true" isActiveDirty="true" maxUpdateDistance="-"/>
+			<!-- wipers -->
+			<movingPart node="leftWiperArm" referencePoint="refLeftWiperArm" referenceFrame="refLeftWiperArm" isActiveDirty="true" maxUpdateDistance="-"/>
+			<!-- ArmCamera -->
+			<movingPart node="cameraArmRot" referencePoint="cameraArmRef" referenceFrame="cameraArmRefFrame" isActiveDirty="true" limitedAxis="1" maxUpdateDistance="-"/>
+			 <!-- crawlers -->
+            <movingPart node="crawlerFrontLeftRot"  referencePoint="frontLeftBoggieFrontWheel"  referenceFrame="crawlerFrontLeftRotRefFrame1"  isActiveDirty="true" maxUpdateDistance="150"/>
+            <movingPart node="crawlerFrontRightRot" referencePoint="frontRightBoggieFrontWheel" referenceFrame="crawlerFrontRightRotRefFrame1" isActiveDirty="true" maxUpdateDistance="150"/>
+            <movingPart node="crawlerBackLeftRot"   referencePoint="backLeftBoggieFrontWheel"   referenceFrame="crawlerBackLeftRotRefFrame1"   isActiveDirty="true" maxUpdateDistance="150"/>
+            <movingPart node="crawlerBackRightRot"  referencePoint="backRightBoggieFrontWheel"  referenceFrame="crawlerBackRightRotRefFrame1"  isActiveDirty="true" maxUpdateDistance="150"/>
+			<!-- chains -->
+			<movingPart node="chain01" referencePoint="chain01Ref" referenceFrame="chain01RefFrame" scaleZ="true" isActiveDirty="true" maxUpdateDistance="50"/>
+            <movingPart node="chain02" referencePoint="chain02Ref" referenceFrame="chain02RefFrame" scaleZ="true" isActiveDirty="true" maxUpdateDistance="50"/>
+		</movingParts>
+		
+		<dashboards>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickLeft" rotAxis="1" minRot="15" maxRot="-15" axis="AXIS_CRANE_ARM3" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickLeft" rotAxis="3" minRot="15" maxRot="-15" axis="AXIS_CRANE_ARM" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="1" minRot="-15" maxRot="15" axis="AXIS_CRANE_ARM2" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="ROT" valueType="movingTool" node="joystickRight" rotAxis="3" minRot="-15" maxRot="15" axis="AXIS_CRANE_ARM4" doInterpolation="true" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </cylindered>
+	
+	<wipers>
+        <wiper animName="wiperAnimation" >
+            <state animSpeed="0.75" animPause="2.0" />
+            <state animSpeed="0.75" animPause="2.0" />
+            <state animSpeed="1.10" animPause="2.0" />
+        </wiper>
+    </wipers>
+	
+	<animations>
+        <animation name="wiperAnimation">
+            <part node="rightWiperArm" startTime="0" endTime="0.375" startRot="174.873 90 -136.137" endRot="100 90 -136.137" />
+            <part node="rightWiperArm" startTime="0.375" endTime="0.65" startRot="100 90 -136.137" endRot="174.873 90 -136.137" />
+			<part node="wiper" startTime="0" endTime="0.375" startRot="75.713 -41.004 -90.832" endRot="63.494 32.93 -107.37" />
+            <part node="wiper" startTime="0.375" endTime="0.65" startRot="63.494 32.93 -107.37" endRot="75.713 -41.004 -90.832" />
+			<part node="wiperSideWindow" startTime="0" endTime="0.375" startRot="0 4.878 0" endRot="74.846 4.878 0" />
+            <part node="wiperSideWindow" startTime="0.375" endTime="0.65" startRot="74.846 4.878 0" endRot="0 4.878 0" />
+			<part node="wiperSideWindow1" startTime="0" endTime="0.375" startRot="0 -4.878 0" endRot="74.846 -4.878 0" />
+            <part node="wiperSideWindow1" startTime="0.375" endTime="0.65" startRot="74.846 -4.878 0" endRot="0 -4.878 0" />
+			<sound template="wiper1" startTime="0" endTime="1" direction="1"  volumeScale="1" pitchScale="0.6" fadeOut="0.1" linkNode="wiper"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="1" pitchScale="0.6" fadeOut="0.1" linkNode="wiper"/>
+
+            <sound template="wiper1" startTime="0" endTime="1" direction="1"  volumeScale="0.8" pitchScale="0.7" fadeOut="0.1" linkNode="wiperSideWindow"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="0.8" pitchScale="0.7" fadeOut="0.1" linkNode="wiperSideWindow"/>
+			
+			<sound template="wiper1" startTime="0" endTime="1" direction="1"  volumeScale="0.8" pitchScale="0.7" fadeOut="0.1" linkNode="wiperSideWindow1"/>
+            <sound template="wiper2" startTime="0" endTime="1" direction="-1" volumeScale="0.8" pitchScale="0.7" fadeOut="0.1" linkNode="wiperSideWindow1"/>
+        </animation>
+		<animation name="enterAnimation">
+            <part node="ladder" startTime="0" duration="0.9" startRot="0 0 0" endRot="0 0 162"/>
+			<sound template="clackVar6"  startTime="0.99" direction="1" volumeScale="0.6"  pitchScale="1"   linkNode="ladder"/>
+            <sound template="sheetImp02" startTime="0.99" direction="1" volumeScale="0.9"  pitchScale="1.5" linkNode="ladder"/>
+            <sound template="clackVar6"  startTime="0.01" direction="-1" volumeScale="0.6" pitchScale="1"   linkNode="ladder"/>
+            <sound template="sheetImp02" startTime="0.01" direction="-1" volumeScale="0.9" pitchScale="1.5" linkNode="ladder"/>
+        </animation>
+		<animation name="cutAnimation">
+            <part node="cuttingBlade" startTime="0" duration="0.9" startRot="-90 -42 0" endRot="-90 42 0"/>
+            <part node="cuttingBlade" startTime="0.9" duration="0.1" startRot="-90 42 0" endRot="-90 -42 0"/>
+			
+			<sound template="forestryTreeCut" startTime="0.01" linkNode="cuttingBlade" />
+			<delimb template="DEFAULT_TREE_DELIMB" startTime="0.01" linkNode="cuttingBlade" />
+        </animation>
+		<animation name="grabberAnimation">
+            <part node="cutterTopClaw1" startTime="0" duration="1" startRot="0 -100 0" endRot="0 -10 0"/>
+            <part node="cutterTopClaw2" startTime="0" duration="1" startRot="0 100 0" endRot="0 10 0"/>
+            <part node="cutterBottomClaw1" startTime="0" duration="1" startRot="0 -100 0" endRot="0 -10 0"/>
+            <part node="cutterBottomClaw2" startTime="0" duration="1" startRot="0 100 0" endRot="0 10 0"/>
+            <part node="cutterWheel1Frame"   startTime="0" endTime="1" startRot="0 -60 0" endRot="0 -10 0"/>
+            <part node="cutterWheel2Frame"   startTime="0" endTime="1" startRot="0 60 0" endRot="0 10 0"/>
+			<part node="cutterTopClaw1Col1" startTime="0" duration="1" startRot="0 0 -100" endRot="0 0 -10"/>
+            <part node="cutterTopClaw2Col1" startTime="0" duration="1" startRot="0 0 100" endRot="0 0 10"/>
+            <part node="cutterBottomClaw1Col1" startTime="0" duration="1" startRot="0 0 -100" endRot="0 0 -10"/>
+            <part node="cutterBottomClaw2Col1" startTime="0" duration="1" startRot="0 0 100" endRot="0 0 10"/>
+            <part node="cutterWheel1FrameCol"   startTime="0" endTime="1" startRot="0 0 -60" endRot="0 0 0"/>
+            <part node="cutterWheel2FrameCol"   startTime="0" endTime="1" startRot="0 0 60" endRot="0 0 0"/>
+        </animation>	
+		<animation name="hoseAnimation">
+            <part componentJointIndex="8" startTime="0" endTime="0.02" startRotMinLimit="-50 0 -20" endRotMinLimit="-5 0 -20" startRotMaxLimit="10 0 20" endRotMaxLimit="10 0 20"/>
+        </animation>
+		<animation name="cabAutomation">
+            <part node="cabineManuelMovement" startTime="0" endTime="1" startRot="0 0 0" endRot="0 0 0"/>
+            <part node="cabinCraneFollowingMovementRef" startTime="0" endTime="1" startTrans="0 0 0" endTrans="0 0 7.7"/>
+			<sound template="hydraulicLayerTone" startTime="0.01" endTime="2.99" pitchScale="0.2" fadeIn="0.1" fadeOut="0.05" direction="0" linkNode="cabineManuelMovement">
+                <volume indoor="1.5" outdoor="0.00" />
+            </sound>
+            <sound template="hydraulicLayerTone3" startTime="0.01" endTime="2.99" pitchScale="0.2" fadeIn="0.3" fadeOut="0.1" direction="0" linkNode="cabineManuelMovement">
+                <volume indoor="1.5" outdoor="0.00" />
+            </sound>
+            <sound template="thudVar2" startTime="2.99" pitchScale="0.4" direction="1" linkNode="cabineManuelMovement">
+                <volume indoor="2.50" outdoor="0.00" />
+            </sound>
+            <sound template="thudVar2" startTime="0.01" pitchScale="0.4" direction="-1" linkNode="cabineManuelMovement">
+                <volume indoor="2.50" outdoor="0.00" />
+            </sound>
+            <sound file="$data/sounds/vehicles/cabin/indoorCabinRumbleLoop.wav" startTime="0.01" endTime="2.99" pitchScale="0.25" direction="0" fadeOut="0.1" linkNode="cabineManuelMovement">
+                <volume indoor="4.50" outdoor="0.00" />
+            </sound>
+            <sound file="$data/sounds/vehicles/cabin/indoorCabinRumbleLoop.wav" startTime="0.01" endTime="2.99" pitchScale="0.65" direction="0" fadeOut="0.1" linkNode="cabineManuelMovement">
+                <volume indoor="1.50" outdoor="0.00" />
+            </sound>
+        </animation>
+		
+		<animation name="folding" resetOnStart="false">
+			<part node="dummyMainArm" startTime="0" duration="4" startRot="0 0 0" endRot="0 0 0"/>
+			<part node="dummyCraneBase" startTime="1" duration="4" startRot="0 0 0" endRot="10 0 0"/>
+            <part node="dummySecondArm" startTime="1" duration="3" startRot="-50 0 0" endRot="-30 0 0"/>
+			<part node="dummyThirdArm" startTime="0" duration="2" startRot="7.166 0 0" endRot="14.675 0 0"/>
+			<part node="dummyFourthArm" startTime="0" duration="2" startRot="64.105 0 0" endRot="147 0 0"/>
+			<part node="dummyFifthArm" startTime="0" duration="1" startTrans="-0.001 0.321 2.528" endTrans="-0.001 0.321 2.528"/>
+			<part componentJointIndex="6" startTime="0" endTime="1" startRotMinLimit="0 -50 -90" endRotMinLimit="0 0 -25" startRotMaxLimit="0 50 90" endRotMaxLimit="0 0 -25"/>
+			<part componentJointIndex="8" startTime="0" endTime="0.02" startRotMinLimit="-50 0 -20" endRotMinLimit="-50 0 -35" startRotMaxLimit="10 0 20" endRotMaxLimit="10 0 -35"/>
+			<part node="dummyCutterHolderColJoint" startTime="0" duration="1" startRot="90 -36 -90" endRot="90 -10 -90"/>
+
+            <part node="chain_vis01" startTime="5.00" endTime="5.05" visibility="false" />
+            <part node="chain_vis01" startTime="5.05" endTime="5.10" visibility="true" />
+            <part node="chain_vis02" startTime="5.00" endTime="5.05" visibility="false" />
+            <part node="chain_vis02" startTime="5.05" endTime="5.10" visibility="true" />
+			
+			<part node="cutterColJoint" startTime="0" duration="1" startRot="0 0 0" endRot="0 0 0"/>
+			
+			<part node="cutterBaseJoint_rot" startTime="0" duration="1" startRot="0 0 0" endRot="0 0 0"/>
+			
+			<part node="cutterTopClaw1" startTime="0" duration="1" startRot="0 -100 0" endRot="0 -100 0"/>
+            <part node="cutterTopClaw2" startTime="0" duration="1" startRot="0 100 0" endRot="0 100 0"/>
+            <part node="cutterBottomClaw1" startTime="0" duration="1" startRot="0 -100 0" endRot="0 -100 0"/>
+            <part node="cutterBottomClaw2" startTime="0" duration="1" startRot="0 100 0" endRot="0 100 0"/>
+            <part node="cutterWheel1Frame"   startTime="0" endTime="1" startRot="0 -60 0" endRot="0 -60 0"/>
+            <part node="cutterWheel2Frame"   startTime="0" endTime="1" startRot="0 60 0" endRot="0 60 0"/>
+			<part node="cutterTopClaw1Col1" startTime="0" duration="1" startRot="0 0 -100" endRot="0 0 -100"/>
+            <part node="cutterTopClaw2Col1" startTime="0" duration="1" startRot="0 0 100" endRot="0 0 100"/>
+            <part node="cutterBottomClaw1Col1" startTime="0" duration="1" startRot="0 0 -100" endRot="0 0 -100"/>
+            <part node="cutterBottomClaw2Col1" startTime="0" duration="1" startRot="0 0 100" endRot="0 0 100"/>
+            <part node="cutterWheel1FrameCol"   startTime="0" endTime="1" startRot="0 0 -60" endRot="0 0 -60"/>
+            <part node="cutterWheel2FrameCol"   startTime="0" endTime="1" startRot="0 0 60" endRot="0 0 60"/>
+        </animation>
+    </animations>
+	
+	
+	
+	<foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="1" foldInputButton="IMPLEMENT_EXTRA4" turnOnFoldMaxLimit="0">
+                    <foldingPart animationName="folding" speedScale="0.45" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+	
+	<crabSteering>
+        <steeringMode name="$l10n_action_steeringModeOFF"/>
+		<steeringMode name="$l10n_action_steeringModeON">
+			<animation name="cabAutomation" speed="0.5" />
+        </steeringMode>
+    </crabSteering>	
+	
+	<woodHarvester>
+        <cutNode node="cutNode" attachNode="jd1270G_cutter_component8" attachReferenceNode="attachReferenceNode" sizeY="1.3" sizeZ="1.8" maxRadius="0.4" releasedComponentJointIndex="7" releasedComponentJoint2Index="6" /> 
+        <cutLengths min="1" max="25" step="0.5" />
+        <delimbNode node="delimbNode" sizeX="0.1" sizeY="1.3" sizeZ="1.8" delimbOnCut="true" />
+        <cutAnimation name="cutAnimation" speedScale="1" cutTime="0.5" />
+        <grabAnimation name="grabberAnimation" speedScale="1" />
+        <treeSizeMeasure node="treeSizeMeasureNode" rotMaxRadius="0.5" />
+		<cutEffects>
+            <effectNode effectClass="ParticleEffect" effectNode="chainsawWoodChipsEmitter" particleType="CRUSHER_WOOD" emitCountScale="150"/>
+            <effectNode effectClass="ParticleEffect" effectNode="chainsawWoodDustEmitter" particleType="CRUSHER_DUST" emitCountScale="50"/>
+			<animationNode class="ScrollingAnimation" node="cuttingChain"    scrollSpeed="3" scrollLength="0.1" shaderParameterName="offsetUV" shaderParameterComponent="2" turnOnFadeTime="1"   turnOffFadeTime="1"/>
+        </cutEffects>
+        <delimbEffects>
+            <effectNode effectClass="ParticleEffect" effectNode="delimbWoodChipsEmitter" particleType="CRUSHER_WOOD" emitCountScale="1"/>
+            <effectNode effectClass="ParticleEffect" effectNode="delimbWoodDustEmitter" particleType="CRUSHER_DUST" emitCountScale="1"/>
+        </delimbEffects>
+        <forwardingNodes>
+            <animationNode node="cutterWheel1" rotAxis="3" rotSpeed="900"  turnOnFadeTime="0" turnOffFadeTime="0" />
+            <animationNode node="cutterWheel2" rotAxis="3" rotSpeed="-900" turnOnFadeTime="0" turnOffFadeTime="0" />
+            <animationNode node="cutterRotationPart01" rotAxis="1" rotSpeed="-900" turnOnFadeTime="0" turnOffFadeTime="0" />
+            <animationNode node="cutterRotationPart02" rotAxis="2" rotSpeed="-900" turnOnFadeTime="0" turnOffFadeTime="0" />
+            <animationNode node="cutterRotationPart03" rotAxis="2" rotSpeed="-900" turnOnFadeTime="0" turnOffFadeTime="0" />
+        </forwardingNodes>
+		
+		<dashboards>
+            <dashboard displayType="TEXT" valueType="curCutLength" node="cutLength" textColor="1 1 1 1" textSize="0.01" fontThickness="0.4" textMask="0000" font="GENERIC_BOLD" textAlignment="CENTER" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="TEXT" valueType="diameter" node="diameter" textColor="1 1 1 1" textSize="0.01" fontThickness="0.4" textMask="0000" font="GENERIC_BOLD" textAlignment="CENTER" groups="MOTOR_ACTIVE"/>
+        </dashboards>
+    </woodHarvester>
+	
+	
+	
+	<honk>
+        <sound template="HONK_KOMATSU"  />
+    </honk>
+	
+	<suspensions>
+        <suspension node="seat" weight="150" minTranslation="-0.05 -0.15 0.0" maxTranslation="0.05 0.15 0.0" suspensionParametersX="20 4" suspensionParametersY="5 1" suspensionParametersZ="20 4"/>
+        <suspension useCharacterTorso="true" weight="90" minRotation="0 -5 -5" maxRotation="0 5 5" suspensionParametersY="7 1" suspensionParametersZ="7 1"/>
+    </suspensions>
+	
+	<ai>
+        <agent width="3.25" length="13.4" height="4.15" lengthOffset="1.8" frontOffset="2.7" />
+    </ai>
+	
+    <dashboard>
+        <groups>
+            <group name="MOTOR_STARTING" isMotorStarting="true"/>
+            <group name="MOTOR_ACTIVE" isMotorStarting="true" isMotorRunning="true"/>
+        </groups>
+        <default>
+            <dashboard displayType="VISIBILITY" node="numbers" groups="MOTOR_ACTIVE"/>
+            <dashboard displayType="VISIBILITY" node="interiorDisplayDecal" groups="MOTOR_ACTIVE"/>
+        </default>
+    </dashboard>
+    <foliageBending>
+        <bendingNode minX="-1.6" maxX="1.6" minZ="0" maxZ="3.5" yOffset="0.5" />
+        <bendingNode minX="-1.6" maxX="1.6" minZ="-3.5" maxZ="0" yOffset="0.5" node="jd1270G_component2" />
+        <bendingNode minX="-0.358" maxX="0.358" minZ="-0.174" maxZ="0.174" yOffset="-0.58" node="jd1270G_cutterBase_component7" />
+        <bendingNode minX="-1" maxX="1" minZ="-0.748" maxZ="0.736" yOffset="0" node="jd1270G_cutter_component8" />
+    </foliageBending>
+	
+	<connectionHoses>
+        <localHose>
+            <hose type="CABLE_BOUNDLE"  node="hoseStartNode01"  length="1" diameter="0.17" minCenterPointAngle="30" straighteningFactor="2" isWorldSpaceHose="false"/>
+            <target attacherJointIndices="1 3 4" type="CABLE_BOUNDLE" node="hoseEndNode01" straighteningFactor="2"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="hoseStartNode03"  length="1" diameter="0.17" minCenterPointAngle="30" straighteningFactor="2" isWorldSpaceHose="false"/>
+            <target attacherJointIndices="1 3 4" type="CABLE_BOUNDLE" node="hoseEndNode03" straighteningFactor="2"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="hoseStartNode02"  length="2.1" diameter="0.17" minCenterPointAngle="90" straighteningFactor="0.1" isWorldSpaceHose="false"/>
+            <target attacherJointIndices="1 3 4" type="CABLE_BOUNDLE" node="hoseEndNode02" straighteningFactor="2"/>
+        </localHose>
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="hoseStartNode04"  length="0.65" diameter="0.09" minCenterPointAngle="90" straighteningFactor="0.1" isWorldSpaceHose="false"/>
+            <target attacherJointIndices="1 3 4" type="CABLE_BOUNDLE" node="hoseEndNode04" straighteningFactor="2"/>
+        </localHose>		
+		<localHose>
+            <hose type="CABLE_BOUNDLE"  node="hoseStartNode05"  length="0.65" diameter="0.09" minCenterPointAngle="90" straighteningFactor="0.1" isWorldSpaceHose="false"/>
+            <target attacherJointIndices="1 3 4" type="CABLE_BOUNDLE" node="hoseEndNode05" straighteningFactor="2"/>
+        </localHose>		
+    </connectionHoses>
+	
+	<attacherJoints>
+        <attacherJoint node="attacherJointTrailer" jointType="trailer" rootNode="jd1270G_component2" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1">
+            <distanceToGround upper="1.24" lower="0.42"/>
+			<schema position="1 0" rotation="0" invertX="false" />
+        </attacherJoint>
+		<attacherJoint node="attacherJointTrailer" jointType="trailerLow" rootNode="jd1270G_component2" lowerRotLimit="10 50 50" upperRotRotationOffset="0" allowsJointLimitMovement="false" comboTime="1">
+            <distanceToGround upper="1.24" lower="0.42"/>
+			<schema position="1 0" rotation="0" invertX="false" />
+        </attacherJoint>
+    </attacherJoints>
+	
+	<designConfigurations>
+        <designConfiguration name="$l10n_configuration_rearProtectionOff" price="0">
+			<objectChange node="configProtection" visibilityActive="false" visibilityInactive="true" />
+			<objectChange node="cabProtection" visibilityActive="false" visibilityInactive="true" />
+		</designConfiguration>
+        <designConfiguration name="$l10n_configuration_rearProtectionOn" price="2500">
+			<objectChange node="configProtection" visibilityActive="true" visibilityInactive="false" />
+			<objectChange node="cabProtection" visibilityActive="false" visibilityInactive="true" />
+		</designConfiguration>
+		<designConfiguration name="$l10n_configuration_cabProtectionOn" price="2500">
+			<objectChange node="configProtection" visibilityActive="false" visibilityInactive="true" />
+			<objectChange node="cabProtection" visibilityActive="true" visibilityInactive="false" />
+		</designConfiguration>
+		<designConfiguration name="$l10n_configuration_fullProtectionOn" price="4700">
+			<objectChange node="configProtection" visibilityActive="true" visibilityInactive="false" />
+			<objectChange node="cabProtection" visibilityActive="true" visibilityInactive="false" />
+		</designConfiguration>
+    </designConfigurations>
+	
+	<wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="4" fieldMultiplier="2"/>
+	
+	
+<i3dMappings>
+  <i3dMapping id="jd1270G_front_component1" node="0>" />
+  <i3dMapping id="cameraRaycastNodes" node="0>0" />
+  <i3dMapping id="cameraRaycastNode1" node="0>0|0" />
+  <i3dMapping id="cameraRaycastNode2" node="0>0|1" />
+  <i3dMapping id="cameraRaycastNode3" node="0>0|2" />
+  <i3dMapping id="shadowFocusBox" node="0>0|3" />
+  <i3dMapping id="exitPoint" node="0>1" />
+  <i3dMapping id="cabinVisuals" node="0>2" />
+  <i3dMapping id="cabin" node="0>2|0" />
+  <i3dMapping id="cabinXRotRefFrame" node="0>2|0|0" />
+  <i3dMapping id="cabinXRotFreeze" node="0>2|0|1" />
+  <i3dMapping id="cabinXRot" node="0>2|0|1|0" />
+  <i3dMapping id="JD1210G:cabinXRot" node="0>2|0|1|0|0" />
+  <i3dMapping id="cabinZRotRefFrame" node="0>2|0|1|0|1" />
+  <i3dMapping id="cabinZRotFreeze" node="0>2|0|1|0|2" />
+  <i3dMapping id="cabinZRot" node="0>2|0|1|0|2|0" />
+  <i3dMapping id="JD1210G:cabinZRot" node="0>2|0|1|0|2|0|0" />
+  <i3dMapping id="cabinCraneFollowingMovement" node="0>2|0|1|0|2|0|0|0" />
+  <i3dMapping id="cabineManuelMovement" node="0>2|0|1|0|2|0|0|0|0" />
+  <i3dMapping id="cabinYRot" node="0>2|0|1|0|2|0|0|0|0|0" />
+  <i3dMapping id="cab" node="0>2|0|1|0|2|0|0|0|0|0|0" />
+  <i3dMapping id="CabParts" node="0>2|0|1|0|2|0|0|0|0|0|0|0" />
+  <i3dMapping id="JD1210G:cabRotDecal" node="0>2|0|1|0|2|0|0|0|0|0|0|0|0" />
+  <i3dMapping id="polySurface606" node="0>2|0|1|0|2|0|0|0|0|0|0|0|1" />
+  <i3dMapping id="polySurface6045" node="0>2|0|1|0|2|0|0|0|0|0|0|0|2" />
+  <i3dMapping id="seatRot" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3" />
+  <i3dMapping id="seatBase" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0" />
+  <i3dMapping id="seat" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0" />
+  <i3dMapping id="sampoParts" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0|0" />
+  <i3dMapping id="joystickLeft" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0|0|0" />
+  <i3dMapping id="playerLeftHandTarget" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0|0|0|0" />
+  <i3dMapping id="leftJoystickBone" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0|0|0|1" />
+  <i3dMapping id="joystickRight" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0|0|1" />
+  <i3dMapping id="playerRightHandTarget" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0|0|1|0" />
+  <i3dMapping id="rightJoystickBone" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0|0|1|1" />
+  <i3dMapping id="playerSkin" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|0|1" />
+  <i3dMapping id="rubber" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|0|1" />
+  <i3dMapping id="indoorCameraTarget" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|1" />
+  <i3dMapping id="indoorCamera" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|1|0" />
+  <i3dMapping id="outdoorCameraTarget" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|2" />
+  <i3dMapping id="outdoorCamera" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|2|0" />
+  <i3dMapping id="characterTargets" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|3" />
+  <i3dMapping id="playerRightFootTarget" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|3|0" />
+  <i3dMapping id="playerLeftFootTarget" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|3|1" />
+  <i3dMapping id="cabinBone" node="0>2|0|1|0|2|0|0|0|0|0|0|0|3|4" />
+  <i3dMapping id="lights" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4" />
+  <i3dMapping id="sharedLights" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0" />
+  <i3dMapping id="hellaWorkingLightSquare_01_03" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|0" />
+  <i3dMapping id="hellaWorkingLightSquare_01_04" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|1" />
+  <i3dMapping id="hellaWorkingLightSquare_01_05" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|2" />
+  <i3dMapping id="hellaWorkingLightSquare_01_06" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|3" />
+  <i3dMapping id="hellaWorkingLightSquare_01_07" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|4" />
+  <i3dMapping id="hellaWorkingLightSquare_01_08" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|5" />
+  <i3dMapping id="hellaWorkingLightSquare_01_09" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|6" />
+  <i3dMapping id="hellaWorkingLightSquare_01_10" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|7" />
+  <i3dMapping id="hellaWorkingLightSquare_01_11" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|8" />
+  <i3dMapping id="hellaWorkingLightSquare_01_12" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|9" />
+  <i3dMapping id="hellaWorkingLightSquare_01_13" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|10" />
+  <i3dMapping id="hellaWorkingLightSquare_01_14" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|11" />
+  <i3dMapping id="hellaWorkingLightSquare_01_15" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|12" />
+  <i3dMapping id="hellaWorkingLightSquare_01_16" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|0|13" />
+  <i3dMapping id="workLights" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|1" />
+  <i3dMapping id="workLightFrontCab" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|1|0" />
+  <i3dMapping id="workLightFrontSideRightCab" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|1|1" />
+  <i3dMapping id="workLightBackCab" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|1|2" />
+  <i3dMapping id="workLightFrontSideLeftCab" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|1|3" />
+  <i3dMapping id="workLightBackSideRightCab" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|1|4" />
+  <i3dMapping id="workLightBackSideLeftCab" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|1|5" />
+  <i3dMapping id="interiorScreenLight" node="0>2|0|1|0|2|0|0|0|0|0|0|0|4|2" />
+  <i3dMapping id="pedals" node="0>2|0|1|0|2|0|0|0|0|0|0|0|5" />
+  <i3dMapping id="gasPedalRot" node="0>2|0|1|0|2|0|0|0|0|0|0|0|5|0" />
+  <i3dMapping id="gasPedal" node="0>2|0|1|0|2|0|0|0|0|0|0|0|5|0|0" />
+  <i3dMapping id="playerRightFootTargetGasRef" node="0>2|0|1|0|2|0|0|0|0|0|0|0|5|0|0|0" />
+  <i3dMapping id="playerRightFootTargetGas" node="0>2|0|1|0|2|0|0|0|0|0|0|0|5|0|1" />
+  <i3dMapping id="brakePedalRot" node="0>2|0|1|0|2|0|0|0|0|0|0|0|5|1" />
+  <i3dMapping id="brakePedal" node="0>2|0|1|0|2|0|0|0|0|0|0|0|5|1|0" />
+  <i3dMapping id="playerRightFootTargetBrake" node="0>2|0|1|0|2|0|0|0|0|0|0|0|5|1|0|0" />
+  <i3dMapping id="dashboard" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6" />
+  <i3dMapping id="numbers" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0" />
+  <i3dMapping id="numbersRpm" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|0" />
+  <i3dMapping id="plane_0" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|0|0" />
+  <i3dMapping id="numbersSpeed" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|1" />
+  <i3dMapping id="numbersOperatingTime" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|2" />
+  <i3dMapping id="numbersTime" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|3" />
+  <i3dMapping id="cutLength" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|4" />
+  <i3dMapping id="plane_1" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|4|0" />
+  <i3dMapping id="diameter" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|5" />
+  <i3dMapping id="plane_2" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|5|0" />
+  <i3dMapping id="numbersFuelUsageTerminal" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|6" />
+  <i3dMapping id="numbersTempTerminal" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|0|7" />
+  <i3dMapping id="interiorDisplayDecal" node="0>2|0|1|0|2|0|0|0|0|0|0|0|6|1" />
+  <i3dMapping id="wipers_0" node="0>2|0|1|0|2|0|0|0|0|0|0|0|7" />
+  <i3dMapping id="wipers_1" node="0>2|0|1|0|2|0|0|0|0|0|0|0|7|0" />
+  <i3dMapping id="rightWiperArm" node="0>2|0|1|0|2|0|0|0|0|0|0|0|7|0|0" />
+  <i3dMapping id="wiper" node="0>2|0|1|0|2|0|0|0|0|0|0|0|7|0|0|0" />
+  <i3dMapping id="refLeftWiperArm" node="0>2|0|1|0|2|0|0|0|0|0|0|0|7|0|0|0|0" />
+  <i3dMapping id="leftWiperArm" node="0>2|0|1|0|2|0|0|0|0|0|0|0|7|0|1" />
+  <i3dMapping id="wiperSideWindow" node="0>2|0|1|0|2|0|0|0|0|0|0|0|7|1" />
+  <i3dMapping id="wiperSideWindow1" node="0>2|0|1|0|2|0|0|0|0|0|0|0|7|2" />
+  <i3dMapping id="extinguisher_0" node="0>2|0|1|0|2|0|0|0|0|0|0|0|8" />
+  <i3dMapping id="cabProtection" node="0>2|0|1|0|2|0|0|0|0|0|0|1" />
+  <i3dMapping id="coliCab" node="0>2|0|1|0|2|0|0|0|0|0|0|2" />
+  <i3dMapping id="hydraulicCabinLeftRef" node="0>2|0|1|0|2|0|0|1" />
+  <i3dMapping id="hydraulicCabinRightRef" node="0>2|0|1|0|2|0|0|2" />
+  <i3dMapping id="cabTurnPlate" node="0>2|0|1|0|2|0|0|3" />
+  <i3dMapping id="damper" node="0>2|0|1|0|2|0|0|3|0" />
+  <i3dMapping id="joint4_0" node="0>2|0|1|0|2|0|0|4" />
+  <i3dMapping id="cabinCraneFollowingMovementRefFrame" node="0>2|0|1|0|2|0|0|5" />
+  <i3dMapping id="joint2" node="0>2|0|1|0|2|0|0|6" />
+  <i3dMapping id="refPointDamper" node="0>2|1" />
+  <i3dMapping id="steeringJoint" node="0>3" />
+  <i3dMapping id="steeringJointRot1" node="0>3|0" />
+  <i3dMapping id="midtJoint" node="0>3|0|0" />
+  <i3dMapping id="hydSteeringRightRef" node="0>3|0|0|0" />
+  <i3dMapping id="hydSteeringLeftRef" node="0>3|0|0|1" />
+  <i3dMapping id="steeringJointRot" node="0>3|0|1" />
+  <i3dMapping id="LightsFront" node="0>4" />
+  <i3dMapping id="hellaWorkingLightSquare_01_front_15" node="0>4|0" />
+  <i3dMapping id="hellaWorkingLightSquare_01_front_16" node="0>4|1" />
+  <i3dMapping id="hellaWorkingLightSquare_01_front_17" node="0>4|2" />
+  <i3dMapping id="hellaWorkingLightSquare_01_front_18" node="0>4|3" />
+  <i3dMapping id="hellaWorkingLightSquare_01_front_19" node="0>4|4" />
+  <i3dMapping id="hellaWorkingLightSquare_01_front_20" node="0>4|5" />
+  <i3dMapping id="workLightsFront" node="0>4|6" />
+  <i3dMapping id="workLightFrontLeft" node="0>4|6|0" />
+  <i3dMapping id="workLightFrontRight" node="0>4|6|1" />
+  <i3dMapping id="visualsFront" node="0>5" />
+  <i3dMapping id="JD1470G_Front_vis" node="0>5|0" />
+  <i3dMapping id="additionalPartsFront" node="0>5|1" />
+  <i3dMapping id="hydraulics_0" node="0>6" />
+  <i3dMapping id="cabHydRight" node="0>6|0" />
+  <i3dMapping id="cabHydRightPunch" node="0>6|0|0" />
+  <i3dMapping id="cabHydLeft" node="0>6|1" />
+  <i3dMapping id="cabHydLeftPunch" node="0>6|1|0" />
+  <i3dMapping id="hydSteering" node="0>6|2" />
+  <i3dMapping id="hydSteeringRight" node="0>6|2|0" />
+  <i3dMapping id="hydSteeringRightPunch" node="0>6|2|0|0" />
+  <i3dMapping id="hydSteeringLeft" node="0>6|2|1" />
+  <i3dMapping id="hydSteeringLeftPunch" node="0>6|2|1|0" />
+  <i3dMapping id="craneBaseHyd" node="0>6|3" />
+  <i3dMapping id="craneBaseHydPunch" node="0>6|3|0" />
+  <i3dMapping id="colis" node="0>7" />
+  <i3dMapping id="movingTools" node="0>8" />
+  <i3dMapping id="craneBase" node="0>8|0" />
+  <i3dMapping id="craneBaseVis" node="0>8|0|0" />
+  <i3dMapping id="mainArm" node="0>8|0|1" />
+  <i3dMapping id="secondArm" node="0>8|0|1|0" />
+  <i3dMapping id="moveFourth1" node="0>8|0|1|0|0" />
+  <i3dMapping id="moveFourth2" node="0>8|0|1|0|0|0" />
+  <i3dMapping id="moveFourth3" node="0>8|0|1|0|0|0|0" />
+  <i3dMapping id="fourthArmHydRef" node="0>8|0|1|0|0|0|1" />
+  <i3dMapping id="thirdArm" node="0>8|0|1|0|1" />
+  <i3dMapping id="fourthArm" node="0>8|0|1|0|1|0" />
+  <i3dMapping id="fifthArm" node="0>8|0|1|0|1|0|0" />
+  <i3dMapping id="h424" node="0>8|0|1|0|1|0|0|0" />
+  <i3dMapping id="cutterJoint1" node="0>8|0|1|0|1|0|0|0|0" />
+  <i3dMapping id="cutterJoint2" node="0>8|0|1|0|1|0|0|0|0|0" />
+  <i3dMapping id="cutterFrame" node="0>8|0|1|0|1|0|0|0|0|0|0" />
+  <i3dMapping id="cutterBody" node="0>8|0|1|0|1|0|0|0|0|0|0|0" />
+  <i3dMapping id="hydraulicCutterBodyRef" node="0>8|0|1|0|1|0|0|0|0|0|0|0|0" />
+  <i3dMapping id="cuttingBlade" node="0>8|0|1|0|1|0|0|0|0|0|0|0|1" />
+  <i3dMapping id="chainsawParticles" node="0>8|0|1|0|1|0|0|0|0|0|0|0|1|0" />
+  <i3dMapping id="chainsawWoodChipsEmitter" node="0>8|0|1|0|1|0|0|0|0|0|0|0|1|0|0" />
+  <i3dMapping id="chainsawWoodDustEmitter" node="0>8|0|1|0|1|0|0|0|0|0|0|0|1|0|1" />
+  <i3dMapping id="cuttingChain" node="0>8|0|1|0|1|0|0|0|0|0|0|0|1|1" />
+  <i3dMapping id="cutterTopClaw1" node="0>8|0|1|0|1|0|0|0|0|0|0|0|2" />
+  <i3dMapping id="hydraulicCutterTopClaw1Ref" node="0>8|0|1|0|1|0|0|0|0|0|0|0|2|0" />
+  <i3dMapping id="cutterTopClaw2" node="0>8|0|1|0|1|0|0|0|0|0|0|0|3" />
+  <i3dMapping id="hydraulicCutterTopClaw2Ref" node="0>8|0|1|0|1|0|0|0|0|0|0|0|3|0" />
+  <i3dMapping id="cutterBottomClaw1" node="0>8|0|1|0|1|0|0|0|0|0|0|0|4" />
+  <i3dMapping id="hydraulicCutterBottomClaw1Ref" node="0>8|0|1|0|1|0|0|0|0|0|0|0|4|0" />
+  <i3dMapping id="cutterBottomClaw2" node="0>8|0|1|0|1|0|0|0|0|0|0|0|5" />
+  <i3dMapping id="hydraulicCutterBottomClaw2Ref" node="0>8|0|1|0|1|0|0|0|0|0|0|0|5|0" />
+  <i3dMapping id="cutterWheel1Frame" node="0>8|0|1|0|1|0|0|0|0|0|0|0|6" />
+  <i3dMapping id="cutterWheel1" node="0>8|0|1|0|1|0|0|0|0|0|0|0|6|0" />
+  <i3dMapping id="cutterWheel1FrameBone" node="0>8|0|1|0|1|0|0|0|0|0|0|0|6|1" />
+  <i3dMapping id="hydraulicCutterWheel1FrameRef" node="0>8|0|1|0|1|0|0|0|0|0|0|0|6|2" />
+  <i3dMapping id="hoseEndNode04" node="0>8|0|1|0|1|0|0|0|0|0|0|0|6|3" />
+  <i3dMapping id="cutterWheel2Frame" node="0>8|0|1|0|1|0|0|0|0|0|0|0|7" />
+  <i3dMapping id="cutterWheel2" node="0>8|0|1|0|1|0|0|0|0|0|0|0|7|0" />
+  <i3dMapping id="cutterWheel2FrameBone" node="0>8|0|1|0|1|0|0|0|0|0|0|0|7|1" />
+  <i3dMapping id="hydraulicCutterWheel2FrameRef" node="0>8|0|1|0|1|0|0|0|0|0|0|0|7|2" />
+  <i3dMapping id="hoseEndNode05" node="0>8|0|1|0|1|0|0|0|0|0|0|0|7|3" />
+  <i3dMapping id="cutterRotParts" node="0>8|0|1|0|1|0|0|0|0|0|0|0|8" />
+  <i3dMapping id="cutterRotationPart01" node="0>8|0|1|0|1|0|0|0|0|0|0|0|8|0" />
+  <i3dMapping id="cutterRotationPart02Rot" node="0>8|0|1|0|1|0|0|0|0|0|0|0|8|1" />
+  <i3dMapping id="cutterRotationPart02" node="0>8|0|1|0|1|0|0|0|0|0|0|0|8|1|0" />
+  <i3dMapping id="cutterRotationPart03Rot" node="0>8|0|1|0|1|0|0|0|0|0|0|0|8|2" />
+  <i3dMapping id="cutterRotationPart03" node="0>8|0|1|0|1|0|0|0|0|0|0|0|8|2|0" />
+  <i3dMapping id="delimbParticles" node="0>8|0|1|0|1|0|0|0|0|0|0|0|9" />
+  <i3dMapping id="delimbWoodChipsEmitter" node="0>8|0|1|0|1|0|0|0|0|0|0|0|9|0" />
+  <i3dMapping id="delimbWoodDustEmitter" node="0>8|0|1|0|1|0|0|0|0|0|0|0|9|1" />
+  <i3dMapping id="treeSizeMeasureNode" node="0>8|0|1|0|1|0|0|0|0|0|0|0|10" />
+  <i3dMapping id="hydraulics_1" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11" />
+  <i3dMapping id="hydraulicCutterBottomClaw1" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|0" />
+  <i3dMapping id="hydraulicCutterBottomClaw1Punch" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|0|0" />
+  <i3dMapping id="hydraulicCutterBottomClaw2" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|1" />
+  <i3dMapping id="hydraulicCutterBottomClaw2Punch" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|1|0" />
+  <i3dMapping id="hydraulicCutterTopClaw1" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|2" />
+  <i3dMapping id="hydraulicCutterTopClaw1Punch" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|2|0" />
+  <i3dMapping id="hydraulicCutterTopClaw2" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|3" />
+  <i3dMapping id="hydraulicCutterTopClaw2Punch" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|3|0" />
+  <i3dMapping id="hydraulicCutterWheel1Frame" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|4" />
+  <i3dMapping id="hydraulicCutterWheel1FramePunch" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|4|0" />
+  <i3dMapping id="hydraulicCutterWheel2Frame" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|5" />
+  <i3dMapping id="hydraulicCutterWheel2FramePunch" node="0>8|0|1|0|1|0|0|0|0|0|0|0|11|5|0" />
+  <i3dMapping id="cutterBodyJdDecals" node="0>8|0|1|0|1|0|0|0|0|0|0|0|12" />
+  <i3dMapping id="hoseEndNode02" node="0>8|0|1|0|1|0|0|0|0|0|0|0|13" />
+  <i3dMapping id="joint25" node="0>8|0|1|0|1|0|0|0|0|0|0|0|14" />
+  <i3dMapping id="hoseStartNode04" node="0>8|0|1|0|1|0|0|0|0|0|0|0|15" />
+  <i3dMapping id="hoseStartNode05" node="0>8|0|1|0|1|0|0|0|0|0|0|0|16" />
+  <i3dMapping id="chain_vis02" node="0>8|0|1|0|1|0|0|0|0|0|0|0|17" />
+  <i3dMapping id="chain_vis02L" node="0>8|0|1|0|1|0|0|0|0|0|0|0|17|0" />
+  <i3dMapping id="chain01Ref" node="0>8|0|1|0|1|0|0|0|0|0|0|0|17|0|0" />
+  <i3dMapping id="chain_vis02R" node="0>8|0|1|0|1|0|0|0|0|0|0|0|17|1" />
+  <i3dMapping id="chain02Ref" node="0>8|0|1|0|1|0|0|0|0|0|0|0|17|1|0" />
+  <i3dMapping id="cutterHolderVis" node="0>8|0|1|0|1|0|0|0|0|0|0|0|18" />
+  <i3dMapping id="hydraulicCutterBody" node="0>8|0|1|0|1|0|0|0|0|0|0|1" />
+  <i3dMapping id="hydraulicCutterBodyPunch" node="0>8|0|1|0|1|0|0|0|0|0|0|1|0" />
+  <i3dMapping id="joint27" node="0>8|0|1|0|1|0|0|0|0|0|0|1|1" />
+  <i3dMapping id="hydraulicCutterBodyRefFrame" node="0>8|0|1|0|1|0|0|0|0|0|0|2" />
+  <i3dMapping id="joint26" node="0>8|0|1|0|1|0|0|0|0|0|0|3" />
+  <i3dMapping id="joint24" node="0>8|0|1|0|1|0|0|0|0|0|0|4" />
+  <i3dMapping id="cutterFrameRefFrame" node="0>8|0|1|0|1|0|0|0|0|0|1" />
+  <i3dMapping id="cutterJoint2RefFrame" node="0>8|0|1|0|1|0|0|0|0|1" />
+  <i3dMapping id="cameraArmRef" node="0>8|0|1|0|1|0|0|0|0|2" />
+  <i3dMapping id="cutterJoint1RefFrame" node="0>8|0|1|0|1|0|0|0|1" />
+  <i3dMapping id="cutterBaseColJoint1" node="0>8|0|1|0|1|0|0|0|2" />
+  <i3dMapping id="cutterBaseColJoint" node="0>8|0|1|0|1|0|0|0|2|0" />
+  <i3dMapping id="baseBone" node="0>8|0|1|0|1|0|0|0|3" />
+  <i3dMapping id="hoseStartNode02" node="0>8|0|1|0|1|0|0|1" />
+  <i3dMapping id="hoseStartNode03" node="0>8|0|1|0|1|0|0|2" />
+  <i3dMapping id="armMover1" node="0>8|0|1|0|1|0|1" />
+  <i3dMapping id="armMover2" node="0>8|0|1|0|1|0|1|0" />
+  <i3dMapping id="moveFourth3Ref" node="0>8|0|1|0|1|0|1|1" />
+  <i3dMapping id="hoseStartNode01" node="0>8|0|1|0|1|0|2" />
+  <i3dMapping id="joint8" node="0>8|0|1|0|1|0|3" />
+  <i3dMapping id="fourthArmHyd" node="0>8|0|1|0|1|1" />
+  <i3dMapping id="fourthArmHydPunch" node="0>8|0|1|0|1|1|0" />
+  <i3dMapping id="armMover2Ref" node="0>8|0|1|0|1|2" />
+  <i3dMapping id="armMover1RefFrame" node="0>8|0|1|0|1|3" />
+  <i3dMapping id="joint23" node="0>8|0|1|0|1|4" />
+  <i3dMapping id="decals:arm3Decals1" node="0>8|0|1|0|1|5" />
+  <i3dMapping id="moveFourth2Ref" node="0>8|0|1|0|1|6" />
+  <i3dMapping id="moveFourth2RefFrame" node="0>8|0|1|0|1|7" />
+  <i3dMapping id="joint7" node="0>8|0|1|0|1|8" />
+  <i3dMapping id="lightsArm" node="0>8|0|1|0|1|9" />
+  <i3dMapping id="hellaWorkingLightSquare_01_17" node="0>8|0|1|0|1|9|0" />
+  <i3dMapping id="hellaWorkingLightSquare_01_18" node="0>8|0|1|0|1|9|1" />
+  <i3dMapping id="hellaWorkingLightSquare_01_19" node="0>8|0|1|0|1|9|2" />
+  <i3dMapping id="hellaWorkingLightSquare_01_20" node="0>8|0|1|0|1|9|3" />
+  <i3dMapping id="workLightsArm" node="0>8|0|1|0|1|9|4" />
+  <i3dMapping id="workLightArmTop" node="0>8|0|1|0|1|9|4|0" />
+  <i3dMapping id="workLightArmBottom" node="0>8|0|1|0|1|9|4|1" />
+  <i3dMapping id="chain" node="0>8|0|1|0|1|10" />
+  <i3dMapping id="chain_vis01TG" node="0>8|0|1|0|1|10|0" />
+  <i3dMapping id="chain_vis01" node="0>8|0|1|0|1|10|0|0" />
+  <i3dMapping id="chain_vis0102" node="0>8|0|1|0|1|10|0|0|0" />
+  <i3dMapping id="chain01RefFrame" node="0>8|0|1|0|1|10|0|0|0|0" />
+  <i3dMapping id="chain01" node="0>8|0|1|0|1|10|0|0|0|0|0" />
+  <i3dMapping id="chain02RefFrame" node="0>8|0|1|0|1|10|0|0|1" />
+  <i3dMapping id="chain02" node="0>8|0|1|0|1|10|0|0|1|0" />
+  <i3dMapping id="armHolderVis" node="0>8|0|1|0|1|10|1" />
+  <i3dMapping id="secondArmHydRef" node="0>8|0|1|0|2" />
+  <i3dMapping id="secondArmHyd" node="0>8|0|1|1" />
+  <i3dMapping id="secondArmHydPunch" node="0>8|0|1|1|0" />
+  <i3dMapping id="cabinCraneFollowingMovementRef" node="0>8|0|1|2" />
+  <i3dMapping id="cameraArmRot" node="0>8|0|1|3" />
+  <i3dMapping id="cameraArm" node="0>8|0|1|3|0" />
+  <i3dMapping id="cameraArmRefFrame" node="0>8|0|1|4" />
+  <i3dMapping id="joint22" node="0>8|0|1|5" />
+  <i3dMapping id="pCube145" node="0>8|0|1|6" />
+  <i3dMapping id="craneBaseHydRef" node="0>8|0|2" />
+  <i3dMapping id="joint21" node="0>8|0|3" />
+  <i3dMapping id="joint6" node="0>8|0|4" />
+  <i3dMapping id="cardanPart04Rot" node="0>8|1" />
+  <i3dMapping id="cardanPart04" node="0>8|1|0" />
+  <i3dMapping id="cardanPart02Ref" node="0>8|1|0|0" />
+  <i3dMapping id="dummyCraneBase" node="0>8|2" />
+  <i3dMapping id="dummyMainArm" node="0>8|2|0" />
+  <i3dMapping id="dummySecondArm" node="0>8|2|0|0" />
+  <i3dMapping id="dummyThirdArm" node="0>8|2|0|0|0" />
+  <i3dMapping id="dummyFourthArm" node="0>8|2|0|0|0|0" />
+  <i3dMapping id="dummyFifthArm" node="0>8|2|0|0|0|0|0" />
+  <i3dMapping id="dummyCutterHolderColJoint" node="0>8|2|0|0|0|0|0|0" />
+  <i3dMapping id="dummyZRot" node="0>8|2|0|0|0|0|0|0|0" />
+  <i3dMapping id="jointMeshRot" node="0>8|2|0|0|0|0|0|1" />
+  <i3dMapping id="skinnedMesh_0" node="0>8|3" />
+  <i3dMapping id="ladder" node="0>8|4" />
+  <i3dMapping id="joint4_1" node="0>8|5" />
+  <i3dMapping id="joint20" node="0>8|6" />
+  <i3dMapping id="joint5" node="0>8|7" />
+  <i3dMapping id="wheelsFront" node="0>9" />
+  <i3dMapping id="jd1270GfrontLeftBoogie" node="0>9|0" />
+  <i3dMapping id="jd1270GfrontRightBoogie" node="0>9|1" />
+  <i3dMapping id="trafficCollisionTrigger" node="0>10" />
+  <i3dMapping id="skinnedMesh_1" node="0>11" />
+  <i3dMapping id="pasted__curve2" node="0>11|0" />
+  <i3dMapping id="skinnedMesh1" node="0>11|1" />
+  <i3dMapping id="skinnedMesh2" node="0>11|2" />
+  <i3dMapping id="pasted__pCylinder103" node="0>11|3" />
+  <i3dMapping id="pasted__pCube171" node="0>11|4" />
+  <i3dMapping id="jd1270G_component2" node="1>" />
+  <i3dMapping id="wheelsBack" node="1>0" />
+  <i3dMapping id="jd1270GbackLeftBoogie" node="1>0|0" />
+  <i3dMapping id="jd1270GbackRightBoogie" node="1>0|1" />
+  <i3dMapping id="cardanPart01Rot" node="1>0|2" />
+  <i3dMapping id="cardanPart01" node="1>0|2|0" />
+  <i3dMapping id="cardanPart02" node="1>0|2|0|0" />
+  <i3dMapping id="cardanPart03" node="1>0|2|0|0|0" />
+  <i3dMapping id="6wdWheelLeftBack" node="1>0|3" />
+  <i3dMapping id="trelleborg6wdWheelLeftBack" node="1>0|3|0" />
+  <i3dMapping id="nokian6wdWheelLeftBack" node="1>0|3|1" />
+  <i3dMapping id="6wdWheelLeftBackDrive" node="1>0|3|2" />
+  <i3dMapping id="6wdWheelRightBack" node="1>0|4" />
+  <i3dMapping id="trelleborg6wdWheelRightBack" node="1>0|4|0" />
+  <i3dMapping id="nokian6wdWheelRightBack" node="1>0|4|1" />
+  <i3dMapping id="6wdWheelRightBackDrive" node="1>0|4|2" />
+  <i3dMapping id="cameraRaycastNode4" node="1>1" />
+  <i3dMapping id="exhausParticles" node="1>2" />
+  <i3dMapping id="visualsBack" node="1>3" />
+  <i3dMapping id="backBase" node="1>3|0" />
+  <i3dMapping id="Decals1270G" node="1>3|0|0" />
+  <i3dMapping id="configProtection" node="1>3|0|1" />
+  <i3dMapping id="configBack" node="1>3|0|2" />
+  <i3dMapping id="6WD_parts" node="1>3|0|2|0" />
+  <i3dMapping id="pCube150_0" node="1>3|0|2|0|0" />
+  <i3dMapping id="8WD_parts" node="1>3|0|2|1" />
+  <i3dMapping id="pCube150_1" node="1>3|0|2|1|0" />
+  <i3dMapping id="joint1" node="1>3|0|3" />
+  <i3dMapping id="joint3" node="1>3|0|4" />
+  <i3dMapping id="additionalPartsBack" node="1>3|1" />
+  <i3dMapping id="extinguisher_1" node="1>3|1|0" />
+  <i3dMapping id="attacherJointTrailer" node="1>3|2" />
+  <i3dMapping id="skinnedMesh_2" node="1>4" />
+  <i3dMapping id="pasted__pCylinder36" node="1>4|0" />
+  <i3dMapping id="pasted__pCylinder39" node="1>4|1" />
+  <i3dMapping id="collisions_0" node="1>5" />
+  <i3dMapping id="backColli" node="1>5|0" />
+  <i3dMapping id="jd1270G_frontLeftAxis_component3" node="2>" />
+  <i3dMapping id="boggie_vis_0" node="2>0" />
+  <i3dMapping id="frontLeftBoggieFrontWheel" node="2>0|0" />
+  <i3dMapping id="frontLeftBoggieBackWheel" node="2>0|1" />
+  <i3dMapping id="frontLeftBoggieBackWheelDriveNode" node="2>0|1|0" />
+  <i3dMapping id="crawlerFrontLeftRotRefFrame" node="2>0|1|1" />
+  <i3dMapping id="crawlerFrontLeftRot" node="2>0|1|1|0" />
+  <i3dMapping id="crawlerFrontLeft" node="2>0|1|1|0|0" />
+  <i3dMapping id="boogieLeftFrontVis" node="2>0|2" />
+  <i3dMapping id="crawlerFrontLeftRotRefFrame1" node="2>0|3" />
+  <i3dMapping id="jd1270G_frontRightAxis_component4" node="3>" />
+  <i3dMapping id="boggie_vis_1" node="3>0" />
+  <i3dMapping id="frontRightBoggieFrontWheel" node="3>0|0" />
+  <i3dMapping id="frontRightBoggieBackWheel" node="3>0|1" />
+  <i3dMapping id="frontRightBoggieBackWheelDriveNode" node="3>0|1|0" />
+  <i3dMapping id="crawlerFrontRightRotRefFrame" node="3>0|1|1" />
+  <i3dMapping id="crawlerFrontRightRot" node="3>0|1|1|0" />
+  <i3dMapping id="crawlerFrontRight" node="3>0|1|1|0|0" />
+  <i3dMapping id="boogieRightFrontVis" node="3>0|2" />
+  <i3dMapping id="crawlerFrontRightRotRefFrame1" node="3>0|3" />
+  <i3dMapping id="jd1270G_backLeftAxis_component5" node="4>" />
+  <i3dMapping id="boggie_vis_2" node="4>0" />
+  <i3dMapping id="backLeftBoggieFrontWheel" node="4>0|0" />
+  <i3dMapping id="backLeftBoggieBackWheel" node="4>0|1" />
+  <i3dMapping id="backLeftBoggieBackWheelDriveNode" node="4>0|1|0" />
+  <i3dMapping id="crawlerBackLeftRotRefFrame" node="4>0|1|1" />
+  <i3dMapping id="crawlerBackLeftRot" node="4>0|1|1|0" />
+  <i3dMapping id="crawlerBackLeft" node="4>0|1|1|0|0" />
+  <i3dMapping id="boogieLeftBackVis" node="4>0|2" />
+  <i3dMapping id="crawlerBackLeftRotRefFrame1" node="4>0|3" />
+  <i3dMapping id="jd1270G_backRightAxis_component6" node="5>" />
+  <i3dMapping id="boggie_vis_3" node="5>0" />
+  <i3dMapping id="backRightBoggieFrontWheel" node="5>0|0" />
+  <i3dMapping id="backRightBoggieBackWheel" node="5>0|1" />
+  <i3dMapping id="backRightBoggieBackWheelDriveNode" node="5>0|1|0" />
+  <i3dMapping id="crawlerBackRightRotRefFrame" node="5>0|1|1" />
+  <i3dMapping id="crawlerBackRightRot" node="5>0|1|1|0" />
+  <i3dMapping id="crawlerBackRight" node="5>0|1|1|0|0" />
+  <i3dMapping id="boogieRightBackVis" node="5>0|2" />
+  <i3dMapping id="crawlerBackRightRotRefFrame1" node="5>0|3" />
+  <i3dMapping id="jd1270G_cutterBase_component7" node="6>" />
+  <i3dMapping id="cutterBaseJoint_rot" node="6>0" />
+  <i3dMapping id="cutterBaseJoint_indexActor" node="6>0|0" />
+  <i3dMapping id="cutterColJoint" node="6>1" />
+  <i3dMapping id="cutterJointRef" node="6>2" />
+  <i3dMapping id="cutterFrameRef" node="6>3" />
+  <i3dMapping id="jd1270G_cutter_component8" node="7>" />
+  <i3dMapping id="cutNode" node="7>0" />
+  <i3dMapping id="delimbNode" node="7>1" />
+  <i3dMapping id="attachReferenceNode" node="7>2" />
+  <i3dMapping id="cutterBodyRef" node="7>3" />
+  <i3dMapping id="collisions_1" node="7>4" />
+  <i3dMapping id="cutterTopClaw1Col1" node="7>4|0" />
+  <i3dMapping id="cutterTopClaw1Col4" node="7>4|0|0" />
+  <i3dMapping id="cutterTopClaw1Col2" node="7>4|0|1" />
+  <i3dMapping id="cutterTopClaw1Col3" node="7>4|0|2" />
+  <i3dMapping id="cutterTopClaw2Col1" node="7>4|1" />
+  <i3dMapping id="cutterTopClaw2Col4" node="7>4|1|0" />
+  <i3dMapping id="cutterTopClaw2Col2" node="7>4|1|1" />
+  <i3dMapping id="cutterTopClaw2Col3" node="7>4|1|2" />
+  <i3dMapping id="cutterWheel1FrameCol" node="7>4|2" />
+  <i3dMapping id="cutterWheel2FrameCol" node="7>4|3" />
+  <i3dMapping id="cutterBottomClaw1Col1" node="7>4|4" />
+  <i3dMapping id="cutterBottomClaw1Col4" node="7>4|4|0" />
+  <i3dMapping id="cutterBottomClaw1Col2" node="7>4|4|1" />
+  <i3dMapping id="cutterBottomClaw1Col3" node="7>4|4|2" />
+  <i3dMapping id="cutterBottomClaw2Col1" node="7>4|5" />
+  <i3dMapping id="cutterBottomClaw2Col4" node="7>4|5|0" />
+  <i3dMapping id="cutterBottomClaw2Col2" node="7>4|5|1" />
+  <i3dMapping id="cutterBottomClaw2Col3" node="7>4|5|2" />
+  <i3dMapping id="1270G_meshRot_component9" node="8>" />
+  <i3dMapping id="hosesRot" node="8>0" />
+  <i3dMapping id="dependetMovingtoolFifthArm" node="8>0|0" />
+  <i3dMapping id="hoseEndNode01" node="8>0|0|0" />
+  <i3dMapping id="hoseEndNode03" node="8>0|0|1" />
+</i3dMappings>
+
+
+</vehicle>

@@ -60,7 +60,6 @@
             <production id="boards" name="%s (%s)" params="$l10n_fillType_wood|$l10n_fillType_boards" cyclesPerHour="10" costsPerActiveHour="2">
                 <inputs>
                     <input fillType="WOOD" amount="208" />
-                    <input fillType="EMPTYPALLET" amount="5" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
                     <output fillType="BOARDS" amount="280" />
@@ -73,12 +72,11 @@
             <capacity fillType="WOOD" capacity="1100000" />
             <capacity fillType="BOARDS" capacity="150000" />
             <capacity fillType="WOODCHIPS" capacity="500000" />
-            <capacity fillType="EMPTYPALLET" capacity="10000" />
             <fillPlane fillType="WOODCHIPS" node="woodChipsHill" minY="-3.25" maxY="0" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">
-            <unloadTrigger fillTypes="WOOD EMPTYPALLET" aiNode="sellingStationAINode">
+            <unloadTrigger fillTypes="WOOD" aiNode="sellingStationAINode">
                 <woodTrigger triggerNode="woodTrigger" activationTriggerNode="woodSellTrigger" />
             </unloadTrigger>
         </sellingStation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<wheel>
+	<brand>NOKIAN</brand>
+    <name>Logger King</name>
+    <default>
+        <physics radius="0.93" width="0.7" mass="0.2" tireType="mud" frictionScale="1.60" maxLongStiffness="11" maxLatStiffness="130" maxLatStiffnessLoad="2" />
+        <tire filename="wheels/jd1270g/nokianLoggerKingLS2.i3d" nodeLeft="0|1" nodeRight="0|1" maxDeformation="0.067" isCareWheel="false" tireTrackAtlasIndex="9" />
+        <outerRim filename="$data/shared/wheels/rims/rim001.i3d" node="0|0" widthAndDiam="28 32" />
+        <innerRim filename="$data/shared/wheels/rims/rim001.i3d" nodeLeft="2|0" nodeRight="2|1" widthAndDiam="28 32" />
+    </default>
+</wheel>
