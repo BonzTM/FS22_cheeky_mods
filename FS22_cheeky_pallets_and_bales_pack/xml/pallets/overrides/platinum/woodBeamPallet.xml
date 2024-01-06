@@ -5,6 +5,7 @@
             <!-- Base overrides -->
             <set path="vehicle.base.filename" value="$pdlcdir/forestryPack/objects/pallets/woodBeamPallet/woodBeamPallet.i3d"/>       
             <set path="vehicle.fillUnit.fillUnitConfigurations.fillUnitConfiguration(0).fillUnits.fillUnit(0)#capacity" value="4000"/>
+            <set path="vehicle.dischargeable.dischargeNode(0)#emptySpeed" value="800"/>
         </attributes>
     </parentFile>
 </vehicle>

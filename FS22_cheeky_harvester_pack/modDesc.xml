@@ -151,6 +151,9 @@
         <type name="harvester911" parent="woodHarvester" filename="$dataS/scripts/vehicles/Vehicle.lua">
             <specialization name="woodHarvesterExtended" />
         </type>
+        <type name="harvester951" parent="woodHarvester" filename="$dataS/scripts/vehicles/Vehicle.lua">
+            <specialization name="woodHarvesterExtended" />
+        </type>
         <type name="JDharvester" parent="woodHarvester" filename="$dataS/scripts/vehicles/Vehicle.lua">
         </type>
     </vehicleTypes>

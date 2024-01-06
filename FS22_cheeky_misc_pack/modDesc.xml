@@ -228,4 +228,8 @@
             <en>Metallic Brown</en>
         </text>
     </l10n>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/RegisterIndoorCamFirst.lua" />
+    </extraSourceFiles>
 </modDesc>

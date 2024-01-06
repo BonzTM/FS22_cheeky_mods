@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<vehicle type="cheeky_woodHarvester" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/vehicle.xsd">
+<vehicle type="harvester951" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/vehicle.xsd">
     <parentFile xmlFilename="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/harvester951.xml">
     <attributes>
 			<set path="vehicle.base.filename" value="$pdlcdir/forestryPack/vehicles/komatsu/harvester951/harvester951.i3d"/>
