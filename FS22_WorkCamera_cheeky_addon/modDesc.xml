@@ -3,19 +3,19 @@
     <author>Cheeky B#$!ards; GIANTS Software</author>
     <version>2.0.1.0</version>
     <title>
-        <en>Cheeky UAL Patcher</en>
+        <en>Cheeky WorkCamera Patcher</en>
     </title>
 	<description>
-		<en><![CDATA[Patches UAL with Cheeky Vehicles and Pallets.]]></en>
+		<en><![CDATA[Patches WorkCamera with Custom Cheeky Vehicles and more.]]></en>
 	</description>	
     <iconFilename>icon_UAL.png</iconFilename>
 
     <extraSourceFiles>
-        <sourceFile filename="UALAddon.lua"/>
+        <sourceFile filename="WorkCameraAddon.lua"/>
     </extraSourceFiles>
 
     <dependencies>
-        <dependency>FS22_UniversalAutoload</dependency>
+        <dependency>FS22_WorkCamera</dependency>
     </dependencies>
 
 	<multiplayer supported="true" />

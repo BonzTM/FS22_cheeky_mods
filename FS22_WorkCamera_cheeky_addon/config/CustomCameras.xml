@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<workCameraItems>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_a8800MR.xml">
+        <workCamera translation="-0.002 2.743 -2.6" rotation="-30 0 0" node="0>8|2|2|0" fov="80" />
+        <workCamera translation="-0.001 1.288 -1.246" rotation="-30 0 0" node="0>8|2|6" fov="80" />
+        <workCamera translation="0 0.983 1.325" rotation="110 0 -180" node="0>5" fov="70" />
+        <workCamera translation="0.78 2.789 1.181" rotation="150 0 -180" node="0>8|0|0|0|0|0|4" fov="80" />
+        <workCamera translation="-0.406 1.485 -0.641" rotation="150 0 -180" node="0>8|0|1|0|0|0|4" fov="80" />
+        <workCamera translation="-0.002 3.89 -4.384" rotation="-71.146 0.458 0" node="0>8|2|2|0" fov="60" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_axialFlow250.xml">
+        <workCamera translation="0 4.129 -2.506" rotation="-30 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 3.279 -3.55" rotation="-70 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 2.817 1.836" rotation="110 0 -180" node="0>0|5" fov="70" />
+        <workCamera translation="0.505 -0.874 1.009" rotation="62.893 0 0" node="0>0|6|3|7|0" fov="80" />
+        <workCamera translation="-0.275 -0.249 0.257" rotation="153.478 87.777 -141.543" node="0>0|6|4|0|0|1|0|0|0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_cobra_xl.xml">
+        <workCamera translation="0 4.4 2.4" rotation="142 0 -180" node="0>0" fov="90" farClip="400" />
+        <workCamera translation="0 0.7 3.6" rotation="180 0 -180" node="0>0" fov="90" farClip="400" />
+        <workCamera translation="1 1 3" rotation="120 0 180" node="1>0|1|0|1|0|0|0" fov="80" />
+        <workCamera translation="1 0.15 -0.5" rotation="158 16 -178" node="1>0|1|0|1|0|0|0|0" fov="80" />
+        <workCamera translation="-1 0.15 -0.5" rotation="158 -16 -178" node="1>0|1|0|1|0|0|0|0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_cobra.xml">
+        <workCamera translation="0 4.4 2.4" rotation="142 0 -180" node="0>0" fov="90" farClip="400" />
+        <workCamera translation="0 0.7 3.6" rotation="180 0 -180" node="0>0" fov="90" farClip="400" />
+        <workCamera translation="1 1 3" rotation="120 0 180" node="1>0|1|0|1|0|0|0" fov="80" />
+        <workCamera translation="1 0.15 -0.5" rotation="158 16 -178" node="1>0|1|0|1|0|0|0|0" fov="80" />
+        <workCamera translation="-1 0.15 -0.5" rotation="158 -16 -178" node="1>0|1|0|1|0|0|0|0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_collect900_3.xml">
+        <workCamera translation="-3.009 -0.368 0.001" rotation="-20.56 -2.03 -0.337" node="0>0|1|0|0" fov="80" farClip="500" />
+        <workCamera translation="3.039 -0.053 -0.008" rotation="-20.559 2.03 0.338" node="0>0|1|1|0" fov="80" farClip="500" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_convioFlex1380.xml">
+        <workCamera translation="7 2.54 -0.54" rotation="150 0 -180" node="0>0" fov="80" farClip="200" />
+        <workCamera translation="-7 2.54 -0.54" rotation="150 0 -180" node="0>0" fov="80" farClip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_corio875FC.xml">
+        <workCamera translation="-1.368 0.741 0.22" rotation="-10.387 0 0" node="0>0|1|0|0|0" fov="80" farClip="200" />
+        <workCamera translation="1.383 0.741 0.22" rotation="-10.387 0 0" node="0>0|1|0|1|0" fov="80" farClip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_diamant12.xml">
+        <workCamera translation="2.149 0.44 0.258" rotation="159.999 0 -180" node="0>0|4|0|0" fov="80" farclip="200" />
+        <workCamera translation="-2.149 0.442 0.254" rotation="160.521 0.013 -179.998" node="0>0|4|1|0" fov="80" farclip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_header4418N.xml">
+        <workCamera translation="5 2.11 -0.55" rotation="150 0 -180" node="0>0" fov="80" farclip="200" />
+        <workCamera translation="-5 2.11 -0.55" rotation="150 0 -180" node="0>0" fov="80" farclip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_headerC16F.xml">
+        <workCamera translation="3.02 0.89 0.242" rotation="168.536 -0.009 179.997" node="0>0|1|3|0" fov="80" farClip="200" />
+        <workCamera translation="-3.065 0.89 0.242" rotation="168.536 0.009 -179.997" node="0>0|1|6|0" fov="80" farClip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_headerHD50F.xml">
+        <workCamera translation="7.859 2.54 -0.54" rotation="150 0 -180" node="0>0" fov="80" farClip="200" />
+        <workCamera translation="-7.859 2.54 -0.54" rotation="150 0 -180" node="0>0" fov="80" farClip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_helianthus12000.xml">
+        <workCamera translation="5.89 1.48 0.171" rotation="150 0 -180" node="0>0" fov="80" farclip="200" />
+        <workCamera translation="-5.84 1.48 0.171" rotation="150 0 -180" node="0>0" fov="80" farclip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_orbis900.xml">
+        <workCamera translation="-3.025 0.041 -0.27" rotation="-15 0 0" node="0>0|2|1|0" fov="80" />
+        <workCamera translation="3.038 0.413 -0.27" rotation="-15 0 0" node="0>0|2|0|0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_plus390.xml">
+        <workCamera translation="3.443 0.877 0.111" rotation="150 0 -180" node="0>0|1|0" fov="80" farClip="200" />
+        <workCamera translation="-3.443 0.877 0.111" rotation="150 0 -180" node="0>0|1|1" fov="80" farClip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_plus390_johnDeere.xml">
+        <workCamera translation="3.443 0.877 0.111" rotation="150 0 -180" node="0>0|1|0" fov="80" farClip="200" />
+        <workCamera translation="-3.443 0.877 0.111" rotation="150 0 -180" node="0>0|1|1" fov="80" farClip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_plus390_newHolland.xml">
+        <workCamera translation="3.443 0.877 0.111" rotation="150 0 -180" node="0>0|1|0" fov="80" farClip="200" />
+        <workCamera translation="-3.443 0.877 0.111" rotation="150 0 -180" node="0>0|1|1" fov="80" farClip="200" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_h21D.xml">
+        <workCamera translation="0 2.366 -0.906" rotation="-30 0 0" node="0>0|5|0|0|0|0|0|1" fov="80" />
+        <workCamera translation="0 1.131 -3.354" rotation="-56 0 0" node="1>" fov="80" />
+        <workCamera translation="0 0 0" rotation="-180 0 180" node="0>0|5|5|0|0|0|0|0|0|4" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cp690.xml">
+        <workCamera translation="0 -2.575 1.631" rotation="69.171 0 -180" node="0>0|8|3|0|2|0" fov="80" />
+        <workCamera translation="0 -2.575 1.631" rotation="29.171 0 -180" node="0>0|8|3|0|2|0" fov="60" />
+        <workCamera translation="0 3.704 2.89" rotation="109.771 0.229 -180" node="0>0|4" fov="70" />
+        <workCamera translation="2.591 0.573 1.105" rotation="151.444 0 -180" node="0>0|8|0|0" fov="80" />
+        <workCamera translation="-2.591 0.573 1.105" rotation="151.444 0 -180" node="0>0|8|0|0" fov="80" />
+        <workCamera translation="1.948 3.425 -2.522" rotation="-20 20 0" node="0>0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_crSeries.xml">
+        <workCamera translation="0 4.138 -2.216" rotation="-30 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 2.8 -3.63" rotation="-70 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 3.721 4.32" rotation="110 0 -180" node="0>0|9" fov="70" />
+        <workCamera translation="0.46 -0.72 1.267" rotation="59.617 0 0" node="0>0|6|0|2|0" fov="80" selectedConfigs="1" useConfigName="fillUnit" />
+        <workCamera translation="0 4.87 2.659" rotation="-30 0 0" node="0>0|6|1|0" fov="80" selectedConfigs="2" useConfigName="fillUnit" />
+        <workCamera translation="0 5.056 2.37" rotation="-30 0 0" node="0>0|6|1|0" fov="80" selectedConfigs="3" useConfigName="fillUnit" />
+        <workCamera translation="0.4 0.499 0.25" rotation="-90 0 0" node="0>0|6|2|0|0|0|4" fov="80" />
+    </workCameras>
+    <!-- CS770 -->
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_cs770.xml">
+        <workCamera translation="0 2.5 3.65" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="0 7 -3" rotation="-21 0 0" node="0>" fov="90" farClip="600" />
+        <workCamera translation="2.6 3.5 3" rotation="-8 -20 0" node="0>" fov="80" farClip="600" />
+        <workCamera translation="-2.6 3.5 3" rotation="-8 20 0" node="0>" fov="80" farClip="600" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_harvester911.xml">
+        <workCamera translation="0.292 2.07 -1.026" rotation="-30 0 0" node="0>0|3|5|0|0|0|0|1" fov="80" />
+        <workCamera translation="0 2.314 -3.64" rotation="-45 0 0" node="1>0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_harvester951.xml">
+        <workCamera translation="0.424 2.084 -1.187" rotation="-30 0 0" node="0>0|6|0|0|0|0|1" fov="80" />
+        <workCamera translation="0 2.443 -4.09" rotation="-45 0 0" node="1>0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_ideal.xml">
+        <workCamera translation="0 3.01 -3.76" rotation="-30 0 0" node="0>" fov="80" />
+        <workCamera translation="0 3.01 -3.76" rotation="-70 0 0" node="0>" fov="60" />
+        <workCamera translation="0 3.56 5.25" rotation="110 0 -180" node="0>7" fov="70" />
+        <workCamera translation="0.099 0.965 0.406" rotation="-30 0 0" node="0>10|2|2|1" fov="80" selectedConfigs="1" useConfigName="fillUnit" />
+        <workCamera translation="0.099 1.148 0.539" rotation="-30 0 0" node="0>10|2|2|0" fov="80" selectedConfigs="2" useConfigName="fillUnit" />
+        <workCamera translation="-0.5 0.8 0" rotation="90 0 180" node="0>10|0|0|0|0|2" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_ideal_mf.xml">
+        <workCamera translation="0 3.01 -3.76" rotation="-30 0 0" node="0>" fov="80" />
+        <workCamera translation="0 3.01 -3.76" rotation="-70 0 0" node="0>" fov="60" />
+        <workCamera translation="0 3.56 5.25" rotation="110 0 -180" node="0>7" fov="70" />
+        <workCamera translation="0.099 0.965 0.406" rotation="-30 0 0" node="0>10|2|2|1" fov="80" selectedConfigs="1" useConfigName="fillUnit" />
+        <workCamera translation="0.099 1.148 0.539" rotation="-30 0 0" node="0>10|2|2|0" fov="80" selectedConfigs="2" useConfigName="fillUnit" />
+        <workCamera translation="-0.5 0.8 0" rotation="90 0 180" node="0>10|0|0|0|0|2" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_idealPL.xml">
+        <workCamera translation="0 3.01 -3.76" rotation="-30 0 0" node="0>" fov="80" />
+        <workCamera translation="0 3.01 -3.76" rotation="-70 0 0" node="0>" fov="60" />
+        <workCamera translation="0 3.56 5.25" rotation="110 0 -180" node="0>7" fov="70" />
+        <workCamera translation="0.099 0.965 0.406" rotation="-30 0 0" node="0>10|2|2|1" fov="80" />
+        <workCamera translation="-0.5 0.8 0" rotation="90 0 180" node="0>10|0|0|0|0|2" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_idealPL_mf.xml">
+        <workCamera translation="0 3.01 -3.76" rotation="-30 0 0" node="0>" fov="80" />
+        <workCamera translation="0 3.01 -3.76" rotation="-70 0 0" node="0>" fov="60" />
+        <workCamera translation="0 3.56 5.25" rotation="110 0 -180" node="0>7" fov="70" />
+        <workCamera translation="0.099 0.965 0.406" rotation="-30 0 0" node="0>10|2|2|1" fov="80" />
+        <workCamera translation="-0.5 0.8 0" rotation="90 0 180" node="0>10|0|0|0|0|2" fov="80" />
+    </workCameras>
+    <!-- Missing JD1200G -->
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_lexion8000.xml">
+        <workCamera translation="0 3.199 -5" rotation="-30 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 3.199 -5" rotation="-70 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 3.591 3.851" rotation="110 0 -180" node="0>0|6" fov="70" />
+        <workCamera translation="0 0.818 0.014" rotation="-30 0 0" node="0>0|10|0|6|1|0" fov="80" selectedConfigs="1" useConfigName="fillUnit" />
+        <workCamera translation="1 -0.303 0.965" rotation="49.406 0 0" node="0>0|10|0|6" fov="80" selectedConfigs="2" useConfigName="fillUnit" />
+        <workCamera translation="0.499 0.7 0" rotation="-90 0 0" node="0>0|10|1|0|0|0|0|1" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_moduleExpress635.xml">
+        <workCamera translation="0 3.56 -0.95" rotation="-30 0 0" node="0>0|9|0|0" fov="80" />
+        <workCamera translation="0 3.56 -0.95" rotation="-70.229 0 0" node="0>0|9|0|0" fov="60" />
+        <workCamera translation="0 3.633 2.069" rotation="110 0 -180" node="0>0|5" fov="70" />
+        <workCamera translation="-2.56 1.326 0.72" rotation="59.368 0 0" node="0>0|9|2|0|0" fov="80" />
+        <workCamera translation="2.56 1.326 0.72" rotation="59.368 0 0" node="0>0|9|2|0|0" fov="80" />
+    </workCameras>
+    <!-- W900L -->
+    <workCameras itemXml="EXP22_W900L_V3/W900L.xml">
+        <workCamera translation="0 3.4 -1.325" rotation="-38 0 0" node="0>" fov="60" />
+        <workCamera translation="1.5 2.3 1" rotation="-5.5 -20 0" node="0>" fov="80" farClip="600" />
+        <workCamera translation="-1.5 2.3 1" rotation="-5.5 20 0" node="0>" fov="80" farClip="600" />
+    </workCameras>
+    <workCameras itemXml="EXP22_W900L_V3/W900LAirRide.xml">
+        <workCamera translation="0 3.4 -1.325" rotation="-38 0 0" node="0>" fov="60" />
+        <workCamera translation="1.5 2.3 1" rotation="-5.5 -20 0" node="0>" fov="80" farClip="600" />
+        <workCamera translation="-1.5 2.3 1" rotation="-5.5 20 0" node="0>" fov="80" farClip="600" />
+    </workCameras>
+    <!-- TerraDos -->
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_terraDosT4_40.xml">
+        <workCamera translation="0 5.5 5.5" rotation="-20 0 0" node="1>" fov="80" />
+        <workCamera translation="0 5 -3.7" rotation="-25 0 0" node="1>" fov="90" farClip="600"/>
+        <workCamera translation="2 3.6 6.5" rotation="-15 -25 0" node="1>" fov="80" farClip="600"/>
+        <workCamera translation="-2 3.6 6.5" rotation="-15 25 0" node="1>" fov="80" farClip="600"/>
+        <!-- Pipe Camera -->
+        <workCamera translation="1 0.5 0" rotation="90 -90 -180" node="1>19|0|0|0" fov="80" />
+    </workCameras>
+    <!-- JD DB120 -->
+    <workCameras itemXml="FS22_DB120/JD_DB120.xml">
+        <workCamera translation="0 5.5 5.5" rotation="-15 40 0" node="0>" fov="60" farClip="600"/>
+        <workCamera translation="0 5.5 5.5" rotation="-15 -40 0" node="0>" fov="60" farClip="600"/>
+        <workCamera translation="0 6 -0.5" rotation="-38 0 0" node="0>" fov="60" />
+    </workCameras>
+    <!-- CM JD600 Series -->
+    <workCameras itemXml="FS22_JohnDeere_S600_Series/s660.xml">
+        <workCamera translation="0 3.5 4.3" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="2.2 3.8 3.5" rotation="-10 -24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-2.2 3.8 3.5" rotation="-10 24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 6.2 2.2" rotation="-55 0 0" node="0>" fov="80" />
+        <workCamera translation="0 4.8 -3" rotation="-30 0 0" node="0>" fov="90" farClip="600" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -4.7 1" rotation="69 0 177" node="0>0|6|2|0" fov="90" />
+    </workCameras>
+    <workCameras itemXml="FS22_JohnDeere_S600_Series/s670.xml">
+        <workCamera translation="0 3.5 4.3" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="2.2 3.8 3.5" rotation="-10 -24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-2.2 3.8 3.5" rotation="-10 24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 6.2 2.2" rotation="-55 0 0" node="0>" fov="80" />
+        <workCamera translation="0 4.8 -3" rotation="-30 0 0" node="0>" fov="90" farClip="600" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -4.7 1" rotation="69 0 177" node="0>0|6|2|0" fov="90" />
+    </workCameras>
+    <workCameras itemXml="FS22_JohnDeere_S600_Series/s680.xml">
+        <workCamera translation="0 3.5 4.3" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="2.2 3.8 3.5" rotation="-10 -24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-2.2 3.8 3.5" rotation="-10 24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 6.2 2.2" rotation="-55 0 0" node="0>" fov="80" />
+        <workCamera translation="0 4.8 -3" rotation="-30 0 0" node="0>" fov="90" farClip="600" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -4.7 1" rotation="69 0 177" node="0>0|6|2|0" fov="90" />
+    </workCameras>
+    <workCameras itemXml="FS22_JohnDeere_S600_Series/s690.xml">
+        <workCamera translation="0 3.5 4.3" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="2.2 3.8 3.5" rotation="-10 -24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-2.2 3.8 3.5" rotation="-10 24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 6.2 2.2" rotation="-55 0 0" node="0>" fov="80" />
+        <workCamera translation="0 4.8 -3" rotation="-30 0 0" node="0>" fov="90" farClip="600" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -4.7 1" rotation="69 0 177" node="0>0|6|2|0" fov="90" />
+    </workCameras>
+    <!-- CM JD700 Series -->
+    <workCameras itemXml="FS22_JohnDeere_S700_Series/s760.xml">
+        <workCamera translation="0 3.5 4.3" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="2.2 3.8 3.5" rotation="-10 -24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-2.2 3.8 3.5" rotation="-10 24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 6.2 2.2" rotation="-55 0 0" node="0>" fov="80" />
+        <workCamera translation="0 4.8 -3" rotation="-30 0 0" node="0>" fov="90" farClip="600" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -4.7 1" rotation="69 0 177" node="0>0|6|2|0" fov="90" />
+    </workCameras>
+    <workCameras itemXml="FS22_JohnDeere_S700_Series/s770.xml">
+        <workCamera translation="0 3.5 4.3" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="2.2 3.8 3.5" rotation="-10 -24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-2.2 3.8 3.5" rotation="-10 24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 6.2 2.2" rotation="-55 0 0" node="0>" fov="80" />
+        <workCamera translation="0 4.8 -3" rotation="-30 0 0" node="0>" fov="90" farClip="600" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -4.7 1" rotation="69 0 177" node="0>0|6|2|0" fov="90" />
+    </workCameras>
+    <workCameras itemXml="FS22_JohnDeere_S700_Series/s780.xml">
+        <workCamera translation="0 3.5 4.3" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="2.2 3.8 3.5" rotation="-10 -24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-2.2 3.8 3.5" rotation="-10 24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 6.2 2.2" rotation="-55 0 0" node="0>" fov="80" />
+        <workCamera translation="0 4.8 -3" rotation="-30 0 0" node="0>" fov="90" farClip="600" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -4.7 1" rotation="69 0 177" node="0>0|6|2|0" fov="90" />
+    </workCameras>
+    <workCameras itemXml="FS22_JohnDeere_S700_Series/s790.xml">
+        <workCamera translation="0 3.5 4.3" rotation="105 0 180" node="0>" fov="60" />
+        <workCamera translation="2.2 3.8 3.5" rotation="-10 -24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-2.2 3.8 3.5" rotation="-10 24 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 6.2 2.2" rotation="-55 0 0" node="0>" fov="80" />
+        <workCamera translation="0 4.8 -3" rotation="-30 0 0" node="0>" fov="90" farClip="600" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -4.7 1" rotation="69 0 177" node="0>0|6|2|0" fov="90" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_tiger6S.xml">
+        <workCamera translation="0 3.193 -5.098" rotation="-30 0 0" node="1>0" fov="80" />
+        <workCamera translation="0 3.193 -5.098" rotation="-70 0 0" node="1>0" fov="60" />
+        <workCamera translation="0 0.902 1.426" rotation="110 0 -180" node="0>0|6" fov="70" />
+        <workCamera translation="-1.482 1.719 3.488" rotation="-28.877 -70.588 0" node="1>0" fov="90" />
+        <workCamera translation="-0.971 1.672 1.112" rotation="138.747 -48.22 180" node="1>0" fov="80" />
+        <workCamera translation="0 0.873 -0.011" rotation="-30 0 0" node="1>0|3|0|9|0" fov="80" />
+        <workCamera translation="-0.624 1.079 -0.886" rotation="125.229 -0.02 -90" node="1>0|3|1|0|0|0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_ventor4150.xml">
+        <workCamera translation="0 4.041 -7.478" rotation="-30 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 4.041 -7.478" rotation="-70 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 3.84 4.901" rotation="130 0 -180" node="0>0" fov="70" />
+        <!-- Bunker fill -->
+        <workCamera translation="-0.624 3.738 -4.454" rotation="-30 -40 0" node="0>0" fov="70" />
+        <!-- Mid conveyor to bunker -->
+        <workCamera translation="0.272 4.088 -1.612" rotation="-25 0 0" node="0>0" />
+        <!-- Left cleaning conveyor/arm to mid conveyor -->
+        <workCamera translation="-0.238 3.896 -2.929" rotation="79.41 79.527 106.723" node="0>0" />
+        <!-- Right cleaning conveyor/arm to mid conveyor -->
+        <workCamera translation="0.418 3.892 -2.948" rotation="48.651 -78.902 -83.092" node="0>0" fov="90" />
+        <!-- From front conveyor and up to mid section | left side -->
+        <workCamera translation="1.652 3.53 -0.52" rotation="170.865 58.846 -177.421" node="0>0" fov="90" />
+        <!-- From front conveyor and out to mid section | left side -->
+        <workCamera translation="1.701 3.549 -0.647" rotation="-8.899 -61.179 4.098" node="0>0" fov="90" />
+        <!-- From front conveyor and up to mid section | right side -->
+        <workCamera translation="-1.652 3.53 -0.52" rotation="173.844 -59.927 176.142" node="0>0" fov="90" />
+        <!-- From front conveyor and out to mid section | right side -->
+        <workCamera translation="-1.701 3.549 -0.647" rotation="-8.899 61.179 4.098" node="0>0" fov="90" />
+        <!-- leftFrontCleaningArmPart02 -->
+        <workCamera translation="0.784 0.425 -0.554" rotation="-11.622 -3.6 -18.352" node="0>0|4|6|3" fov="90" />
+        <!-- rightFrontCleaningArmPart02 -->
+        <workCamera translation="-0.784 0.425 -0.554" rotation="-11.622 3.6 18.352" node="0>0|4|6|3" fov="90" nearClip="0.1" />
+        <!-- bunkerLeftArm -->
+        <workCamera translation="1.391 1.118 -0.05" rotation="-15 90 0" node="0>0|4|4|0" />
+        <!-- pipe -->
+        <workCamera translation="-0.606 1.279 1.122" rotation="-47.308 5.264 -31.502" node="0>0|4|3|0|0|0" fov="80" />
+        <workCamera translation="-1.097 0.368 -1.158" rotation="10 90 0" node="0>0|4|3|0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_x9_1100.xml">
+        <workCamera translation="0 3.32 -4.979" rotation="-30 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 3.32 -4.979" rotation="-70 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 3.787 4.03" rotation="110 0 -180" node="0>0|6" fov="70" />
+        <workCamera translation="0 -0.001 0.443" rotation="51.774 0.033 0.227" node="0>0|5|2|7|0|0|2|0" fov="80" />
+        <workCamera translation="0.4 0.499 0" rotation="-90 0 0" node="0>0|5|0|0|1|0|0|0|3|0" fov="80" selectedConfigs="1" useConfigName="dischargeable" />
+        <workCamera translation="0.4 0.909 0.301" rotation="-90 0.229 0" node="0>0|5|0|0|0|0|2" fov="80" selectedConfigs="2" useConfigName="dischargeable" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_xc931.xml">
+        <workCamera translation="0.439 2.209 -1.033" rotation="-30 0 0" node="0>0|4|0|0|0|0" fov="80" />
+        <workCamera translation="0 2.469 -4.74" rotation="-45 0 0" node="1>0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_xc931_xl.xml">
+        <workCamera translation="0.439 2.209 -1.033" rotation="-30 0 0" node="0>0|4|0|0|0|0" fov="80" />
+        <workCamera translation="0 2.469 -4.74" rotation="-45 0 0" node="1>0" fov="80" />
+    </workCameras>
+    <!-- Missing Quasar Headers -->
+    <!-- Missing Lizard Durus Header -->
+    <!-- Missing AirFlex Headers -->
+    <workCameras itemXml="FS22_cheeky_harvester_pack/xml/cheeky_zkivSe.xml">
+        <workCamera translation="0 4 4.75" rotation="110 .28 180" node="0>0" fov="80" />
+        <workCamera translation="1.8 3 3.6" rotation="-16 -30 0" node="0>0" fov="60" />
+        <workCamera translation="-1.8 3 3.6" rotation="-16 30 0" node="0>0" fov="60" />
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -0.5 0" rotation="-120 90 0" node="0>0|5|1|0|0|0|0|0|0|0" fov="60" />
+        <workCamera translation="0 4.5 2.5" rotation="-34 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 3 -7" rotation="-85 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 5.235 -6" rotation="-40 0 0" node="0>0" fov="90" farClip="400" />
+    </workCameras>
+    <!-- Stock ZkivSe -->
+    <workCameras itemXml="premiumExpansion/vehicles/dewulf/zkivSe/zkivSe.xml">
+        <workCamera translation="0 4 4.75" rotation="110 .28 180" node="0>0" fov="80" />
+        <workCamera translation="1.8 3 3.6" rotation="-16 -30 0" node="0>0" fov="60" farClip="600"/>
+        <workCamera translation="-1.8 3 3.6" rotation="-16 30 0" node="0>0" fov="60" farClip="600"/>
+        <!-- Pipe Camera -->
+        <workCamera translation="0 -0.5 0" rotation="-120 90 0" node="0>0|5|1|0|0|0|0|0|0|0" fov="60" />
+        <workCamera translation="0 4.5 2.5" rotation="-34 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 3 -7" rotation="-85 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 5.235 -6" rotation="-40 0 0" node="0>0" fov="90" farClip="600" />
+    </workCameras>
+    <!-- Missing 3162 Draper Headers -->
+    <workCameras itemXml="FS22_cheeky_misc_pack/xml/cheeky_bigPack1290HDPVC.xml">
+        <workCamera translation="0 3.323 -3.201" rotation="-30 0 0" node="0>0" fov="80" nearClip="0.1" farClip="400" />
+        <workCamera translation="0 1.612 2.592" rotation="120 0 -180" node="0>0" fov="85" farClip="50" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_misc_pack/xml/cheeky_kuw2000.xml">
+        <workCamera translation="0 3.053 -5.62" rotation="-30 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 3.053 -5.62" rotation="-80 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 3.798 1.79" rotation="-37 0 0" node="0>0" fov="80" />
+        <workCamera translation="-1.25699997 2.48441124 3.78366637" rotation="-35 -40 0" node="0>0" nearClip="0.01" />
+        <workCamera translation="2.1 1.394 -0.725" rotation="135 0 -178.651" node="0>0|4|0|0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_misc_pack/xml/cheeky_maus5.xml">
+        <workCamera translation="-0.001 0.694 -0.49" rotation="60 0 0" node="0>0|4|1|1|1" fov="80" farClip="600" />
+        <workCamera translation="-0.001 0.694 -0.49" rotation="20 0 0" node="0>0|4|1|1|1" fov="60" />
+        <workCamera translation="0 2.115 2.453" rotation="110 0 -180" node="0>0|4|0|1|0" fov="70" />
+        <workCamera translation="0 0.077 1.366" rotation="-35 0 0" node="0>0|4|0|1|0" fov="70" />
+        <workCamera translation="0 0 -0.75" rotation="-90 90 0" node="0>0|4|1|2|0|0|0|1|0" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_misc_pack/xml/cheeky_rrw500.xml">
+        <workCamera translation="0 3.06 -5.56" rotation="-30 0 0" node="0>0" fov="80" />
+        <workCamera translation="0 3.06 -5.56" rotation="-70 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 3.934 5.029" rotation="-36 0 0" node="0>0" fov="80" />
+        <workCamera translation="-0.757 1.109 -0.966" rotation="135 0 -96.71" node="0>0|3|3|0|0" fov="80" />
+    </workCameras>
+    <!-- Missing TerraFelis -->
+    <!-- Transport Trailers -->
+    <workCameras itemXml="FS22_TransportTrailer25M/xml/transportTrailer19M.xml">
+        <workCamera translation="0 5 7" rotation="-25 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 0.5 -10.25" rotation="0 0 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TransportTrailer25M/xml/transportTrailer25M.xml">
+        <workCamera translation="0 5 7" rotation="-25 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="0 0.5 -15.25" rotation="0 0 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+
+    <!-- Exile22 Transport Trailer -->
+    <workCameras itemXml="FS22_Exile2k22/Exile2KLL.xml">
+        <workCamera translation="0 3.8 9" rotation="-20 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="0 0.18 -5.5" rotation="0 0 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <!-- Cheeky Vehicles -->
+    <workCameras itemXml="FS22_cheeky_vehicles_pack/xml/cheeky_anthem.xml">
+        <workCamera translation="0 3.29 -0.028" rotation="-20 0 0" node="0>0|7" fov="80" farClip="600" selectedConfigs="1" useConfigName="design" />
+        <workCamera translation="0 4.02 -0.3" rotation="-20 0 0" node="0>0|7" fov="80" farClip="600" selectedConfigs="2" useConfigName="design" />
+        <workCamera translation="0 3.32 -0.92" rotation="-20 0 0" node="0>0|7" fov="80" farClip="600" selectedConfigs="3, 4" useConfigName="design" />
+        <workCamera translation="0 4.069 -1.89" rotation="-25 0 0" node="0>0|7" fov="80" farClip="600" selectedConfigs="5" useConfigName="design" />
+        <workCamera translation="0 1.81 2.729" rotation="110 0 -180" node="0>0" fov="70" />
+        <workCamera translation="0.808 2.234 2.794" rotation="150.276 88.392 180" node="0>0|7" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_vehicles_pack/xml/cheeky_anthemBlack.xml">
+        <workCamera translation="0 3.29 -0.028" rotation="-20 0 0" node="0>0|7" fov="80" farClip="600" selectedConfigs="1" useConfigName="design" />
+        <workCamera translation="0 4.02 -0.3" rotation="-20 0 0" node="0>0|7" fov="80" farClip="600" selectedConfigs="2" useConfigName="design" />
+        <workCamera translation="0 3.32 -0.92" rotation="-20 0 0" node="0>0|7" fov="80" farClip="600" selectedConfigs="3, 4" useConfigName="design" />
+        <workCamera translation="0 4.069 -1.89" rotation="-25 0 0" node="0>0|7" fov="80" farClip="600" selectedConfigs="5" useConfigName="design" />
+        <workCamera translation="0 1.81 2.729" rotation="110 0 -180" node="0>0" fov="70" />
+        <workCamera translation="0.808 2.234 2.794" rotation="150.276 88.392 180" node="0>0|7" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_vehicles_pack/xml/cheeky_pinnacle.xml">
+        <workCamera translation="0 2.89 -0.108" rotation="-20 0 0" node="0>0|6" fov="80" farClip="600" selectedConfigs="1" useConfigName="design" />
+        <workCamera translation="0 3.869 -0.4" rotation="-20 0 0" node="0>0|6" fov="80" farClip="600" selectedConfigs="2" useConfigName="design" />
+        <workCamera translation="0 3.1 -1.06" rotation="-20 0 0" node="0>0|6" fov="80" farClip="600" selectedConfigs="3, 4" useConfigName="design" />
+        <workCamera translation="0 4.12 -1.851" rotation="-25 0 0" node="0>0|6" fov="80" farClip="600" selectedConfigs="5" useConfigName="design" />
+        <workCamera translation="0 2.119 2.71" rotation="110 0 -180" node="0>0" fov="70" />
+        <workCamera translation="-1.21 2.92 0.319" rotation="-90 90 0" node="0>0|6" fov="80" />
+    </workCameras>
+    <workCameras itemXml="FS22_cheeky_vehicles_pack/xml/cheeky_superliner1979.xml">
+        <workCamera translation="0 3.02 0.038" rotation="-20 0 0" node="0>0|7" fov="80" farClip="200" />
+        <workCamera translation="0 2.33 2.96" rotation="110 0 -180" node="0>0" fov="70" farClip="200" />
+        <workCamera translation="-0.979 2.844 0.15" rotation="0 90 90" node="0>0|7" fov="80" farClip="200" />
+    </workCameras>
+    <!-- TLX2020 -->
+    <workCameras itemXml="FS22_TLX2020_Series/tlx2020.xml">
+        <workCamera translation="0 3.175 1" rotation="-17.5 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.2 1.6 1" rotation="0 -22 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.2 1.6 1" rotation="0 22 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX2020_Series/tlx2020_67.xml">
+        <workCamera translation="0 3.175 1" rotation="-17.5 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.2 1.6 1" rotation="0 -22 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.2 1.6 1" rotation="0 22 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX2020_Series/attachments/tlx2020_boxit.xml">
+        <workCamera translation="0 4.4 -2.9" rotation="-37 0 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX2020_Series/attachments/tlx2020_boxit2.xml">
+        <workCamera translation="0 4.4 -2.9" rotation="-37 0 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <!-- Phoenixs -->
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_agro.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_cat.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_cat_low.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_cms.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_cms_low.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_d60.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_d60_low.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_service_v6.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_TLX_Phoenix/phoenix_service_v8.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <!-- Winter Wolf -->
+    <workCameras itemXml="FS22_TLX_Phoenix_WF/phoenix_winter.xml">
+        <workCamera translation="0 3 0.5" rotation="-26 0 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="1.4 2 1.5" rotation="-6 -30 0" node="0>" fov="80" farClip="600"/>
+        <workCamera translation="-1.4 2 1.5" rotation="-6 30 0" node="0>" fov="80" farClip="600"/>
+    </workCameras>
+    <!-- CM JD 6R Series -->
+    <workCameras itemXml="FS22_JohnDeere6R/series6Rsmall.xml">
+        <workCamera translation="0 2.5 -1.65" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -0.85" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.45 2.5 .25" rotation="-10 -15 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.45 2.5 .25" rotation="-10 15 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_JohnDeere6R/series6Rmedium.xml">
+        <workCamera translation="0 2.5 -1.65" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -0.85" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.45 2.5 .25" rotation="-10 -15 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.45 2.5 .25" rotation="-10 15 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_JohnDeere6R/series6Rlarge.xml">
+        <workCamera translation="0 2.5 -1.65" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -0.85" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.45 2.5 .25" rotation="-10 -15 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.45 2.5 .25" rotation="-10 15 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <!-- JD 9RT -->
+    <workCameras itemXml="FS22_John_Deere_9RT/JohnDeere_9RT.xml">
+        <workCamera translation="0 3 -1.35" rotation="-50 0 0" node="0>0" fov="60" />
+        <workCamera translation="0 4.75 0.2" rotation="-30 0 0" node="0>0" fov="90" farClip="600"/>
+        <workCamera translation="2 2.4 1" rotation="-10 -20 0" node="0>0" fov="90" farClip="600"/>
+        <workCamera translation="-2 2.4 1" rotation="-10 20 0" node="0>0" fov="90" farClip="600"/>
+    </workCameras>
+    <!-- CM JD 8R Series -->
+    <workCameras itemXml="FS22_CM_series8R/series8R.xml">
+        <workCamera translation="0 2.5 -2.75" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -1.9" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.25 3 -1" rotation="-15 -20 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.25 3 -1" rotation="-15 20 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_CM_series8R/series8RMY20.xml">
+        <workCamera translation="0 2.5 -2.75" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -1.9" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.25 3 -1" rotation="-15 -20 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.25 3 -1" rotation="-15 20 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_CM_series8R/series8RMY22.xml">
+        <workCamera translation="0 2.5 -2.75" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -1.9" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.25 3 -1" rotation="-15 -20 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.25 3 -1" rotation="-15 20 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_CM_series8R/series8RX.xml">
+        <workCamera translation="0 2.5 -2.75" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -1.9" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.25 3 -1" rotation="-15 -20 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.25 3 -1" rotation="-15 20 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_CM_series8R/series8RT.xml">
+        <workCamera translation="0 2.5 -2.75" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -1.9" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.25 3 -1" rotation="-15 -20 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.25 3 -1" rotation="-15 20 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <workCameras itemXml="FS22_CM_series8R/series8RTMY22.xml">
+        <workCamera translation="0 2.5 -2.75" rotation="-64 0 0" node="0>" fov="60" />
+        <workCamera translation="0 4 -1.9" rotation="-30 0 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="1.25 3 -1" rotation="-15 -20 0" node="0>" fov="90" farClip="600"/>
+        <workCamera translation="-1.25 3 -1" rotation="-15 20 0" node="0>" fov="90" farClip="600"/>
+    </workCameras>
+    <!-- F600 Work Truck -->
+    <workCameras itemXml="FS22_2022FordF600ServiceTruck/F600BucketTruck.xml">
+        <workCamera translation="0 2.5 0.9" rotation="-16 0 0" node="0>0" fov="90" farClip="600"/>
+        <workCamera translation="1.4 1.6 1.2" rotation="-13.25 -22 0" node="0>0" fov="90" farClip="600" />
+        <workCamera translation="-1.4 1.6 1.2" rotation="-13.25 22 0" node="0>0" fov="90" farClip="600" />
+    </workCameras>
+</workCameraItems>

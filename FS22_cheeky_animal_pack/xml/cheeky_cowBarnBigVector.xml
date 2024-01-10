@@ -407,7 +407,8 @@
             </feedingTrough>
         </food>
 
-        <feedingRobot linkNode="vectorGarage" class="FeedingRobot" filename="$data/placeables/lely/vectorGarage/lelyVectorGarage.xml">
+        <!-- <feedingRobot linkNode="vectorGarage" class="FeedingRobot" filename="$data/placeables/lely/vectorGarage/lelyVectorGarage.xml"> -->
+        <feedingRobot linkNode="vectorGarage" class="FeedingRobot" filename="xml/cheeky_lelyVectorGarage.xml">
             <splines>
                 <spline node="splineReverse" direction="-1"/>
                 <spline node="splineToBarn" direction="1"/>
