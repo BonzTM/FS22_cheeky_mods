@@ -102,52 +102,74 @@
     </lights>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="false">
+        <productions sharedThroughputCapacity="true">
             <production id="bread" name="$l10n_fillType_bread" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="FLOUR" amount="200" />
-                    <input fillType="WATER" amount="50" />
-                    <input fillType="EMPTYPALLET" amount="2" mix="boost" boostfactor="0.05"/>
+                    <input fillType="FLOUR" amount="600" />
+                    <input fillType="WATER" amount="150" />
+                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="BREAD" amount="130" />
+                    <output fillType="BREAD" amount="390" />
                 </outputs>
             </production>
             <production id="cake" name="$l10n_fillType_cake" cyclesPerHour="10" costsPerActiveHour="12">
                 <inputs>
-                    <input fillType="FLOUR" amount="40" />
-                    <input fillType="SUGAR" amount="40" mix="1"/>
-                    <input fillType="CORNSYRUP" amount="40" mix="1"/>
-                    <input fillType="MILK" amount="40" />
-                    <input fillType="EGG" amount="40" />
-                    <input fillType="BUTTER" amount="40" />
-                    <input fillType="STRAWBERRY" amount="40" />
-                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
+                    <input fillType="FLOUR" amount="120" />
+                    <input fillType="SUGAR" amount="120" mix="1"/>
+                    <input fillType="CORNSYRUP" amount="120" mix="1"/>
+                    <input fillType="MILK" amount="120" mix="2"/>
+                    <input fillType="OATMILK" amount="60" mix="2"/>
+                    <input fillType="SOYMILK" amount="40" mix="2"/>
+                    <input fillType="EGG" amount="120" />
+                    <input fillType="BUTTER" amount="120" />
+                    <input fillType="STRAWBERRY" amount="120" />
+                    <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="CAKE" amount="90" />
+                    <output fillType="CAKE" amount="285" />
                 </outputs>
             </production>
             <production id="carrotCake" name="Carrot Cake" cyclesPerHour="10" costsPerActiveHour="12">
                 <inputs>
-                    <input fillType="FLOUR" amount="40" />
-                    <input fillType="SUGAR" amount="40" mix="1"/>
-                    <input fillType="CORNSYRUP" amount="40" mix="1"/>
-                    <input fillType="MILK" amount="40" />
-                    <input fillType="EGG" amount="40" />
-                    <input fillType="BUTTER" amount="40" />
-                    <input fillType="STRAWBERRY" amount="40" />
-                    <input fillType="CARROT" amount="170" />
-                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
+                    <input fillType="FLOUR" amount="120" />
+                    <input fillType="SUGAR" amount="120" mix="1"/>
+                    <input fillType="CORNSYRUP" amount="120" mix="1"/>
+                    <input fillType="MILK" amount="120" mix="2"/>
+                    <input fillType="OATMILK" amount="60" mix="2"/>
+                    <input fillType="SOYMILK" amount="40" mix="2"/>
+                    <input fillType="EGG" amount="120" />
+                    <input fillType="BUTTER" amount="120" />
+                    <input fillType="STRAWBERRY" amount="120" />
+                    <input fillType="CARROT" amount="510" />
+                    <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="CARROTCAKE" amount="115" />
+                    <output fillType="CARROTCAKE" amount="345" />
+                </outputs>
+            </production>
+            <production id="redVelvetCake" name="Red Velvet Cake" cyclesPerHour="10" costsPerActiveHour="12">
+                <inputs>
+                    <input fillType="FLOUR" amount="120" />
+                    <input fillType="SUGAR" amount="120" mix="1"/>
+                    <input fillType="CORNSYRUP" amount="120" mix="1"/>
+                    <input fillType="MILK" amount="120" mix="2"/>
+                    <input fillType="OATMILK" amount="60" mix="2"/>
+                    <input fillType="SOYMILK" amount="40" mix="2"/>
+                    <input fillType="EGG" amount="120" />
+                    <input fillType="BUTTER" amount="120" />
+                    <input fillType="STRAWBERRY" amount="120" />
+                    <input fillType="BEETJUICE" amount="120" />
+                    <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
+                </inputs>
+                <outputs>
+                    <output fillType="REDVELVETCAKE" amount="410" />
                 </outputs>
             </production>
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK EGG BUTTER STRAWBERRY WATER CARROT CORNSYRUP EMPTYPALLET" />
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK OATMILK SOYMILK EGG BUTTER STRAWBERRY WATER CARROT CORNSYRUP BEETJUICE EMPTYPALLET" />
         </sellingStation>
 
         <palletSpawner node="palletSpawner">
@@ -164,12 +186,16 @@
             <capacity fillType="SUGAR" capacity="100000" />
             <capacity fillType="CORNSYRUP" capacity="100000" />
             <capacity fillType="MILK" capacity="100000" />
+            <capacity fillType="OATMILK" capacity="100000" />
+            <capacity fillType="SOYMILK" capacity="100000" />
             <capacity fillType="EGG" capacity="100000" />
             <capacity fillType="BUTTER" capacity="100000" />
             <capacity fillType="STRAWBERRY" capacity="100000" />
+            <capacity fillType="BEETJUICE" capacity="100000" />
             <capacity fillType="BREAD" capacity="100000" />
             <capacity fillType="CAKE" capacity="100000" />
             <capacity fillType="CARROTCAKE" capacity="100000" />
+            <capacity fillType="REDVELVETCAKE" capacity="100000" />
             <capacity fillType="WATER" capacity="100000" />
             <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>

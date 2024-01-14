@@ -105,20 +105,20 @@
         <productions sharedThroughputCapacity="false">
             <production id="butter" name="$l10n_fillType_butter" cyclesPerHour="11" costsPerActiveHour="8">
                 <inputs>
-                    <input fillType="MILK" amount="300" />
+                    <input fillType="MILK" amount="150" />
                     <input fillType="EMPTYPALLET" amount="6" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="BUTTER" amount="440" />
+                    <output fillType="BUTTER" amount="220" />
                 </outputs>
             </production>
             <production id="cheese" name="$l10n_fillType_cheese" cyclesPerHour="12" costsPerActiveHour="12">
                 <inputs>
-                    <input fillType="MILK" amount="300" />
+                    <input fillType="MILK" amount="235" />
                     <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="CHEESE" amount="220" />
+                    <output fillType="CHEESE" amount="175" />
                 </outputs>
             </production>
         </productions>
