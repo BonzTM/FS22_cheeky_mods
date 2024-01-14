@@ -10,6 +10,11 @@
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:cornSyrupPallet" sizeY="0.450"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:woodPallet" sizeY="0.666"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:emptyPallet" sizeY="1.55"/>
+        <!-- Cheeky Custom Tanks -->
+        <containerConfiguration containerType="LIQUID_TANK" name="FS22_cheeky_pallets_and_bales_pack:liquidTank" sizeX="1.6" sizeY="1.6" sizeZ="1.6"/>
+        <containerConfiguration containerType="LIQUID_TANK" name="FS22_cheeky_pallets_and_bales_pack:milkTank" sizeX="1.6" sizeY="1.6" sizeZ="1.6"/>
+        <containerConfiguration containerType="LIQUID_TANK" name="FS22_cheeky_pallets_and_bales_pack:oatMilkTank" sizeX="1.6" sizeY="1.6" sizeZ="1.6"/>
+        <containerConfiguration containerType="LIQUID_TANK" name="FS22_cheeky_pallets_and_bales_pack:soyMilkTank" sizeX="1.6" sizeY="1.6" sizeZ="1.6"/>
         <!-- Cheeky Base Pallet Overrides -->
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:lettuceBoxPallet"/>
         <containerConfiguration containerType="EURO_PALLET" name="FS22_cheeky_pallets_and_bales_pack:tomatoesBoxPallet"/>
