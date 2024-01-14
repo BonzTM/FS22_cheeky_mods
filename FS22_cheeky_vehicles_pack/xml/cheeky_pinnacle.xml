@@ -6,7 +6,7 @@
         <name>Pinnacle 6x4</name>
         <specs>
             <power>425</power>
-            <maxSpeed>137</maxSpeed>
+            <maxSpeed>155</maxSpeed>
             <combination xmlFilename="$data/vehicles/demco/sideDump/sideDump.xml"/>
             <combination xmlFilename="$data/vehicles/wilsonTrailer/pacesetter/pacesetter.xml"/>
             <combination xmlFilename="$data/vehicles/lodeKing/distinctionTripleHopper/distinctionTripleHopper.xml"/>
@@ -263,17 +263,16 @@
 
         <motorConfigurations>
             <motorConfiguration name="Cheeky Pinnacle 6x4 (MP7 425)" hp="425" price="0">
-                <motor torqueScale="2.036" minRpm="850" maxRpm="2200" maxForwardSpeed="137" maxBackwardSpeed="15" brakeForce="9" lowBrakeForceScale="0.22" dampingRateScale="1.9" >
+                <motor torqueScale="4.25" minRpm="850" maxRpm="2200" maxForwardSpeed="155" maxBackwardSpeed="25" brakeForce="10" lowBrakeForceScale="0.22" dampingRateScale="2" >
                     <torque rpm="850" torque="0.9"/>
                     <torque rpm="1000" torque="1"/>
                     <torque rpm="1450" torque="1"/>
-                    <torque rpm="1900" torque="0.75"/>
-                    <torque rpm="2200" torque="0.63"/>
-                    <torque rpm="2500" torque="0.2"/>
+                    <torque rpm="1900" torque="0.8"/>
+                    <torque rpm="2200" torque="0.75"/>
                 </motor>
 
                 <!-- mDrive 12-speed transmission -->
-                <transmission autoGearChangeTime="0.5" gearChangeTime="0.4" axleRatio="8" name="$l10n_info_transmission_manual">
+                <transmission autoGearChangeTime="1.2" gearChangeTime="0.6" axleRatio="7" startGearThreshold="1.0" name="$l10n_info_transmission_manual">
                     <directionChange useGear="true" useGroup="false" changeTime="0.5"/>
 
                     <forwardGear gearRatio="14.94" actionName="SHIFT_GEAR_SELECT_1"/>
@@ -291,14 +290,16 @@
                     <forwardGear gearRatio="0.84"  actionName="-"/>
                     <forwardGear gearRatio="0.67"  actionName="SHIFT_GEAR_SELECT_8"/>                    
                     <backwardGear gearRatio="12.48" name="R1"/>
-                    <backwardGear gearRatio="9.04" name="R2"/>
+                    <backwardGear gearRatio="9.04"  name="R2"/>
+                    <backwardGear gearRatio="6.41"  name="R3"/>
+                    <backwardGear gearRatio="4.5"   name="R4"/>
                 </transmission>
             </motorConfiguration>
             <motorConfiguration name="Cheeky Pinnacle 6x4 (MP8 650)" hp="650" price="10000" consumerConfigurationIndex="2">
-                <motor torqueScale="4" dampingRateScale="2.0"/>
+                <motor torqueScale="6.5" dampingRateScale="3.5"/>
             </motorConfiguration>
             <motorConfiguration name="Cheeky Pinnacle 6x4 (MP8 850)" hp="850" price="26500" consumerConfigurationIndex="3">
-                <motor torqueScale="6" dampingRateScale="2.2"/>
+                <motor torqueScale="8.5" dampingRateScale="4.5"/>
             </motorConfiguration>
         </motorConfigurations>
 
