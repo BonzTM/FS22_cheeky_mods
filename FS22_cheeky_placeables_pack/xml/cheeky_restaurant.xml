@@ -109,7 +109,7 @@
     </lights>
 
     <sellingStation appearsOnStats="true" supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
-        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="POTATO MAIZE FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL BUTTER CHEESE EGG SUGAR CAKE HONEY TOMATO LETTUCE STRAWBERRY GRAPE GRAPEJUICE BEETJUICE CARROTJUICE TOMATOJUICE VEGETABLEJUICE"/>
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="POTATO MAIZE FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL BUTTER CHEESE EGG SUGAR CAKE HONEY TOMATO LETTUCE STRAWBERRY GRAPE GRAPEJUICE BEETJUICE CARROTJUICE TOMATOJUICE VEGETABLEJUICE" fillTypeCategories="CHEEKY_SUGARS CHEEKY_MILKS"/>
 
         <fillType name="POTATO" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="MAIZE" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />

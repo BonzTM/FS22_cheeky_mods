@@ -103,7 +103,7 @@
     </lights>
 
     <sellingStation appearsOnStats="true" litersForFullPriceDrop="200000" fullPriceRecoverHours="48" supportsExtension="false">
-        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS SEEDS MOONSHINE" fillTypeCategories="CHEEKY_PRODUCT CHEEKY_PLAT_PRODUCT" />
+        <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="POTATO EGG WOOL MILK BREAD HONEY BUTTER CHEESE SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL TOMATO LETTUCE STRAWBERRY GRAPE RAISINS GRAPEJUICE WOODCHIPS SEEDS MOONSHINE" fillTypeCategories="CHEEKY_PRODUCT CHEEKY_PLAT_PRODUCT CHEEKY_MILKS" />
 
         <fillType name="POTATO" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="EGG" priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />

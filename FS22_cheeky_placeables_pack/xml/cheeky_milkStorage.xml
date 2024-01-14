@@ -7,7 +7,7 @@
         </name>
         <image>textures/store_milkStorage.dds</image>
         <functions>
-            <function>$l10n_function_MilkStorage</function>
+            <function>Will store all Milk types</function>
         </functions>
         <price>25000</price>
         <dailyUpkeep>25</dailyUpkeep>
@@ -81,15 +81,15 @@
 
     <silo>
         <loadingStation node="loadingTrigger" supportsExtension="true" storageRadius="70">
-            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypes="MILK" aiNode="aiLoadingNode" />
+            <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="2000" dischargeNode="dischargeNode" fillTypeCategories="CHEEKY_MILKS" aiNode="aiLoadingNode" />
         </loadingStation>
 
         <unloadingStation supportsExtension="true" storageRadius="50">
-            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypes="MILK" aiNode="aiLoadingNode"/>
+            <unloadTrigger exactFillRootNode="exactFillRootNode" fillTypeCategories="CHEEKY_MILKS" aiNode="aiLoadingNode"/>
         </unloadingStation>
 
         <storages>
-            <storage node="storage" fillTypes="MILK" capacity="500000" isExtension="true"/>
+            <storage node="storage" fillTypeCategories="CHEEKY_MILKS" capacity="1500000" isExtension="true"/>
         </storages>
     </silo>
 
