@@ -5,23 +5,22 @@
     <storeData>
         <name>$l10n_fillType_milk</name>
         <specs>
-            <capacity>2000</capacity>
-            <fillTypes>milk</fillTypes>
+            <capacity>4000</capacity>
+            <fillTypes>MILK OATMILK SOYMILK</fillTypes>
             <weight ignore="true"/>
         </specs>
         <image>textures/store_milkTank.png</image>
-        <price>2000</price>
         <allowLeasing>false</allowLeasing>
         <canBeSold>false</canBeSold>
-        <showInStore>true</showInStore>
+        <showInStore>false</showInStore>
         <rotation>0</rotation>
         <shopHeight>2</shopHeight>
         <brand>LIZARD</brand>
         <category>pallets</category>
         <financeCategory>OTHER</financeCategory>
-        <vertexBufferMemoryUsage>81152</vertexBufferMemoryUsage>
-        <indexBufferMemoryUsage>16640</indexBufferMemoryUsage>
-        <textureMemoryUsage>1245184</textureMemoryUsage>
+        <vertexBufferMemoryUsage>87040</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>18176</indexBufferMemoryUsage>
+        <textureMemoryUsage>2162688</textureMemoryUsage>
         <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
         <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
 
@@ -34,7 +33,8 @@
     <base>
         <typeDesc>$l10n_typeDesc_pallet</typeDesc>
         <filename>i3d/milkTank.i3d</filename>
-        <size width="2" length="2" lengthOffset="0" />
+        <!-- <size width="2" length="2" lengthOffset="0" /> -->
+        <size width="1.6" length="1.6" height="1.6" />
         <input allowed="false"/>
         <canBeReset>false</canBeReset>
         <components maxMass="850">
@@ -48,7 +48,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypes="MILK" capacity="2000" startFillType="MILK" startFillLevel="2000" ignoreFillLimit="true">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="CHEEKY_MILKS" capacity="4000" ignoreFillLimit="true">
                         <fillRootNode node="0>" />
                     </fillUnit>
                 </fillUnits>
@@ -56,7 +56,7 @@
         </fillUnitConfigurations>
     </fillUnit>
 
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="200"/>
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
 
     <dischargeable requiresTipOcclusionArea="false" />
 
