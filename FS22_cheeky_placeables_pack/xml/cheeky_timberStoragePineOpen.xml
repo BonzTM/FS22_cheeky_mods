@@ -163,7 +163,7 @@
         <triggerMarker node="outputWoodInteractMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="false" />
         <triggerMarker node="inputWoodInteractMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="false" />
         <triggerMarker node="inputWoodTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
-        <triggerMarker node="outputChipsMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+        <!-- <triggerMarker node="outputChipsMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" /> -->
     </triggerMarkers>
 
     <colorable>
