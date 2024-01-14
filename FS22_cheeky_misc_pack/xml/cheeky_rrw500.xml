@@ -405,7 +405,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration price="0" >
                 <fillUnits allowFoldingWhileFilled="false" allowFoldingThreshold="20000">
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="POTATO SUGARBEET SUGARBEET_CUT CARROT BEETROOT PARSNIP" capacity="63700" foldMinLimit="0" foldMaxLimit="0">
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="POTATO SUGARBEET SUGARBEET_CUT CARROT BEETROOT PARSNIP MANURE" capacity="63700" foldMinLimit="0" foldMaxLimit="0">
                         <exactFillRootNode node="exactFillRootNode" />
                     </fillUnit>
                 </fillUnits>

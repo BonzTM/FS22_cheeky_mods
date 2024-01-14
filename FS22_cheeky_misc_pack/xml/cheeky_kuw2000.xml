@@ -337,7 +337,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration price="0" >
                 <fillUnits>
-                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="POTATO SUGARBEET SUGARBEET_CUT CARROT BEETROOT PARSNIP" capacity="37000" >
+                    <fillUnit shopDisplayUnit="CUBICMETER" fillTypes="POTATO SUGARBEET SUGARBEET_CUT CARROT BEETROOT PARSNIP MANURE" capacity="37000" >
                         <exactFillRootNode node="exactFillRootNode" />
                     </fillUnit>
                 </fillUnits>
