@@ -114,41 +114,25 @@
     </lights>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="false">
-            <production id="sugarbeet_sugar" name="Sugar" params="$l10n_fillType_sugarBeet|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="10">
+        <productions sharedThroughputCapacity="true">
+            <production id="sugarbeet_sugar" name="Sugar" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="SUGARBEET" amount="1000" />
-                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
-                </inputs>
-                <outputs>
-                    <output fillType="SUGAR" amount="475" />
-                </outputs>
-            </production>
-            <production id="sugarbeetCut_sugar" name="Sugar" params="$l10n_fillType_sugarBeetCut|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="10">
-                <inputs>
-                    <input fillType="SUGARBEET_CUT" amount="1000" />
-                    <input fillType="EMPTYPALLET" amount="8" mix="boost" boostfactor="0.05"/>
+                    <input fillType="SUGARBEET" amount="1450" mix="1" />
+                    <input fillType="SUGARBEET_CUT" amount="1000" mix="1" />
+                    <input fillType="SUGARCANE" amount="1550" mix="1" />
+                    <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.04"/>
                 </inputs>
                 <outputs>
                     <output fillType="SUGAR" amount="700" />
                 </outputs>
             </production>
-            <production id="sugarcane_sugar" name="Sugar" params="$l10n_fillType_sugarCane|$l10n_fillType_sugar" cyclesPerHour="10" costsPerActiveHour="10">
-                <inputs>
-                    <input fillType="SUGARCANE" amount="1000" />
-                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
-                </inputs>
-                <outputs>
-                    <output fillType="SUGAR" amount="440" />
-                </outputs>
-            </production>
             <production id="cornSyrup" name="Corn Syrup" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="MAIZE" amount="355" />
-                    <input fillType="EMPTYPALLET" amount="5" mix="boost" boostfactor="0.05"/>
+                    <input fillType="MAIZE" amount="400" />
+                    <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.04"/>
                 </inputs>
                 <outputs>
-                    <output fillType="CORNSYRUP" amount="550" />
+                    <output fillType="CORNSYRUP" amount="650" />
                 </outputs>
             </production>
 

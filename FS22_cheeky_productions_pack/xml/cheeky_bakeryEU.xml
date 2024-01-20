@@ -122,7 +122,8 @@
                     <input fillType="OATMILK" amount="60" mix="2"/>
                     <input fillType="SOYMILK" amount="40" mix="2"/>
                     <input fillType="EGG" amount="120" />
-                    <input fillType="BUTTER" amount="120" />
+                    <input fillType="BUTTER" amount="120" mix="3" />
+                    <input fillType="MARGARINE" amount="240" mix="3" />
                     <input fillType="STRAWBERRY" amount="120" />
                     <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
                 </inputs>
@@ -139,7 +140,8 @@
                     <input fillType="OATMILK" amount="60" mix="2"/>
                     <input fillType="SOYMILK" amount="40" mix="2"/>
                     <input fillType="EGG" amount="120" />
-                    <input fillType="BUTTER" amount="120" />
+                    <input fillType="BUTTER" amount="120" mix="3" />
+                    <input fillType="MARGARINE" amount="240" mix="3" />
                     <input fillType="STRAWBERRY" amount="120" />
                     <input fillType="CARROT" amount="510" />
                     <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
@@ -157,7 +159,8 @@
                     <input fillType="OATMILK" amount="60" mix="2"/>
                     <input fillType="SOYMILK" amount="40" mix="2"/>
                     <input fillType="EGG" amount="120" />
-                    <input fillType="BUTTER" amount="120" />
+                    <input fillType="BUTTER" amount="120" mix="3" />
+                    <input fillType="MARGARINE" amount="240" mix="3" />
                     <input fillType="STRAWBERRY" amount="120" />
                     <input fillType="BEETJUICE" amount="120" />
                     <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
@@ -169,7 +172,7 @@
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK OATMILK SOYMILK EGG BUTTER STRAWBERRY WATER CARROT CORNSYRUP BEETJUICE EMPTYPALLET" />
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="FLOUR SUGAR MILK OATMILK SOYMILK EGG BUTTER MARGARINE STRAWBERRY WATER CARROT CORNSYRUP BEETJUICE EMPTYPALLET" />
         </sellingStation>
 
         <palletSpawner node="palletSpawner">
@@ -190,6 +193,7 @@
             <capacity fillType="SOYMILK" capacity="100000" />
             <capacity fillType="EGG" capacity="100000" />
             <capacity fillType="BUTTER" capacity="100000" />
+            <capacity fillType="MARGARINE" capacity="100000" />
             <capacity fillType="STRAWBERRY" capacity="100000" />
             <capacity fillType="BEETJUICE" capacity="100000" />
             <capacity fillType="BREAD" capacity="100000" />

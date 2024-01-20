@@ -101,13 +101,10 @@
     </lights>
 
     <productionPoint>
-        <productions>
-
-            <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="12" costsPerActiveHour="16">
+        <productions sharedThroughputCapacity="false">
+            <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="14" costsPerActiveHour="16">
                 <inputs>
-                    <input fillType="MILK" amount="100" mix="2"/>
-                    <input fillType="OATMILK" amount="50" mix="2"/>
-                    <input fillType="SOYMILK" amount="33" mix="2"/>
+                    <input fillType="MILK" amount="100"/>
                     <input fillType="SUGAR" amount="100" mix="1"/>
                     <input fillType="CORNSYRUP" amount="100" mix="1"/>
                     <input fillType="EMPTYPALLET" amount="2" mix="boost" boostfactor="0.05"/>
@@ -116,6 +113,19 @@
                     <output fillType="CHOCOLATE" amount="112" />
                 </outputs>
             </production>
+            <production id="vegan_chocolate" name="Vegan Chocolate" cyclesPerHour="14" costsPerActiveHour="16">
+                <inputs>
+                    <input fillType="OATMILK" amount="50" mix="1"/>
+                    <input fillType="SOYMILK" amount="33" mix="1"/>
+                    <input fillType="SUGAR" amount="100" mix="2"/>
+                    <input fillType="CORNSYRUP" amount="100" mix="2"/>
+                    <input fillType="EMPTYPALLET" amount="2" mix="boost" boostfactor="0.05"/>
+                </inputs>
+                <outputs>
+                    <output fillType="VEGANCHOCOLATE" amount="112" />
+                </outputs>
+            </production>
+
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
@@ -125,6 +135,7 @@
             <capacity fillType="SUGAR" capacity="250000" />
             <capacity fillType="CORNSYRUP" capacity="250000" />
             <capacity fillType="CHOCOLATE" capacity="250000" />
+            <capacity fillType="VEGANCHOCOLATE" capacity="250000" />
             <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 

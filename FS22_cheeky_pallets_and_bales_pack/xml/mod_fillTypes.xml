@@ -486,15 +486,58 @@
             <pallet filename="xml/pallets/custom/milkTank.xml"/>
         </fillType>
 
+        <fillType name="MARGARINE" title="Margarine" showOnPriceTable="true">
+            <physics massPerLiter="0.9" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="0.45">
+                <factors>
+                    <factor period="1"  value="1.06" />
+                    <factor period="2"  value="1.01" />
+                    <factor period="3"  value="0.96" />
+                    <factor period="4"  value="0.90" />
+                    <factor period="5"  value="0.95" />
+                    <factor period="6"  value="0.95" />
+                    <factor period="7"  value="1.03" />
+                    <factor period="8"  value="1.09" />
+                    <factor period="9"  value="0.98" />
+                    <factor period="10" value="0.96" />
+                    <factor period="11" value="1.08" />
+                    <factor period="12" value="1.07" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/hud_fill_margarine.dds" />
+            <pallet     filename="xml/pallets/custom/margarinePallet.xml" />
+        </fillType>
+
+        <fillType name="VEGANCHOCOLATE" title="Vegan Chocolate" showOnPriceTable="true">
+            <physics massPerLiter="1" maxPhysicalSurfaceAngle="38" />
+            <economy pricePerLiter="2.0">
+                <factors>
+                    <factor period="1"  value="0.99" />
+                    <factor period="2"  value="1.02" />
+                    <factor period="3"  value="1.04" />
+                    <factor period="4"  value="1.08" />
+                    <factor period="5"  value="0.94" />
+                    <factor period="6"  value="0.92" />
+                    <factor period="7"  value="0.95" />
+                    <factor period="8"  value="0.91" />
+                    <factor period="9"  value="0.96" />
+                    <factor period="10" value="1.00" />
+                    <factor period="11" value="1.04" />
+                    <factor period="12" value="1.08" />
+                </factors>
+            </economy>
+            <image      hud     ="textures/hud_fill_veganChocolate.dds" />
+            <pallet     filename="xml/pallets/custom/veganChocolatePallet.xml" />
+        </fillType>
 
 
     </fillTypes>
     <fillTypeCategories>
         <fillTypeCategory name="LIQUID">OATMILK SOYMILK</fillTypeCategory>
-        <fillTypeCategory name="PRODUCT">WOOL GRAPE COTTON POPLAR WOOD HONEY TARP SILAGE_ADDITIVE CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE MILK OATMILK SOYMILK REDVELVETCAKE</fillTypeCategory>
+        <fillTypeCategory name="PRODUCT">WOOL GRAPE COTTON POPLAR WOOD HONEY TARP SILAGE_ADDITIVE CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE MILK OATMILK SOYMILK REDVELVETCAKE MARGARINE VEGANCHOCOLATE</fillTypeCategory>
         <fillTypeCategory name="SHOVEL">BEETROOT CARROT PARSNIP</fillTypeCategory>
-        <fillTypeCategory name="CHEEKY_PRODUCT">CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE MILK OATMILK SOYMILK REDVELVETCAKE</fillTypeCategory>
-        <fillTypeCategory name="CHEEKY_FOOD_PRODUCT">CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE CORNSYRUP MAYONNAISE MILK OATMILK SOYMILK REDVELVETCAKE</fillTypeCategory>
+        <fillTypeCategory name="CHEEKY_PRODUCT">CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE MILK OATMILK SOYMILK REDVELVETCAKE MARGARINE VEGANCHOCOLATE</fillTypeCategory>
+        <fillTypeCategory name="CHEEKY_FOOD_PRODUCT">CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE CORNSYRUP MAYONNAISE MILK OATMILK SOYMILK REDVELVETCAKE MARGARINE VEGANCHOCOLATE</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_PLAT_RESOURCE">IRONORE</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_PLAT_PRODUCT">ARMOIRE BARREL BATHTUB BIRDHOUSE BOWL BUCKET CARTONROLL CATTREE CHAIR DOGHOUSE EASEL FLOORTILES METAL PAPERROLL PEPPERGRINDER PICTUREFRAME PLANKS PREFABWALL SHINGLE STAIRCASERAILING TABLE WOODBEAM</fillTypeCategory>
         <fillTypeCategory name="CHEEKY_PREM_PRODUCT">POTATOCHIPS PRESERVEDCARROTS PRESERVEDPARSNIP PRESERVEDBEETROOT SOUPCANSMIXED SOUPCANSCARROTS SOUPCANSPARSNIP SOUPCANSBEETROOT SOUPCANSPOTATO</fillTypeCategory>
@@ -502,7 +545,7 @@
         <fillTypeCategory name="CHEEKY_MILKS">MILK OATMILK SOYMILK</fillTypeCategory>
         <fillTypeCategory name="VEGETABLES">BEETROOT CARROT PARSNIP</fillTypeCategory>
         <!-- For TLX Autoload -->
-        <fillTypeCategory name="LOC_PRODUCTS">CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE WOOD MILK OATMILK SOYMILK REDVELVETCAKE</fillTypeCategory>
-        <fillTypeCategory name="LOC_REFER">CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE WOOD MILK OATMILK SOYMILK REDVELVETCAKE</fillTypeCategory>
+        <fillTypeCategory name="LOC_PRODUCTS">CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE WOOD MILK OATMILK SOYMILK REDVELVETCAKE MARGARINE VEGANCHOCOLATE</fillTypeCategory>
+        <fillTypeCategory name="LOC_REFER">CARROTCAKE REDVELVETCAKE CARROTJUICE TOMATOJUICE BEETJUICE VEGETABLEJUICE EMPTYPALLET CORNSYRUP MAYONNAISE WOOD MILK OATMILK SOYMILK REDVELVETCAKE MARGARINE VEGANCHOCOLATE</fillTypeCategory>
     </fillTypeCategories>
 </map>

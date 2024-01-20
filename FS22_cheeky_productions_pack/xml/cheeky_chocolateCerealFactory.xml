@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+<placeable type="productionPoint"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>
-		<en>Chocolate Muesli Factory</en>
-		<de>Schokomüsli-Produktion</de>
-		</name>
+            <en>Chocolate Muesli Factory</en>
+            <de>Schokomüsli-Produktion</de>
+        </name>
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
         <image>textures/store_chocolateCerealFactory.png</image>
         <price>550000</price>
-		<dailyUpkeep>180</dailyUpkeep>
+        <dailyUpkeep>180</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
         <brand>NONE</brand>
@@ -21,8 +22,8 @@
             <category>cheeky</category>
             <tab>factories</tab>
         </brush>
-        
-      
+
+
         <vertexBufferMemoryUsage>1129216</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>161024</indexBufferMemoryUsage>
         <textureMemoryUsage>12976128</textureMemoryUsage>
@@ -36,7 +37,7 @@
         <canBeRenamed>true</canBeRenamed>
     </base>
 
-    <placement useRandomYRotation="false" useManualYRotation="true" >
+    <placement useRandomYRotation="false" useManualYRotation="true">
         <testAreas>
             <testArea startNode="testArea1Start" endNode="testArea1End" />
             <testArea startNode="testArea2Start" endNode="testArea2End" />
@@ -49,7 +50,7 @@
         <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
     </clearAreas>
 
-    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30" >
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
         <levelAreas>
             <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" />
             <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" />
@@ -75,7 +76,7 @@
         <updateAreas>
             <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
         </updateAreas>
-		<splines>
+        <splines>
             <spline node="unloadTriggerAISpline" />
         </splines>
     </ai>
@@ -125,30 +126,34 @@
                 <inputs>
                     <input fillType="HONEY" amount="25" />
                     <input fillType="RAISINS" amount="125" />
-                    <input fillType="CHOCOLATE" amount="50" />
+                    <input fillType="CHOCOLATE" amount="50" mix="1"/>
+                    <input fillType="VEGANCHOCOLATE" amount="50" mix="1" />
                     <input fillType="STRAWBERRY" amount="50" />
                     <input fillType="OAT" amount="225" />
-                    <input fillType="SUGAR" amount="25" />
+                    <input fillType="SUGAR" amount="25" mix="2"/>
+                    <input fillType="CORNSYRUP" amount="25" mix="2"/>
                 </inputs>
                 <outputs>
                     <output fillType="CEREAL" amount="360" />
                 </outputs>
             </production>
-			
+
         </productions>
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
-            <capacity fillType="HONEY"   capacity="300000" />
+            <capacity fillType="HONEY" capacity="300000" />
             <capacity fillType="RAISINS" capacity="300000" />
             <capacity fillType="CHOCOLATE" capacity="300000" />
-            <capacity fillType="OAT"     capacity="600000" />
-            <capacity fillType="SUGAR"   capacity="600000" />
-            <capacity fillType="CEREAL"  capacity="70000" />
-            <capacity fillType="STRAWBERRY"  capacity="70000" />
+            <capacity fillType="VEGANCHOCOLATE" capacity="300000" />
+            <capacity fillType="OAT" capacity="600000" />
+            <capacity fillType="SUGAR" capacity="600000" />
+            <capacity fillType="CORNSYRUP" capacity="600000" />
+            <capacity fillType="CEREAL" capacity="70000" />
+            <capacity fillType="STRAWBERRY" capacity="70000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false" allowMissions="false" hideFromPricesMenu="true">
-            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="STRAWBERRY HONEY RAISINS OAT SUGAR CHOCOLATE"/>
+            <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="unloadTriggerAINode" fillTypes="STRAWBERRY HONEY RAISINS OAT SUGAR CHOCOLATE VEGANCHOCOLATE CORNSYRUP"/>
         </sellingStation>
 
         <palletSpawner node="palletSpawner">

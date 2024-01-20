@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; loki_79; ddewar</author>
-    <version>2.0.2.0</version>
+    <version>2.1.0.0</version>
     <title>
         <en>Cheeky Pallets and Bales Pack</en>
     </title>
@@ -143,6 +143,8 @@
         <storeItem xmlFilename="xml/pallets/custom/tomatoJuicePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/custom/vegetableJuicePallet.xml"/>
         <storeItem xmlFilename="xml/pallets/custom/woodPallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/custom/margarinePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/custom/veganChocolatePallet.xml"/>
 
         <!-- Buyable Pallets -->
         <storeItem xmlFilename="xml/pallets/buyable/custom/emptyPallet.xml"/>
@@ -151,6 +153,8 @@
         <storeItem xmlFilename="xml/pallets/buyable/custom/milkTank.xml"/>
         <storeItem xmlFilename="xml/pallets/buyable/custom/oatMilkTank.xml"/>
         <storeItem xmlFilename="xml/pallets/buyable/custom/soyMilkTank.xml"/>
+        <storeItem xmlFilename="xml/pallets/buyable/custom/margarinePallet.xml"/>
+        <storeItem xmlFilename="xml/pallets/buyable/custom/veganChocolatePallet.xml"/>
         <!-- Custom Pallet Types End-->
         
         <!-- Buyable Bales -->
