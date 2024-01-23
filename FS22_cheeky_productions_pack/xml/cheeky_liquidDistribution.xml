@@ -91,7 +91,7 @@
                     <output fillType="MILK" amount="2000" />
                 </outputs>
             </production>
-            <production id="SoyMilkdistribution" name="$l10n_fillType_milk" cyclesPerHour="1" costsPerActiveHour="10">
+            <production id="SoyMilkdistribution" name="Soy Milk" cyclesPerHour="1" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="SOYMILK" amount="2000" />
                 </inputs>
@@ -99,7 +99,7 @@
                     <output fillType="SOYMILK" amount="2000" />
                 </outputs>
             </production>
-            <production id="OatMilkdistribution" name="$l10n_fillType_milk" cyclesPerHour="1" costsPerActiveHour="10">
+            <production id="OatMilkdistribution" name="Oat Milk" cyclesPerHour="1" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="OATMILK" amount="2000" />
                 </inputs>

@@ -123,7 +123,7 @@
                     <input fillType="SOYMILK" amount="40" mix="2"/>
                     <input fillType="EGG" amount="120" />
                     <input fillType="BUTTER" amount="120" mix="3" />
-                    <input fillType="MARGARINE" amount="240" mix="3" />
+                    <input fillType="MARGARINE" amount="60" mix="3" />
                     <input fillType="STRAWBERRY" amount="120" />
                     <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
                 </inputs>
@@ -141,7 +141,7 @@
                     <input fillType="SOYMILK" amount="40" mix="2"/>
                     <input fillType="EGG" amount="120" />
                     <input fillType="BUTTER" amount="120" mix="3" />
-                    <input fillType="MARGARINE" amount="240" mix="3" />
+                    <input fillType="MARGARINE" amount="60" mix="3" />
                     <input fillType="STRAWBERRY" amount="120" />
                     <input fillType="CARROT" amount="510" />
                     <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
@@ -160,7 +160,7 @@
                     <input fillType="SOYMILK" amount="40" mix="2"/>
                     <input fillType="EGG" amount="120" />
                     <input fillType="BUTTER" amount="120" mix="3" />
-                    <input fillType="MARGARINE" amount="240" mix="3" />
+                    <input fillType="MARGARINE" amount="60" mix="3" />
                     <input fillType="STRAWBERRY" amount="120" />
                     <input fillType="BEETJUICE" amount="120" />
                     <input fillType="EMPTYPALLET" amount="10" mix="boost" boostfactor="0.05"/>
