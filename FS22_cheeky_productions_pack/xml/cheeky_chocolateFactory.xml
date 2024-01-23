@@ -101,28 +101,28 @@
     </lights>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="false">
+        <productions sharedThroughputCapacity="true">
             <production id="chocolate" name="$l10n_fillType_chocolate" cyclesPerHour="14" costsPerActiveHour="16">
                 <inputs>
-                    <input fillType="MILK" amount="100"/>
-                    <input fillType="SUGAR" amount="100" mix="1"/>
-                    <input fillType="CORNSYRUP" amount="100" mix="1"/>
+                    <input fillType="MILK" amount="200"/>
+                    <input fillType="SUGAR" amount="200" mix="1"/>
+                    <input fillType="CORNSYRUP" amount="200" mix="1"/>
                     <input fillType="EMPTYPALLET" amount="2" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="CHOCOLATE" amount="112" />
+                    <output fillType="CHOCOLATE" amount="215" />
                 </outputs>
             </production>
             <production id="vegan_chocolate" name="Vegan Chocolate" cyclesPerHour="14" costsPerActiveHour="16">
                 <inputs>
-                    <input fillType="OATMILK" amount="50" mix="1"/>
-                    <input fillType="SOYMILK" amount="33" mix="1"/>
-                    <input fillType="SUGAR" amount="100" mix="2"/>
-                    <input fillType="CORNSYRUP" amount="100" mix="2"/>
+                    <input fillType="OATMILK" amount="135" mix="1"/>
+                    <input fillType="SOYMILK" amount="90" mix="1"/>
+                    <input fillType="SUGAR" amount="85" mix="2"/>
+                    <input fillType="CORNSYRUP" amount="85" mix="2"/>
                     <input fillType="EMPTYPALLET" amount="2" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="VEGANCHOCOLATE" amount="112" />
+                    <output fillType="VEGANCHOCOLATE" amount="215" />
                 </outputs>
             </production>
 

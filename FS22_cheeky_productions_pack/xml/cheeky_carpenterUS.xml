@@ -109,7 +109,7 @@
     </lights>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="false">
+        <productions sharedThroughputCapacity="true">
             <production id="furnitureWood" name="%s (%s)" params="$l10n_fillType_furniture|$l10n_fillType_wood" cyclesPerHour="15" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="WOOD" amount="170" />

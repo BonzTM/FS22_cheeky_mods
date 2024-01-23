@@ -111,7 +111,7 @@
     </lights>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="false">
+        <productions sharedThroughputCapacity="true">
             <production id="flourWheat" name="%s %s" params="$l10n_fillType_wheat|$l10n_fillType_flour" cyclesPerHour="13" costsPerActiveHour="8">
                 <inputs>
                     <input fillType="WHEAT" amount="500" />

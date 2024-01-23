@@ -106,7 +106,7 @@
     </lights>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="false">
+        <productions sharedThroughputCapacity="true">
             <production id="mayonnaise" name="Mayonnaise" cyclesPerHour="11" costsPerActiveHour="16.5">
                 <inputs>
                     <input fillType="SUNFLOWER_OIL" amount="335" />

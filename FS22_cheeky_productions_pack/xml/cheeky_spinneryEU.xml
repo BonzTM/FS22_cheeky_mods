@@ -116,23 +116,23 @@
     </lights>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="false">
-            <production id="fabric_wool" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_wool" cyclesPerHour="12" costsPerActiveHour="10">
+        <productions sharedThroughputCapacity="true">
+            <production id="fabric_wool" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_wool" cyclesPerHour="11" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="WOOL" amount="300" />
-                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
+                    <input fillType="WOOL" amount="450" />
+                    <input fillType="EMPTYPALLET" amount="6" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="FABRIC" amount="205" />
+                    <output fillType="FABRIC" amount="310" />
                 </outputs>
             </production>
-            <production id="fabric_cotton" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_cotton" cyclesPerHour="12" costsPerActiveHour="10">
+            <production id="fabric_cotton" name="%s %s" params="$l10n_fillType_fabric|$l10n_fillType_cotton" cyclesPerHour="11" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="COTTON" amount="300" />
-                    <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
+                    <input fillType="COTTON" amount="450" />
+                    <input fillType="EMPTYPALLET" amount="6" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="FABRIC" amount="235" />
+                    <output fillType="FABRIC" amount="350" />
                 </outputs>
             </production>
         </productions>

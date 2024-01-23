@@ -1,13 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <modDesc descVersion="79">
     <author>Cheeky B#$!ards; GIANTS Software</author>
-    <version>2.1.0.0</version>
+    <version>2.1.1.0</version>
     <title>
         <en>Cheeky Productions Pack</en>
     </title>
-	<description>
-		<en><![CDATA[10x Modded base productions for the Cheeky Bastards.]]></en>
-	</description>	
+    <description>
+        <en><![CDATA[10x Modded base productions for the Cheeky Bastards.]]></en>
+    </description>
     <iconFilename>textures/store_tailorShop.png</iconFilename>
     <storeItems>
         <storeItem xmlFilename="xml/cheeky_bakeryEU.xml"/>
@@ -21,6 +21,7 @@
         <storeItem xmlFilename="xml/cheeky_dairyUS.xml"/>
         <storeItem xmlFilename="xml/cheeky_grainMill.xml"/>
         <storeItem xmlFilename="xml/cheeky_greenhouseLarge.xml"/>
+        <storeItem xmlFilename="xml/cheeky_liquidDistribution.xml"/>
         <storeItem xmlFilename="xml/cheeky_milkProduction.xml"/>
         <storeItem xmlFilename="xml/cheeky_oilPlant.xml"/>
         <storeItem xmlFilename="xml/cheeky_raisinFactory.xml"/>
@@ -37,41 +38,47 @@
     </storeItems>
 
     <l10n>
-		<text name="sugarbeetProcessingPlant">
+        <text name="sugarbeetProcessingPlant">
             <en>Cheeky Sugarbeet Processor</en>
-		</text>
+        </text>
 
-		<text name="production_chain_1">
+        <text name="production_chain_1">
             <en>Mayonnaise with Sunflower Oil</en>
         </text>
-		
-		<text name="production_chain_2">
+
+        <text name="production_chain_2">
             <en>Mayonnaise with Canola Oil</en>
         </text>
-		
-		<text name="production_chain_3">
+
+        <text name="production_chain_3">
             <en>Mayonnaise with Olive Oil</en>
         </text>
 
-		<text name="fillType_planks">
-			<en>Planks Long</en>
-		</text>
-		<text name="fillType_woodBeam">
-			<en>Wood Beam</en>
-		</text>
-		<text name="fillType_wall">
-			<en>Prefab Wall</en>
-		</text>			
-		<text name="fillType_woodchips">
-			<en>Wood Chips</en>
-		</text>			
-		<text name="title_americanSawmill">
-			<en>Cheeky Sawmill</en>
-		</text>		
-		<text name="title_americanSawmillDLC">
-			<en>Cheeky Sawmill Platinum Edition</en>
-		</text>	
-	</l10n>
+        <text name="fillType_planks">
+            <en>Planks Long</en>
+        </text>
+        <text name="fillType_woodBeam">
+            <en>Wood Beam</en>
+        </text>
+        <text name="fillType_wall">
+            <en>Prefab Wall</en>
+        </text>
+        <text name="fillType_woodchips">
+            <en>Wood Chips</en>
+        </text>
+        <text name="title_americanSawmill">
+            <en>Cheeky Sawmill</en>
+        </text>
+        <text name="title_americanSawmillDLC">
+            <en>Cheeky Sawmill Platinum Edition</en>
+        </text>
+        <text name="shopItem_Liquiddistribution">
+            <en>Liquid Distribution</en>
+        </text>
+        <text name="function_Liquiddistribution">
+            <en>Distributes Water and Milks</en>
+        </text>
+    </l10n>
 
     <brandColors>
         <color name="WALLCOLOR_PETROL" value="0.0265 0.1193 0.1275 0" />
@@ -93,10 +100,10 @@
         <color name="WALLCOLOR_BLACK" value="0.03 0.03 0.03 0" />
     </brandColors>
 
-	<multiplayer supported="true" />     
+    <multiplayer supported="true" />
     <dependencies>
-		<dependency>FS22_A_ProductionRevamp</dependency>
+        <dependency>FS22_A_ProductionRevamp</dependency>
         <dependency>FS22_cheeky_pallets_and_bales_pack</dependency>
         <dependency>FS22_cheeky_placeables_pack</dependency>
-	</dependencies> 
+    </dependencies>
 </modDesc>

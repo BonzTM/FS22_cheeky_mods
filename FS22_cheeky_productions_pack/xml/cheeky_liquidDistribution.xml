@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_Liquiddistribution</name>
+        <functions>
+            <function>$l10n_function_Liquiddistribution</function>
+        </functions>
+        <image>images/store_liquidDistribution.dds</image>
+        <price>25000</price>
+        <dailyUpkeep>20</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>InconspicuouslyModding</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>cheeky</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>512000</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>85248</indexBufferMemoryUsage>
+        <textureMemoryUsage>6225920</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraXRot="-25" advancedBoundingBox="true" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>i3d/distributionSilo.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTrigger" teleportNode="unloadTrigger" />
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="markerLoading" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+        <triggerMarker node="markerUnloading" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+    </triggerMarkers>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+            <production id="Waterdistribution" name="$l10n_fillType_water" cyclesPerHour="1" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="WATER" amount="2000" />
+                </inputs>
+                <outputs>
+                    <output fillType="WATER" amount="2000" />
+                </outputs>
+            </production>
+            <production id="Milkdistribution" name="$l10n_fillType_milk" cyclesPerHour="1" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="MILK" amount="2000" />
+                </inputs>
+                <outputs>
+                    <output fillType="MILK" amount="2000" />
+                </outputs>
+            </production>
+            <production id="SoyMilkdistribution" name="$l10n_fillType_milk" cyclesPerHour="1" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="SOYMILK" amount="2000" />
+                </inputs>
+                <outputs>
+                    <output fillType="SOYMILK" amount="2000" />
+                </outputs>
+            </production>
+            <production id="OatMilkdistribution" name="$l10n_fillType_milk" cyclesPerHour="1" costsPerActiveHour="10">
+                <inputs>
+                    <input fillType="OATMILK" amount="2000" />
+                </inputs>
+                <outputs>
+                    <output fillType="OATMILK" amount="2000" />
+                </outputs>
+            </production>
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="false" supportsExtension="true">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WATER MILK SOYMILK OATMILK" aiNode="unloadTriggerAINode" />
+        </sellingStation>
+
+        <loadingStation>
+            <loadTrigger triggerNode="loadingTrigger" fillTypes="WATER MILK SOYMILK OATMILK" fillLitersPerSecond="2500" dischargeNode="dischargeNode" aiNode="aiLoadingNode">
+                <effectNode fadeTime="0.5" materialTypeId="1" materialType="washer" effectNode="grain"/>
+            </loadTrigger>
+        </loadingStation>
+
+        <storage isExtension="false" fillLevelSyncThreshold="100">
+            <capacity fillType="WATER" capacity="2000000" />
+            <capacity fillType="MILK" capacity="2000000" />
+            <capacity fillType="SOYMILK" capacity="2000000" />
+            <capacity fillType="OATMILK" capacity="2000000" />
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="loadingStation" node="0>2" />
+        <i3dMapping id="loadingTrigger" node="0>2|0|0" />
+        <i3dMapping id="dischargeNode" node="0>2|0|1" />
+        <i3dMapping id="aiLoadingNode" node="0>2|1" />
+        <i3dMapping id="aiSpline" node="0>2|2" />
+        <i3dMapping id="unloadingStation" node="0>1" />
+        <i3dMapping id="exactFillRootNode" node="0>1|0" />
+        <i3dMapping id="unloadTrigger" node="0>1|1" />
+        <i3dMapping id="unloadTriggerMarker" node="0>1|2" />
+        <i3dMapping id="unloadTriggerAINode" node="0>1|3" />
+        <i3dMapping id="markerUnloading" node="0>1|4" />
+        <i3dMapping id="markerLoading" node="0>2|3" />
+        <i3dMapping id="playerTrigger" node="0>3" />
+        <i3dMapping id="playerTriggerMarker" node="0>3|0" />
+        <i3dMapping id="clearArea1Start" node="0>4|0" />
+        <i3dMapping id="clearArea1Width" node="0>4|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>4|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>5|0" />
+        <i3dMapping id="levelArea1Width" node="0>5|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>5|0|1" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0" />
+        <i3dMapping id="infoTrigger" node="0>0|7" />
+        <i3dMapping id="grain" node="0>2|0|2|1" />
+    </i3dMappings>
+</placeable>

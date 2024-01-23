@@ -9,7 +9,7 @@
             <set path="placeable.storeData.brush.category" value="cheeky"/>
 
             <!-- Shared Throughput -->
-            <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="false"/>
+            <set path="placeable.productionPoint.productions#sharedThroughputCapacity" value="true"/>
 
             <!-- Potato Chips Production 1 -->
             <set path="placeable.productionPoint.productions.production(0)#name" value="Potato Chips"/>

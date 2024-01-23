@@ -113,7 +113,7 @@
     </triggerMarkers>
 
     <productionPoint>
-        <productions sharedThroughputCapacity="false">
+        <productions sharedThroughputCapacity="true">
             <production id="sweetCarrotJuice" name="Carrot Juice" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
                     <input fillType="CARROT" amount="750" />
@@ -138,19 +138,19 @@
             </production>
             <production id="sweetTomatoJuice" name="Tomato Juice" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="TOMATO" amount="375" />
-                    <input fillType="SUGAR" amount="55" mix="1"/>
-                    <input fillType="CORNSYRUP" amount="55" mix="1"/>
+                    <input fillType="TOMATO" amount="300" />
+                    <input fillType="SUGAR" amount="50" mix="1"/>
+                    <input fillType="CORNSYRUP" amount="50" mix="1"/>
                     <input fillType="EMPTYPALLET" amount="5" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="TOMATOJUICE" amount="300" />
+                    <output fillType="TOMATOJUICE" amount="240" />
                 </outputs>
             </production>
             <production id="vegetableJuice" name="Vegetable Juice" cyclesPerHour="10" costsPerActiveHour="10">
                 <inputs>
-                    <input fillType="TOMATO" amount="120" />
-                    <input fillType="LETTUCE" amount="120" />
+                    <input fillType="TOMATO" amount="150" />
+                    <input fillType="LETTUCE" amount="75" />
                     <input fillType="BEETROOT" amount="650" mix="1"/>
                     <input fillType="CARROT" amount="600" mix="1"/>
                     <input fillType="SUGAR" amount="50" mix="2"/>
@@ -158,7 +158,7 @@
                     <input fillType="EMPTYPALLET" amount="4" mix="boost" boostfactor="0.05"/>
                 </inputs>
                 <outputs>
-                    <output fillType="VEGETABLEJUICE" amount="215" />
+                    <output fillType="VEGETABLEJUICE" amount="195" />
                 </outputs>
             </production>
         </productions>
