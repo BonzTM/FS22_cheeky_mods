@@ -85,7 +85,7 @@
     </hotspots>
 
     <sellingStation appearsOnStats="true" node="sellingStation" supportsExtension="false">
-        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WOOD WOODCHIPS STRAW COTTON EMPTYPALLET" aiNode="unloadTriggerAINode" />
+        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WOOD WOODCHIPS STRAW COTTON EMPTYPALLET HAY_PELLETS STRAW_PELLETS" aiNode="unloadTriggerAINode" />
 
         <unloadTrigger fillTypes="WOOD WOODCHIPS ROUNDBALE_WOOD ROUNDBALE_COTTON SQUAREBALE_WOOD SQUAREBALE_COTTON ROUNDBALE SQUAREBALE" aiNode="unloadTriggerAINode">
             <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000" />
@@ -97,6 +97,8 @@
         <fillType name="STRAW" priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
         <fillType name="COTTON" priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
         <fillType name="EMPTYPALLET" priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="HAY_PELLETS" priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
+        <fillType name="STRAW_PELLETS" priceScale="1" supportsGreatDemand="true" disablePriceDrop="true" />
 
         <sounds>
             <idle template="biogasPlantTemplate"/>

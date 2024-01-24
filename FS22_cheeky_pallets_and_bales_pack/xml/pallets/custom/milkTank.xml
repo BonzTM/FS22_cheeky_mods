@@ -56,7 +56,7 @@
         </fillUnitConfigurations>
     </fillUnit>
 
-    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="500"/>
+    <fillTriggerVehicle triggerNode="fillTrigger" fillUnitIndex="1" litersPerSecond="1000"/>
 
     <dischargeable requiresTipOcclusionArea="false" />
 

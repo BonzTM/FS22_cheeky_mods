@@ -36,7 +36,7 @@
         <fillUnitConfigurations>
             <fillUnitConfiguration>
                 <fillUnits removeVehicleIfEmpty="true">
-                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="LIQUID SPRAYER SLURRYTANK" capacity="2000">
+                    <fillUnit unitTextOverride="$l10n_unit_literShort" fillTypeCategories="LIQUID SPRAYER SLURRYTANK" capacity="4000">
                         <fillRootNode node="0>"/>
                     </fillUnit>
                 </fillUnits>
@@ -47,7 +47,7 @@
     <fillTriggerVehicle triggerNode="fillTrigger"/>
     <dynamicMount triggerNode="dynamicMountTrigger" triggerForceAcceleration="5" additionalMountDistance="1.5" jointTransY="0.11" jointLimitToRotY="true"/>
     <dischargeable requiresTipOcclusionArea="false">
-        <dischargeNode node="dischargeNode" emptySpeed="400" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true"/>
+        <dischargeNode node="dischargeNode" emptySpeed="1000" fillUnitIndex="1" maxDistance="6" canStartDischargeAutomatically="true"/>
     </dischargeable>
     <tensionBeltObject>
         <meshNodes>
