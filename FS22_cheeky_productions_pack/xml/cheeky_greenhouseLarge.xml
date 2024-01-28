@@ -150,8 +150,8 @@
         <storage node="storage" isExtension="false" fillTypes="WATER">
             <capacity fillType="WATER" capacity="200000" />
             <capacity fillType="LETTUCE" capacity="120000" />
-            <capacity fillType="TOMATO" capacity="80000" />
-            <capacity fillType="STRAWBERRY" capacity="240000" />
+            <capacity fillType="TOMATO" capacity="240000" />
+            <capacity fillType="STRAWBERRY" capacity="480000" />
             <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 

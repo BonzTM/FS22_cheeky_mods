@@ -193,21 +193,21 @@
         <storage isExtension="false" fillLevelSyncThreshold="50">
             <capacity fillType="CARROT" capacity="650000" />
             <capacity fillType="FLOUR" capacity="650000" />
-            <capacity fillType="SUGAR" capacity="100000" />
-            <capacity fillType="CORNSYRUP" capacity="100000" />
-            <capacity fillType="MILK" capacity="100000" />
-            <capacity fillType="OATMILK" capacity="100000" />
-            <capacity fillType="SOYMILK" capacity="100000" />
-            <capacity fillType="EGG" capacity="100000" />
-            <capacity fillType="BUTTER" capacity="100000" />
-            <capacity fillType="MARGARINE" capacity="100000" />
-            <capacity fillType="STRAWBERRY" capacity="100000" />
-            <capacity fillType="BEETJUICE" capacity="100000" />
-            <capacity fillType="BREAD" capacity="100000" />
-            <capacity fillType="CAKE" capacity="100000" />
-            <capacity fillType="CARROTCAKE" capacity="100000" />
-            <capacity fillType="REDVELVETCAKE" capacity="100000" />
-            <capacity fillType="WATER" capacity="100000" />
+            <capacity fillType="SUGAR" capacity="150000" />
+            <capacity fillType="CORNSYRUP" capacity="150000" />
+            <capacity fillType="MILK" capacity="150000" />
+            <capacity fillType="OATMILK" capacity="150000" />
+            <capacity fillType="SOYMILK" capacity="150000" />
+            <capacity fillType="EGG" capacity="150000" />
+            <capacity fillType="BUTTER" capacity="150000" />
+            <capacity fillType="MARGARINE" capacity="150000" />
+            <capacity fillType="STRAWBERRY" capacity="150000" />
+            <capacity fillType="BEETJUICE" capacity="150000" />
+            <capacity fillType="BREAD" capacity="150000" />
+            <capacity fillType="CAKE" capacity="150000" />
+            <capacity fillType="CARROTCAKE" capacity="150000" />
+            <capacity fillType="REDVELVETCAKE" capacity="150000" />
+            <capacity fillType="WATER" capacity="150000" />
             <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
         

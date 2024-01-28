@@ -136,7 +136,7 @@
             <capacity fillType="RAISINS" capacity="300000" />
             <capacity fillType="OAT" capacity="600000" />
             <capacity fillType="MAIZE" capacity="600000" />
-            <capacity fillType="CEREAL" capacity="100000" />
+            <capacity fillType="CEREAL" capacity="150000" />
             <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 

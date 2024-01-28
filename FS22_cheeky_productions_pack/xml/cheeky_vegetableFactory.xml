@@ -170,10 +170,10 @@
             <capacity fillType="CORNSYRUP" capacity="200000" />
             <capacity fillType="LETTUCE" capacity="200000" />
             <capacity fillType="TOMATO" capacity="200000" />
-            <capacity fillType="CARROTJUICE" capacity="100000" />
-            <capacity fillType="TOMATOJUICE" capacity="100000" />
-            <capacity fillType="BEETJUICE" capacity="100000" />
-            <capacity fillType="VEGETABLEJUICE" capacity="100000" />
+            <capacity fillType="CARROTJUICE" capacity="150000" />
+            <capacity fillType="TOMATOJUICE" capacity="150000" />
+            <capacity fillType="BEETJUICE" capacity="150000" />
+            <capacity fillType="VEGETABLEJUICE" capacity="150000" />
             <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 

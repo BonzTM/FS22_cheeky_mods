@@ -139,11 +139,11 @@
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
             <capacity fillType="GRAPE" capacity="900000" />
-            <capacity fillType="RAISINS" capacity="120000" />
-            <capacity fillType="SUGAR" capacity="120000" />
-            <capacity fillType="CORNSYRUP" capacity="120000" />
-            <capacity fillType="GRAPEJUICE" capacity="100000" />
-            <capacity fillType="EMPTYPALLET" capacity="100000" />
+            <capacity fillType="RAISINS" capacity="150000" />
+            <capacity fillType="SUGAR" capacity="150000" />
+            <capacity fillType="CORNSYRUP" capacity="150000" />
+            <capacity fillType="GRAPEJUICE" capacity="150000" />
+            <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">

@@ -147,10 +147,10 @@
             <capacity fillType="SUNFLOWER" capacity="1440000" />
             <capacity fillType="CANOLA" capacity="1440000" />
             <capacity fillType="OLIVE" capacity="720000" />
-            <capacity fillType="SUNFLOWER_OIL" capacity="100000" />
-            <capacity fillType="CANOLA_OIL" capacity="100000" />
-            <capacity fillType="OLIVE_OIL" capacity="100000" />
-            <capacity fillType="EMPTYPALLET" capacity="100000" />
+            <capacity fillType="SUNFLOWER_OIL" capacity="150000" />
+            <capacity fillType="CANOLA_OIL" capacity="150000" />
+            <capacity fillType="OLIVE_OIL" capacity="150000" />
+            <capacity fillType="EMPTYPALLET" capacity="150000" />
         </storage>
 
         <sellingStation node="sellingStation" supportsExtension="false">

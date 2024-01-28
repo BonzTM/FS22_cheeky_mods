@@ -156,9 +156,9 @@
         </palletSpawner>
 
 		<storage node="storage" isExtension="false" fillLevelSyncThreshold="50" fillTypes="TOMATO LETTUCE STRAWBERRY LIME SEEDS FERTILIZER SILAGE WOODCHIPS EMPTYPALLET" >
-			<capacity fillType="TOMATO"      		capacity="100000" />
-			<capacity fillType="LETTUCE"      		capacity="100000" />
-			<capacity fillType="STRAWBERRY"      	capacity="100000" />
+			<capacity fillType="TOMATO"      		capacity="240000" />
+			<capacity fillType="LETTUCE"      		capacity="120000" />
+			<capacity fillType="STRAWBERRY"      	capacity="480000" />
 			<capacity fillType="LIME"      			capacity="10000" />
             <capacity fillType="EMPTYPALLET"      			capacity="10000" />
 			<capacity fillType="SEEDS"      		capacity="60000" />

@@ -140,7 +140,7 @@
 
         <storage isExtension="false" fillLevelSyncThreshold="50">
             <capacity fillType="FABRIC" capacity="360000" />
-            <capacity fillType="CLOTHES" capacity="100000" />
+            <capacity fillType="CLOTHES" capacity="150000" />
             <capacity fillType="EMPTYPALLET" capacity="10000" />
         </storage>
 
